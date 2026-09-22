@@ -1,1 +1,0 @@
-Minor Gardens Working Group is a collective working between Tirana and Nairobi. Their practice spans floor-based installation, sound and the study of vernacular building. Recent presentations include the Sydney Biennale and the Lyon Biennale. They were a resident at Raw Material Company, Dakar and are represented by Estúdio Bàrbaro, São Paulo.

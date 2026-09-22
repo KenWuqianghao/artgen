@@ -1,4 +1,4 @@
-# STORYBOARD — artgen demo (X post, 1920×1080, 18.6 s, fast pacing, music + SFX, no narration)
+# STORYBOARD — artgen demo (X post, 1920×1080, 20.7 s, fast pacing, music + SFX, no narration)
 
 Message: "Contemporary art and its catalogue essay can be generated at random, and you cannot tell."
 Arc: Reveal. Audience: art-world friends on X. Must read muted.
@@ -13,8 +13,9 @@ All copy below is verbatim output of `python3 -m artgen generate -n 6 --seed 100
 | b4 | 6.2 | 8.6 | gallery wall, real wall label card (Mireille Kowalczyk, *The Weight of Lead*, 2025 …) | card rises, dolly 1→1.06 | Cmaj7 chord |
 | b5 | 8.6 | 11.4 | light. big serif quote from the real artist statement | SplitText word stagger, x parallax | arpeggio |
 | b6 | 11.4 | 13.6 | light. 4 real footnotes stack | each line fades up | suspension |
-| b7 | 13.6 | 15.4 | placeholder.svg full frame: "THE WORK IS NOT HERE. THIS IS THE POINT." | dolly 1.02→1.08 | chime + resolve |
-| b8 | 15.4 | 17.0 | dark. counters: 6 works · 6 essays · 24 footnotes · 0.4 s | numbers count up | ticks |
-| b9 | 17.0 | 18.6 | dark. wordmark "artgen" + line "random contemporary art, with the paper." + gold dot | scale 0.96→1, dot pops | final note + pop, fade |
+| b6b | 13.6 | 15.7 | three real gpt-image-1 renders of installation works (seed 300), hard cuts every 0.7 s, caption with artist and title | push 1→1.04 each | tick per cut, soft note |
+| b7 | 15.7 | 17.5 | placeholder.svg full frame: "THE WORK IS NOT HERE. THIS IS THE POINT." | dolly 1.02→1.08 | chime + resolve |
+| b8 | 17.5 | 19.1 | dark. counters: 6 works · 6 essays · 24 footnotes · 0.4 s | numbers count up | ticks |
+| b9 | 19.1 | 20.7 | dark. wordmark "artgen" + line "random contemporary art, with the paper." + gold dot | scale 0.96→1, dot pops | final note + pop, fade |
 
 Asset audit: no live URL captured. Signature visual = the generator's own placeholder.svg and its real text output. Fonts = system (Georgia, Helvetica, Menlo).

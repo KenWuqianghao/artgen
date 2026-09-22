@@ -56,10 +56,23 @@ out/<seed>-<slug>/     spec.json, label.md, statement.md, essay.md, bio.md, imag
 video/demo/            demo 视频工程（HyperFrames）
 ```
 
-## 扩展知识库
+## 知识库的结构
 
-直接往 `data/elements.json` 的任意列表里加条目。`techniques` 和 `video_motifs` 里可以用 `{material}` 占位符。
+`data/elements.json` 里最重要的三块：
+
+- `forms`：作品形式，带 `kind`（installation / painting / video）、`family` 和 `weight`。权重决定抽中的概率。现在装置和绘画占大头，录像只占约 15%。
+- `compositions`：按 `family` 分组的具体画面。每一条都来自 2017–2026 年双年展评论里反复出现的东西（挂满横幅的天花板、装土的胶合板箱、砖缝里长植物的柱子、一圈真人大小的陶土人像、公共广场上拆下来的禁令牌……）。来源见 [docs/research-notes.md](docs/research-notes.md)。
+- `claims`：展签会替作品做出的声明（"refuses that convention in favour of…"、"makes way for imagined futures free of colonialism and capitalism"）。艺术家陈述和论文各引用一次。
+
+直接往任意列表里加条目。`techniques`、`video_motifs`、`compositions` 里可以用 `{material}` 和 `{material2}` 占位符。
 `title_templates` 可用的占位符见 `artgen/compose.py` 里的 `ctx`。
+
+`--kind` 可选 `installation`、`painting`、`video`。
+
+## 为什么图片 prompt 要求"无聊"
+
+图像模型默认给电影感：单束追光、剪影观众、雾。真实的展览记录照是平的、均匀的、空的、有点闷（Contemporary Art Daily 那种）。
+`photo_styles` 里现在全是这类描述，并且明确写了"no dramatic lighting, no fog, no silhouettes"。
 
 ## Demo 视频
 

@@ -1,1 +1,0 @@
-Mireille Kowalczyk (b. 1985, a mining town in the Atacama) lives and works between Manila and Karachi. Their practice spans durational performance, pedagogy and forms of collective listening. Recent presentations include the Bienal de Cuenca and the Sydney Biennale. They were a resident at Cité internationale des arts, Paris and are represented by Galería Umbral, Mexico City.

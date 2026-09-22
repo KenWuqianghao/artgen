@@ -1,0 +1,1 @@
+Ilse Nascimento (b. 1988, a former garrison city in Kashmir) lives and works between Tromsø and Ulaanbaatar. Their practice spans ceramic vessels and found objects, writing and forms of collective listening. Recent presentations include the Liverpool Biennial and the Istanbul Biennial. They were a resident at Gasworks, London and are represented by Estúdio Bàrbaro, São Paulo.

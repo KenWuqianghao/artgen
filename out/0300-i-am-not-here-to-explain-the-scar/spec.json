@@ -1,0 +1,77 @@
+{
+  "seed": 300,
+  "title": "I Am Not Here to Explain the Scar",
+  "artist": "Tomás Yeboah",
+  "is_collective": false,
+  "artist_birth_year": 1994,
+  "artist_birthplace": "a border town between two countries that no longer exist",
+  "artist_cities": [
+    "Mexico City",
+    "Tirana"
+  ],
+  "year": 2025,
+  "form": "found-object assemblage",
+  "kind": "installation",
+  "family": "found",
+  "composition": "hotel bed linen, denim offcuts and rope tied into a large net suspended over the floor",
+  "claim": "subverts the power of the table",
+  "claim_adjective": "extractive",
+  "channels": null,
+  "duration": null,
+  "dimensions": "750 × 346 × 380 cm",
+  "materials": [
+    "raw unfired clay",
+    "denim offcuts",
+    "bitumen"
+  ],
+  "technique": "stacked to the ceiling",
+  "video_motifs": [],
+  "theme": "the body as archive",
+  "theme_secondary": "water as witness",
+  "keyword": "the scar",
+  "keyword_secondary": "the tide",
+  "theorists": [
+    {
+      "name": "Gilles Deleuze and Félix Guattari",
+      "work": "A Thousand Plateaus",
+      "concept": "the rhizome",
+      "year": 1980
+    },
+    {
+      "name": "Ariella Aïsha Azoulay",
+      "work": "Potential History",
+      "concept": "unlearning imperialism",
+      "year": 2019
+    },
+    {
+      "name": "Timothy Morton",
+      "work": "Hyperobjects",
+      "concept": "the hyperobject",
+      "year": 2013
+    }
+  ],
+  "noun": "sediment",
+  "adjective": "embodied",
+  "verb": "listens to",
+  "adverb": "radically",
+  "adverb2": "playfully",
+  "venue": "Central Pavilion, Giardini",
+  "gallery": "Sediment, New York",
+  "funder": "the Goethe-Institut",
+  "biennials": [
+    "the Bienal de Cuenca",
+    "the Berlin Biennale"
+  ],
+  "residency": "Gasworks, London",
+  "epigraph": "\"We demand the right to opacity.\" — Édouard Glissant",
+  "photo_style": "installation view, deconsecrated church with marble floor and peeling frescoes, temporary track lighting on a rail, flat neutral exposure, no people, documentation",
+  "video_style": "handheld, slightly shaky, overexposed highlights, ordinary daylight, feels like documentation",
+  "curator": "Tomás Ionescu",
+  "curator_title": "Curator, Biennale Arte 2026",
+  "foreign": {
+    "word": "Toska",
+    "translation": "a dull ache of the soul",
+    "lang": "Russian"
+  },
+  "_rng_state": 0.053969827429548034
+}

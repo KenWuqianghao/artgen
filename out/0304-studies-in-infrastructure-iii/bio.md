@@ -1,0 +1,1 @@
+Reza Tanaka-Gruber (b. 1993, a suburb of Manchester) lives and works between Athens and Marseille. Their practice spans ceramic figure group, cooking and long-term collaboration with communities. Recent presentations include the Bienal de Cuenca and the Dakar Biennale. They were a resident at Delfina Foundation, London and are represented by Galerie du Seuil, Marseille.

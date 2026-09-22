@@ -1,0 +1,78 @@
+{
+  "seed": 301,
+  "title": "Rehearsal for the Broken Back",
+  "artist": "Yusuf Okonkwo-Vieira",
+  "is_collective": false,
+  "artist_birth_year": 1980,
+  "artist_birthplace": "a border town between two countries that no longer exist",
+  "artist_cities": [
+    "Mexico City",
+    "Brooklyn"
+  ],
+  "year": 2025,
+  "form": "reading room / social-practice presentation",
+  "kind": "installation",
+  "family": "archive",
+  "composition": "a long table of photocopied zines and pamphlets, plastic chairs, a kettle and a sign that reads FREE",
+  "claim": "functions as a talisman that protects against the present",
+  "claim_adjective": "oceanic",
+  "channels": null,
+  "duration": null,
+  "dimensions": "dimensions variable; site-specific",
+  "materials": [
+    "USB cables",
+    "lead",
+    "dried seaweed",
+    "clay bricks from a demolished factory"
+  ],
+  "technique": "submerged in reclaimed tin roofing",
+  "video_motifs": [],
+  "theme": "labour and the exhausted body",
+  "theme_secondary": "indigenous cosmologies",
+  "keyword": "the broken back",
+  "keyword_secondary": "non-linear time",
+  "theorists": [
+    {
+      "name": "Donna Haraway",
+      "work": "Staying with the Trouble",
+      "concept": "making kin",
+      "year": 2016
+    },
+    {
+      "name": "Rob Nixon",
+      "work": "Slow Violence and the Environmentalism of the Poor",
+      "concept": "slow violence",
+      "year": 2011
+    },
+    {
+      "name": "Byung-Chul Han",
+      "work": "The Burnout Society",
+      "concept": "the achievement subject",
+      "year": 2010
+    }
+  ],
+  "noun": "the no-longer",
+  "adjective": "sedimented",
+  "verb": "indexes",
+  "adverb": "radically",
+  "adverb2": "intimately",
+  "venue": "a disused salt warehouse at Dorsoduro",
+  "gallery": "Galerie Nachtigall, Berlin",
+  "funder": "the Sharjah Art Foundation",
+  "biennials": [
+    "the Kochi-Muziris Biennale",
+    "the Sharjah Biennial"
+  ],
+  "residency": "Villa Romana, Florence",
+  "epigraph": "\"The wake is a problem of and for thought.\" — Christina Sharpe",
+  "photo_style": "installation view for the exhibition's press kit: even diffuse daylight from high windows, neutral white balance, slightly flat and underexposed, 24mm wide angle with straight verticals, no people, raw brick walls, a visible exit sign and a cable on the floor, unremarkable, like a photo on Contemporary Art Daily",
+  "video_style": "phone-camera vertical footage rotated to landscape, low resolution, honest",
+  "curator": "Ngozi Ochieng",
+  "curator_title": "Curator-at-Large",
+  "foreign": {
+    "word": "Lagom",
+    "translation": "just enough",
+    "lang": "Swedish"
+  },
+  "_rng_state": 0.852330503662642
+}

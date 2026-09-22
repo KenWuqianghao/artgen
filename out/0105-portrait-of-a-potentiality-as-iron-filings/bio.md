@@ -1,1 +1,0 @@
-Ravi Lindqvist (b. 1983, a fishing port on the Baltic) lives and works between São Paulo and Nairobi. Their practice spans essay film, sound and forms of collective listening. Recent presentations include the Dakar Biennale and the Yokohama Triennale. They were a resident at Künstlerhaus Bethanien, Berlin and are represented by Sediment, New York.
