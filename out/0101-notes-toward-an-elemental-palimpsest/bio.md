@@ -1,0 +1,1 @@
+Reza Mensah (b. 1994, a border town between two countries that no longer exist) lives and works between Guangzhou and Oaxaca. Their practice spans essay film, writing and long-term collaboration with communities. Recent presentations include the Berlin Biennale and documenta. They were a resident at Villa Romana, Florence and are represented by Galería Umbral, Mexico City.

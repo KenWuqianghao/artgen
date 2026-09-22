@@ -1,0 +1,77 @@
+{
+  "seed": 105,
+  "title": "Portrait of a Potentiality as Iron Filings",
+  "artist": "Ravi Lindqvist",
+  "is_collective": false,
+  "artist_birth_year": 1983,
+  "artist_birthplace": "a fishing port on the Baltic",
+  "artist_cities": [
+    "São Paulo",
+    "Nairobi"
+  ],
+  "year": 2026,
+  "form": "essay film",
+  "kind": "video",
+  "channels": 1,
+  "duration": "7'59\"",
+  "dimensions": "single-channel black-and-white video, sound, 7'59\", loop",
+  "materials": [
+    "iron filings",
+    "unfired bricks",
+    "raw unfired clay"
+  ],
+  "technique": "hand-dyed in USB cables",
+  "video_motifs": [
+    "a choir singing a shipping forecast",
+    "an underwater shot of mosquito netting sinking",
+    "an empty swimming pool at dusk"
+  ],
+  "theme": "cosmotechnics",
+  "theme_secondary": "opacity and refusal",
+  "keyword": "the loom as computer",
+  "keyword_secondary": "the right not to be understood",
+  "theorists": [
+    {
+      "name": "Walter Mignolo",
+      "work": "The Darker Side of Western Modernity",
+      "concept": "epistemic disobedience",
+      "year": 2011
+    },
+    {
+      "name": "Elizabeth Povinelli",
+      "work": "Geontologies",
+      "concept": "geontopower",
+      "year": 2016
+    },
+    {
+      "name": "Mark Fisher",
+      "work": "Ghosts of My Life",
+      "concept": "hauntology",
+      "year": 2014
+    }
+  ],
+  "noun": "potentiality",
+  "adjective": "quiet",
+  "verb": "rehearses",
+  "adverb": "violently",
+  "adverb2": "poetically",
+  "venue": "an abandoned cinema near Rialto",
+  "gallery": "Sediment, New York",
+  "funder": "the Prince Claus Fund",
+  "biennials": [
+    "the Dakar Biennale",
+    "the Yokohama Triennale"
+  ],
+  "residency": "Künstlerhaus Bethanien, Berlin",
+  "epigraph": "\"The garden is the smallest parcel of the world and then it is the totality of the world.\" — Michel Foucault",
+  "photo_style": "installation view at dusk, blue hour light through arched windows, a single silhouetted visitor for scale, atmospheric",
+  "video_style": "handheld, intimate, overexposed highlights, VHS artefacts, archival feeling",
+  "curator": "Ngozi Mahfouz",
+  "curator_title": "Curator-at-Large",
+  "foreign": {
+    "word": "Tarab",
+    "translation": "musical ecstasy",
+    "lang": "Arabic"
+  },
+  "_rng_state": 0.35787421681492015
+}

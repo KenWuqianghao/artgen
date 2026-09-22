@@ -1,0 +1,1 @@
+Adaeze Mahfouz (b. 1978, a sugar plantation in Bahia) lives and works between São Paulo and Port of Spain. Their practice spans durational performance, radio and the study of vernacular building. Recent presentations include the Sydney Biennale and the Berlin Biennale. They were a resident at Villa Romana, Florence and are represented by Galería Umbral, Mexico City.

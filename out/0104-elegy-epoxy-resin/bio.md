@@ -1,0 +1,1 @@
+Leila Tanaka-Gruber (b. 1975, a cooperative farm in Sardinia) lives and works between Ho Chi Minh City and Marseille. Their practice spans multi-channel video installation, writing and long-term collaboration with communities. Recent presentations include the Kochi-Muziris Biennale and documenta. They were a resident at Skowhegan and are represented by Tarpaulin, Rotterdam.

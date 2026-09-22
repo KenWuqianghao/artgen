@@ -1,0 +1,77 @@
+{
+  "seed": 104,
+  "title": "Elegy (epoxy resin)",
+  "artist": "Leila Tanaka-Gruber",
+  "is_collective": false,
+  "artist_birth_year": 1975,
+  "artist_birthplace": "a cooperative farm in Sardinia",
+  "artist_cities": [
+    "Ho Chi Minh City",
+    "Marseille"
+  ],
+  "year": 2026,
+  "form": "multi-channel video installation",
+  "kind": "video",
+  "channels": 9,
+  "duration": "32'34\"",
+  "dimensions": "9-channel colour video, sound, 32'34\", loop",
+  "materials": [
+    "epoxy resin",
+    "indigo",
+    "marble dust"
+  ],
+  "technique": "suspended from the ceiling at varying heights",
+  "video_motifs": [
+    "archival footage of a border crossing, slowed 400%",
+    "a child sleeping on a pile of plastic bottles",
+    "close-up of soil from the artist's grandmother's village being burned"
+  ],
+  "theme": "translation and untranslatability",
+  "theme_secondary": "care and repair",
+  "keyword": "the mother tongue",
+  "keyword_secondary": "the domestic",
+  "theorists": [
+    {
+      "name": "Achille Mbembe",
+      "work": "Necropolitics",
+      "concept": "necropower",
+      "year": 2019
+    },
+    {
+      "name": "Mark Fisher",
+      "work": "Ghosts of My Life",
+      "concept": "hauntology",
+      "year": 2014
+    },
+    {
+      "name": "Karen Barad",
+      "work": "Meeting the Universe Halfway",
+      "concept": "intra-action",
+      "year": 2007
+    }
+  ],
+  "noun": "corporeality",
+  "adjective": "non-linear",
+  "verb": "metabolises",
+  "adverb": "subversively",
+  "adverb2": "insistently",
+  "venue": "a former boatyard on Giudecca",
+  "gallery": "Tarpaulin, Rotterdam",
+  "funder": "the Norwegian Embassy",
+  "biennials": [
+    "the Kochi-Muziris Biennale",
+    "documenta"
+  ],
+  "residency": "Skowhegan",
+  "epigraph": "\"The garden is the smallest parcel of the world and then it is the totality of the world.\" — Michel Foucault",
+  "photo_style": "installation view at dusk, blue hour light through arched windows, a single silhouetted visitor for scale, atmospheric",
+  "video_style": "static wide shot, long take, natural light, documentary realism, 16mm grain",
+  "curator": "Lin Halloran",
+  "curator_title": "Curator, Biennale Arte 2026",
+  "foreign": {
+    "word": "Tarab",
+    "translation": "musical ecstasy",
+    "lang": "Arabic"
+  },
+  "_rng_state": 0.4773259880595462
+}
