@@ -14,22 +14,23 @@ def _kw(k):
 
 
 def image_prompt(spec):
-    """Prompt for exhibition documentation of the work."""
+    """Prompt for exhibition documentation of the work. Flat, honest, un-cinematic on purpose."""
+    comp = spec.get("composition", "")
     if spec["kind"] == "video":
-        subject = (
-            (f"a dark gallery with one very large floor-to-ceiling video projection; " if spec["channels"] == 1 else
-             f"a dark gallery with {spec['channels']} large video screens of different sizes at different heights; ") +
-            f"on the screens: {spec['video_motifs'][0]}, {spec['video_motifs'][1]}, {spec['video_motifs'][2]}; "
-            f"screens glow and light the concrete floor; a few silhouetted visitors sit on the floor"
-        )
+        if spec["channels"] and spec["channels"] > 1:
+            subject = (f"a dark gallery with {spec['channels']} video projections of different sizes on temporary walls; "
+                       f"on the screens: {comp}; some visitors' backs")
+        else:
+            subject = f"a dark room with one large video projection on a bare wall showing {comp}; a bench; the projector visible on a stand"
+    elif spec["kind"] == "painting":
+        subject = f"{comp}; {spec['materials'][0]}; hung on a wall"
     else:
-        subject = (
-            f"a large-scale contemporary art installation made of {_and_list(spec['materials'])}, {spec['technique']}"
-        )
+        subject = f"{comp}; materials: {_and_list(spec['materials'])}"
     return (
-        f"{subject}. Located in {spec['venue']}, Venice Biennale. "
-        f"The work evokes {spec['theme']} and {_kw(spec['keyword'])}. "
-        f"{spec['photo_style']}. No text, no captions, no watermark."
+        f"Documentation photograph of a contemporary artwork at the Venice Biennale, {spec['venue']}. "
+        f"{subject}. "
+        f"{spec['photo_style']}. Ordinary, slightly boring, credible. "
+        f"No text overlays, no captions, no watermark, no dramatic lighting, no fog, no lens flare, no silhouettes against light."
     )
 
 
@@ -42,8 +43,8 @@ def video_prompt(spec):
             f"Minimal, contemplative, no dialogue, no text on screen."
         )
     return (
-        f"Slow walk-through of a contemporary art installation made of {_and_list(spec['materials'])}, {spec['technique']}, "
-        f"inside {spec['venue']}. {spec['video_style']}. No people speak. No text on screen."
+        f"Slow handheld walk past a contemporary artwork: {spec.get('composition', '')}, inside {spec['venue']}. "
+        f"{spec['video_style']}. No people speak. No text on screen."
     )
 
 

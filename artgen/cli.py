@@ -95,7 +95,7 @@ def main(argv=None):
     g = sub.add_parser("generate", help="generate works into an output folder, render media, build gallery")
     g.add_argument("-n", "--count", type=int, default=1)
     g.add_argument("--seed", type=int, default=None, help="base seed; work i uses seed+i")
-    g.add_argument("--kind", choices=["video", "installation"], default=None)
+    g.add_argument("--kind", choices=["video", "installation", "painting"], default=None)
     g.add_argument("--out", default="out")
     g.add_argument("--provider", choices=["dry", "fal", "replicate", "openai"], default=None)
     g.add_argument("--video", action="store_true", help="also render a video clip (fal/replicate)")
@@ -106,7 +106,7 @@ def main(argv=None):
 
     s = sub.add_parser("show", help="print one work to stdout, no files")
     s.add_argument("--seed", type=int, default=None)
-    s.add_argument("--kind", choices=["video", "installation"], default=None)
+    s.add_argument("--kind", choices=["video", "installation", "painting"], default=None)
     s.set_defaults(func=cmd_show)
 
     ga = sub.add_parser("gallery", help="rebuild out/index.html")

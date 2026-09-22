@@ -14,7 +14,7 @@ A minor, 72 BPM, felt-piano-ish additive tone. Run from video/demo: python3 scri
 import math, os, subprocess, wave
 import numpy as np
 
-SR = 48000; TOTAL = 18.6
+SR = 48000; TOTAL = 20.7
 out = np.zeros(int(TOTAL * SR) + SR)
 def midi(n): return 440.0 * 2 ** ((n - 69) / 12)
 def note(t0, m, dur, vel=0.5, bright=1.0):
@@ -55,15 +55,18 @@ for i, m in enumerate(arp2):
 # footnotes suspension E7sus, one soft note per footnote
 chord(11.45, [E2, B4, D5, A4], 2.2, vel=0.32, spread=0.02)
 for i in range(4): note(11.55 + i*0.38, [E4, G4, A4, B4][i], 1.0, vel=0.14)
+# montage: three soft notes on the cuts (Am -> F -> G colour)
+for t0, m in [(13.6, A4), (14.3, F4), (15.0, G4)]:
+    note(t0, m, 0.9, vel=0.2); note(t0 + 0.02, m - 12, 0.9, vel=0.16)
 # the work: resolve
-chord(13.6, [A2, A3, C4, E4, B4], 1.9, vel=0.4, spread=0.025, bright=0.9)
-note(13.65, E5, 1.8, vel=0.2)
+chord(15.7, [A2, A3, C4, E4, B4], 1.9, vel=0.4, spread=0.025, bright=0.9)
+note(15.75, E5, 1.8, vel=0.2)
 # stats ticks
 for i, m in enumerate([C5, E5, G5, A5]):
-    note(15.5 + i*0.3, m, 0.9, vel=0.18)
+    note(17.6 + i*0.3, m, 0.9, vel=0.18)
 # wordmark
-chord(17.05, [A2, A3, E4, A4, C5], 1.6, vel=0.38, spread=0.025, bright=0.85)
-note(17.55, E5, 1.05, vel=0.22)
+chord(19.15, [A2, A3, E4, A4, C5], 1.6, vel=0.38, spread=0.025, bright=0.85)
+note(19.65, E5, 1.05, vel=0.22)
 
 y = np.zeros_like(out); a = 0.18
 for i in range(1, len(out)): y[i] = y[i-1] + a * (out[i] - y[i-1])

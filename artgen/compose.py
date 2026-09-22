@@ -91,11 +91,21 @@ def compose(seed=None, kind=None):
     forms = d["forms"]
     if kind:
         forms = [f for f in forms if f["kind"] == kind]
-    form = rng.choice(forms)
+    form = rng.choices(forms, weights=[f.get("weight", 1) for f in forms], k=1)[0]
 
     n_materials = rng.choice([2, 3, 3, 4])
     materials = rng.sample(d["materials"], n_materials)
+    if form["kind"] == "video":
+        extras = materials[:rng.choice([0, 1, 1, 2])]
+        scent = [rng.choice(["black oud scent", "the smell of wet earth", "frankincense", "a faint smell of diesel"])] if rng.random() < 0.35 else []
+        materials = [rng.choice(["HD video", "4K video", "16mm film transferred to HD", "found footage"])] + extras + scent
+    if form["kind"] == "painting":
+        paint = rng.choice(["oil on canvas", "acrylic on canvas", "gouache on paper", "oil stick on linen", "natural pigments on cotton", "cassava-starch batik on cotton", "tempera on board"])
+        materials = [paint] + materials[:rng.choice([0, 1, 1, 2])]
     technique = fill_technique(rng.choice(d["techniques"]), rng, d["materials"], materials)
+    composition = rng.choice(d["compositions"][form["family"]])
+    composition = composition.replace("{material2}", materials[1]).replace("{material}", materials[0])
+    claim = rng.choice(d["claims"]).replace("{material}", materials[0])
 
     theme = rng.choice(d["themes"])
     theme2 = rng.choice([t for t in d["themes"] if t is not theme])
@@ -152,6 +162,16 @@ def compose(seed=None, kind=None):
         motifs = [fill_technique(m, rng, d["materials"], []) for m in motifs]
         ch = "single-channel" if channels == 1 else f"{channels}-channel"
         dims = f"{ch} {'colour' if rng.random() < 0.7 else 'black-and-white'} video, {'sound' if rng.random() < 0.8 else 'silent'}, {duration}, loop"
+    elif form["kind"] == "painting":
+        channels = None
+        duration = None
+        motifs = []
+        if "salon" in form["name"] or "gouache" in form["name"]:
+            dims = f"{rng.choice([12, 24, 40, 63])} parts, each {rng.randint(24, 60)} × {rng.randint(18, 50)} cm"
+        elif "mural" in form["name"]:
+            dims = f"{rng.randint(300, 500)} × {rng.randint(900, 2400)} cm"
+        else:
+            dims = f"{rng.randint(150, 320)} × {rng.randint(120, 420)} cm"
     else:
         channels = None
         duration = None
@@ -169,6 +189,10 @@ def compose(seed=None, kind=None):
         "year": year,
         "form": form["name"],
         "kind": form["kind"],
+        "family": form["family"],
+        "composition": composition,
+        "claim": claim,
+        "claim_adjective": rng.choice(d["adjectives"]),
         "channels": channels,
         "duration": duration,
         "dimensions": dims,

@@ -64,7 +64,7 @@ def artist_statement(spec):
         )
     else:
         body_material = (
-            f"{m[0].capitalize()}, {m[1]} and {_and_list(m[2:]) or 'light'} are {spec['technique']}. "
+            f"{spec['composition'][0].upper() + spec['composition'][1:]}. "
             f"The {m[0].split()[-1]} is not a metaphor. It is {m[0]}."
         )
 
@@ -77,7 +77,7 @@ def artist_statement(spec):
 
         f"The work draws on {t[0]['name']}'s notion of {t[0]['concept']} and {t[1]['name']}'s account of {t[1]['concept']}, "
         f"while refusing the {adj2} closure that either might imply. Between {kw} and {kw2}, a third term emerges, "
-        f"one that {verb2} rather than names.",
+        f"one that {verb2} rather than names. In this way the work {spec['claim'].replace('{adjective}', spec['claim_adjective'])}.",
 
         f"Rather than offering resolution, the work holds open a space of {spec['noun']} in which the viewer is invited "
         f"to sit with what cannot be {rng.choice(['resolved', 'translated', 'repaired', 'seen', 'owned', 'counted'])}. "
@@ -97,7 +97,7 @@ def essay(spec):
     kw2 = spec["keyword_secondary"]
     theorist_last = _last(t[0]["name"])
     fmt = {
-        "venue": spec["venue"], "material": m[0], "title": f"*{spec['title']}*", "keyword": kw,
+        "venue": spec["venue"], "material": m[0], "title": f"*{spec['title']}*", "keyword": _kw(kw),
         "keyword_word": _kw(kw).split()[-1], "artist": spec["artist"], "theme": spec["theme"],
         "noun": spec["noun"], "theorist_last": theorist_last,
     }
@@ -120,16 +120,24 @@ def essay(spec):
                 f"The cuts are not motivated. They simply happen, so that the work is never quite where one left it. "
                 f"Sound arrives from behind the viewer, unattached to any image: {sound}."
             )
-        else:
+        elif spec["channels"]:
             description = (
                 f"Installed across {spec['channels']} screens in {spec['venue']}, {fmt['title']} runs for {spec['duration']} and loops without announcement. "
                 f"On one screen, {spec['video_motifs'][0]}; on another, {spec['video_motifs'][1]}. A third shows {spec['video_motifs'][2]}. "
                 f"The channels are not synchronised. They drift, meet, and part again, so that the work is never the same work twice. "
                 f"Sound arrives from a fourth position, unattached to any image: {sound}."
             )
+    elif spec["kind"] == "painting":
+        description = (
+            f"In {spec['venue']}, {spec['artist']} shows {spec['composition']}. The medium is {m[0]}"
+            f"{(' with ' + _and_list(m[1:])) if len(m) > 1 else ''}. "
+            f"The style is {rng.choice(['deliberately naive', 'a modernist pastiche', 'flat and crowded to the edges', 'unhurried', 'closer to a diagram than a picture'])}; "
+            f"the subject is {rng.choice(['everyday life', 'the artist\'s family', 'plants', 'two bodies', 'a village that no longer exists', 'nothing in particular'])}. "
+            f"One could call it painting. The wall text prefers not to."
+        )
     else:
         description = (
-            f"In {spec['venue']}, {spec['artist']} has installed {_and_list(m)}, {spec['technique']}. "
+            f"In {spec['venue']}, {spec['artist']} has installed {spec['composition']}. The materials are {_and_list(m)}. "
             f"The scale is {rng.choice(['modest', 'overwhelming', 'deceptively domestic', 'architectural'])}; the light is {rng.choice(['withheld', 'borrowed from the street', 'a single bare bulb', 'the colour of weak tea'])}. "
             f"There is a temptation to walk quickly. The work {advs[0]} resists this. {m[1].capitalize()} {rng.choice(['catches on the shoe.', 'gives off a faint smell of the sea.', 'reflects the visitor back as a stranger.', 'has been left to settle.', 'smells faintly of burnt sugar.', 'asks for nothing in particular.'])}"
         )
@@ -143,7 +151,8 @@ def essay(spec):
         "",
         f"It is important to say what the work is not. It is not an illustration of {spec['theme']}, though {spec['theme']} is everywhere in it. "
         f"It is not a monument, though it {verbs[0]} the grammar of the monument. And it is not, despite the {m[0]}, about {m[0].split()[-1]}. "
-        f"{spec['artist']} {advs[1]} {verbs[1]} the {adjs[0]} {nouns[0]} of {kw}, treating it less as a subject than as a {rng.choice(['method', 'weather', 'companion', 'wound', 'score'])}.[^1]",
+        f"{spec['artist']} {advs[1]} {verbs[1]} the {adjs[0]} {nouns[0]} of {kw}, treating it less as a subject than as a {rng.choice(['method', 'weather', 'companion', 'wound', 'score'])}. "
+        f"The wall text tells us that the work {spec['claim'].replace('{adjective}', spec['claim_adjective'])}. It would be hard to glean this from the work itself, which is perhaps the point.[^1]",
         "",
         f"{pivot} {theorist_last} writes of {t[0]['concept']} as that which {rng.choice(['cannot be reduced to transparency', 'escapes the archive', 'lives in the gap between languages', 'refuses to be counted', 'persists after the event'])}.[^2] "
         f"{fmt['title']} takes this seriously. Its {adjs[1]} {nouns[1]} is not a failure of communication but a {rng.choice(['strategy', 'gift', 'form of care', 'refusal', 'kind of hospitality'])}. "

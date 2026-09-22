@@ -1,175 +1,981 @@
 {
   "_about": "Knowledge base for the satirical contemporary-art generator. Every list is a random-choice pool. Add to any list freely.",
-
   "forms": [
-    {"name": "multi-channel video installation", "kind": "video", "channels": [3, 5, 7, 9]},
-    {"name": "single-channel video, 16mm transferred to 4K", "kind": "video"},
-    {"name": "site-responsive installation", "kind": "installation"},
-    {"name": "sound installation", "kind": "installation"},
-    {"name": "durational performance (documentation)", "kind": "video"},
-    {"name": "lecture-performance (video documentation)", "kind": "video"},
-    {"name": "textile installation", "kind": "installation"},
-    {"name": "ceramic and found-object assemblage", "kind": "installation"},
-    {"name": "archival display", "kind": "installation"},
-    {"name": "participatory installation", "kind": "installation"},
-    {"name": "immersive environment", "kind": "installation"},
-    {"name": "kinetic sculpture", "kind": "installation"},
-    {"name": "light installation", "kind": "installation"},
-    {"name": "suspended sculpture", "kind": "installation"},
-    {"name": "floor-based installation", "kind": "installation"},
-    {"name": "living installation (with plants)", "kind": "installation"},
-    {"name": "olfactory installation", "kind": "installation"},
-    {"name": "AI-generated moving image", "kind": "video"},
-    {"name": "essay film", "kind": "video"},
-    {"name": "expanded cinema", "kind": "video"},
-    {"name": "social-practice project (documentation and residue)", "kind": "installation"},
-    {"name": "mixed-media environment", "kind": "installation"}
+    {
+      "name": "textile installation (hand-sewn patchwork banners)",
+      "kind": "installation",
+      "family": "textile",
+      "weight": 5
+    },
+    {
+      "name": "tapestry",
+      "kind": "installation",
+      "family": "textile",
+      "weight": 3
+    },
+    {
+      "name": "ceramic figure group",
+      "kind": "installation",
+      "family": "ceramic",
+      "weight": 4
+    },
+    {
+      "name": "ceramic vessels and found objects",
+      "kind": "installation",
+      "family": "ceramic",
+      "weight": 3
+    },
+    {
+      "name": "earth installation",
+      "kind": "installation",
+      "family": "earth",
+      "weight": 4
+    },
+    {
+      "name": "living installation (with plants)",
+      "kind": "installation",
+      "family": "earth",
+      "weight": 3
+    },
+    {
+      "name": "archival display",
+      "kind": "installation",
+      "family": "archive",
+      "weight": 4
+    },
+    {
+      "name": "reading room / social-practice presentation",
+      "kind": "installation",
+      "family": "archive",
+      "weight": 3
+    },
+    {
+      "name": "altar",
+      "kind": "installation",
+      "family": "shrine",
+      "weight": 3
+    },
+    {
+      "name": "processional sculpture group",
+      "kind": "installation",
+      "family": "figure",
+      "weight": 2
+    },
+    {
+      "name": "cast body fragments",
+      "kind": "installation",
+      "family": "figure",
+      "weight": 2
+    },
+    {
+      "name": "hanging garments",
+      "kind": "installation",
+      "family": "textile",
+      "weight": 3
+    },
+    {
+      "name": "sound installation",
+      "kind": "installation",
+      "family": "sound",
+      "weight": 3
+    },
+    {
+      "name": "found-object assemblage",
+      "kind": "installation",
+      "family": "found",
+      "weight": 4
+    },
+    {
+      "name": "site-responsive installation",
+      "kind": "installation",
+      "family": "found",
+      "weight": 2
+    },
+    {
+      "name": "large figurative painting",
+      "kind": "painting",
+      "family": "painting",
+      "weight": 5
+    },
+    {
+      "name": "salon hang of small paintings",
+      "kind": "painting",
+      "family": "painting",
+      "weight": 3
+    },
+    {
+      "name": "mural (with a collective)",
+      "kind": "painting",
+      "family": "painting",
+      "weight": 2
+    },
+    {
+      "name": "text painting",
+      "kind": "painting",
+      "family": "painting",
+      "weight": 2
+    },
+    {
+      "name": "works on paper (gouache)",
+      "kind": "painting",
+      "family": "painting",
+      "weight": 2
+    },
+    {
+      "name": "multi-channel video installation",
+      "kind": "video",
+      "family": "video",
+      "weight": 3,
+      "channels": [
+        3,
+        5,
+        8
+      ]
+    },
+    {
+      "name": "single-channel video",
+      "kind": "video",
+      "family": "video",
+      "weight": 3
+    },
+    {
+      "name": "performance for the camera (video documentation)",
+      "kind": "video",
+      "family": "video",
+      "weight": 2
+    },
+    {
+      "name": "essay film",
+      "kind": "video",
+      "family": "video",
+      "weight": 1
+    }
   ],
-
   "materials": [
-    "raw unfired clay", "salvaged timber", "hand-blown glass", "cold neon", "two-way mirror",
-    "soil from the artist's grandmother's village", "sea salt", "refined sugar", "human hair", "beeswax",
-    "hemp rope", "blue tarpaulin", "black sand", "unfired bricks", "latex", "reclaimed tin roofing",
-    "scaffolding poles", "shipping pallets", "monobloc plastic chairs", "stagnant water", "ash",
-    "gold leaf", "hand-dyed cotton", "glass beads", "cowrie shells", "climbing vines", "steel rebar",
-    "fluorescent tubes", "CRT monitors", "epoxy resin", "dried seaweed", "fishing nets", "industrial felt",
-    "animal bone", "stale bread", "uncooked rice", "discarded smartphones", "cast concrete", "fibreglass",
-    "theatrical fog", "recycled rubber", "jute grain sacks", "marble dust", "copper wire", "bitumen",
-    "mosquito netting", "thermal blankets", "cardboard", "charcoal", "turmeric", "indigo", "cochineal",
-    "expired passports (facsimile)", "cassette tape", "surveillance-camera housings", "inflatable PVC",
-    "mother-of-pearl", "coal", "lead", "cast aluminium", "silk organza", "car tyres", "denim offcuts",
-    "petrified wood", "oyster shells", "bird feathers", "melting ice", "wax candles", "wool",
-    "USB cables", "hospital curtains", "prayer mats", "plastic bottles", "sugar cane", "iron filings",
-    "porcelain shards", "military canvas", "hotel bed linen", "chalk", "clay bricks from a demolished factory"
+    "raw unfired clay",
+    "salvaged timber",
+    "hand-blown glass",
+    "cold neon",
+    "two-way mirror",
+    "soil from the artist's grandmother's village",
+    "sea salt",
+    "refined sugar",
+    "human hair",
+    "beeswax",
+    "hemp rope",
+    "blue tarpaulin",
+    "black sand",
+    "unfired bricks",
+    "latex",
+    "reclaimed tin roofing",
+    "scaffolding poles",
+    "shipping pallets",
+    "monobloc plastic chairs",
+    "stagnant water",
+    "ash",
+    "gold leaf",
+    "hand-dyed cotton",
+    "glass beads",
+    "cowrie shells",
+    "climbing vines",
+    "steel rebar",
+    "fluorescent tubes",
+    "CRT monitors",
+    "epoxy resin",
+    "dried seaweed",
+    "fishing nets",
+    "industrial felt",
+    "animal bone",
+    "stale bread",
+    "uncooked rice",
+    "discarded smartphones",
+    "cast concrete",
+    "fibreglass",
+    "theatrical fog",
+    "recycled rubber",
+    "jute grain sacks",
+    "marble dust",
+    "copper wire",
+    "bitumen",
+    "mosquito netting",
+    "thermal blankets",
+    "cardboard",
+    "charcoal",
+    "turmeric",
+    "indigo",
+    "cochineal",
+    "expired passports (facsimile)",
+    "cassette tape",
+    "surveillance-camera housings",
+    "inflatable PVC",
+    "mother-of-pearl",
+    "coal",
+    "lead",
+    "cast aluminium",
+    "silk organza",
+    "car tyres",
+    "denim offcuts",
+    "petrified wood",
+    "oyster shells",
+    "bird feathers",
+    "melting ice",
+    "wax candles",
+    "wool",
+    "USB cables",
+    "hospital curtains",
+    "prayer mats",
+    "plastic bottles",
+    "sugar cane",
+    "iron filings",
+    "porcelain shards",
+    "military canvas",
+    "hotel bed linen",
+    "chalk",
+    "clay bricks from a demolished factory"
   ],
-
   "techniques": [
-    "suspended from the ceiling at varying heights", "arranged in a strict grid on the floor",
-    "scattered across the space as if by tide", "projected onto {material}", "wrapped in {material}",
-    "cast in bronze", "embroidered by hand over eleven months", "partially carbonised", "submerged in {material}",
-    "hand-dyed in {material}", "3D-scanned and CNC-milled", "pinned directly to the wall", "sealed in vitrines",
-    "placed on plinths of unequal height", "mirror-polished", "looped indefinitely", "stacked to the ceiling",
-    "left to decay over the course of the exhibition", "activated by performers at unannounced intervals",
-    "lit by a single bare bulb", "half-buried in {material}", "connected by a web of {material}",
-    "encased in {material}", "arranged in a spiral", "hung like laundry", "leaning against the wall",
-    "bound together with {material}", "slowly rotating", "dripping onto {material}", "repeated 340 times"
+    "suspended from the ceiling at varying heights",
+    "arranged in a strict grid on the floor",
+    "scattered across the space as if by tide",
+    "projected onto {material}",
+    "wrapped in {material}",
+    "cast in bronze",
+    "embroidered by hand over eleven months",
+    "partially carbonised",
+    "submerged in {material}",
+    "hand-dyed in {material}",
+    "3D-scanned and CNC-milled",
+    "pinned directly to the wall",
+    "sealed in vitrines",
+    "placed on plinths of unequal height",
+    "mirror-polished",
+    "looped indefinitely",
+    "stacked to the ceiling",
+    "left to decay over the course of the exhibition",
+    "activated by performers at unannounced intervals",
+    "lit by a single bare bulb",
+    "half-buried in {material}",
+    "connected by a web of {material}",
+    "encased in {material}",
+    "arranged in a spiral",
+    "hung like laundry",
+    "leaning against the wall",
+    "bound together with {material}",
+    "slowly rotating",
+    "dripping onto {material}",
+    "repeated 340 times"
   ],
-
   "video_motifs": [
-    "a hand slowly braiding {material}", "waves rendered in black and white, reversed", "a drone shot of a salt flat",
-    "an empty swimming pool at dusk", "a woman reading a list of names to the sea", "close-up of {material} being burned",
-    "a horse standing in a parking garage", "archival footage of a border crossing, slowed 400%",
-    "a child sleeping on a pile of {material}", "text scrolling too fast to read", "a choir singing a shipping forecast",
-    "two people holding a mirror between them in a field", "a factory floor with no workers", "a glacier, upside down",
-    "a machine translation of a lullaby, read aloud by a synthetic voice", "hands passing a stone from one person to the next",
-    "a dancer moving through a flooded library", "the artist's mother peeling fruit in silence",
-    "a data centre filmed with a thermal camera", "an underwater shot of {material} sinking",
-    "someone sweeping the sea with a broom", "a burning piano on a frozen lake", "a satellite feed with the sound removed",
-    "a plant growing in time-lapse next to a sleeping man in real time", "moths circling a floodlight"
+    "the artist dragging a long trail of blue fabric through a forest to a waterfall",
+    "the artist reenacting an ancestral ritual alone for the camera, in a field",
+    "a person walking through a field with a dowsing rod, handheld first-person footage",
+    "a machine translation of a lullaby, read aloud by a synthetic voice over slow footage of the sea",
+    "the artist's mother peeling fruit in silence in a kitchen",
+    "archival footage of a border crossing, slowed down, with subtitles of a poem",
+    "a horse standing in a parking garage, static shot",
+    "hands passing a stone from one person to the next, close-up",
+    "a data centre filmed with a thermal camera, no sound",
+    "a woman reading a list of names to the sea",
+    "an empty swimming pool at dusk, one long take",
+    "someone sweeping the sea with a broom",
+    "a child sleeping on a pile of {material}",
+    "text scrolling too fast to read",
+    "a choir singing a shipping forecast",
+    "a factory floor with no workers",
+    "a glacier, upside down",
+    "a plant growing in time-lapse next to a sleeping man in real time"
   ],
-
   "themes": [
-    {"name": "decolonial memory", "keywords": ["colonial archive", "restitution", "the plantation", "the museum as tomb"]},
-    {"name": "diaspora and migration", "keywords": ["the border", "the boat", "the waiting room", "the paperwork of belonging"]},
-    {"name": "the Anthropocene", "keywords": ["deep time", "geological trauma", "the fossil", "planetary exhaustion"]},
-    {"name": "extractivism", "keywords": ["the mine", "lithium", "the open pit", "the logistics of ruin"]},
-    {"name": "care and repair", "keywords": ["mending", "the domestic", "invisible labour", "tenderness as method"]},
-    {"name": "the counter-archive", "keywords": ["the missing document", "oral history", "the redacted page", "rumour as evidence"]},
-    {"name": "indigenous cosmologies", "keywords": ["the ancestor", "the river as kin", "non-linear time", "land as body"]},
-    {"name": "queer ecologies", "keywords": ["the wetland", "mutation", "non-reproductive futurity", "the swamp"]},
-    {"name": "labour and the exhausted body", "keywords": ["the warehouse", "the gig", "the night shift", "the broken back"]},
-    {"name": "hauntology", "keywords": ["the ghost", "lost futures", "the echo", "the unfinished"]},
-    {"name": "water as witness", "keywords": ["the tide", "the lagoon", "the drowned", "hydrofeminism"]},
-    {"name": "grief and mourning", "keywords": ["the wake", "the funeral", "the absent chair", "collective lament"]},
-    {"name": "surveillance and the algorithmic gaze", "keywords": ["the dataset", "the face", "the leak", "predictive violence"]},
-    {"name": "the more-than-human", "keywords": ["mycelium", "the microbe", "interspecies kinship", "the stone that listens"]},
-    {"name": "the commons", "keywords": ["the enclosure", "the assembly", "the shared meal", "the fence"]},
-    {"name": "infrastructure and ruin", "keywords": ["the pipeline", "the dam", "the abandoned mall", "the undersea cable"]},
-    {"name": "the garden as resistance", "keywords": ["the creole garden", "the seed", "the weed", "cultivation under duress"]},
-    {"name": "minor keys and the margins", "keywords": ["the whisper", "the footnote", "the untranslatable", "listening"]},
-    {"name": "opacity and refusal", "keywords": ["the veil", "the closed door", "the right not to be understood", "silence"]},
-    {"name": "fugitivity", "keywords": ["the escape route", "the maroon", "the undercommons", "the hidden path"]},
-    {"name": "the wound and the scar", "keywords": ["the suture", "the healed-over", "inherited pain", "the body as map"]},
-    {"name": "plant intelligence", "keywords": ["the root system", "vegetal time", "phototropism", "the forest as mind"]},
-    {"name": "translation and untranslatability", "keywords": ["the mother tongue", "the accent", "the mis-hearing", "the gap"]},
-    {"name": "spectral capitalism", "keywords": ["the debt", "the derivative", "the ghost of value", "the empty office"]},
-    {"name": "cosmotechnics", "keywords": ["the ritual machine", "ancestral computation", "the loom as computer", "the oracle"]},
-    {"name": "slow violence", "keywords": ["the toxic plume", "the delayed harm", "the invisible dose", "sacrifice zones"]},
-    {"name": "hospitality and the stranger", "keywords": ["the threshold", "the guest", "the table set for no one", "the host"]},
-    {"name": "the body as archive", "keywords": ["muscle memory", "the scar", "inherited gesture", "the DNA of a dance"]},
-    {"name": "post-internet melancholy", "keywords": ["the dead link", "the abandoned profile", "the buffering wheel", "the cloud"]},
-    {"name": "sonic resistance", "keywords": ["the hum", "the drum", "frequencies of protest", "the unrecorded song"]}
+    {
+      "name": "decolonial memory",
+      "keywords": [
+        "colonial archive",
+        "restitution",
+        "the plantation",
+        "the museum as tomb"
+      ]
+    },
+    {
+      "name": "diaspora and migration",
+      "keywords": [
+        "the border",
+        "the boat",
+        "the waiting room",
+        "the paperwork of belonging"
+      ]
+    },
+    {
+      "name": "the Anthropocene",
+      "keywords": [
+        "deep time",
+        "geological trauma",
+        "the fossil",
+        "planetary exhaustion"
+      ]
+    },
+    {
+      "name": "extractivism",
+      "keywords": [
+        "the mine",
+        "lithium",
+        "the open pit",
+        "the logistics of ruin"
+      ]
+    },
+    {
+      "name": "care and repair",
+      "keywords": [
+        "mending",
+        "the domestic",
+        "invisible labour",
+        "tenderness as method"
+      ]
+    },
+    {
+      "name": "the counter-archive",
+      "keywords": [
+        "the missing document",
+        "oral history",
+        "the redacted page",
+        "rumour as evidence"
+      ]
+    },
+    {
+      "name": "indigenous cosmologies",
+      "keywords": [
+        "the ancestor",
+        "the river as kin",
+        "non-linear time",
+        "land as body"
+      ]
+    },
+    {
+      "name": "queer ecologies",
+      "keywords": [
+        "the wetland",
+        "mutation",
+        "non-reproductive futurity",
+        "the swamp"
+      ]
+    },
+    {
+      "name": "labour and the exhausted body",
+      "keywords": [
+        "the warehouse",
+        "the gig",
+        "the night shift",
+        "the broken back"
+      ]
+    },
+    {
+      "name": "hauntology",
+      "keywords": [
+        "the ghost",
+        "lost futures",
+        "the echo",
+        "the unfinished"
+      ]
+    },
+    {
+      "name": "water as witness",
+      "keywords": [
+        "the tide",
+        "the lagoon",
+        "the drowned",
+        "hydrofeminism"
+      ]
+    },
+    {
+      "name": "grief and mourning",
+      "keywords": [
+        "the wake",
+        "the funeral",
+        "the absent chair",
+        "collective lament"
+      ]
+    },
+    {
+      "name": "surveillance and the algorithmic gaze",
+      "keywords": [
+        "the dataset",
+        "the face",
+        "the leak",
+        "predictive violence"
+      ]
+    },
+    {
+      "name": "the more-than-human",
+      "keywords": [
+        "mycelium",
+        "the microbe",
+        "interspecies kinship",
+        "the stone that listens"
+      ]
+    },
+    {
+      "name": "the commons",
+      "keywords": [
+        "the enclosure",
+        "the assembly",
+        "the shared meal",
+        "the fence"
+      ]
+    },
+    {
+      "name": "infrastructure and ruin",
+      "keywords": [
+        "the pipeline",
+        "the dam",
+        "the abandoned mall",
+        "the undersea cable"
+      ]
+    },
+    {
+      "name": "the garden as resistance",
+      "keywords": [
+        "the creole garden",
+        "the seed",
+        "the weed",
+        "cultivation under duress"
+      ]
+    },
+    {
+      "name": "minor keys and the margins",
+      "keywords": [
+        "the whisper",
+        "the footnote",
+        "the untranslatable",
+        "listening"
+      ]
+    },
+    {
+      "name": "opacity and refusal",
+      "keywords": [
+        "the veil",
+        "the closed door",
+        "the right not to be understood",
+        "silence"
+      ]
+    },
+    {
+      "name": "fugitivity",
+      "keywords": [
+        "the escape route",
+        "the maroon",
+        "the undercommons",
+        "the hidden path"
+      ]
+    },
+    {
+      "name": "the wound and the scar",
+      "keywords": [
+        "the suture",
+        "the healed-over",
+        "inherited pain",
+        "the body as map"
+      ]
+    },
+    {
+      "name": "plant intelligence",
+      "keywords": [
+        "the root system",
+        "vegetal time",
+        "phototropism",
+        "the forest as mind"
+      ]
+    },
+    {
+      "name": "translation and untranslatability",
+      "keywords": [
+        "the mother tongue",
+        "the accent",
+        "the mis-hearing",
+        "the gap"
+      ]
+    },
+    {
+      "name": "spectral capitalism",
+      "keywords": [
+        "the debt",
+        "the derivative",
+        "the ghost of value",
+        "the empty office"
+      ]
+    },
+    {
+      "name": "cosmotechnics",
+      "keywords": [
+        "the ritual machine",
+        "ancestral computation",
+        "the loom as computer",
+        "the oracle"
+      ]
+    },
+    {
+      "name": "slow violence",
+      "keywords": [
+        "the toxic plume",
+        "the delayed harm",
+        "the invisible dose",
+        "sacrifice zones"
+      ]
+    },
+    {
+      "name": "hospitality and the stranger",
+      "keywords": [
+        "the threshold",
+        "the guest",
+        "the table set for no one",
+        "the host"
+      ]
+    },
+    {
+      "name": "the body as archive",
+      "keywords": [
+        "muscle memory",
+        "the scar",
+        "inherited gesture",
+        "the DNA of a dance"
+      ]
+    },
+    {
+      "name": "post-internet melancholy",
+      "keywords": [
+        "the dead link",
+        "the abandoned profile",
+        "the buffering wheel",
+        "the cloud"
+      ]
+    },
+    {
+      "name": "sonic resistance",
+      "keywords": [
+        "the hum",
+        "the drum",
+        "frequencies of protest",
+        "the unrecorded song"
+      ]
+    },
+    {
+      "name": "relationality",
+      "keywords": [
+        "the kin",
+        "the neighbour",
+        "the interdependence",
+        "the shared breath"
+      ]
+    },
+    {
+      "name": "infrastructure",
+      "keywords": [
+        "the power grid",
+        "the pipeline",
+        "the civil servant's window",
+        "the fence"
+      ]
+    },
+    {
+      "name": "the polycrisis",
+      "keywords": [
+        "the tornado of debris",
+        "the burned house",
+        "the cascading disaster",
+        "the flood line"
+      ]
+    },
+    {
+      "name": "the artist-run space",
+      "keywords": [
+        "the collective",
+        "the kitchen",
+        "the reading room",
+        "the school"
+      ]
+    },
+    {
+      "name": "inherited practice",
+      "keywords": [
+        "the grandmother's loom",
+        "the mother's kitchen",
+        "the ancestral pot",
+        "the family album"
+      ]
+    },
+    {
+      "name": "listening",
+      "keywords": [
+        "the lower frequency",
+        "the hum",
+        "the lament",
+        "the whisper"
+      ]
+    }
   ],
-
   "theorists": [
-    {"name": "Édouard Glissant", "work": "Poetics of Relation", "concept": "opacity", "year": 1990},
-    {"name": "Fred Moten and Stefano Harney", "work": "The Undercommons", "concept": "fugitivity", "year": 2013},
-    {"name": "Donna Haraway", "work": "Staying with the Trouble", "concept": "making kin", "year": 2016},
-    {"name": "Anna Lowenhaupt Tsing", "work": "The Mushroom at the End of the World", "concept": "precarity as a mode of living", "year": 2015},
-    {"name": "Christina Sharpe", "work": "In the Wake", "concept": "wake work", "year": 2016},
-    {"name": "Saidiya Hartman", "work": "Wayward Lives, Beautiful Experiments", "concept": "critical fabulation", "year": 2019},
-    {"name": "Achille Mbembe", "work": "Necropolitics", "concept": "necropower", "year": 2019},
-    {"name": "Karen Barad", "work": "Meeting the Universe Halfway", "concept": "intra-action", "year": 2007},
-    {"name": "Astrida Neimanis", "work": "Bodies of Water", "concept": "hydrofeminism", "year": 2017},
-    {"name": "Mark Fisher", "work": "Ghosts of My Life", "concept": "hauntology", "year": 2014},
-    {"name": "Walter Mignolo", "work": "The Darker Side of Western Modernity", "concept": "epistemic disobedience", "year": 2011},
-    {"name": "Rob Nixon", "work": "Slow Violence and the Environmentalism of the Poor", "concept": "slow violence", "year": 2011},
-    {"name": "Kathryn Yusoff", "work": "A Billion Black Anthropocenes or None", "concept": "geologic life", "year": 2018},
-    {"name": "Yuk Hui", "work": "The Question Concerning Technology in China", "concept": "cosmotechnics", "year": 2016},
-    {"name": "Denise Ferreira da Silva", "work": "Unpayable Debt", "concept": "the unpayable", "year": 2022},
-    {"name": "Sara Ahmed", "work": "Queer Phenomenology", "concept": "orientation", "year": 2006},
-    {"name": "Eduardo Viveiros de Castro", "work": "Cannibal Metaphysics", "concept": "perspectivism", "year": 2009},
-    {"name": "Isabelle Stengers", "work": "In Catastrophic Times", "concept": "the intrusion of Gaia", "year": 2015},
-    {"name": "Byung-Chul Han", "work": "The Burnout Society", "concept": "the achievement subject", "year": 2010},
-    {"name": "Trinh T. Minh-ha", "work": "Woman, Native, Other", "concept": "speaking nearby", "year": 1989},
-    {"name": "Hito Steyerl", "work": "The Wretched of the Screen", "concept": "the poor image", "year": 2012},
-    {"name": "Ariella Aïsha Azoulay", "work": "Potential History", "concept": "unlearning imperialism", "year": 2019},
-    {"name": "Elizabeth Povinelli", "work": "Geontologies", "concept": "geontopower", "year": 2016},
-    {"name": "Timothy Morton", "work": "Hyperobjects", "concept": "the hyperobject", "year": 2013},
-    {"name": "Rosi Braidotti", "work": "The Posthuman", "concept": "zoe-centred egalitarianism", "year": 2013},
-    {"name": "Jack Halberstam", "work": "The Queer Art of Failure", "concept": "low theory", "year": 2011},
-    {"name": "Silvia Federici", "work": "Caliban and the Witch", "concept": "reproductive labour", "year": 2004},
-    {"name": "Gilles Deleuze and Félix Guattari", "work": "A Thousand Plateaus", "concept": "the rhizome", "year": 1980},
-    {"name": "Jacques Rancière", "work": "The Emancipated Spectator", "concept": "the distribution of the sensible", "year": 2008},
-    {"name": "Legacy Russell", "work": "Glitch Feminism", "concept": "the glitch", "year": 2020},
-    {"name": "Bruno Latour", "work": "Down to Earth", "concept": "the terrestrial", "year": 2018},
-    {"name": "Gayatri Chakravorty Spivak", "work": "Can the Subaltern Speak?", "concept": "the subaltern", "year": 1988}
+    {
+      "name": "Édouard Glissant",
+      "work": "Poetics of Relation",
+      "concept": "opacity",
+      "year": 1990
+    },
+    {
+      "name": "Fred Moten and Stefano Harney",
+      "work": "The Undercommons",
+      "concept": "fugitivity",
+      "year": 2013
+    },
+    {
+      "name": "Donna Haraway",
+      "work": "Staying with the Trouble",
+      "concept": "making kin",
+      "year": 2016
+    },
+    {
+      "name": "Anna Lowenhaupt Tsing",
+      "work": "The Mushroom at the End of the World",
+      "concept": "precarity as a mode of living",
+      "year": 2015
+    },
+    {
+      "name": "Christina Sharpe",
+      "work": "In the Wake",
+      "concept": "wake work",
+      "year": 2016
+    },
+    {
+      "name": "Saidiya Hartman",
+      "work": "Wayward Lives, Beautiful Experiments",
+      "concept": "critical fabulation",
+      "year": 2019
+    },
+    {
+      "name": "Achille Mbembe",
+      "work": "Necropolitics",
+      "concept": "necropower",
+      "year": 2019
+    },
+    {
+      "name": "Karen Barad",
+      "work": "Meeting the Universe Halfway",
+      "concept": "intra-action",
+      "year": 2007
+    },
+    {
+      "name": "Astrida Neimanis",
+      "work": "Bodies of Water",
+      "concept": "hydrofeminism",
+      "year": 2017
+    },
+    {
+      "name": "Mark Fisher",
+      "work": "Ghosts of My Life",
+      "concept": "hauntology",
+      "year": 2014
+    },
+    {
+      "name": "Walter Mignolo",
+      "work": "The Darker Side of Western Modernity",
+      "concept": "epistemic disobedience",
+      "year": 2011
+    },
+    {
+      "name": "Rob Nixon",
+      "work": "Slow Violence and the Environmentalism of the Poor",
+      "concept": "slow violence",
+      "year": 2011
+    },
+    {
+      "name": "Kathryn Yusoff",
+      "work": "A Billion Black Anthropocenes or None",
+      "concept": "geologic life",
+      "year": 2018
+    },
+    {
+      "name": "Yuk Hui",
+      "work": "The Question Concerning Technology in China",
+      "concept": "cosmotechnics",
+      "year": 2016
+    },
+    {
+      "name": "Denise Ferreira da Silva",
+      "work": "Unpayable Debt",
+      "concept": "the unpayable",
+      "year": 2022
+    },
+    {
+      "name": "Sara Ahmed",
+      "work": "Queer Phenomenology",
+      "concept": "orientation",
+      "year": 2006
+    },
+    {
+      "name": "Eduardo Viveiros de Castro",
+      "work": "Cannibal Metaphysics",
+      "concept": "perspectivism",
+      "year": 2009
+    },
+    {
+      "name": "Isabelle Stengers",
+      "work": "In Catastrophic Times",
+      "concept": "the intrusion of Gaia",
+      "year": 2015
+    },
+    {
+      "name": "Byung-Chul Han",
+      "work": "The Burnout Society",
+      "concept": "the achievement subject",
+      "year": 2010
+    },
+    {
+      "name": "Trinh T. Minh-ha",
+      "work": "Woman, Native, Other",
+      "concept": "speaking nearby",
+      "year": 1989
+    },
+    {
+      "name": "Hito Steyerl",
+      "work": "The Wretched of the Screen",
+      "concept": "the poor image",
+      "year": 2012
+    },
+    {
+      "name": "Ariella Aïsha Azoulay",
+      "work": "Potential History",
+      "concept": "unlearning imperialism",
+      "year": 2019
+    },
+    {
+      "name": "Elizabeth Povinelli",
+      "work": "Geontologies",
+      "concept": "geontopower",
+      "year": 2016
+    },
+    {
+      "name": "Timothy Morton",
+      "work": "Hyperobjects",
+      "concept": "the hyperobject",
+      "year": 2013
+    },
+    {
+      "name": "Rosi Braidotti",
+      "work": "The Posthuman",
+      "concept": "zoe-centred egalitarianism",
+      "year": 2013
+    },
+    {
+      "name": "Jack Halberstam",
+      "work": "The Queer Art of Failure",
+      "concept": "low theory",
+      "year": 2011
+    },
+    {
+      "name": "Silvia Federici",
+      "work": "Caliban and the Witch",
+      "concept": "reproductive labour",
+      "year": 2004
+    },
+    {
+      "name": "Gilles Deleuze and Félix Guattari",
+      "work": "A Thousand Plateaus",
+      "concept": "the rhizome",
+      "year": 1980
+    },
+    {
+      "name": "Jacques Rancière",
+      "work": "The Emancipated Spectator",
+      "concept": "the distribution of the sensible",
+      "year": 2008
+    },
+    {
+      "name": "Legacy Russell",
+      "work": "Glitch Feminism",
+      "concept": "the glitch",
+      "year": 2020
+    },
+    {
+      "name": "Bruno Latour",
+      "work": "Down to Earth",
+      "concept": "the terrestrial",
+      "year": 2018
+    },
+    {
+      "name": "Gayatri Chakravorty Spivak",
+      "work": "Can the Subaltern Speak?",
+      "concept": "the subaltern",
+      "year": 1988
+    }
   ],
-
   "verbs": [
-    "interrogates", "negotiates", "destabilises", "unsettles", "foregrounds", "reactivates", "re-inscribes",
-    "complicates", "troubles", "refuses", "gestures toward", "holds space for", "attends to", "sits with",
-    "dwells in", "thinks with", "maps", "choreographs", "stages", "excavates", "indexes", "metabolises",
-    "suspends", "reorients", "unlearns", "rehearses", "performs", "enacts", "traces", "reimagines",
-    "queers", "decentres", "materialises", "makes visible", "renders porous", "insists upon", "recuperates",
-    "speculates on", "convenes", "amplifies", "listens to", "witnesses", "re-members", "un-writes"
+    "interrogates",
+    "negotiates",
+    "destabilises",
+    "unsettles",
+    "foregrounds",
+    "reactivates",
+    "re-inscribes",
+    "complicates",
+    "troubles",
+    "refuses",
+    "gestures toward",
+    "holds space for",
+    "attends to",
+    "sits with",
+    "dwells in",
+    "thinks with",
+    "maps",
+    "choreographs",
+    "stages",
+    "excavates",
+    "indexes",
+    "metabolises",
+    "suspends",
+    "reorients",
+    "unlearns",
+    "rehearses",
+    "performs",
+    "enacts",
+    "traces",
+    "reimagines",
+    "queers",
+    "decentres",
+    "materialises",
+    "makes visible",
+    "renders porous",
+    "insists upon",
+    "recuperates",
+    "speculates on",
+    "convenes",
+    "amplifies",
+    "listens to",
+    "witnesses",
+    "re-members",
+    "un-writes"
   ],
-
   "nouns": [
-    "liminality", "spatiality", "temporality", "visuality", "corporeality", "relationality", "potentiality",
-    "precarity", "opacity", "porosity", "multiplicity", "materiality", "futurity", "entanglement", "rupture",
-    "aporia", "dispositif", "assemblage", "gesture", "proposition", "threshold", "palimpsest", "residue",
-    "trace", "aftermath", "wound", "refusal", "fugitivity", "commons", "terrain", "cartography", "grammar",
-    "syntax", "choreography", "ecology", "economy", "sediment", "afterlife", "constellation", "excess",
-    "interval", "remainder", "surplus", "infrastructure", "atmosphere", "erosion", "rehearsal", "counter-memory",
-    "worlding", "becoming", "unbecoming", "the not-yet", "the no-longer", "in-betweenness", "situatedness"
+    "liminality",
+    "spatiality",
+    "temporality",
+    "visuality",
+    "corporeality",
+    "relationality",
+    "potentiality",
+    "precarity",
+    "opacity",
+    "porosity",
+    "multiplicity",
+    "materiality",
+    "futurity",
+    "entanglement",
+    "rupture",
+    "aporia",
+    "dispositif",
+    "assemblage",
+    "gesture",
+    "proposition",
+    "threshold",
+    "palimpsest",
+    "residue",
+    "trace",
+    "aftermath",
+    "wound",
+    "refusal",
+    "fugitivity",
+    "commons",
+    "terrain",
+    "cartography",
+    "grammar",
+    "syntax",
+    "choreography",
+    "ecology",
+    "economy",
+    "sediment",
+    "afterlife",
+    "constellation",
+    "excess",
+    "interval",
+    "remainder",
+    "surplus",
+    "infrastructure",
+    "atmosphere",
+    "erosion",
+    "rehearsal",
+    "counter-memory",
+    "worlding",
+    "becoming",
+    "unbecoming",
+    "the not-yet",
+    "the no-longer",
+    "in-betweenness",
+    "situatedness"
   ],
-
   "adjectives": [
-    "speculative", "transversal", "biopolitical", "geopoetic", "more-than-human", "post-anthropocentric",
-    "decolonial", "situated", "embodied", "precarious", "spectral", "submerged", "vernacular", "fugitive",
-    "minor", "porous", "entangled", "fragmentary", "durational", "site-responsive", "intergenerational",
-    "trans-corporeal", "extractive", "ancestral", "subaltern", "hauntological", "planetary", "tentacular",
-    "elemental", "relational", "polyphonic", "diasporic", "unresolved", "tender", "insurgent", "sedimented",
-    "queer", "vegetal", "oceanic", "post-extractive", "counter-hegemonic", "non-linear", "quiet", "opaque"
+    "speculative",
+    "transversal",
+    "biopolitical",
+    "geopoetic",
+    "more-than-human",
+    "post-anthropocentric",
+    "decolonial",
+    "situated",
+    "embodied",
+    "precarious",
+    "spectral",
+    "submerged",
+    "vernacular",
+    "fugitive",
+    "minor",
+    "porous",
+    "entangled",
+    "fragmentary",
+    "durational",
+    "site-responsive",
+    "intergenerational",
+    "trans-corporeal",
+    "extractive",
+    "ancestral",
+    "subaltern",
+    "hauntological",
+    "planetary",
+    "tentacular",
+    "elemental",
+    "relational",
+    "polyphonic",
+    "diasporic",
+    "unresolved",
+    "tender",
+    "insurgent",
+    "sedimented",
+    "queer",
+    "vegetal",
+    "oceanic",
+    "post-extractive",
+    "counter-hegemonic",
+    "non-linear",
+    "quiet",
+    "opaque"
   ],
-
   "adverbs": [
-    "radically", "quietly", "playfully", "subversively", "tenderly", "insistently", "obliquely", "deliberately",
-    "stubbornly", "softly", "urgently", "patiently", "violently", "gently", "collectively", "unapologetically",
-    "materially", "poetically", "critically", "intimately"
+    "radically",
+    "quietly",
+    "playfully",
+    "subversively",
+    "tenderly",
+    "insistently",
+    "obliquely",
+    "deliberately",
+    "stubbornly",
+    "softly",
+    "urgently",
+    "patiently",
+    "violently",
+    "gently",
+    "collectively",
+    "unapologetically",
+    "materially",
+    "poetically",
+    "critically",
+    "intimately"
   ],
-
   "title_templates": [
     "Untitled ({keyword})",
     "The {noun_cap} of {keyword_cap}",
@@ -202,92 +1008,303 @@
     "Soft {noun_cap}, Hard {keyword_cap}",
     "The {keyword_cap} Does Not Want to Be Seen"
   ],
-
   "foreign_words": [
-    {"word": "Saudade", "translation": "a longing for what is absent", "lang": "Portuguese"},
-    {"word": "Ubuntu", "translation": "I am because we are", "lang": "Nguni"},
-    {"word": "Hiraeth", "translation": "a homesickness for a place that never was", "lang": "Welsh"},
-    {"word": "Kintsugi", "translation": "golden repair", "lang": "Japanese"},
-    {"word": "Sumud", "translation": "steadfastness", "lang": "Arabic"},
-    {"word": "Mono no aware", "translation": "the pathos of things", "lang": "Japanese"},
-    {"word": "Duende", "translation": "the dark sound", "lang": "Spanish"},
-    {"word": "Toska", "translation": "a dull ache of the soul", "lang": "Russian"},
-    {"word": "Sehnsucht", "translation": "the longing for a distant elsewhere", "lang": "German"},
-    {"word": "Buen vivir", "translation": "living well, together", "lang": "Spanish / Quechua"},
-    {"word": "Whakapapa", "translation": "genealogy, layering", "lang": "Māori"},
-    {"word": "Tarab", "translation": "musical ecstasy", "lang": "Arabic"},
-    {"word": "Pachamama", "translation": "the world-mother", "lang": "Quechua"},
-    {"word": "Ma", "translation": "the pause between", "lang": "Japanese"},
-    {"word": "Natsukashii", "translation": "a sweet remembering", "lang": "Japanese"},
-    {"word": "Lagom", "translation": "just enough", "lang": "Swedish"},
-    {"word": "Sankofa", "translation": "go back and fetch it", "lang": "Twi"},
-    {"word": "Wu wei", "translation": "effortless action", "lang": "Chinese"},
-    {"word": "Xiāngchóu", "translation": "nostalgia for the native soil", "lang": "Chinese"},
-    {"word": "Wabi-sabi", "translation": "the beauty of the imperfect", "lang": "Japanese"}
+    {
+      "word": "Saudade",
+      "translation": "a longing for what is absent",
+      "lang": "Portuguese"
+    },
+    {
+      "word": "Ubuntu",
+      "translation": "I am because we are",
+      "lang": "Nguni"
+    },
+    {
+      "word": "Hiraeth",
+      "translation": "a homesickness for a place that never was",
+      "lang": "Welsh"
+    },
+    {
+      "word": "Kintsugi",
+      "translation": "golden repair",
+      "lang": "Japanese"
+    },
+    {
+      "word": "Sumud",
+      "translation": "steadfastness",
+      "lang": "Arabic"
+    },
+    {
+      "word": "Mono no aware",
+      "translation": "the pathos of things",
+      "lang": "Japanese"
+    },
+    {
+      "word": "Duende",
+      "translation": "the dark sound",
+      "lang": "Spanish"
+    },
+    {
+      "word": "Toska",
+      "translation": "a dull ache of the soul",
+      "lang": "Russian"
+    },
+    {
+      "word": "Sehnsucht",
+      "translation": "the longing for a distant elsewhere",
+      "lang": "German"
+    },
+    {
+      "word": "Buen vivir",
+      "translation": "living well, together",
+      "lang": "Spanish / Quechua"
+    },
+    {
+      "word": "Whakapapa",
+      "translation": "genealogy, layering",
+      "lang": "Māori"
+    },
+    {
+      "word": "Tarab",
+      "translation": "musical ecstasy",
+      "lang": "Arabic"
+    },
+    {
+      "word": "Pachamama",
+      "translation": "the world-mother",
+      "lang": "Quechua"
+    },
+    {
+      "word": "Ma",
+      "translation": "the pause between",
+      "lang": "Japanese"
+    },
+    {
+      "word": "Natsukashii",
+      "translation": "a sweet remembering",
+      "lang": "Japanese"
+    },
+    {
+      "word": "Lagom",
+      "translation": "just enough",
+      "lang": "Swedish"
+    },
+    {
+      "word": "Sankofa",
+      "translation": "go back and fetch it",
+      "lang": "Twi"
+    },
+    {
+      "word": "Wu wei",
+      "translation": "effortless action",
+      "lang": "Chinese"
+    },
+    {
+      "word": "Xiāngchóu",
+      "translation": "nostalgia for the native soil",
+      "lang": "Chinese"
+    },
+    {
+      "word": "Wabi-sabi",
+      "translation": "the beauty of the imperfect",
+      "lang": "Japanese"
+    }
   ],
-
   "venues": [
-    "Arsenale, Corderie", "Central Pavilion, Giardini", "a deconsecrated church in Cannaregio",
-    "the piano nobile of a crumbling palazzo on the Grand Canal", "a former boatyard on Giudecca",
-    "a disused salt warehouse at Dorsoduro", "the Gaggiandre docks", "a former convent in Castello",
-    "an abandoned cinema near Rialto", "a squero (gondola workshop) in San Trovaso"
+    "Arsenale, Corderie",
+    "Central Pavilion, Giardini",
+    "a deconsecrated church in Cannaregio",
+    "the piano nobile of a crumbling palazzo on the Grand Canal",
+    "a former boatyard on Giudecca",
+    "a disused salt warehouse at Dorsoduro",
+    "the Gaggiandre docks",
+    "a former convent in Castello",
+    "an abandoned cinema near Rialto",
+    "a squero (gondola workshop) in San Trovaso"
   ],
-
   "cities": [
-    "Lagos", "Lisbon", "Berlin", "Jakarta", "Mexico City", "Beirut", "Dakar", "Bogotá", "Tbilisi", "Manila",
-    "Ho Chi Minh City", "Nairobi", "Karachi", "Athens", "São Paulo", "Ramallah", "Kinshasa", "Ulaanbaatar",
-    "Tirana", "Marseille", "Oaxaca", "Kochi", "Yerevan", "Havana", "Luanda", "Vilnius", "Accra", "Chiang Mai",
-    "Brooklyn", "Rotterdam", "Guangzhou", "Tromsø", "Bishkek", "Port of Spain", "Cape Town", "Zürich"
+    "Lagos",
+    "Lisbon",
+    "Berlin",
+    "Jakarta",
+    "Mexico City",
+    "Beirut",
+    "Dakar",
+    "Bogotá",
+    "Tbilisi",
+    "Manila",
+    "Ho Chi Minh City",
+    "Nairobi",
+    "Karachi",
+    "Athens",
+    "São Paulo",
+    "Ramallah",
+    "Kinshasa",
+    "Ulaanbaatar",
+    "Tirana",
+    "Marseille",
+    "Oaxaca",
+    "Kochi",
+    "Yerevan",
+    "Havana",
+    "Luanda",
+    "Vilnius",
+    "Accra",
+    "Chiang Mai",
+    "Brooklyn",
+    "Rotterdam",
+    "Guangzhou",
+    "Tromsø",
+    "Bishkek",
+    "Port of Spain",
+    "Cape Town",
+    "Zürich"
   ],
-
   "birthplaces": [
-    "a village whose name no longer appears on maps", "a mining town in the Atacama", "a fishing port on the Baltic",
-    "a refugee camp outside Amman", "a suburb of Manchester", "a sugar plantation in Bahia", "an island with no cars",
-    "a Soviet-era housing block", "a rice-farming region in the Mekong Delta", "a border town between two countries that no longer exist",
-    "a former garrison city in Kashmir", "a mission station in the Kimberley", "a cooperative farm in Sardinia"
+    "a village whose name no longer appears on maps",
+    "a mining town in the Atacama",
+    "a fishing port on the Baltic",
+    "a refugee camp outside Amman",
+    "a suburb of Manchester",
+    "a sugar plantation in Bahia",
+    "an island with no cars",
+    "a Soviet-era housing block",
+    "a rice-farming region in the Mekong Delta",
+    "a border town between two countries that no longer exist",
+    "a former garrison city in Kashmir",
+    "a mission station in the Kimberley",
+    "a cooperative farm in Sardinia"
   ],
-
   "artist_first_names": [
-    "Amara", "Yusuf", "Ilse", "Tomás", "Nadia", "Kwame", "Lin", "Eshe", "Rafael", "Zainab", "Ode", "Sofia",
-    "Tariq", "Mireille", "Bao", "Ayo", "Ines", "Farid", "Ngozi", "Dario", "Leila", "Jomo", "Kaja", "Reza",
-    "Ximena", "Anouk", "Tenzin", "Marisol", "Adaeze", "Ravi", "Lucia", "Sami", "Yara", "Kofi"
+    "Amara",
+    "Yusuf",
+    "Ilse",
+    "Tomás",
+    "Nadia",
+    "Kwame",
+    "Lin",
+    "Eshe",
+    "Rafael",
+    "Zainab",
+    "Ode",
+    "Sofia",
+    "Tariq",
+    "Mireille",
+    "Bao",
+    "Ayo",
+    "Ines",
+    "Farid",
+    "Ngozi",
+    "Dario",
+    "Leila",
+    "Jomo",
+    "Kaja",
+    "Reza",
+    "Ximena",
+    "Anouk",
+    "Tenzin",
+    "Marisol",
+    "Adaeze",
+    "Ravi",
+    "Lucia",
+    "Sami",
+    "Yara",
+    "Kofi"
   ],
-
   "artist_last_names": [
-    "Okonkwo-Vieira", "Halloran", "Baptista", "Nakamura-Reyes", "Adeyemi", "Kowalczyk", "Mensah", "Petrosyan",
-    "Al-Rashid", "Dlamini", "Farkas", "Nascimento", "Ochieng", "Volkova", "Bhattacharya", "Lindqvist",
-    "Mahfouz", "Quispe", "Sørensen", "Tanaka-Gruber", "Abubakar", "Castellanos", "Yeboah", "Ionescu"
+    "Okonkwo-Vieira",
+    "Halloran",
+    "Baptista",
+    "Nakamura-Reyes",
+    "Adeyemi",
+    "Kowalczyk",
+    "Mensah",
+    "Petrosyan",
+    "Al-Rashid",
+    "Dlamini",
+    "Farkas",
+    "Nascimento",
+    "Ochieng",
+    "Volkova",
+    "Bhattacharya",
+    "Lindqvist",
+    "Mahfouz",
+    "Quispe",
+    "Sørensen",
+    "Tanaka-Gruber",
+    "Abubakar",
+    "Castellanos",
+    "Yeboah",
+    "Ionescu"
   ],
-
   "collectives": [
-    "Tidal Assembly", "Slow Loom Collective", "The Committee for Unfinished Rivers", "Studio Porous",
-    "Kitchen Table Archive", "Fugitive Frequencies", "Hydra Commons", "Grammar of Salt", "Minor Gardens Working Group"
+    "Tidal Assembly",
+    "Slow Loom Collective",
+    "The Committee for Unfinished Rivers",
+    "Studio Porous",
+    "Kitchen Table Archive",
+    "Fugitive Frequencies",
+    "Hydra Commons",
+    "Grammar of Salt",
+    "Minor Gardens Working Group"
   ],
-
   "galleries": [
-    "Galerie Nachtigall, Berlin", "Kunsthalle Ostrand", "Fondazione Marmorata, Turin", "Salt Projects, Lagos",
-    "Vermilion & Sons, London", "Estúdio Bàrbaro, São Paulo", "Galería Umbral, Mexico City", "Kupfer, Vienna",
-    "Tarpaulin, Rotterdam", "Sediment, New York", "Galerie du Seuil, Marseille", "Undercroft, Glasgow"
+    "Galerie Nachtigall, Berlin",
+    "Kunsthalle Ostrand",
+    "Fondazione Marmorata, Turin",
+    "Salt Projects, Lagos",
+    "Vermilion & Sons, London",
+    "Estúdio Bàrbaro, São Paulo",
+    "Galería Umbral, Mexico City",
+    "Kupfer, Vienna",
+    "Tarpaulin, Rotterdam",
+    "Sediment, New York",
+    "Galerie du Seuil, Marseille",
+    "Undercroft, Glasgow"
   ],
-
   "funders": [
-    "the Mondriaan Fund", "the Sharjah Art Foundation", "Pro Helvetia", "the Goethe-Institut", "Creative Scotland",
-    "the Ford Foundation", "the Norwegian Embassy", "the Japan Foundation", "Fondazione In Between Art Film",
-    "the Han Nefkens Foundation", "the Delfina Foundation", "a private collection, Geneva", "the Prince Claus Fund"
+    "the Mondriaan Fund",
+    "the Sharjah Art Foundation",
+    "Pro Helvetia",
+    "the Goethe-Institut",
+    "Creative Scotland",
+    "the Ford Foundation",
+    "the Norwegian Embassy",
+    "the Japan Foundation",
+    "Fondazione In Between Art Film",
+    "the Han Nefkens Foundation",
+    "the Delfina Foundation",
+    "a private collection, Geneva",
+    "the Prince Claus Fund"
   ],
-
   "biennials": [
-    "the Gwangju Biennale", "documenta", "the Sharjah Biennial", "the Lyon Biennale", "Manifesta", "the Kochi-Muziris Biennale",
-    "the Berlin Biennale", "the São Paulo Bienal", "the Istanbul Biennial", "the Sydney Biennale", "the Dakar Biennale",
-    "the Liverpool Biennial", "the Bienal de Cuenca", "the Yokohama Triennale"
+    "the Gwangju Biennale",
+    "documenta",
+    "the Sharjah Biennial",
+    "the Lyon Biennale",
+    "Manifesta",
+    "the Kochi-Muziris Biennale",
+    "the Berlin Biennale",
+    "the São Paulo Bienal",
+    "the Istanbul Biennial",
+    "the Sydney Biennale",
+    "the Dakar Biennale",
+    "the Liverpool Biennial",
+    "the Bienal de Cuenca",
+    "the Yokohama Triennale"
   ],
-
   "residencies": [
-    "Rijksakademie, Amsterdam", "Delfina Foundation, London", "Cité internationale des arts, Paris",
-    "Jan van Eyck Academie, Maastricht", "Gasworks, London", "Skowhegan", "Villa Romana, Florence",
-    "Künstlerhaus Bethanien, Berlin", "Ashkal Alwan, Beirut", "Raw Material Company, Dakar"
+    "Rijksakademie, Amsterdam",
+    "Delfina Foundation, London",
+    "Cité internationale des arts, Paris",
+    "Jan van Eyck Academie, Maastricht",
+    "Gasworks, London",
+    "Skowhegan",
+    "Villa Romana, Florence",
+    "Künstlerhaus Bethanien, Berlin",
+    "Ashkal Alwan, Beirut",
+    "Raw Material Company, Dakar"
   ],
-
   "epigraphs": [
     "\"We demand the right to opacity.\" — Édouard Glissant",
     "\"The wake is a problem of and for thought.\" — Christina Sharpe",
@@ -300,7 +1317,6 @@
     "\"Every archive is also a tomb.\" — attributed, provenance uncertain",
     "\"The garden is the smallest parcel of the world and then it is the totality of the world.\" — Michel Foucault"
   ],
-
   "essay_openers": [
     "Upon entering {venue}, the visitor is met first not by an object but by a smell.",
     "The work begins before you see it.",
@@ -313,7 +1329,6 @@
     "{artist} has never been interested in answers.",
     "What would it mean to take {keyword} seriously as a method?"
   ],
-
   "essay_pivots": [
     "And yet the work is not, finally, about {theme}.",
     "It would be easy to read this as a gesture of {noun}. It is not.",
@@ -324,7 +1339,6 @@
     "To stop here would be to miss the work's quiet insistence.",
     "We might pause on the word {keyword_word}."
   ],
-
   "essay_closers": [
     "The work does not resolve. It could not, and it does not try to.",
     "What remains is a question, held open.",
@@ -335,26 +1349,138 @@
     "The {keyword} remains. So, for now, do we.",
     "One leaves not having understood, which is perhaps the point."
   ],
-
   "curator_titles": [
-    "Independent Curator and Writer", "Curator-at-Large", "Associate Curator of Contemporary Art",
-    "Research Fellow in Curatorial Practice", "Head of Public Programmes", "Writer and Researcher based in {city}",
-    "PhD Candidate, Visual Cultures", "Curator, Biennale Arte 2026"
+    "Independent Curator and Writer",
+    "Curator-at-Large",
+    "Associate Curator of Contemporary Art",
+    "Research Fellow in Curatorial Practice",
+    "Head of Public Programmes",
+    "Writer and Researcher based in {city}",
+    "PhD Candidate, Visual Cultures",
+    "Curator, Biennale Arte 2026"
   ],
-
   "photo_styles": [
-    "installation view, wide-angle, exhibition documentation photography, natural light from high windows, concrete floor, muted palette, 35mm, slight film grain",
-    "installation view, dim gallery, single dramatic spotlight, deep shadows, cinematic, medium format film, desaturated",
-    "installation view in a raw industrial hall with exposed brick and iron columns, soft overcast daylight, editorial art photography, Artforum style",
-    "installation view, white cube gallery, even lighting, very high resolution, sober documentation, no people",
-    "installation view at dusk, blue hour light through arched windows, a single silhouetted visitor for scale, atmospheric"
+    "installation view for the exhibition's press kit: even diffuse daylight from high windows, neutral white balance, slightly flat and underexposed, 24mm wide angle with straight verticals, no people, raw brick walls, a visible exit sign and a cable on the floor, unremarkable, like a photo on Contemporary Art Daily",
+    "installation view, white cube gallery, flat even lighting from fluorescent ceiling tubes, neutral colours, straight-on, no people, a wall label visible at the left, documentation photography, nothing dramatic",
+    "installation view, Arsenale brick hall with wooden ceiling beams and temporary white partition walls, grey daylight, slightly dull, 35mm, one visitor in ordinary clothes seen from behind reading a label",
+    "snapshot taken by a visitor on a phone, slightly tilted, mixed lighting, a bit noisy, other visitors' backs partly in frame, a red velvet rope, honest and unflattering",
+    "installation view, deconsecrated church with marble floor and peeling frescoes, temporary track lighting on a rail, flat neutral exposure, no people, documentation"
   ],
-
   "video_styles": [
-    "slow tracking shot, 24fps, anamorphic, muted colour grading, shallow depth of field, art film",
-    "static wide shot, long take, natural light, documentary realism, 16mm grain",
-    "slow motion, black and white, high contrast, silent, projected in a dark room",
-    "handheld, intimate, overexposed highlights, VHS artefacts, archival feeling",
-    "drone shot descending slowly, desaturated, fog, ambient"
+    "static wide shot, long take, natural light, documentary realism, 16mm grain, no music",
+    "handheld, slightly shaky, overexposed highlights, ordinary daylight, feels like documentation",
+    "slow, black and white, silent, projected on a bare wall",
+    "phone-camera vertical footage rotated to landscape, low resolution, honest",
+    "drone shot moving very slowly, desaturated, no sound"
+  ],
+  "compositions": {
+    "textile": [
+      "hundreds of hand-sewn patchwork banners printed with short phrases, hanging from the rafters at different heights",
+      "a wall of traditional woven mats with the silhouette of a table woven into each one",
+      "unspun woollen streamers in muted colours hanging floor to ceiling, so visitors must walk through them",
+      "a long strip of undyed fabric printed with a poem, stretched across the entrance",
+      "a hand-embroidered, appliquéd and dyed shroud laid over a low wooden table",
+      "quilts made from {material2} hung like laundry on lines strung across the room",
+      "a tent woven from {material} large enough for six people, with cushions inside",
+      "patchwork textile paintings of a city, stitched from {material2}, leaning unstretched against the wall"
+    ],
+    "ceramic": [
+      "a circle of twelve life-size unfired clay figures, each holding one found object",
+      "two hundred small hand-built clay vessels in rows on the concrete floor, some broken",
+      "a low plinth of {material2} holding a hundred hand-sculpted replicas of an ordinary object",
+      "a rotating disc of ceramic shards and {material2}, turned slowly by a motor",
+      "glazed ceramic masks on {material2} poles at head height, facing the door",
+      "clay musical instruments on a long table, with a sign inviting visitors to play them"
+    ],
+    "earth": [
+      "a plywood box on the floor, filled to the brim with dirt from the artist's grandmother's village",
+      "the four columns of the room bricked up with unfired bricks, plants growing from the mortar",
+      "a sand painting of a power grid drawn directly on the gallery floor",
+      "a herbarium in glass vitrines beside a lead cast of an extinct bird",
+      "a garden bed of {material2} and seedlings under grow lights, watered by a visible drip system",
+      "a mound of black soil with {material2} half-buried in it, lit by one bare bulb",
+      "dried plants pressed between sheets of glass, leaning in a row against the wall"
+    ],
+    "archive": [
+      "a vitrine of photocopied documents, some redacted with black marker, and one rubber stamp",
+      "a long table of photocopied zines and pamphlets, plastic chairs, a kettle and a sign that reads FREE",
+      "photographs taken out of office windows, pinned to the wall, with handwritten testimonies on the back",
+      "a reconstruction of an artist-run space: a desk, a couch, posters, a fridge, video on a small monitor",
+      "a suitcase opened on a plinth, containing miniature replicas of the artist's earlier works",
+      "signs removed from privately owned public plazas listing prohibitions, hung in a grid",
+      "family photographs, receipts and letters pinned under {material2} on a long felt-covered wall"
+    ],
+    "shrine": [
+      "an altar with candles, family photographs, plastic flowers and a small CRT monitor playing home video",
+      "a glass-brick reconstruction of a chimney from a house that burned down",
+      "wax sculptures of sleeping toddlers on the floor beside paintings by the artist's mother",
+      "a hundred hand-sculpted dog toys on a low plinth, with drawings of a dog on the wall",
+      "a circle of chairs with one empty, a bowl of {material2} on each seat"
+    ],
+    "figure": [
+      "bronze figures in procession carrying floral wreaths and vintage serving trays",
+      "glitter-covered casts of fragments of the artist's friends' bodies, spiralling up like a tornado",
+      "an upside-down tepee of {material2} hanging from the ceiling",
+      "a reimagined equestrian monument in {material}, the rider replaced by a seated woman",
+      "life-size figures of {material} adorned with twine, beads and dried plants, standing in a ring"
+    ],
+    "sound": [
+      "a fifty-metre maze of scaffolding pipes through which an automated organ plays a lament",
+      "a circular pool of pulsating water surrounded by wooden organ pipes on the floor",
+      "glass megaphones on stands emitting insect sounds, with a faint scent in the room",
+      "radio boxes from the 1990s on white pedestals, each tuned to static",
+      "a choir recording played from speakers hidden in the trees outside the pavilion",
+      "headphones on hooks along a bare wall, each playing a different person reading a list of names"
+    ],
+    "found": [
+      "found lobster traps, buoys and rope hung from a rope made of salt",
+      "plaster, mirrors and plush toys assembled into a room-sized structure",
+      "monobloc plastic chairs stacked into a tower, wrapped in {material2}",
+      "shipping pallets and {material} arranged as a makeshift stage with a single microphone",
+      "a tornado of detritus (newspaper, flags, police tape, plastic) fixed to a circular ceiling panel",
+      "reclaimed tin roofing sheets folded into a hut, a lightbulb inside",
+      "hotel bed linen, {material2} and rope tied into a large net suspended over the floor"
+    ],
+    "painting": [
+      "a large naive figurative painting of everyday village life, bright flat colours, crowded edge to edge",
+      "forty small paintings of domestic scenes hung salon-style from floor to ceiling",
+      "a mural by a women's collective covering the whole wall, figures, plants and animals interlocking",
+      "a text painting in plain sans-serif letters reading a single lowercase phrase",
+      "gouache paintings of plants interlocking with coloured geometric shapes, small, in a long row",
+      "a large painting of two men embracing in a bedroom, in a modernist pastiche style",
+      "batik-dyed figures with wide eyes on cotton, unstretched, hung with clips",
+      "portraits of the artist's family painted on {material2}, propped on the floor"
+    ],
+    "video": [
+      "the artist dragging a long trail of blue fabric through a forest to a waterfall",
+      "the artist reenacting an ancestral ritual alone for the camera, in a field",
+      "a person walking through a field with a dowsing rod, handheld first-person footage",
+      "a machine translation of a lullaby, read aloud by a synthetic voice over slow footage of the sea",
+      "the artist's mother peeling fruit in silence in a kitchen",
+      "archival footage of a border crossing, slowed down, with subtitles of a poem",
+      "a horse standing in a parking garage, static shot",
+      "hands passing a stone from one person to the next, close-up",
+      "a data centre filmed with a thermal camera, no sound",
+      "a woman reading a list of names to the sea",
+      "an empty swimming pool at dusk, one long take",
+      "someone sweeping the sea with a broom"
+    ]
+  },
+  "claims": [
+    "invokes a memory of the work's oceanic origin but also of the practice of trading {material} for labour",
+    "refuses that convention in favour of a more personal point of view, one that centres experiences of survival and the land",
+    "upends our grounding in time and space and makes way for imagined futures free of colonialism and capitalism",
+    "explores tactics of refusal",
+    "reactivates a form of knowledge that was suppressed by the {adjective} archive",
+    "proposes grieving as a logical response to history's injustices",
+    "asks what it means to imagine a needle, a loom or a garment as a tool of resistance",
+    "operates in a register that resists the spectacular",
+    "functions as a talisman that protects against the present",
+    "makes visible the infrastructures that hold bodies in place",
+    "speaks nearby rather than about",
+    "holds space for what the institution cannot name",
+    "treats {material} not as a metaphor but as a witness",
+    "stages an encounter between the artist's grandmother's practice and the logistics of the present",
+    "subverts the power of the table"
   ]
 }
