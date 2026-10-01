@@ -140,7 +140,7 @@ def spell_small_numbers(text: str) -> str:
         start = m.start()
         sentence_start = start == 0 or text[max(0, start - 2):start] in (". ", "? ", "! ")
         return word.capitalize() if sentence_start else word
-    return re.sub(r"(?<![\d.,×–-])\b([2-9])\b(?![\d.,×–]| ×|-channel| ?(?:cm|min|sec|hrs|tonnes|kg|%))", repl, text)
+    return re.sub(r"(?<![\d.,×–-])\b([2-9])\b(?![\d.,×–]| ×|-channel| ?(?:cm|min|sec|hrs|tonnes|kg)\b|%)", repl, text)
 
 
 def tidy(text: str) -> str:
