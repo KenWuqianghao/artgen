@@ -1,0 +1,92 @@
+{
+  "01-what-the-orchard-remembers": {
+    "hash": "2f651f2474df4118",
+    "provider": "openai",
+    "file": "01-what-the-orchard-remembers.jpg"
+  },
+  "07-temple-of-joy": {
+    "hash": "ddcdc3884dee9899",
+    "provider": "openai",
+    "file": "07-temple-of-joy.jpg"
+  },
+  "02-untitled-gouache-on-paper": {
+    "hash": "42bf28a41c1f2418",
+    "provider": "openai",
+    "file": "02-untitled-gouache-on-paper.jpg"
+  },
+  "03-instructions-for-carrying-a-lagoon": {
+    "hash": "202cec371da2df29",
+    "provider": "openai",
+    "file": "03-instructions-for-carrying-a-lagoon.jpg"
+  },
+  "11-soft-dance-of-silence-jia-ting-and-me": {
+    "hash": "fe3dd61ec5c28d85",
+    "provider": "openai",
+    "file": "11-soft-dance-of-silence-jia-ting-and-me.jpg"
+  },
+  "13-longing": {
+    "hash": "4eead711694afa81",
+    "provider": "openai",
+    "file": "13-longing.jpg"
+  },
+  "04-loom-for-vikram": {
+    "hash": "fd8e112e401d5a2f",
+    "provider": "openai",
+    "file": "04-loom-for-vikram.jpg"
+  },
+  "17-two-points-in-refusal-at-once": {
+    "hash": "8e6a17e9eaaac9c8",
+    "provider": "openai",
+    "file": "17-two-points-in-refusal-at-once.jpg"
+  },
+  "05-carrying-the-threshold-home": {
+    "hash": "6b64a708a15943b1",
+    "provider": "openai",
+    "file": "05-carrying-the-threshold-home.jpg"
+  },
+  "06-arrullo": {
+    "hash": "f3820dad25528417",
+    "provider": "openai",
+    "file": "06-arrullo.jpg"
+  },
+  "16-scores-for-the-shroud": {
+    "hash": "05bcc3eabc23ee4e",
+    "provider": "openai",
+    "file": "16-scores-for-the-shroud.jpg"
+  },
+  "12-drum-after-selam": {
+    "hash": "e5ab33256f374cd6",
+    "provider": "openai",
+    "file": "12-drum-after-selam.jpg"
+  },
+  "08-to-hold-the-pillow-for-a-while": {
+    "hash": "63452fd2b690a8e4",
+    "provider": "openai",
+    "file": "08-to-hold-the-pillow-for-a-while.jpg"
+  },
+  "18-kiln-of-the-drowned-storms": {
+    "hash": "1d7df485051fafdc",
+    "provider": "openai",
+    "file": "18-kiln-of-the-drowned-storms.jpg"
+  },
+  "14-12-breads": {
+    "hash": "6d76e73ab5dabbb8",
+    "provider": "openai",
+    "file": "14-12-breads.jpg"
+  },
+  "09-between-a-field-and-a-basket": {
+    "hash": "b7fb7c2099dc0613",
+    "provider": "openai",
+    "file": "09-between-a-field-and-a-basket.jpg"
+  },
+  "15-monument-katowice": {
+    "hash": "57fa0e161930d229",
+    "provider": "openai",
+    "file": "15-monument-katowice.jpg"
+  },
+  "10-a-market-is-where-my-seeds-are": {
+    "hash": "3f16506a26e991c0",
+    "provider": "openai",
+    "file": "10-a-market-is-where-my-seeds-are.jpg"
+  }
+}

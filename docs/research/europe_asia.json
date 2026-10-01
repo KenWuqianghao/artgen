@@ -1,0 +1,2538 @@
+{
+ "scope": "Calibration corpus of REAL works, paraphrased from published reviews, curatorial texts and artist/venue pages read via scrapling (April 2024 - Oct 2026 coverage): 13th Berlin Biennale 2025, 15th (2024) and 16th (2026, opened 5 Sept 2026) Gwangju Biennale, 18th Istanbul Biennial 2025, 17th Lyon Biennale 2024, Manifesta 15 Barcelona 2024, Liverpool Biennial 2025, Taipei Biennial 2025 (title: Whispers on the Horizon, not 'Small World'), 15th Shanghai Biennale 2025, Art Basel Unlimited 2025. Unknown fields are null. Facts taken only from the page cited in each record's source (a few details marked 'reported' came from search summaries).",
+ "exhibitions": [
+  {
+   "name": "13th Berlin Biennale for Contemporary Art",
+   "year": 2025,
+   "city": "Berlin",
+   "artistic_director": "Zasha Colah (curator; Valentina Viviani assistant curator)",
+   "title_metaphor": "Urban foxes seen in Berlin are the starting image for 'fugitivity': art that slips past repressive systems. The title reads as a note or instruction passed to the viewer, who then receives 'cultural evidence'.",
+   "sections": [
+    "KW Institute for Contemporary Art",
+    "Sophiensæle",
+    "Hamburger Bahnhof - Nationalgalerie der Gegenwart",
+    "Former Courthouse Lehrter Straße",
+    "Encounters series (talks, tribunals, walks, comedy nights, unannounced 'fugitive acts')",
+    "Sister organizations: ERIAC, Filmrauschpalast Moabit, SİNEMA TRANSTOPIA, Sophiensæle"
+   ],
+   "n_artists": 60,
+   "curatorial_keywords": [
+    "fugitivity",
+    "fox",
+    "law",
+    "persecution",
+    "militarization",
+    "ecocide",
+    "orality",
+    "ephemeral",
+    "evidence",
+    "complicity",
+    "repressive contexts",
+    "humour",
+    "poetry"
+   ],
+   "critic_notes": [
+    "Artists list was held back until opening day; critics read this as fear of another documenta fifteen row, and read the whole show as evasive about Gaza.",
+    "Several critics saw an unspoken 'politics of omission' as the organising idea; one found it clever, others found it cowardly or euphemistic.",
+    "Myanmar protest art (Htein Lin, Chaw Ei Thein, Panties for Peace, Nge Nom, Sawangwongse Yawnghwe) became the de facto spine of the show.",
+    "Many works sit as small samples of larger practices; one critic compared the walk to channel-flipping on satellite radio, with wall text doing most of the work.",
+    "Hung tightly and with minimal context, mostly sculpture and installation; Lehrter Straße courthouse section called rough but stronger than the polished KW floor.",
+    "Strongest-praised items: Htein Lin's The Fly, Jane Jin Kaisen's videos of Jeju sea divers, Fredj Moussa's 16mm Decameron film, Vikrant Bhise's mural, Panties for Peace.",
+    "Frieze judged it 'belated': the political ground in Berlin moved before the opening."
+   ],
+   "sources": [
+    "https://13.berlinbiennale.de/en/news/",
+    "https://www.e-flux.com/announcements/668570/opening-of-13th-edition",
+    "https://artreview.com/13th-berlin-biennale-for-contemporary-art-various-venues-berlin-review-martin-herbert/",
+    "https://spikeartmagazine.com/articles/review-13th-berlin-biennale",
+    "https://www.e-flux.com/criticism/6782290/13th-berlin-biennale-passing-the-fugitive-on",
+    "https://www.artnews.com/art-in-america/aia-reviews/berlin-biennale-evasive-palestine-paul-klee-angel-histor-1234747787/",
+    "https://www.frieze.com/article/berlin-biennale-2025-struggles-to-react"
+   ]
+  },
+  {
+   "name": "15th Gwangju Biennale - PANSORI: A Soundscape of the 21st Century",
+   "year": 2024,
+   "city": "Gwangju",
+   "artistic_director": "Nicolas Bourriaud (with Sophia Park, Kuralai Abdukhalikova, Barbara Lagié)",
+   "title_metaphor": "Pansori is the Korean sung-storytelling form (singer plus drummer); the curators gloss pan as public space and sori as voice or noise, so 'the voice of the subalterns'. The show is pitched as an opera you can walk into, with each landscape also a soundscape.",
+   "sections": [
+    "Feedback Effect (Galleries 1-2)",
+    "Polyphony (Gallery 3)",
+    "Primordial Sound (Galleries 4-5)",
+    "Yangnim-dong satellite venues (8 sites, 12 artists)",
+    "Gwangju Biennale Pavilion (31 national and institutional pavilions)"
+   ],
+   "n_artists": 72,
+   "curatorial_keywords": [
+    "pansori",
+    "soundscape",
+    "space",
+    "relational space",
+    "feedback",
+    "polyphony",
+    "primordial sound",
+    "subalterns",
+    "Anthropocene",
+    "planet in crisis",
+    "shamanism",
+    "opera",
+    "symphony"
+   ],
+   "critic_notes": [
+    "Frieze: the sound theme is only a vague motif; sound works are walled into separate rooms; best are the big phantasmagorical set-like installations (Bondi, Hooper Schneider, Park, Shust, Leatherbury).",
+    "ArtReview: 'disconcertingly vague'; wall texts stretch pansori to mean everything; works carry almost no labels so viewers read them by form alone.",
+    "e-flux: the section texts are so broad they cannot be applied; the satellite single-artist rooms in Yangnim-dong work better than the 'opera'.",
+    "Art Newspaper: subtler on Gwangju's political history than earlier editions; opening hall is a literal black box tunnel then a wrecked office.",
+    "Recurring look: apocalyptic ruin sculpture, dioramas of fake landscape, sand, pipes, plastic, mirrors, soft-sculpted bodies, slow-motion video."
+   ],
+   "sources": [
+    "https://www.biennialassociation.org/article/the-15th-gwangju-biennale-opens/",
+    "https://www.e-flux.com/criticism/632242/15th-gwangju-biennale-pansori-a-soundscape-of-the-21st-century",
+    "https://www.frieze.com/article/15-gwangju-biennale-pansori-2024-review",
+    "https://artreview.com/5th-gwangju-biennale-review-disconcertingly-vague/",
+    "https://www.theartnewspaper.com/2024/11/21/ecological-operas-the-gwangju-biennale-2024-moves-away-from-the-ideological",
+    "https://news.artnet.com/art-world/gwangju-biennale-review-buyers-guide-2558963"
+   ]
+  },
+  {
+   "name": "16th Gwangju Biennale - You Must Change Your Life",
+   "year": 2026,
+   "city": "Gwangju",
+   "artistic_director": "Ho Tzu Nyen (with Che Kyongfa, Park Gahee, Brian Kuan Wood)",
+   "title_metaphor": "The last line of Rilke's 1908 poem 'Archaic Torso of Apollo', in which a broken statue commands the viewer to change; critics add Sloterdijk's book of the same title and the idea of self-help as a genre. Opened 5 Sept 2026, so reviews are only weeks old.",
+   "sections": [
+    "Gallery 1 Molecules and Me",
+    "Gallery 2 Bodies and Bonds",
+    "Gallery 3 Landscapes and Learning",
+    "Gallery 4 Cosmos and Change",
+    "Gallery 5 Air and Articulations"
+   ],
+   "n_artists": 43,
+   "curatorial_keywords": [
+    "change",
+    "transformation",
+    "repetition",
+    "practice",
+    "duration",
+    "molecules",
+    "bodies",
+    "landscape",
+    "cosmos",
+    "air",
+    "ritual",
+    "self-help",
+    "recurring artists",
+    "Virgil guide"
+   ],
+   "critic_notes": [
+    "Fewest artists since 1995 and one building; artists recur across all five galleries (Sasaki Ken with 50-60 paintings, Goldin+Senneby, Rossella Biscotti, Nina Canell, Rim Dong Sik).",
+    "Kunstkritikk: sincere, subdued, organic; repetition is the real method (Sloterdijk's anthropotechnics) but Sasaki and the unattributed Jeju volcanic rocks are overused.",
+    "Frieze: didactic maxim opens each room; best works are tender, bodily, personal (Amanda Heng, Sohrab Hura, Maya Watanabe).",
+    "Run-up news: Taiwan pavilion naming row, China withdrew its pavilion; foundation president apologised.",
+    "Volcanic rocks from Jeju are listed as participants on equal footing with human artists."
+   ],
+   "sources": [
+    "https://www.e-flux.com/announcements/6787672/you-must-change-your-life",
+    "https://www.frieze.com/article/16th-gwangju-biennale-2026-review",
+    "https://kunstkritikk.com/ch-ch-ch-ch-changes/",
+    "https://www.artnews.com/art-news/news/gwangju-biennale-2026-report-art-politics-controversy-1234799814/",
+    "https://artreview.com/the-self-help-gwangju-biennale-2026/"
+   ]
+  },
+  {
+   "name": "18th Istanbul Biennial - The Three-Legged Cat",
+   "year": 2025,
+   "city": "Istanbul",
+   "artistic_director": "Christine Tohmé",
+   "title_metaphor": "Istanbul's street cats as emblems of survival; a three-legged cat still jumps and plays, so loss becomes a way to build a new balance. The biennial also runs in three 'legs' over 2025-2027 (exhibition, academy, closing exhibitions).",
+   "sections": [
+    "First leg: exhibition 20 Sept - 23 Nov 2025 across 8 venues (Galata Greek School, Zihni Han, Elhamra Han, Muradiye Han, Galeri 77, Former Cone Factory, Meclis-i Mebusan 35, Garden of the Former French Orphanage)",
+    "Second leg 2026: academy",
+    "Third leg 2027: concluding exhibitions"
+   ],
+   "n_artists": 47,
+   "curatorial_keywords": [
+    "self-preservation",
+    "survival",
+    "resilience",
+    "futurity",
+    "worldbuilding",
+    "horizons of possibility",
+    "play",
+    "persistence",
+    "care",
+    "testimony",
+    "fugitive",
+    "vulnerability"
+   ],
+   "critic_notes": [
+    "Frieze: concise, matter-of-fact, no orchestral swell; strong run of video; flat painting everywhere; renovated venues feel emotionally inert.",
+    "Text zur Kunst: at least a dozen artists are repeat biennial names; many installations carry an 'informational-allegorical apparatus' and a moral at the end like a fable.",
+    "e-flux: play is the buried theme (swings, hopscotch, game consoles) yet attendants stop visitors using them.",
+    "Several works address Gaza and Palestine directly; critics note the show is silent on Turkey's own histories.",
+    "Organisational background: the previous curator selection scandal and postponement."
+   ],
+   "sources": [
+    "https://www.frieze.com/article/18th-istanbul-biennial-2025-review",
+    "https://www.e-flux.com/criticism/6782322/18th-istanbul-biennial-the-three-legged-cat",
+    "https://www.berlinartlink.com/2025/10/07/18th-istanbul-biennial-exhibition-review/",
+    "https://www.textezurkunst.de/en/articles/george-macbeth-hobbling/",
+    "https://www.dreamideamachine.com/?p=110827",
+    "https://parametric-architecture.com/18th-istanbul-biennial-2025-the-three-legged-cat/"
+   ]
+  },
+  {
+   "name": "17th Lyon Biennale - Les voix des fleuves / Crossing the water",
+   "year": 2024,
+   "city": "Lyon",
+   "artistic_director": "Alexia Fabre (curator); Isabelle Bertolotti (artistic director)",
+   "title_metaphor": "The confluence of the Rhône and Saône as a picture of human encounter; rivers carry voices and stories, and water must be crossed to reach the Other. Literary touchstones named in the text: Sally Rooney and Sylvia Plath.",
+   "sections": [
+    "Les Grandes Locos (former rail workshops, flagship)",
+    "macLyon",
+    "Institut d'art contemporain, Villeurbanne (emerging artists)",
+    "Cité internationale de la Gastronomie - Grand Hôtel-Dieu (former hospital)",
+    "Brioude and Charlieu",
+    "Residents' participatory projects, 'Resonance' programme"
+   ],
+   "n_artists": 78,
+   "curatorial_keywords": [
+    "welcoming the Other",
+    "human relationships",
+    "altruism",
+    "dialogue",
+    "hospitality",
+    "care",
+    "repair",
+    "river",
+    "confluence",
+    "collective",
+    "voices",
+    "healing"
+   ],
+   "critic_notes": [
+    "ArtReview: reads like a safe ChatGPT biennial theme; many French and Beaux-Arts de Paris names; well-intentioned but adrift in vague metaphor; compassion fatigue.",
+    "Frieze: relationships among artists and curator are the real theme; textile, sound and video installations carry the former rail depot.",
+    "Canvas: no visible curatorial ego, big monumental installations of a kind other biennials avoid; mood is mischievous.",
+    "ArtNews: nine standouts include a neon repair map, giant seesaw, 50 whistling pressure cookers, cave-singing video with resonance paintings."
+   ],
+   "sources": [
+    "https://www.e-flux.com/announcements/627801/les-voix-des-fleuves-crossing-the-water",
+    "https://artreview.com/17th-lyon-biennale-crossing-the-water-review-martin-herbert/",
+    "https://www.frieze.com/article/17-lyon-biennale-2024-review",
+    "https://www.artnews.com/list/art-news/artists/2024-biennale-de-lyon-standout-artworks-1234718687/",
+    "https://canvasonline.com/freeflow-lyon-biennale-2024/"
+   ]
+  },
+  {
+   "name": "Manifesta 15 Barcelona Metropolitana",
+   "year": 2024,
+   "city": "Barcelona (Sant Adrià de Besòs and 12 municipalities)",
+   "artistic_director": "Filipa Oliveira (creative mediator)",
+   "title_metaphor": "A nomadic European biennial that leaves the tourist centre for the industrial and suburban belt; three themes name its 'hubs'. A speculative 'regenerative' reading of art as cure for a damaged region.",
+   "sections": [
+    "Imagining Futures (Tres Xemeneies power station, Sant Adrià de Besòs)",
+    "Balancing Conflicts (Casa Gomis near the airport and others)",
+    "Cure and Care (Monastery of Sant Cugat and others)",
+    "Former Gustavo Gili publishing house (archive shows)"
+   ],
+   "n_artists": 92,
+   "curatorial_keywords": [
+    "healing",
+    "care",
+    "cure",
+    "imagining futures",
+    "balancing conflicts",
+    "periphery",
+    "eco-social",
+    "sacrifice zones",
+    "regeneration",
+    "rewilding"
+   ],
+   "critic_notes": [
+    "ArtReview: art becomes an afterthought; 'healing' is a slippery catchall; spread too thin over a huge region; old industrial venues give little spectacle.",
+    "Kunstkritikk: the three-chimney power station outshines the rest and works as the de facto main show.",
+    "Frieze: standouts are wind, braided hair, chalk blackboards, a monastery shrine of salt and glass."
+   ],
+   "sources": [
+    "https://artreview.com/manifesta-15-review-art-becomes-an-afterthought/",
+    "https://www.frieze.com/article/six-artists-manifesta-15-barcelona-2024",
+    "https://kunstkritikk.com/speak-to-the-earth/"
+   ]
+  },
+  {
+   "name": "Liverpool Biennial 2025 - BEDROCK",
+   "year": 2025,
+   "city": "Liverpool",
+   "artistic_director": "Marie-Anne McQuay (curator)",
+   "title_metaphor": "The red and yellow sandstone under Liverpool, used as a figure for other foundations: colonialism, migration, family, music, football, religion. Three programme weekends map to civic and colonial history, family, geology and time.",
+   "sections": [
+    "Bluecoat (family and heritage)",
+    "FACT",
+    "Liverpool Cathedral",
+    "Liverpool Central Library",
+    "Open Eye Gallery",
+    "Pine Court (Chinatown)",
+    "Tate Liverpool + RIBA North pop-up",
+    "The Black-E",
+    "Walker Art Gallery",
+    "20 Jordan Street",
+    "Outdoor and shopfront works"
+   ],
+   "n_artists": 30,
+   "curatorial_keywords": [
+    "bedrock",
+    "foundations",
+    "sandstone",
+    "civic",
+    "colonial legacies",
+    "family",
+    "community",
+    "resilience",
+    "belonging",
+    "heritage"
+   ],
+   "critic_notes": [
+    "Hyperallergic: fragmented over 14 venues plus outdoor works, no anchor venue, few Liverpool-connected artists; many works too weak or speculative for the theme.",
+    "Wallpaper: shines when works meet unexpected city contexts (shopfronts, pavements, cathedral).",
+    "Earth materials recur: clay, barley, soil."
+   ],
+   "sources": [
+    "https://hyperallergic.com/theres-not-enough-of-liverpool-in-the-city-2025-biennial/",
+    "https://www.wallpaper.com/art/exhibitions-shows/liverpool-biennial-2025-review",
+    "https://www.frieze.com/article/nine-highlights-liverpool-biennial-2025",
+    "https://uncoverliverpool.com/features/liverpool-biennial-2025-preview/",
+    "https://www.biennial.com/looking-back-at-liverpool-biennial-2025/"
+   ]
+  },
+  {
+   "name": "Taipei Biennial 2025 - Whispers on the Horizon",
+   "year": 2025,
+   "city": "Taipei",
+   "artistic_director": "Sam Bardaouil and Till Fellrath",
+   "title_metaphor": "Yearning: a private, percolating longing for something never fully touched. Three 'lodestar' objects from Taiwanese culture (a puppet from The Puppetmaster, a diary from a Chen Yingzhen story, a bicycle from The Stolen Bicycle) recur as trios of old museum photographs.",
+   "sections": [
+    "Taipei Fine Arts Museum, stacked white-cube floors",
+    "Historic works from the museum collection and National Palace Museum interleaved"
+   ],
+   "n_artists": 54,
+   "curatorial_keywords": [
+    "yearning",
+    "longing",
+    "desire",
+    "whisper",
+    "horizon",
+    "memory",
+    "home",
+    "impossibility",
+    "universal feeling"
+   ],
+   "critic_notes": [
+    "ArtReview: layered manifesto and overembedded conceits not needed; the works are strong and 'chatter' alone; curiously erotic show.",
+    "Frieze: playful and gently apolitical; best when using the museum's own holdings.",
+    "Reported artist count differs by source (54 vs 72)."
+   ],
+   "sources": [
+    "https://artreview.com/taipei-biennial-2025-review/",
+    "https://www.frieze.com/article/taipei-biennial-2025-review",
+    "https://www.berlinartlink.com/2025/12/16/taipei-biennial-2025-exhibition-review/"
+   ]
+  },
+  {
+   "name": "15th Shanghai Biennale - Does the flower hear the bee?",
+   "year": 2025,
+   "city": "Shanghai",
+   "artistic_director": "Kitty Scott (chief curator; Daisy Desrosiers, Xue Tan co-curators)",
+   "title_metaphor": "Scientific finding that flowers sense the sound of bee wings and make sweeter nectar in response; used to ask how human and nonhuman intelligences perceive each other. Exhibition design by all(zone) is a 'garden-like landscape' without thematic zones.",
+   "sections": [
+    "Power Station of Art atrium and floors",
+    "City Projects: Jia Yuan Hai Art Museum, VILLA tbh, Shanghai Botanical Garden Penjing Garden, klee klee & friends"
+   ],
+   "n_artists": 67,
+   "curatorial_keywords": [
+    "more-than-human world",
+    "attunement",
+    "listening",
+    "sensing",
+    "nonhuman intelligence",
+    "Indigenous knowledge",
+    "uncertainty",
+    "emergent forms-of-life",
+    "interconnection"
+   ],
+   "critic_notes": [
+    "ArtReview: strong sign-and-symbol theme; the fake flower atrium and complimentary honey sachet at the door feel like branding; wall texts often quote the artist; 'meaning and meaninglessness' are close.",
+    "ArtAsiaPacific: attunement is not new thinking; wayfinding by sound and scent left viewers disoriented and reliant on text."
+   ],
+   "sources": [
+    "https://www.biennialassociation.org/article/15th-shanghai-biennale-does-the-flower-hear-the-bee/",
+    "https://artreview.com/15th-shanghai-biennale-does-the-flower-hear-the-bee-review-mark-rappolt/",
+    "https://www.artasiapacific.com/shows/on-not-knowing-15th-shanghai-biennale/"
+   ]
+  },
+  {
+   "name": "Art Basel Unlimited 2025",
+   "year": 2025,
+   "city": "Basel",
+   "artistic_director": "Giovanni Carmine (curator)",
+   "title_metaphor": "A hall (172,000 sq ft) for works too big for a booth: monumental installations, immersive video and live performance, sold by galleries.",
+   "sections": [
+    "Unlimited hall (67 projects, 92 galleries)",
+    "Parcours (works in city venues)"
+   ],
+   "n_artists": null,
+   "curatorial_keywords": [
+    "monumental",
+    "immersive",
+    "large-scale",
+    "reactivated older works",
+    "performance"
+   ],
+   "critic_notes": [
+    "Mix of reactivated historic works (Kippenberger, Merz, Kusama, Gonzalez-Torres, Andre) and new commissions; many textile, mirror, light and screen-wall works."
+   ],
+   "sources": [
+    "https://www.artnews.com/list/art-news/news/art-basel-unlimited-2025-best-artworks-1234745271",
+    "https://www.designpataki.com/5-genre-defying-installations-by-women-artists-at-art-basel-unlimited-2025/",
+    "https://www.artbasel.com/stories/projects-unlimited-parcours-art-basel-basel-2025?lang=en"
+   ]
+  }
+ ],
+ "works": [
+  {
+   "exhibition": "13th Berlin Biennale for Contemporary Art",
+   "venue_room": "KW Institute for Contemporary Art",
+   "artist": "Chaw Ei Thein",
+   "artist_born": null,
+   "artist_lives": "Myanmar-linked (diaspora)",
+   "deceased": false,
+   "collective": false,
+   "title": "Artists' Street",
+   "year": "2025",
+   "family": "textile",
+   "medium_line": "hand-stitched textile sculptures; shown with Self-Portrait as Stuffed Doll, 2004-08",
+   "dimensions": null,
+   "what_you_see": "A street of small soft models: hand-stitched fabric buildings and figures, each staging a protest action by Myanmar artists, from the 1996 student marches through the 2007 Saffron Revolution to the years after the 2021 coup. A stuffed-doll self-portrait from 2004-08 is shown among them at KW.",
+   "materials": [
+    "fabric",
+    "thread",
+    "hand stitching"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Together the pieces form a layered record of decades of resistance.",
+    "Each piece acts as embodied memory of a protest the artist saw or heard about."
+   ],
+   "themes": [
+    "protest",
+    "Myanmar",
+    "feminist resistance",
+    "memory",
+    "exile"
+   ],
+   "references": [
+    "1996 student demonstrations",
+    "2007 Saffron Revolution",
+    "2021 military coup"
+   ],
+   "photo_notes": "Spike photo shows soft figures and houses at KW next to Panties for Peace emblems and Exterra XX performance objects.",
+   "source": "https://13.berlinbiennale.de/en/artists/chaw-ei-thein"
+  },
+  {
+   "exhibition": "13th Berlin Biennale for Contemporary Art",
+   "venue_room": "Hamburger Bahnhof - Nationalgalerie der Gegenwart",
+   "artist": "Gabriel Alarcón",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Las montañas saben lo que hicieron [The mountains know what they did]",
+   "year": "2025",
+   "family": "shrine",
+   "medium_line": "retablos (folk altars), banners; also Retablo para cargar en la espalda, 2025; Retablos para compartir",
+   "dimensions": null,
+   "what_you_see": "Bright, densely illustrated folk altars on poles. Some are made to be carried on the back or shared in marches against lithium mining concessions in the Argentina-Chile-Bolivia region. In the Hamburger Bahnhof hall they stand beside patterned sarongs and large drawings, so the room reads like a procession paused in a museum. One banner says the colonizer is naked.",
+   "materials": [
+    "wood",
+    "paint",
+    "banners"
+   ],
+   "nonvisual": [
+    "performance: carried retablos used in protest marches; an Encounter on 15 June 2025 at the museum"
+   ],
+   "claims": [
+    "Uses state and colonial symbols to mock the nation state.",
+    "Criticises cultural mixing that ignores Indigenous cosmology and sacred land."
+   ],
+   "themes": [
+    "lithium mining",
+    "colonialism",
+    "protest",
+    "Indigenous cosmology",
+    "folk devotion"
+   ],
+   "references": [
+    "retablo tradition",
+    "Emperor's New Clothes (banner: the colonizer is naked)",
+    "Lithium Triangle (Argentina, Chile, Bolivia)"
+   ],
+   "photo_notes": "Spike photo: altars, Larissa Araz drawings and Zamthingla Ruivah Shimray sarongs hung together in one large hall.",
+   "source": "https://13.berlinbiennale.de/en/artists/gabriel-alarcon"
+  },
+  {
+   "exhibition": "13th Berlin Biennale for Contemporary Art",
+   "venue_room": "Former Courthouse Lehrter Straße",
+   "artist": "Anna Scalfi Eghenter",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Die Komödie!",
+   "year": "2025",
+   "family": "archive",
+   "medium_line": "installation: reprinted pamphlets, fans, annotated maps, neon sign, toy soldiers",
+   "dimensions": null,
+   "what_you_see": "Rooms of the former Moabit court where Karl Liebknecht stood trial in 1916. In one, red reprinted pamphlets are whipped around by large fans; in another, wall maps are covered with notes on global finance, agribusiness, tech and pharma. A pen, toy soldiers and a neon sign for communism sit more quietly.",
+   "materials": [
+    "paper pamphlets",
+    "fans",
+    "maps",
+    "neon",
+    "toy soldiers"
+   ],
+   "nonvisual": [
+    "sound: fan noise implied by the moving pamphlets (not described in sources)"
+   ],
+   "claims": [
+    "Echoes Liebknecht calling his trial a comedy.",
+    "Lists the large powers workers must unite against."
+   ],
+   "themes": [
+    "law",
+    "revolt",
+    "labour",
+    "anti-militarism"
+   ],
+   "references": [
+    "Karl Liebknecht",
+    "1916 treason trial"
+   ],
+   "photo_notes": "Frieze caption shows red leaflets in mid-air in a high court room.",
+   "source": "https://www.frieze.com/article/berlin-biennale-2025-struggles-to-react"
+  },
+  {
+   "exhibition": "13th Berlin Biennale for Contemporary Art",
+   "venue_room": "KW Institute for Contemporary Art",
+   "artist": "Htein Lin",
+   "artist_born": null,
+   "artist_lives": "Myanmar",
+   "deceased": false,
+   "collective": false,
+   "title": "The Fly",
+   "year": "2008",
+   "family": "performance",
+   "medium_line": "video of a performance first made in prison (restaged 2008)",
+   "dimensions": null,
+   "what_you_see": "A low-fi film of a naked man bound to a chair with hands behind his back, snapping at an imaginary fly. He catches and eats it, then convulses, then turns and asks the viewer why they stay silent. Prison paintings by the same artist hang in the courthouse venue.",
+   "materials": [
+    "video"
+   ],
+   "nonvisual": [
+    "performance: the filmed act is a restaging of a prison ritual"
+   ],
+   "claims": [
+    "The curator treats his courtroom laughter as the biennial's central metaphor for defiance."
+   ],
+   "themes": [
+    "political imprisonment",
+    "laughter",
+    "silence",
+    "defiance"
+   ],
+   "references": [
+    "Myanmar junta"
+   ],
+   "photo_notes": "Frieze still: grainy single figure in a chair, bare room.",
+   "source": "https://www.frieze.com/article/berlin-biennale-2025-struggles-to-react"
+  },
+  {
+   "exhibition": "13th Berlin Biennale for Contemporary Art",
+   "venue_room": "KW Institute for Contemporary Art (rear)",
+   "artist": "Nge Nom (with atelier le balto)",
+   "artist_born": "1990",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "The Ditch",
+   "year": "2025",
+   "family": "earth",
+   "medium_line": "dug ground installation",
+   "dimensions": null,
+   "what_you_see": "A modest hole dug into the ground at the back of the KW building, with almost no objects around it. The wall text carries the story: the artist launched a civil disobedience movement, was chased by military vehicles and was taken in by neighbours. A critic found the hole added nothing to what the label already said.",
+   "materials": [
+    "soil",
+    "excavation"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Presented as an example of fugitivity and survival."
+   ],
+   "themes": [
+    "civil disobedience",
+    "survival",
+    "Myanmar"
+   ],
+   "references": [
+    "Civil Disobedience Movement"
+   ],
+   "photo_notes": "Spike photo: a plain cut in the ground, almost no objects.",
+   "source": "https://spikeartmagazine.com/articles/review-13th-berlin-biennale"
+  },
+  {
+   "exhibition": "15th Gwangju Biennale",
+   "venue_room": "Gwangju Biennale Exhibition Hall, Gallery 1-2 (Feedback Effect)",
+   "artist": "Cinthia Marcelle",
+   "artist_born": null,
+   "artist_lives": "Brazil",
+   "deceased": false,
+   "collective": false,
+   "title": "Não existe mais lugar neste lugar [There Is No More Place in This Place]",
+   "year": "2019-2024",
+   "family": "architecture",
+   "medium_line": "carpet, metal, foam, lamps",
+   "dimensions": "796 x 1,101 x 230 cm (space design: Flora Simon Gurgel)",
+   "what_you_see": "You walk out of a blacked-out sound tunnel into a silent, empty, carpeted office-type room under bright light. The ceiling tiles hang loose and out of line as if after a quake. On a rainy day the dark industrial carpet picks up mud from visitors' shoes, which adds to the sense of damage.",
+   "materials": [
+    "carpet",
+    "metal",
+    "foam",
+    "lamps"
+   ],
+   "nonvisual": [
+    "sound: bleed from the preceding noise tunnel"
+   ],
+   "claims": [
+    "Sets a sensory jolt at the start of the show."
+   ],
+   "themes": [
+    "dystopian office",
+    "disaster",
+    "standardisation"
+   ],
+   "references": [],
+   "photo_notes": "ArtReview photo: wide pale room, drooping ceiling grid.",
+   "source": "https://www.e-flux.com/criticism/632242/15th-gwangju-biennale-pansori-a-soundscape-of-the-21st-century"
+  },
+  {
+   "exhibition": "15th Gwangju Biennale",
+   "venue_room": "Gallery 3 (Polyphony)",
+   "artist": "Max Hooper Schneider",
+   "artist_born": null,
+   "artist_lives": "USA (Los Angeles gallery)",
+   "deceased": false,
+   "collective": false,
+   "title": "LYSIS FIELD",
+   "year": "2024",
+   "family": "earth",
+   "medium_line": "kinetic sand craters, freshwater ecosystem, fabricated junk waterfall, copper-electroplated vegetation, cultivated crystallisations, scavenged objects and local waste, decomposed granite ground cover",
+   "dimensions": "dimensions variable",
+   "what_you_see": "A room-filling fake landscape: crater-like sand pits where small metal spheres draw patterns on their own, a junk waterfall, plants plated in copper, crystals grown on found waste from Gwangju. Odd composite creatures and small robots seem to live in it. A slowed pop ballad from the neighbouring video drifts over it.",
+   "materials": [
+    "sand",
+    "water",
+    "copper-plated plants",
+    "crystals",
+    "found waste",
+    "decomposed granite"
+   ],
+   "nonvisual": [
+    "sound: slowed 1983 pop ballad from a nearby video bleeds in"
+   ],
+   "claims": [
+    "Shows the moment of 'lysis' when a harmful substance breaks down and regains ecological value.",
+    "Offers a speculative picture of a post-Anthropocene ecosystem."
+   ],
+   "themes": [
+    "post-Anthropocene",
+    "waste",
+    "ecosystem",
+    "decomposition"
+   ],
+   "references": [
+    "lysis (biology)"
+   ],
+   "photo_notes": "Art Newspaper photo: dense, dark, teeming set-like landscape.",
+   "source": "https://www.biennialassociation.org/article/the-15th-gwangju-biennale-opens/"
+  },
+  {
+   "exhibition": "15th Gwangju Biennale",
+   "venue_room": "Gallery 1-2 (Feedback Effect)",
+   "artist": "Mira Mann",
+   "artist_born": "1993, Frankfurt",
+   "artist_lives": "Düsseldorf",
+   "deceased": false,
+   "collective": false,
+   "title": "objects of the wind",
+   "year": "2024",
+   "family": "shrine",
+   "medium_line": "installation; mirrors, photographs, stainless steel shelf, props",
+   "dimensions": "about 33 ft (10 m) long",
+   "what_you_see": "A long horizontal landscape of lit makeup mirrors with bulb frames, photographs of pungmul drumming, and a stainless steel shelf holding paperbacks, empty tea cups, nurses' caps, feather headdresses and gongs. It reads as a memorial display.",
+   "materials": [
+    "makeup mirrors with bulbs",
+    "photographs",
+    "stainless steel",
+    "nurses' caps",
+    "gongs",
+    "feather headdresses",
+    "tea cups",
+    "novels"
+   ],
+   "nonvisual": [
+    "sound: pungmul tradition referenced"
+   ],
+   "claims": [
+    "Memorial to Korean nurses who worked in West German hospitals in the 1960s-70s.",
+    "Reinterprets Korean folklore through a mother-migrant story."
+   ],
+   "themes": [
+    "migration",
+    "labour",
+    "identity",
+    "memorial"
+   ],
+   "references": [
+    "pungmul (Korean folk music)",
+    "Korean nurses in West Germany"
+   ],
+   "photo_notes": "Artnet photo: a long mirror with bulbs on top and sides, objects on a bench.",
+   "source": "https://artreview.com/5th-gwangju-biennale-review-disconcertingly-vague/"
+  },
+  {
+   "exhibition": "15th Gwangju Biennale",
+   "venue_room": "Gallery 3 (Polyphony)",
+   "artist": "Harrison Pearce",
+   "artist_born": "1986, London",
+   "artist_lives": "London",
+   "deceased": false,
+   "collective": false,
+   "title": "Valence",
+   "year": "2024",
+   "family": "sound",
+   "medium_line": "ten modular kinetic sculptures with silicone rubber, pneumatic system, sound composition",
+   "dimensions": null,
+   "what_you_see": "In a dim room, ten shelf-like modules each hold a white pillowy silicone shape modelled on a scan of the artist's brain. A metal rod prods each in rhythm; the soft form dents and swells and makes sounds like an MRI machine.",
+   "materials": [
+    "silicone rubber",
+    "metal rods",
+    "pneumatic system",
+    "speakers"
+   ],
+   "nonvisual": [
+    "sound: composition that drives the pneumatic pokes; MRI-like clicks and thuds"
+   ],
+   "claims": [
+    "Links pansori to free will and collective action.",
+    "Questions the relation between human and machine."
+   ],
+   "themes": [
+    "brain scan",
+    "free will",
+    "technology"
+   ],
+   "references": [
+    "pansori"
+   ],
+   "photo_notes": "Artnet photo: dim room, shelves each holding a white object.",
+   "source": "https://news.artnet.com/art-world/gwangju-biennale-review-buyers-guide-2558963"
+  },
+  {
+   "exhibition": "15th Gwangju Biennale",
+   "venue_room": "Gallery 1-2 (Feedback Effect)",
+   "artist": "Choi Haneyl",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Crying Uncle's Room",
+   "year": "2024",
+   "family": "figure",
+   "medium_line": "sculptural installation; plastic encasings, circuit-board-like panels, polystyrene trays",
+   "dimensions": null,
+   "what_you_see": "Body parts, arms, legs and intestines, wrapped in plastic and packed onto big circuit-board shapes or butcher-shop style white trays. Some rise suspended in a heap. You cannot tell flesh from mannequin.",
+   "materials": [
+    "plastic",
+    "polystyrene",
+    "body casts"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Reads as a horror show; the body feels alienated from itself."
+   ],
+   "themes": [
+    "body",
+    "alienation",
+    "horror"
+   ],
+   "references": [
+    "Matthew Angelo Harrison (as nearby echo)"
+   ],
+   "photo_notes": "ArtReview describes dense pile of limbs; no photo detail.",
+   "source": "https://artreview.com/5th-gwangju-biennale-review-disconcertingly-vague/"
+  },
+  {
+   "exhibition": "16th Gwangju Biennale",
+   "venue_room": "Gallery 1 (Molecules and Me)",
+   "artist": "Goldin+Senneby",
+   "artist_born": null,
+   "artist_lives": "Stockholm",
+   "deceased": false,
+   "collective": true,
+   "title": "Resin Pond",
+   "year": "2026",
+   "family": "earth",
+   "medium_line": "about two tonnes of pine resin",
+   "dimensions": "two tonnes; floor installation",
+   "what_you_see": "First thing you meet in the show: about two tonnes of glowing golden pine resin poured across the floor like a river, just beyond the Rilke poem printed on a clear panel at the entrance.",
+   "materials": [
+    "pine resin"
+   ],
+   "nonvisual": [
+    "scent: resinous (not reported)"
+   ],
+   "claims": [
+    "Resin both heals a tree wound and can be turned into aviation fuel: healing tipping into harm.",
+    "Rooted in one artist's experience of multiple sclerosis."
+   ],
+   "themes": [
+    "healing",
+    "harm",
+    "illness"
+   ],
+   "references": [
+    "Rilke"
+   ],
+   "photo_notes": "ARTnews photo: amber resin spreading across a museum floor (ARTnews caption dates it 2006; Kunstkritikk dates it 2026).",
+   "source": "https://kunstkritikk.com/ch-ch-ch-ch-changes/"
+  },
+  {
+   "exhibition": "16th Gwangju Biennale",
+   "venue_room": "Gallery 5 (Air and Articulations)",
+   "artist": "Jacqueline Kiyomi Gork",
+   "artist_born": null,
+   "artist_lives": "Los Angeles",
+   "deceased": false,
+   "collective": false,
+   "title": "Not Exactly BPM (Variation Rrose)",
+   "year": "2026",
+   "family": "light",
+   "medium_line": "multi-channel sound, transparent vinyl inflatables, centrifugal blowers, microcontroller, acrylic, steel and wood",
+   "dimensions": "dimensions variable",
+   "what_you_see": "A maze of clear vinyl inflatables that swell and collapse under amber and white neon strips, with club music. It fills the last gallery and can be entered from the plaza without a ticket.",
+   "materials": [
+    "vinyl inflatables",
+    "blowers",
+    "neon strips",
+    "speakers"
+   ],
+   "nonvisual": [
+    "sound: original techno composition by Rrose"
+   ],
+   "claims": [
+    "A deconstructed club that closes the journey with air and breath."
+   ],
+   "themes": [
+    "club",
+    "air",
+    "breath"
+   ],
+   "references": [
+    "techno"
+   ],
+   "photo_notes": "Frieze main image: amber-lit inflatables in a large hall.",
+   "source": "https://www.frieze.com/article/16th-gwangju-biennale-2026-review"
+  },
+  {
+   "exhibition": "16th Gwangju Biennale",
+   "venue_room": "Gallery 3 (Landscapes and Learning)",
+   "artist": "Kwon Byungjun and Park Chan-kyong",
+   "artist_born": "(Kwon: sound and performance artist; Park: Seoul-based media artist)",
+   "artist_lives": "Korea",
+   "deceased": false,
+   "collective": true,
+   "title": "Bullim (Augmentation)",
+   "year": "2026",
+   "family": "sound",
+   "medium_line": "instruments and acoustic devices cast from donated scrap metal",
+   "dimensions": null,
+   "what_you_see": "Instruments and sound devices melted down from metal objects donated by residents of Gwangju and South Jeolla. They were played in a live opening performance.",
+   "materials": [
+    "scrap metal",
+    "cast instruments"
+   ],
+   "nonvisual": [
+    "performance: live set at the opening",
+    "sound: metal instruments"
+   ],
+   "claims": [
+    "Reinterprets the shamanic ritual of soegeollip, when a novice shaman collects scrap metal door to door."
+   ],
+   "themes": [
+    "community",
+    "ritual",
+    "metal",
+    "shamanism"
+   ],
+   "references": [
+    "soegeollip"
+   ],
+   "photo_notes": "No installation photo described.",
+   "source": "https://www.artnews.com/art-news/news/gwangju-biennale-2026-report-art-politics-controversy-1234799814/"
+  },
+  {
+   "exhibition": "16th Gwangju Biennale",
+   "venue_room": "Galleries 1-5 (recurs)",
+   "artist": "Sasaki Ken",
+   "artist_born": null,
+   "artist_lives": "Tokyo",
+   "deceased": false,
+   "collective": false,
+   "title": "Sagami River (one of 50-60 works; also Sneakers, 2010; Switch, 2009; Cat [Shiitake], 2023)",
+   "year": "2021",
+   "family": "painting",
+   "medium_line": "oil on canvas",
+   "dimensions": "97 x 130 cm (Sagami River)",
+   "what_you_see": "Neutral, precise paintings of everyday things: sneakers, a light switch, tea towels, tennis balls, a fire extinguisher, a cat. They are hung in grids and repeat through every gallery as a guide.",
+   "materials": [
+    "oil paint",
+    "canvas"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Wall text frames the series as a long questioning of yoga, Western-style painting."
+   ],
+   "themes": [
+    "everyday objects",
+    "painting as critique",
+    "repetition"
+   ],
+   "references": [
+    "yōga (Western-style painting)",
+    "Virgil in Dante"
+   ],
+   "photo_notes": "ARTnews photo: grid hang of small canvases beside a ping-pong table.",
+   "source": "https://kunstkritikk.com/ch-ch-ch-ch-changes/"
+  },
+  {
+   "exhibition": "18th Istanbul Biennial",
+   "venue_room": "Garden of the Former French Orphanage",
+   "artist": "Khalil Rabah",
+   "artist_born": null,
+   "artist_lives": "Palestinian",
+   "deceased": false,
+   "collective": false,
+   "title": "Red Navigapparate",
+   "year": "2025",
+   "family": "earth",
+   "medium_line": "installation; red pipe, red pallet jack, marble pedestal, red barrels with trees",
+   "dimensions": "dimensions variable",
+   "what_you_see": "A gravel courtyard cut in two by a narrow water channel. On one side about a hundred olive, citrus and nut trees stand in red barrels on pallets. On the other a red pallet jack rests on a marble block. A red pipe runs in the channel.",
+   "materials": [
+    "trees",
+    "barrels",
+    "pallets",
+    "pallet jack",
+    "marble",
+    "water"
+   ],
+   "nonvisual": [
+    "sound: trickling water"
+   ],
+   "claims": [
+    "Distils food, transport and border into one scene about frozen movement."
+   ],
+   "themes": [
+    "displacement",
+    "occupation",
+    "food forest"
+   ],
+   "references": [
+    "Palestine",
+    "Gaza"
+   ],
+   "photo_notes": "Text zur Kunst image: red barrels on pallets in a ruined garden.",
+   "source": "https://www.textezurkunst.de/en/articles/george-macbeth-hobbling/"
+  },
+  {
+   "exhibition": "18th Istanbul Biennial",
+   "venue_room": "Zihni Han (ground floor)",
+   "artist": "Celina Eceiza",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "A nest is a fruit that swells",
+   "year": "2025",
+   "family": "textile",
+   "medium_line": "cotton fabric, dye pigments, cords, ropes, plaster and gauze, cans, wall paint, avocado peels, clay, burlap, felt rugs, bleach, cement, bells, recycled plastic containers, stones, tree branches",
+   "dimensions": "dimensions variable",
+   "what_you_see": "A walk-in room draped with every sort of cloth, with portraits and motifs on every surface. One palm pushes out of a column and presses on the floor like a limb.",
+   "materials": [
+    "cotton",
+    "burlap",
+    "felt",
+    "plaster",
+    "cement",
+    "bells",
+    "clay",
+    "avocado peel"
+   ],
+   "nonvisual": [
+    "sound: bells"
+   ],
+   "claims": [
+    "Gives a lived-in, play-like space."
+   ],
+   "themes": [
+    "play",
+    "care",
+    "hand-made"
+   ],
+   "references": [
+    "The Three-Legged Cat (the extra limb)"
+   ],
+   "photo_notes": "E-flux photo: dense layered cloth room.",
+   "source": "https://www.e-flux.com/criticism/6782322/18th-istanbul-biennial-the-three-legged-cat"
+  },
+  {
+   "exhibition": "18th Istanbul Biennial",
+   "venue_room": "Zihni Han (top-floor terrace)",
+   "artist": "Marwan Rechmaoui",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Chasing the Sun",
+   "year": "2025",
+   "family": "architecture",
+   "medium_line": "sandboxes, stars, sun, wire cars, olive trees, clouds, seesaw, swing sets, sailboat, toy horse",
+   "dimensions": "dimensions variable",
+   "what_you_see": "A playground on a roof terrace with a view of the Princes' Islands: three wooden swings, a hopscotch, a see-saw, a sandpit and a huge wooden toy horse. Guards allow only the swings. A shelf shows a Molotov, a toy rifle and a slingshot.",
+   "materials": [
+    "wood",
+    "sand",
+    "olive trees"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Plays on the difference between play and institutional control."
+   ],
+   "themes": [
+    "play",
+    "control",
+    "war toys"
+   ],
+   "references": [
+    "Beirut"
+   ],
+   "photo_notes": "E-flux photo: terrace playground in the open air.",
+   "source": "https://www.e-flux.com/criticism/6782322/18th-istanbul-biennial-the-three-legged-cat"
+  },
+  {
+   "exhibition": "18th Istanbul Biennial",
+   "venue_room": "Meclis-i Mebusan 35",
+   "artist": "Pilar Quinteros",
+   "artist_born": "Chilean",
+   "artist_lives": "Chile",
+   "deceased": false,
+   "collective": false,
+   "title": "Working Class",
+   "year": "2025",
+   "family": "figure",
+   "medium_line": "cardboard",
+   "dimensions": "dimensions variable",
+   "what_you_see": "Hollow cardboard limbs, head and hammer of a 1973 workers' monument hang from the ceiling above mirrored pools, so the parts double and break. A video shows an actor as the sculptor repeatedly repairing it.",
+   "materials": [
+    "cardboard",
+    "mirrors"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The scattered body stands for the break-up of labour movements."
+   ],
+   "themes": [
+    "labour",
+    "repair",
+    "vandalism"
+   ],
+   "references": [
+    "Muzaffer Ertoran, The Worker (1973)",
+    "Lacan mirror stage"
+   ],
+   "photo_notes": "E-flux photo: pale cardboard limbs hanging.",
+   "source": "https://www.e-flux.com/criticism/6782322/18th-istanbul-biennial-the-three-legged-cat"
+  },
+  {
+   "exhibition": "18th Istanbul Biennial",
+   "venue_room": "Former Ice Cream Cone Factory",
+   "artist": "Doruntina Kastrati",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "A Horn That Swallows Songs",
+   "year": "2025",
+   "family": "sound",
+   "medium_line": "two-room installation; ultrasonic speakers, floor transducers, subwoofers, polished metal structure, four screens, repurposed factory machinery",
+   "dimensions": null,
+   "what_you_see": "Two connected rooms echo a Turkish delight (lokum) factory floor. In the first, a polished metal structure holds four video screens with footage and interviews from factory visits; one screen carries a single voice read from interview transcripts. In the second, a sculpture made from reused factory machinery forms a horn-like vent, like those used for halva. Low-frequency vibrations from speakers, floor transducers and subwoofers pass through the floor into the visitor's body.",
+   "materials": [
+    "polished metal",
+    "screens",
+    "factory machinery"
+   ],
+   "nonvisual": [
+    "sound: low-frequency vibrations through the floor into the body"
+   ],
+   "claims": [
+    "Exposes the invisible labour of women in lokum factories.",
+    "Shows the gap between workers' reality and management's tidy account."
+   ],
+   "themes": [
+    "invisible labour",
+    "women's work",
+    "silence",
+    "sound as body experience"
+   ],
+   "references": [
+    "lokum factories",
+    "halva vents"
+   ],
+   "photo_notes": "Press images by Sahir Ugur Eren exist; no description in the source read.",
+   "source": "https://www.dreamideamachine.com/?p=110827"
+  },
+  {
+   "exhibition": "17th Lyon Biennale",
+   "venue_room": "Les Grandes Locos (underground and upper gallery)",
+   "artist": "Oliver Beer",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Resonance Project: The Cave",
+   "year": "2024",
+   "family": "sound",
+   "medium_line": "eight-screen video installation; Resonance Paintings",
+   "dimensions": null,
+   "what_you_see": "Two-floor installation: eight screens switch on and off, each showing a singer with a lamp inside a Palaeolithic cave. Below, paintings made by pouring cave pigment on canvases laid over speakers so sound shapes the pigment.",
+   "materials": [
+    "pigment from caves",
+    "canvas",
+    "speakers",
+    "video screens"
+   ],
+   "nonvisual": [
+    "sound: eight a cappella voices in polyphony"
+   ],
+   "claims": [
+    "Joins singers into one polyphony."
+   ],
+   "themes": [
+    "voice",
+    "cave",
+    "memory"
+   ],
+   "references": [
+    "Font-de-Gaume cave"
+   ],
+   "photo_notes": "ARTnews photo: abstract paintings in an underground room.",
+   "source": "https://www.artnews.com/list/art-news/artists/2024-biennale-de-lyon-standout-artworks-1234718687/"
+  },
+  {
+   "exhibition": "17th Lyon Biennale",
+   "venue_room": "Cité internationale de la Gastronomie - Grand Hôtel-Dieu",
+   "artist": "Guadalupe Maravilla",
+   "artist_born": "1976, San Salvador",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "El Brujo Disease Thrower",
+   "year": "2024",
+   "family": "shrine",
+   "medium_line": "steel gong, cotton, glue mixture, plastic, loofah, oil on tin, objects collected from a ritual retracing the artist's migration route",
+   "dimensions": null,
+   "what_you_see": "A sound sculpture in a former hospital, assembled from a steel gong, cotton, glue mixture, plastic, loofah and oil-on-tin pieces plus objects gathered on a ritual that retraced the artist's own migration route. It is shown with other Disease Throwers (such as Pierna de Serpiente, 2023) and a weaving titled Pour Les Ancêtres.",
+   "materials": [
+    "steel gong",
+    "cotton",
+    "loofah",
+    "oil on tin"
+   ],
+   "nonvisual": [
+    "sound: gong healing sessions (reported)"
+   ],
+   "claims": [
+    "Presented as healing instruments."
+   ],
+   "themes": [
+    "migration",
+    "illness",
+    "healing"
+   ],
+   "references": [
+    "Central America and Mexico"
+   ],
+   "photo_notes": "Lyon site lists photo credit Jair Lanes; no description.",
+   "source": "https://www.labiennaledelyon.com/en/biennale/17e-biennale-dart-contemporain-2024/les-voix-des-fleuves-crossing-the-water/guadalupe-maravilla"
+  },
+  {
+   "exhibition": "17th Lyon Biennale",
+   "venue_room": "Cité internationale de la Gastronomie - former apothecary",
+   "artist": "Florian Mermin",
+   "artist_born": "1991",
+   "artist_lives": "France",
+   "deceased": false,
+   "collective": false,
+   "title": "Violette Cristal",
+   "year": "2024",
+   "family": "scent",
+   "medium_line": "wax sculpture inlaid with amethyst fragments and violet-flavoured candies",
+   "dimensions": null,
+   "what_you_see": "A giant open violet carved in wax stands among old earthenware pots and wooden cabinets, with amethyst chips and candies catching the light. You smell it.",
+   "materials": [
+    "wax",
+    "amethyst",
+    "candy"
+   ],
+   "nonvisual": [
+    "scent: violet"
+   ],
+   "claims": [
+    "Perfume ties memory to seduction."
+   ],
+   "themes": [
+    "flower",
+    "care",
+    "memory"
+   ],
+   "references": [
+    "royal herbarium"
+   ],
+   "photo_notes": "ARTnews photo: violet in a room with blue-and-white pots.",
+   "source": "https://www.artnews.com/list/art-news/artists/2024-biennale-de-lyon-standout-artworks-1234718687/"
+  },
+  {
+   "exhibition": "17th Lyon Biennale",
+   "venue_room": "Les Grandes Locos",
+   "artist": "Pilar Albarracín",
+   "artist_born": "1968",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Marmites enragées [Raging Cookers]",
+   "year": "2006",
+   "family": "found",
+   "medium_line": "about 50 modified pressure cookers",
+   "dimensions": null,
+   "what_you_see": "Around fifty ordinary pressure cookers are gathered in the old rail workshops and fitted so they let off steam in the tune of the socialist anthem The Internationale. The mass of steel pots reads as an uprising of kitchen objects in a space that once housed workers' struggles.",
+   "materials": [
+    "pressure cookers"
+   ],
+   "nonvisual": [
+    "sound: whistling anthem"
+   ],
+   "claims": [
+    "Ridicules the idea that women should stay in the kitchen.",
+    "Points to the long history and latent possibility of a united revolt."
+   ],
+   "themes": [
+    "domestic labour",
+    "feminism",
+    "revolt",
+    "humour"
+   ],
+   "references": [
+    "The Internationale",
+    "labour history of the Grandes Locos"
+   ],
+   "photo_notes": "ARTnews photo: massed cookers.",
+   "source": "https://artreview.com/17th-lyon-biennale-crossing-the-water-review-martin-herbert/"
+  },
+  {
+   "exhibition": "17th Lyon Biennale",
+   "venue_room": "Les Grandes Locos",
+   "artist": "Gözde İlkin",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "The Majority of Accent",
+   "year": "2018-2024",
+   "family": "textile",
+   "medium_line": "painting on textile, embroidery and seeds on printed fabric",
+   "dimensions": "4.8 x 2.9 m",
+   "what_you_see": "A large textile print of a quarry, 4.8 by 2.9 metres, with biomorphic figures painted and embroidered over it and seeds worked in. Images of labour organising recall the rail hangar's past. Sacks that are printed, painted and embroidered hide speakers that play recorded interviews with former workers.",
+   "materials": [
+    "printed fabric",
+    "embroidery",
+    "seeds"
+   ],
+   "nonvisual": [
+    "sound: interviews from sacks"
+   ],
+   "claims": [
+    "Recalls the venue's labour history."
+   ],
+   "themes": [
+    "labour",
+    "industrial past"
+   ],
+   "references": [],
+   "photo_notes": "Frieze main image: large patterned cloth.",
+   "source": "https://www.frieze.com/article/17-lyon-biennale-2024-review"
+  },
+  {
+   "exhibition": "Manifesta 15 Barcelona Metropolitana",
+   "venue_room": "Tres Xemeneies, top floor",
+   "artist": "Asad Raza",
+   "artist_born": "American",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Prehension",
+   "year": "2024",
+   "family": "textile",
+   "medium_line": "22 lengths of industrial white linen; open windows",
+   "dimensions": null,
+   "what_you_see": "Twenty-two industrial lengths of white linen cascade from the ceiling of the top floor of the old power station. Window panes were removed so sea wind makes them billow, and the movement is visible from outside, a few metres from the coast. The cloth is expected to pull, stain and tear over the run.",
+   "materials": [
+    "white linen",
+    "wind"
+   ],
+   "nonvisual": [
+    "sound: flapping cloth"
+   ],
+   "claims": [
+    "Wind is the art; the fabric will tear."
+   ],
+   "themes": [
+    "wind",
+    "borders",
+    "shroud"
+   ],
+   "references": [
+    "Édouard Glissant trembling thinking"
+   ],
+   "photo_notes": "Frieze main image: pale cloth in a concrete hall.",
+   "source": "https://www.frieze.com/article/six-artists-manifesta-15-barcelona-2024"
+  },
+  {
+   "exhibition": "Manifesta 15 Barcelona Metropolitana",
+   "venue_room": "Tres Xemeneies, first floor",
+   "artist": "Diana Scherer",
+   "artist_born": "German",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Yield",
+   "year": "2024",
+   "family": "earth",
+   "medium_line": "root-woven carpet with grass; soil",
+   "dimensions": "about 14 x 3 m (reported)",
+   "what_you_see": "An organic, earth-scented 'rug' made of manipulated plant roots in mirrored spine-like patterns on the front and dense grass growing on the back. It hangs like a huge tongue from the ceiling down to the floor on the first floor of the turbine hall.",
+   "materials": [
+    "plant roots",
+    "grass",
+    "soil"
+   ],
+   "nonvisual": [
+    "scent: earth"
+   ],
+   "claims": [
+    "Spine motif refers to Gaudí and a slave-trade patron."
+   ],
+   "themes": [
+    "labour",
+    "textile industry"
+   ],
+   "references": [
+    "Gaudi",
+    "Joan Güell"
+   ],
+   "photo_notes": "Kunstkritikk shows tall vertical rug.",
+   "source": "https://kunstkritikk.com/speak-to-the-earth/"
+  },
+  {
+   "exhibition": "Manifesta 15 Barcelona Metropolitana",
+   "venue_room": "Can Trinxet, L'Hospitalet de Llobregat",
+   "artist": "Binta Diaw",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Dïà s p o r a",
+   "year": "2021-2024",
+   "family": "textile",
+   "medium_line": "black synthetic braiding hair, soil, rice plants",
+   "dimensions": null,
+   "what_you_see": "A web of black braided hair fills a former textile factory; visitors duck under until it is too low, and knee-high rice sprouts from soil mounds. It was braided by local women over two weeks.",
+   "materials": [
+    "synthetic braid hair",
+    "soil",
+    "rice"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Recalls enslaved women hiding seeds in braids."
+   ],
+   "themes": [
+    "diaspora",
+    "labour",
+    "resistance"
+   ],
+   "references": [
+    "transatlantic slave trade"
+   ],
+   "photo_notes": "Frieze shows dense black web.",
+   "source": "https://www.frieze.com/article/six-artists-manifesta-15-barcelona-2024"
+  },
+  {
+   "exhibition": "Manifesta 15 Barcelona Metropolitana",
+   "venue_room": "Tres Xemeneies exterior",
+   "artist": "Mike Nelson",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Un Intruso (uninvited, into chaos)",
+   "year": "2024",
+   "family": "architecture",
+   "medium_line": "shack of discarded construction materials, iron bed, coal stove",
+   "dimensions": null,
+   "what_you_see": "A rough shack built from local scrap outside the power plant; inside only an iron bed frame and a small coal stove, with a window framing the chimneys.",
+   "materials": [
+    "scrap",
+    "iron bed",
+    "coal stove"
+   ],
+   "nonvisual": [],
+   "claims": [],
+   "themes": [
+    "ruin",
+    "shelter"
+   ],
+   "references": [
+    "Riddley Walker"
+   ],
+   "photo_notes": "No photo detail.",
+   "source": "https://artreview.com/manifesta-15-review-art-becomes-an-afterthought/"
+  },
+  {
+   "exhibition": "Manifesta 15 Barcelona Metropolitana",
+   "venue_room": "Monastery of Sant Cugat",
+   "artist": "Marie-Claire Messouma Manlanbien",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Temple du soin [Temple of Care]",
+   "year": "2024",
+   "family": "shrine",
+   "medium_line": "water-based mixed-media installation: carpet tapestries, salt, glass fountains, clay bowls",
+   "dimensions": null,
+   "what_you_see": "Three midnight-blue carpets hang in the cloister, each with a fertile female form; white salt crystals cover the floor around small glass fountains with masked heads; clay bowls hold dried herbs.",
+   "materials": [
+    "carpet tapestries",
+    "salt crystals",
+    "glass fountains",
+    "clay bowls",
+    "dried herbs"
+   ],
+   "nonvisual": [
+    "sound: trickling water",
+    "scent: dried lavender"
+   ],
+   "claims": [
+    "Evokes a divine maternal cloister."
+   ],
+   "themes": [
+    "care",
+    "purification"
+   ],
+   "references": [
+    "ancient cosmogony"
+   ],
+   "photo_notes": "Frieze photo: blue hangings in stone room.",
+   "source": "https://www.frieze.com/article/six-artists-manifesta-15-barcelona-2024"
+  },
+  {
+   "exhibition": "Liverpool Biennial 2025",
+   "venue_room": "20 Jordan Street",
+   "artist": "Cevdet Erek",
+   "artist_born": null,
+   "artist_lives": "Istanbul",
+   "deceased": false,
+   "collective": false,
+   "title": "Away Terrace (Us and Them)",
+   "year": "2025",
+   "family": "architecture",
+   "medium_line": "sculptural and sonic installation; bricks made of clay and barley straw, pigments, timber, 10-channel audio",
+   "dimensions": "dimensions variable",
+   "what_you_see": "A rough football terrace stands in a warehouse, built from dense blocks of clay and barley straw and timber. Ten channels of audio mimic the buzz of a match crowd, with a trance-like pulse. Critics split: one called it a primal stadium, another sprawling but drab. It is shown beside clay sculptures by another artist.",
+   "materials": [
+    "clay bricks",
+    "barley straw",
+    "timber"
+   ],
+   "nonvisual": [
+    "sound: 10-channel match-day pulse"
+   ],
+   "claims": [
+    "Speaks to a need for belonging and the social cost of exclusion."
+   ],
+   "themes": [
+    "football",
+    "belonging",
+    "exclusion",
+    "sound"
+   ],
+   "references": [
+    "Anfield stadium research"
+   ],
+   "photo_notes": "Frieze photo: earth-block stand.",
+   "source": "https://hyperallergic.com/theres-not-enough-of-liverpool-in-the-city-2025-biennial/"
+  },
+  {
+   "exhibition": "Liverpool Biennial 2025",
+   "venue_room": "20 Jordan Street",
+   "artist": "Imayna Caceres",
+   "artist_born": "1979",
+   "artist_lives": "Vienna",
+   "deceased": false,
+   "collective": false,
+   "title": "Underground Flourishings",
+   "year": "2025",
+   "family": "ceramic",
+   "medium_line": "more than 100 wall-mounted clay sculptures using clay from the River Mersey; drawings and moving image",
+   "dimensions": null,
+   "what_you_see": "A shrine-like wall of handmade clay sculptures, reported as over a hundred, with plant and animal motifs from Peruvian pre-Columbian knowledge, made from clay dug from the River Mersey. It shares the 20 Jordan Street warehouse with a football-terrace installation. Drawings and moving image sit alongside.",
+   "materials": [
+    "Mersey clay"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Asks us to reflect on the damage of treating ecosystems as natural resources."
+   ],
+   "themes": [
+    "extraction",
+    "mud",
+    "more-than-human worlds",
+    "Peruvian heritage"
+   ],
+   "references": [
+    "pre-Columbian knowledge systems",
+    "Mersey as 'lifer' (muddy life)"
+   ],
+   "photo_notes": "Phileas gives installation photos.",
+   "source": "https://www.phileas.art/biennials/imaynacaceres"
+  },
+  {
+   "exhibition": "Liverpool Biennial 2025",
+   "venue_room": "Liverpool Cathedral",
+   "artist": "Maria Loizidou",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Where Am I Now?",
+   "year": "2025",
+   "family": "textile",
+   "medium_line": "crocheted steel with embroidery",
+   "dimensions": null,
+   "what_you_see": "A veil of crocheted steel hangs from a pointed arch inside Liverpool Cathedral, embroidered with a scene of local birds carrying souls skywards. It echoes the building's architecture and the birds that nest nearby.",
+   "materials": [
+    "steel"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Described by a critic as refreshingly sincere."
+   ],
+   "themes": [
+    "migration",
+    "birds",
+    "souls",
+    "cathedral"
+   ],
+   "references": [],
+   "photo_notes": "Frieze photo: pale veil under a Gothic arch.",
+   "source": "https://www.wallpaper.com/art/exhibitions-shows/liverpool-biennial-2025-review"
+  },
+  {
+   "exhibition": "Liverpool Biennial 2025",
+   "venue_room": "Bluecoat",
+   "artist": "Odur Ronald",
+   "artist_born": null,
+   "artist_lives": "Uganda",
+   "deceased": false,
+   "collective": false,
+   "title": "Muly'Ato Lima [All in one boat]",
+   "year": "2025",
+   "family": "found",
+   "medium_line": "aluminium passports, chairs, jerry cans, woven mat",
+   "dimensions": null,
+   "what_you_see": "Aluminium passports, chairs, jerry cans and a woven mat are set out at Bluecoat as a large installation on African migration. A related earlier work, No Hurry (2020), sits in a menswear shop display: aluminium trainers blended into the shelves. The artist collected aluminium as a child to trade for toys.",
+   "materials": [
+    "aluminium",
+    "chairs",
+    "jerry cans",
+    "woven mat"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Reflects African migration and the 'all in one boat' idea."
+   ],
+   "themes": [
+    "migration",
+    "scrap metal",
+    "childhood"
+   ],
+   "references": [],
+   "photo_notes": "Hyperallergic photo: passports and chairs on a mat; Wallpaper photo of trainers in a shop.",
+   "source": "https://hyperallergic.com/theres-not-enough-of-liverpool-in-the-city-2025-biennial/"
+  },
+  {
+   "exhibition": "Taipei Biennial 2025",
+   "venue_room": "Entrance gallery, Taipei Fine Arts Museum",
+   "artist": "Henrique Oliveira",
+   "artist_born": null,
+   "artist_lives": "Brazil",
+   "deceased": false,
+   "collective": false,
+   "title": "Cizania",
+   "year": "2025",
+   "family": "architecture",
+   "medium_line": "wood, recycled plywood",
+   "dimensions": "dimensions variable",
+   "what_you_see": "A giant root ball of scrap plywood spreads across the entrance gallery as if the floorboards had torn up and regrown. One part is cut off by a floor-to-ceiling window and teeters outside on stilts like a shipwreck, facing its other half.",
+   "materials": [
+    "plywood"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Critic reads it as growth, renewal, repair or a 'whisper on the horizon'."
+   ],
+   "themes": [
+    "roots",
+    "invasive growth",
+    "repair"
+   ],
+   "references": [],
+   "photo_notes": "ArtReview photo: huge wooden mass.",
+   "source": "https://artreview.com/taipei-biennial-2025-review/"
+  },
+  {
+   "exhibition": "Taipei Biennial 2025",
+   "venue_room": "Upper floor",
+   "artist": "Ni Hao",
+   "artist_born": null,
+   "artist_lives": "Hsinchu",
+   "deceased": false,
+   "collective": false,
+   "title": "Sock series (incl. The Bloom That Holds Her Shadow)",
+   "year": "2025",
+   "family": "found",
+   "medium_line": "videos and mixed media; socks bought from online fetishists",
+   "dimensions": null,
+   "what_you_see": "Resin feet and worn socks are staged as personified sculptures, with videos of fetish content bought by the artist playing on a loop and the chats that led to each purchase. On screen socks are peeled off and toes wiggle through. Visitors are invited to look over a shoulder.",
+   "materials": [
+    "socks",
+    "stockings",
+    "resin",
+    "video"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Gently mocks the voyeurism of exhibition-goers and social media."
+   ],
+   "themes": [
+    "fetish",
+    "desire",
+    "voyeurism"
+   ],
+   "references": [],
+   "photo_notes": "Berlinartlink: feet and screens on a table.",
+   "source": "https://www.berlinartlink.com/2025/12/16/taipei-biennial-2025-exhibition-review/"
+  },
+  {
+   "exhibition": "Taipei Biennial 2025",
+   "venue_room": "Taipei Fine Arts Museum",
+   "artist": "Monia Ben Hamouda",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Aniconism as Figuration Urgency (Post-Scriptum)",
+   "year": "2025",
+   "family": "scent",
+   "medium_line": "laser-cut iron, spice powders; Thala marble",
+   "dimensions": "202 x 160 x 0.3 cm",
+   "what_you_see": "A curved calligraphic sculpture cut from iron hangs over low piles of coloured spice powders, with inscribed marble stones laid nearby that retrace the path to a family burial ground in Tunisia. The room smells of spice.",
+   "materials": [
+    "iron",
+    "spices",
+    "marble"
+   ],
+   "nonvisual": [
+    "scent: cinnamon, paprika, chilli"
+   ],
+   "claims": [
+    "Arouses senses to link to loss and cultural memory."
+   ],
+   "themes": [
+    "loss",
+    "memory",
+    "aniconism",
+    "spices"
+   ],
+   "references": [
+    "aniconism in Islamic art"
+   ],
+   "photo_notes": "Berlinartlink image.",
+   "source": "https://www.berlinartlink.com/2025/12/16/taipei-biennial-2025-exhibition-review/"
+  },
+  {
+   "exhibition": "Taipei Biennial 2025",
+   "venue_room": "Main floor",
+   "artist": "Omar Mismar",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Still My Eyes Water",
+   "year": "2025",
+   "family": "textile",
+   "medium_line": "natural fabrics, pottery, mixed media",
+   "dimensions": "160 x 80 x 80 cm",
+   "what_you_see": "A large bouquet of fabric flowers, all native to Palestine, spreads in every direction on a table in a dark room. It is one of the first things on the main floor.",
+   "materials": [
+    "fabric",
+    "pottery"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Express longing for a place that may not return in the same form."
+   ],
+   "themes": [
+    "Palestine",
+    "flowers",
+    "exile"
+   ],
+   "references": [],
+   "photo_notes": "Berlinartlink image.",
+   "source": "https://www.berlinartlink.com/2025/12/16/taipei-biennial-2025-exhibition-review/"
+  },
+  {
+   "exhibition": "Taipei Biennial 2025",
+   "venue_room": "Taipei Fine Arts Museum",
+   "artist": "Shizuka Yokomizo",
+   "artist_born": null,
+   "artist_lives": "London",
+   "deceased": false,
+   "collective": false,
+   "title": "Recipients",
+   "year": "2025",
+   "family": "video",
+   "medium_line": "three-channel video installation",
+   "dimensions": null,
+   "what_you_see": "Three screens show the artist's elderly mother tending a crowded plant collection on her Tokyo balcony, then showing her daughter analogue slides of old flowers. The images link soil, hands and slides.",
+   "materials": [
+    "video"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Quiet study of mutual care and interspecies relations."
+   ],
+   "themes": [
+    "care",
+    "plants",
+    "mother and daughter"
+   ],
+   "references": [
+    "Chen Chin Out in the Fields (1934)"
+   ],
+   "photo_notes": "ArtReview photo.",
+   "source": "https://artreview.com/taipei-biennial-2025-review/"
+  },
+  {
+   "exhibition": "15th Shanghai Biennale",
+   "venue_room": "Power Station of Art, atrium",
+   "artist": "Allora & Calzadilla",
+   "artist_born": null,
+   "artist_lives": "Puerto Rico",
+   "deceased": false,
+   "collective": true,
+   "title": "Phantom Forest",
+   "year": "2025",
+   "family": "architecture",
+   "medium_line": "synthetic flowers",
+   "dimensions": "dimensions variable",
+   "what_you_see": "In the big atrium of a former coal-fired power plant, clouds of yellow synthetic flowers float with no trunks or roots, and the same flowers lie in drifts on the floor like fallen leaves. Families gather under them to take photos.",
+   "materials": [
+    "synthetic petals"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Critic reads fake nature as advertising and a selfie spot."
+   ],
+   "themes": [
+    "ghost forest",
+    "nature as image"
+   ],
+   "references": [
+    "roble amarillo"
+   ],
+   "photo_notes": "Biennial Association photo.",
+   "source": "https://artreview.com/15th-shanghai-biennale-does-the-flower-hear-the-bee-review-mark-rappolt/"
+  },
+  {
+   "exhibition": "15th Shanghai Biennale",
+   "venue_room": "Top floor",
+   "artist": "Aki Inomata",
+   "artist_born": null,
+   "artist_lives": "Japan",
+   "deceased": false,
+   "collective": false,
+   "title": "How to Carve a Sculpture",
+   "year": "2018-",
+   "family": "found",
+   "medium_line": "wood gnawed by beavers; CNC copies",
+   "dimensions": null,
+   "what_you_see": "Slim wooden forms gnawed by beavers from Japanese zoos are shown beside human-size totems that copy them using CNC routers. The beaver counts as the artist, the machine as copyist.",
+   "materials": [
+    "wood"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Beavers become artists."
+   ],
+   "themes": [
+    "authorship",
+    "nonhuman agency"
+   ],
+   "references": [],
+   "photo_notes": "ArtReview text.",
+   "source": "https://artreview.com/15th-shanghai-biennale-does-the-flower-hear-the-bee-review-mark-rappolt/"
+  },
+  {
+   "exhibition": "15th Shanghai Biennale",
+   "venue_room": "Power Station of Art",
+   "artist": "Chen Ruofan",
+   "artist_born": null,
+   "artist_lives": "China",
+   "deceased": false,
+   "collective": false,
+   "title": "Dust",
+   "year": "2025",
+   "family": "earth",
+   "medium_line": "sawdust, gravel, sand, nylon thread",
+   "dimensions": null,
+   "what_you_see": "Sawdust, gravel, sand, nylon thread and other debris from a furniture factory in Wuhan are arranged into a floating, striped cloud shape. The label calls the factory a harsh and inhuman workplace.",
+   "materials": [
+    "sawdust",
+    "gravel",
+    "sand"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Stands as a riposte to the flower garden at the entrance."
+   ],
+   "themes": [
+    "labour",
+    "dust",
+    "industrial waste"
+   ],
+   "references": [],
+   "photo_notes": "Text only.",
+   "source": "https://artreview.com/15th-shanghai-biennale-does-the-flower-hear-the-bee-review-mark-rappolt/"
+  },
+  {
+   "exhibition": "15th Shanghai Biennale",
+   "venue_room": "Power Station of Art",
+   "artist": "Audie Murray",
+   "artist_born": null,
+   "artist_lives": "Canada",
+   "deceased": false,
+   "collective": false,
+   "title": "To Make Smoke",
+   "year": "2025",
+   "family": "scent",
+   "medium_line": "charcoal smudges on wall",
+   "dimensions": null,
+   "what_you_see": "A wall carries smudges of charcoal from burning sage and sweetgrass in ceremony, applied so lightly it nearly vanishes. The mark sits between something and nothing.",
+   "materials": [
+    "charcoal"
+   ],
+   "nonvisual": [
+    "scent: smoke"
+   ],
+   "claims": [
+    "Disrupts the white cube of the museum."
+   ],
+   "themes": [
+    "Indigenous knowledge",
+    "ceremony",
+    "smoke"
+   ],
+   "references": [
+    "Métis and Cree practice"
+   ],
+   "photo_notes": "Text only.",
+   "source": "https://artreview.com/15th-shanghai-biennale-does-the-flower-hear-the-bee-review-mark-rappolt/"
+  },
+  {
+   "exhibition": "Art Basel Unlimited 2025",
+   "venue_room": "Hall 1:0, stand U20",
+   "artist": "Nicola Turner",
+   "artist_born": null,
+   "artist_lives": "Bath, UK",
+   "deceased": false,
+   "collective": false,
+   "title": "Danse Macabre",
+   "year": "2025",
+   "family": "textile",
+   "medium_line": "truss structure, wool and horsehair tendrils, vintage furniture legs",
+   "dimensions": null,
+   "what_you_see": "A huge twisting creature of tendrils made from salvaged horsehair and raw wool hangs from a truss above the hall, with vintage furniture legs among the tangle. Reported as about ten metres high.",
+   "materials": [
+    "horsehair",
+    "raw wool",
+    "truss",
+    "vintage furniture legs"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Explores life and death, human and non-human, attraction and repulsion."
+   ],
+   "themes": [
+    "upholstery",
+    "death",
+    "reuse"
+   ],
+   "references": [
+    "Basel Danse Macabre mural"
+   ],
+   "photo_notes": "Art Basel photo.",
+   "source": "https://www.designpataki.com/5-genre-defying-installations-by-women-artists-at-art-basel-unlimited-2025/"
+  },
+  {
+   "exhibition": "Art Basel Unlimited 2025",
+   "venue_room": "Unlimited hall",
+   "artist": "Atelier Van Lieshout",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": true,
+   "title": "The Voyage - A March to Utopia",
+   "year": "2025",
+   "family": "figure",
+   "medium_line": "80-piece installation",
+   "dimensions": null,
+   "what_you_see": "An 80-piece procession runs from the entrance to the exit of the hall, led by a discarded, repaired scooter called the Leader. It is followed by pickaxes, mannequins, prosthetics, pumping machines, and works like a red steamroller and a coffee-making operating table.",
+   "materials": [
+    "scooter",
+    "pickaxes",
+    "mannequins",
+    "prostheses",
+    "pumps"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "A journey to utopia; the patched toy stands for resilience."
+   ],
+   "themes": [
+    "utopia",
+    "repair",
+    "machines"
+   ],
+   "references": [],
+   "photo_notes": "ARTnews photo.",
+   "source": "https://www.artnews.com/list/art-news/news/art-basel-unlimited-2025-best-artworks-1234745271"
+  },
+  {
+   "exhibition": "Art Basel Unlimited 2025",
+   "venue_room": "Unlimited hall",
+   "artist": "Luiz Zerbini",
+   "artist_born": null,
+   "artist_lives": "Brazil",
+   "deceased": false,
+   "collective": false,
+   "title": "Os Comedores de Terra / The Earth Eaters",
+   "year": null,
+   "family": "painting",
+   "medium_line": "double-sided installation",
+   "dimensions": "about 54 ft wide",
+   "what_you_see": "A double-sided piece. The front is a panoramic landscape painting about 54 feet wide that shows scars of logging and slash-and-burn. It is mounted on wooden scaffolding that carries giant papier-mâché gems in many colours.",
+   "materials": [
+    "paint",
+    "scaffolding",
+    "papier-mâché"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The end is near, but there is beauty in natural disasters (artist remark)."
+   ],
+   "themes": [
+    "ecological damage",
+    "minerals"
+   ],
+   "references": [
+    "Melancholia"
+   ],
+   "photo_notes": "ARTnews photo.",
+   "source": "https://www.artnews.com/list/art-news/news/art-basel-unlimited-2025-best-artworks-1234745271"
+  },
+  {
+   "exhibition": "Art Basel Unlimited 2025",
+   "venue_room": "Unlimited hall",
+   "artist": "Petra Cortright",
+   "artist_born": null,
+   "artist_lives": "Los Angeles",
+   "deceased": false,
+   "collective": false,
+   "title": "sapphire cinnamon viper fairy",
+   "year": "2007-2023",
+   "family": "digital",
+   "medium_line": "200 looping videos on 50 screens",
+   "dimensions": null,
+   "what_you_see": "Two hundred looping videos on 50 screens in a staggered salon-style hang: people dancing, people looking at screens. Begun in 2007 and edited until 2023 from found footage.",
+   "materials": [
+    "screens"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Invites reflection on how fast online content is consumed."
+   ],
+   "themes": [
+    "internet",
+    "found footage"
+   ],
+   "references": [],
+   "photo_notes": "ARTnews photo.",
+   "source": "https://www.artnews.com/list/art-news/news/art-basel-unlimited-2025-best-artworks-1234745271"
+  },
+  {
+   "exhibition": "15th Gwangju Biennale",
+   "venue_room": "Horanggasinamu Art Polygon, basement (Yangnim-dong satellite)",
+   "artist": "Lydia Ourahmane",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "House of Hope Archives",
+   "year": "1989-ongoing",
+   "family": "archive",
+   "medium_line": "five slide projectors, 400 photographs",
+   "dimensions": null,
+   "what_you_see": "In a basement under a clanking, glowing sound installation by another artist, five slide projectors cycle through about 400 photographs credited to the artist's parents. The room is dark and apart from the main hall; a critic found it a better home for the work than the main show.",
+   "materials": [
+    "slide projectors",
+    "photographs"
+   ],
+   "nonvisual": [
+    "sound: clanking from the installation on the floor above"
+   ],
+   "claims": [
+    "Presented as an archive carried across generations."
+   ],
+   "themes": [
+    "family archive",
+    "memory",
+    "migration"
+   ],
+   "references": [],
+   "photo_notes": "E-flux photo: projectors on stands and light on a wall.",
+   "source": "https://www.e-flux.com/criticism/632242/15th-gwangju-biennale-pansori-a-soundscape-of-the-21st-century"
+  },
+  {
+   "exhibition": "15th Gwangju Biennale",
+   "venue_room": "Gallery 3 / Polyphony area",
+   "artist": "Haseeb Ahmed",
+   "artist_born": "1985, Ohio",
+   "artist_lives": "Brussels",
+   "deceased": false,
+   "collective": false,
+   "title": "Stock Weather III",
+   "year": "2024",
+   "family": "digital",
+   "medium_line": "installation: stock-market-controlled fans, miniature desert, camera, curved monitors",
+   "dimensions": null,
+   "what_you_see": "Fans driven by live stock-market data blow wind over a small model desert. A camera films the scene and shows it on curved monitors, while a rotating arm sweeps like a clock. The landscape stays stuck in twilight.",
+   "materials": [
+    "fans",
+    "model desert sand",
+    "camera",
+    "curved monitors",
+    "rotating arm"
+   ],
+   "nonvisual": [
+    "sound: fans and machine hum (not described)"
+   ],
+   "claims": [
+    "Connects the man-made global economy with weather.",
+    "Hints at the game-like nature of economics and a bleak future."
+   ],
+   "themes": [
+    "markets",
+    "weather",
+    "capitalism"
+   ],
+   "references": [
+    "fluid dynamics of wind and water"
+   ],
+   "photo_notes": "Artnet photo of the work in the biennale hall.",
+   "source": "https://news.artnet.com/art-world/gwangju-biennale-review-buyers-guide-2558963"
+  },
+  {
+   "exhibition": "18th Istanbul Biennial",
+   "venue_room": "Zihni Han",
+   "artist": "Sara Sadik",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "XENON PALACE CHAMPIONSHIP",
+   "year": "2023",
+   "family": "digital",
+   "medium_line": "interactive film, video game, PVC inflatable seating, custom-made hookah-handle controllers, automotive silicone intake hoses",
+   "dimensions": "dimensions variable",
+   "what_you_see": "A game station for several players: inflatable PVC seats like a hookah lounge, controllers shaped like shisha handles and connected by silicone hoses, and a platform game on screen. Visitors sit and play.",
+   "materials": [
+    "PVC air cushions",
+    "silicone hoses",
+    "controllers",
+    "screen"
+   ],
+   "nonvisual": [
+    "sound: game audio (not described)"
+   ],
+   "claims": [
+    "Turns a platform game into a refuge from racialised daily indignity."
+   ],
+   "themes": [
+    "gaming",
+    "masculinity",
+    "escapism",
+    "diaspora"
+   ],
+   "references": [
+    "hookah lounge culture"
+   ],
+   "photo_notes": "E-flux photo: inflatable seats in a semicircle.",
+   "source": "https://www.e-flux.com/criticism/6782322/18th-istanbul-biennial-the-three-legged-cat"
+  },
+  {
+   "exhibition": "17th Lyon Biennale",
+   "venue_room": "Institut d'art contemporain, Villeurbanne",
+   "artist": "Hilary Galbreaith",
+   "artist_born": "1989",
+   "artist_lives": "Rennes",
+   "deceased": false,
+   "collective": false,
+   "title": "Be Our Guest",
+   "year": "2024",
+   "family": "archive",
+   "medium_line": "mixed-media installation: printed mattresses, second-hand lamps and tables, wall mind map, lounge music",
+   "dimensions": null,
+   "what_you_see": "A room styled like a short-let apartment: mattresses on the floor printed with 16 interview accounts from French hospitality workers (taken from 29 interviews) in the sans-serif font TripAdvisor uses, mismatched second-hand lamps and tables, a bright orange mind map of her research across the wall, and lounge-like background music.",
+   "materials": [
+    "mattresses",
+    "printed text",
+    "second-hand lamps and tables",
+    "wall drawing"
+   ],
+   "nonvisual": [
+    "sound: elevator or lounge music"
+   ],
+   "claims": [
+    "Questions the gap between giving welcome and selling hospitality."
+   ],
+   "themes": [
+    "hospitality",
+    "labour",
+    "tourism"
+   ],
+   "references": [
+    "Jacques Derrida on hospitality"
+   ],
+   "photo_notes": "ARTnews photo: word map on wall with mattresses and lamps.",
+   "source": "https://www.artnews.com/list/art-news/artists/2024-biennale-de-lyon-standout-artworks-1234718687/"
+  },
+  {
+   "exhibition": "17th Lyon Biennale",
+   "venue_room": "Les Grandes Locos (vaulted ceiling)",
+   "artist": "Michel de Broin",
+   "artist_born": "1971 (Canadian)",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Mortier Fati – Lignes de lumière",
+   "year": "2024",
+   "family": "light",
+   "medium_line": "neon lights tracing repairs on the ceiling",
+   "dimensions": null,
+   "what_you_see": "Look up: on the vaulted ceiling of the old rail hangar, thin neon lines trace the mortar patches where stonemasons filled cracks, so the repairs read as a glowing, almost unreadable script.",
+   "materials": [
+    "neon tubes",
+    "mortar patches"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Celebrates the beauty of imperfections and repair."
+   ],
+   "themes": [
+    "repair",
+    "architecture",
+    "fate"
+   ],
+   "references": [
+    "Nietzsche's amor fati"
+   ],
+   "photo_notes": "ArtReview photo: ceiling grid with glowing lines.",
+   "source": "https://www.artnews.com/list/art-news/artists/2024-biennale-de-lyon-standout-artworks-1234718687/"
+  },
+  {
+   "exhibition": "Taipei Biennial 2025",
+   "venue_room": "Taipei Fine Arts Museum, second floor",
+   "artist": "Edgar Calel",
+   "artist_born": null,
+   "artist_lives": "Guatemala (Maya Kaqchikel)",
+   "deceased": false,
+   "collective": false,
+   "title": "K'obomanik (Gratitude for everything that lights up and turns off before our eyes)",
+   "year": "2025",
+   "family": "shrine",
+   "medium_line": "stones, rope, soil, ceramics, water and digital screens",
+   "dimensions": "dimensions variable",
+   "what_you_see": "Heavy stones hang in gauzy curtain cocoons that seem lit from inside, suspended and still; low mounds of soil with ceramics and flowers sit around the floor.",
+   "materials": [
+    "stones",
+    "rope",
+    "soil",
+    "ceramics",
+    "water",
+    "screens"
+   ],
+   "nonvisual": [
+    "light: stones glow from within"
+   ],
+   "claims": [
+    "Calls up ancestral knowledge and Kaqchikel Maya ceremony."
+   ],
+   "themes": [
+    "ancestors",
+    "ritual",
+    "gratitude"
+   ],
+   "references": [
+    "Kaqchikel Maya ceremony, San Juan Comalapa"
+   ],
+   "photo_notes": "Berlinartlink photo: stones in gauze above earth mounds.",
+   "source": "https://www.berlinartlink.com/2025/12/16/taipei-biennial-2025-exhibition-review/"
+  },
+  {
+   "exhibition": "Art Basel Unlimited 2025",
+   "venue_room": "Unlimited, entrance",
+   "artist": "Marinella Senatore",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "We Rise By Lifting Others",
+   "year": "2023",
+   "family": "light",
+   "medium_line": "LED bulbs and Flex LED on a wooden structure",
+   "dimensions": "34 m long",
+   "what_you_see": "A festival-style light structure runs about 34 metres at the entrance, built like the lit arches of Italian saints' day parades.",
+   "materials": [
+    "LED bulbs",
+    "wood"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Message of collective uplift."
+   ],
+   "themes": [
+    "community",
+    "festival"
+   ],
+   "references": [
+    "luminarie tradition"
+   ],
+   "photo_notes": "Design Pataki photo: lit arch.",
+   "source": "https://www.designpataki.com/5-genre-defying-installations-by-women-artists-at-art-basel-unlimited-2025/"
+  },
+  {
+   "exhibition": "Art Basel Unlimited 2025",
+   "venue_room": "Unlimited hall (Hauser & Wirth)",
+   "artist": "Felix Gonzalez-Torres",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": true,
+   "collective": false,
+   "title": "\"Untitled\" (Go-Go Dancing Platform)",
+   "year": "1991",
+   "family": "performance",
+   "medium_line": "light blue platform framed by bulbs; live dancer",
+   "dimensions": null,
+   "what_you_see": "A small light-blue platform framed by light bulbs. Once or twice a day a dancer in silver lamé briefs steps up and dances about five minutes to music only he hears.",
+   "materials": [
+    "wood platform",
+    "light bulbs"
+   ],
+   "nonvisual": [
+    "sound: music on dancer's personal device, inaudible to the audience",
+    "performance: dancer activation"
+   ],
+   "claims": [
+    "Made in grief after a partner and father died."
+   ],
+   "themes": [
+    "grief",
+    "AIDS",
+    "intimacy"
+   ],
+   "references": [],
+   "photo_notes": "ARTnews photo.",
+   "source": "https://www.artnews.com/list/art-news/news/art-basel-unlimited-2025-best-artworks-1234745271"
+  }
+ ],
+ "titles_verbatim": [
+  "Artists' Street",
+  "Die Komödie!",
+  "The Fly",
+  "The Ditch",
+  "Las montañas saben lo que hicieron",
+  "Retablo para cargar en la espalda",
+  "El Corpiño",
+  "Panties for Peace",
+  "Negotiation Tables",
+  "The Stairway",
+  "Family Constellation with a Fox",
+  "From Heaven High",
+  "Towards the Matheme of Genocide",
+  "We Who Could Not Drink",
+  "The Song of Lake Balkhash",
+  "Fox & Coyote",
+  "BURNING SPEECHES",
+  "Joker's Headquarters. Gesamtkunstwerk as a Practical Joke (C'est le Premier Vol de L'Aigle)",
+  "Looking for Mukamusaba – An Experimental Opera",
+  "Oju 2.0",
+  "Não existe mais lugar neste lugar",
+  "Passive Recreation",
+  "System's Void",
+  "Crying Uncle's Room",
+  "objects of the wind",
+  "The Long Dark Swim",
+  "LYSIS FIELD",
+  "Valence",
+  "Stock Weather III",
+  "System of In-between State",
+  "Who is invited in the City?",
+  "Sora Kim Sings Eternity",
+  "Patterns of Activation, gardens of the galaxy",
+  "House of Hope Archives",
+  "Demolition of a Wall (Album 2)",
+  "Green Grey Black Brown",
+  "Ecology for Non-Futures",
+  "soft ruin",
+  "Dynamic Stereo Drawing Machine",
+  "Pavilion of the Eternity",
+  "Resin Pond",
+  "Lego Pedometer Cheating Machines",
+  "Not Exactly BPM (Variation Rrose)",
+  "Bullim (Augmentation)",
+  "Another Woman in Gwangju",
+  "Apologies",
+  "Alfabeto",
+  "The Heads in Question",
+  "Perpetuum Mobile (25 Kg)",
+  "Volcanoes of Jeju—Pāhoehoe Lava (Ropy Structure)",
+  "Craft",
+  "The Light in the Factory",
+  "Sneakers",
+  "Switch",
+  "Cat [Shiitake]",
+  "SCABACTION",
+  "Red Navigapparate",
+  "A nest is a fruit that swells",
+  "Chasing the Sun",
+  "Working Class",
+  "A Horn That Swallows Songs",
+  "Fragmentation",
+  "Stone Slippers",
+  "XENON PALACE CHAMPIONSHIP",
+  "Hospitality",
+  "Pyramid",
+  "Diaries from Gaza",
+  "Motherboards",
+  "Tomorrow, again",
+  "Machine Boys",
+  "Opossum Resilience",
+  "What the Mine Gives, the Mine Takes",
+  "A Whispering Dam",
+  "You May Own the Lanterns but We Have the Light",
+  "Pouring Without End and Spilled in Good Faith",
+  "The Longest Sleep",
+  "options",
+  "Resonance Project: The Cave",
+  "El Brujo Disease Thrower",
+  "Violette Cristal",
+  "Marmites enragées",
+  "The Majority of Accent",
+  "Mortier Fati – Lignes de lumière",
+  "The Other, Me and the Others",
+  "Eux et nous, nous et eux",
+  "Animitas (blanc)",
+  "Be Our Guest",
+  "Cuir Mouvement",
+  "Monte di Pietà",
+  "Forever Reverb",
+  "Texture of Memory",
+  "Au cas où #2",
+  "Welcome to the Plastic Age",
+  "Asylum – A Poem of Unrest",
+  "LIVE",
+  "Prehension",
+  "Yield",
+  "Dïà s p o r a",
+  "Un Intruso (uninvited, into chaos)",
+  "Temple du soin",
+  "The Frankenstein Tree",
+  "Our Mineral Intensive Futures",
+  "Detention",
+  "Autotrophic Spectra",
+  "Let me mend your broken bones",
+  "Immortal Smell",
+  "Speak to the earth and it will tell you",
+  "Liquid Transfers",
+  "Aljubs i Grups",
+  "Ghost Soldier",
+  "Away Terrace (Us and Them)",
+  "Underground Flourishings",
+  "Where Am I Now?",
+  "Muly'Ato Lima",
+  "No Hurry",
+  "Heaven in the Ground",
+  "Deep End",
+  "Dear Othermother",
+  "Bunchlann / Buncharriag",
+  "Scent of Thunderbolts",
+  "HERE WE ARE",
+  "Where you are, what we are, with others",
+  "Grand Boules",
+  "Mapping the Wasteland: PAY AND DISPLAY",
+  "As the Nile Flows or the Camel Walks",
+  "Keystone",
+  "Cizania",
+  "Sock series",
+  "The Bloom That Holds Her Shadow",
+  "Aniconism as Figuration Urgency (Post-Scriptum)",
+  "Still My Eyes Water",
+  "Recipients",
+  "TABLEAU VIVANT (A Stolen Sun)",
+  "The Princess and the Magic Birds",
+  "K'obomanik",
+  "Passion of Pneumatics",
+  "Metanoia",
+  "Cellules",
+  "Impression from the Seashore",
+  "Young Man with Long Hair",
+  "Phantom Forest",
+  "Penumbra",
+  "How to Carve a Sculpture",
+  "Dust",
+  "To Make Smoke",
+  "Abrazar el sol (Embrace the Sun)",
+  "Accommodating the Epic Dispersion - On Non-Cathartic Volume of Dispersion",
+  "Prologue II. Resonant Blossoms",
+  "One Hundred Thousand Suns",
+  "The Dispossessed",
+  "Into the Island",
+  "Children's Games",
+  "Heavy Relevance",
+  "Danse Macabre",
+  "The Voyage – A March to Utopia",
+  "Os Comedores de Terra / The Earth Eaters",
+  "sapphire cinnamon viper fairy",
+  "METRO-Net Transportabler U-Bahn Eingang",
+  "Captain Nemo",
+  "Rispetto",
+  "\"Untitled\" (Go-Go Dancing Platform)",
+  "Coup de vent",
+  "Temporal Drift",
+  "Thrones",
+  "We Rise By Lifting Others",
+  "Released Form",
+  "Conversiones",
+  "Midnight",
+  "Evidenza",
+  "Let's go to a Paradise of Glorious Tulips",
+  "Sham3dan (Candelabra)",
+  "Le Cactus",
+  "K'obomanik (Gratitude for everything that lights up and turns off before our eyes)",
+  "Let me Mend Your Broken Bones"
+ ],
+ "phrases": [
+  "set their own laws",
+  "persecution, militarization, and ecocide",
+  "a missive or instruction piece to the receiver",
+  "the audience is now the receiver of cultural evidence",
+  "artistic strategies for articulating oneself in repressive contexts",
+  "orality and bare forms of transmission",
+  "fugitive acts",
+  "unexpected or ephemeral, not announced in advance",
+  "an operatic exhibition about the space we live in",
+  "an opera you can walk into",
+  "a landscape is also a soundscape",
+  "the voice of the subalterns",
+  "our relational space",
+  "humans, machines, animals, spirits, and organic life",
+  "contiguous, contagious and immediate",
+  "inventing a contemporary shamanism",
+  "a planet in crisis",
+  "a visual symphony",
+  "the division of space is always geopolitical",
+  "Feedback Effect, Polyphony, Primordial Sound",
+  "you must change your life",
+  "molecules and me, bodies and bonds",
+  "we can always change the way we learn",
+  "learning from land also cultivates us",
+  "self-preservation as a form of worldbuilding",
+  "an insistence on survival",
+  "an index of persistence",
+  "sketching out horizons of possibility",
+  "human relationships and welcoming the Other",
+  "the voices and stories carried by rivers",
+  "a metaphor for all waterways that connect",
+  "what connects us, separates us, or brings us together",
+  "Imagining Futures, Balancing Conflicts, Cure and Care",
+  "the sandstone that underpins the city",
+  "the foundations, both good and bad",
+  "the place we start from together",
+  "yearning is more than desire",
+  "a reaching out for something you will never touch",
+  "whispers on the horizon",
+  "the more-than-human world",
+  "differing models of intelligence, human and nonhuman",
+  "emergent forms-of-life and new modes of sensorial communication",
+  "art offers pathways out of despair",
+  "attunement, listening and embodied experience",
+  "Speak to the earth and it will tell you",
+  "When women strike the world stops",
+  "sacrifice zones",
+  "trembling thinking",
+  "healing, care and repair",
+  "the beauty of imperfections"
+ ]
+}

@@ -1,0 +1,2795 @@
+{
+  "_about": "People, places and institutions. Every organisation and person here is fictional except the theorists, who are cited the way real wall texts cite them.",
+  "hosts": [
+    {
+      "id": "venice",
+      "city": "Venice",
+      "country": "Italy",
+      "weight": 6,
+      "edition_names": [
+        "Lagoon Biennial",
+        "Biennale of the Salt Warehouses",
+        "Venice Lagoon Triennial"
+      ],
+      "institutions": [
+        "Fondazione Laguna Aperta",
+        "the Lagoon Biennial Foundation",
+        "Fondazione Ca' dei Sali"
+      ],
+      "season": [
+        "May",
+        "November"
+      ],
+      "venues": [
+        {
+          "id": "corderie",
+          "name": "Corderie",
+          "description": "The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows.",
+          "floor": "worn concrete floor",
+          "light": "grey daylight from small high windows mixed with track lighting",
+          "families": [
+            "textile",
+            "found",
+            "figure",
+            "sound",
+            "earth",
+            "ceramic",
+            "architecture",
+            "shrine"
+          ]
+        },
+        {
+          "id": "magazzini",
+          "name": "Magazzini del Sale",
+          "description": "Fifteenth-century salt warehouses on the Zattere: long brick naves under heavy wooden beams, open towards the Giudecca canal.",
+          "floor": "uneven brick floor",
+          "light": "flat daylight through the open doors",
+          "families": [
+            "earth",
+            "found",
+            "sound",
+            "ceramic",
+            "architecture"
+          ]
+        },
+        {
+          "id": "padiglione",
+          "name": "Central Pavilion",
+          "description": "A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895.",
+          "floor": "grey linoleum floor",
+          "light": "even daylight from frosted skylights",
+          "families": [
+            "painting",
+            "archive",
+            "textile",
+            "ceramic",
+            "figure",
+            "shrine",
+            "video"
+          ]
+        },
+        {
+          "id": "palazzo",
+          "name": "Palazzo Morosin, piano nobile",
+          "description": "The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier.",
+          "floor": "polished terrazzo floor",
+          "light": "soft side light from tall windows onto the canal",
+          "families": [
+            "painting",
+            "textile",
+            "shrine",
+            "archive",
+            "ceramic",
+            "video"
+          ]
+        },
+        {
+          "id": "chiesa",
+          "name": "Ex Chiesa di San Lio Nuovo",
+          "description": "A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs.",
+          "floor": "marble floor with old tomb slabs",
+          "light": "dim daylight from high windows and a few spotlights on a rail",
+          "families": [
+            "shrine",
+            "sound",
+            "textile",
+            "figure",
+            "video",
+            "earth"
+          ]
+        },
+        {
+          "id": "squero",
+          "name": "Squero Ex Cantieri Giudecca",
+          "description": "A former boatyard on Giudecca: a corrugated metal roof on steel trusses, a concrete slip running down to the water.",
+          "floor": "concrete slip with oil stains",
+          "light": "hard daylight from the open side",
+          "families": [
+            "found",
+            "architecture",
+            "sound",
+            "earth",
+            "performance",
+            "video"
+          ]
+        },
+        {
+          "id": "giardino",
+          "name": "Giardino delle Vergini",
+          "description": "A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall.",
+          "floor": "gravel and grass",
+          "light": "outdoor daylight under trees",
+          "families": [
+            "earth",
+            "sound",
+            "figure",
+            "architecture"
+          ]
+        },
+        {
+          "id": "sala-video",
+          "name": "Tese delle Nappe",
+          "description": "A long shed divided into black boxes for moving image works, each with a bench and a curtain.",
+          "floor": "black-painted floor",
+          "light": "darkness, light only from the projection",
+          "families": [
+            "video",
+            "sound"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lisbon",
+      "city": "Lisbon",
+      "country": "Portugal",
+      "weight": 1,
+      "edition_names": [
+        "Tagus Biennial",
+        "Lisbon Estuary Triennial"
+      ],
+      "institutions": [
+        "Fundação Estuário",
+        "the Tagus Biennial Association"
+      ],
+      "season": [
+        "September",
+        "January"
+      ],
+      "venues": [
+        {
+          "id": "armazem",
+          "name": "Armazém 16",
+          "description": "A dockside warehouse with a steel roof, painted columns and a view of the river.",
+          "floor": "concrete floor",
+          "light": "grey daylight from roof lights",
+          "families": [
+            "textile",
+            "found",
+            "figure",
+            "sound",
+            "earth",
+            "ceramic",
+            "architecture",
+            "shrine",
+            "archive"
+          ]
+        },
+        {
+          "id": "palacio",
+          "name": "Palácio Sotto Mayor",
+          "description": "A nineteenth-century palace with azulejo panels, parquet floors and high ceilings.",
+          "floor": "parquet floor",
+          "light": "side light from tall windows",
+          "families": [
+            "painting",
+            "textile",
+            "shrine",
+            "archive",
+            "ceramic",
+            "video"
+          ]
+        },
+        {
+          "id": "galerias",
+          "name": "Galerias Municipais",
+          "description": "White municipal galleries with low ceilings and fluorescent tubes.",
+          "floor": "grey resin floor",
+          "light": "fluorescent light",
+          "families": [
+            "painting",
+            "archive",
+            "video",
+            "ceramic",
+            "figure"
+          ]
+        },
+        {
+          "id": "convento",
+          "name": "Convento do Beato",
+          "description": "A former convent: vaulted white rooms, stone floors, a cloister with orange trees.",
+          "floor": "stone floor",
+          "light": "dim daylight from small windows",
+          "families": [
+            "shrine",
+            "sound",
+            "earth",
+            "textile",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kochi",
+      "city": "Kochi",
+      "country": "India",
+      "weight": 1,
+      "edition_names": [
+        "Backwater Biennale",
+        "Malabar Coast Biennale"
+      ],
+      "institutions": [
+        "the Backwater Biennale Foundation"
+      ],
+      "season": [
+        "December",
+        "March"
+      ],
+      "venues": [
+        {
+          "id": "warehouse",
+          "name": "Pepper House Warehouse",
+          "description": "A colonial-era spice warehouse: whitewashed brick, wooden rafters, a courtyard open to the harbour.",
+          "floor": "red oxide floor",
+          "light": "warm daylight from the courtyard",
+          "families": [
+            "textile",
+            "found",
+            "figure",
+            "sound",
+            "earth",
+            "ceramic",
+            "architecture",
+            "shrine",
+            "archive",
+            "painting"
+          ]
+        },
+        {
+          "id": "aspinwall",
+          "name": "Coir Factory",
+          "description": "A former coir factory: a long shed with a clay-tile roof on timber posts and a jetty on the water.",
+          "floor": "rough cement floor",
+          "light": "daylight through gaps in the tiles",
+          "families": [
+            "found",
+            "earth",
+            "sound",
+            "textile",
+            "video",
+            "architecture"
+          ]
+        },
+        {
+          "id": "hall",
+          "name": "Durbar Hall",
+          "description": "A renovated hall with white walls, ceiling fans and teak doors.",
+          "floor": "polished cement floor",
+          "light": "even electric light",
+          "families": [
+            "painting",
+            "archive",
+            "video",
+            "ceramic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marseille",
+      "city": "Marseille",
+      "country": "France",
+      "weight": 1,
+      "edition_names": [
+        "Biennale de la Mer Intérieure",
+        "Mistral Biennale"
+      ],
+      "institutions": [
+        "Fondation Mer Intérieure"
+      ],
+      "season": [
+        "June",
+        "October"
+      ],
+      "venues": [
+        {
+          "id": "friche",
+          "name": "La Halle aux Tabacs",
+          "description": "A former tobacco factory: a huge concrete hall, steel windows, painted lines on the floor.",
+          "floor": "painted concrete floor",
+          "light": "grey daylight from steel windows",
+          "families": [
+            "textile",
+            "found",
+            "figure",
+            "sound",
+            "earth",
+            "ceramic",
+            "architecture",
+            "archive",
+            "painting"
+          ]
+        },
+        {
+          "id": "fort",
+          "name": "Fort Saint-Laurent",
+          "description": "Stone casemates in a seventeenth-century fort above the harbour.",
+          "floor": "stone floor",
+          "light": "darkness and a few spotlights",
+          "families": [
+            "shrine",
+            "sound",
+            "video",
+            "earth"
+          ]
+        },
+        {
+          "id": "musee",
+          "name": "Musée des Docks",
+          "description": "White galleries with polished concrete floors in a converted dock building.",
+          "floor": "polished concrete floor",
+          "light": "even daylight from roof lights",
+          "families": [
+            "painting",
+            "archive",
+            "ceramic",
+            "textile",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "busan",
+      "city": "Busan",
+      "country": "South Korea",
+      "weight": 1,
+      "edition_names": [
+        "Harbour Biennale",
+        "Busan Tidal Biennale"
+      ],
+      "institutions": [
+        "the Harbour Biennale Organising Committee"
+      ],
+      "season": [
+        "September",
+        "November"
+      ],
+      "venues": [
+        {
+          "id": "pier",
+          "name": "Pier 1 Warehouse",
+          "description": "A harbour warehouse with a saw-tooth roof, shipping containers stacked outside.",
+          "floor": "epoxy-coated concrete floor",
+          "light": "cool daylight from saw-tooth skylights",
+          "families": [
+            "textile",
+            "found",
+            "figure",
+            "sound",
+            "earth",
+            "ceramic",
+            "architecture",
+            "digital"
+          ]
+        },
+        {
+          "id": "museum",
+          "name": "Museum of Contemporary Art, Eulsukdo",
+          "description": "Large white museum galleries with high ceilings.",
+          "floor": "light grey concrete floor",
+          "light": "even LED light",
+          "families": [
+            "painting",
+            "archive",
+            "video",
+            "ceramic",
+            "digital",
+            "figure"
+          ]
+        },
+        {
+          "id": "bank",
+          "name": "Former Bank Building, Jung-gu",
+          "description": "A 1930s bank hall with marble counters, a vault and tiled floors.",
+          "floor": "patterned tile floor",
+          "light": "mixed daylight and old pendant lamps",
+          "families": [
+            "shrine",
+            "archive",
+            "sound",
+            "video",
+            "textile"
+          ]
+        }
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "nigeria",
+      "weight": 3,
+      "first": [
+        "Adaeze",
+        "Chidi",
+        "Ngozi",
+        "Tunde",
+        "Folake",
+        "Emeka",
+        "Ayo",
+        "Bisi",
+        "Ifeoma",
+        "Olu",
+        "Kelechi",
+        "Funmi"
+      ],
+      "last": [
+        "Okonkwo",
+        "Adeyemi",
+        "Eze",
+        "Ogunleye",
+        "Nwosu",
+        "Okafor",
+        "Adebayo",
+        "Obi",
+        "Ajayi",
+        "Uche",
+        "Oladipo",
+        "Nnaji"
+      ],
+      "born": [
+        "Lagos",
+        "Ibadan",
+        "Enugu",
+        "Abeokuta",
+        "Onitsha",
+        "Kano",
+        "Port Harcourt"
+      ],
+      "lives": [
+        "Lagos",
+        "London",
+        "Berlin",
+        "Brussels",
+        "New York",
+        "Abuja"
+      ],
+      "heritage": [
+        "adire resist-dyeing",
+        "oríkì praise poetry",
+        "uli body painting",
+        "the Mbari houses of Owerri",
+        "the cloth markets of Onitsha",
+        "a mother's aso-oke weaving"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "ghana",
+      "weight": 2,
+      "first": [
+        "Kwame",
+        "Abena",
+        "Kofi",
+        "Efua",
+        "Yaa",
+        "Kwesi",
+        "Akosua",
+        "Kojo",
+        "Ama",
+        "Yaw"
+      ],
+      "last": [
+        "Mensah",
+        "Boateng",
+        "Owusu",
+        "Asante",
+        "Agyeman",
+        "Ofori",
+        "Appiah",
+        "Quaye",
+        "Darko",
+        "Ansah"
+      ],
+      "born": [
+        "Accra",
+        "Kumasi",
+        "Tamale",
+        "Cape Coast",
+        "Bolgatanga",
+        "Teshie"
+      ],
+      "lives": [
+        "Accra",
+        "Kumasi",
+        "London",
+        "Amsterdam",
+        "Los Angeles"
+      ],
+      "heritage": [
+        "kente strip weaving",
+        "Bolga basket weaving",
+        "Fante asafo flags",
+        "the fantasy coffins of Teshie",
+        "the second-hand clothes of Kantamanto market"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "senegal-mali",
+      "weight": 2,
+      "first": [
+        "Fatou",
+        "Moussa",
+        "Aminata",
+        "Ibrahima",
+        "Awa",
+        "Cheikh",
+        "Mariama",
+        "Ousmane",
+        "Khady",
+        "Mamadou"
+      ],
+      "last": [
+        "Diallo",
+        "Ndiaye",
+        "Sow",
+        "Traoré",
+        "Camara",
+        "Diop",
+        "Sy",
+        "Keïta",
+        "Fall",
+        "Coulibaly"
+      ],
+      "born": [
+        "Dakar",
+        "Saint-Louis",
+        "Bamako",
+        "Ziguinchor",
+        "Ségou",
+        "Rufisque"
+      ],
+      "lives": [
+        "Dakar",
+        "Bamako",
+        "Paris",
+        "Marseille",
+        "Brussels"
+      ],
+      "heritage": [
+        "bògòlanfini mud cloth",
+        "sous-verre glass painting",
+        "griot epics",
+        "Baye Fall patchwork",
+        "the Niger river fishermen"
+      ],
+      "collectives": [
+        "Collectif {word}"
+      ]
+    },
+    {
+      "id": "kenya-uganda",
+      "weight": 2,
+      "first": [
+        "Wanjiru",
+        "Achieng",
+        "Baraka",
+        "Neema",
+        "Atieno",
+        "Nyokabi",
+        "Kamau",
+        "Nakato",
+        "Wekesa",
+        "Akinyi"
+      ],
+      "last": [
+        "Mwangi",
+        "Ochieng",
+        "Kariuki",
+        "Otieno",
+        "Njoroge",
+        "Wekesa",
+        "Mugo",
+        "Nakato",
+        "Odhiambo",
+        "Wambui"
+      ],
+      "born": [
+        "Nairobi",
+        "Kisumu",
+        "Mombasa",
+        "Kampala",
+        "Nakuru",
+        "Lamu"
+      ],
+      "lives": [
+        "Nairobi",
+        "Kampala",
+        "London",
+        "Copenhagen",
+        "New York"
+      ],
+      "heritage": [
+        "kiondo basket weaving",
+        "Swahili carved doors",
+        "kanga cloth proverbs",
+        "the tea pickers of Kericho",
+        "barkcloth making in Buganda"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "southern-africa",
+      "weight": 2,
+      "first": [
+        "Thandiwe",
+        "Sipho",
+        "Lerato",
+        "Zanele",
+        "Tendai",
+        "Rutendo",
+        "Nomvula",
+        "Kudzai",
+        "Bongani",
+        "Palesa"
+      ],
+      "last": [
+        "Dlamini",
+        "Nkosi",
+        "Mokoena",
+        "Moyo",
+        "Sibanda",
+        "Mutasa",
+        "Khumalo",
+        "Ndlovu",
+        "Mahlangu",
+        "Chikwanha"
+      ],
+      "born": [
+        "Johannesburg",
+        "Durban",
+        "Gqeberha",
+        "Harare",
+        "Bulawayo",
+        "Soweto",
+        "Polokwane"
+      ],
+      "lives": [
+        "Johannesburg",
+        "Cape Town",
+        "Harare",
+        "London",
+        "Amsterdam"
+      ],
+      "heritage": [
+        "Ndebele wall painting",
+        "Zulu telephone-wire basketry",
+        "the mining hostels of the Reef",
+        "Shona stone carving",
+        "a grandmother's beadwork"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "ethiopia",
+      "weight": 1,
+      "first": [
+        "Makeda",
+        "Tsegaye",
+        "Selam",
+        "Dawit",
+        "Hiwot",
+        "Yonas",
+        "Meron",
+        "Abel"
+      ],
+      "last": [
+        "Hailu",
+        "Tesfaye",
+        "Bekele",
+        "Gebre",
+        "Alemu",
+        "Mekonnen",
+        "Woldemariam",
+        "Assefa"
+      ],
+      "born": [
+        "Addis Ababa",
+        "Gondar",
+        "Harar",
+        "Lalibela",
+        "Dire Dawa"
+      ],
+      "lives": [
+        "Addis Ababa",
+        "Washington, D.C.",
+        "Berlin",
+        "London"
+      ],
+      "heritage": [
+        "Orthodox church painting",
+        "Harari basketry",
+        "the coffee ceremony",
+        "Ethiopian jazz of the 1970s"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "levant",
+      "weight": 2,
+      "first": [
+        "Leila",
+        "Nour",
+        "Rania",
+        "Karim",
+        "Walid",
+        "Hala",
+        "Tarek",
+        "Zeina",
+        "Samir",
+        "Lina",
+        "Rami",
+        "Dima"
+      ],
+      "last": [
+        "Haddad",
+        "Khalil",
+        "Nasser",
+        "Saab",
+        "Kanaan",
+        "Toukan",
+        "Barakat",
+        "Habib",
+        "Saleh",
+        "Shammas",
+        "Abboud",
+        "Sarkis"
+      ],
+      "born": [
+        "Beirut",
+        "Ramallah",
+        "Jerusalem",
+        "Haifa",
+        "Damascus",
+        "Aleppo",
+        "Amman",
+        "Gaza",
+        "Tripoli",
+        "Nablus"
+      ],
+      "lives": [
+        "Beirut",
+        "Paris",
+        "Berlin",
+        "Amman",
+        "Ramallah",
+        "London"
+      ],
+      "heritage": [
+        "tatreez cross-stitch embroidery",
+        "the olive harvest",
+        "Damascene inlay",
+        "Aleppo soap making",
+        "a grandfather's radio repair shop",
+        "the songs of Andalusian exile"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "maghreb",
+      "weight": 2,
+      "first": [
+        "Yasmine",
+        "Omar",
+        "Salma",
+        "Farid",
+        "Amine",
+        "Soukaina",
+        "Mehdi",
+        "Nadia",
+        "Ilyes",
+        "Houda"
+      ],
+      "last": [
+        "Benali",
+        "El Amrani",
+        "Chraibi",
+        "Bennani",
+        "Mansouri",
+        "Haddadi",
+        "Belkacem",
+        "Zerrouki",
+        "Ouali",
+        "Tazi"
+      ],
+      "born": [
+        "Casablanca",
+        "Tangier",
+        "Marrakesh",
+        "Fez",
+        "Algiers",
+        "Oran",
+        "Tunis",
+        "Sfax"
+      ],
+      "lives": [
+        "Casablanca",
+        "Tunis",
+        "Paris",
+        "Marseille",
+        "Brussels",
+        "Montreal"
+      ],
+      "heritage": [
+        "Amazigh carpet weaving",
+        "zellige tile making",
+        "Gnawa music",
+        "the date palms of the oases",
+        "Kabyle pottery"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "iran-iraq",
+      "weight": 1,
+      "first": [
+        "Shirin",
+        "Reza",
+        "Parisa",
+        "Ali",
+        "Maryam",
+        "Hamid",
+        "Zahra",
+        "Hassan"
+      ],
+      "last": [
+        "Ahmadi",
+        "Karimi",
+        "Hosseini",
+        "Jafari",
+        "Al-Saadi",
+        "Al-Obaidi",
+        "Rezaei",
+        "Kazemi"
+      ],
+      "born": [
+        "Tehran",
+        "Isfahan",
+        "Tabriz",
+        "Shiraz",
+        "Baghdad",
+        "Basra",
+        "Mosul"
+      ],
+      "lives": [
+        "Tehran",
+        "Baghdad",
+        "Berlin",
+        "London",
+        "Los Angeles",
+        "Paris"
+      ],
+      "heritage": [
+        "Persian carpet knotting",
+        "Iraqi maqam",
+        "aineh-kari mirror mosaic",
+        "the marsh dwellers of southern Iraq"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "india",
+      "weight": 2,
+      "first": [
+        "Anjali",
+        "Ravi",
+        "Priya",
+        "Arjun",
+        "Meera",
+        "Sanjay",
+        "Lakshmi",
+        "Nikhil",
+        "Shilpa",
+        "Vikram",
+        "Kavya",
+        "Rohan"
+      ],
+      "last": [
+        "Menon",
+        "Iyer",
+        "Pillai",
+        "Rao",
+        "Banerjee",
+        "Bhattacharya",
+        "Shah",
+        "Desai",
+        "Nair",
+        "Chatterjee",
+        "Kurian",
+        "Mukherjee"
+      ],
+      "born": [
+        "Kolkata",
+        "Chennai",
+        "Mumbai",
+        "Kochi",
+        "Ahmedabad",
+        "Vadodara",
+        "Bhopal",
+        "Shillong",
+        "Thrissur"
+      ],
+      "lives": [
+        "Mumbai",
+        "New Delhi",
+        "Bengaluru",
+        "Kolkata",
+        "London",
+        "New York"
+      ],
+      "heritage": [
+        "kantha quilting",
+        "Gond painting",
+        "block printing in Sanganer",
+        "the terracotta horses of Bankura",
+        "Madhubani wall painting",
+        "the jute mills of the Hooghly"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "pakistan-bangladesh",
+      "weight": 1,
+      "first": [
+        "Ayesha",
+        "Imran",
+        "Sana",
+        "Farhan",
+        "Tahmina",
+        "Rafiq",
+        "Zoya",
+        "Bilal"
+      ],
+      "last": [
+        "Raza",
+        "Qureshi",
+        "Mirza",
+        "Siddiqui",
+        "Chowdhury",
+        "Haque",
+        "Akhtar",
+        "Rahman"
+      ],
+      "born": [
+        "Lahore",
+        "Karachi",
+        "Dhaka",
+        "Chittagong",
+        "Multan",
+        "Peshawar",
+        "Sylhet"
+      ],
+      "lives": [
+        "Lahore",
+        "Karachi",
+        "Dhaka",
+        "London",
+        "Toronto"
+      ],
+      "heritage": [
+        "truck art",
+        "rickshaw painting",
+        "nakshi kantha",
+        "Sufi qawwali",
+        "the ship-breaking yards of Chittagong"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "indonesia",
+      "weight": 2,
+      "first": [
+        "Ayu",
+        "Ketut",
+        "Ratna",
+        "Bambang",
+        "Siti",
+        "Wulan",
+        "Agus",
+        "Dewi",
+        "Tita",
+        "Iwan"
+      ],
+      "last": [
+        "Wibowo",
+        "Rahardjo",
+        "Hartono",
+        "Santoso",
+        "Prasetyo",
+        "Kusuma",
+        "Wijaya",
+        "Lestari",
+        "Nugroho",
+        "Sitompul"
+      ],
+      "born": [
+        "Yogyakarta",
+        "Bandung",
+        "Surabaya",
+        "Denpasar",
+        "Medan",
+        "Makassar",
+        "Jatiwangi"
+      ],
+      "lives": [
+        "Yogyakarta",
+        "Jakarta",
+        "Bandung",
+        "Amsterdam",
+        "Berlin"
+      ],
+      "heritage": [
+        "batik",
+        "wayang shadow puppetry",
+        "ikat weaving in Sumba",
+        "Dayak beadwork",
+        "the rice barns of Toraja",
+        "roof-tile making in Jatiwangi"
+      ],
+      "collectives": [
+        "Kolektif {word}"
+      ]
+    },
+    {
+      "id": "philippines",
+      "weight": 1,
+      "first": [
+        "Maria",
+        "Jose",
+        "Rizalina",
+        "Paolo",
+        "Liza",
+        "Jun",
+        "Kristine",
+        "Ramon"
+      ],
+      "last": [
+        "Santos",
+        "Reyes",
+        "Dela Cruz",
+        "Bautista",
+        "Mendoza",
+        "Villanueva",
+        "Pascual",
+        "Manalo"
+      ],
+      "born": [
+        "Manila",
+        "Cebu",
+        "Davao",
+        "Baguio",
+        "Iloilo",
+        "Dumaguete"
+      ],
+      "lives": [
+        "Manila",
+        "Baguio",
+        "Los Angeles",
+        "Sydney",
+        "Rotterdam"
+      ],
+      "heritage": [
+        "T'nalak weaving",
+        "the rice terraces of the Cordillera",
+        "a mother's sari-sari store",
+        "jeepney painting",
+        "the overseas workers' balikbayan boxes"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "vietnam",
+      "weight": 1,
+      "first": [
+        "Linh",
+        "Mai",
+        "Bao",
+        "Thao",
+        "Minh",
+        "Huong",
+        "Duc",
+        "Lan"
+      ],
+      "last": [
+        "Nguyen",
+        "Tran",
+        "Le",
+        "Pham",
+        "Phan",
+        "Vu",
+        "Dang",
+        "Do"
+      ],
+      "born": [
+        "Hanoi",
+        "Ho Chi Minh City",
+        "Hue",
+        "Hai Phong",
+        "Da Nang",
+        "Can Tho"
+      ],
+      "lives": [
+        "Ho Chi Minh City",
+        "Hanoi",
+        "Paris",
+        "Berlin",
+        "Los Angeles"
+      ],
+      "heritage": [
+        "lacquer painting",
+        "Dong Ho woodblock prints",
+        "water puppetry",
+        "the rubber plantations of the south"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "thailand",
+      "weight": 1,
+      "first": [
+        "Pratchaya",
+        "Kanya",
+        "Somchai",
+        "Arisa",
+        "Narong",
+        "Pimchanok",
+        "Thanwa",
+        "Korakrit"
+      ],
+      "last": [
+        "Kaewsri",
+        "Saengchai",
+        "Chaiyaporn",
+        "Wongsawat",
+        "Sukprasert",
+        "Rattanakul",
+        "Boonmee",
+        "Srisuk"
+      ],
+      "born": [
+        "Bangkok",
+        "Chiang Mai",
+        "Khon Kaen",
+        "Hat Yai",
+        "Udon Thani",
+        "Ubon Ratchathani"
+      ],
+      "lives": [
+        "Bangkok",
+        "Chiang Mai",
+        "Berlin",
+        "Los Angeles"
+      ],
+      "heritage": [
+        "Isan mor lam songs",
+        "temple murals",
+        "lotus-silk weaving",
+        "the migrant workers of the northeast"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "china",
+      "weight": 2,
+      "first": [
+        "Lin",
+        "Mei",
+        "Wei",
+        "Xiaoyu",
+        "Yi",
+        "Hao",
+        "Ting",
+        "Jia"
+      ],
+      "last": [
+        "Chen",
+        "Liu",
+        "Zhang",
+        "Huang",
+        "Wu",
+        "Zhou",
+        "Ho",
+        "Xu"
+      ],
+      "born": [
+        "Guangzhou",
+        "Chengdu",
+        "Taipei",
+        "Tainan",
+        "Hong Kong",
+        "Shenyang",
+        "Kunming",
+        "Wuhan"
+      ],
+      "lives": [
+        "Beijing",
+        "Shanghai",
+        "Taipei",
+        "Hong Kong",
+        "Berlin",
+        "New York"
+      ],
+      "heritage": [
+        "paper-cutting",
+        "the factory towns of the Pearl River Delta",
+        "Hakka round houses",
+        "Taiwanese temple processions",
+        "a grandmother's dried-seafood shop"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "korea",
+      "weight": 1,
+      "first": [
+        "Ji-woo",
+        "Seo-yeon",
+        "Min-jun",
+        "Hye-jin",
+        "Eun-ji",
+        "Sung-min",
+        "Da-eun",
+        "Joon-ho"
+      ],
+      "last": [
+        "Kim",
+        "Park",
+        "Lee",
+        "Choi",
+        "Jung",
+        "Kang",
+        "Yoon",
+        "Han"
+      ],
+      "born": [
+        "Seoul",
+        "Busan",
+        "Gwangju",
+        "Jeju",
+        "Daegu",
+        "Incheon"
+      ],
+      "lives": [
+        "Seoul",
+        "Busan",
+        "Berlin",
+        "London",
+        "New York"
+      ],
+      "heritage": [
+        "the haenyeo divers of Jeju",
+        "bojagi wrapping cloths",
+        "gut shamanic rituals",
+        "onggi fermentation jars"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "japan",
+      "weight": 1,
+      "first": [
+        "Hiroshi",
+        "Yuki",
+        "Haruka",
+        "Akiko",
+        "Daisuke",
+        "Kenta",
+        "Emi",
+        "Sora"
+      ],
+      "last": [
+        "Tanaka",
+        "Watanabe",
+        "Yamamoto",
+        "Nakamura",
+        "Sato",
+        "Ito",
+        "Kobayashi",
+        "Higa"
+      ],
+      "born": [
+        "Osaka",
+        "Naha",
+        "Sapporo",
+        "Fukuoka",
+        "Kyoto",
+        "Hiroshima",
+        "Kumamoto"
+      ],
+      "lives": [
+        "Tokyo",
+        "Kyoto",
+        "Osaka",
+        "Berlin",
+        "New York"
+      ],
+      "heritage": [
+        "Okinawan bingata dyeing",
+        "Ainu embroidery",
+        "boro mending",
+        "the fishing villages of Minamata"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "mexico-guatemala",
+      "weight": 2,
+      "first": [
+        "Ximena",
+        "Mateo",
+        "Daniela",
+        "Joaquín",
+        "Paola",
+        "Itzel",
+        "Diego",
+        "Rosa",
+        "Citlali",
+        "Emiliano"
+      ],
+      "last": [
+        "Castellanos",
+        "Ortega",
+        "Ramírez",
+        "Vázquez",
+        "Hernández",
+        "López",
+        "Cruz",
+        "Morales",
+        "Tzoc",
+        "Sic"
+      ],
+      "born": [
+        "Oaxaca",
+        "Mexico City",
+        "Guadalajara",
+        "Mérida",
+        "Guatemala City",
+        "San Cristóbal de las Casas",
+        "Juchitán"
+      ],
+      "lives": [
+        "Mexico City",
+        "Oaxaca",
+        "Guatemala City",
+        "Los Angeles",
+        "Madrid"
+      ],
+      "heritage": [
+        "backstrap loom weaving",
+        "barro negro pottery",
+        "papel picado",
+        "Zapotec rug weaving",
+        "the milpa",
+        "the huipiles of the Highlands"
+      ],
+      "collectives": [
+        "Colectivo {word}"
+      ]
+    },
+    {
+      "id": "andes",
+      "weight": 1,
+      "first": [
+        "Rosa",
+        "Julián",
+        "Inés",
+        "Wilmer",
+        "Nina",
+        "Rufino",
+        "Elvira",
+        "Saturnino"
+      ],
+      "last": [
+        "Quispe",
+        "Mamani",
+        "Huanca",
+        "Choque",
+        "Yupanqui",
+        "Condori",
+        "Apaza",
+        "Ticona"
+      ],
+      "born": [
+        "La Paz",
+        "El Alto",
+        "Cusco",
+        "Puno",
+        "Ayacucho",
+        "Cochabamba",
+        "Potosí"
+      ],
+      "lives": [
+        "La Paz",
+        "Lima",
+        "Cusco",
+        "Madrid",
+        "São Paulo"
+      ],
+      "heritage": [
+        "Andean khipu",
+        "Aymara weaving",
+        "the retablos of Ayacucho",
+        "cholita fashion in El Alto",
+        "the silver mines of Potosí"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "brazil",
+      "weight": 2,
+      "first": [
+        "Luana",
+        "Rafael",
+        "Camila",
+        "Gustavo",
+        "Jéssica",
+        "Maíra",
+        "Davi",
+        "Ana Clara",
+        "Joelma",
+        "Iara"
+      ],
+      "last": [
+        "Nascimento",
+        "Barbosa",
+        "Silva",
+        "Moraes",
+        "Pereira",
+        "Santos",
+        "Oliveira",
+        "Costa",
+        "Ferreira",
+        "Gomes"
+      ],
+      "born": [
+        "Salvador",
+        "Belém",
+        "Recife",
+        "Manaus",
+        "Rio de Janeiro",
+        "Belo Horizonte",
+        "São Luís",
+        "Fortaleza"
+      ],
+      "lives": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Salvador",
+        "Lisbon",
+        "Berlin"
+      ],
+      "heritage": [
+        "Candomblé ritual cloth",
+        "the potters of the Jequitinhonha valley",
+        "Marajoara ceramics",
+        "the rubber trade of the Amazon",
+        "cordel woodcut prints"
+      ],
+      "collectives": [
+        "Coletivo {word}"
+      ]
+    },
+    {
+      "id": "southern-cone-colombia",
+      "weight": 2,
+      "first": [
+        "Tomás",
+        "Marisol",
+        "Sebastián",
+        "Valentina",
+        "Camilo",
+        "Florencia",
+        "Ignacio",
+        "Paz"
+      ],
+      "last": [
+        "Cárdenas",
+        "Rojas",
+        "Fuentes",
+        "Gutiérrez",
+        "Muñoz",
+        "Echeverría",
+        "Painemal",
+        "Ñancupil"
+      ],
+      "born": [
+        "Santiago",
+        "Valparaíso",
+        "Temuco",
+        "Bogotá",
+        "Medellín",
+        "Cali",
+        "Rosario",
+        "Asunción"
+      ],
+      "lives": [
+        "Santiago",
+        "Bogotá",
+        "Buenos Aires",
+        "Mexico City",
+        "Madrid"
+      ],
+      "heritage": [
+        "Mapuche silverwork",
+        "arpillera embroidery",
+        "cumbia sonidera",
+        "the banana plantations of the Magdalena",
+        "the coca leaf"
+      ],
+      "collectives": [
+        "Colectivo {word}"
+      ]
+    },
+    {
+      "id": "caribbean",
+      "weight": 1,
+      "first": [
+        "Annalise",
+        "Kareem",
+        "Shanice",
+        "Ebony",
+        "Marcus",
+        "Celia",
+        "Dwayne",
+        "Yanique",
+        "Andre",
+        "Nadine"
+      ],
+      "last": [
+        "Baptiste",
+        "Joseph",
+        "Cumberbatch",
+        "Lazare",
+        "Thompson",
+        "Pierre",
+        "Morillo",
+        "Grant",
+        "St. Hill",
+        "Alleyne"
+      ],
+      "born": [
+        "Port of Spain",
+        "Kingston",
+        "Bridgetown",
+        "San Juan",
+        "Port-au-Prince",
+        "Fort-de-France",
+        "Havana",
+        "Santo Domingo"
+      ],
+      "lives": [
+        "Port of Spain",
+        "Kingston",
+        "San Juan",
+        "Miami",
+        "London",
+        "Brooklyn"
+      ],
+      "heritage": [
+        "Carnival mas making",
+        "the sugar plantations of the island",
+        "Vodou sequin flags",
+        "a grandmother's provision ground",
+        "calypso",
+        "the creole garden"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "indigenous-north-pacific",
+      "weight": 1,
+      "first": [
+        "Tama",
+        "Wiremu",
+        "Marie",
+        "Aroha",
+        "Lena",
+        "Sky",
+        "Hemi",
+        "Talia",
+        "Nizhoni",
+        "Kalani"
+      ],
+      "last": [
+        "Pōtiki",
+        "Tsosie",
+        "Kingi",
+        "Watchman",
+        "Te Rangi",
+        "Yazzie",
+        "Many Hides",
+        "Kanahele",
+        "Redcloud",
+        "Tahere"
+      ],
+      "born": [
+        "Shiprock",
+        "Rotorua",
+        "Gallup",
+        "Whanganui",
+        "Hilo",
+        "Anchorage",
+        "Kahnawà:ke"
+      ],
+      "lives": [
+        "Santa Fe",
+        "Auckland",
+        "Wellington",
+        "Minneapolis",
+        "Honolulu",
+        "Montreal"
+      ],
+      "heritage": [
+        "Diné weaving",
+        "Pueblo pottery",
+        "Māori whatu weaving",
+        "star quilts",
+        "beadwork",
+        "tapa cloth"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "north-america",
+      "weight": 1,
+      "first": [
+        "Loretta",
+        "Andre",
+        "Tamsin",
+        "Corey",
+        "Delphine",
+        "Willa",
+        "Marcus",
+        "Odessa",
+        "Jordan",
+        "Emmett"
+      ],
+      "last": [
+        "Fairbanks",
+        "Holloway",
+        "Pruitt",
+        "Okada",
+        "Breaux",
+        "Lindell",
+        "Mercer",
+        "Hargrove",
+        "Tolliver",
+        "Vance"
+      ],
+      "born": [
+        "New Orleans",
+        "Detroit",
+        "Oakland",
+        "Baltimore",
+        "Chicago",
+        "Houston",
+        "Memphis",
+        "Philadelphia"
+      ],
+      "lives": [
+        "Brooklyn",
+        "Los Angeles",
+        "Chicago",
+        "New Orleans",
+        "Philadelphia"
+      ],
+      "heritage": [
+        "Gee's Bend quilting",
+        "a grandmother's church choir",
+        "the Great Migration",
+        "the levees of the Mississippi",
+        "the yard shows of the South"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "italy",
+      "weight": 1,
+      "first": [
+        "Sofia",
+        "Dario",
+        "Marta",
+        "Cosimo",
+        "Giulia",
+        "Matteo",
+        "Chiara",
+        "Nicola"
+      ],
+      "last": [
+        "Ferrante",
+        "Esposito",
+        "Russo",
+        "Bianchi",
+        "Greco",
+        "Marino",
+        "Zanin",
+        "Lombardo"
+      ],
+      "born": [
+        "Naples",
+        "Palermo",
+        "Taranto",
+        "Bari",
+        "Venice",
+        "Genoa",
+        "Cagliari"
+      ],
+      "lives": [
+        "Milan",
+        "Rome",
+        "Naples",
+        "Venice",
+        "Berlin"
+      ],
+      "heritage": [
+        "Murano glassblowing",
+        "Sicilian ex-votos",
+        "Sardinian weaving",
+        "the steelworks of Taranto",
+        "the lace makers of Burano"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "western-europe",
+      "weight": 1,
+      "first": [
+        "Anouk",
+        "Lukas",
+        "Clara",
+        "Tobias",
+        "Henrike",
+        "Jonas",
+        "Lotte",
+        "Pieter"
+      ],
+      "last": [
+        "Brandt",
+        "De Smet",
+        "Janssens",
+        "Vermeulen",
+        "Hoffmann",
+        "Bakker",
+        "Claes",
+        "Wouters"
+      ],
+      "born": [
+        "Rotterdam",
+        "Ghent",
+        "Antwerp",
+        "Leipzig",
+        "Hamburg",
+        "Eindhoven",
+        "Liège"
+      ],
+      "lives": [
+        "Brussels",
+        "Amsterdam",
+        "Berlin",
+        "Rotterdam",
+        "Antwerp"
+      ],
+      "heritage": [
+        "the Flemish beguinages",
+        "the coal mines of Limburg",
+        "Delft blue tiles",
+        "a grandmother's lace bobbins"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "nordic",
+      "weight": 1,
+      "first": [
+        "Ilse",
+        "Kaja",
+        "Nils",
+        "Elina",
+        "Rasmus",
+        "Signe",
+        "Ingrid",
+        "Aslak"
+      ],
+      "last": [
+        "Lindqvist",
+        "Sørensen",
+        "Virtanen",
+        "Kristiansen",
+        "Halvorsen",
+        "Nyberg",
+        "Eira",
+        "Somby"
+      ],
+      "born": [
+        "Bergen",
+        "Tromsø",
+        "Kiruna",
+        "Turku",
+        "Aarhus",
+        "Kautokeino"
+      ],
+      "lives": [
+        "Oslo",
+        "Copenhagen",
+        "Stockholm",
+        "Helsinki",
+        "Berlin"
+      ],
+      "heritage": [
+        "Sámi duodji craft",
+        "joik",
+        "the herring fisheries",
+        "a grandmother's rag rugs"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "uk-ireland",
+      "weight": 1,
+      "first": [
+        "Annie",
+        "Callum",
+        "Niamh",
+        "Owen",
+        "Bethan",
+        "Rhys",
+        "Siobhán",
+        "Ewan"
+      ],
+      "last": [
+        "Halloran",
+        "Murphy",
+        "Doherty",
+        "Pritchard",
+        "Evans",
+        "McBride",
+        "Gallagher",
+        "Llewellyn"
+      ],
+      "born": [
+        "Belfast",
+        "Glasgow",
+        "Cardiff",
+        "Liverpool",
+        "Derry",
+        "Leeds",
+        "Swansea"
+      ],
+      "lives": [
+        "London",
+        "Glasgow",
+        "Belfast",
+        "Dublin",
+        "Cardiff"
+      ],
+      "heritage": [
+        "Irish crochet lace",
+        "the Welsh slate quarries",
+        "Orange Order banners",
+        "the Glasgow shipyards"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "ukraine",
+      "weight": 1,
+      "first": [
+        "Olena",
+        "Dmytro",
+        "Kateryna",
+        "Taras",
+        "Iryna",
+        "Bohdan"
+      ],
+      "last": [
+        "Kovalenko",
+        "Shevchenko",
+        "Bondarenko",
+        "Melnyk",
+        "Tkachenko",
+        "Kravets"
+      ],
+      "born": [
+        "Kyiv",
+        "Kharkiv",
+        "Odesa",
+        "Lviv",
+        "Mariupol"
+      ],
+      "lives": [
+        "Kyiv",
+        "Lviv",
+        "Berlin",
+        "Vienna",
+        "Warsaw"
+      ],
+      "heritage": [
+        "pysanky egg painting",
+        "rushnyk embroidery",
+        "the Donbas coal mines"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "poland",
+      "weight": 1,
+      "first": [
+        "Agnieszka",
+        "Marta",
+        "Paweł",
+        "Zofia",
+        "Tomasz",
+        "Kasia"
+      ],
+      "last": [
+        "Nowak",
+        "Kowalczyk",
+        "Wójcik",
+        "Kaczmarek",
+        "Mazur",
+        "Krawczyk"
+      ],
+      "born": [
+        "Gdańsk",
+        "Katowice",
+        "Łódź",
+        "Kraków",
+        "Wrocław"
+      ],
+      "lives": [
+        "Warsaw",
+        "Kraków",
+        "Berlin",
+        "London"
+      ],
+      "heritage": [
+        "wycinanki paper-cutting",
+        "the Silesian coal mines",
+        "the Gdańsk shipyard"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "georgia",
+      "weight": 1,
+      "first": [
+        "Nino",
+        "Giorgi",
+        "Tamar",
+        "Levan",
+        "Mariam",
+        "Luka"
+      ],
+      "last": [
+        "Beridze",
+        "Gelashvili",
+        "Kapanadze",
+        "Lomidze",
+        "Tsiklauri",
+        "Japaridze"
+      ],
+      "born": [
+        "Tbilisi",
+        "Kutaisi",
+        "Batumi",
+        "Rustavi"
+      ],
+      "lives": [
+        "Tbilisi",
+        "Berlin",
+        "Vienna",
+        "Amsterdam"
+      ],
+      "heritage": [
+        "Georgian polyphonic song",
+        "Soviet mosaic bus stops",
+        "felt making in Tusheti"
+      ],
+      "collectives": []
+    },
+    {
+      "id": "albania-kosovo",
+      "weight": 1,
+      "first": [
+        "Arta",
+        "Driton",
+        "Blerta",
+        "Erion",
+        "Dua",
+        "Valon"
+      ],
+      "last": [
+        "Krasniqi",
+        "Gashi",
+        "Berisha",
+        "Hoxha",
+        "Shala",
+        "Kelmendi"
+      ],
+      "born": [
+        "Prishtina",
+        "Tirana",
+        "Shkodër",
+        "Prizren",
+        "Gjakova"
+      ],
+      "lives": [
+        "Prishtina",
+        "Tirana",
+        "Berlin",
+        "Vienna",
+        "London"
+      ],
+      "heritage": [
+        "Albanian iso-polyphony",
+        "qilim weaving",
+        "the concrete bunkers of the coast"
+      ],
+      "collectives": []
+    }
+  ],
+  "collective_names": [
+    "The Kitchen Table Archive",
+    "Collective of the Low Tide",
+    "{place} Women's Embroidery Group",
+    "The Salt Committee",
+    "Forest Curriculum Working Group",
+    "Minor Gardens",
+    "Unfinished Rivers",
+    "The {place} School of Listening",
+    "Tidal Assembly",
+    "{place} Weaving Cooperative",
+    "Radio {word}",
+    "The Seed Library of {place}"
+  ],
+  "theorists": [
+    {
+      "name": "Édouard Glissant",
+      "work": "Poetics of Relation",
+      "year": 1990,
+      "concept": "the right to opacity",
+      "short": "Glissant"
+    },
+    {
+      "name": "Édouard Glissant",
+      "work": "Poetics of Relation",
+      "year": 1990,
+      "concept": "relation",
+      "short": "Glissant"
+    },
+    {
+      "name": "Fred Moten and Stefano Harney",
+      "work": "The Undercommons",
+      "year": 2013,
+      "concept": "fugitive planning",
+      "short": "Moten and Harney"
+    },
+    {
+      "name": "Donna Haraway",
+      "work": "Staying with the Trouble",
+      "year": 2016,
+      "concept": "making kin",
+      "short": "Haraway"
+    },
+    {
+      "name": "Anna Lowenhaupt Tsing",
+      "work": "The Mushroom at the End of the World",
+      "year": 2015,
+      "concept": "life in capitalist ruins",
+      "short": "Tsing"
+    },
+    {
+      "name": "Christina Sharpe",
+      "work": "In the Wake",
+      "year": 2016,
+      "concept": "wake work",
+      "short": "Sharpe"
+    },
+    {
+      "name": "Saidiya Hartman",
+      "work": "Wayward Lives, Beautiful Experiments",
+      "year": 2019,
+      "concept": "critical fabulation",
+      "short": "Hartman"
+    },
+    {
+      "name": "Achille Mbembe",
+      "work": "Necropolitics",
+      "year": 2019,
+      "concept": "necropolitics",
+      "short": "Mbembe"
+    },
+    {
+      "name": "Astrida Neimanis",
+      "work": "Bodies of Water",
+      "year": 2017,
+      "concept": "hydrofeminism",
+      "short": "Neimanis"
+    },
+    {
+      "name": "Robin Wall Kimmerer",
+      "work": "Braiding Sweetgrass",
+      "year": 2013,
+      "concept": "the grammar of animacy",
+      "short": "Kimmerer"
+    },
+    {
+      "name": "Sylvia Wynter",
+      "work": "Unsettling the Coloniality of Being/Power/Truth/Freedom",
+      "year": 2003,
+      "concept": "the overrepresentation of Man",
+      "short": "Wynter"
+    },
+    {
+      "name": "Ursula K. Le Guin",
+      "work": "The Carrier Bag Theory of Fiction",
+      "year": 1986,
+      "concept": "the carrier bag",
+      "short": "Le Guin"
+    },
+    {
+      "name": "Toni Morrison",
+      "work": "Beloved",
+      "year": 1987,
+      "concept": "rememory",
+      "short": "Morrison"
+    },
+    {
+      "name": "Conceição Evaristo",
+      "work": "Becos da Memória",
+      "year": 2006,
+      "concept": "escrevivência",
+      "short": "Evaristo"
+    },
+    {
+      "name": "Ailton Krenak",
+      "work": "Ideas to Postpone the End of the World",
+      "year": 2019,
+      "concept": "postponing the end of the world",
+      "short": "Krenak"
+    },
+    {
+      "name": "Silvia Rivera Cusicanqui",
+      "work": "Ch'ixinakax utxiwa",
+      "year": 2010,
+      "concept": "the ch'ixi",
+      "short": "Rivera Cusicanqui"
+    },
+    {
+      "name": "Kathryn Yusoff",
+      "work": "A Billion Black Anthropocenes or None",
+      "year": 2018,
+      "concept": "geologic life",
+      "short": "Yusoff"
+    },
+    {
+      "name": "Denise Ferreira da Silva",
+      "work": "Unpayable Debt",
+      "year": 2022,
+      "concept": "the unpayable",
+      "short": "Ferreira da Silva"
+    },
+    {
+      "name": "Trinh T. Minh-ha",
+      "work": "Reassemblage",
+      "year": 1982,
+      "concept": "speaking nearby",
+      "short": "Trinh"
+    },
+    {
+      "name": "Ariella Aïsha Azoulay",
+      "work": "Potential History",
+      "year": 2019,
+      "concept": "unlearning imperialism",
+      "short": "Azoulay"
+    },
+    {
+      "name": "Elizabeth A. Povinelli",
+      "work": "Geontologies",
+      "year": 2016,
+      "concept": "geontopower",
+      "short": "Povinelli"
+    },
+    {
+      "name": "Silvia Federici",
+      "work": "Caliban and the Witch",
+      "year": 2004,
+      "concept": "the commons",
+      "short": "Federici"
+    },
+    {
+      "name": "Paul B. Preciado",
+      "work": "Can the Monster Speak?",
+      "year": 2020,
+      "concept": "the monster who speaks",
+      "short": "Preciado"
+    },
+    {
+      "name": "Legacy Russell",
+      "work": "Glitch Feminism",
+      "year": 2020,
+      "concept": "the glitch",
+      "short": "Russell"
+    },
+    {
+      "name": "Yuk Hui",
+      "work": "The Question Concerning Technology in China",
+      "year": 2016,
+      "concept": "cosmotechnics",
+      "short": "Hui"
+    },
+    {
+      "name": "Macarena Gómez-Barris",
+      "work": "The Extractive Zone",
+      "year": 2017,
+      "concept": "the extractive zone",
+      "short": "Gómez-Barris"
+    },
+    {
+      "name": "Kodwo Eshun",
+      "work": "More Brilliant than the Sun",
+      "year": 1998,
+      "concept": "sonic fiction",
+      "short": "Eshun"
+    },
+    {
+      "name": "Jack Halberstam",
+      "work": "Wild Things",
+      "year": 2020,
+      "concept": "wildness",
+      "short": "Halberstam"
+    },
+    {
+      "name": "Hito Steyerl",
+      "work": "The Wretched of the Screen",
+      "year": 2012,
+      "concept": "the poor image",
+      "short": "Steyerl"
+    },
+    {
+      "name": "Gloria Anzaldúa",
+      "work": "Borderlands/La Frontera",
+      "year": 1987,
+      "concept": "the borderlands",
+      "short": "Anzaldúa"
+    },
+    {
+      "name": "Audre Lorde",
+      "work": "Sister Outsider",
+      "year": 1984,
+      "concept": "the erotic as power",
+      "short": "Lorde"
+    },
+    {
+      "name": "Kamau Brathwaite",
+      "work": "History of the Voice",
+      "year": 1984,
+      "concept": "tidalectics",
+      "short": "Brathwaite"
+    },
+    {
+      "name": "Frantz Fanon",
+      "work": "The Wretched of the Earth",
+      "year": 1961,
+      "concept": "decolonisation",
+      "short": "Fanon"
+    },
+    {
+      "name": "Bruno Latour",
+      "work": "Down to Earth",
+      "year": 2018,
+      "concept": "the terrestrial",
+      "short": "Latour"
+    },
+    {
+      "name": "Emanuele Coccia",
+      "work": "The Life of Plants",
+      "year": 2016,
+      "concept": "the metaphysics of mixture",
+      "short": "Coccia"
+    },
+    {
+      "name": "Merlin Sheldrake",
+      "work": "Entangled Life",
+      "year": 2020,
+      "concept": "entanglement",
+      "short": "Sheldrake"
+    }
+  ],
+  "people_first": [
+    "Amara",
+    "Yusuf",
+    "Ilse",
+    "Tomás",
+    "Nadia",
+    "Kwame",
+    "Lin",
+    "Eshe",
+    "Rafael",
+    "Zainab",
+    "Sofia",
+    "Tariq",
+    "Mireille",
+    "Bao",
+    "Ines",
+    "Farid",
+    "Leila",
+    "Jomo",
+    "Kaja",
+    "Reza",
+    "Ximena",
+    "Anouk",
+    "Marisol",
+    "Adaeze",
+    "Lucia",
+    "Sami",
+    "Yara",
+    "Kofi",
+    "Hana",
+    "Cosimo",
+    "Gabriela",
+    "Rasmus"
+  ],
+  "people_last": [
+    "Okonkwo-Vieira",
+    "Halloran",
+    "Baptista",
+    "Nakamura-Reyes",
+    "Adeyemi",
+    "Mensah",
+    "Petrosyan",
+    "Al-Rashid",
+    "Dlamini",
+    "Nascimento",
+    "Ochieng",
+    "Bhattacharya",
+    "Lindqvist",
+    "Mahfouz",
+    "Quispe",
+    "Tanaka-Gruber",
+    "Castellanos",
+    "Yeboah",
+    "Ionescu",
+    "Ferrante",
+    "Moreau",
+    "Akhtar",
+    "Sandoval",
+    "Kristiansen"
+  ],
+  "galleries": [
+    "Galerie Nachtigall, Berlin",
+    "Kunstraum Ostrand, Vienna",
+    "Fondazione Marmorata, Turin",
+    "Salt Projects, Lagos",
+    "Vermilion & Sons, London",
+    "Estúdio Bàrbaro, São Paulo",
+    "Galería Umbral, Mexico City",
+    "Kupfer, Vienna",
+    "Tarpaulin, Rotterdam",
+    "Sediment, New York",
+    "Galerie du Seuil, Paris",
+    "Undercroft, Glasgow",
+    "Cassava Projects, Accra",
+    "Gallery Mul, Seoul",
+    "Project 88½, Mumbai",
+    "Rumah Kayu, Yogyakarta",
+    "Kiln, Cape Town",
+    "Pied-à-Mer, Brussels"
+  ],
+  "funders": [
+    "the Halvorsen Foundation",
+    "Fondation Arbre-Sel",
+    "the Okafor-Lindqvist Family Trust",
+    "the Office for Contemporary Art, Oslo",
+    "the Ministry of Culture of {country}",
+    "the Embassy of {country}",
+    "the Ostrander Fund for Artists",
+    "Fondazione In Bilico",
+    "the Mbeki-Rossi Initiative",
+    "a private collection, Geneva",
+    "the Nordic Culture Point",
+    "the Tidewater Prize"
+  ],
+  "photographers": [
+    "Matteo De Fina",
+    "Giulia Morosin",
+    "Andrea Pizzol",
+    "Francesco Barasciutti",
+    "Ilaria Vanzan",
+    "Marco Cappelletti",
+    "Studio Laguna",
+    "Sara Benedetti",
+    "Nicola Tonolo",
+    "Luca Fabris",
+    "Chiara Dazzi",
+    "Pietro Lugato"
+  ],
+  "identities": [
+    {
+      "name": "indigo",
+      "palette": {
+        "ground": "#ffffff",
+        "ink": "#151834",
+        "accent": "#2531c8",
+        "muted": "#585a6b",
+        "rule": "#dcdde6"
+      },
+      "display_font": "Bricolage Grotesque",
+      "google_fonts": "family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
+      "display_weight": 700,
+      "display_tracking": "-0.045em"
+    },
+    {
+      "name": "lagoon",
+      "palette": {
+        "ground": "#e3e9e6",
+        "ink": "#0f2420",
+        "accent": "#0f5e52",
+        "muted": "#4c5f5b",
+        "rule": "#c4cfcb"
+      },
+      "display_font": "Instrument Serif",
+      "google_fonts": "family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
+      "display_weight": 400,
+      "display_tracking": "-0.02em"
+    },
+    {
+      "name": "signal",
+      "palette": {
+        "ground": "#f3f3f1",
+        "ink": "#1a1a1a",
+        "accent": "#d4007a",
+        "muted": "#5f5f5c",
+        "rule": "#d8d8d4"
+      },
+      "display_font": "Syne",
+      "google_fonts": "family=Syne:wght@600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
+      "display_weight": 800,
+      "display_tracking": "-0.04em"
+    },
+    {
+      "name": "lilac",
+      "palette": {
+        "ground": "#ece8f3",
+        "ink": "#21163a",
+        "accent": "#5b33c4",
+        "muted": "#5c5470",
+        "rule": "#d3cde0"
+      },
+      "display_font": "Unbounded",
+      "google_fonts": "family=Unbounded:wght@500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
+      "display_weight": 500,
+      "display_tracking": "-0.05em"
+    },
+    {
+      "name": "brick",
+      "palette": {
+        "ground": "#ffffff",
+        "ink": "#2b1411",
+        "accent": "#a8261b",
+        "muted": "#6a5652",
+        "rule": "#e6dbd8"
+      },
+      "display_font": "Big Shoulders Display",
+      "google_fonts": "family=Big+Shoulders+Display:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
+      "display_weight": 900,
+      "display_tracking": "-0.01em"
+    },
+    {
+      "name": "moss",
+      "palette": {
+        "ground": "#eef0e6",
+        "ink": "#232619",
+        "accent": "#55691d",
+        "muted": "#5c604f",
+        "rule": "#d4d8c6"
+      },
+      "display_font": "Fraunces",
+      "google_fonts": "family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
+      "display_weight": 300,
+      "display_tracking": "-0.03em"
+    }
+  ],
+  "collective_words": [
+    "Maré",
+    "Semente",
+    "Lumbung",
+    "Barro",
+    "Fogo",
+    "Raíz",
+    "Sal",
+    "Tierra",
+    "Kampung",
+    "Rumah",
+    "Lodo",
+    "Brasa"
+  ],
+  "countries": {
+    "Aarhus": "Denmark",
+    "Abeokuta": "Nigeria",
+    "Abuja": "Nigeria",
+    "Accra": "Ghana",
+    "Addis Ababa": "Ethiopia",
+    "Ahmedabad": "India",
+    "Aleppo": "Syria",
+    "Algiers": "Algeria",
+    "Amman": "Jordan",
+    "Amsterdam": "Netherlands",
+    "Anchorage": "USA",
+    "Antwerp": "Belgium",
+    "Asunción": "Paraguay",
+    "Auckland": "New Zealand",
+    "Ayacucho": "Peru",
+    "Baghdad": "Iraq",
+    "Baguio": "Philippines",
+    "Baltimore": "USA",
+    "Bamako": "Mali",
+    "Bandung": "Indonesia",
+    "Bangkok": "Thailand",
+    "Bari": "Italy",
+    "Basra": "Iraq",
+    "Batumi": "Georgia",
+    "Beijing": "China",
+    "Beirut": "Lebanon",
+    "Belfast": "UK",
+    "Belo Horizonte": "Brazil",
+    "Belém": "Brazil",
+    "Bengaluru": "India",
+    "Bergen": "Norway",
+    "Berlin": "Germany",
+    "Bhopal": "India",
+    "Bogotá": "Colombia",
+    "Bolgatanga": "Ghana",
+    "Bridgetown": "Barbados",
+    "Brooklyn": "USA",
+    "Brussels": "Belgium",
+    "Buenos Aires": "Argentina",
+    "Bulawayo": "Zimbabwe",
+    "Busan": "South Korea",
+    "Cagliari": "Italy",
+    "Cali": "Colombia",
+    "Can Tho": "Vietnam",
+    "Cape Coast": "Ghana",
+    "Cape Town": "South Africa",
+    "Cardiff": "UK",
+    "Casablanca": "Morocco",
+    "Cebu": "Philippines",
+    "Chengdu": "China",
+    "Chennai": "India",
+    "Chiang Mai": "Thailand",
+    "Chicago": "USA",
+    "Chittagong": "Bangladesh",
+    "Cochabamba": "Bolivia",
+    "Copenhagen": "Denmark",
+    "Cusco": "Peru",
+    "Da Nang": "Vietnam",
+    "Daegu": "South Korea",
+    "Dakar": "Senegal",
+    "Damascus": "Syria",
+    "Davao": "Philippines",
+    "Denpasar": "Indonesia",
+    "Derry": "UK",
+    "Detroit": "USA",
+    "Dhaka": "Bangladesh",
+    "Dire Dawa": "Ethiopia",
+    "Dublin": "Ireland",
+    "Dumaguete": "Philippines",
+    "Durban": "South Africa",
+    "Eindhoven": "Netherlands",
+    "El Alto": "Bolivia",
+    "Enugu": "Nigeria",
+    "Fez": "Morocco",
+    "Fort-de-France": "Martinique",
+    "Fortaleza": "Brazil",
+    "Fukuoka": "Japan",
+    "Gallup": "USA",
+    "Gaza": "Palestine",
+    "Gdańsk": "Poland",
+    "Genoa": "Italy",
+    "Ghent": "Belgium",
+    "Gjakova": "Kosovo",
+    "Glasgow": "UK",
+    "Gondar": "Ethiopia",
+    "Gqeberha": "South Africa",
+    "Guadalajara": "Mexico",
+    "Guangzhou": "China",
+    "Guatemala City": "Guatemala",
+    "Gwangju": "South Korea",
+    "Hai Phong": "Vietnam",
+    "Haifa": "Palestine",
+    "Hamburg": "Germany",
+    "Hanoi": "Vietnam",
+    "Harar": "Ethiopia",
+    "Harare": "Zimbabwe",
+    "Hat Yai": "Thailand",
+    "Havana": "Cuba",
+    "Helsinki": "Finland",
+    "Hilo": "USA",
+    "Hiroshima": "Japan",
+    "Ho Chi Minh City": "Vietnam",
+    "Hong Kong": "Hong Kong",
+    "Honolulu": "USA",
+    "Houston": "USA",
+    "Hue": "Vietnam",
+    "Ibadan": "Nigeria",
+    "Iloilo": "Philippines",
+    "Incheon": "South Korea",
+    "Isfahan": "Iran",
+    "Jakarta": "Indonesia",
+    "Jatiwangi": "Indonesia",
+    "Jeju": "South Korea",
+    "Jerusalem": "Palestine",
+    "Johannesburg": "South Africa",
+    "Juchitán": "Mexico",
+    "Kahnawà:ke": "Canada",
+    "Kampala": "Uganda",
+    "Kano": "Nigeria",
+    "Karachi": "Pakistan",
+    "Katowice": "Poland",
+    "Kautokeino": "Norway",
+    "Kharkiv": "Ukraine",
+    "Khon Kaen": "Thailand",
+    "Kingston": "Jamaica",
+    "Kiruna": "Sweden",
+    "Kisumu": "Kenya",
+    "Kochi": "India",
+    "Kolkata": "India",
+    "Kraków": "Poland",
+    "Kumamoto": "Japan",
+    "Kumasi": "Ghana",
+    "Kunming": "China",
+    "Kutaisi": "Georgia",
+    "Kyiv": "Ukraine",
+    "Kyoto": "Japan",
+    "La Paz": "Bolivia",
+    "Lagos": "Nigeria",
+    "Lahore": "Pakistan",
+    "Lalibela": "Ethiopia",
+    "Lamu": "Kenya",
+    "Leeds": "UK",
+    "Leipzig": "Germany",
+    "Lima": "Peru",
+    "Lisbon": "Portugal",
+    "Liverpool": "UK",
+    "Liège": "Belgium",
+    "London": "UK",
+    "Los Angeles": "USA",
+    "Lviv": "Ukraine",
+    "Madrid": "Spain",
+    "Makassar": "Indonesia",
+    "Manaus": "Brazil",
+    "Manila": "Philippines",
+    "Mariupol": "Ukraine",
+    "Marrakesh": "Morocco",
+    "Marseille": "France",
+    "Medan": "Indonesia",
+    "Medellín": "Colombia",
+    "Memphis": "USA",
+    "Mexico City": "Mexico",
+    "Miami": "USA",
+    "Milan": "Italy",
+    "Minneapolis": "USA",
+    "Mombasa": "Kenya",
+    "Montreal": "Canada",
+    "Mosul": "Iraq",
+    "Multan": "Pakistan",
+    "Mumbai": "India",
+    "Mérida": "Mexico",
+    "Nablus": "Palestine",
+    "Naha": "Japan",
+    "Nairobi": "Kenya",
+    "Nakuru": "Kenya",
+    "Naples": "Italy",
+    "New Delhi": "India",
+    "New Orleans": "USA",
+    "New York": "USA",
+    "Oakland": "USA",
+    "Oaxaca": "Mexico",
+    "Odesa": "Ukraine",
+    "Onitsha": "Nigeria",
+    "Oran": "Algeria",
+    "Osaka": "Japan",
+    "Oslo": "Norway",
+    "Palermo": "Italy",
+    "Paris": "France",
+    "Peshawar": "Pakistan",
+    "Philadelphia": "USA",
+    "Polokwane": "South Africa",
+    "Port Harcourt": "Nigeria",
+    "Port of Spain": "Trinidad and Tobago",
+    "Port-au-Prince": "Haiti",
+    "Potosí": "Bolivia",
+    "Prishtina": "Kosovo",
+    "Prizren": "Kosovo",
+    "Puno": "Peru",
+    "Ramallah": "Palestine",
+    "Recife": "Brazil",
+    "Rio de Janeiro": "Brazil",
+    "Rome": "Italy",
+    "Rosario": "Argentina",
+    "Rotorua": "New Zealand",
+    "Rotterdam": "Netherlands",
+    "Rufisque": "Senegal",
+    "Rustavi": "Georgia",
+    "Saint-Louis": "Senegal",
+    "Salvador": "Brazil",
+    "San Cristóbal de las Casas": "Mexico",
+    "San Juan": "Puerto Rico",
+    "Santa Fe": "USA",
+    "Santiago": "Chile",
+    "Santo Domingo": "Dominican Republic",
+    "Sapporo": "Japan",
+    "Seoul": "South Korea",
+    "Sfax": "Tunisia",
+    "Shanghai": "China",
+    "Shenyang": "China",
+    "Shillong": "India",
+    "Shiprock": "USA",
+    "Shiraz": "Iran",
+    "Shkodër": "Albania",
+    "Soweto": "South Africa",
+    "Stockholm": "Sweden",
+    "Surabaya": "Indonesia",
+    "Swansea": "UK",
+    "Sydney": "Australia",
+    "Sylhet": "Bangladesh",
+    "São Luís": "Brazil",
+    "São Paulo": "Brazil",
+    "Ségou": "Mali",
+    "Tabriz": "Iran",
+    "Tainan": "Taiwan",
+    "Taipei": "Taiwan",
+    "Tamale": "Ghana",
+    "Tangier": "Morocco",
+    "Taranto": "Italy",
+    "Tbilisi": "Georgia",
+    "Tehran": "Iran",
+    "Temuco": "Chile",
+    "Teshie": "Ghana",
+    "Thrissur": "India",
+    "Tirana": "Albania",
+    "Tokyo": "Japan",
+    "Toronto": "Canada",
+    "Tripoli": "Lebanon",
+    "Tromsø": "Norway",
+    "Tunis": "Tunisia",
+    "Turku": "Finland",
+    "Ubon Ratchathani": "Thailand",
+    "Udon Thani": "Thailand",
+    "Vadodara": "India",
+    "Valparaíso": "Chile",
+    "Venice": "Italy",
+    "Vienna": "Austria",
+    "Warsaw": "Poland",
+    "Washington, D.C.": "USA",
+    "Wellington": "New Zealand",
+    "Whanganui": "New Zealand",
+    "Wrocław": "Poland",
+    "Wuhan": "China",
+    "Yogyakarta": "Indonesia",
+    "Ziguinchor": "Senegal",
+    "Łódź": "Poland"
+  }
+}

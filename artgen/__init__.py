@@ -1,2 +1,2 @@
-"""artgen: a satirical random generator of contemporary art and its discourse."""
-__version__ = "0.1.0"
+"""artgen: generate a whole contemporary art biennial, from curatorial statement to installation views."""
+__version__ = "2.0.0"

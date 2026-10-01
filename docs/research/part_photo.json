@@ -1,0 +1,333 @@
+{
+ "photo_conventions": [
+  "EMPTY ROOMS ARE THE NORM FOR INSTALLATION VIEWS; PEOPLE APPEAR ONLY IN SEPARATE EVENT/HERO SHOTS. Whitney press page files 'Installation Images' and 'Event Images', 'Experiential Images', 'Performance Images' as separate image sheets. Of 66 distinct alt texts on the Whitney Biennial 2026 page only 2 describe real visitors ('Two people converse in front of a dark wall...', 'Visitors doing an artmaking activity'); of 47 on the 2024 page only about 3 ('Two women stand in a gallery looking attentively...', 'Visitors at a gallery observing a painting...'). Other 'people' mentions are people on video screens. A documentation-photographer guide says installation shots are made after install and before opening 'without crowds'. Evidence: https://whitney.org/press/2026-biennial ; https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial ; https://www.thelightroomstudios.com/post/documenting-art-exhibition-guide",
+  "CROWD/VISITOR SHOTS BELONG TO BIENNIAL PRESS COVERAGE, USUALLY SMALL GROUPS RATHER THAN DENSE CROWDS. The Art Newspaper's Venice 2026 review has the caption 'Visitors looking at Maria Magdalena Campos-Pons's paintings of Koyo Kouoh and Toni Morrison'; Whitney 2024 alt text: 'Visitors at a gallery observing a painting of people dining at a night-time café setting.'; Whitney 2026 press sheet list includes 'Event Images'. No source read showed invigilators or guards in frame (not evidenced). Evidence: https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12 ; https://whitney.org/exhibitions/2024-biennial",
+  "FRONTAL WALL VIEW OF WORKS HUNG IN A ROW IS THE MOST COMMON FRAMING (inferred from alt text). Whitney 2026 alt text: 'Five framed black-and-white photographs hang in a row on a white gallery wall above wooden floor.'; 'Four small pink glass and metal sculptures mounted in a row on a white gallery wall.'; 'A row of small colorful digital artworks mounted evenly along a dark gallery wall.'; 'Three small framed square photographs hung vertically on a white gallery wall.' About 15 of 113 Whitney 2024/2026 alt texts mention framed works. Evidence: https://whitney.org/exhibitions/2026-biennial",
+  "WHITE WALLS ARE COMMON, BUT BIENNIAL ROOMS ARE OFTEN PAINTED IN STRONG COLOUR (inferred from alt text). 21 of 113 Whitney alt texts mention white walls; 18 mention strong colour or darkness-with-colour: 'A dark gallery wall with nine framed abstract green and purple digital images', 'Bright green abstract wall sculpture lit by spotlights against a deep blue museum wall', 'Empty gallery room awash with yellow walls, wooden floor, and a large abstract painting on the back wall.', 'A room with curtains separating it from other rooms and deep turquoise walls.', 'A dark blue gallery wall with irregularly shaped cutouts displaying terracotta sculptures'. Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial",
+  "FLOORS: WOODEN (BOARDS/PARQUET-TYPE) FLOORS DOMINATE AT THE WHITNEY; CONCRETE FOR STAIRWELLS AND INDUSTRIAL SPACES. 15 of 113 Whitney alt texts name a wooden floor ('Modern art gallery with colorful abstract paintings on white walls and a pile of tangled fishing nets on the floor' sits beside 'Gallery room with abstract blue and pink paintings displayed on pale walls above a wooden floor.'); 3 name concrete: 'A pile of sand sits beneath a large black pipe in a gray concrete stairwell.', 'A steel and concrete stairwell with metal railings and a colorful code projected on the wall.', 'Metal stairwell with cable railings and lit ceiling panels inside a minimalist concrete interior.' Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial",
+  "VIDEO/SOUND ROOMS ARE DARK BLACK-BOX OR COLOURED-LIGHT ROOMS WITH A SINGLE LARGE PROJECTION OR SCREEN (inferred from alt text). 18 of 113 alt texts mention dim/dark rooms and 15 mention projection/screen: 'Three benches face a large screen showing an aerial city view in a dim gallery.', 'A dark room with two armchairs facing a screen...', 'A dimly lit red room with a large screen, speakers, and a stage, evoking a moody cinematic atmosphere.', 'A dimly lit room with purple lighting, featuring a minimalist art installation with a neon line on the floor.', 'Large dark gallery with multiple wall projections showing an aerial landscape and tree imagery.' Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial",
+  "PROJECTOR HUNG FROM CEILING AND VISIBLE IN THE ROOM. Whitney 2026 alt text: 'A curved white gallery wall displaying two portraits and a central projected walking figure under a ceiling projector.'; 'Circular ceiling screen displays floating colorful debris above a dark gallery space with central pedestal.'; Whitney 2026 alt text: 'Two benches in front a video that is projected onto a blank wall.' Evidence: https://whitney.org/exhibitions/2026-biennial",
+  "SEATING IN VIDEO ROOMS: PLAIN BENCHES, LONG UPHOLSTERED BENCHES, ARMCHAIRS, SCULPTURAL BENCHES, FLOOR CUSHIONS. 7 of 113 alt texts mention benches. 'A long upholstered bench in a dark room with a projection on the wall.', 'Two large digital screens display colorful abstract scenes on gallery walls with smooth sculptural benches.', 'A wooden crate-supported bench installation' (room with dark painting), 'dark cushions on the floor' (2024: 'A person emerges from a blue tarp in front of a large video screen displaying a waterfall, with dark cushions on the floor.'). Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial",
+  "PLINTHS, WHITE PLATFORMS AND GLASS CASES FOR SMALL OBJECTS (inferred from alt text). 11 of 113 alt texts mention pedestals/platforms; 3 mention glass cases: 'Several small reclining stone sculptures sit under glass cases amid colorful wall cutout paintings in a gallery.', 'White 3-D models of babies behind glass cases, with big mural colorful paintings...', 'Rows of vintage radios and boomboxes displayed on white platforms in a glass-walled gallery.', 'Silver abstract sculptures on white pedastals in front of big, floor-to-ceiling windows overlooking a window at sunset.', 'A circular platform with rows of small colorful figurines arranged in a spiral.' Evidence: https://whitney.org/exhibitions/2026-biennial",
+  "DAYLIGHT FROM LARGE WINDOWS WITH CITY VIEW IS A RECURRING LIGHT SOURCE AT THE WHITNEY; SUNSET/SKYLINE BEHIND WORK (inferred from alt text). 'Large translucent art installation with amber hues in a room with floor-to-ceiling windows and cityscape views.' (2024); 'A sculpture of two figures melded together ... on a stone pedestal in front of big windows.' (2026); 'Silhouette of a person with an afro dancing in a sunlit window, with a minimalist room interior.' (2024); terrace works shot in sun: 'Three monumental steel sculptures stand on the Whitney Museum's outdoor terrace against a clear blue sky and the Manhattan skyline... Sunlight casts intricate geometric shadows across the terrace floor.' Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial",
+  "SPOT/ACCENT LIGHTING ON DARK OR COLOURED WALLS WITH LOWER AMBIENT LEVEL. Whitney 2026 alt text: 'Bright green abstract wall sculpture lit by spotlights against a deep blue museum wall.'; 'Abstract perforated metal forms hang from wires above a lit yellow circular platform in a gallery.' About 10 of 113 alt texts mention spotlights or lit elements. Evidence: https://whitney.org/exhibitions/2026-biennial",
+  "SIGHTLINE INTO THE ADJACENT ROOM, CURTAINS, DOORWAYS AND CORNERS ARE SHOWN. 'Through the hallway the other room has deep turquoise walls.'; 'a single painting on a white wall, wooden floor, and a yellow ceiling in the adjacent room' (2024); 'A room with curtains separating it from other rooms and deep turquoise walls.'; 'Art gallery with framed sketches and notes on white walls, wooden floor, and a door in the corner.' (2024); 'A curved white gallery wall' / 'A curved gallery room features a circular platform...'. Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial",
+  "CEILING AND BUILDING FABRIC ARE VISIBLE: INDUSTRIAL CEILING, LIT CEILING PANELS, PIPES, SUSPENDED WORKS AND SCAFFOLDING. 12 of 113 alt texts mention a ceiling: 'wooden floors and industrial ceiling' (2024: 'Modern art installation with translucent red film panels in a gallery with wooden floors and industrial ceiling.'), 'lit ceiling panels' (stairwell), 'a large black pipe', 'Several stuffed toys hang from ropes suspended from the ceiling in a brightly lit gallery.', 'Metal scaffolding structure displays large framed photographs hanging in a bright museum gallery.' Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial",
+  "WALL TEXT, LABELS AND NOTICES SHOWN AS PART OF THE WALL, NOT FOCAL. Whitney 2026 alt text: 'A long row of small plaques and notices displayed low along a large white gallery wall.'; 2024: 'A gallery interior with a wooden wall displaying numerous sketches and images, accompanied by an informational poster on the left.'; 'Art gallery with framed sketches and notes on white walls'. Wall labels were otherwise not described in alt text (not evidenced in frame). Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial",
+  "RETOUCHING REMOVES CLUTTER, SO EXIT SIGNS, CORDS AND CEILING TILES ARE USUALLY NOT VISIBLE IN FINAL PRESS IMAGES. A documentation-photographer guide lists the post step 'Remove distractions like exit signs, cords, and ceiling tiles when appropriate.' and 'Straighten and crop for proper framing.' Whitney 2026 image file names carry suffixes '_PS' and 'Retouched' (e.g. 260305_Whitney_Bi_1342_Retouched.jpg, 2026_BIENNIAL_017_PS-01.jpg). No source read showed fire extinguishers, security cameras, floor tape or invigilator chairs; do not treat them as evidenced. Evidence: https://www.thelightroomstudios.com/post/documenting-art-exhibition-guide ; https://whitney.org/exhibitions/2026-biennial",
+  "CAMERA AND LIGHT WORKFLOW IN INSTALLATION DOCUMENTATION: ESTABLISHING WIDE ANGLE, ENTRY VIEW, FULL WALL SHOTS, CORNER-TO-CORNER VIEWS, ELEVATED SHOTS; TRIPOD, f/8-f/11, EXISTING GALLERY LIGHT, EVEN ILLUMINATION, COLOUR-CORRECTED. The guide recommends 'wide-angle views showing the entire gallery space', 'the entry view', 'full wall shots', 'corner-to-corner views' and 'aerial or elevated shots', 'Use the gallery's existing lighting system when possible', 'Ensure even illumination across artworks', 'use a tripod for sharp distortion-free images, set aperture at f/8-f/11'. Single source, a practitioner's guide, not a museum standard. Evidence: https://www.thelightroomstudios.com/post/documenting-art-exhibition-guide",
+  "GALLERY (COMMERCIAL) HERO IMAGES ARE WIDE 16:9 LANDSCAPE; INSTALLATION CAROUSEL FRAMES ARE 4:3 CONTAINED; TALL FRAMES FOR VERTICAL WORK. David Zwirner exhibitions page hero images are named 3000x1688, 3319x1867, 2560x1440, 2100x1182 (all about 16:9); one is 3000x2086; the Daichi Takagi page uses a '!aspect-4/3 !object-contain' frame for a 2399x3000 vertical image and an 'aspect-video' crop for a 2500x938 panorama. White Cube page placeholders for exhibition image slots are 960x720 and 480x360 (4:3) with 720x960 for portrait and 658x360 / 939x360 for wide. Evidence: https://www.davidzwirner.com/exhibitions ; https://www.davidzwirner.com/exhibitions/2026/daichi-takagi-suchness ; https://www.whitecube.com/gallery-exhibitions/gabriel-orozco-bermondsey-2026",
+  "ASPECT RATIOS (MEASURED). Whitney 2026 installation images: of 66 distinct images, 50 are between 1.2 and 1.36 (mostly exactly 1.33 = 4:3), 9 between 1.37 and 1.6, 6 portrait (0.67 = 2:3 and 0.75 = 3:4), 1 wider than 1.65. Whitney 2024: 34 of 47 are 1.2-1.36, 8 are 1.37-1.6, 3 portrait (0.64-0.75), 2 are 1.75-1.8. Contemporary Art Daily project page (26 images): 11 at 1.33, 10 at 1.50, 4 at 0.67, 1 at 1.43. Contemporary Art Daily front-page lead thumbnails (32 counted): 11 are 3:2, 3 are 4:3, 2 are about 1.2-1.3, 6 are 2:3 and 10 are 0.72-0.85 (portrait), so about half are portrait. Venice official site crops listings as 3:2 (750x500) with a 1300x600 hero banner. Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial ; https://www.contemporaryartdaily.com/project/rachel-seidu-at-between-bridges-berlin-103120 ; https://contemporaryartdaily.com/ ; https://www.labiennale.org/en/art/2026",
+  "PORTRAIT FORMAT IS USED FOR TALL SCULPTURE, HANGING WORKS AND DETAILS (inferred from alt text and ratios). Whitney 2026 0.67/0.75 images: 'Abstract perforated metal forms hang from wires above a lit yellow circular platform in a gallery.' (0.67), 'A spiral of fragmented metallic human forms hangs suspended above a round yellow platform.' (0.75), 'A sculpture of two figures melded together ... on a stone pedestal in front of big windows.' (0.75), 'A tall glass-brick chimney sculpture stands on a rooftop' (0.75). Evidence: https://whitney.org/exhibitions/2026-biennial",
+  "BIENNIAL VENUES ARE NON-WHITE-CUBE BUILDINGS, AND CAPTIONS NAME THE VENUE. Berlin Biennale 13 captions name 'KW Institute for Contemporary Art', 'Sophiensæle', 'Hamburger Bahnhof – Nationalgalerie der Gegenwart' and 'Former Courthouse Lehrter Straße'; Sharjah Biennial 16 captions name 'Old Al Jubail Vegetable Market', 'Al Qasimiyah School', 'Old Al Dhaid Clinic', 'Old Al Diwan Al Amiri, Hamriyah', 'Al Mureijah Art Spaces'; Gwangju names 'the fourth gallery' and 'the facade of the Gwangju Biennale building'; Venice 2026 images show 'the entrance to Giardini' and the Central Pavilion. Evidence: https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/ ; https://www.stirworld.com/think-opinions-tipping-point-the-sharjah-biennial-16-on-our-hopes-fears-and-anxieties ; https://www.artnews.com/art-news/news/gwangju-biennale-2026-report-art-politics-controversy-1234799814/ ; https://glasstire.com/2026/08/10/dispatch-from-the-2026-venice-biennale-in-minor-keys-at-the-giardini-and-arsenale/",
+  "ONE VIEW PER ROOM SHOWING SEVERAL ARTISTS TOGETHER, CAPTIONED LEFT/CENTRE/RIGHT OR FOREGROUND/BACK WALL. Whitney 2026: 'Installation view of Whitney Biennial 2026 featuring works by Carmen de Monteflores (left), Andrea Fraser (centre) and Nour Mobarak (right)'; Gwangju: 'showing works by Julius Koller (foreground), Inci Eviner (center), and May Mothers House (back wall).'; Berlin: 'Front: ...; Back (from left to right): ...'. Evidence: https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes ; https://www.artnews.com/art-news/news/gwangju-biennale-2026-report-art-politics-controversy-1234799814/ ; https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/",
+  "OUTDOOR/ROOFTOP/FACADE VIEWS ARE PART OF BIENNIAL DOCUMENTATION, SHOT IN DAYLIGHT WITH SKYLINE OR SKY. Whitney 2026 alt text: 'Glass brick tower sculpture stands on a rooftop terrace with city buildings in the background.'; 'A large green painted smiling face mural covers a building wall above a city storefront.'; 'Aerial view of a building rooftop with two large, abstract black sculptures and a glimpse into the interior floors below.' (2024). Gwangju: 'installation view on the facade of the Gwangju Biennale building'. Evidence: https://whitney.org/exhibitions/2026-biennial ; https://whitney.org/exhibitions/2024-biennial ; https://www.artnews.com/art-news/news/gwangju-biennale-2026-report-art-politics-controversy-1234799814/"
+ ],
+ "photo_caption_format": [
+  {
+   "caption": "Images courtesy of Between Bridges, Berlin",
+   "source": "https://www.contemporaryartdaily.com/project/rachel-seidu-at-between-bridges-berlin-103120"
+  },
+  {
+   "caption": "Images courtesy of the artists, Fondazione Lydia Silvestri and VIN VIN, Vienna. Photos by Flavio Palasciano.",
+   "source": "https://www.contemporaryartdaily.com/project/cecilia-de-nisco-lydia-silvestri-at-vin-vin-vienna-103119"
+  },
+  {
+   "caption": "Images courtesy of the artist and Exile, Vienna. Photos by Simon Veres.",
+   "source": "https://www.contemporaryartdaily.com/project/david-medalla-at-exile-vienna-104075"
+  },
+  {
+   "caption": "Images courtesy of Antenna Space, Shanghai. Photos by Zhang Hong.",
+   "source": "https://www.contemporaryartdaily.com/project/guan-xiao-at-antenna-space-shanghai-102491"
+  },
+  {
+   "caption": "Images courtesy of Sprüth Magers, Berlin. Photos by Timo Ohler.",
+   "source": "https://www.contemporaryartdaily.com/project/jean-luc-mylayne-at-spruth-magers-berlin-84869"
+  },
+  {
+   "caption": "Images courtesy the artist, the Estate of Lin May Saeed / Jacky Strenz and Meyer Riegger. Photos by RMJ.",
+   "source": "https://www.contemporaryartdaily.com/project/lin-may-saeed-at-meyer-riegger-berlin-99719"
+  },
+  {
+   "caption": "Images courtesy of artist and Galerie Thomas Schulte, Berlin. Photos by GRAYSC.",
+   "source": "https://www.contemporaryartdaily.com/project/kerstin-bratsch-at-galerie-thomas-schulte-berlin-102337"
+  },
+  {
+   "caption": "Images courtesy of the artist and Galerie Neu, Berlin. Photos by Stefan Korte.",
+   "source": "https://www.contemporaryartdaily.com/project/jeremy-shaw-at-galerie-neu-berlin-101931"
+  },
+  {
+   "caption": "Images courtesy of Kim? Contemporary Art Centre, Riga. Photos by Ansis Starks.",
+   "source": "https://www.contemporaryartdaily.com/project/krista-vindberga-auzniece-at-kim-contemporary-art-centre-riga-101634"
+  },
+  {
+   "caption": "Images courtesy of the artist and Stadtgalerie Bern. Photos by Binta Kopp.",
+   "source": "https://www.contemporaryartdaily.com/project/eva-de-souza-at-stadtgalerie-bern-100347"
+  },
+  {
+   "caption": "Images courtesy of the artists and the Logan Center, Chicago. Installation photos by Travis Roozée.",
+   "source": "https://www.contemporaryartdaily.com/project/longer-than-the-sky-art-of-the-obama-years-at-logan-center-chicago-83021"
+  },
+  {
+   "caption": "Images courtesy of the artists and Whistle, Seoul. Photos by Ian Yang.",
+   "source": "https://www.contemporaryartdaily.com/project/modes-of-emergence-at-whistle-seoul-98467"
+  },
+  {
+   "caption": "Images courtesy of Salzburger Kunstverein, Salzburg. Photos by kunst-dokumentation.com.",
+   "source": "https://www.contemporaryartdaily.com/project/ryan-gander-at-salzburger-kunstverein-92096"
+  },
+  {
+   "caption": "Images courtesy of the artist and Kunstverein Braunschweig. Photos by Gloria May Berthold and Frank Sperling.",
+   "source": "https://www.contemporaryartdaily.com/project/anette-senneby-at-kunstverein-braunschweig-98630"
+  },
+  {
+   "caption": "Images courtesy of MoMA, New York; Copyright Adrian Piper Research Archive Foundation Berlin",
+   "source": "https://www.contemporaryartdaily.com/project/adrian-piper-at-moma-new-york-11011"
+  },
+  {
+   "caption": "Images courtesy of David Roberts Art Foundation, London",
+   "source": "https://www.contemporaryartdaily.com/project/the-violet-crab-at-draf-at-draf-london-8986"
+  },
+  {
+   "caption": "Images courtesy of Fridericianum, Kassel",
+   "source": "https://www.contemporaryartdaily.com/project/speculations-on-anonymous-materials-at-fridericianum-kassel-8204"
+  },
+  {
+   "caption": "Installation view Artwork © Michael Heizer. Photo: Rob McKeever",
+   "source": "https://gagosian.com/exhibitions/2022/michael-heizer/"
+  },
+  {
+   "caption": "Installation view Artwork © Louise Bonnet. Photo: Rob McKeever",
+   "source": "https://gagosian.com/exhibitions/2023/louise-bonnet-30-ghosts/"
+  },
+  {
+   "caption": "Installation view Artwork © The Richard Avedon Foundation. Photo: Rob McKeever",
+   "source": "https://gagosian.com/exhibitions/2023/avedon-100/"
+  },
+  {
+   "caption": "Louise Bonnet Figure Holding an Orange , 2023 Oil on linen, 60 × 72 inches (152.4 × 182.9 cm) © Louise Bonnet. Photo: Ed Mumford",
+   "source": "https://gagosian.com/exhibitions/2023/louise-bonnet-30-ghosts/"
+  },
+  {
+   "caption": "Installation view. Image courtesy of Hauser & Wirth, New York, NY, photo by Thomas Barratt.",
+   "source": "https://www.fortgansevoort.com/public-exhibitions/hauser-wirth"
+  },
+  {
+   "caption": "Installation view, Yoshitomo Nara, Jun 10 – Aug 31, 2025, Hayward Gallery, London. Photo: Mark Blower © Yoshitomo Nara, courtesy the artist and the Hayward Gallery",
+   "source": "https://www.pacegallery.com/journal/yoshitomo-nara-hayward-gallery/"
+  },
+  {
+   "caption": "Yoshitomo Nara, Miss Margaret, 2016. Installation view, Yoshitomo Nara, Jun 10 – Aug 31, 2025, Hayward Gallery, London. Photo: Mark Blower © Yoshitomo Nara, courtesy the artist and the Hayward Gallery",
+   "source": "https://www.pacegallery.com/journal/yoshitomo-nara-hayward-gallery/"
+  },
+  {
+   "caption": "Do Ho Suh Nest/s 2024 Courtesy the artist, Lehmann Maupin New York, Seoul and London, and Victoria Miro. Creation supported by Genesis. © Do Ho Suh. Photo: Jeon Taeg Su",
+   "source": "https://www.tate.org.uk/whats-on/tate-modern/the-genesis-exhibition-do-ho-suh"
+  },
+  {
+   "caption": "'Line', installation view. Courtesy Lisson Gallery, London",
+   "source": "https://www.wallpaper.com/art/fine-line-londons-lisson-gallery-curates-show-of-line-inspired-artwork"
+  },
+  {
+   "caption": "(Image credit: Ken Adlard. © Dan Graham. Courtesy Lisson Gallery)",
+   "source": "https://www.wallpaper.com/art/performer-audience-mirror-explores-film-art-at-lisson-gallery-london"
+  },
+  {
+   "caption": "(Image credit: Jack Hems)",
+   "source": "https://www.wallpaper.com/art/fine-line-londons-lisson-gallery-curates-show-of-line-inspired-artwork"
+  },
+  {
+   "caption": "Installation view, Pavilions at Lisson Gallery, NYC, 2022.",
+   "source": "https://artefuse.com/pavilions-at-lisson-gallery/"
+  },
+  {
+   "caption": "Installation view, David Zwirner: 30 Years, David Zwirner, Los Angeles, on view May 23–August 3, 2024.",
+   "source": "https://www.culturedmag.com/article/2024/05/22/david-zwirner-gallery-anniversary-los-angeles/"
+  },
+  {
+   "caption": "Installation view of Whitney Biennial 2026 Photograph by Darian DiCanno/BFA.com. © BFA 2026",
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "caption": "Installation view of Whitney Biennial 2026 featuring works by Cooper Jacoby Photograph by Jason Lowrie/BFA.com. © BFA 2026",
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "caption": "Installation view of Whitney Biennial 2026, featuring the Hyundai Terrace Commission by Kelly Akashi, Monument (Altadena) (2026) Photograph by Timothy Schenck",
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "caption": "Installation view of Whitney Biennial 2026 featuring works by Emilio Martínez Poppe (centre) and David L. Johnson (far wall) Photograph by Jason Lowrie/BFA.com. © BFA 2026",
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "caption": "Installation view of Whitney Biennial 2026 featuring Young Joon Kwak's Divine Dance of Soft Revolt (Anna, Travis, Me) (2024) Artwork courtesy the artist and Commonwealth and Council, Los Angeles. Photograph by Darian DiCanno/BFA.com. © BFA 2026",
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "caption": "Installation view of the Whitney Biennial at the Whitney Museum of American Art, New York, 2026. Photograph by Jason Lowrie/BFA.com. Courtesy of the Whitney Museum of American Art, New York. © BFA 2026.",
+   "source": "https://flash---art.com/article/whitney-biennial-2026-whitney-museum-of-american-art-new-york/"
+  },
+  {
+   "caption": "Precious Okoyomon, Everything wants to kill you and you should be afraid, 2026. Installation view of the Whitney Biennial at the Whitney Museum of American Art, New York, 2026. Photography by Reagan Brown. Courtesy of the artist and the Whitney Museum of American Art, New York.",
+   "source": "https://flash---art.com/article/whitney-biennial-2026-whitney-museum-of-american-art-new-york/"
+  },
+  {
+   "caption": "Installation view of Whitney Biennial 2026. Photo: Jason Lowrie/BFA.com. © BFA 2026",
+   "source": "https://galeriemagazine.com/discover-the-standout-works-at-whitney-biennial-2026/"
+  },
+  {
+   "caption": "Installation view of Whitney Biennial 2026 (Whitney Museum of American Art, March 8–August 2026). Photograph by Jason Lowrie/BFA.com. © BFA 2026",
+   "source": "https://www.aprilonline.org/the-whitney-biennial-2026-artists-are-seeing-it-darker/"
+  },
+  {
+   "caption": "Installation view of Whitney Biennial 2026, with (foreground) Anna Tsouhlarakis. SHE MUST BE A MATRIARCH, 2023, fiberglass, paint, adhesive, resin, plaster, plastic, wood, foam, metal, IKEA remnants, leather, deer hair, menstrual cups, prophylactics, and found objects, 96 x 180 x 48 in. Photo: Jason Lowrie/BFA.com © BFA 2026, Courtesy Tilton Gallery",
+   "source": "https://sculpturemagazine.art/whitney-biennial-2026/"
+  },
+  {
+   "caption": "In Minor Keys , 61st Venice Biennale, 2026, installation view. Photo: Andrea Avezzù. Courtesy La Biennale di Venezia",
+   "source": "https://artreview.com/the-2026-venice-biennale-is-quintessential-biennial-art/"
+  },
+  {
+   "caption": "In Minor Keys , 61st Venice Biennale, 2026, installation view featuring Éric Baudelaire. Photo: Luca Zambelli Bais. Courtesy La Biennale di Venezia",
+   "source": "https://artreview.com/the-2026-venice-biennale-is-quintessential-biennial-art/"
+  },
+  {
+   "caption": "Nick Cave’s Amalgam (Origin) (2025) Photo: Marco Zorzanello; Courtesy of La Biennale di Venezia",
+   "source": "https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12"
+  },
+  {
+   "caption": "Some of Mohammed Joha's collages Courtesy of La Biennale di Venezia",
+   "source": "https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12"
+  },
+  {
+   "caption": "Lawrence Abu Hamdan, 450XL The Story of a Fugitive Sound, 2026, installation view in Canicula. Photo Marco Cappelletti and Giuseppe Miotto, Marco Cappelletti Studio. Courtesy Fondazione In Between Art Film.",
+   "source": "https://contemporaryartsociety.org/explore/resources/minor-keys-view-61st-venice-biennale"
+  },
+  {
+   "caption": "Installation view, Abbas Akhavan Entre chien et loup, 2026, Canada Pavilion, 61st International Art Exhibition - La Biennale de Venezia. Photo Francesco Barasciutti.",
+   "source": "https://contemporaryartsociety.org/explore/resources/minor-keys-view-61st-venice-biennale"
+  },
+  {
+   "caption": "Vera Tamari, Olive Tree Women, 2019, In Minor Keys: 61st International Art Exhibition. Photo Andrea Avezzù. Courtesy the artist.",
+   "source": "https://contemporaryartsociety.org/explore/resources/minor-keys-view-61st-venice-biennale"
+  },
+  {
+   "caption": "Julie Mehretu​, TRANSpaintings, 2023-2024, courtesy of the artist and White Cube. installation view, ‘Julie Mehretu. Ensemble’, 2024, Palazzo Grassi, Venezia. ph. Marco Cappelletti © Palazzo Grassi, Pinault Collection",
+   "source": "https://www.designboom.com/art/designbooms-ultimate-guide-venice-art-biennale-2024/"
+  },
+  {
+   "caption": "image courtesy of Archie Moore and TheCommercial | photography by Andrea Rossetti",
+   "source": "https://www.designboom.com/art/designbooms-ultimate-guide-venice-art-biennale-2024/"
+  },
+  {
+   "caption": "Installation view of works by Wangechi Mutu. Photo: Liz Kim",
+   "source": "https://glasstire.com/2026/08/10/dispatch-from-the-2026-venice-biennale-in-minor-keys-at-the-giardini-and-arsenale/"
+  },
+  {
+   "caption": "Installation view, 13th Berlin Biennale, KW Institute for Contemporary Art, 2025; image: Eberle & Eisfeld.",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "caption": "Amol K Patil, BURNING SPEECHES, 2025, installation view, 13th Berlin Biennale, Sophiensæle, 2025. © Amol K Patil; image: Eberle & Eisfeld",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "caption": "Helena Uambembe, How To Make a Mud Cake, 2021/2025, installation view, 13. Berlin Biennale, Former Courthouse Lehrter Straße, 2025. © Helena Uambembe; image: Raisa Galofre",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "caption": "Gabriel Alarcón, Retablo para cargar en la espalda [Retablo to carry on the back], 2025, installation view, 13th Berlin Biennale, Hamburger Bahnhof – Nationalgalerie der Gegenwart, 2025. © Gabriel Alarcón; image: Aristidis Schnelzer",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "caption": "Panties for Peace, Panty Power Attack , 2007, Installation view, 13. Berlin Biennale, KW Institute for Contemporary Art, 2025. Courtesy Panties for Peace; Foto: Marvin Systermans.",
+   "source": "https://kunstkritikk.com/fox-on-the-run/"
+  },
+  {
+   "caption": "Margherita Moscardini, The Stairway, 2025. Stones, metal; signed certificates, dimensions variable. Courtesy of Margherita Moscardini and Gian Marco Casini, Livorno. Photo by Marvin Systermans.",
+   "source": "https://www.e-flux.com/criticism/6782290/13th-berlin-biennale-passing-the-fugitive-on"
+  },
+  {
+   "caption": "Armin Linke, Negotiation Tables, 2025. Photographic panels. Courtesy Armin Linke. Photo by Eberle & Eisfeld.",
+   "source": "https://www.e-flux.com/criticism/6782290/13th-berlin-biennale-passing-the-fugitive-on"
+  },
+  {
+   "caption": "Sawangwongse Yawnghwe. Joker’s Headquarters. Gesamtkunstwerk as a Practical Joke (C’est le Premier Vol de L’Aigle) [ It’s the eagle’s first flight ]. 2025. Installation view from the 13th Berlin Biennale, KW Institute for Contemporary Art, 2025. Photography by Diana Pfammatter and Eike Walkenhorst © Sawangwongse Yawnghwe",
+   "source": "https://canvasonline.com/whats-so-funny-13th-berlin-biennale/"
+  },
+  {
+   "caption": "Installation view of Water Witnesses, 2020–ongoing and Sakiya Banners, 2019, by Nida Sinnokrot and Sakiya, at Sharjah Biennial 16, Old Al Jubail Vegetable Market Image: Motaz Mawid",
+   "source": "https://www.stirworld.com/think-opinions-tipping-point-the-sharjah-biennial-16-on-our-hopes-fears-and-anxieties"
+  },
+  {
+   "caption": "Installation view of Hashel Al Lamki’s, Maat, 2025, commissioned by Sharjah Art Foundation, Sharjah Biennial 16, Al Qasimiyah School, Sharjah Image: Ivan Erofeev; Courtesy of Hashel Al Lamki and Tabari Artspace, Dubai",
+   "source": "https://www.stirworld.com/think-opinions-tipping-point-the-sharjah-biennial-16-on-our-hopes-fears-and-anxieties"
+  },
+  {
+   "caption": "Installation view of Aluaiy Kaumakan’s Vines in the Mountains, 2020, on view at Sharjah Biennial 16, Old Al Diwan Al Amiri, Hamriyah, Sharjah, 2025 Image: Danko Stjepanovic; Courtesy of Aluaiy Kaumakan, Indigenous Peoples Cultural Center, Taipei Fine Arts Museum and Liang Gallery, Taipei",
+   "source": "https://www.stirworld.com/think-opinions-tipping-point-the-sharjah-biennial-16-on-our-hopes-fears-and-anxieties"
+  },
+  {
+   "caption": "Performance view of Terroir, 2024, Ellen Pau, commissioned by Sharjah Art Foundation, with the support of Hong Kong Arts Development Council, at Sharjah Biennial 16, Old Al Jubail Vegetable Market, Sharjah, 2025 Image: Ivan Erofeev; Courtesy of Ellen Pau and Kiang Malingue Gallery, Hong Kong",
+   "source": "https://www.stirworld.com/think-opinions-tipping-point-the-sharjah-biennial-16-on-our-hopes-fears-and-anxieties"
+  },
+  {
+   "caption": "Fernando Palma Rodríguez, Cincoatl, 2024. Installation view, Sharjah Biennial 16, Old Al Dhaid Clinic, 2025. Courtesy of the artist and House of Gaga, Mexico City. Photo: Danko Stjepanovic",
+   "source": "https://www.artlink.com.au/articles/6129/sharjah-biennial-16-to-carry/"
+  },
+  {
+   "caption": "Joe Namy's \"Dub Plants\" (2024-25) at Al Mureijah Square in Sharjah / Korea Times photo by Park Han-sol",
+   "source": "https://www.koreatimes.co.kr/lifestyle/arts-theater/20250213/bold-in-scale-sharjah-biennial-16-maps-new-constellation-of-voices-beyond-west-centric-lens"
+  },
+  {
+   "caption": "Installation view of \"16th Gwangju Biennale: You Must Change Your Life,\" 2026, showing Goldin+Senneby’s Resin Pond (2006). Photo Jeon Byung Cheol/©Gwangju Biennale Foundation",
+   "source": "https://www.artnews.com/art-news/news/gwangju-biennale-2026-report-art-politics-controversy-1234799814/"
+  },
+  {
+   "caption": "Installation view of “16th Gwangju Biennale: You Must Change Your Life,” 2026, showing video works and volcanic rocks from Jeju Island in the fourth gallery. Photo Jeon Byung Cheol/©Gwangju Biennale Foundation",
+   "source": "https://www.artnews.com/art-news/news/gwangju-biennale-2026-report-art-politics-controversy-1234799814/"
+  },
+  {
+   "caption": "Rebecca Moccia, ‘Ministries of Loneliness’, 2024. Installation view at Dong-gok Museum of Art as part of 15th Gwangju Biennale. Image: Courtesy the artist and Italian Pavilion. Photo: Parker McComb.",
+   "source": "https://www.artshub.com.au/news/reviews/exhibition-review-15th-gwangju-biennale-south-korea-2749073/"
+  },
+  {
+   "caption": "Max Hooper Schneider, ‘Lysis Field (detail)’, 2024. Installation view at 15th Gwangju Biennale. Photo: ArtsHub.",
+   "source": "https://www.artshub.com.au/news/reviews/exhibition-review-15th-gwangju-biennale-south-korea-2749073/"
+  },
+  {
+   "caption": "Photo: Courtesy of The Whitney Museum of American Art",
+   "source": "https://galeriemagazine.com/discover-the-standout-works-at-whitney-biennial-2026/"
+  },
+  {
+   "caption": "Photo: © Kamrooz Aram",
+   "source": "https://galeriemagazine.com/discover-the-standout-works-at-whitney-biennial-2026/"
+  },
+  {
+   "caption": "Photo credit: RStudio",
+   "source": "https://annaleedavis.com/archive/in-minor-keys-61st-international-art-exhibition"
+  },
+  {
+   "caption": "Annalee Davis_Biennale 2026_preview_© Matteo Losurdo-1.jpg (image file name used as alt text; credit form '© Matteo Losurdo')",
+   "source": "https://annaleedavis.com/archive/in-minor-keys-61st-international-art-exhibition"
+  },
+  {
+   "caption": "Installation view of the Whitney Biennial 2026 (Whitney press image file: 2026_BIENNIAL_017_PS-01.jpg; alt text: 'Gallery room with a large dark painting on the left wall and a wooden crate-supported bench installation on the right.')",
+   "source": "https://whitney.org/exhibitions/2026-biennial"
+  }
+ ],
+ "photo_notes": [
+  "CAPTION FORMATS SEEN (verbatim families): (1) Credit-only block on Contemporary Art Daily: 'Images courtesy of [Gallery, City]. Photos by [Name].' (also 'Installation photos by', 'Photos by [studio]'). (2) Gagosian: 'Installation view Artwork © [Artist]. Photo: Rob McKeever' (no comma after 'view'; artwork credit before photo credit). (3) Hayward/Pace: 'Installation view, [Title], [dates], [Venue], [City]. Photo: [Name] © [Artist], courtesy the artist and the [Venue]'. (4) Hauser & Wirth (via Fort Gansevoort): 'Installation view. Image courtesy of Hauser & Wirth, New York, NY, photo by Thomas Barratt.' (5) Lisson (via Wallpaper): \"'Line', installation view. Courtesy Lisson Gallery, London\" and '(Image credit: Ken Adlard. © Dan Graham. Courtesy Lisson Gallery)'. (6) Whitney: 'Installation view of Whitney Biennial 2026 [featuring ...] Photograph by Jason Lowrie/BFA.com. © BFA 2026' with 'Photograph by', not 'Photo:'; Whitney variant: 'Installation view of the Whitney Biennial at the Whitney Museum of American Art, New York, 2026. Photography by Reagan Brown. Courtesy of the artist and the Whitney Museum of American Art, New York.' (7) Venice (ArtReview): 'In Minor Keys , 61st Venice Biennale, 2026, installation view. Photo: Andrea Avezzù. Courtesy La Biennale di Venezia' (the string 'Photo: Marco Cappelletti. Courtesy: La Biennale di Venezia' from the brief was NOT seen in this exact form; Cappelletti was seen as 'Photo Marco Cappelletti and Giuseppe Miotto, Marco Cappelletti Studio' and 'ph. Marco Cappelletti © Palazzo Grassi, Pinault Collection'). (8) Berlin Biennale 13: 'Artist, Title, 2025, installation view, 13th Berlin Biennale, [Venue], 2025. © Artist; image: Eberle & Eisfeld' (uses 'image:' not 'Photo:'; German 'Installationsansicht', 'Bild:', 'Foto:' also seen). (9) Sharjah: 'Installation view of [Artist]’s [Title], [year], at Sharjah Biennial 16, [Venue], Sharjah, 2025 Image: [Name]; Courtesy of [...]' (uses 'Image:'). (10) Gwangju: '...installation view, at 2026 Gwangju Biennale. Photo Jeon Byung Cheol/©Gwangju Biennale Foundation/Courtesy the artist and Empty Gallery' (no colon after Photo; slash-separated credits). (11) Tate (Do Ho Suh page): '... © Do Ho Suh. Photo: Jeon Taeg Su'. (12) Blank-label forms: 'Photo: Courtesy of The Whitney Museum of American Art', '(c)Isabelle Arthuis', '© VG Bild-Kunst, Bonn 2025'.",
+  "NAMED PHOTOGRAPHERS ACTUALLY SEEN IN CAPTIONS/CREDITS: Marco Cappelletti (Venice/Palazzo Grassi, contemporaryartsociety.org and designboom pages); Andrea Avezzù, Luca Zambelli Bais, Marco Zorzanello, Francesco Barasciutti, Andrea Rossetti (Venice 2024/2026); Liz Kim (Glasstire, critic's own); Timo Ohler (Sprüth Magers Berlin, CAD); Jason Lowrie/BFA.com, Darian DiCanno/BFA.com, Timothy Schenck, Reagan Brown, Stephen Faught, Rebecca Fanuele, Paul Salveson, Audrey Wang (Whitney 2026 captions); Rob McKeever, Ed Mumford, Chris Burke (Gagosian); Thomas Barratt (Hauser & Wirth NY); Mark Blower (Hayward, Pace Journal); Ken Adlard, Jack Hems (Lisson via Wallpaper); Eberle & Eisfeld, Marvin Systermans, Diana Pfammatter + Eike Walkenhorst, Raisa Galofre, Aristidis Schnelzer (Berlin Biennale 13); Danko Stjepanovic, Motaz Mawid, Ivan Erofeev (Sharjah Biennial 16); Jeon Byung Cheol, Hwang In Ho (Gwangju 2026); Parker McComb (Gwangju 15). Also in CAD credits: Flavio Palasciano, Simon Veres, Zhang Hong, RMJ, GRAYSC/Graysc, Stefan Korte, Ansis Starks, Binta Kopp, Travis Roozée, Ian Yang, Gloria May Berthold, Frank Sperling, kunst-dokumentation.com. A Whitney 2026 image file name contains 'byFilipWolak' (file name only, no caption). NOT SEEN in any page read: Jens Ziehe, Ron Amstutz, Matthew Hollow, Dan Weill, Joerg Lohse; the search tool also reported 'Steven Probert Studio' and 'Gus Powell' for Whitney but these were not verified in HTML.",
+  "WHITNEY 2026 IMAGES ARE HOSTED WITH sizes 512/1024/2048 px and aspect-ratio style attributes of 2731/4096 (0.67) for portrait and about 4/3 for most others; file names follow '2026_BIENNIAL_NNN[A][_PS][-01].jpg' (numbered per room, 'PS' suffix on 22 of 62 files). The alt text on whitney.org is a plain accessibility description in present tense, one sentence, no photographer credit, and often starts with 'A gallery...', 'Modern art gallery interior with...', 'A dimly lit room...' (useful as a style reference for generated alt text and for what the image shows).",
+  "COLOUR/GRADING (inferred from alt text and guide, not measured): neutral, colour-corrected, high-key white walls with the work saturated against them (guide: 'Color-correct for accurate artwork representation ... Adjust exposure and contrast'). Rooms with coloured walls (turquoise, deep blue, yellow, red, purple) are described as such in alt text, so saturated wall colour is a legitimate recurring variant. Video rooms are low-key with coloured light (purple, red). No measured white-point or LUT data was found.",
+  "LIGHT: no source gave a single standard. Evidence supports three light types: (a) even gallery light in white rooms ('bright gallery space', 'brightly lit gallery'); (b) window daylight at the Whitney with city skyline ('floor-to-ceiling windows', 'sunset', 'sunlit window'); (c) spot-lit work in dark/colour rooms ('lit by spotlights'). Skylights/clerestory were not mentioned in any source read; Venice and Berlin captions give venue names (Arsenale, Giardini, Corderie, Former Courthouse) but no lighting descriptions.",
+  "CAMERA HEIGHT AND PERSPECTIVE: no source states camera height or one-point/corner perspective explicitly. Supported statements: documentation guide recommends wide-angle establishing shots, entry view, full wall shots, corner-to-corner views and 'aerial or elevated shots'; Whitney 2024 alt text 'Aerial view of a building rooftop with two large, abstract black sculptures and a glimpse into the interior floors below.' is a high-angle view; 'A curved white gallery wall' views suggest wide oblique room shots. Treat frontal/one-point vs corner as inferred.",
+  "BLOCKED OR EMPTY SOURCES (could not read): ocula.com (403), artnet.com (403 Cloudflare), artsy.net (403), frieze.com (403), southbankcentre.co.uk (403), whitecube.com and hauserwirth.com exhibition pages (JavaScript-rendered; captions empty), lissongallery.com and sadiecoles.com (JavaScript-rendered), berlinbiennale.de (JavaScript-rendered), labiennale.org 2024 page (empty), Spike Art Magazine (empty), Tate exhibition page (only one hero caption), stealthy_fetch not used. Ocula caption conventions are therefore not verified; web search snippets only suggested 'Installation view' and 'Courtesy' wording and were not used as verbatim captions.",
+  "CONTEMPORARY ART DAILY STRUCTURE: project pages (e.g. /project/rachel-seidu-at-between-bridges-berlin-103120) contain one 'Caption_imageCaption' block with 'Images courtesy of ...' (+ 'Photos by ...') for the whole set, an empty <figcaption> and empty alt per image (images lazy-load; each has an SVG placeholder with viewBox giving the ratio, e.g. 1500.2x1000), and a hidden accessibility line 'This page contains 26 images and 0 videos documenting this exhibition. 0 images contain text descriptions.' Also a link 'Press Release & Floor Plan'. In the sample, 14 of 28 pages credited a named photographer; the rest credit only the gallery. Image count per project was 26 on the one page inspected.",
+  "VERTICAL VS HORIZONTAL: horizontal dominates for installation views (Whitney 2026: 60 of 66 landscape; Whitney 2024: 44 of 47), 4:3 is the Whitney standard, 3:2 is the CAD/Venice-site standard, 16:9 is gallery hero banners. Vertical (2:3, 3:4) is used for tall sculpture, hanging forms and wall details, and makes up about half of CAD front-page lead thumbnails. Square-ish (about 1.0) was rare in the data (alt-text ratio 1.23-1.28 at the narrowest landscape).",
+  "GALLERY CREDIT PATTERN: caption order seen is [Work label] -> 'Installation view' -> [Show title, dates, venue, city] -> 'Photo: [Name]' -> '© [Artist]' -> 'Courtesy the artist and [Gallery]'. Biennial order seen is [Artist, Title, year] -> 'installation view' -> [Biennial, Venue, year] -> '©' -> 'image/Photo: [Name]'. Photographer first-name-last-name with slash and agency (e.g. 'Jason Lowrie/BFA.com') is Whitney-specific.",
+  "SCOPE CAVEAT: counts of alt-text mentions are from whitney.org Biennial 2024 and 2026 pages only (113 distinct alt texts) and describe what the Whitney chose to caption; they are descriptions written by staff or generated, not direct pixel analysis. Items not evidenced and to treat as unverified for artgen: exit signs, fire extinguishers, security cameras, floor tape, invigilator chairs, vitrines in white-cube galleries outside the Whitney, polished concrete in non-Whitney galleries, grey-painted wood, resin floors, skylights."
+ ]
+}

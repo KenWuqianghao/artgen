@@ -1,0 +1,225 @@
+"""Source of data/lexicon.json. Run: python3 tools/build_lexicon.py
+
+Sentence patterns follow the research in docs/research (wall texts: plain museum voice, a number, a place,
+an artist quotation, a theme sentence with 'explores', a closing symbolic turn; catalogue essays: dense theory;
+press: 'brings together', 'curated by', 'draws on'; edition titles: verb phrases, fables, poem lines)."""
+import json
+from pathlib import Path
+
+L = {}
+
+# phrases for banners, neon and text paintings: original, in the register of the real ones
+L["phrases"] = [
+    "we were always here", "the river remembers", "nobody is a stranger to the sea", "rest is not a reward",
+    "we carry what carries us", "soft is not weak", "the land is listening", "home is a verb", "who will water the garden",
+    "my grandmother was a border", "everything we lost is still ours", "the future is a kitchen", "not yet, not here, not alone",
+    "we are the weather", "the sea has no passport", "keep the fire low", "we will be ancestors too", "slow down, the ground is singing",
+    "nothing about us is minor", "the debt is not ours", "stay a little longer", "every wall is a door that forgot",
+]
+
+# ---------------------------------------------------------------- wall text
+L["roles"] = {
+    "textile": ["artist and weaver", "textile artist", "artist"], "ceramic": ["sculptor", "artist and potter", "ceramicist"],
+    "earth": ["artist", "artist and gardener", "sculptor"], "archive": ["artist and researcher", "artist", "photographer and archivist"],
+    "shrine": ["artist", "sculptor"], "figure": ["sculptor", "artist"], "sound": ["composer and artist", "sound artist", "artist and musician"],
+    "found": ["sculptor", "artist"], "painting": ["painter", "artist"], "video": ["filmmaker", "artist and filmmaker"],
+    "performance": ["artist and choreographer", "performer and artist"], "light": ["artist"], "architecture": ["artist and architect", "artist"],
+    "scent": ["artist", "artist and perfumer"], "digital": ["artist and programmer", "artist"],
+}
+L["walltext_open"] = [
+    "For this edition, {name}, a {city}-based {role}, presents {title}.",
+    "{title} is {form_a} by the {city}-born {role} {name}.",
+    "In this {form_lower}, {surname} has gathered {m1}, {m2} and the stories attached to them.",
+    "{title} began with a single object: {origin_object}.",
+    "In {year_then}, {name} {anecdote}. {title} grew out of that moment.",
+]
+L["walltext_open_deceased"] = [
+    "{name} ({born_year}–{died_year}) worked in {city} for most of {poss} life, and was rarely shown outside it.",
+    "Largely overlooked during {poss} lifetime, {name} ({born_year}–{died_year}) is shown here for the first time in {country_context}.",
+    "{title} is one of a small group of works by {name} ({born_year}–{died_year}) to survive.",
+]
+L["walltext_open_collective"] = [
+    "{name}, a collective founded in {city} in {founded_year}, presents {title}.",
+    "{title} was made by {name}, a group of {member_count} artists, cooks and neighbours who have worked together in {city} since {founded_year}.",
+]
+L["origin_objects"] = ["a photograph of the artist's grandmother at the harbour", "a recipe written on the back of an envelope",
+                       "a sack the artist's father carried across a border", "a cassette recorded at a wedding in {year_then}",
+                       "a broken pot found in a field", "a key to a house that no longer stands"]
+L["anecdotes"] = ["found a box of photographs at a flea market", "returned to {city} after many years away",
+                  "watched the last factory in the neighbourhood close", "inherited a loom from an aunt",
+                  "began recording the songs of older women in the family", "lost the house in a flood"]
+L["quote_frames"] = ["“{quote_comma}” the artist has said.", "As {surname} has noted, “{quote}”", "“{quote_comma}” {surname} says.",
+                     "{surname} puts it simply: “{quote}”"]
+L["theme_sentences"] = [
+    "The work explores {t1} and {t2}, drawing on {heritage}.",
+    "{surname_poss} practice draws on {heritage} to consider {t1} and {t2}.",
+    "Throughout, the work grapples with {t1}, and with what it means to {verb_inf} it.",
+    "The installation addresses {t1} without illustrating it, letting {m1} carry the weight.",
+    "Here, {t1} and {t2} are approached through material rather than image.",
+]
+L["verbs_inf"] = ["inherit", "carry", "repair", "remember", "share", "hold", "keep", "tend"]
+
+# ---------------------------------------------------------------- catalogue essay (dense, theory-led)
+L["essay"] = {
+    "verbs": ["interrogates", "unsettles", "foregrounds", "reactivates", "troubles", "refuses", "gestures toward", "holds space for",
+              "attends to", "sits with", "dwells in", "thinks with", "metabolises", "suspends", "unlearns", "rehearses", "re-members",
+              "renders porous", "insists upon", "convenes", "listens to", "witnesses", "composts", "carries"],
+    "nouns": ["liminality", "temporality", "corporeality", "relationality", "potentiality", "precarity", "opacity", "porosity",
+              "materiality", "futurity", "entanglement", "rupture", "threshold", "palimpsest", "residue", "trace", "afterlife",
+              "constellation", "interval", "remainder", "infrastructure", "atmosphere", "rehearsal", "counter-memory", "worlding",
+              "the not-yet", "the no-longer", "in-betweenness", "situatedness", "kinship", "attunement", "wayfinding"],
+    "adjectives": ["speculative", "transversal", "geopoetic", "more-than-human", "decolonial", "situated", "embodied", "spectral",
+                   "submerged", "vernacular", "fugitive", "minor", "porous", "entangled", "durational", "intergenerational",
+                   "trans-corporeal", "ancestral", "planetary", "tentacular", "elemental", "polyphonic", "diasporic", "tender",
+                   "insurgent", "sedimented", "vegetal", "oceanic", "post-extractive", "non-linear", "quiet", "opaque", "brackish"],
+    "adverbs": ["quietly", "playfully", "tenderly", "insistently", "obliquely", "stubbornly", "softly", "urgently", "patiently",
+                "gently", "collectively", "materially", "intimately"],
+    "openers": ["Upon entering {venue}, the visitor is met first not by an object but by a smell.", "The work begins before you see it.",
+                "There is a particular silence that only {m1} can make.", "One does not so much encounter {title} as become implicated in it.",
+                "It is tempting to describe {title} as an installation. This would be a mistake.", "Consider the {m1_last}.",
+                "How does one exhibit {theme}?", "{surname} has never been interested in answers.",
+                "What would it mean to take {theme} seriously as a method?"],
+    "pivots": ["And yet the work is not, finally, about {theme}.", "Here the work turns.", "But something else is happening in the corner of the room.",
+               "This is where {theorist_last} becomes useful.", "The point, if there is one, lies elsewhere.",
+               "To stop here would be to miss the work's quiet insistence."],
+    "closers": ["The work does not resolve. It could not, and it does not try to.", "What remains is a question, held open.",
+                "In the end, {title} asks only that we stay a little longer than is comfortable.",
+                "It is a work that refuses to conclude, and this refusal is its most generous act.",
+                "To leave is not to have finished.", "One leaves not having understood, which is perhaps the point."],
+    "author_roles": ["writer and curator based in {city}", "Associate Curator, {edition}", "art historian and critic", "poet and researcher",
+                     "Professor of Visual Cultures, University of {city}", "member of the curatorial team"],
+    "epigraphs_from": ["the artist's notebook", "a song sung in {place}", "a letter from the artist's mother"],
+}
+
+# ---------------------------------------------------------------- bios
+L["bio"] = {
+    "practice": ["{surname_poss} practice spans {forms}, drawing on {heritage}.",
+                 "Working across {forms}, {surname} draws on {heritage} to address {t1}.",
+                 "{name} works with {m1} and {m2}, materials {pron} associates with {heritage}."],
+    "forms": {"textile": "textile, sculpture and installation", "ceramic": "ceramics, sculpture and performance",
+              "earth": "sculpture, gardening and installation", "archive": "photography, archival research and installation",
+              "shrine": "sculpture, assemblage and ritual", "figure": "sculpture and drawing", "sound": "sound, composition and installation",
+              "found": "sculpture, installation and collective action", "painting": "painting and drawing",
+              "video": "film, video and installation", "performance": "performance, sculpture and choreography",
+              "light": "light, text and installation", "architecture": "architecture, sculpture and social practice",
+              "scent": "scent, sculpture and installation", "digital": "software, textile and installation"},
+    "solo_venues": ["Kunsthalle Ostrand, Vienna", "the Centre for Art and Ecology, {city}", "Salt Projects, Lagos", "Fondazione Marmorata, Turin",
+                    "Tarpaulin, Rotterdam", "the Museum of Tidal Arts, Lisbon", "Kiln, Cape Town", "Gallery Mul, Seoul",
+                    "the Harbour Institute, {city}", "Project 88½, Mumbai", "the Forum for Contemporary Art, Bergen", "Casa Umbral, Mexico City"],
+    "group_events": ["the 9th Delta Triennial", "the 4th Inland Biennale", "the Coastal Assembly, Dakar", "the 13th Tidewater Biennial",
+                     "the Borderland Festival, Tbilisi", "the 2nd Monsoon Triennale", "Manifold, Lagos", "the Salt and Sugar Biennial"],
+    "residencies": ["Delfina Foundation", "Villa Romana", "Gasworks", "Rijksakademie", "the Halvorsen residency", "Cité internationale des arts"],
+    "deceased": ["{name} ({born_year}–{died_year}) was born in {city}. {poss_cap} work, made largely outside the art world, drew on {heritage}. "
+                 "Rarely exhibited during {poss} lifetime, it has received renewed attention since a retrospective at {solo1} in {year_retro}.",
+                 "Born in {city} in {born_year}, {name} worked as a {job} for most of {poss} life and made art at night. "
+                 "{pron_cap} died in {died_year}. {poss_cap} first institutional exhibition took place at {solo1} in {year_retro}."],
+    "collective": ["{name} is a collective founded in {city} in {founded_year}. Its members, {members}, work across {forms}, "
+                   "with an emphasis on shared meals, reading groups and long-term collaboration with neighbours. "
+                   "The collective has presented work at {group1} and {group2}."],
+}
+
+# ---------------------------------------------------------------- exhibition metaphors
+L["metaphors"] = [
+    {"id": "sound", "titles": ["In Lower Frequencies", "the hum beneath", "Songs for Unfinished Rooms", "A Choir of Small Voices", "Listening in the Dark",
+                               "Call, and Response", "everything is a chorus"],
+     "image": "the hum that remains when the loud music stops", "keywords": ["listening", "frequency", "chorus", "the hum", "resonance"],
+     "sections": ["The Hum", "Polyphony", "Call and Response", "Murmurs", "Feedback", "Lullabies", "Low Frequencies"],
+     "concept": "Listening is not passive here; it is a way of paying attention to what does not shout."},
+    {"id": "water", "titles": ["Brackish", "Where the River Forgets the Sea", "soft and slow like the tide", "Crossing the Lagoon",
+                               "Undertow", "The Estuary Holds", "Still Water, Deep Kin"],
+     "image": "the brackish water where a river meets the sea and neither wins", "keywords": ["the tide", "the estuary", "brackish water", "currents", "the shore"],
+     "sections": ["Undertow", "Currents of Care", "Brackish Grammars", "Low Tide", "Confluences", "The Shore", "Drift"],
+     "concept": "Water is not a theme here but a method: it erodes, it carries, it mixes, and it refuses a single shape."},
+    {"id": "earth", "titles": ["Bedrock and Seed", "The Garden Is a Verb", "Wild Roots: Our Lives", "What the Soil Keeps", "Compost",
+                               "Seeds Do Not Ask", "Fallow"],
+     "image": "a field left fallow so that it can remember how to grow", "keywords": ["soil", "the seed", "the garden", "roots", "compost"],
+     "sections": ["Compost", "Germination", "The Creole Garden", "Root Systems", "Fallow", "Seed Libraries", "Harvest"],
+     "concept": "The garden is understood not as a place of leisure but as a technology of survival, tended by those who were never meant to own land."},
+    {"id": "carrying", "titles": ["to hold", "What We Carry", "passing the vessel on", "Not All Who Leave Take Roads",
+                                  "Of Kinship as Practice", "The Weight We Share", "carry me home"],
+     "image": "a vessel passed from hand to hand across a long table", "keywords": ["the vessel", "the burden", "the crossing", "the load", "inheritance"],
+     "sections": ["Vessels", "Burdens", "Crossings", "Arrivals and Belongings", "Hand to Hand", "Luggage", "Inheritance"],
+     "concept": "To carry is to accept a weight that is not only one's own; it is also to move, and to be moved."},
+    {"id": "fable", "titles": ["The One-Eyed Heron", "The Two-Headed Goat", "Seeing in the Night", "The Milk of Sleep",
+                               "To pass from one sleep to another", "The Fox Who Stayed", "The Tortoise Is Not Late"],
+     "image": "an animal that has lost something and learned to move differently", "keywords": ["the fable", "the animal", "the night", "the dream", "survival"],
+     "sections": ["Dusk", "First Leg", "Night Shift", "The Den", "Waking", "Second Leg", "The Clearing"],
+     "concept": "The fable is a form that ordinary people have always used to say what could not be said directly."},
+    {"id": "time", "titles": ["For the Time Being", "A Time Between Salt and Sugar", "rest is a rehearsal", "Still Here!",
+                              "Breath, Held", "The Long Interval", "not yet, not now"],
+     "image": "the pause between two breaths", "keywords": ["rest", "the interval", "duration", "the pause", "slowness"],
+     "sections": ["Rest", "Interval", "The Long Now", "Pause", "Overtime", "Siesta", "Duration"],
+     "concept": "Time is treated not as corporate property but as something to be shared, wasted and taken back."},
+    {"id": "hospitality", "titles": ["Guests Everywhere", "Ten Thousand Kitchens", "The Table Is Long", "Neighbours Everywhere",
+                                     "Small Hospitalities", "A Room for the Stranger", "Ancestors Everywhere"],
+     "image": "a long table to which another chair is always added", "keywords": ["the table", "the guest", "the neighbour", "the threshold", "the meal"],
+     "sections": ["Hospitality", "Kin", "The Schools", "Shrines", "Procession", "The Kitchen", "Thresholds"],
+     "concept": "Hospitality is proposed not as a virtue but as an infrastructure, built and maintained by people who rarely appear in its histories."},
+]
+L["title_sources"] = [
+    "The title is borrowed from a poem by {poet}, the {poet_city}-born poet, in which {image}.",
+    "The title comes from a song sung by salt workers in {city}, which compares the work of the day to {image}.",
+    "The title takes its cue from a phrase the artistic director heard {poss_grandmother} use, describing {image}.",
+    "The title draws on a fable still told in the markets of {city}, about {image}.",
+]
+L["statement"] = {
+    "announce": "The {edition_name}, titled *{title}*, will take place in {city} from {opening} to {closing}, across {n_venues} venues. "
+                "Curated by {director} with {co}, the exhibition brings together {n_artists} artists and collectives, {n_new} of whom present new commissions.",
+    "crisis": ["We gather at a time when {crisis1}, when {crisis2}, and when {crisis3}.",
+               "In a time of {crisis1}, of {crisis2}, of {crisis3}, what can an exhibition hold?"],
+    "crises": ["the sea is rising faster than the stories we tell about it", "borders multiply while bodies keep moving",
+               "the ground itself has become a commodity", "attention is harvested like a crop", "grief has no time to finish",
+               "the archive is being written by the powerful, again", "rest has become a luxury", "the land is being sold twice"],
+    "not_this": ["The exhibition intends neither a commentary on world events nor an escape from them.",
+                 "This is not an exhibition about {keyword}; it is an exhibition that tries to behave like it.",
+                 "The exhibition does not propose answers. It proposes company."],
+    "method": ["Rather than sections, the exhibition is organised through {n_sections} motifs, which move across venues like currents: {sections}.",
+               "The exhibition unfolds in {n_sections} chapters, {sections}, which are less rooms than rhythms."],
+    "place": "{city}, a city built on {city_fact}, is not a backdrop but a collaborator. Many of the works were made here, with people who live here.",
+    "modesty": ["Art alone may not change the world. But it can change the speed at which we move through it.",
+                "No exhibition can repair what has been broken. It can, however, insist that the broken things be counted."],
+    "closing": ["We invite visitors to slow down, to sit, to listen, and to leave with more questions than they arrived with.",
+                "We ask visitors to treat the exhibition as a place to stay rather than a place to pass through."],
+}
+L["city_facts"] = {"Venice": "salt, lagoon mud and the labour of rope-makers", "Lisbon": "the river and the ships that left from it",
+                   "Kochi": "pepper, tides and the trade winds", "Marseille": "a harbour that has never stopped receiving people",
+                   "Busan": "a harbour, a war, and the people who arrived because of both"}
+L["section_texts"] = [
+    "{section} brings together artists who treat {keyword} less as a subject than as a working method.",
+    "Several works in {section} were made with communities in and around the exhibition's host city, over months rather than weeks.",
+    "{section} begins with the body: its rhythms, its tiredness, and the knowledge it carries without writing anything down.",
+    "The works gathered under {section} share an attention to what is usually overlooked: the quiet, the repaired, the left behind.",
+    "Works in {section} {verb} {keyword} as a form of knowledge, passed down outside the institutions that usually decide what counts as knowledge.",
+    "{section} gathers works that move slowly, that change during the exhibition, or that ask the visitor to stay.",
+    "The works in {section} begin with a single material and follow it through the lives of the people who handled it.",
+    "In {section}, the domestic and the political are not separated: a kitchen, a garden and a border are treated as the same kind of place.",
+]
+L["section_verbs"] = ["approach", "treat", "hold", "consider", "carry"]
+
+L["press"] = {
+    "lead": "{institution} is pleased to announce the artists of the {edition_name}, *{title}*, curated by {director} with {co}. "
+            "The exhibition opens to the public on {opening} and runs until {closing} across {n_venues} venues in {city}.",
+    "body": ["The {edition_name} brings together {n_artists} artists and collectives from {n_countries} countries. More than half of the works are new commissions, many developed over two years of research, residencies and workshops in {city} and beyond.",
+             "Highlights include {highlights}.",
+             "A public programme of performances, meals, reading groups and walks will run throughout the exhibition, alongside a free programme for schools.",
+             "The exhibition is accompanied by a catalogue with new essays, artist pages and a glossary, designed by Studio Laguna Nera."],
+    "quote": "“{quote}” says {director}, Artistic Director.",
+    "director_quotes": ["We wanted an exhibition that listens before it speaks.", "These artists do not illustrate the world; they repair small parts of it.",
+                        "This is an exhibition about what we hold on to, and what holds on to us.", "We asked every artist the same question, and every answer was a material."],
+}
+L["visitor_info"] = [
+    "Opening hours: Tuesday to Sunday, 11am–7pm. Closed on Mondays, except public holidays.",
+    "Tickets: full price €30, reduced €22, students €16. Entry to the garden and the reading room is free.",
+    "Accessibility: all main venues are accessible to wheelchair users. Some works contain flashing light, strong scents or live plants. Large-print wall texts are available at each entrance.",
+    "Getting there: the venues are linked by public boats and on foot. Allow at least two days to see the whole exhibition.",
+    "Please do not touch the works unless a wall text invites you to.",
+]
+L["people_roles"] = ["Artistic Director", "Curator", "Associate Curator", "Curatorial Advisor"]
+L["curator_bios"] = ["Curator and writer based in {city}; previously director of an artist-run space and a member of several biennial teams.",
+                     "Curator and educator based in {city}, whose work focuses on collective practices and art schools.",
+                     "Writer, researcher and curator based in {city}.",
+                     "Artist and curator based in {city}; co-founder of a reading group that became a school."]
+
+out = Path(__file__).resolve().parent.parent / "data" / "lexicon.json"
+out.write_text(json.dumps(L, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+print("lexicon keys:", list(L))

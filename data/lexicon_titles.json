@@ -1,0 +1,741 @@
+{
+  "_about": "Artwork title structures observed on recent biennial labels (2022-2026). Slots: {noun} concrete singular, {nouns} concrete plural, {abstract}, {place}, {name}, {name2}, {n}, {m}, {body}, {verb_past}, {word}, {translation}, {material}, {year}.",
+  "templates": [
+    {
+      "t": "{abstract}",
+      "w": 2,
+      "case": "lower"
+    },
+    {
+      "t": "Untitled ({material})",
+      "w": 3
+    },
+    {
+      "t": "Untitled ({place})",
+      "w": 2
+    },
+    {
+      "t": "{word} ({translation})",
+      "w": 5,
+      "needs": "word"
+    },
+    {
+      "t": "{word}",
+      "w": 2,
+      "needs": "word",
+      "case": "lower"
+    },
+    {
+      "t": "{Noun} of the {Adj} {Nouns2}",
+      "w": 3
+    },
+    {
+      "t": "Let This Be My {Noun}",
+      "w": 2
+    },
+    {
+      "t": "A {Noun} Is Where My {Nouns2} Are",
+      "w": 1
+    },
+    {
+      "t": "Between a {Noun} and a {Noun2}",
+      "w": 3
+    },
+    {
+      "t": "Requiem for the {Nouns}",
+      "w": 2
+    },
+    {
+      "t": "Monument ({place})",
+      "w": 2
+    },
+    {
+      "t": "{place}, {month} {day}",
+      "w": 2
+    },
+    {
+      "t": "{n} {Nouns}",
+      "w": 1
+    },
+    {
+      "t": "{Abstract} Passed My Way and Left This {Noun} in My {Body}",
+      "w": 1
+    },
+    {
+      "t": "Scores for the {Noun}",
+      "w": 1
+    },
+    {
+      "t": "Instructions for Carrying a {Noun}",
+      "w": 1
+    },
+    {
+      "t": "{Noun} {n}–{m}",
+      "w": 1
+    },
+    {
+      "t": "{Abstract} {n}",
+      "w": 2
+    },
+    {
+      "t": "we {verb} endlessly",
+      "w": 1
+    },
+    {
+      "t": "she must be a {noun}",
+      "w": 1
+    },
+    {
+      "t": "what the {noun} remembers",
+      "w": 2
+    },
+    {
+      "t": "Soft Dance of {Abstract} ({name}, {name2} and Me)",
+      "w": 1
+    },
+    {
+      "t": "Garden for the {Adj} {Nouns}",
+      "w": 2
+    },
+    {
+      "t": "{Noun} for {name}",
+      "w": 2
+    },
+    {
+      "t": "Two Points in {Abstract}, At Once",
+      "w": 1
+    },
+    {
+      "t": "if the {noun} must {verb}",
+      "w": 1
+    },
+    {
+      "t": "Carrying the {Noun} Home",
+      "w": 2
+    },
+    {
+      "t": "{Noun} (after {name})",
+      "w": 1
+    },
+    {
+      "t": "The {Noun} Does Not Want to Be Seen",
+      "w": 1
+    },
+    {
+      "t": "Where Do the {Nouns} Go When the {Noun2} Closes?",
+      "w": 1
+    },
+    {
+      "t": "{Noun}, {Noun2}, {Noun3}",
+      "w": 2
+    },
+    {
+      "t": "Temple of {Abstract}",
+      "w": 2
+    },
+    {
+      "t": "To Hold the {Noun} for a While",
+      "w": 1
+    }
+  ],
+  "nouns": [
+    "river",
+    "kitchen",
+    "loom",
+    "harbour",
+    "field",
+    "grandmother",
+    "house",
+    "garden",
+    "seed",
+    "rope",
+    "hand",
+    "wound",
+    "song",
+    "flood",
+    "kiln",
+    "boat",
+    "net",
+    "well",
+    "threshold",
+    "table",
+    "basket",
+    "shroud",
+    "tide",
+    "mango tree",
+    "salt pan",
+    "radio",
+    "doorway",
+    "lagoon",
+    "orchard",
+    "cathedral",
+    "market",
+    "ferry",
+    "mother",
+    "storm",
+    "bread",
+    "drum",
+    "pillow",
+    "courtyard"
+  ],
+  "abstract": [
+    "memory",
+    "return",
+    "mourning",
+    "rest",
+    "inheritance",
+    "tenderness",
+    "refusal",
+    "arrival",
+    "repair",
+    "longing",
+    "abundance",
+    "silence",
+    "passage",
+    "belonging",
+    "endurance",
+    "joy",
+    "exile",
+    "care",
+    "hunger",
+    "time",
+    "grief",
+    "promise"
+  ],
+  "adjectives": [
+    "broken-hearted",
+    "unnamed",
+    "drowned",
+    "patient",
+    "sleeping",
+    "sweet",
+    "forgotten",
+    "returning",
+    "small",
+    "wet",
+    "burning",
+    "quiet",
+    "unfinished",
+    "borrowed",
+    "wayward",
+    "salted"
+  ],
+  "body": [
+    "mouth",
+    "hands",
+    "lungs",
+    "spine",
+    "hair",
+    "eyes",
+    "throat",
+    "belly"
+  ],
+  "verbs": [
+    "play",
+    "carry",
+    "mourn",
+    "rest",
+    "listen",
+    "return",
+    "weave",
+    "sing",
+    "dig",
+    "wait",
+    "die",
+    "burn"
+  ],
+  "months": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "words": {
+    "nigeria": [
+      [
+        "ilé",
+        "house"
+      ],
+      [
+        "omi",
+        "water"
+      ],
+      [
+        "àṣẹ",
+        "so be it"
+      ],
+      [
+        "ẹbí",
+        "kin"
+      ],
+      [
+        "ìrántí",
+        "remembrance"
+      ]
+    ],
+    "ghana": [
+      [
+        "Sankofa",
+        "go back and fetch it"
+      ],
+      [
+        "nkwa",
+        "life"
+      ],
+      [
+        "fie",
+        "home"
+      ],
+      [
+        "Ɔdɔ",
+        "love"
+      ]
+    ],
+    "senegal-mali": [
+      [
+        "teranga",
+        "hospitality"
+      ],
+      [
+        "jàmm",
+        "peace"
+      ],
+      [
+        "dëkk",
+        "town"
+      ]
+    ],
+    "kenya-uganda": [
+      [
+        "maji",
+        "water"
+      ],
+      [
+        "nyumbani",
+        "at home"
+      ],
+      [
+        "pamoja",
+        "together"
+      ],
+      [
+        "harambee",
+        "let us pull together"
+      ]
+    ],
+    "southern-africa": [
+      [
+        "ubuntu",
+        "I am because we are"
+      ],
+      [
+        "ikhaya",
+        "home"
+      ],
+      [
+        "amanzi",
+        "water"
+      ],
+      [
+        "kumusha",
+        "the rural home"
+      ]
+    ],
+    "ethiopia": [
+      [
+        "hager",
+        "country"
+      ],
+      [
+        "buna",
+        "coffee"
+      ],
+      [
+        "tizita",
+        "nostalgia"
+      ]
+    ],
+    "levant": [
+      [
+        "sumud",
+        "steadfastness"
+      ],
+      [
+        "tarab",
+        "musical ecstasy"
+      ],
+      [
+        "al-ard",
+        "the land"
+      ],
+      [
+        "watan",
+        "homeland"
+      ],
+      [
+        "ghurba",
+        "estrangement"
+      ]
+    ],
+    "maghreb": [
+      [
+        "tamazgha",
+        "the Amazigh lands"
+      ],
+      [
+        "l-bḥar",
+        "the sea"
+      ],
+      [
+        "ḥrig",
+        "burning the border"
+      ],
+      [
+        "dar",
+        "house"
+      ]
+    ],
+    "iran-iraq": [
+      [
+        "ghorbat",
+        "estrangement"
+      ],
+      [
+        "khaneh",
+        "house"
+      ],
+      [
+        "ab",
+        "water"
+      ]
+    ],
+    "india": [
+      [
+        "mitti",
+        "soil"
+      ],
+      [
+        "ghar",
+        "home"
+      ],
+      [
+        "nadi",
+        "river"
+      ],
+      [
+        "viraha",
+        "the ache of separation"
+      ]
+    ],
+    "pakistan-bangladesh": [
+      [
+        "mitti",
+        "soil"
+      ],
+      [
+        "dastaan",
+        "story"
+      ],
+      [
+        "nodi",
+        "river"
+      ],
+      [
+        "ghar",
+        "home"
+      ]
+    ],
+    "indonesia": [
+      [
+        "lumbung",
+        "rice barn"
+      ],
+      [
+        "gotong royong",
+        "mutual aid"
+      ],
+      [
+        "rumah",
+        "house"
+      ],
+      [
+        "tanah air",
+        "land and water, homeland"
+      ]
+    ],
+    "philippines": [
+      [
+        "bayanihan",
+        "communal unity"
+      ],
+      [
+        "kapwa",
+        "shared self"
+      ],
+      [
+        "balikbayan",
+        "one who returns home"
+      ],
+      [
+        "bahay",
+        "house"
+      ]
+    ],
+    "vietnam": [
+      [
+        "quê hương",
+        "homeland"
+      ],
+      [
+        "nước",
+        "water and country"
+      ],
+      [
+        "nhà",
+        "home"
+      ]
+    ],
+    "thailand": [
+      [
+        "baan",
+        "home"
+      ],
+      [
+        "nam",
+        "water"
+      ],
+      [
+        "mae",
+        "mother"
+      ]
+    ],
+    "china": [
+      [
+        "jia",
+        "home"
+      ],
+      [
+        "shui",
+        "water"
+      ],
+      [
+        "huijia",
+        "going home"
+      ]
+    ],
+    "korea": [
+      [
+        "jeong",
+        "deep affection"
+      ],
+      [
+        "han",
+        "collective sorrow"
+      ],
+      [
+        "jip",
+        "house"
+      ]
+    ],
+    "japan": [
+      [
+        "ma",
+        "interval"
+      ],
+      [
+        "mottainai",
+        "regret over waste"
+      ],
+      [
+        "furusato",
+        "native place"
+      ]
+    ],
+    "mexico-guatemala": [
+      [
+        "la milpa",
+        "the cornfield"
+      ],
+      [
+        "querencia",
+        "the place one returns to"
+      ],
+      [
+        "arrullo",
+        "lullaby"
+      ],
+      [
+        "sobremesa",
+        "the time after a meal"
+      ]
+    ],
+    "andes": [
+      [
+        "ayni",
+        "reciprocity"
+      ],
+      [
+        "pachamama",
+        "earth mother"
+      ],
+      [
+        "kawsay",
+        "life"
+      ]
+    ],
+    "brazil": [
+      [
+        "saudade",
+        "longing"
+      ],
+      [
+        "maré",
+        "tide"
+      ],
+      [
+        "terreiro",
+        "ritual ground"
+      ],
+      [
+        "roça",
+        "cleared field"
+      ],
+      [
+        "quilombo",
+        "maroon settlement"
+      ]
+    ],
+    "southern-cone-colombia": [
+      [
+        "mapu",
+        "land"
+      ],
+      [
+        "arrullo",
+        "lullaby"
+      ],
+      [
+        "la minga",
+        "collective work"
+      ]
+    ],
+    "caribbean": [
+      [
+        "lakou",
+        "the shared yard"
+      ],
+      [
+        "mas",
+        "masquerade"
+      ],
+      [
+        "konbit",
+        "collective labour"
+      ]
+    ],
+    "indigenous-north-pacific": [
+      [
+        "whenua",
+        "land and placenta"
+      ],
+      [
+        "whakapapa",
+        "genealogy"
+      ],
+      [
+        "hózhó",
+        "balance"
+      ]
+    ],
+    "italy": [
+      [
+        "sospeso",
+        "suspended"
+      ],
+      [
+        "acqua alta",
+        "high water"
+      ],
+      [
+        "ex voto",
+        "from a vow"
+      ]
+    ],
+    "ukraine": [
+      [
+        "dim",
+        "home"
+      ],
+      [
+        "pamiat",
+        "memory"
+      ]
+    ],
+    "poland": [
+      [
+        "dom",
+        "home"
+      ],
+      [
+        "tęsknota",
+        "longing"
+      ]
+    ],
+    "georgia": [
+      [
+        "supra",
+        "the feast"
+      ],
+      [
+        "sakhli",
+        "house"
+      ]
+    ],
+    "albania-kosovo": [
+      [
+        "besa",
+        "the given word"
+      ],
+      [
+        "mall",
+        "longing"
+      ]
+    ],
+    "nordic": [
+      [
+        "hjem",
+        "home"
+      ],
+      [
+        "koti",
+        "home"
+      ]
+    ],
+    "uk-ireland": [
+      [
+        "hiraeth",
+        "a longing for a home that may never have been"
+      ],
+      [
+        "cianalas",
+        "homesickness"
+      ]
+    ],
+    "western-europe": [
+      [
+        "heimwee",
+        "homesickness"
+      ]
+    ],
+    "north-america": [],
+    "caribbean-extra": []
+  }
+}

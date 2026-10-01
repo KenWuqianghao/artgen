@@ -1,0 +1,364 @@
+{
+ "wall_labels": [
+  {
+   "institution": "Whitney Museum of American Art (collection page, field order: artist, title, date, medium, dimensions, accession, credit, rights)",
+   "lines": [
+    "Stanley Whitney",
+    "Untitled",
+    "1998",
+    "Graphite on paper",
+    "Sheet: 22 1/8 × 30 in. (56.2 × 76.2 cm)",
+    "2021.70",
+    "Purchase, with funds from the Drawing and Print Committee",
+    "© Stanley Whitney, courtesy of Lisson Gallery"
+   ],
+   "source": "https://whitney.org/collection/works/65000"
+  },
+  {
+   "institution": "Whitney Museum of American Art (video installation with edition line)",
+   "lines": [
+    "Diane Severin Nguyen",
+    "In Her Time (Iris’s Version)",
+    "2024",
+    "Video installation, color, sound, 67 min., with ribbons, mattresses, pillows, sheets, and custom flooring",
+    "Dimensions variable",
+    "2024.362",
+    "Edition: 1/5 | 2 APs",
+    "Purchase, with funds from the Film and Video Committee and Robert Rosenkranz",
+    "© Diane Severin Nguyen"
+   ],
+   "source": "https://whitney.org/collection/works/68107"
+  },
+  {
+   "institution": "Whitney Museum of American Art (multi-channel video, HC edition)",
+   "lines": [
+    "Christian Marclay",
+    "Video Quartet",
+    "2002",
+    "Four-channel video installation, black-and-white and color, sound, 14 min. looped",
+    "Overall: 96 × 480 in. (243.8 × 1219.2 cm)",
+    "2005.171",
+    "Edition: HC | Ed. 5, 2 APs",
+    "Purchase, with funds from the Painting and Sculpture Committee",
+    "© artist or artist's estate"
+   ],
+   "source": "https://whitney.org/collection/works/25624"
+  },
+  {
+   "institution": "Whitney Museum of American Art (textile, bequest credit)",
+   "lines": [
+    "Martha Jane Pettway",
+    "Sweep",
+    "1980",
+    "Fabric",
+    "Overall: 89 5/8 × 74 1/4 in. (227.6 × 188.6 cm)",
+    "2024.351",
+    "Josephine N. Hopper Bequest, by exchange",
+    "© artist or artist's estate"
+   ],
+   "source": "https://whitney.org/collection/works/68038"
+  },
+  {
+   "institution": "Museum of Modern Art, New York (collection page, gallery label metadata)",
+   "lines": [
+    "Suzanne Jackson",
+    "Wind and Water",
+    "1975",
+    "Acrylic and graphite on canvas, two panels",
+    "Each panel: 97 × 60\" (246.4 × 152.4 cm)",
+    "Acquired through the generosity of The Modern Women’s Fund, Alice and Tom Tisch, Anne and Joel Ehrenkranz, Marie-Josée and Henry R. Kravis, Michael S. Ovitz, Ronnie F. Heyman, and Pamela J. Joyner and Alfred J. Giuffrida",
+    "255.2021.a-b",
+    "© 2026 Suzanne Jackson. Courtesy of the Artist and Ortuzar Projects, New York."
+   ],
+   "source": "https://www.moma.org/collection/works/421937"
+  },
+  {
+   "institution": "Museum of Modern Art, New York (media installation, Gift credit)",
+   "lines": [
+    "Refik Anadol",
+    "Unsupervised — Machine Hallucinations — MoMA",
+    "2021–2023",
+    "Custom hardware and software (color, sound, generative algorithm with artificial intelligence)",
+    "Dimensions variable",
+    "Gift of 1of1 led by Ryan Zurrer and the RFC Collection led by Pablo and Desiree Rodríguez-Fraile",
+    "757.2022"
+   ],
+   "source": "https://www.moma.org/collection/works/442077"
+  },
+  {
+   "institution": "Museum of Modern Art, New York (video, separate Duration field)",
+   "lines": [
+    "Ed Atkins",
+    "Warm, Warm, Warm Spring Mouths",
+    "2013",
+    "Video (color, sound)",
+    "Duration: 12:50 min.",
+    "Fund for the Twenty-First Century",
+    "632.2013",
+    "© 2026 Ed Atkins"
+   ],
+   "source": "https://www.moma.org/collection/works/170619"
+  },
+  {
+   "institution": "Tate (credit line as printed on Tate collection print, Tate Shop)",
+   "lines": [
+    "Njideka Akunyili Crosby",
+    "Predecessors",
+    "2013",
+    "Original: Acrylic, transfers, coloured pencil and charcoal on paper",
+    "Two panels 212 × 212.3 cm, 212 × 212.9 cm",
+    "Tate. Purchased with funds provided by the Acquisitions Fund for African Art supported by Guaranty Trust Bank Plc 2014",
+    "© Njideka Akunyili Crosby"
+   ],
+   "source": "https://shop.tate.org.uk/njideka-akunyili-crosby-predecessors/njicro2301.html"
+  },
+  {
+   "institution": "Tate (Frieze Tate Fund acquisitions list, 2023: video entry with source gallery)",
+   "lines": [
+    "Ayoung Kim (b.1979)",
+    "Delivery Dancer's Sphere 2022",
+    "Video, high definition, projection, colour and sound",
+    "Duration: 25 min",
+    "Acquired from Gallery Hyundai"
+   ],
+   "source": "https://www.tate.org.uk/press/press-releases/frieze-acquisitions-2023"
+  },
+  {
+   "institution": "Tate (Frieze Tate Fund acquisitions list, 2023: sculpture with long title and materials)",
+   "lines": [
+    "Adam Farah-Saad (b.1991)",
+    "Two traumatised young men connect whilst roaming the city of London, helping each other to survive…(THE INNER CHILDREN MIX) 2023",
+    "Wall mounted half-rack, koshi wind chimes, poppers, brass chains",
+    "Dimensions variable",
+    "Acquired from Public Gallery"
+   ],
+   "source": "https://www.tate.org.uk/press/press-releases/frieze-acquisitions-2023"
+  },
+  {
+   "institution": "Tate (Frieze Tate Fund acquisitions list, 2023: bilingual subtitle line, mm dimensions)",
+   "lines": [
+    "Santiago Yahuarcani (b.1961)",
+    "The Spirit of the Camala 2023",
+    "Espíritu de Camala",
+    "Dye and paint on barkcloth",
+    "Dimensions: 3150 x 2100 mm",
+    "Acquired from Crisis Gallery"
+   ],
+   "source": "https://www.tate.org.uk/press/press-releases/frieze-acquisitions-2023"
+  },
+  {
+   "institution": "Tate (Frieze Tate Fund acquisitions list, 2025: birth place and 'lives and works' in the artist line)",
+   "lines": [
+    "Lubna Chowdhary (b. Dodoma, Tanzania, 1964; lives and works in London)",
+    "Assembly 2025",
+    "Ceramic and sapele wood, 73 elements",
+    "2650 x 1800 x 420 mm",
+    "(Jhaveri Contemporary, Frieze London)"
+   ],
+   "source": "https://www.tate.org.uk/press/press-releases/frieze-acquisitions-2025"
+  },
+  {
+   "institution": "Tate (Frieze Tate Fund acquisitions list, 2025: drawing, dealer in brackets)",
+   "lines": [
+    "Barbara Walker (b. Birmingham, UK, 1964; lives and works in Birmingham)",
+    "End of the Affair II 2025",
+    "Conté, charcoal and pastel on paper",
+    "1536 x 1223 mm",
+    "(Victoria Miro, Frieze London)"
+   ],
+   "source": "https://www.tate.org.uk/press/press-releases/frieze-acquisitions-2025"
+  },
+  {
+   "institution": "Serpentine Galleries (exhibition image caption, Suspended States, 2024)",
+   "lines": [
+    "Yinka Shonibare CBE, Decolonised Structures, 2022-23.",
+    "Fibreglass sculptures, hand-painted with Dutch wax pattern, gold leaf and wooden plinths.",
+    "Dimensions variable.",
+    "Commissioned by Sharjah Art Foundation.",
+    "Courtesy of the artist and Goodman Gallery, Cape Town, Johannesburg, London and New York, James Cohan Gallery, New York and Stephen Friedman Gallery, London and New York.",
+    "Photographer: Stephen White & Co.",
+    "© Yinka Shonibare CBE"
+   ],
+   "source": "https://www.serpentinegalleries.org/whats-on/yinka-shonibare-cbe-suspended-states/"
+  },
+  {
+   "institution": "Serpentine Galleries (exhibition image caption with inches first, then cm; Revelations, 2024)",
+   "lines": [
+    "Judy Chicago, In the Beginning, from Birth Project, 1982 (detail),",
+    "Prismacolor on paper,",
+    "65 x 389 in. (165.1 x 988.06 cm),",
+    "© Judy Chicago/Artists Rights Society (ARS), New York; Photo © Donald Woodman/ARS, NY"
+   ],
+   "source": "https://www.serpentinegalleries.org/whats-on/judy-chicago-revelations/"
+  },
+  {
+   "institution": "15th Gwangju Biennale (caption, kinetic sculpture with duration and Commissioned by)",
+   "lines": [
+    "Harrison Pearce, Valence, 2024.",
+    "Modular kinetic sculpture and sound installation, aluminium, stainless steel, silicone, nylon, pneumatic automation system, sound system.",
+    "Dimensions variable, 10 minutes.",
+    "Courtesy of the artist.",
+    "Commissioned by the 15th Gwangju Biennale.",
+    "Courtesy of the Gwangju Biennale Foundation."
+   ],
+   "source": "https://www.e-flux.com/announcements/622585/15th-gwangju-biennale"
+  },
+  {
+   "institution": "15th Gwangju Biennale (caption, very long materials list, lender credit)",
+   "lines": [
+    "Marguerite Humeau, *stirs, 2024.",
+    "Hand dyed upcycled silk organza, acrylic vessel (containing: microbial ecosystem of cyanobacteria and other photosynthetic microorganisms, mud collected from ancient pond Gungnamji, various local sediments, dry leaves, egg yolks, fruit peels, particles from a 33-million-year-old stromatolite bacteria colony, two axolotls, filtration and heating system, turbidity and pH sensors, LEDs synchronised to the daily path of the sun), handblown glass bubbles with inclusions of biological and synthetic filaments, ash, stainless steel, aluminium, copper, sensor-activated speakers, multi channel sound work featuring percussion and voice, dimensions variable.",
+    "Courtesy of Surface Horizon Ltd.",
+    "Commissioned by the 15th Gwangju Biennale.",
+    "Courtesy of the Gwangju Biennale Foundation."
+   ],
+   "source": "https://www.e-flux.com/announcements/622585/15th-gwangju-biennale"
+  },
+  {
+   "institution": "15th Gwangju Biennale (caption, short medium 'Mixed media')",
+   "lines": [
+    "Jayi Kim, Skill of R & R ver. Urban Farmer(re-member), 2024.",
+    "Mixed media, dimensions variable.",
+    "Courtesy of the artist.",
+    "Commissioned by the 15th Gwangju Biennale.",
+    "Courtesy of the Gwangju Biennale Foundation."
+   ],
+   "source": "https://www.e-flux.com/announcements/622585/15th-gwangju-biennale"
+  },
+  {
+   "institution": "15th Gwangju Biennale (caption, series, gallery courtesy before Commissioned by)",
+   "lines": [
+    "Kandis Williams, gods and monsters that white people make up to kill us all series, 2024.",
+    "Courtesy of the artist and Heidi Gallery.",
+    "Commissioned by the 15th Gwangju Biennale.",
+    "Courtesy of the Gwangju Biennale Foundation."
+   ],
+   "source": "https://www.e-flux.com/announcements/622585/15th-gwangju-biennale"
+  },
+  {
+   "institution": "13th Berlin Biennale (group installation caption: collection credit, gallery credit, 'work in hiding')",
+   "lines": [
+    "Hannah Höch, Im Park, Original von 1945. © VG Bild-Kunst, Bonn 2025; Sammlung Berlinische Galerie – Landesmuseum für Moderne Kunst, Fotografie und Architektur",
+    "OMARA Mara Oláh, Mara’. s Garden – Mara’s Scribbles, 2015–2017. Courtesy Everybody Needs Art; Longtermhandstand, Budapest",
+    "Nyi Pu Lay, Flower study, 2021–2023 (work in hiding)",
+    "Steve McQueen, Bounty 45, 2024. © Steve McQueen; Thomas Dane Gallery, Marian Goodman Gallery"
+   ],
+   "source": "https://13.berlinbiennale.de/en/artists/flowers"
+  },
+  {
+   "institution": "13th Berlin Biennale (artist biography line: asterisk birth, place, death, 'Places of belonging', 'Affinity', 'Book')",
+   "lines": [
+    "Ma Thida, *1966 in Rangoon, Burma. Places of belonging: Yangon, Berlin. Affinity: PEN Myanmar, PEN International. Book: A-Maze. Myanmar Struggle for Democracy, 2011–2023, 2024.",
+    "Hannah Höch, *1889 in Gotha, German Empire–1978, West-Berlin, FRG. Affinity: Dada, Berlin.",
+    "Fredj Moussa, *1992 in Paris, France. Places of belonging: Tunisia."
+   ],
+   "source": "https://13.berlinbiennale.de/en/artists/flowers"
+  },
+  {
+   "institution": "documenta fifteen (official press-image caption: collective, italic title, year, 'installation view', venue, city, date, photo credit)",
+   "lines": [
+    "documenta fifteen: Nhà Sàn Collective, Tuấn Mami, Vietnamese Immigrating Garden, 2022, installation view, WH22, Kassel, June 15, 2022, photo: Nils Klinger"
+   ],
+   "source": "https://documenta-fifteen.de/en/download-area-general/"
+  },
+  {
+   "institution": "documenta fifteen (official press-image caption variant with performance, venue, date)",
+   "lines": [
+    "documenta fifteen: Atis Rezistans | Ghetto Biennale, Ghetto Gucci, Performance, St. Kunigundis, Kassel, June 17, 2022, Photo: Frank Sperling"
+   ],
+   "source": "https://documenta-fifteen.de/en/download-area-general/"
+  },
+  {
+   "institution": "La Biennale di Venezia, Biennale Arte 2024 (official artist page header lines for a collective)",
+   "lines": [
+    "Claire Fontaine",
+    "Founded in Paris, France, 2004",
+    "Based in Palermo, Italy",
+    "Foreigners Everywhere / Stranieri Ovunque (60th International Art Exhibition / 60. Esposizione Internazionale d’Arte) (2004-24)"
+   ],
+   "source": "https://www.labiennale.org/en/art/2024/nucleo-contemporaneo/claire-fontaine-0"
+  },
+  {
+   "institution": "La Biennale di Venezia, Biennale Arte 2026 (official artist list as reproduced by ARTnews: birth, place, residence)",
+   "lines": [
+    "Pio Abad (Born 1983, Manila, Philippines. Lives in London, UK)",
+    "Ranti Bam (Born 1985, Lagos, Nigeria. Lives in Paris, France and Lagos, Nigeria)",
+    "blaxTARLINES KUMASI (Founded 2015, Kumasi, Ghana)",
+    "Issa Samb (Born 1945, Dakar, Senegal. D. 2017)",
+    "Joana Hadjithomas & Khalil Joreige (Born 1969, Beirut, Lebanon. Lives in Beirut, Lebanon and Paris, France; Born 1969, Moussaitbeh, Lebanon. Lives in Beirut, Lebanon and Paris, France)"
+   ],
+   "source": "https://www.artnews.com/art-news/news/venice-biennale-2026-artist-list-koyo-kouoh-1234774417/"
+  },
+  {
+   "institution": "Venice Biennale 2026 (image caption in ARTnews coverage: title, year, courtesy chain)",
+   "lines": [
+    "Ebony G. Patterson, …fester…, 2023.",
+    "Courtesy the artist, Monique Meloche Gallery, and New York Botanical Garden"
+   ],
+   "source": "https://www.artnews.com/art-news/news/venice-biennale-2026-artist-list-koyo-kouoh-1234774417/"
+  },
+  {
+   "institution": "Venice Biennale 2026 (image caption in ARTnews coverage: photo credit then courtesy, with gallery cities)",
+   "lines": [
+    "Tammy Nguyen, Love Justice, You Rulers of the Earth, 2025.",
+    "Photo Studio Kukla/Courtesy the artist and Lehmann Maupin, New York, Seoul, and London"
+   ],
+   "source": "https://www.artnews.com/art-news/news/venice-biennale-2026-artist-list-koyo-kouoh-1234774417/"
+  },
+  {
+   "institution": "Hayward Gallery Touring, Southbank Centre (exhibition image caption, Acts of Creation, 2024)",
+   "lines": [
+    "Ishbel Myerscough, All (detail), 2016. © Ishbel Myerscough. Courtesy of Flowers Gallery, London and New York."
+   ],
+   "source": "https://www.e-flux.com/announcements/591791/acts-of-creation-on-art-and-motherhood"
+  },
+  {
+   "institution": "Serpentine Galleries (artist biography line pattern, Shonibare and Chicago pages)",
+   "lines": [
+    "Yinka Shonibare CBE RA (b. 1962, London, United Kingdom)",
+    "Judy Chicago (b. 1939, Chicago, USA; lives and works in New Mexico, USA)"
+   ],
+   "source": "https://www.serpentinegalleries.org/whats-on/judy-chicago-revelations/",
+   "note": "Shonibare line is from https://www.serpentinegalleries.org/whats-on/yinka-shonibare-cbe-suspended-states/ ; Chicago line from the source field."
+  },
+  {
+   "institution": "Sharjah Biennial 16 (official participant list: asterisk marks new commissions; parentheses list collective members; 'with' credits)",
+   "lines": [
+    "Adelita Husni-Bey*; Akinbode Akinbiyi; Akira Ikezoe*; Akram Zaatari; Albert L Refiti; Alia Farid*",
+    "Betty Adii with Septina Layan*",
+    "Hylozoic/Desires (Himali Singh Soin & David Soin Tappeser)*",
+    "Day to Day (Ayse İdil İdil, Betül Aksu, Okyanus Çağrı Camcı with Merve Elveren)",
+    "*Participants presenting new commissions"
+   ],
+   "source": "https://www.sharjahart.org/en/press/details/sharjah-art-foundation-announces-details-of-sharjah-biennial-16"
+  }
+ ],
+ "label_conventions": [
+  "Whitney collection pages list fields in this order: artist, title, date, medium, dimensions, accession number, edition (only if the work is an edition), credit line, rights line. Each value sits under a bold field name (Date, Medium, Dimensions, Accession number, Edition, Credit line, Rights and reproductions).",
+  "Whitney credit lines for acquisitions start with 'Purchase, with funds from the [Committee]' (Drawing and Print Committee, Film and Video Committee, Painting and Sculpture Committee). They can add named donors: 'Purchase, with funds from the Film and Video Committee and Robert Rosenkranz'. A bequest reads 'Josephine N. Hopper Bequest, by exchange'.",
+  "Whitney edition line is separate and uses a pipe: '1/5 | 2 APs' or 'HC | Ed. 5, 2 APs'. The line says AP in the plural ('2 APs'), not '+ 2 AP'.",
+  "Whitney video medium is one comma chain: type, colour mode, sound, run time, then extra materials after 'with': 'Video installation, color, sound, 67 min., with ribbons, mattresses, pillows, sheets, and custom flooring'. Multi-screen works say 'Four-channel video installation, black-and-white and color, sound, 14 min. looped'.",
+  "Whitney dimensions use inches first with cm in brackets and a part prefix: 'Sheet: 22 1/8 × 30 in. (56.2 × 76.2 cm)', 'Overall: 89 5/8 × 74 1/4 in. (227.6 × 188.6 cm)'. Installations say only 'Dimensions variable'. Fractions use 1/8 style, and × is the multiplication sign.",
+  "Whitney medium for an unspecific textile is a single word ('Fabric'); drawings say 'Graphite on paper'. Whitney rights line is '© Artist' or '© artist or artist's estate', and may add 'courtesy of [gallery]' ('© Stanley Whitney, courtesy of Lisson Gallery').",
+  "MoMA collection pages put title, year and medium in the header, then fields Medium, Dimensions (or Duration for time-based work), Credit, Object number, Copyright. MoMA medium for painting: 'Acrylic and graphite on canvas, two panels'. Support list goes material to material and ends with a panel or part count.",
+  "MoMA dimensions put inches first with the inch mark \" and cm in brackets, with a part prefix: 'Each panel: 97 × 60\" (246.4 × 152.4 cm)'. Time-based work uses a Duration field in 'mm:ss min.' form: 'Duration: 12:50 min.'. MoMA video medium is short: 'Video (color, sound)'.",
+  "MoMA credit lines: 'Acquired through the generosity of [list of named funds and couples]' (the list runs long and uses 'and' before the last name), 'Gift of [name]', or just a fund name ('Fund for the Twenty-First Century'). MoMA object numbers have the form 'sequence.year' ('632.2013', '757.2022', '255.2021.a-b' for parts).",
+  "MoMA media/digital works can use a materials-style medium: 'Custom hardware and software (color, sound, generative algorithm with artificial intelligence)' with 'Dimensions variable'. Copyright line can carry the gallery: '© 2026 Suzanne Jackson. Courtesy of the Artist and Ortuzar Projects, New York.' MoMA also publishes a separate 'Gallery label' text paragraph, after the metadata, dated by exhibition.",
+  "Tate collection credit lines start with 'Tate.' then the acquisition verb in the past tense with a year at the end: 'Tate. Purchased with funds provided by the Acquisitions Fund for African Art supported by Guaranty Trust Bank Plc 2014'. The year is the acquisition year with no comma. Tate dimensions use cm and often list each panel ('Two panels 212 × 212.3 cm, 212 × 212.9 cm'). Tate medium uses UK spelling and 'on' ('Acrylic, transfers, coloured pencil and charcoal on paper').",
+  "Tate acquisition press lists give artist (b.YEAR) or (YEAR–YEAR), then the title in italics and year on the same line, then medium, then 'Dimensions: ... mm' (mm, not cm, in the press list), then 'Acquired from [Gallery]' or '(Gallery, Frieze London)'. Installations say 'Dimensions variable'. Video medium reads 'Video, high definition, projection, colour and sound' with the run time on its own line: 'Duration: 25 min'. A work with a title in two languages puts the second language on its own line under the title (Espíritu de Camala).",
+  "Tate 2025 press list adds birth place and residence inside the artist bracket: '(b. Dodoma, Tanzania, 1964; lives and works in London)'. The 2023 list uses only '(b.1991)' with no space after 'b.'. Tate artist names can carry honours ('Lubaina Himid CBE RA'). Tate artwork pages list the date with an en dash for ranges ('1997–9', '2017–18', shortened second year).",
+  "Venice Biennale (Arte 2024) artist page header gives place and base only, no birth year, for a collective: 'Founded in Paris, France, 2004' then 'Based in Palermo, Italy'. Venice 2026 artist list uses 'Born YEAR, City, Country. Lives in City, Country' and 'Founded YEAR, City, Country' for collectives and organisations. Deceased artists end with 'D. YEAR' (Born 1945, Dakar, Senegal. D. 2017). Duos list two sets of Born/Lives clauses split by a semicolon. Multiple residences join with 'and' or semicolons ('Lives in Beirut, Lebanon and Paris, France').",
+  "Serpentine captions run as one paragraph: 'Artist, Title, date. Medium. Dimensions variable. Commissioned by X. Courtesy of the artist and Gallery A, City, City and City, Gallery B, City and Gallery C, City. Photographer: Name. © Artist'. Year ranges use a hyphen ('2022-23'). 'Commissioned by' comes before 'Courtesy'. Gallery locations list every city after the gallery name. Serpentine artist bios use '(b. 1962, London, United Kingdom)' and add '; lives and works in New Mexico, USA' only sometimes. Dimensions are inches first, cm in brackets when the work is a US work ('65 x 389 in. (165.1 x 988.06 cm)').",
+  "Gwangju Biennale captions use a fixed chain of sentences: 'Artist, Title, year. Medium list. Dimensions variable, N minutes. Courtesy of the artist [and Gallery]. Commissioned by the 15th Gwangju Biennale. Courtesy of the Gwangju Biennale Foundation.' Medium lists are full material lists in lower case after the first word (Hand dyed upcycled silk organza, acrylic vessel (containing: ...)). A bracket inside the medium holds the list of living material. Duration sits on the dimensions line ('Dimensions variable, 10 minutes').",
+  "Berlin Biennale (13th) caption lists several works in one caption, each bold artist name then italic title, year, then © line, then collection or gallery after a semicolon ('© VG Bild-Kunst, Bonn 2025; Sammlung Berlinische Galerie – Landesmuseum ...'). 'Courtesy' is used for living artists' lenders ('Courtesy Everybody Needs Art; Longtermhandstand, Budapest'). Hidden or withheld work gets '(work in hiding)' in place of an image credit. Berlin bios use an asterisk for birth ('*1933 in Kraubath an der Mur, Austria–2013 in Vienna, Austria') and the fields 'Places of belonging:', 'Affinity:', 'Book:'. There is no 'lives and works' line.",
+  "documenta fifteen captions start with 'documenta fifteen:' then collective or artist, italic title, year, work type or view ('installation view', 'Performance'), venue, city, full date (month day, year), then 'photo: Name'. Venue codes appear (WH22, Hübner areal). Collectives are listed with a pipe ('Atis Rezistans | Ghetto Biennale') or 'and' ('Cinema Caravan and Takashi Kuribayashi'). There is no medium or dimension line in the documenta fifteen captions seen; a work with no title takes the activity as title.",
+  "Hayward Gallery Touring captions are short: 'Artist, Title (detail), year. © Artist. Courtesy of Gallery, City and City.' No medium or dimensions appear in the caption.",
+  "Sharjah Biennial 16 participant list uses an asterisk after the name for 'Participants presenting new commissions'. Collectives list members in brackets; collaborations use 'with' ('Betty Adii with Septina Layan'). The 'Commissioned by Sharjah Art Foundation' credit appears on Sharjah-origin works shown elsewhere (as in the Serpentine caption).",
+  "Courtesy formula: 'Courtesy of the artist and [Gallery], [City]' (Serpentine, Gwangju) or 'Courtesy the artist, [Gallery], and [Institution]' (ARTnews/Venice, no 'of') or 'Courtesy [Gallery]' alone (no artist) for estates and lenders ('Courtesy Galerie Cécile Fakhoury'). Multiple galleries are joined with commas and a final 'and', and each gets its cities, e.g. 'Lehmann Maupin, New York, Seoul, and London'. Photo credit may come before courtesy, joined with a slash ('Photo Studio Kukla/Courtesy the artist and ...').",
+  "Order of the credit block in biennial captions: (1) medium, (2) dimensions or duration, (3) 'Commissioned by' or 'Produced with the support of', (4) 'Courtesy of', (5) photo credit, (6) copyright symbol. Museums with collections put the credit line (Purchase/Gift/Acquired) before the copyright line and after dimensions and accession number.",
+  "Terms for time and size: 'Dimensions variable' stays after a period or comma and is never given a unit. Run time forms vary by institution: '67 min.' (Whitney), '12:50 min.' (MoMA), 'Duration: 25 min' (Tate), '10 minutes' (Gwangju). Colour spelling follows the institution: US 'color' (Whitney, MoMA) and UK 'colour' (Tate).",
+  "Edition forms seen: '1/5 | 2 APs' and 'HC | Ed. 5, 2 APs' (Whitney). No institution in the sources printed 'Edition 2/3 + 2 AP' on its public page; that form is common in gallery checklists but was not verified here.",
+  "Date forms: single year ('1998'), range with en dash and full second year ('2021–2023', MoMA, Berlin 2015–2017), hyphen in Serpentine ('2022-23'), slash for reworked photographs/editions ('1989/ 2023' in the Tate list), 'Original von 1945' for re-created works (Berlin), and '(detail)' after the title when an image is a crop.",
+  "Not found on a public page: Venice Biennale per-artwork wall-label wording, documenta 16 (2027) labels, and New Museum or Hayward Gallery per-artwork labels. The New Museum site returns an empty page without JavaScript. Hayward and Southbank Centre pages return HTTP 403. Tate artwork pages (tate.org.uk/art/artworks/...) returned no credit line text in the HTML received, so the Tate rules above come from a Tate shop product page and Tate press releases."
+ ]
+}

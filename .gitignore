@@ -1,4 +1,8 @@
-video/demo/snapshots/
-node_modules/
-__pycache__/
 .env
+.DS_Store
+__pycache__/
+node_modules/
+video/demo/snapshots/
+# build output: rebuild with `python3 -m artgen site <dir>`
+biennales/*/site/
+biennales/*/media/superseded/

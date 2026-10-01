@@ -1,0 +1,577 @@
+{
+ "bio_structure": [
+  "LIMITS: pages read with scrapling get/bulk_get. Berlin Biennale 13 artist pages (13.berlinbiennale.de) returned empty (JS-rendered). WebSearch budget ran out before kurimanzutto/Sadie Coles/Gagosian searches, so those were read by guessed URLs. Items marked [search snippet] were seen only in WebSearch result text, not on the page.",
+  "STRUCTURE A (biennial guide, ~40-110 words): header block with birth year, birth city, country; then 1-3 sentences of critical blurb in present tense, third person, surname repeated; then sometimes a signed credit with em dash (e.g. '—Eva Díaz'). Venice 2026 header example '1952, New Orleans, USA' https://www.labiennale.org/en/art/2026/dawn-dedeaux ; '1961, Schoten, Belgium' https://www.labiennale.org/en/art/2026/philip-aguirre-y-otegui ; '1970, Kano State, Nigeria' https://www.labiennale.org/en/art/2026/marcia-kure",
+  "VENICE 2026 list format: bare '[year], [city], [country]' lines such as '1983, Manila, Philippines.' and '1946, Oxford, UK'; deceased participant 'Nancy Brooks Brody 1962-2023, New York, USA'; group line 'All live in New York City' https://www.labiennale.org/en/art/2026/artists",
+  "VENICE 2026 residence format [search snippet]: 'Pio Abad was born in 1983 in Manila, Philippines and lives in London, UK'; 'Kader Attia was born in 1970 in Dugny, France and lives in Berlin, Germany and Paris, France' https://www.labiennale.org/en/art/2026/artists",
+  "VENICE 2024 prize bios [search snippet]: '(London, UK, 1985, Lives in Hamburg, Germany and Lagos, Nigeria)' and '(Jerusalem, Palestine, 1936, Lives in New York City, USA)' i.e. order City, Country, Year, Lives in ... https://www.labiennale.org/en/news/biennale-arte-2024-stranieri-ovunque-foreigners-everywhere",
+  "COLLECTIVE (Venice 2024): header 'Founded in Paris, France, 2004'; blurb 'Claire Fontaine, a Palermo-based collective established in Paris in 2004 by the Italian–British artist duo Fulvia Carnevale and James Thornhill, confronts the political impotence and crisis of singularity...' https://www.labiennale.org/en/art/2024/nucleo-contemporaneo/claire-fontaine-0",
+  "COLLECTIVE (Venice 2024) [search snippet]: 'Mataaho Collective (Founded in Aotearoa, New Zealand in 2012, Based in Aotearoa, New Zealand)' - collectives get 'Founded in' and 'Based in' instead of born/lives https://www.labiennale.org/en/news/biennale-arte-2024-stranieri-ovunque-foreigners-everywhere",
+  "VENICE first-time line: 'This is the first time the work of Claire Fontaine is presented at Biennale Arte' https://www.labiennale.org/en/art/2024/nucleo-contemporaneo/claire-fontaine-0 ; venue lines 'At the Arsenale, Aguirre presents ...' 'In the Central Pavilion, Aguirre presents ...' https://www.labiennale.org/en/art/2026/philip-aguirre-y-otegui",
+  "VENICE blurb openers: 'In the work of Marcia Kure – spanning drawing, collage, pigment and assemblage – inscription functions as a structural event, rendering histories, ecologies and systems of value legible.' ; 'Social and political themes – particularly issues of migration and refugees – form the core of Philip Aguirre y Otegui's humanistic oeuvre.' ; 'The New Orleans-based artist Dawn DeDeaux has been grappling with its consequences...' Medium lists sit between en dashes. https://www.labiennale.org/en/art/2026/marcia-kure",
+  "VENICE support line: 'With the additional support of [foundation]; [gallery], New York City; [gallery], Lagos' ends many artist pages https://www.labiennale.org/en/art/2026/marcia-kure",
+  "WHITNEY 2024 format: pronouns line '(he/him/they/them)'; 'Born 1978 in San Francisco, CA' / 'Lives in Los Angeles, CA' on two lines; medium label 'Film'; then one ~100-word paragraph about the work, not a CV. https://whitney.org/exhibitions/2024-biennial/art?section=26",
+  "WHITNEY paragraph pattern: '[Artist]'s film [Title] from 2023 offers an updated version of camp, providing an alternative to ... Influenced by science fiction, horror, and comedy—and conveying a surrealist sense of absurdity—Kantor's film suggests that ...' (work-first, no exhibitions list) https://whitney.org/exhibitions/2024-biennial/art?section=26",
+  "WHITNEY pairs and name-as-concept: 'Holly Herndon and Mat Dryhurst' share one entry; text 'This work by Holly Herndon and Mat Dryhurst is part of a project focused on training the data behind artificial intelligence (AI) models, opening new possibilities for its use.' https://whitney.org/exhibitions/2024-biennial/art?section=19 ; [search snippet] 'Holly Herndon (born 1980 in Johnson City, TN) and Mat Dryhurst (born 1984 in Birmingham, UK) live in Berlin, Germany' https://whitney.org/exhibitions/2024-biennial/art?section=19",
+  "WHITNEY collective entry: 'Raqs Media Collective' listed with medium label 'Film' and work-first caption; no 'founded' line on the page text https://whitney.org/exhibitions/2024-biennial/art?section=51",
+  "SHARJAH 16 bio (~110 words): 'Joe Namy (b. 1978, Lansing, US) lives and works between Beirut and London. The artist, educator and composer often works collaboratively across mediums in sound, performance, sculpture and video. Their projects focus on ...' then education ('graduated with an MFA from'), a dated programme ('In 2011, the artist participated in the inaugural ... ISP in Beirut'), then current roles ('is currently a ... fellow, a PHD candidate at ...'). Singular they used. https://www.sharjahart.org/en/people/details/namy-joe",
+  "SHARJAH bio header [search snippet]: 'b. 1975, Toulouse, France Lives and works in New York' (Antoine Catala); 'b. 1943, Springfield, USA Lives and works in New York' (David Hammons) https://www.sharjahart.org/en/people/details/hammons-david",
+  "SHARJAH bio order (Chun Shao): practice sentence 'Chun Shao's creative practice includes multimedia installations, e-textiles, post-internet art and design fiction.' -> theme sentence 'She explores the intimate relationship between the human body and digital interfaces' -> method sentence -> education with years '(2013)' '(2019)' -> 'Her work has been presented in solo exhibitions at [venue], [city] ([year]), and ...' -> 'She has also participated in group exhibitions at ... amongst other institutions.' https://www.sharjahart.org/en/sharjah-biennial/sb-16/people/details/chun-shao/",
+  "SHARJAH bio opener (Hammons): '[Name] is a transformer of materials, whose work focuses on the physical and symbolic qualities of his surroundings in order to allow new meanings and metaphors to coalesce. Born in the American Midwest and working in Los Angeles and New York, ...' then 'work has been presented at solo exhibitions in several institutions, including Venue, City (2016); Venue, City (2014); ...' (reverse chronological, semicolons) then 'He has also participated in numerous group shows, including ...' https://www.sharjahart.org/en/people/details/hammons-david",
+  "SHARJAH long bio order (Al-Baqsami): solo exhibitions 'among others' -> group exhibitions -> collections ('Her work can be found in the collections of ...') -> books -> awards ('Among her many awards are ... (2010); ...') -> memberships ('a member of the ... since 1969') -> education with year ranges '(1972–1974)' -> closing 'was born in 1951 in Kuwait, where she continues to live and work.' -> 'SAF Participation:' list. https://www.sharjahart.org/en/people/details/al-baqsami-thuraya",
+  "SHARJAH 16 artist-in-focus blurb pattern: 'In her pieces for the 16th Sharjah Biennial, Fijian Australian artist Shivanjani Lal uses objects, photography and video to account for lost histories through a storytelling-based practice shaped by remembrance.' (nationality + 'artist' + name; method; theme) https://www.sharjahart.org/en/resources/saf-online/details/shivanjani-lal-at-sharjah-biennial-16",
+  "GALLERY OPENER pattern with parenthesis [search snippet]: 'Mark Bradford (b. 1961 in Los Angeles; lives and works in Los Angeles) is a contemporary artist best known for his large-scale abstract paintings created out of paper.' https://www.hauserwirth.com/artists/2838-mark-bradford/ ; 'Jeffrey Gibson (b. 1972, Colorado Springs, CO; lives and works in New York) has evolved a rich interdisciplinary practice, drawing from American, Indigenous and queer histories...' https://www.hauserwirth.com/artists/jeffrey-gibson/",
+  "HAUSER & WIRTH (Rottenberg, ~400 words): 'Argentina-born, New York-based artist Mika Rottenberg is devoted to a rigorous practice that combines film, architectural installation, and sculpture to explore ideas of labor and the production of value...' -> method para ('seeks out locations around the world') -> recent body of work ('most recent body of work, “Lampshares” (2023–present)') -> latest film -> education + prize ('earned her BA from ... MFA at Columbia University in 2004. ... recipient of the 2019 Kurt Schwitters Prize') -> collections list -> 'She has had solo exhibitions at ... among others.' Page tabs: Solo Exhibitions / Group Exhibitions / Awards / Publications / Selected Press. https://www.hauserwirth.com/artists/23390-mika-rottenberg/",
+  "HAUSER & WIRTH (Gibson): narrative career bio: 'grew up in major urban centers in the United States, Germany, and Korea ... graduated from the School of the Art Institute of Chicago in 1995 and received a Master of Arts in painting at the Royal College of Art, London, in 1998 ... A major turning point in his career, in 2012 he presented ... his first solo exhibition of sculpture and video ... He is known for his immersive, multi-sensory installations that invoke and interweave such disparate contexts as ...'; CV tabs: Solo Exhibitions / Group Exhibitions / Awards & Grants / Public & Special Projects / Lectures & Talks / Monographs / Selected Publications / Press. https://www.hauserwirth.com/artists/jeffrey-gibson/",
+  "LISSON CV paragraph (Cameron-Weir): 'Elaine Cameron-Weir was born in 1985 in Red Deer, Alberta, Canada; she lives and works in New York. Past solo exhibitions at institutions include: Title, Venue, City, Country (Year); ... Her work has featured in major group exhibitions including Title, curated by Cecilia Alemani at the 59th Venice Biennale, Italy (2022); ... as well as the Belgrade Biennale, Serbia (2021); the Montreal Biennial, Canada (2017) and ...' https://lisson.com/artists/elaine-cameron-weir",
+  "LISSON practice paragraph: 'Elaine Cameron-Weir's work is informed by the array of systems and structures that humans have created to deal with the unknown – be that through scientific inquiry, religion, modes of governance or creative practices.' then materials sentence, then 'Although her practice resists straightforward characterization or iconographic interpretation, ... works offer the possibility of passage through a portal or beyond a threshold' then pull quote in first person. https://lisson.com/artists/elaine-cameron-weir",
+  "LISSON one-line birth formulas [search snippet]: 'Was born in 1969 in Dublin, Ireland, where he lives and works'; 'Was born in London in 1958 and lives and works in London'; 'Was born in 1960 in Plymouth, Massachusetts and lives and works in New York and in California. Recent solo presentations include ...' https://www.lissongallery.com/artists/jack-pierson ; https://www.lissongallery.com/artists/julian-opie",
+  "LISSON (Byrne) practice formula: 'the work of Gerard Byrne in photography, film, theatre and multi-screen installation examines the slippage between time and the act of image creation. Characterised by a laconic humour, Byrne's projects examine the ambiguities of language ...' https://lisson.com/artists/gerard-byrne",
+  "GAGOSIAN (Saville): one-sentence lead 'In her depictions of the human form, Jenny Saville transcends the boundaries of both classical figuration and modern abstraction.' then 'Born in 1970 in Cambridge, England, Saville attended the Glasgow School of Art from 1988 to 1992' and a long narrative essay; exhibitions listed as 'November 30, 2023–February 10, 2024 / Davies Street, London'. https://gagosian.com/artists/jenny-saville/",
+  "GAGOSIAN (Whiteread): 'In Rachel Whiteread's sculptures and drawings, everyday settings, objects, and surfaces are transformed into ghostly replicas that are eerily familiar.' then 'Whiteread studied painting at Brighton Polytechnic and sculpture at the Slade School of Fine Art in the 1980s. In 1988 she had her first solo exhibition, at the Carlisle Gallery in London' https://gagosian.com/artists/rachel-whiteread/",
+  "KURIMANZUTTO (Orozco): 'Working through drawing, photography, sculpture and installation, Orozco draws from everyday materials and circumstances ...'; awards para ('has been the recipient of numerous awards and distinctions. In 2025, he was decorated as ...'); 'Orozco has had solo exhibitions at institutions such as ... (2000), ... a major retrospective which traveled from ... (2009-2011). Most recently his work has been presented at ... (2025)'; group exhibitions 'such as ... among many others'; closing 'Gabriel Orozco lives and works in Tokyo, Mexico City, New York and Paris.' https://kurimanzutto.com/en/artists/gabriel-orozco",
+  "KURIMANZUTTO (Cuevas): header '1975, Mexico City'; 'Her work encompasses a wide range of media—installation, video, muralism, sculpture, and public intervention—which she uses to investigate the politics that permeate social and economic ties.'; residencies 'She has been an artist resident in the following programs: ...'; list heads 'Some of her most important solo exhibitions are:' 'A selection of group exhibitions include:' 'She has participated in the following biennials: ... (forthcoming 2026)'; 'Minerva Cuevas lives and works in Mexico City' https://kurimanzutto.com/en/artists/minerva-cuevas",
+  "SADIE COLES (Lucas): 'Sarah Lucas (b. 1962, London) has over the course of the last three decades become recognised as one of Britain's most significant contemporary artists. Spanning sculpture, photography and installation, her work has consistently been characterised by irreverent humour...' https://www.sadiecoles.com/artists/sarah-lucas",
+  "E-FLUX MUSEUM BIO (Swiss Institute 2025): 'Bagus Pandega (b. 1985 in Jakarta) lives and works in Bandung, Indonesia. Recent solo exhibitions include *Title* at Venue, City, Country (2024); ... Selected group exhibitions include ... A nominee of the 2016 Sovereign Art Prize, ...' https://www.e-flux.com/announcements/6783952/bagus-pandegadaya-bendamona-filleulsissy-institutecostanza-candeloro-and-licit-illicit-bookshopno-plot-just-street",
+  "E-FLUX SHORT BIO (~70 words, same page): 'Mona Filleul (b. 1993) lives and works in Brussels and Paris. Filleul has presented solo exhibitions at Air de Paris, Paris (2025); Krone Couronne, Biel/Bienne (2024); ... completed a residency at the Centre d'Art Contemporain WIELS, Brussels in 2023 and was named a laureate of the 2023 Swiss Art Awards.' https://www.e-flux.com/announcements/6783952/bagus-pandegadaya-bendamona-filleulsissy-institutecostanza-candeloro-and-licit-illicit-bookshopno-plot-just-street",
+  "E-FLUX BIO WITH EDUCATION (same page): 'Costanza Candeloro (b. 1990, Bologna, Italy) graduated in 2014 from the Haute école d'art et de design (HEAD) in Geneva, Switzerland. Recent solo exhibitions include ...; In 2025, she will have a solo show at ...; Her work has also been featured in group exhibitions at ...; among others.' https://www.e-flux.com/announcements/6783952/bagus-pandegadaya-bendamona-filleulsissy-institutecostanza-candeloro-and-licit-illicit-bookshopno-plot-just-street",
+  "E-FLUX MUSEUM BIO (Hamilton 2025): 'Anthea Hamilton (b. 1978, London) lives and works in London. She was a finalist for the Turner Prize in 2016. Recent solo exhibitions include: *Title*, Venue, City (2024); ... Her work has also been featured in the travelling exhibition *British Art Show 8* and in numerous international contexts, including ... Recent group exhibitions include: ...' https://www.e-flux.com/announcements/658690/anthea-hamiltonsoft-you ; the press text opens with the artist as '(London, 1978)'",
+  "E-FLUX PRACTICE SENTENCE (Hamilton): 'Hamilton's practice lies at the intersection of installation, sculpture, film, and performance, reimagining visual content from our dominant culture through a subjective lens' https://www.e-flux.com/announcements/658690/anthea-hamiltonsoft-you",
+  "E-FLUX BIO 'based in' form (Charrière 2025): 'Julian Charrière (born in 1987) is a Swiss-French artist based in Berlin who engages with the cultural and environmental histories embedded within natural landscapes. ... widely exhibited internationally, with solo exhibitions at ... (2024), ... among other venues. ... first recipient of the ... Prize awarded in 2024' https://www.e-flux.com/announcements/652770/julian-charri-re-midnight-zone",
+  "E-FLUX BIO ('is an artist, curator, and publisher' form, Vidokle 2025): 'Anton Vidokle is an artist, curator, and publisher. Born in Moscow in 1965 and raised in New York, he founded e-flux in 1998 ... Since 2012 he has made films ..., presenting them in Documenta, Berlinale and Locarno Film Festivals, the Venice Biennale, ... among others. Most recently, Vidokle co-curated ...' https://www.e-flux.com/announcements/6784506/anton-vidokleirradiation",
+  "E-FLUX BIO with 'New York-based' (Pinhassi 2026): 'New York-based artist Oren Pinhassi (b. 1985) creates sensuous sculptures and immersive installations that explore the reciprocal relationship between humans and the environments we create.' then 'Selected solo exhibitions include ...; Group exhibitions include ...; Pinhassi holds a B.Ed.F.A. from ... (2011), and an MFA from Yale University (2014).' https://www.e-flux.com/announcements/6786413/oren-pinhassiinto-your-arm-s-length",
+  "E-FLUX BIO (Zhu 2026, ~65 words): 'Bio: Bruno Zhu (Porto, 1991) lives and works between Portugal and the Netherlands. Recent projects include exhibitions at M HKA in Antwerp, Chisenhale Gallery in London, ... among others.' (venue 'in' city, no years) https://www.e-flux.com/announcements/6785514/bruno-zhubelas-artes",
+  "E-FLUX BIO (Bunga 2025): 'Carlos Bunga (Porto, 1976) studied at the Higher School of Art and Design in Caldas da Rainha. Currently living and working in Barcelona, his work revolves around the possibilities of form. What began as an investigation into the limits of painting has become a work that hybridises supports and surfaces ... expanded to include drawing, sculpture, installation, photography and video.' https://www.e-flux.com/announcements/674693/carlos-bungainhabit-the-contradiction",
+  "E-FLUX CURATOR BIO (same page): 'Rui Mateus Amaral (Ponta Delgada, Azores, 1988) is the artistic director of the Museum of Contemporary Art Toronto Canada (MOCA), where he has curated exhibitions by ... among others. In 2022 he organised ... His texts have been published in Artforum' https://www.e-flux.com/announcements/674693/carlos-bungainhabit-the-contradiction",
+  "E-FLUX '(year, city)' without b.: 'Charly Bechaimont (1991, Saint-Dié-des-Vosges) is an artist who belongs to the marginalized Traveller community'; 'Clemen Parrochetti (1923–2016, Milan) draws her formal vocabulary from domestic materials' https://www.e-flux.com/announcements/647471/clemen-parrocchettito-devour-lifecharly-bechaimontdegr-s-est",
+  "NATIONALITY + ROLE labels in opening sentences: 'Uzbek artist and filmmaker Saodat Ismailova' https://www.e-flux.com/announcements/6787488/saodat-ismailovaamanat-as-we-sleep ; 'French-Moroccan multidisciplinary artist and educator Bouchra Khalili' and 'Palestinian architect, artist and academic Dima Srouji' https://www.e-flux.com/announcements/6785806/bouchra-khalilicircles-and-storytellersdima-sroujifour-moons-from-home ; 'Indonesian artist Bagus Pandega' https://www.e-flux.com/announcements/6783952/bagus-pandegadaya-bendamona-filleulsissy-institutecostanza-candeloro-and-licit-illicit-bookshopno-plot-just-street",
+  "TITLE IN PARENS, ITALIC TITLES, YEAR IN PARENS: venue lists use 'Title, Venue, City, Country (Year)' (Lisson, e-flux Hamilton) or '*Title* at Venue, City, Country (Year)' (Swiss Institute), separated by semicolons, newest first; ranges '(2021-22)', '(2024-25)', '(2022/23)'; future '(forthcoming 2026)' https://www.e-flux.com/announcements/652770/julian-charri-re-midnight-zone",
+  "[search snippet] FUTURE-DATED SOLO LIST (Abbas Akhavan on e-flux): 'Lives and works in Montreal and Berlin. ... selected to represent Canada at the 61st International Art Exhibition—the Venice Biennale 2026. Upcoming and recent solo exhibitions include Walker Art Center, Minneapolis (2026); Canada Pavilion, Venice Biennale (2026); ... (2025); ...' https://www.e-flux.com/announcements/6787937/12th-annual-stonecroft-lecture",
+  "RESIDENCE VARIANTS seen: 'lives and works in X'; 'lives and works between X and Y'; 'lives and works in Tokyo, Mexico City, New York and Paris'; 'Lives in X' (Whitney, Venice); 'based in Berlin'; 'New York-based artist'; 'Argentina-born, New York-based'; 'currently living and working in Barcelona'; 'where she continues to live and work'. (Whitney and Venice use 'Lives in'; Sharjah, Lisson, H&W, kurimanzutto use 'lives and works'.)",
+  "ORDER OF CV ELEMENTS in long gallery bios (H&W, Lisson, kurimanzutto, Sharjah): 1 practice sentence 2 themes/method 3 birth + education 4 solo exhibitions 5 group exhibitions/biennials 6 collections 7 awards/residencies 8 lives and works (sometimes last line: kurimanzutto, Sharjah). Short biennial/e-flux bios drop collections and keep: birth, lives/works, 3-6 solo shows, 3-6 group shows, one prize or education line.",
+  "LENGTH VARIANTS observed: Venice 2026 guide blurbs about 25-170 words; Whitney about 100 words of work description only; Sharjah about 110-160 words; e-flux museum bios about 65-190 words; gallery pages (Hauser & Wirth, Gagosian, kurimanzutto) 250-600 words with separate CV tabs. A 40-word biennial guide bio keeps: (b. year, city), lives in, medium list, one theme clause.",
+  "COLLECTIVES in surveyed pages: Venice 'a Palermo-based collective established in Paris in 2004 by the Italian–British artist duo ...' ; header 'Founded in ..., [year]'; Whitney lists 'Raqs Media Collective', 'Holly Herndon and Mat Dryhurst', 'People Who Stutter Create' as single entries; Frac Lorraine text 'the Immagine collective' ; e-flux Gwangju 2026 text lists participants by name only https://www.e-flux.com/announcements/6787431/16th-gwangju-biennaleyou-must-change-your-life",
+  "E-FLUX / GWANGJU 16 curatorial intro verbs [page text]: 'The Biennale unfolds as a journey across scales—from the molecular to the cosmic ...'; 'Artists approach change through multiple registers'; 'Moving audiences across scales and intensities, the exhibition approaches artistic practice as producing capacities to sense, endure, relate, imagine, and transform.' (list of 5 verbs) https://www.e-flux.com/announcements/6787431/16th-gwangju-biennaleyou-must-change-your-life",
+  "ABSENT FROM SAMPLE (do not use as 'seen'): 'Her practice spans', 'is an artist and researcher based in', 'works across sculpture, film and sound' were not found verbatim in the pages read. Closest verified forms: 'practice lies at the intersection of', 'works collaboratively across mediums in sound, performance, sculpture and video', 'is an artist, curator, and publisher', 'combines film, architectural installation, and sculpture'."
+ ],
+ "bio_sources": [
+  "https://whitney.org/exhibitions/2024-biennial/art?section=26",
+  "https://whitney.org/exhibitions/2024-biennial/art?section=19",
+  "https://whitney.org/exhibitions/2024-biennial/art?section=51",
+  "https://www.sharjahart.org/en/people/details/namy-joe",
+  "https://www.sharjahart.org/en/people/details/hammons-david",
+  "https://www.sharjahart.org/en/sharjah-biennial/sb-16/people/details/chun-shao/",
+  "https://www.sharjahart.org/en/people/details/al-baqsami-thuraya",
+  "https://www.sharjahart.org/en/resources/saf-online/details/shivanjani-lal-at-sharjah-biennial-16",
+  "https://www.labiennale.org/en/art/2024/nucleo-contemporaneo/claire-fontaine-0",
+  "https://www.labiennale.org/en/art/2026/dawn-dedeaux",
+  "https://www.labiennale.org/en/art/2026/philip-aguirre-y-otegui",
+  "https://www.labiennale.org/en/art/2026/marcia-kure",
+  "https://www.labiennale.org/en/art/2026/artists",
+  "https://www.hauserwirth.com/artists/jeffrey-gibson/",
+  "https://www.hauserwirth.com/artists/23390-mika-rottenberg/",
+  "https://lisson.com/artists/elaine-cameron-weir",
+  "https://lisson.com/artists/gerard-byrne",
+  "https://gagosian.com/artists/jenny-saville/",
+  "https://gagosian.com/artists/rachel-whiteread/",
+  "https://kurimanzutto.com/en/artists/gabriel-orozco",
+  "https://kurimanzutto.com/en/artists/minerva-cuevas",
+  "https://www.sadiecoles.com/artists/sarah-lucas",
+  "https://www.e-flux.com/announcements/6787431/16th-gwangju-biennaleyou-must-change-your-life",
+  "https://13.berlinbiennale.de/en/artists/list (returned empty)",
+  "https://www.e-flux.com/announcements/658690/anthea-hamiltonsoft-you",
+  "https://www.e-flux.com/announcements/6783952/bagus-pandegadaya-bendamona-filleulsissy-institutecostanza-candeloro-and-licit-illicit-bookshopno-plot-just-street",
+  "https://www.e-flux.com/announcements/652770/julian-charri-re-midnight-zone",
+  "https://www.e-flux.com/announcements/6786413/oren-pinhassiinto-your-arm-s-length",
+  "https://www.e-flux.com/announcements/6784506/anton-vidokleirradiation",
+  "https://www.e-flux.com/announcements/6785514/bruno-zhubelas-artes",
+  "https://www.e-flux.com/announcements/674693/carlos-bungainhabit-the-contradiction",
+  "https://www.e-flux.com/announcements/647471/clemen-parrocchettito-devour-lifecharly-bechaimontdegr-s-est",
+  "https://www.e-flux.com/announcements/6787488/saodat-ismailovaamanat-as-we-sleep",
+  "https://www.e-flux.com/announcements/6785806/bouchra-khalilicircles-and-storytellersdima-sroujifour-moons-from-home"
+ ],
+ "press_phrases": [
+  {
+   "phrase": "curated by",
+   "count": 22,
+   "variants": "Curator:; guest-curated by; co-curated by"
+  },
+  {
+   "phrase": "explores / exploring",
+   "count": 16,
+   "variants": "explore; explored; continues its exploration"
+  },
+  {
+   "phrase": "brings together",
+   "count": 13,
+   "variants": "bringing together; brought together; bring together"
+  },
+  {
+   "phrase": "collective",
+   "count": 13,
+   "variants": "collective action; collective forms of making; designers and collectives"
+  },
+  {
+   "phrase": "draws on",
+   "count": 12,
+   "variants": "drawing on; draws upon; draws from; drawing inspiration from"
+  },
+  {
+   "phrase": "engages with",
+   "count": 11,
+   "variants": "engagement with; engage with"
+  },
+  {
+   "phrase": "in dialogue with",
+   "count": 10,
+   "variants": "placed in dialogue with; enter into dialogue"
+  },
+  {
+   "phrase": "invites the viewer to",
+   "count": 10,
+   "variants": "invites visitors; inviting us to; an invitation"
+  },
+  {
+   "phrase": "is supported by / made possible with support",
+   "count": 10,
+   "variants": "funded by; with the kind support of"
+  },
+  {
+   "phrase": "memory",
+   "count": 9,
+   "variants": "memory and ...; site of memory"
+  },
+  {
+   "phrase": "archive",
+   "count": 9,
+   "variants": "archives; archival research"
+  },
+  {
+   "phrase": "the title refers to",
+   "count": 9,
+   "variants": "takes its title from; title is borrowed from; title is drawn from"
+  },
+  {
+   "phrase": "boundaries between",
+   "count": 9,
+   "variants": "blurred boundaries; dissolve boundaries; blur distinctions between"
+  },
+  {
+   "phrase": "interconnected / intertwined",
+   "count": 9,
+   "variants": "intertwining; interweave; interconnectedness"
+  },
+  {
+   "phrase": "is pleased to present",
+   "count": 8,
+   "variants": "is proud to present"
+  },
+  {
+   "phrase": "unfolds",
+   "count": 8,
+   "variants": "unfolded; unfolding; unfold"
+  },
+  {
+   "phrase": "ecological",
+   "count": 8,
+   "variants": "ecologies; ecology"
+  },
+  {
+   "phrase": "first solo exhibition in [country]",
+   "count": 7,
+   "variants": "first institutional exhibition in; first UK solo exhibition; for the first time in"
+  },
+  {
+   "phrase": "[institution] presents [title]",
+   "count": 7,
+   "variants": "will present; is presenting"
+  },
+  {
+   "phrase": "opens up",
+   "count": 7,
+   "variants": "opens the door to; opening onto; opens a ... space"
+  },
+  {
+   "phrase": "reimagines",
+   "count": 7,
+   "variants": "reimagining; reimagined"
+  },
+  {
+   "phrase": "resistance",
+   "count": 7,
+   "variants": "resist; acts of resistance"
+  },
+  {
+   "phrase": "traces of",
+   "count": 7,
+   "variants": "tracing; follows the traces of"
+  },
+  {
+   "phrase": "creates a space of / holding space",
+   "count": 7,
+   "variants": "space of refuge; creating space for"
+  },
+  {
+   "phrase": "[artist]'s practice",
+   "count": 7,
+   "variants": "multidisciplinary practice; practices that"
+  },
+  {
+   "phrase": "across film, sculpture and ...",
+   "count": 7,
+   "variants": "spanning film, sculpture, photography; ranging from drawing to installation"
+  },
+  {
+   "phrase": "in collaboration with",
+   "count": 7,
+   "variants": "in cooperation with"
+  },
+  {
+   "phrase": "newly commissioned",
+   "count": 7,
+   "variants": "new commissions; commissions created especially for"
+  },
+  {
+   "phrase": "is accompanied by a catalogue / publication",
+   "count": 6,
+   "variants": "accompanied by a booklet"
+  },
+  {
+   "phrase": "not (simply) X but Y",
+   "count": 6,
+   "variants": "not as a motif, but as a medium"
+  },
+  {
+   "phrase": "shaped by / shapes",
+   "count": 6,
+   "variants": "shaping"
+  },
+  {
+   "phrase": "both X and Y",
+   "count": 6,
+   "variants": "both literal and metaphysical"
+  },
+  {
+   "phrase": "gathers / gathering",
+   "count": 6,
+   "variants": "the gathered works; gatherings"
+  },
+  {
+   "phrase": "examines",
+   "count": 6,
+   "variants": "to examine"
+  },
+  {
+   "phrase": "rather than",
+   "count": 5,
+   "variants": "Rather than treating X as Y"
+  },
+  {
+   "phrase": "alongside",
+   "count": 5,
+   "variants": "presented alongside"
+  },
+  {
+   "phrase": "hybrid",
+   "count": 5,
+   "variants": "hybrid forms; hybrid lexicon"
+  },
+  {
+   "phrase": "foregrounds",
+   "count": 5,
+   "variants": "foregrounding; foreground"
+  },
+  {
+   "phrase": "the exhibition features",
+   "count": 5,
+   "variants": "featuring"
+  },
+  {
+   "phrase": "fragile / fragility / vulnerability",
+   "count": 5,
+   "variants": "fragile environments; precariousness"
+  },
+  {
+   "phrase": "ongoing / long-term / long-standing",
+   "count": 5,
+   "variants": "long-standing exploration"
+  },
+  {
+   "phrase": "embedded / embedding",
+   "count": 4,
+   "variants": "embed"
+  },
+  {
+   "phrase": "public programme",
+   "count": 4,
+   "variants": "a programme of free performances"
+  },
+  {
+   "phrase": "asks how / asks what",
+   "count": 4,
+   "variants": "asks a timely question"
+  },
+  {
+   "phrase": "questions of",
+   "count": 4,
+   "variants": "questions of authorship, memory"
+  },
+  {
+   "phrase": "a body of work",
+   "count": 4,
+   "variants": "ongoing body of work"
+  },
+  {
+   "phrase": "reflects on",
+   "count": 4,
+   "variants": "reflecting on; reflecting upon"
+  },
+  {
+   "phrase": "porous",
+   "count": 4,
+   "variants": "porous mode of attention; porous nature"
+  },
+  {
+   "phrase": "Together, the works",
+   "count": 4,
+   "variants": "Together the film series; Together, the artist and"
+  },
+  {
+   "phrase": "among others",
+   "count": 4,
+   "variants": "among other venues; amongst other institutions"
+  },
+  {
+   "phrase": "lives and works in (bio line)",
+   "count": 4,
+   "variants": "based in; living and working in"
+  },
+  {
+   "phrase": "in a time of / in a moment of",
+   "count": 4,
+   "variants": "in a moment of profound uncertainty"
+  },
+  {
+   "phrase": "threshold / liminal",
+   "count": 4,
+   "variants": "liminal spaces; cross thresholds"
+  },
+  {
+   "phrase": "intimate / intimacy",
+   "count": 4,
+   "variants": "intimate moments; atmospheric intimacy"
+  },
+  {
+   "phrase": "(Recent) solo exhibitions include (bio line)",
+   "count": 3,
+   "variants": "Selected solo exhibitions include; has presented solo exhibitions at"
+  },
+  {
+   "phrase": "urgent / urgency",
+   "count": 3,
+   "variants": "renewed urgency"
+  },
+  {
+   "phrase": "considers / to consider",
+   "count": 3,
+   "variants": "to consider what"
+  },
+  {
+   "phrase": "imagine alternative futures",
+   "count": 3,
+   "variants": "imagining alternative civic futures"
+  },
+  {
+   "phrase": "builds on",
+   "count": 3,
+   "variants": "building on the foundations"
+  },
+  {
+   "phrase": "emerges from",
+   "count": 3,
+   "variants": "emerged from; emerges out of"
+  },
+  {
+   "phrase": "in partnership with",
+   "count": 3,
+   "variants": "takes place in partnership with"
+  },
+  {
+   "phrase": "weaves together",
+   "count": 3,
+   "variants": "weaves ancestral narratives with"
+  },
+  {
+   "phrase": "inhabits",
+   "count": 3,
+   "variants": "inhabiting; Inhabit the Contradiction"
+  },
+  {
+   "phrase": "a series of",
+   "count": 3,
+   "variants": "a series of metal screens"
+  },
+  {
+   "phrase": "proposes",
+   "count": 3,
+   "variants": "proposes an encounter; proposes a new model"
+  },
+  {
+   "phrase": "marks the",
+   "count": 3,
+   "variants": "marks the culmination; marks the third chapter"
+  },
+  {
+   "phrase": "Her work has also been featured in",
+   "count": 3,
+   "variants": "His work has also been presented at"
+  },
+  {
+   "phrase": "(Selected) group exhibitions include",
+   "count": 3,
+   "variants": "Group exhibitions include"
+  },
+  {
+   "phrase": "was named a laureate / finalist / nominee",
+   "count": 3,
+   "variants": "first recipient of the ... Prize"
+  },
+  {
+   "phrase": "thinking through / think with",
+   "count": 2,
+   "variants": "think and feel with water"
+  },
+  {
+   "phrase": "tender / tenderness",
+   "count": 2,
+   "variants": "a tender world of hybrid forms"
+  },
+  {
+   "phrase": "at once",
+   "count": 2,
+   "variants": "at once acts of resistance"
+  },
+  {
+   "phrase": "constellation of",
+   "count": 2,
+   "variants": "a speculative constellation"
+  },
+  {
+   "phrase": "ritual",
+   "count": 2,
+   "variants": "rituals and bonds"
+  },
+  {
+   "phrase": "a meditation on",
+   "count": 2,
+   "variants": "a meditation on permanence"
+  },
+  {
+   "phrase": "against a backdrop of",
+   "count": 2,
+   "variants": "Set against a backdrop of"
+  },
+  {
+   "phrase": "on the occasion of",
+   "count": 2,
+   "variants": "On the occasion of its anniversary"
+  },
+  {
+   "phrase": "material histories",
+   "count": 2,
+   "variants": "embed material histories"
+  },
+  {
+   "phrase": "more-than-human / nonhuman",
+   "count": 2,
+   "variants": "the more-than-human"
+  },
+  {
+   "phrase": "navigates / navigating",
+   "count": 2,
+   "variants": "navigating urgent political realities"
+  },
+  {
+   "phrase": "speaks to",
+   "count": 1,
+   "variants": "It speaks to systems that regenerate"
+  }
+ ],
+ "press_sample_size": 28,
+ "press_sample_sources": [
+  "https://www.e-flux.com/announcements/6785452/eija-liisa-ahtilaa-possible-image",
+  "https://www.e-flux.com/announcements/6787035/british-art-show-10a-chorus-of-strangers",
+  "https://www.e-flux.com/announcements/6786980/walker-design-triennialbeyond-materialism",
+  "https://www.e-flux.com/announcements/6785632/anna-hula-ov-abundantia",
+  "https://www.e-flux.com/announcements/6785094/along-the-color-line-traces-of-a-transatlantic-modernism",
+  "https://www.e-flux.com/announcements/6788089/action-bodies",
+  "https://www.e-flux.com/announcements/6787725/kobby-adimy-skeleton",
+  "https://www.e-flux.com/announcements/6787950/if-words-are-to-be-sounded",
+  "https://www.e-flux.com/announcements/6787927/family-album",
+  "https://www.e-flux.com/announcements/6788278/mark-stororclose-to-home",
+  "https://www.e-flux.com/announcements/6787614/house-of-day-house-of-night",
+  "https://www.e-flux.com/announcements/6785541/eline-vansteenkisteunder-the-shade-of-a-coolabah-tree",
+  "https://www.e-flux.com/announcements/6788145/mosi-oa-tunya-perennial",
+  "https://www.e-flux.com/announcements/6788113/ala-roushan-and-charles-stankievecha-shroud-woven-of-solar-threads",
+  "https://www.e-flux.com/announcements/6784506/anton-vidokleirradiation",
+  "https://www.e-flux.com/announcements/6785774/inside-the-frame",
+  "https://www.e-flux.com/announcements/658690/anthea-hamiltonsoft-you",
+  "https://www.e-flux.com/announcements/6787989/the-look-is-a-li-k-e",
+  "https://www.e-flux.com/announcements/6788197/haunted",
+  "https://www.e-flux.com/announcements/6783952/bagus-pandegadaya-bendamona-filleulsissy-institutecostanza-candeloro-and-licit-illicit-bookshopno-plot-just-street",
+  "https://www.e-flux.com/announcements/6787476/marwa-arsanioswho-is-afraid-of-ideology",
+  "https://www.e-flux.com/announcements/6785514/bruno-zhubelas-artes",
+  "https://www.e-flux.com/announcements/674693/carlos-bungainhabit-the-contradiction",
+  "https://www.e-flux.com/announcements/6785806/bouchra-khalilicircles-and-storytellersdima-sroujifour-moons-from-home",
+  "https://www.e-flux.com/announcements/652770/julian-charri-re-midnight-zone",
+  "https://www.e-flux.com/announcements/6786413/oren-pinhassiinto-your-arm-s-length",
+  "https://www.e-flux.com/announcements/647471/clemen-parrocchettito-devour-lifecharly-bechaimontdegr-s-est",
+  "https://www.e-flux.com/announcements/6787488/saodat-ismailovaamanat-as-we-sleep"
+ ],
+ "press_opening_templates": [
+  "[Venue] is pleased to present [Title], a [solo/group] exhibition by [Artist]. (8 of 28: Kobby Adi, Family Album, Vansteenkiste, Vidokle, SPURS, Hamilton, Swiss Institute, Ismailova)",
+  "[Institution] presents [Title], a [new/five-week/collection] exhibition exploring how [theme]. (7 of 28: Storor, Roushan/Stankievech, Look is A Li(k)e, Haunted, Bunga, Walker, Schirn)",
+  "[Artist]'s first institutional solo exhibition in [country] presents [work/series]. (Arsanios, Hulačová, Ismailova, Khalili)",
+  "To mark its [50th anniversary], [museum] is staging a major interdisciplinary survey exhibition that explores [connection between X and Y]. (Along the Color Line; also 'On the occasion of its twentieth anniversary, [gallery] is pleased to present' SPURS)",
+  "[Title] is a joint exhibition project that explores [language/value] as [a performative medium]. (if words are to be sounded)",
+  "This group show brings together the work of [participants/second-year students]. (House of Day, House of Night; also Haunted 'Bringing together works from the ... Collection by')",
+  "A core concern of [artist] is how [human beings inhabit the world]. (Charrière) / '[Artist] sculpts [anthropomorphic forms] at great scale that appeal to the senses and intellect at once.' (Pinhassi)",
+  "[Artist]'s [figurative sculptures] combine influences from [A], [B], and [C] to create a distinctive cosmos of their own. (Hulačová)",
+  "Lyric scene-setting opener before naming the show: 'Life is seething and bustling. Birdsong, the wind in the spruce forest ...' (Ahtila); 'To capture something in words is to delineate its borders' (Kobby Adi, second sentence)",
+  "On [date], [institution] will present its inaugural [Triennial], titled [Title]. Guest-curated by [name], ... (Walker) ; 'Today, [org] launches [Title] in [city]. Curated by [name], this edition features 37 artists' (British Art Show 10)",
+  "Curated by [Name]. Presenting the works of [A, B, C, D, E]. (Look is A Li(k)e; Haunted: 'Curated by Dr. [Name].' as first line)",
+  "[Title], a solo exhibition by [Artist] ([City], [year]), will be on view at [venue] from [date]. (Bruno Zhu; also Hamilton 'the first institutional exhibition in Rome by [Artist] (London, 1978)')",
+  "[Institution] presents the largest and most complex installation to date by [Artist] (b. 1976), one of [country]'s most internationally renowned artists. (Bunga)",
+  "The exhibition [Title] continues the artistic-curatorial exploration of [the collection] with a focus on how [spaces and bodies] are perceived and shaped through [movement]. (Action Bodies)",
+  "[Org] is proud to announce the inaugural [Perennial], an international [contemporary art] programme that launched in [city] on [date]. (Mosi-oa-Tunya Perennial)",
+  "Artist-first opener without venue: 'Trained at the [Brera Academy] in the 1950s, [Artist] produced a prolific body of work ranging from drawing and sculpture to installation.' (Parrocchetti)",
+  "Artists line before text: '**Artists:** A, B, C, D' (Action Bodies, if words are to be sounded) ; '**With:** A, B, C' (House of Day, House of Night)"
+ ],
+ "press_closing_templates": [
+  "Curated by [Name]. / Curator: [Name], [Institution]. / Director: X / Curator: Y / Project Coordination: Z. (about 22 of 28 pages carry a curator credit, usually in the last 1-3 lines)",
+  "The exhibition is accompanied by a [catalogue/booklet/publication] with contributions by [A, B, C]. (6 of 28: Ahtila, Walker, Along the Color Line, Kobby Adi, Bunga, Charrière)",
+  "The exhibition is made possible with support from / funded by / supported by [ministry, foundation, individual]. (10 of 28)",
+  "Press contact: [Name], [email] / T +43 ... / Press material: here. (5 of 28: Schirn, Vidokle, Look is A Li(k)e, Arsanios, Family Album)",
+  "Artist bio block: '[Artist] (b. 1985, [City]) lives and works in [city]. Recent solo exhibitions include ...; Selected group exhibitions include ... [prize/education line]' (Hamilton, Swiss Institute, Pinhassi, Charrière, Zhu)",
+  "Institution boilerplate: 'About [Institution]: [Institution] is a non-profit library and research centre located in [city] ... founded in [year] ...' (Mosi-oa-Tunya Perennial, Haunted, Fondazione Memmo in Hamilton, 'Tim Van Laere Gallery Antwerp–Rome' in Vansteenkiste)",
+  "Rhetorical question or invitation as last line: 'where might new forms of connection and new meanings arise?' (if words) ; 'What are the boundaries between one and another? Why do we fear contact?' (Pinhassi) ; 'asks what remains ... To encounter these works is therefore not simply to look back, but to consider what we are entrusted with carrying forward.' (Ismailova) ; 'invites the viewer not simply to observe the landscape from a distance, but to enter it and, somewhere between light and darkness, perhaps lose their way.' (Vansteenkiste)",
+  "Dated public programme list: '**Saturday, October 17, 2026, 3–6pm** Official opening: [Title], with a public reading by [name]' / 'Events' / 'Curator's tour: August 14, 6pm, free admission' (Family Album, Charrière, Parrocchetti)",
+  "Thanks line: 'With thanks to [name]' / 'With gratitude to [consulate] for refreshments' / 'Thanks to [funders]' / 'Frac Lorraine would like to thank the family of ...' (Ismailova, Swiss Institute, Along the Color Line, Parrocchetti)",
+  "Partner or co-production line: 'The exhibition takes place in partnership with [A] and [B].' / 'co-commissioned by [A] and [B]' / 'organised by [A] in collaboration with [B]' (Parrocchetti, Ismailova, Vidokle)",
+  "Institutional mission sentence as ending: 'The exhibition resonates with CAM's curatorial mission to encourage new perspectives of its Collection by inviting artists to engage with it.' (Bruno Zhu) ; 'The programme concludes on 10 October with [event title], a closing ceremony' (Storor)",
+  "Cross-reference to another show: '[Title] will be on view in parallel with [Title], the first solo exhibition in [country] by [artist].' (Haunted) ; 'Please see here for further information on the curatorial concept, the full artist list' (British Art Show 10)"
+ ],
+ "eflux_layout": [
+  "Top block (article__top), left column, in order: bold artist name(s); bold-italic exhibition title; optional plain-text subtitle line (e.g. 'of what is just becoming reality', 'Smuggling as Resistance', 'Twenty Years in Focus'); date range 'October 3, 2026–January 31, 2027' (month name, day, year, en dash, no leading zeros); 'Add to Calendar' button.",
+  "Group shows or untitled-artist shows start with the bold-italic title only, with no artist line (Action Bodies, Family Album, Haunted, House of Day, House of Night). Multi-show announcements stack 'Artist: Title' pairs, then one date range (Swiss Institute, Frac Lorraine, Mosaic Rooms).",
+  "Event rows follow the dates, each as a bold label, colon, then date and time: 'Opening: October 2, 6–10pm' ; 'Opening at GAK Bremen: October 2, 7pm' ; 'Opening reception: September 4, 2–5pm, with curator and artists present' ; 'Artist talk: October 24, 2pm–3am, X in dialogue with Y' ; 'Workshop: October 16, 4pm' ; 'Curatorial tour: May 30, 5–6pm' ; 'Performance: June 2, 3–4:30pm'. Times use '6–8pm', '2pm–3am' (no zero padding, am/pm lowercase, en dash). Each row has its own 'Add to Calendar'. RSVP button appears when set.",
+  "Right column address block: bold venue name; street; city; postcode on its own line; country on its own line (e.g. 'Portikus / Alte Brücke 2 / Maininsel / Frankfurt am Main / 60594 / Germany'). Then 'Hours: Tuesday–Friday 12–7pm' with a second line for exceptions ('Thursday 11am–9pm'); then email/phone ('T +49 421 500897'), website link, and social links ('Instagram / Facebook').",
+  "Page header above the block: breadcrumb 'e-flux / Announcements'; H1 'Artist: *Title*' (artist, colon, italic title); H2 with the venue name linked to the e-flux directory; image carousel with captions in the form 'Artist, *Work*, 2025. Installation view, Venue. Photo: Name.'; announcement date line like 'October 1, 2026' (publication date, not show date).",
+  "Sidebar tags (hidden by default): 'Category' (e.g. Nature & Ecology) and 'Participants' (artist names as search links); Share (Email, Facebook, X, Copy Link); 'More from [Venue]' strip with older announcements below the text.",
+  "Body (article__body) is plain paragraphs with no headings; bold run-in labels for credits and sections: '**Artists:** ...', '**With:** ...', '**Curatorial team:**', '**Acknowledgements**', '**Catalogue**', '**Thanks to**', '**Events**', '**Biography**:'. Credits come last: 'Curated by ...', 'Director: ... / Curator: ... / Press contact: ...'.",
+  "The words 'Press release' were not used as a heading on any of the 28 pages read; the body simply starts with the release text. Institution boilerplate starts with 'About [Institution]' in bold.",
+  "Titles are written with italics for exhibition and work titles inside running text (*My Skeleton*, *Reflection of a Forest*) and with bold-italic in the top block.",
+  "Counts in the sample (n=28): 'Hours:' line present in 18; 'Opening:' style row present in 11; curator credit in 22; bio paragraph with '(b. year, city)' or '(city, year)' in 9; funder/support line in 10.",
+  "Multi-year programme announcements (not counted in the exhibition sample) exist on e-flux as 'Exhibition programme 2026' / 'Autumn 2026' / 'Programme 2025–26' with lists of 3-6 show titles and dates in one body."
+ ]
+}

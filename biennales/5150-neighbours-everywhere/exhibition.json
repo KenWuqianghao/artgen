@@ -1,0 +1,1588 @@
+{
+  "seed": 5150,
+  "slug": "5150-neighbours-everywhere",
+  "institution": "Fondazione Laguna Aperta",
+  "edition": 9,
+  "edition_name": "9th Lagoon Biennial",
+  "title": "Neighbours Everywhere",
+  "title_source": "The title is borrowed from a poem by Tunde Nwosu, the Aarhus-born poet, in which a long table to which another chair is always added.",
+  "city": "Venice",
+  "country": "Italy",
+  "year": 2027,
+  "opening": "9 May 2027",
+  "closing": "22 November 2027",
+  "team": [
+    {
+      "name": "Rizalina Villanueva",
+      "role": "Artistic Director",
+      "bio": "Curator and writer based in Tirana; previously director of an artist-run space and a member of several biennial teams."
+    },
+    {
+      "name": "Erion Gashi",
+      "role": "Curatorial Advisor",
+      "bio": "Writer, researcher and curator based in La Paz."
+    },
+    {
+      "name": "Bisi Obi",
+      "role": "Associate Curator",
+      "bio": "Writer, researcher and curator based in Berlin."
+    },
+    {
+      "name": "Hiwot Hailu",
+      "role": "Associate Curator",
+      "bio": "Curator and writer based in Mexico City; previously director of an artist-run space and a member of several biennial teams."
+    }
+  ],
+  "sections": [
+    {
+      "id": "the-schools",
+      "title": "The Schools",
+      "text": "Several works in The Schools were made with communities in and around the exhibition's host city, over months rather than weeks."
+    },
+    {
+      "id": "procession",
+      "title": "Procession",
+      "text": "The works gathered under Procession share an attention to what is usually overlooked: the quiet, the repaired, the left behind."
+    },
+    {
+      "id": "thresholds",
+      "title": "Thresholds",
+      "text": "Thresholds begins with the body: its rhythms, its tiredness, and the knowledge it carries without writing anything down."
+    },
+    {
+      "id": "hospitality",
+      "title": "Hospitality",
+      "text": "Works in Hospitality treat the neighbour as a form of knowledge, passed down outside the institutions that usually decide what counts as knowledge."
+    },
+    {
+      "id": "shrines",
+      "title": "Shrines",
+      "text": "In Shrines, the domestic and the political are not separated: a kitchen, a garden and a border are treated as the same kind of place."
+    }
+  ],
+  "venues": [
+    {
+      "id": "chiesa",
+      "name": "Ex Chiesa di San Lio Nuovo",
+      "description": "A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs.",
+      "floor": "marble floor with old tomb slabs",
+      "light": "dim daylight from high windows and a few spotlights on a rail",
+      "families": [
+        "shrine",
+        "sound",
+        "textile",
+        "figure",
+        "video",
+        "earth"
+      ]
+    },
+    {
+      "id": "corderie",
+      "name": "Corderie",
+      "description": "The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows.",
+      "floor": "worn concrete floor",
+      "light": "grey daylight from small high windows mixed with track lighting",
+      "families": [
+        "textile",
+        "found",
+        "figure",
+        "sound",
+        "earth",
+        "ceramic",
+        "architecture",
+        "shrine"
+      ]
+    },
+    {
+      "id": "squero",
+      "name": "Squero Ex Cantieri Giudecca",
+      "description": "A former boatyard on Giudecca: a corrugated metal roof on steel trusses, a concrete slip running down to the water.",
+      "floor": "concrete slip with oil stains",
+      "light": "hard daylight from the open side",
+      "families": [
+        "found",
+        "architecture",
+        "sound",
+        "earth",
+        "performance",
+        "video"
+      ]
+    },
+    {
+      "id": "giardino",
+      "name": "Giardino delle Vergini",
+      "description": "A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall.",
+      "floor": "gravel and grass",
+      "light": "outdoor daylight under trees",
+      "families": [
+        "earth",
+        "sound",
+        "figure",
+        "architecture"
+      ]
+    },
+    {
+      "id": "padiglione",
+      "name": "Central Pavilion",
+      "description": "A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895.",
+      "floor": "grey linoleum floor",
+      "light": "even daylight from frosted skylights",
+      "families": [
+        "painting",
+        "archive",
+        "textile",
+        "ceramic",
+        "figure",
+        "shrine",
+        "video"
+      ]
+    }
+  ],
+  "artists": [
+    {
+      "id": "a01-paz-painemal",
+      "name": "Paz Painemal",
+      "sort_name": "Painemal, Paz",
+      "collective": false,
+      "pronoun": "he",
+      "born_year": 1979,
+      "born_place": "Bogotá, Colombia",
+      "died_year": null,
+      "lives": [
+        "Bogotá, Colombia",
+        "London, UK"
+      ],
+      "profile": "midcareer",
+      "heritage": "cumbia sonidera",
+      "origin": "southern-cone-colombia",
+      "members": [],
+      "founded_year": null,
+      "bio": "Paz Painemal (b. 1979, Bogotá) lives and works in Bogotá and London. Painemal's practice spans sculpture, installation and collective action, drawing on cumbia sonidera. Recent solo exhibitions include Kunsthalle Ostrand, Vienna (2023) and the Museum of Tidal Arts, Lisbon (2022). He has participated in the Salt and Sugar Biennial and the Borderland Festival, Tbilisi."
+    },
+    {
+      "id": "a02-omar-benali",
+      "name": "Omar Benali",
+      "sort_name": "Benali, Omar",
+      "collective": false,
+      "pronoun": "she",
+      "born_year": 1943,
+      "born_place": "Oran, Algeria",
+      "died_year": 1992,
+      "lives": [],
+      "profile": "rediscovered",
+      "heritage": "Gnawa music",
+      "origin": "maghreb",
+      "members": [],
+      "founded_year": null,
+      "bio": "Omar Benali (1943–1992) was born in Oran. Her work, made largely outside the art world, drew on Gnawa music. Rarely exhibited during her lifetime, it has received renewed attention since a retrospective at the Harbour Institute, Oran in 2013."
+    },
+    {
+      "id": "a03-julian-apaza",
+      "name": "Julián Apaza",
+      "sort_name": "Apaza, Julián",
+      "collective": false,
+      "pronoun": "they",
+      "born_year": 1992,
+      "born_place": "El Alto, Bolivia",
+      "died_year": null,
+      "lives": [
+        "Mexico City, Mexico",
+        "Brussels, Belgium"
+      ],
+      "profile": "emerging",
+      "heritage": "Aymara weaving",
+      "origin": "andes",
+      "members": [],
+      "founded_year": null,
+      "bio": "Julián Apaza (b. 1992, El Alto) lives and works in Mexico City and Brussels. Julián Apaza works with jute twine and bone beads, materials they associates with Aymara weaving. They recently completed a residency at the Halvorsen residency, and this is their first biennial."
+    },
+    {
+      "id": "a04-sanjay-rao",
+      "name": "Sanjay Rao",
+      "sort_name": "Rao, Sanjay",
+      "collective": false,
+      "pronoun": "he",
+      "born_year": 1984,
+      "born_place": "Shillong, India",
+      "died_year": null,
+      "lives": [
+        "Brussels, Belgium",
+        "Kolkata, India"
+      ],
+      "profile": "midcareer",
+      "heritage": "Madhubani wall painting",
+      "origin": "india",
+      "members": [],
+      "founded_year": null,
+      "bio": "Sanjay Rao (b. 1984, Shillong) lives and works in Brussels and Kolkata. Rao's practice spans sculpture and drawing, drawing on Madhubani wall painting. Recent solo exhibitions include Project 88½, Mumbai (2026) and Gallery Mul, Seoul (2024). He has participated in the 2nd Monsoon Triennale and the 13th Tidewater Biennial."
+    },
+    {
+      "id": "a05-kenta-kobayashi",
+      "name": "Kenta Kobayashi",
+      "sort_name": "Kobayashi, Kenta",
+      "collective": false,
+      "pronoun": "she",
+      "born_year": 1951,
+      "born_place": "Osaka, Japan",
+      "died_year": null,
+      "lives": [
+        "Osaka, Japan"
+      ],
+      "profile": "elder",
+      "heritage": "the fishing villages of Minamata",
+      "origin": "japan",
+      "members": [],
+      "founded_year": null,
+      "bio": "Kenta Kobayashi (b. 1951, Osaka) lives and works in Osaka. Kenta Kobayashi works with glazed ceramic and glazed ceramic, materials she associates with the fishing villages of Minamata. Recent solo exhibitions include the Museum of Tidal Arts, Lisbon (2026) and the Harbour Institute, Osaka (2024). She has participated in the 9th Delta Triennial and Manifold, Lagos."
+    },
+    {
+      "id": "a06-sebastian-fuentes",
+      "name": "Sebastián Fuentes",
+      "sort_name": "Fuentes, Sebastián",
+      "collective": false,
+      "pronoun": "he",
+      "born_year": 1996,
+      "born_place": "Cali, Colombia",
+      "died_year": null,
+      "lives": [
+        "Mexico City, Mexico",
+        "Brussels, Belgium"
+      ],
+      "profile": "emerging",
+      "heritage": "the coca leaf",
+      "origin": "southern-cone-colombia",
+      "members": [],
+      "founded_year": null,
+      "bio": "Sebastián Fuentes (b. 1996, Cali) lives and works in Mexico City and Brussels. Working across textile, sculpture and installation, Fuentes draws on the coca leaf to address protest. He recently completed a residency at the Halvorsen residency, and this is his first biennial."
+    },
+    {
+      "id": "a07-kaja-nyberg",
+      "name": "Kaja Nyberg",
+      "sort_name": "Nyberg, Kaja",
+      "collective": false,
+      "pronoun": "they",
+      "born_year": 1978,
+      "born_place": "Tromsø, Norway",
+      "died_year": null,
+      "lives": [
+        "Los Angeles, USA",
+        "Stockholm, Sweden"
+      ],
+      "profile": "midcareer",
+      "heritage": "the herring fisheries",
+      "origin": "nordic",
+      "members": [],
+      "founded_year": null,
+      "bio": "Kaja Nyberg (b. 1978, Tromsø) lives and works in Los Angeles and Stockholm. Kaja Nyberg works with citrus trees and olive trees, materials they associates with the herring fisheries. Recent solo exhibitions include Salt Projects, Lagos (2026) and the Centre for Art and Ecology, Stockholm (2021). They have participated in the 13th Tidewater Biennial and the Salt and Sugar Biennial."
+    },
+    {
+      "id": "a08-thanwa-rattanakul",
+      "name": "Thanwa Rattanakul",
+      "sort_name": "Rattanakul, Thanwa",
+      "collective": false,
+      "pronoun": "he",
+      "born_year": 1947,
+      "born_place": "Udon Thani, Thailand",
+      "died_year": null,
+      "lives": [
+        "Udon Thani, Thailand"
+      ],
+      "profile": "elder",
+      "heritage": "Isan mor lam songs",
+      "origin": "thailand",
+      "members": [],
+      "founded_year": null,
+      "bio": "Thanwa Rattanakul (b. 1947, Udon Thani) lives and works in Udon Thani. Thanwa Rattanakul works with blister packs of medicine and tinsel, materials he associates with Isan mor lam songs. Recent solo exhibitions include the Centre for Art and Ecology, Udon Thani (2026) and Tarpaulin, Rotterdam (2022). He has participated in the 9th Delta Triennial and the 2nd Monsoon Triennale."
+    },
+    {
+      "id": "a09-agus-kusuma",
+      "name": "Agus Kusuma",
+      "sort_name": "Kusuma, Agus",
+      "collective": false,
+      "pronoun": "she",
+      "born_year": 1976,
+      "born_place": "Medan, Indonesia",
+      "died_year": null,
+      "lives": [
+        "Paris, France",
+        "Brussels, Belgium"
+      ],
+      "profile": "midcareer",
+      "heritage": "ikat weaving in Sumba",
+      "origin": "indonesia",
+      "members": [],
+      "founded_year": null,
+      "bio": "Agus Kusuma (b. 1976, Medan) lives and works in Paris and Brussels. Working across painting and drawing, Kusuma draws on ikat weaving in Sumba to address language. Recent solo exhibitions include Kunsthalle Ostrand, Vienna (2025) and the Centre for Art and Ecology, Paris (2023). She has participated in the Salt and Sugar Biennial and the 13th Tidewater Biennial."
+    },
+    {
+      "id": "a10-radio-tierra",
+      "name": "Radio Tierra",
+      "sort_name": "Radio Tierra",
+      "collective": true,
+      "pronoun": "they",
+      "born_year": null,
+      "born_place": "Ahmedabad, India",
+      "died_year": null,
+      "lives": [
+        "Ahmedabad, India"
+      ],
+      "profile": "collective",
+      "heritage": "the jute mills of the Hooghly",
+      "origin": "india",
+      "members": [
+        "Lakshmi Banerjee",
+        "Rohan Pillai",
+        "Rohan Rao",
+        "Shilpa Shah",
+        "Vikram Mukherjee"
+      ],
+      "founded_year": 2013,
+      "bio": "Radio Tierra is a collective founded in Ahmedabad in 2013. Its members, Lakshmi Banerjee, Rohan Pillai, Rohan Rao, Shilpa Shah and Vikram Mukherjee, work across light, text and installation, with an emphasis on shared meals, reading groups and long-term collaboration with neighbours. The collective has presented work at the 9th Delta Triennial and the 13th Tidewater Biennial."
+    },
+    {
+      "id": "a11-xiaoyu-wu",
+      "name": "Xiaoyu Wu",
+      "sort_name": "Wu, Xiaoyu",
+      "collective": false,
+      "pronoun": "she",
+      "born_year": 1978,
+      "born_place": "Tainan, Taiwan",
+      "died_year": null,
+      "lives": [
+        "Amsterdam, Netherlands",
+        "Los Angeles, USA"
+      ],
+      "profile": "midcareer",
+      "heritage": "Taiwanese temple processions",
+      "origin": "china",
+      "members": [],
+      "founded_year": null,
+      "bio": "Xiaoyu Wu (b. 1978, Tainan) lives and works in Amsterdam and Los Angeles. Working across sound, composition and installation, Wu draws on Taiwanese temple processions to address migration. Recent solo exhibitions include the Harbour Institute, Amsterdam (2024) and Project 88½, Mumbai (2021). She has participated in Manifold, Lagos and the 13th Tidewater Biennial."
+    },
+    {
+      "id": "a12-tsegaye-alemu",
+      "name": "Tsegaye Alemu",
+      "sort_name": "Alemu, Tsegaye",
+      "collective": false,
+      "pronoun": "he",
+      "born_year": 1976,
+      "born_place": "Dire Dawa, Ethiopia",
+      "died_year": null,
+      "lives": [
+        "Dire Dawa, Ethiopia",
+        "Paris, France"
+      ],
+      "profile": "midcareer",
+      "heritage": "Orthodox church painting",
+      "origin": "ethiopia",
+      "members": [],
+      "founded_year": null,
+      "bio": "Tsegaye Alemu (b. 1976, Dire Dawa) lives and works in Dire Dawa and Paris. Working across ceramics, sculpture and performance, Alemu draws on Orthodox church painting to address land. Recent solo exhibitions include Tarpaulin, Rotterdam (2026) and the Harbour Institute, Dire Dawa (2023). He has participated in the Salt and Sugar Biennial and the 4th Inland Biennale."
+    },
+    {
+      "id": "a13-paz-cardenas",
+      "name": "Paz Cárdenas",
+      "sort_name": "Cárdenas, Paz",
+      "collective": false,
+      "pronoun": "she",
+      "born_year": 1979,
+      "born_place": "Valparaíso, Chile",
+      "died_year": null,
+      "lives": [
+        "Madrid, Spain",
+        "Brussels, Belgium"
+      ],
+      "profile": "midcareer",
+      "heritage": "Mapuche silverwork",
+      "origin": "southern-cone-colombia",
+      "members": [],
+      "founded_year": null,
+      "bio": "Paz Cárdenas (b. 1979, Valparaíso) lives and works in Madrid and Brussels. Cárdenas' practice spans sculpture and drawing, drawing on Mapuche silverwork. Recent solo exhibitions include Casa Umbral, Mexico City (2025) and the Forum for Contemporary Art, Bergen (2023). She has participated in the Salt and Sugar Biennial and the 13th Tidewater Biennial."
+    },
+    {
+      "id": "a14-shirin-rezaei",
+      "name": "Shirin Rezaei",
+      "sort_name": "Rezaei, Shirin",
+      "collective": false,
+      "pronoun": "she",
+      "born_year": 1982,
+      "born_place": "Isfahan, Iran",
+      "died_year": null,
+      "lives": [
+        "Isfahan, Iran",
+        "Los Angeles, USA"
+      ],
+      "profile": "midcareer",
+      "heritage": "aineh-kari mirror mosaic",
+      "origin": "iran-iraq",
+      "members": [],
+      "founded_year": null,
+      "bio": "Shirin Rezaei (b. 1982, Isfahan) lives and works in Isfahan and Los Angeles. Working across textile, sculpture and installation, Rezaei draws on aineh-kari mirror mosaic to address shelter. Recent solo exhibitions include the Forum for Contemporary Art, Bergen (2023) and Salt Projects, Lagos (2022). She has participated in the Borderland Festival, Tbilisi and the 9th Delta Triennial."
+    },
+    {
+      "id": "a15-marta-mazur",
+      "name": "Marta Mazur",
+      "sort_name": "Mazur, Marta",
+      "collective": false,
+      "pronoun": "she",
+      "born_year": 1987,
+      "born_place": "Katowice, Poland",
+      "died_year": null,
+      "lives": [
+        "Mexico City, Mexico",
+        "Amsterdam, Netherlands"
+      ],
+      "profile": "midcareer",
+      "heritage": "the Gdańsk shipyard",
+      "origin": "poland",
+      "members": [],
+      "founded_year": null,
+      "bio": "Marta Mazur (b. 1987, Katowice) lives and works in Mexico City and Amsterdam. Marta Mazur works with wooden pallets and wall text, materials she associates with the Gdańsk shipyard. Recent solo exhibitions include Kunsthalle Ostrand, Vienna (2024) and Gallery Mul, Seoul (2021). She has participated in the 2nd Monsoon Triennale and the Salt and Sugar Biennial."
+    },
+    {
+      "id": "a16-fatou-fall",
+      "name": "Fatou Fall",
+      "sort_name": "Fall, Fatou",
+      "collective": false,
+      "pronoun": "he",
+      "born_year": 1940,
+      "born_place": "Rufisque, Senegal",
+      "died_year": 2017,
+      "lives": [],
+      "profile": "rediscovered",
+      "heritage": "the Niger river fishermen",
+      "origin": "senegal-mali",
+      "members": [],
+      "founded_year": null,
+      "bio": "Born in Rufisque in 1940, Fatou Fall worked as a fisherman for most of his life and made art at night. He died in 2017. His first institutional exhibition took place at Tarpaulin, Rotterdam in 2025."
+    },
+    {
+      "id": "a17-ewan-halloran",
+      "name": "Ewan Halloran",
+      "sort_name": "Halloran, Ewan",
+      "collective": false,
+      "pronoun": "she",
+      "born_year": 1997,
+      "born_place": "Belfast, UK",
+      "died_year": null,
+      "lives": [
+        "Amsterdam, Netherlands",
+        "Lisbon, Portugal"
+      ],
+      "profile": "emerging",
+      "heritage": "the Welsh slate quarries",
+      "origin": "uk-ireland",
+      "members": [],
+      "founded_year": null,
+      "bio": "Ewan Halloran (b. 1997, Belfast) lives and works in Amsterdam and Lisbon. Working across textile, sculpture and installation, Halloran draws on the Welsh slate quarries to address ritual. She recently completed a residency at Rijksakademie, and this is her first biennial."
+    },
+    {
+      "id": "a18-hiroshi-sato",
+      "name": "Hiroshi Sato",
+      "sort_name": "Sato, Hiroshi",
+      "collective": false,
+      "pronoun": "she",
+      "born_year": 1907,
+      "born_place": "Kumamoto, Japan",
+      "died_year": 1989,
+      "lives": [],
+      "profile": "rediscovered",
+      "heritage": "boro mending",
+      "origin": "japan",
+      "members": [],
+      "founded_year": null,
+      "bio": "Hiroshi Sato (1907–1989) was born in Kumamoto. Her work, made largely outside the art world, drew on boro mending. Rarely exhibited during her lifetime, it has received renewed attention since a retrospective at the Harbour Institute, Kumamoto in 2018."
+    }
+  ],
+  "works": [
+    {
+      "id": "w01",
+      "slug": "01-what-the-orchard-remembers",
+      "artist_id": "a01-paz-painemal",
+      "title": "what the orchard remembers",
+      "year": "2023–27",
+      "archetype": "buoys-salt-rope",
+      "family": "found",
+      "kind": "sculpture",
+      "form": "Sculpture",
+      "medium": "School desks, cedar branches",
+      "dimensions": "Dimensions variable",
+      "scene": "Rows of school desks are laid out in a grid; from each one tangled branches grow upward like a thicket.",
+      "materials": [
+        "school desks",
+        "cedar branches"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "trade",
+        "the sea",
+        "slavery",
+        "labour"
+      ],
+      "references": [
+        "Hito Steyerl",
+        "Ariella Aïsha Azoulay",
+        "Ailton Krenak"
+      ],
+      "claims": [
+        "The classroom becomes a thicket, and the lesson something that grows back without permission."
+      ],
+      "venue_id": "corderie",
+      "section_id": "the-schools",
+      "courtesy": "Courtesy the artist and Kiln, Cape Town",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of Fondation Arbre-Sel",
+      "photo_credit": "Francesco Barasciutti",
+      "wall_text": "*what the orchard remembers* began with a single object: a key to a house that no longer stands. Rows of school desks are laid out in a grid; from each one tangled branches grow upward like a thicket. The desks came from seven village schools around Bogotá that closed in 2008.\n\n“Things wash up. People wash up. We decide which ones to keep,” the artist has said. Each branch was cut from hedges on the edge of Bogotá and wedged into the desk by hand.\n\nHere, trade and the sea are approached through material rather than image. The classroom becomes a thicket, and the lesson something that grows back without permission.",
+      "essay": "It is tempting to describe *what the orchard remembers* as an installation. This would be a mistake.\n\nThe materials are modest: school desks and cedar branches. Each branch was cut from hedges on the edge of Bogotá and wedged into the desk by hand. The desks is not a metaphor. It is school desks.\n\nIt is important to say what the work is not. It is not an illustration of trade, though trade is everywhere in it. It is not a monument, though it interrogates the grammar of the monument. Painemal softly listens to the quiet futurity of school desks, treating it less as a subject than as a method.[^1]\n\nAnd yet the work is not, finally, about trade. Steyerl writes of the poor image as that which lives in the gap between languages.[^2] *what the orchard remembers* takes this seriously. Its fugitive liminality is not a failure of communication but a form of care.\n\nThere is a longer history here. Azoulay's account of unlearning imperialism reminds us that the body remembers what the state forgets.[^3] Painemal inherits this thinking but bends it. Where Azoulay theorises, the work holds space for. Where the institution demands legibility, the work offers rehearsal: more-than-human, porous, and unfinished.\n\nOne might object that such rupture risks speaking only to those already listening. The objection is fair, and the work knows it. Krenak might call this postponing the end of the world.[^4] Painemal does not call it anything.\n\nTo leave is not to have finished.\n---\n[^1]: Conversation between the artist and the author, Bogotá, January 2024.\n[^2]: Hito Steyerl, *The Wretched of the Screen* (2012), p. 189.\n[^3]: Ariella Aïsha Azoulay, *Potential History* (2019), pp. 202–206.\n[^4]: Ailton Krenak, *Ideas to Postpone the End of the World* (2019), p. 139. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Rizalina Villanueva, Associate Curator, 9th Lagoon Biennial",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Rows of school desks are laid out in a grid; from each one tangled branches grow upward like a thicket. Materials: school desks and cedar branches. Framing: three-quarter view of the floor sculpture, no barriers; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/01-what-the-orchard-remembers.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The desks came from 7 village schools around Bogotá that closed in 2008.",
+        "process": "Each branch was cut from hedges on the edge of Bogotá and wedged into the desk by hand.",
+        "quote": "Things wash up. People wash up. We decide which ones to keep.",
+        "change": "",
+        "interaction": "",
+        "camera": "three-quarter view of the floor sculpture, no barriers",
+        "people_p": 0.2,
+        "basis": [
+          "Karyn Olivier, Whitney 2024",
+          "Hugh Hayden, Sharjah 16"
+        ]
+      }
+    },
+    {
+      "id": "w06",
+      "slug": "06-arrullo",
+      "artist_id": "a06-sebastian-fuentes",
+      "title": "arrullo",
+      "year": 2027,
+      "archetype": "hanging-banners",
+      "family": "textile",
+      "kind": "installation",
+      "form": "Textile installation",
+      "medium": "Second-hand clothes, hotel bed linen, ribbon",
+      "dimensions": "Dimensions variable",
+      "scene": "60 hand-sewn patchwork banners hang from the roof trusses at different heights, each carrying a short phrase in capital letters cut from hotel bed linen.",
+      "materials": [
+        "second-hand clothes",
+        "hotel bed linen",
+        "ribbon"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "protest",
+        "kinship",
+        "language",
+        "collective authorship"
+      ],
+      "references": [
+        "Ursula K. Le Guin",
+        "Elizabeth A. Povinelli",
+        "Christina Sharpe"
+      ],
+      "claims": [
+        "Hung high above the visitor and moving with every draught, the phrases read less as slogans than as a chorus that has not yet agreed on its words.",
+        "Read together, the banners suggest that a crowd can be stitched as well as gathered."
+      ],
+      "venue_id": "corderie",
+      "section_id": "the-schools",
+      "courtesy": "Courtesy the artist and Fondazione Marmorata, Turin",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of Fondation Arbre-Sel",
+      "photo_credit": "Marco Cappelletti",
+      "wall_text": "In 1988, Sebastián Fuentes found a box of photographs at a flea market. *arrullo* grew out of that moment. 60 hand-sewn patchwork banners hang from the roof trusses at different heights, each carrying a short phrase in capital letters cut from hotel bed linen. Some of the banners were first carried in a procession through Cali in 2014.\n\nFuentes puts it simply: “A banner is a sentence that needs a crowd to finish it.” Each banner was cut and stitched by hand in the artist's studio with a group of 40 women.\n\nThe installation addresses protest without illustrating it, letting second-hand clothes carry the weight. Read together, the banners suggest that a crowd can be stitched as well as gathered.",
+      "essay": "Consider the clothes.\n\nThe materials are modest: second-hand clothes, hotel bed linen and ribbon. Each banner was cut and stitched by hand in the artist's studio with a group of 40 women. The clothes is not a metaphor. It is second-hand clothes.\n\nIt is important to say what the work is not. It is not an illustration of protest, though protest is everywhere in it. It is not a monument, though it reactivates the grammar of the monument. Fuentes obliquely rehearses the vernacular kinship of second-hand clothes, treating it less as a subject than as a companion.[^1]\n\nTo stop here would be to miss the work's quiet insistence. Le Guin writes of the carrier bag as that which persists after the event.[^2] *arrullo* takes this seriously. Its situated wayfinding is not a failure of communication but a form of care.\n\nThere is a longer history here. Povinelli's account of geontopower reminds us that the margin is where the centre goes to be forgiven.[^3] Fuentes inherits this thinking but localises it. Where Povinelli theorises, the work thinks with. Where the institution demands legibility, the work offers worlding: intergenerational, elemental, and unhurried.\n\nOne might object that such trace risks speaking only to those already listening. The objection is fair, and the work knows it. Sharpe might call this wake work.[^4] Fuentes does not call it anything.\n\nWhat remains is a question, held open.\n---\n[^1]: Conversation between the artist and the author, Cali, March 2025.\n[^2]: Ursula K. Le Guin, *The Carrier Bag Theory of Fiction* (1986), p. 132.\n[^3]: Elizabeth A. Povinelli, *Geontologies* (2016), pp. 169–177.\n[^4]: Christina Sharpe, *In the Wake* (2016), p. 160. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Bisi Obi, writer and curator based in Brussels",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: 60 hand-sewn patchwork banners hang from the roof trusses at different heights, each carrying a short phrase in capital letters cut from hotel bed linen. Materials: second-hand clothes, hotel bed linen and ribbon. Framing: wide view along the hall at eye level, the banners receding in perspective; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/06-arrullo.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "Some of the banners were first carried in a procession through Cali in 2014.",
+        "process": "Each banner was cut and stitched by hand in the artist's studio with a group of 40 women.",
+        "quote": "A banner is a sentence that needs a crowd to finish it.",
+        "change": "",
+        "interaction": "",
+        "camera": "wide view along the hall at eye level, the banners receding in perspective",
+        "people_p": 0.35,
+        "basis": [
+          "Jeffrey Gibson, US Pavilion, Venice 2024",
+          "Taring Padi banners, documenta fifteen",
+          "Barbican, Unravel, 2024"
+        ]
+      }
+    },
+    {
+      "id": "w11",
+      "slug": "11-soft-dance-of-silence-jia-ting-and-me",
+      "artist_id": "a11-xiaoyu-wu",
+      "title": "Soft Dance of Silence (Jia, Ting and Me)",
+      "year": 2027,
+      "archetype": "testimony-headphones",
+      "family": "sound",
+      "kind": "sound",
+      "form": "Sound installation",
+      "medium": "Audio recordings, headphones, hooks, printed transcripts, 24 audio tracks, total 11 hrs.",
+      "dimensions": "Dimensions variable",
+      "scene": "Headphones hang on hooks along a bare wall, each playing a different person from Tainan reading a list of things they left behind.",
+      "materials": [
+        "audio recordings",
+        "headphones",
+        "hooks",
+        "printed transcripts"
+      ],
+      "nonvisual": [
+        "{count} audio tracks, total {hours} hrs."
+      ],
+      "themes": [
+        "migration",
+        "testimony",
+        "listening"
+      ],
+      "references": [
+        "Ariella Aïsha Azoulay",
+        "Conceição Evaristo",
+        "Édouard Glissant"
+      ],
+      "claims": [
+        "The work trusts the visitor with the most intimate thing an exhibition can hold: time spent listening to a stranger."
+      ],
+      "venue_id": "giardino",
+      "section_id": "the-schools",
+      "courtesy": "Courtesy the artist and Galerie du Seuil, Paris",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Office for Contemporary Art, Oslo",
+      "photo_credit": "Pietro Lugato",
+      "wall_text": "In 1988, Xiaoyu Wu found a box of photographs at a flea market. *Soft Dance of Silence (Jia, Ting and Me)* grew out of that moment. Headphones hang on hooks along a bare wall, each playing a different person from Tainan reading a list of things they left behind. The 24 testimonies were recorded in Tainan between 1948 and last year.\n\nWu puts it simply: “I wanted voices without faces, so nobody could decide what they looked like.” The recordings are unedited.\n\nThe work explores migration and testimony, drawing on Taiwanese temple processions. The work trusts the visitor with the most intimate thing an exhibition can hold: time spent listening to a stranger.",
+      "essay": "The work begins before you see it.\n\nThe materials are modest: audio recordings, headphones and hooks. The recordings are unedited. The recordings is not a metaphor. It is audio recordings.\n\nIt is important to say what the work is not. It is not an illustration of migration, though migration is everywhere in it. It is not a monument, though it renders porous the grammar of the monument. Wu materially thinks with the porous futurity of audio recordings, treating it less as a subject than as a score.[^1]\n\nTo stop here would be to miss the work's quiet insistence. Azoulay writes of unlearning imperialism as that which refuses to be counted.[^2] *Soft Dance of Silence (Jia, Ting and Me)* takes this seriously. Its vernacular opacity is not a failure of communication but a refusal.\n\nThere is a longer history here. Evaristo's account of escrevivência reminds us that the margin is where the centre goes to be forgiven.[^3] Wu inherits this thinking but localises it. Where Evaristo theorises, the work re-members. Where the institution demands legibility, the work offers the not-yet: more-than-human, opaque, and unfinished.\n\nOne might object that such porosity risks speaking only to those already listening. The objection is fair, and the work knows it. Glissant might call this relation.[^4] Wu does not call it anything.\n\nWhat remains is a question, held open.\n---\n[^1]: Conversation between the artist and the author, Tainan, October 2024.\n[^2]: Ariella Aïsha Azoulay, *Potential History* (2019), p. 113.\n[^3]: Conceição Evaristo, *Becos da Memória* (2006), pp. 93–105.\n[^4]: Édouard Glissant, *Poetics of Relation* (1990), p. 87. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Hiwot Hailu, writer and curator based in Los Angeles",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall. Floor: gravel and grass. Light: outdoor daylight under trees. The artwork: Headphones hang on hooks along a bare wall, each playing a different person from Tainan reading a list of things they left behind. Materials: audio recordings, headphones, hooks and printed transcripts. Framing: eye-level view of the wall of headphones, a bench in front; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/11-soft-dance-of-silence-jia-ting-and-me.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The 24 testimonies were recorded in Tainan between 1948 and last year.",
+        "process": "The recordings are unedited.",
+        "quote": "I wanted voices without faces, so nobody could decide what they looked like.",
+        "change": "",
+        "interaction": "",
+        "camera": "eye-level view of the wall of headphones, a bench in front",
+        "people_p": 0.3,
+        "basis": [
+          "The Walls Have Ears, documenta fifteen",
+          "Cauleen Smith, Venice 2026"
+        ]
+      }
+    },
+    {
+      "id": "w16",
+      "slug": "16-scores-for-the-shroud",
+      "artist_id": "a16-fatou-fall",
+      "title": "Scores for the Shroud",
+      "year": 2014,
+      "archetype": "torn-mended-silk",
+      "family": "textile",
+      "kind": "installation",
+      "form": "Textile installation",
+      "medium": "Raw silk, tea, seawater, darning thread",
+      "dimensions": "Dimensions variable",
+      "scene": "A single length of raw silk hangs from the ceiling under one spotlight, its tail trailing across the floor like a train. The cloth is stained in uneven bands of charcoal.",
+      "materials": [
+        "raw silk",
+        "tea",
+        "seawater"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "repair",
+        "grief",
+        "cultural heritage",
+        "healing"
+      ],
+      "references": [
+        "Frantz Fanon",
+        "Ursula K. Le Guin",
+        "Astrida Neimanis"
+      ],
+      "claims": [
+        "The stitches do not hide the damage; they make it the most carefully made part of the work.",
+        "The fabric holds the city in its stains, a map that can only be read by touch."
+      ],
+      "venue_id": "padiglione",
+      "section_id": "the-schools",
+      "courtesy": "Courtesy the Estate of Fatou Fall and Vermilion & Sons, London",
+      "support": "Lent by a national museum",
+      "photo_credit": "Pietro Lugato",
+      "wall_text": "Fatou Fall (1940–2017) worked in Rufisque for most of his life, and was rarely shown outside it. A single length of raw silk hangs from the ceiling under one spotlight, its tail trailing across the floor like a train. The cloth is stained in uneven bands of charcoal. Each of the 41 tears marks a site in Rufisque that was damaged or demolished since 2009.\n\nA relative remembers he saying: “I am not repairing the cloth. I am keeping it company.” The darning was done by hand over four months, one tear at a time.\n\nHere, repair and grief are approached through material rather than image. The stitches do not hide the damage; they make it the most carefully made part of the work.",
+      "essay": "Upon entering Central Pavilion, the visitor is met first not by an object but by a smell.\n\nThe materials are modest: raw silk, tea and seawater. The darning was done by hand over 4 months, one tear at a time. The silk is not a metaphor. It is raw silk.\n\nIt is important to say what the work is not. It is not an illustration of repair, though repair is everywhere in it. It is not a monument, though it dwells in the grammar of the monument. Fall urgently unlearns the tender temporality of raw silk, treating it less as a subject than as a companion.[^1]\n\nTo stop here would be to miss the work's quiet insistence. Fanon writes of decolonisation as that which refuses to be counted.[^2] *Scores for the Shroud* takes this seriously. Its quiet rehearsal is not a failure of communication but a strategy.\n\nThere is a longer history here. Le Guin's account of the carrier bag reminds us that listening is a political act.[^3] Fall inherits this thinking but localises it. Where Le Guin theorises, the work holds space for. Where the institution demands legibility, the work offers entanglement: submerged, sedimented, and unfinished.\n\nOne might object that such materiality risks aestheticising suffering. The objection is fair, and the work knows it. Neimanis might call this hydrofeminism.[^4] Fall does not call it anything.\n\nTo leave is not to have finished.\n---\n[^1]: Conversation between the artist and the author, Rufisque, October 2024.\n[^2]: Frantz Fanon, *The Wretched of the Earth* (1961), p. 221.\n[^3]: Ursula K. Le Guin, *The Carrier Bag Theory of Fiction* (1986), pp. 89–93.\n[^4]: Astrida Neimanis, *Bodies of Water* (2017), p. 16. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Hiwot Hailu, Professor of Visual Cultures, University of Rufisque",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: A single length of raw silk hangs from the ceiling under one spotlight, its tail trailing across the floor like a train. The cloth is stained in uneven bands of charcoal. Materials: raw silk, tea and seawater. Framing: frontal view down the line of hanging sheets, soft side light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/16-scores-for-the-shroud.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "Each of the 41 tears marks a site in Rufisque that was damaged or demolished since 2009.",
+        "process": "The darning was done by hand over 4 months, one tear at a time.",
+        "quote": "I am not repairing the cloth. I am keeping it company.",
+        "change": "",
+        "interaction": "",
+        "camera": "frontal view down the line of hanging sheets, soft side light",
+        "people_p": 0.15,
+        "basis": [
+          "Dana Awartani, Venice 2024",
+          "Teresa Margolles, Unravel 2024",
+          "Dala Nasser, Mineral Lick, Diriyah 2024"
+        ]
+      }
+    },
+    {
+      "id": "w17",
+      "slug": "17-two-points-in-refusal-at-once",
+      "artist_id": "a17-ewan-halloran",
+      "title": "Two Points in Refusal, At Once",
+      "year": 2027,
+      "archetype": "hanging-garments",
+      "family": "textile",
+      "kind": "installation",
+      "form": "Installation",
+      "medium": "Second-hand suits, fringe",
+      "dimensions": "Each approx. 170 × 60 cm",
+      "scene": "A row of nine costumes covered in fringe stands on low plinths, their sleeves sewn shut.",
+      "materials": [
+        "second-hand suits",
+        "fringe"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "ritual",
+        "the body",
+        "inheritance",
+        "queer joy"
+      ],
+      "references": [
+        "Paul B. Preciado",
+        "Kathryn Yusoff",
+        "Fred Moten and Stefano Harney"
+      ],
+      "claims": [
+        "Empty and lit like relics, the garments make absence the main performer."
+      ],
+      "venue_id": "chiesa",
+      "section_id": "procession",
+      "courtesy": "Courtesy the artist and Cassava Projects, Accra",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Nordic Culture Point",
+      "photo_credit": "Francesco Barasciutti",
+      "wall_text": "*Two Points in Refusal, At Once* began with a single object: a recipe written on the back of an envelope. A row of nine costumes covered in fringe stands on low plinths, their sleeves sewn shut. They were worn once, in a performance through Belfast on the night before the exhibition opened.\n\n“Clothes remember a body better than a photograph does,” Halloran says. Each garment took about three months to bead.\n\nHalloran's practice draws on the Welsh slate quarries to consider ritual and the body. Empty and lit like relics, the garments make absence the main performer.",
+      "essay": "Halloran has never been interested in answers.\n\nThe materials are modest: second-hand suits and fringe. Each garment took about 3 months to bead. The suits is not a metaphor. It is second-hand suits.\n\nIt is important to say what the work is not. It is not an illustration of ritual, though ritual is everywhere in it. It is not a monument, though it renders porous the grammar of the monument. Halloran intimately interrogates the post-extractive trace of second-hand suits, treating it less as a subject than as a companion.[^1]\n\nTo stop here would be to miss the work's quiet insistence. Preciado writes of the monster who speaks as that which refuses to be counted.[^2] *Two Points in Refusal, At Once* takes this seriously. Its vernacular relationality is not a failure of communication but a strategy.\n\nThere is a longer history here. Yusoff's account of geologic life reminds us that the margin is where the centre goes to be forgiven.[^3] Halloran inherits this thinking but softens it. Where Yusoff theorises, the work thinks with. Where the institution demands legibility, the work offers temporality: diasporic, embodied, and untranslated.\n\nOne might object that such in-betweenness risks a certain preciousness. The objection is fair, and the work knows it. Moten and Harney might call this fugitive planning.[^4] Halloran does not call it anything.\n\nIn the end, *Two Points in Refusal, At Once* asks only that we stay a little longer than is comfortable.\n---\n[^1]: Conversation between the artist and the author, Belfast, March 2025.\n[^2]: Paul B. Preciado, *Can the Monster Speak?* (2020), p. 26.\n[^3]: Kathryn Yusoff, *A Billion Black Anthropocenes or None* (2018), pp. 132–148.\n[^4]: Fred Moten and Stefano Harney, *The Undercommons* (2013), p. 87. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Erion Gashi, Professor of Visual Cultures, University of Amsterdam",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs. Floor: marble floor with old tomb slabs. Light: dim daylight from high windows and a few spotlights on a rail. The artwork: A row of nine costumes covered in fringe stands on low plinths, their sleeves sewn shut. Materials: second-hand suits and fringe. Framing: frontal medium-wide view of the row of garments against a white wall; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/17-two-points-in-refusal-at-once.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "They were worn once, in a performance through Belfast on the night before the exhibition opened.",
+        "process": "Each garment took about 3 months to bead.",
+        "quote": "Clothes remember a body better than a photograph does.",
+        "change": "",
+        "interaction": "",
+        "camera": "frontal medium-wide view of the row of garments against a white wall",
+        "people_p": 0.1,
+        "basis": [
+          "Jeffrey Gibson garments, Unravel 2024",
+          "Nick Cave soundsuits, Venice 2026"
+        ]
+      }
+    },
+    {
+      "id": "w07",
+      "slug": "07-temple-of-joy",
+      "artist_id": "a07-kaja-nyberg",
+      "title": "Temple of Joy",
+      "year": 2027,
+      "archetype": "olive-barrels",
+      "family": "earth",
+      "kind": "installation",
+      "form": "Installation",
+      "medium": "Citrus trees, olive trees, water, gravel",
+      "dimensions": "Dimensions variable",
+      "scene": "A gravel courtyard is cut in two by a narrow water channel. On one side about a hundred olive and citrus trees stand in red barrels on pallets; on the other, a red pallet jack rests on a marble block.",
+      "materials": [
+        "citrus trees",
+        "olive trees",
+        "water",
+        "gravel"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "land",
+        "displacement",
+        "waiting"
+      ],
+      "references": [
+        "Bruno Latour",
+        "Hito Steyerl",
+        "Elizabeth A. Povinelli"
+      ],
+      "claims": [
+        "Mobile and rooted at once, the trees are an orchard in transit."
+      ],
+      "venue_id": "giardino",
+      "section_id": "procession",
+      "courtesy": "Courtesy the artist and Fondazione Marmorata, Turin",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of Fondazione In Bilico",
+      "photo_credit": "Luca Fabris",
+      "wall_text": "In 2016, Kaja Nyberg returned to Tromsø after many years away. *Temple of Joy* grew out of that moment. A gravel courtyard is cut in two by a narrow water channel. On one side about a hundred olive and citrus trees stand in red barrels on pallets; on the other, a red pallet jack rests on a marble block. Each tree was paid for by a donor, whose name is kept in a ledger.\n\n“A tree in a barrel is a tree that is waiting to go home,” Nyberg says. The trees are watered by hand every evening.\n\nHere, land and displacement are approached through material rather than image. Mobile and rooted at once, the trees are an orchard in transit.",
+      "essay": "Upon entering Giardino delle Vergini, the visitor is met first not by an object but by a smell.\n\nThe materials are modest: citrus trees, olive trees and water. The trees are watered by hand every evening. The trees is not a metaphor. It is citrus trees.\n\nIt is important to say what the work is not. It is not an illustration of land, though land is everywhere in it. It is not a monument, though it insists upon the grammar of the monument. Nyberg intimately suspends the vegetal porosity of citrus trees, treating it less as a subject than as a wound.[^1]\n\nThis is where Latour becomes useful. Latour writes of the terrestrial as that which escapes the archive.[^2] *Temple of Joy* takes this seriously. Its transversal counter-memory is not a failure of communication but a refusal.\n\nThere is a longer history here. Steyerl's account of the poor image reminds us that listening is a political act.[^3] Nyberg inherits this thinking but softens it. Where Steyerl theorises, the work renders porous. Where the institution demands legibility, the work offers potentiality: brackish, tentacular, and unhurried.\n\nOne might object that such futurity risks a certain preciousness. The objection is fair, and the work knows it. Povinelli might call this geontopower.[^4] Nyberg does not call it anything.\n\nThe work does not resolve. It could not, and it does not try to.\n---\n[^1]: Conversation between the artist and the author, Tromsø, January 2025.\n[^2]: Bruno Latour, *Down to Earth* (2018), p. 121.\n[^3]: Hito Steyerl, *The Wretched of the Screen* (2012), pp. 9–23.\n[^4]: Elizabeth A. Povinelli, *Geontologies* (2016), p. 44. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Rizalina Villanueva, writer and curator based in Stockholm",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall. Floor: gravel and grass. Light: outdoor daylight under trees. The artwork: A gravel courtyard is cut in two by a narrow water channel. On one side about a hundred olive and citrus trees stand in red barrels on pallets; on the other, a red pallet jack rests on a marble block. Materials: citrus trees, olive trees, water and gravel. Framing: courtyard with rows of trees in red barrels; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/07-temple-of-joy.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "Each tree was paid for by a donor, whose name is kept in a ledger.",
+        "process": "The trees are watered by hand every evening.",
+        "quote": "A tree in a barrel is a tree that is waiting to go home.",
+        "change": "",
+        "interaction": "",
+        "camera": "courtyard with rows of trees in red barrels",
+        "people_p": 0.2,
+        "basis": [
+          "Khalil Rabah, Istanbul 2025",
+          "Nhà Sàn Collective, documenta fifteen"
+        ]
+      }
+    },
+    {
+      "id": "w02",
+      "slug": "02-untitled-gouache-on-paper",
+      "artist_id": "a02-omar-benali",
+      "title": "Untitled (gouache on paper)",
+      "year": 1982,
+      "archetype": "naive-figurative",
+      "family": "painting",
+      "kind": "painting",
+      "form": "Painting",
+      "medium": "Gouache on paper",
+      "dimensions": "414 × 283 cm",
+      "scene": "A story-painting divided into an uneven grid of panels; in each, humans, animals and spirits dance, framed by bands of patterned colour.",
+      "materials": [
+        "gouache on paper"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "folklore",
+        "cosmology",
+        "community"
+      ],
+      "references": [
+        "Édouard Glissant",
+        "Christina Sharpe",
+        "Silvia Federici"
+      ],
+      "claims": [
+        "What looks naive is a precise record of a world that the official record left out."
+      ],
+      "venue_id": "padiglione",
+      "section_id": "procession",
+      "courtesy": "Courtesy the Estate of Omar Benali and Rumah Kayu, Yogyakarta",
+      "support": "Lent by a national museum",
+      "photo_credit": "Chiara Dazzi",
+      "wall_text": "Omar Benali (1943–1992) worked in Oran for most of her life, and was rarely shown outside it. A story-painting divided into an uneven grid of panels; in each, humans, animals and spirits dance, framed by bands of patterned colour. The artist began painting at the age of 62, after 23 years working as a fisherman.\n\nA relative remembers she saying: “I paint what my grandmother told me, so that my grandchildren can see it.” The pigments are made by the artist from earth and plants gathered near Oran.\n\nHere, folklore and cosmology are approached through material rather than image. What looks naive is a precise record of a world that the official record left out.",
+      "essay": "What would it mean to take folklore seriously as a method?\n\nThe materials are modest: gouache on paper. The pigments are made by the artist from earth and plants gathered near Oran. The paper is not a metaphor. It is gouache on paper.\n\nIt is important to say what the work is not. It is not an illustration of folklore, though folklore is everywhere in it. It is not a monument, though it re-members the grammar of the monument. Benali obliquely sits with the elemental precarity of gouache on paper, treating it less as a subject than as a companion.[^1]\n\nAnd yet the work is not, finally, about folklore. Glissant writes of relation as that which lives in the gap between languages.[^2] *Untitled (gouache on paper)* takes this seriously. Its ancestral futurity is not a failure of communication but a strategy.\n\nThere is a longer history here. Sharpe's account of wake work reminds us that the body remembers what the state forgets.[^3] Benali inherits this thinking but composts it. Where Sharpe theorises, the work interrogates. Where the institution demands legibility, the work offers constellation: tender, submerged, and unhurried.\n\nOne might object that such relationality risks aestheticising suffering. The objection is fair, and the work knows it. Federici might call this the commons.[^4] Benali does not call it anything.\n\nOne leaves not having understood, which is perhaps the point.\n---\n[^1]: Conversation between the artist and the author, Oran, October 2024.\n[^2]: Édouard Glissant, *Poetics of Relation* (1990), p. 143.\n[^3]: Christina Sharpe, *In the Wake* (2016), pp. 93–109.\n[^4]: Silvia Federici, *Caliban and the Witch* (2004), p. 46. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Erion Gashi, writer and curator based in Oran",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: A story-painting divided into an uneven grid of panels; in each, humans, animals and spirits dance, framed by bands of patterned colour. Materials: gouache on paper. Framing: frontal view of the painting on a white wall, a bench in front; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/02-untitled-gouache-on-paper.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The artist began painting at the age of 62, after 23 years working as a fisherman.",
+        "process": "The pigments are made by the artist from earth and plants gathered near Oran.",
+        "quote": "I paint what my grandmother told me, so that my grandchildren can see it.",
+        "change": "",
+        "interaction": "",
+        "camera": "frontal view of the painting on a white wall, a bench in front",
+        "people_p": 0.2,
+        "basis": [
+          "Foreigners Everywhere, Nucleo Storico, Venice 2024",
+          "Santiago and Rember Yahuarcani, Venice 2024",
+          "Mangku Muriati, Sharjah 16"
+        ]
+      }
+    },
+    {
+      "id": "w12",
+      "slug": "12-drum-after-selam",
+      "artist_id": "a12-tsegaye-alemu",
+      "title": "Drum (after Selam)",
+      "year": 2027,
+      "archetype": "ceramic-seeds",
+      "family": "ceramic",
+      "kind": "installation",
+      "form": "Installation",
+      "medium": "Ceramic, wooden stools",
+      "dimensions": "Dimensions variable",
+      "scene": "Hundreds of small ceramic copies of the seeds of a wild field plant lie scattered across a low white plinth.",
+      "materials": [
+        "ceramic",
+        "wooden stools"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "land",
+        "botany",
+        "endurance"
+      ],
+      "references": [
+        "Ariella Aïsha Azoulay",
+        "Anna Lowenhaupt Tsing",
+        "Audre Lorde"
+      ],
+      "claims": [
+        "Fired in clay, a plant officials once called a weed is given the permanence of an artefact."
+      ],
+      "venue_id": "padiglione",
+      "section_id": "procession",
+      "courtesy": "Courtesy the artist and Vermilion & Sons, London",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Halvorsen Foundation",
+      "photo_credit": "Giulia Morosin",
+      "wall_text": "*Drum (after Selam)* is an installation by the Dire Dawa-born artist and potter Tsegaye Alemu. Hundreds of small ceramic copies of the seeds of a wild field plant lie scattered across a low white plinth. The plant grows in the olive groves around Dire Dawa; an official survey of 1975 listed it as a weed.\n\nAs Alemu has noted, “A seed is the smallest form of hope that can be held.” Each seed was shaped between finger and thumb.\n\nAlemu's practice draws on Orthodox church painting to consider land and botany. Fired in clay, a plant officials once called a weed is given the permanence of an artefact.",
+      "essay": "Alemu has never been interested in answers.\n\nThe materials are modest: ceramic and wooden stools. Each seed was shaped between finger and thumb. The ceramic is not a metaphor. It is ceramic.\n\nIt is important to say what the work is not. It is not an illustration of land, though land is everywhere in it. It is not a monument, though it thinks with the grammar of the monument. Alemu intimately unsettles the vegetal wayfinding of ceramic, treating it less as a subject than as a wound.[^1]\n\nThe point, if there is one, lies elsewhere. Azoulay writes of unlearning imperialism as that which persists after the event.[^2] *Drum (after Selam)* takes this seriously. Its speculative kinship is not a failure of communication but a form of care.\n\nThere is a longer history here. Tsing's account of life in capitalist ruins reminds us that the body remembers what the state forgets.[^3] Alemu inherits this thinking but bends it. Where Tsing theorises, the work dwells in. Where the institution demands legibility, the work offers the not-yet: geopoetic, entangled, and uninsured.\n\nOne might object that such temporality risks speaking only to those already listening. The objection is fair, and the work knows it. Lorde might call this the erotic as power.[^4] Alemu does not call it anything.\n\nIt is a work that refuses to conclude, and this refusal is its most generous act.\n---\n[^1]: Conversation between the artist and the author, Dire Dawa, June 2025.\n[^2]: Ariella Aïsha Azoulay, *Potential History* (2019), p. 69.\n[^3]: Anna Lowenhaupt Tsing, *The Mushroom at the End of the World* (2015), pp. 186–201.\n[^4]: Audre Lorde, *Sister Outsider* (1984), p. 164. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Erion Gashi, Professor of Visual Cultures, University of Dire Dawa",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: Hundreds of small ceramic copies of the seeds of a wild field plant lie scattered across a low white plinth. Materials: ceramic and wooden stools. Framing: close view of ceramics on a plinth or stools; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/12-drum-after-selam.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The plant grows in the olive groves around Dire Dawa; an official survey of 1975 listed it as a weed.",
+        "process": "Each seed was shaped between finger and thumb.",
+        "quote": "A seed is the smallest form of hope that can be held.",
+        "change": "",
+        "interaction": "",
+        "camera": "close view of ceramics on a plinth or stools",
+        "people_p": 0.1,
+        "basis": [
+          "Vera Tamari, Mantra, Venice 2026",
+          "Ranti Bam, Black Ifa, Venice 2026",
+          "Imayna Caceres, Liverpool 2025"
+        ]
+      }
+    },
+    {
+      "id": "w03",
+      "slug": "03-instructions-for-carrying-a-lagoon",
+      "artist_id": "a03-julian-apaza",
+      "title": "Instructions for Carrying a Lagoon",
+      "year": 2027,
+      "archetype": "unspun-wool-forest",
+      "family": "textile",
+      "kind": "installation",
+      "form": "Installation",
+      "medium": "Jute twine, bone beads",
+      "dimensions": "Dimensions variable",
+      "scene": "Hundreds of knotted cords of jute twine and bone beads hang in rows from a ring suspended over the room, brushing the floor.",
+      "materials": [
+        "jute twine",
+        "bone beads"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "writing",
+        "cosmology",
+        "memory",
+        "language"
+      ],
+      "references": [
+        "Kamau Brathwaite",
+        "Fred Moten and Stefano Harney",
+        "Christina Sharpe"
+      ],
+      "claims": [
+        "The cords move with the breath of the visitors, as if the record were still being written."
+      ],
+      "venue_id": "corderie",
+      "section_id": "thresholds",
+      "courtesy": "Courtesy the artist and Fondazione Marmorata, Turin",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Ministry of Culture of Bolivia",
+      "photo_credit": "Chiara Dazzi",
+      "wall_text": "In 2016, Julián Apaza found a box of photographs at a flea market. *Instructions for Carrying a Lagoon* grew out of that moment. Hundreds of knotted cords of jute twine and bone beads hang in rows from a ring suspended over the room, brushing the floor. The wool came from 17 flocks in the hills above El Alto.\n\n“I make a space where the thread can speak,” the artist has said. Each cord was knotted by the artist while listening to recordings of Aymara weaving.\n\nThroughout, the work grapples with writing, and with what it means to inherit it. The cords move with the breath of the visitors, as if the record were still being written.",
+      "essay": "There is a particular silence that only jute twine can make.\n\nThe materials are modest: jute twine and bone beads. Each cord was knotted by the artist while listening to recordings of Aymara weaving. The twine is not a metaphor. It is jute twine.\n\nIt is important to say what the work is not. It is not an illustration of writing, though writing is everywhere in it. It is not a monument, though it interrogates the grammar of the monument. Apaza insistently unlearns the entangled counter-memory of jute twine, treating it less as a subject than as a method.[^1]\n\nTo stop here would be to miss the work's quiet insistence. Brathwaite writes of tidalectics as that which refuses to be counted.[^2] *Instructions for Carrying a Lagoon* takes this seriously. Its decolonial opacity is not a failure of communication but a strategy.\n\nThere is a longer history here. Moten and Harney's account of fugitive planning reminds us that listening is a political act.[^3] Apaza inherits this thinking but bends it. Where Moten and Harney theorises, the work listens to. Where the institution demands legibility, the work offers interval: embodied, porous, and unhurried.\n\nOne might object that such liminality risks becoming its own institution. The objection is fair, and the work knows it. Sharpe might call this wake work.[^4] Apaza does not call it anything.\n\nWhat remains is a question, held open.\n---\n[^1]: Conversation between the artist and the author, El Alto, January 2024.\n[^2]: Kamau Brathwaite, *History of the Voice* (1984), p. 104.\n[^3]: Fred Moten and Stefano Harney, *The Undercommons* (2013), pp. 139–145.\n[^4]: Christina Sharpe, *In the Wake* (2016), p. 207. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Rizalina Villanueva, member of the curatorial team",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Hundreds of knotted cords of jute twine and bone beads hang in rows from a ring suspended over the room, brushing the floor. Materials: jute twine and bone beads. Framing: looking through the hanging strands towards the far wall, soft daylight; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/03-instructions-for-carrying-a-lagoon.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The wool came from 17 flocks in the hills above El Alto.",
+        "process": "Each cord was knotted by the artist while listening to recordings of Aymara weaving.",
+        "quote": "I make a space where the thread can speak.",
+        "change": "",
+        "interaction": "",
+        "camera": "looking through the hanging strands towards the far wall, soft daylight",
+        "people_p": 0.25,
+        "basis": [
+          "Cecilia Vicuña, Quipu Austral, Unravel 2024",
+          "Jayashree Chakravarty scrolls, Kochi 2025"
+        ]
+      }
+    },
+    {
+      "id": "w08",
+      "slug": "08-to-hold-the-pillow-for-a-while",
+      "artist_id": "a08-thanwa-rattanakul",
+      "title": "To Hold the Pillow for a While",
+      "year": 2027,
+      "archetype": "altar",
+      "family": "shrine",
+      "kind": "installation",
+      "form": "Installation",
+      "medium": "Blister packs of medicine, tinsel, fairy lights",
+      "dimensions": "Dimensions variable",
+      "scene": "Columns hung with blister packs of medicine, fairy lights and tinsel stand in the nave like shrines.",
+      "materials": [
+        "blister packs of medicine",
+        "tinsel",
+        "fairy lights"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "mourning",
+        "chosen family",
+        "devotion",
+        "queer history"
+      ],
+      "references": [
+        "Kodwo Eshun",
+        "Kathryn Yusoff",
+        "Saidiya Hartman"
+      ],
+      "claims": [
+        "Medicine becomes devotion, and the pharmacy a kind of church."
+      ],
+      "venue_id": "corderie",
+      "section_id": "thresholds",
+      "courtesy": "Courtesy the artist and Rumah Kayu, Yogyakarta",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Tidewater Prize",
+      "photo_credit": "Francesco Barasciutti",
+      "wall_text": "*To Hold the Pillow for a While* began with a single object: a sack the artist's father carried across a border. Columns hung with blister packs of medicine, fairy lights and tinsel stand in the nave like shrines. The medicines were collected from 40 households in Udon Thani.\n\n“An altar is just a shelf that someone loves,” Rattanakul says. The lights are switched on at dusk by the guards.\n\nRattanakul's practice draws on Isan mor lam songs to consider mourning and chosen family. Medicine becomes devotion, and the pharmacy a kind of church.",
+      "essay": "One does not so much encounter *To Hold the Pillow for a While* as become implicated in it.\n\nThe materials are modest: blister packs of medicine, tinsel and fairy lights. The lights are switched on at dusk by the guards. The medicine is not a metaphor. It is blister packs of medicine.\n\nIt is important to say what the work is not. It is not an illustration of mourning, though mourning is everywhere in it. It is not a monument, though it interrogates the grammar of the monument. Rattanakul playfully suspends the elemental futurity of blister packs of medicine, treating it less as a subject than as a weather.[^1]\n\nHere the work turns. Eshun writes of sonic fiction as that which refuses to be counted.[^2] *To Hold the Pillow for a While* takes this seriously. Its submerged wayfinding is not a failure of communication but a kind of hospitality.\n\nThere is a longer history here. Yusoff's account of geologic life reminds us that the margin is where the centre goes to be forgiven.[^3] Rattanakul inherits this thinking but localises it. Where Yusoff theorises, the work unsettles. Where the institution demands legibility, the work offers rehearsal: minor, situated, and unfinished.\n\nOne might object that such porosity risks becoming its own institution. The objection is fair, and the work knows it. Hartman might call this critical fabulation.[^4] Rattanakul does not call it anything.\n\nTo leave is not to have finished.\n---\n[^1]: Conversation between the artist and the author, Udon Thani, March 2025.\n[^2]: Kodwo Eshun, *More Brilliant than the Sun* (1998), p. 191.\n[^3]: Kathryn Yusoff, *A Billion Black Anthropocenes or None* (2018), pp. 133–140.\n[^4]: Saidiya Hartman, *Wayward Lives, Beautiful Experiments* (2019), p. 238. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Erion Gashi, writer and curator based in Udon Thani",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Columns hung with blister packs of medicine, fairy lights and tinsel stand in the nave like shrines. Materials: blister packs of medicine, tinsel and fairy lights. Framing: frontal view of the altar, warm candle light mixed with gallery light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/08-to-hold-the-pillow-for-a-while.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The medicines were collected from 40 households in Udon Thani.",
+        "process": "The lights are switched on at dusk by the guards.",
+        "quote": "An altar is just a shelf that someone loves.",
+        "change": "",
+        "interaction": "",
+        "camera": "frontal view of the altar, warm candle light mixed with gallery light",
+        "people_p": 0.1,
+        "basis": [
+          "Agosto Machado, Whitney 2026",
+          "Famasi Mobil Kongole, documenta fifteen",
+          "Jorge González Santos, Sharjah 16"
+        ]
+      }
+    },
+    {
+      "id": "w13",
+      "slug": "13-longing",
+      "artist_id": "a13-paz-cardenas",
+      "title": "longing",
+      "year": 2027,
+      "archetype": "hybrid-sentinel",
+      "family": "figure",
+      "kind": "sculpture",
+      "form": "Sculpture",
+      "medium": "Cast iron, water",
+      "dimensions": "386 × 650 × 328 cm",
+      "scene": "A hybrid figure in cast iron, half mermaid, half root, lies draped over a perforated metal box; water trickles from its fingertips onto flowers below.",
+      "materials": [
+        "cast iron",
+        "water"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "the more-than-human",
+        "protection",
+        "myth",
+        "ecology"
+      ],
+      "references": [
+        "Kamau Brathwaite",
+        "Hito Steyerl",
+        "Sylvia Wynter"
+      ],
+      "claims": [
+        "Neither human nor animal nor plant, the figure keeps watch for a world in which those categories have stopped mattering."
+      ],
+      "venue_id": "corderie",
+      "section_id": "thresholds",
+      "courtesy": "Courtesy the artist and Kupfer, Vienna",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Mbeki-Rossi Initiative",
+      "photo_credit": "Nicola Tonolo",
+      "wall_text": "In this sculpture, Cárdenas has gathered cast iron, water and the stories attached to them. A hybrid figure in cast iron, half mermaid, half root, lies draped over a perforated metal box; water trickles from its fingertips onto flowers below. The figure is one of seven 'sentinels' placed through the exhibition to keep watch over it.\n\nCárdenas puts it simply: “She is guarding something. I am not sure it is us.” The figure was cast in 7 sections and joined on site.\n\nHere, the more-than-human and protection are approached through material rather than image. Neither human nor animal nor plant, the figure keeps watch for a world in which those categories have stopped mattering.",
+      "essay": "What would it mean to take the more-than-human seriously as a method?\n\nThe materials are modest: cast iron and water. The figure was cast in 7 sections and joined on site. The iron is not a metaphor. It is cast iron.\n\nIt is important to say what the work is not. It is not an illustration of the more-than-human, though the more-than-human is everywhere in it. It is not a monument, though it refuses the grammar of the monument. Cárdenas patiently attends to the fugitive kinship of cast iron, treating it less as a subject than as a score.[^1]\n\nTo stop here would be to miss the work's quiet insistence. Brathwaite writes of tidalectics as that which persists after the event.[^2] *longing* takes this seriously. Its speculative porosity is not a failure of communication but a refusal.\n\nThere is a longer history here. Steyerl's account of the poor image reminds us that the margin is where the centre goes to be forgiven.[^3] Cárdenas inherits this thinking but localises it. Where Steyerl theorises, the work thinks with. Where the institution demands legibility, the work offers rupture: entangled, brackish, and untranslated.\n\nOne might object that such infrastructure risks a certain preciousness. The objection is fair, and the work knows it. Wynter might call this the overrepresentation of Man.[^4] Cárdenas does not call it anything.\n\nWhat remains is a question, held open.\n---\n[^1]: Conversation between the artist and the author, Valparaíso, October 2024.\n[^2]: Kamau Brathwaite, *History of the Voice* (1984), p. 237.\n[^3]: Hito Steyerl, *The Wretched of the Screen* (2012), pp. 135–145.\n[^4]: Sylvia Wynter, *Unsettling the Coloniality of Being/Power/Truth/Freedom* (2003), p. 109. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Bisi Obi, writer and curator based in Brussels",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A hybrid figure in cast iron, half mermaid, half root, lies draped over a perforated metal box; water trickles from its fingertips onto flowers below. Materials: cast iron and water. Framing: frontal view of the figure, outdoors or in a large hall, daylight; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/13-longing.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The figure is one of 7 'sentinels' placed through the exhibition to keep watch over it.",
+        "process": "The figure was cast in 7 sections and joined on site.",
+        "quote": "She is guarding something. I am not sure it is us.",
+        "change": "",
+        "interaction": "",
+        "camera": "frontal view of the figure, outdoors or in a large hall, daylight",
+        "people_p": 0.15,
+        "basis": [
+          "Wangechi Mutu, Simbi Siren, Venice 2026",
+          "Nick Cave, Amalgam (Origin), Venice 2026",
+          "Daniel Lind-Ramos, Guardaverde, Venice 2026"
+        ]
+      }
+    },
+    {
+      "id": "w18",
+      "slug": "18-kiln-of-the-drowned-storms",
+      "artist_id": "a18-hiroshi-sato",
+      "title": "Kiln of the Drowned Storms",
+      "year": 1969,
+      "archetype": "clay-figure-circle",
+      "family": "ceramic",
+      "kind": "installation",
+      "form": "Sculpture",
+      "medium": "Earthenware, raffia",
+      "dimensions": "Dimensions variable",
+      "scene": "A group of four hand-built earthenware figures, each about a metre high, stands on the floor without plinths, some leaning on each other.",
+      "materials": [
+        "earthenware",
+        "raffia"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "ancestry",
+        "protection",
+        "the feminine",
+        "lineage"
+      ],
+      "references": [
+        "Astrida Neimanis",
+        "Audre Lorde",
+        "Conceição Evaristo"
+      ],
+      "claims": [
+        "Facing each other rather than the visitor, the figures make the viewer an outsider to a conversation that was already under way."
+      ],
+      "venue_id": "corderie",
+      "section_id": "thresholds",
+      "courtesy": "Courtesy the Estate of Hiroshi Sato and Gallery Mul, Seoul",
+      "support": "Lent by the family of the artist",
+      "photo_credit": "Matteo De Fina",
+      "wall_text": "Hiroshi Sato (1907–1989) worked in Kumamoto for most of her life, and was rarely shown outside it. A group of four hand-built earthenware figures, each about a metre high, stands on the floor without plinths, some leaning on each other. The figures were fired in an open pit, the way pots are still fired in Kumamoto.\n\nA relative remembers she saying: “I make bodies that can stand up for themselves.” Each figure was coiled by hand over 14 weeks; the cracks from firing were left as they were.\n\nHere, ancestry and protection are approached through material rather than image. Facing each other rather than the visitor, the figures make the viewer an outsider to a conversation that was already under way.",
+      "essay": "Consider the earthenware.\n\nThe materials are modest: earthenware and raffia. Each figure was coiled by hand over 14 weeks; the cracks from firing were left as they were. The earthenware is not a metaphor. It is earthenware.\n\nIt is important to say what the work is not. It is not an illustration of ancestry, though ancestry is everywhere in it. It is not a monument, though it rehearses the grammar of the monument. Sato stubbornly interrogates the opaque futurity of earthenware, treating it less as a subject than as a wound.[^1]\n\nHere the work turns. Neimanis writes of hydrofeminism as that which escapes the archive.[^2] *Kiln of the Drowned Storms* takes this seriously. Its vegetal rupture is not a failure of communication but a strategy.\n\nThere is a longer history here. Lorde's account of the erotic as power reminds us that the margin is where the centre goes to be forgiven.[^3] Sato inherits this thinking but localises it. Where Lorde theorises, the work sits with. Where the institution demands legibility, the work offers afterlife: embodied, durational, and unfinished.\n\nOne might object that such constellation risks aestheticising suffering. The objection is fair, and the work knows it. Evaristo might call this escrevivência.[^4] Sato does not call it anything.\n\nOne leaves not having understood, which is perhaps the point.\n---\n[^1]: Conversation between the artist and the author, Kumamoto, March 2024.\n[^2]: Astrida Neimanis, *Bodies of Water* (2017), p. 116.\n[^3]: Audre Lorde, *Sister Outsider* (1984), pp. 150–159.\n[^4]: Conceição Evaristo, *Becos da Memória* (2006), p. 47. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Wulan Nugroho, Professor of Visual Cultures, University of Kumamoto",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A group of four hand-built earthenware figures, each about a metre high, stands on the floor without plinths, some leaning on each other. Materials: earthenware and raffia. Framing: wide view of the circle from slightly above eye level, the room around it; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/18-kiln-of-the-drowned-storms.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The figures were fired in an open pit, the way pots are still fired in Kumamoto.",
+        "process": "Each figure was coiled by hand over 14 weeks; the cracks from firing were left as they were.",
+        "quote": "I make bodies that can stand up for themselves.",
+        "change": "",
+        "interaction": "",
+        "camera": "wide view of the circle from slightly above eye level, the room around it",
+        "people_p": 0.2,
+        "basis": [
+          "Rose B. Simpson, Whitney 2024",
+          "Seyni Awa Camara, Venice 2026",
+          "Birender Yadav, Kochi 2025"
+        ]
+      }
+    },
+    {
+      "id": "w04",
+      "slug": "04-loom-for-vikram",
+      "artist_id": "a04-sanjay-rao",
+      "title": "Loom for Vikram",
+      "year": 2027,
+      "archetype": "bronze-procession",
+      "family": "figure",
+      "kind": "sculpture",
+      "form": "Sculpture",
+      "medium": "Bronze, floral wreaths, vintage serving trays",
+      "dimensions": "Dimensions variable",
+      "scene": "16 bronze figures walk in procession across the hall, carrying floral wreaths and vintage serving trays.",
+      "materials": [
+        "bronze",
+        "floral wreaths",
+        "vintage serving trays"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "grief",
+        "ritual",
+        "ancestry",
+        "celebration"
+      ],
+      "references": [
+        "Toni Morrison",
+        "Yuk Hui",
+        "Anna Lowenhaupt Tsing"
+      ],
+      "claims": [
+        "Fixed in bronze, a moment of collective movement becomes a permanent rehearsal."
+      ],
+      "venue_id": "chiesa",
+      "section_id": "hospitality",
+      "courtesy": "Courtesy the artist and Sediment, New York",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Mbeki-Rossi Initiative",
+      "photo_credit": "Ilaria Vanzan",
+      "wall_text": "In this sculpture, Rao has gathered bronze, floral wreaths and the stories attached to them. 16 bronze figures walk in procession across the hall, carrying floral wreaths and vintage serving trays. The procession is modelled on a funeral the artist attended in 1982.\n\nRao puts it simply: “A procession is grief that agrees to keep walking.” The bronzes were cast in a foundry in Shillong and left unpolished.\n\nRao's practice draws on Madhubani wall painting to consider grief and ritual. Fixed in bronze, a moment of collective movement becomes a permanent rehearsal.",
+      "essay": "Rao has never been interested in answers.\n\nThe materials are modest: bronze, floral wreaths and vintage serving trays. The bronzes were cast in a foundry in Shillong and left unpolished. The bronze is not a metaphor. It is bronze.\n\nIt is important to say what the work is not. It is not an illustration of grief, though grief is everywhere in it. It is not a monument, though it gestures toward the grammar of the monument. Rao insistently reactivates the porous palimpsest of bronze, treating it less as a subject than as a weather.[^1]\n\nThe point, if there is one, lies elsewhere. Morrison writes of rememory as that which lives in the gap between languages.[^2] *Loom for Vikram* takes this seriously. Its post-extractive interval is not a failure of communication but a gift.\n\nThere is a longer history here. Hui's account of cosmotechnics reminds us that the body remembers what the state forgets.[^3] Rao inherits this thinking but softens it. Where Hui theorises, the work thinks with. Where the institution demands legibility, the work offers relationality: submerged, insurgent, and unhurried.\n\nOne might object that such precarity risks becoming its own institution. The objection is fair, and the work knows it. Tsing might call this life in capitalist ruins.[^4] Rao does not call it anything.\n\nIt is a work that refuses to conclude, and this refusal is its most generous act.\n---\n[^1]: Conversation between the artist and the author, Shillong, October 2024.\n[^2]: Toni Morrison, *Beloved* (1987), p. 55.\n[^3]: Yuk Hui, *The Question Concerning Technology in China* (2016), pp. 183–186.\n[^4]: Anna Lowenhaupt Tsing, *The Mushroom at the End of the World* (2015), p. 200. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Erion Gashi, member of the curatorial team",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs. Floor: marble floor with old tomb slabs. Light: dim daylight from high windows and a few spotlights on a rail. The artwork: 16 bronze figures walk in procession across the hall, carrying floral wreaths and vintage serving trays. Materials: bronze, floral wreaths and vintage serving trays. Framing: long view along the procession in the hall; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/04-loom-for-vikram.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The procession is modelled on a funeral the artist attended in 1982.",
+        "process": "The bronzes were cast in a foundry in Shillong and left unpolished.",
+        "quote": "A procession is grief that agrees to keep walking.",
+        "change": "",
+        "interaction": "",
+        "camera": "long view along the procession in the hall",
+        "people_p": 0.25,
+        "basis": [
+          "Nick Cave, Venice 2026",
+          "Nadia Taquary, São Paulo 2025",
+          "Pol Taburet, São Paulo 2025"
+        ]
+      }
+    },
+    {
+      "id": "w14",
+      "slug": "14-12-breads",
+      "artist_id": "a14-shirin-rezaei",
+      "title": "12 Breads",
+      "year": 2027,
+      "archetype": "woven-canopy",
+      "family": "textile",
+      "kind": "installation",
+      "form": "Woven installation",
+      "medium": "Crocheted cotton, fishing net",
+      "dimensions": "Approx. 257 × 842 × 441 cm",
+      "scene": "A woven structure of crocheted cotton and fishing net hangs from the ceiling in 12 loose parts, so that visitors can walk in and out of it as through a curtain.",
+      "materials": [
+        "crocheted cotton",
+        "fishing net"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "shelter",
+        "cosmology",
+        "care",
+        "labour"
+      ],
+      "references": [
+        "Yuk Hui",
+        "Ailton Krenak",
+        "Achille Mbembe"
+      ],
+      "claims": [
+        "Overhead and porous, the canopy offers shelter without walls, a roof that holds the visitor without enclosing them.",
+        "The shadows it casts change with the light outside, so that the work is never finished being woven."
+      ],
+      "venue_id": "corderie",
+      "section_id": "hospitality",
+      "courtesy": "Courtesy the artist and Galerie du Seuil, Paris",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Office for Contemporary Art, Oslo",
+      "photo_credit": "Chiara Dazzi",
+      "wall_text": "For this edition, Shirin Rezaei, an Isfahan-based artist and weaver, presents *12 Breads*. A woven structure of crocheted cotton and fishing net hangs from the ceiling in 12 loose parts, so that visitors can walk in and out of it as through a curtain. It took 30 weavers three months to complete, working in shifts in a rented warehouse.\n\n“We wanted to make a shelter you can see through,” the artist has said. Every knot is tied by hand; the artist describes the process as counting without numbers.\n\nThe installation addresses shelter without illustrating it, letting crocheted cotton carry the weight. The shadows it casts change with the light outside, so that the work is never finished being woven.",
+      "essay": "Consider the cotton.\n\nThe materials are modest: crocheted cotton and fishing net. Every knot is tied by hand; the artist describes the process as counting without numbers. The cotton is not a metaphor. It is crocheted cotton.\n\nIt is important to say what the work is not. It is not an illustration of shelter, though shelter is everywhere in it. It is not a monument, though it sits with the grammar of the monument. Rezaei materially troubles the more-than-human kinship of crocheted cotton, treating it less as a subject than as a weather.[^1]\n\nThe point, if there is one, lies elsewhere. Hui writes of cosmotechnics as that which persists after the event.[^2] *12 Breads* takes this seriously. Its brackish wayfinding is not a failure of communication but a kind of hospitality.\n\nThere is a longer history here. Krenak's account of postponing the end of the world reminds us that the margin is where the centre goes to be forgiven.[^3] Rezaei inherits this thinking but localises it. Where Krenak theorises, the work holds space for. Where the institution demands legibility, the work offers afterlife: durational, geopoetic, and uninsured.\n\nOne might object that such rupture risks becoming its own institution. The objection is fair, and the work knows it. Mbembe might call this necropolitics.[^4] Rezaei does not call it anything.\n\nOne leaves not having understood, which is perhaps the point.\n---\n[^1]: Conversation between the artist and the author, Isfahan, June 2024.\n[^2]: Yuk Hui, *The Question Concerning Technology in China* (2016), p. 7.\n[^3]: Ailton Krenak, *Ideas to Postpone the End of the World* (2019), pp. 22–26.\n[^4]: Achille Mbembe, *Necropolitics* (2019), p. 215. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Rizalina Villanueva, poet and researcher",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A woven structure of crocheted cotton and fishing net hangs from the ceiling in 12 loose parts, so that visitors can walk in and out of it as through a curtain. Materials: crocheted cotton and fishing net. Framing: low angle from the floor looking up into the canopy, the room's roof visible behind; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/14-12-breads.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "It took 30 weavers 3 months to complete, working in shifts in a rented warehouse.",
+        "process": "Every knot is tied by hand; the artist describes the process as counting without numbers.",
+        "quote": "We wanted to make a shelter you can see through.",
+        "change": "",
+        "interaction": "",
+        "camera": "low angle from the floor looking up into the canopy, the room's roof visible behind",
+        "people_p": 0.3,
+        "basis": [
+          "Mataaho Collective, Takapau, Venice 2024",
+          "El Anatsui, Logoligi Logarithm, Diriyah 2024",
+          "Ernesto Neto crochet tents"
+        ]
+      }
+    },
+    {
+      "id": "w09",
+      "slug": "09-between-a-field-and-a-basket",
+      "artist_id": "a09-agus-kusuma",
+      "title": "Between a Field and a Basket",
+      "year": 2027,
+      "archetype": "text-painting",
+      "family": "painting",
+      "kind": "painting",
+      "form": "Painting",
+      "medium": "Neon, steel",
+      "dimensions": "380 × 811 cm",
+      "scene": "Red neon sentences in the style of a protest sign are mounted on steel in the window: stay a little longer.",
+      "materials": [
+        "neon",
+        "steel"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "language",
+        "protest",
+        "belonging"
+      ],
+      "references": [
+        "Legacy Russell",
+        "Toni Morrison",
+        "Merlin Sheldrake"
+      ],
+      "claims": [
+        "The words do not explain the exhibition; they occupy it."
+      ],
+      "venue_id": "padiglione",
+      "section_id": "hospitality",
+      "courtesy": "Courtesy the artist and Project 88½, Mumbai",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Ministry of Culture of Indonesia",
+      "photo_credit": "Studio Laguna",
+      "wall_text": "*Between a Field and a Basket* began with a single object: a broken pot found in a field. Red neon sentences in the style of a protest sign are mounted on steel in the window: stay a little longer. The phrase was overheard at a bus stop in Medan in 2001.\n\n“A sentence can be a place you stand,” the artist has said. The tubes were bent by a neon maker in Medan.\n\nThe installation addresses language without illustrating it, letting neon carry the weight. The words do not explain the exhibition; they occupy it.",
+      "essay": "Consider the neon.\n\nThe materials are modest: neon and steel. The tubes were bent by a neon maker in Medan. The neon is not a metaphor. It is neon.\n\nIt is important to say what the work is not. It is not an illustration of language, though language is everywhere in it. It is not a monument, though it witnesses the grammar of the monument. Kusuma intimately listens to the submerged entanglement of neon, treating it less as a subject than as a wound.[^1]\n\nTo stop here would be to miss the work's quiet insistence. Russell writes of the glitch as that which cannot be reduced to transparency.[^2] *Between a Field and a Basket* takes this seriously. Its embodied the not-yet is not a failure of communication but a gift.\n\nThere is a longer history here. Morrison's account of rememory reminds us that the body remembers what the state forgets.[^3] Kusuma inherits this thinking but softens it. Where Morrison theorises, the work suspends. Where the institution demands legibility, the work offers afterlife: vernacular, ancestral, and uninsured.\n\nOne might object that such futurity risks speaking only to those already listening. The objection is fair, and the work knows it. Sheldrake might call this entanglement.[^4] Kusuma does not call it anything.\n\nWhat remains is a question, held open.\n---\n[^1]: Conversation between the artist and the author, Medan, June 2024.\n[^2]: Legacy Russell, *Glitch Feminism* (2020), p. 97.\n[^3]: Toni Morrison, *Beloved* (1987), pp. 124–133.\n[^4]: Merlin Sheldrake, *Entangled Life* (2020), p. 56. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Rizalina Villanueva, Professor of Visual Cultures, University of Paris",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: Red neon sentences in the style of a protest sign are mounted on steel in the window: stay a little longer. Materials: neon and steel. Framing: frontal view of the text work on a wall; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. The only legible text is the artwork's own phrase, spelled exactly as given. No watermark.",
+      "media": "media/09-between-a-field-and-a-basket.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The phrase was overheard at a bus stop in Medan in 2001.",
+        "process": "The tubes were bent by a neon maker in Medan.",
+        "quote": "A sentence can be a place you stand.",
+        "change": "",
+        "interaction": "",
+        "camera": "frontal view of the text work on a wall",
+        "people_p": 0.15,
+        "basis": [
+          "Claire Fontaine neon, Venice 2024",
+          "Demian DinéYazhi', Whitney 2024"
+        ]
+      }
+    },
+    {
+      "id": "w05",
+      "slug": "05-carrying-the-threshold-home",
+      "artist_id": "a05-kenta-kobayashi",
+      "title": "Carrying the Threshold Home",
+      "year": 2027,
+      "archetype": "vessel-grid",
+      "family": "ceramic",
+      "kind": "installation",
+      "form": "Installation",
+      "medium": "Glazed ceramic",
+      "dimensions": "Each approx. 12 × 10 × 10 cm",
+      "scene": "A low two-tiered plinth carries 400 glazed ceramic copies of an ordinary household object, each glazed a different colour.",
+      "materials": [
+        "glazed ceramic"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "labour",
+        "time",
+        "care",
+        "the everyday"
+      ],
+      "references": [
+        "Saidiya Hartman",
+        "Fred Moten and Stefano Harney",
+        "Macarena Gómez-Barris"
+      ],
+      "claims": [
+        "Seen together, the vessels stop being objects and become a measure of time spent waiting."
+      ],
+      "venue_id": "corderie",
+      "section_id": "shrines",
+      "courtesy": "Courtesy the artist and Cassava Projects, Accra",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Ministry of Culture of Japan",
+      "photo_credit": "Nicola Tonolo",
+      "wall_text": "For this edition, Kenta Kobayashi, an Osaka-based artist and potter, presents *Carrying the Threshold Home*. A low two-tiered plinth carries 400 glazed ceramic copies of an ordinary household object, each glazed a different colour. The clay was taken from 400 construction sites around Osaka.\n\nKobayashi puts it simply: “A pot is a promise that something will be kept.” The artist made 62 of them each morning before speaking to anyone.\n\nThe work explores labour and time, drawing on the fishing villages of Minamata. Seen together, the vessels stop being objects and become a measure of time spent waiting.",
+      "essay": "How does one exhibit labour?\n\nThe materials are modest: glazed ceramic. The artist made 62 of them each morning before speaking to anyone. The ceramic is not a metaphor. It is glazed ceramic.\n\nIt is important to say what the work is not. It is not an illustration of labour, though labour is everywhere in it. It is not a monument, though it rehearses the grammar of the monument. Kobayashi intimately reactivates the post-extractive relationality of glazed ceramic, treating it less as a subject than as a weather.[^1]\n\nBut something else is happening in the corner of the room. Hartman writes of critical fabulation as that which refuses to be counted.[^2] *Carrying the Threshold Home* takes this seriously. Its insurgent corporeality is not a failure of communication but a refusal.\n\nThere is a longer history here. Moten and Harney's account of fugitive planning reminds us that every ruin is also a construction site.[^3] Kobayashi inherits this thinking but composts it. Where Moten and Harney theorises, the work suspends. Where the institution demands legibility, the work offers the no-longer: vernacular, oceanic, and unhurried.\n\nOne might object that such residue risks a certain preciousness. The objection is fair, and the work knows it. Gómez-Barris might call this the extractive zone.[^4] Kobayashi does not call it anything.\n\nIt is a work that refuses to conclude, and this refusal is its most generous act.\n---\n[^1]: Conversation between the artist and the author, Osaka, March 2024.\n[^2]: Saidiya Hartman, *Wayward Lives, Beautiful Experiments* (2019), p. 35.\n[^3]: Fred Moten and Stefano Harney, *The Undercommons* (2013), pp. 38–45.\n[^4]: Macarena Gómez-Barris, *The Extractive Zone* (2017), p. 179. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Hiwot Hailu, Professor of Visual Cultures, University of Osaka",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A low two-tiered plinth carries 400 glazed ceramic copies of an ordinary household object, each glazed a different colour. Materials: glazed ceramic. Framing: low view across the rows of vessels on the floor, the far wall softly lit; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/05-carrying-the-threshold-home.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The clay was taken from 400 construction sites around Osaka.",
+        "process": "The artist made 62 of them each morning before speaking to anyone.",
+        "quote": "A pot is a promise that something will be kept.",
+        "change": "",
+        "interaction": "",
+        "camera": "low view across the rows of vessels on the floor, the far wall softly lit",
+        "people_p": 0.15,
+        "basis": [
+          "Pim Sudhikam, Bangkok 2024",
+          "Emilie Louise Gossiaux, Kong Play, Whitney 2026",
+          "Britto Arts Trust, documenta fifteen"
+        ]
+      }
+    },
+    {
+      "id": "w15",
+      "slug": "15-monument-katowice",
+      "artist_id": "a15-marta-mazur",
+      "title": "Monument (Katowice)",
+      "year": "2024–27",
+      "archetype": "fictional-archive",
+      "family": "archive",
+      "kind": "installation",
+      "form": "Installation",
+      "medium": "Wooden pallets, wall text, paint on wood",
+      "dimensions": "Dimensions variable",
+      "scene": "Wooden freight pallets are painted with copies of famous paintings; a wall text explains that the pallets once moved weapons and later carried art that escaped destruction.",
+      "materials": [
+        "wooden pallets",
+        "wall text",
+        "paint on wood"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "the archive",
+        "fiction",
+        "war",
+        "memory"
+      ],
+      "references": [
+        "Yuk Hui",
+        "Legacy Russell",
+        "Audre Lorde"
+      ],
+      "claims": [
+        "The work makes doubt into a method and trusts the visitor to live with it."
+      ],
+      "venue_id": "padiglione",
+      "section_id": "shrines",
+      "courtesy": "Courtesy the artist and Sediment, New York",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Halvorsen Foundation",
+      "photo_credit": "Marco Cappelletti",
+      "wall_text": "For this edition, Marta Mazur, a Katowice-based artist, presents *Monument (Katowice)*. Wooden freight pallets are painted with copies of famous paintings; a wall text explains that the pallets once moved weapons and later carried art that escaped destruction. According to the wall text, the pallets were found in a warehouse in Katowice in 1994.\n\nAs Mazur has noted, “Every archive needs a narrator, and every narrator lies a little.” Some of the stories in the work may not be true; the artist does not say which.\n\nMazur's practice draws on the Gdańsk shipyard to consider the archive and fiction. The work makes doubt into a method and trusts the visitor to live with it.",
+      "essay": "Mazur has never been interested in answers.\n\nThe materials are modest: wooden pallets, wall text and paint on wood. Some of the stories in the work may not be true; the artist does not say which. The pallets is not a metaphor. It is wooden pallets.\n\nIt is important to say what the work is not. It is not an illustration of the archive, though the archive is everywhere in it. It is not a monument, though it insists upon the grammar of the monument. Mazur gently foregrounds the tentacular residue of wooden pallets, treating it less as a subject than as a wound.[^1]\n\nThe point, if there is one, lies elsewhere. Hui writes of cosmotechnics as that which lives in the gap between languages.[^2] *Monument (Katowice)* takes this seriously. Its intergenerational in-betweenness is not a failure of communication but a gift.\n\nThere is a longer history here. Russell's account of the glitch reminds us that every ruin is also a construction site.[^3] Mazur inherits this thinking but slows it. Where Russell theorises, the work convenes. Where the institution demands legibility, the work offers rupture: minor, brackish, and untranslated.\n\nOne might object that such relationality risks a certain preciousness. The objection is fair, and the work knows it. Lorde might call this the erotic as power.[^4] Mazur does not call it anything.\n\nOne leaves not having understood, which is perhaps the point.\n---\n[^1]: Conversation between the artist and the author, Katowice, January 2025.\n[^2]: Yuk Hui, *The Question Concerning Technology in China* (2016), p. 59.\n[^3]: Legacy Russell, *Glitch Feminism* (2020), pp. 126–141.\n[^4]: Audre Lorde, *Sister Outsider* (1984), p. 117. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Erion Gashi, Associate Curator, 9th Lagoon Biennial",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: Wooden freight pallets are painted with copies of famous paintings; a wall text explains that the pallets once moved weapons and later carried art that escaped destruction. Materials: wooden pallets, wall text and paint on wood. Framing: room with pallets or projections, low light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/15-monument-katowice.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "According to the wall text, the pallets were found in a warehouse in Katowice in 1994.",
+        "process": "Some of the stories in the work may not be true; the artist does not say which.",
+        "quote": "Every archive needs a narrator, and every narrator lies a little.",
+        "change": "",
+        "interaction": "",
+        "camera": "room with pallets or projections, low light",
+        "people_p": 0.15,
+        "basis": [
+          "Walid Raad, Venice 2026",
+          "Lydia Ourahmane, House of Hope Archives, Berlin 2025"
+        ]
+      }
+    },
+    {
+      "id": "w10",
+      "slug": "10-a-market-is-where-my-seeds-are",
+      "artist_id": "a10-radio-tierra",
+      "title": "A Market Is Where My Seeds Are",
+      "year": 2027,
+      "archetype": "torch-cave",
+      "family": "light",
+      "kind": "installation",
+      "form": "Installation",
+      "medium": "Paper, grass, torches, seed pods",
+      "dimensions": "Dimensions variable",
+      "scene": "Visitors are handed torches at the entrance of a dark room hung with long scrolls of paper, grass and seed pods; their beams throw shadows like rock paintings.",
+      "materials": [
+        "paper",
+        "grass",
+        "torches",
+        "seed pods"
+      ],
+      "nonvisual": [],
+      "themes": [
+        "shelter",
+        "perception",
+        "deep time"
+      ],
+      "references": [
+        "Ursula K. Le Guin",
+        "Donna Haraway",
+        "Sylvia Wynter"
+      ],
+      "claims": [
+        "The visitor becomes the work's only light source, and so its only author."
+      ],
+      "venue_id": "squero",
+      "section_id": "shrines",
+      "courtesy": "Courtesy the collective",
+      "support": "Commissioned by the 9th Lagoon Biennial. Produced with the support of the Tidewater Prize",
+      "photo_credit": "Giulia Morosin",
+      "wall_text": "*A Market Is Where My Seeds Are* was made by Radio Tierra, a group of five artists, cooks and neighbours who have worked together in Ahmedabad since 2013. Visitors are handed torches at the entrance of a dark room hung with long scrolls of paper, grass and seed pods; their beams throw shadows like rock paintings. The scrolls are made from paper pulped from 40 kilograms of the artist's old drawings.\n\n“You only see what you choose to light,” the artist has said. The room is kept dark; only visitors bring light.\n\nHere, shelter and perception are approached through material rather than image. The visitor becomes the work's only light source, and so its only author.",
+      "essay": "The work begins before you see it.\n\nThe materials are modest: paper, grass and torches. The room is kept dark; only visitors bring light. The paper is not a metaphor. It is paper.\n\nIt is important to say what the work is not. It is not an illustration of shelter, though shelter is everywhere in it. It is not a monument, though it thinks with the grammar of the monument. Radio Tierra softly reactivates the embodied precarity of paper, treating it less as a subject than as a method.[^1]\n\nTo stop here would be to miss the work's quiet insistence. Le Guin writes of the carrier bag as that which lives in the gap between languages.[^2] *A Market Is Where My Seeds Are* takes this seriously. Its minor the no-longer is not a failure of communication but a form of care.\n\nThere is a longer history here. Haraway's account of making kin reminds us that listening is a political act.[^3] Radio Tierra inherits this thinking but bends it. Where Haraway theorises, the work suspends. Where the institution demands legibility, the work offers corporeality: opaque, durational, and untranslated.\n\nOne might object that such kinship risks speaking only to those already listening. The objection is fair, and the work knows it. Wynter might call this the overrepresentation of Man.[^4] Radio Tierra does not call it anything.\n\nIn the end, *A Market Is Where My Seeds Are* asks only that we stay a little longer than is comfortable.\n---\n[^1]: Conversation between the artist and the author, Ahmedabad, January 2025.\n[^2]: Ursula K. Le Guin, *The Carrier Bag Theory of Fiction* (1986), p. 176.\n[^3]: Donna Haraway, *Staying with the Trouble* (2016), pp. 226–232.\n[^4]: Sylvia Wynter, *Unsettling the Coloniality of Being/Power/Truth/Freedom* (2003), p. 89. The term is used here loosely, as the author would no doubt object.",
+      "essay_author": "Erion Gashi, Professor of Visual Cultures, University of Ahmedabad",
+      "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A former boatyard on Giudecca: a corrugated metal roof on steel trusses, a concrete slip running down to the water. Floor: concrete slip with oil stains. Light: hard daylight from the open side. The artwork: Visitors are handed torches at the entrance of a dark room hung with long scrolls of paper, grass and seed pods; their beams throw shadows like rock paintings. Materials: paper, grass, torches and seed pods. Framing: dark room with beams of torchlight on hanging scrolls; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+      "media": "media/10-a-market-is-where-my-seeds-are.jpg",
+      "media_kind": "image",
+      "extra": {
+        "fact": "The scrolls are made from paper pulped from 40 kilograms of the artist's old drawings.",
+        "process": "The room is kept dark; only visitors bring light.",
+        "quote": "You only see what you choose to light.",
+        "change": "",
+        "interaction": "",
+        "camera": "dark room with beams of torchlight on hanging scrolls",
+        "people_p": 0.3,
+        "basis": [
+          "Jayashree Chakravarty, Kochi 2025",
+          "George Mahashe, Diriyah 2024"
+        ]
+      }
+    }
+  ],
+  "statement": [
+    "The 9th Lagoon Biennial, titled *Neighbours Everywhere*, will take place in Venice from 9 May 2027 to 22 November 2027, across five venues. Curated by Rizalina Villanueva with Erion Gashi, Bisi Obi and Hiwot Hailu, the exhibition brings together 18 artists and collectives, 15 of whom present new commissions.",
+    "The title is borrowed from a poem by Tunde Nwosu, the Aarhus-born poet, in which a long table to which another chair is always added.",
+    "Hospitality is proposed not as a virtue but as an infrastructure, built and maintained by people who rarely appear in its histories. The exhibition does not propose answers. It proposes company.",
+    "We gather at a time when grief has no time to finish, when the land is being sold twice, and when borders multiply while bodies keep moving.",
+    "Rather than sections, the exhibition is organised through five motifs, which move across venues like currents: The Schools, Procession, Thresholds, Hospitality and Shrines.",
+    "*The Schools*. Several works in The Schools were made with communities in and around the exhibition's host city, over months rather than weeks. It includes work by Paz Painemal, Sebastián Fuentes and Xiaoyu Wu.",
+    "*Procession*. The works gathered under Procession share an attention to what is usually overlooked: the quiet, the repaired, the left behind. It includes work by Ewan Halloran, Kaja Nyberg and Omar Benali.",
+    "*Thresholds*. Thresholds begins with the body: its rhythms, its tiredness, and the knowledge it carries without writing anything down. It includes work by Julián Apaza, Thanwa Rattanakul and Paz Cárdenas.",
+    "*Hospitality*. Works in Hospitality treat the neighbour as a form of knowledge, passed down outside the institutions that usually decide what counts as knowledge. It includes work by Sanjay Rao, Shirin Rezaei and Agus Kusuma.",
+    "*Shrines*. In Shrines, the domestic and the political are not separated: a kitchen, a garden and a border are treated as the same kind of place. It includes work by Kenta Kobayashi, Marta Mazur and Radio Tierra.",
+    "Venice, a city built on salt, lagoon mud and the labour of rope-makers, is not a backdrop but a collaborator. Many of the works were made here, with people who live here.",
+    "Art alone may not change the world. But it can change the speed at which we move through it.",
+    "We invite visitors to slow down, to sit, to listen, and to leave with more questions than they arrived with."
+  ],
+  "press_release": [
+    "Fondazione Laguna Aperta is pleased to announce the artists of the 9th Lagoon Biennial, *Neighbours Everywhere*, curated by Rizalina Villanueva with Erion Gashi, Bisi Obi and Hiwot Hailu. The exhibition opens to the public on 9 May 2027 and runs until 22 November 2027 across five venues in Venice.",
+    "The 9th Lagoon Biennial brings together 18 artists and collectives from 15 countries. More than half of the works are new commissions, many developed over two years of research, residencies and workshops in Venice and beyond.",
+    "Highlights include Ewan Halloran's installation *Two Points in Refusal, At Once*, Agus Kusuma's painting *Between a Field and a Basket* and Julián Apaza's installation *Instructions for Carrying a Lagoon*.",
+    "“We wanted an exhibition that listens before it speaks,” says Rizalina Villanueva, Artistic Director.",
+    "A public programme of performances, meals, reading groups and walks will run throughout the exhibition, alongside a free programme for schools.",
+    "The exhibition is accompanied by a catalogue with new essays, artist pages and a glossary, designed by Studio Laguna Nera."
+  ],
+  "visitor_info": [
+    "Opening hours: Tuesday to Sunday, 11am–7pm. Closed on Mondays, except public holidays.",
+    "Tickets: full price €30, reduced €22, students €16. Entry to the garden and the reading room is free.",
+    "Accessibility: all main venues are accessible to wheelchair users. Some works contain flashing light, strong scents or live plants. Large-print wall texts are available at each entrance.",
+    "Getting there: the venues are linked by public boats and on foot. Allow at least two days to see the whole exhibition.",
+    "Please do not touch the works unless a wall text invites you to."
+  ],
+  "identity": {
+    "name": "lagoon",
+    "palette": {
+      "ground": "#e3e9e6",
+      "ink": "#0f2420",
+      "accent": "#0f5e52",
+      "muted": "#4c5f5b",
+      "rule": "#c4cfcb"
+    },
+    "display_font": "Instrument Serif",
+    "google_fonts": "family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
+    "display_weight": 400,
+    "display_tracking": "-0.02em"
+  },
+  "generator": "artgen 2.0.0"
+}

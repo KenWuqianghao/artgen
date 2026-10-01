@@ -1,0 +1,2168 @@
+{
+ "scope": "Calibration corpus of real works at: 60th Venice Biennale 2024 (Foreigners Everywhere: Nucleo Contemporaneo, Nucleo Storico, national pavilions); Whitney Biennial 2024 and 2026; Barbican Unravel (2024); Tate Modern Hyundai Commission 2023, 2024, 2025; Carnegie International 2022; Made in L.A. 2025 (exhibition notes only). Hayward Gallery and Serpentine shows were searched (Kapoor, Doig House of Music, Halsey Emajendat) but no work records were written for them. Descriptions are paraphrased from the reviews and museum pages listed in each record; where a field was not stated in a source it is null.",
+ "exhibitions": [
+  {
+   "name": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "year": 2024,
+   "city": "Venice",
+   "artistic_director": "Adriano Pedrosa (artistic director of MASP, Sao Paulo)",
+   "title_metaphor": "Title taken from a neon series by the collective Claire Fontaine (running since 2004, in many languages), which riffs on a Turin anti-racist collective's slogan. Pedrosa extends 'foreigner' to everyone: wherever you are, deep down you are a foreigner. It names four groups the show centres: queer artists, outsider artists, folk artists and Indigenous artists, plus migrants and diaspora artists. He also cites Freud's Unheimlich (the strange that is also familiar) and Edward Said's Culture and Imperialism.",
+   "sections": [
+    "Nucleo Contemporaneo (Giardini Central Pavilion and Arsenale)",
+    "Nucleo Storico: Portraits (Giardini)",
+    "Nucleo Storico: Abstractions (Giardini)",
+    "Nucleo Storico: Italians Everywhere (Arsenale, hung on Lina Bo Bardi glass easels)",
+    "Disobedience Archive (Marco Scotini, Arsenale film archive)",
+    "National pavilions (about 87 to 90)"
+   ],
+   "n_artists": 331,
+   "curatorial_keywords": [
+    "foreigner",
+    "Global South",
+    "Indigenous",
+    "queer",
+    "outsider",
+    "folk",
+    "diaspora",
+    "migration",
+    "first time at the Biennale",
+    "historical debt",
+    "decolonial",
+    "marginalised",
+    "craft",
+    "textile",
+    "kinship",
+    "ancestral"
+   ],
+   "critic_notes": [
+    "Most critics agreed the main show reads like a museum exhibition: sparse hangs, many dead artists (more than half of the 331 per one count), a lot of painting and textile, few screens or digital works.",
+    "A recurring wall-label formula marked artists as exhibiting at the Biennale for the first time. Critics saw this as the show's main rhetorical device and its 'historical debt' gesture.",
+    "Nucleo Storico portrait rooms were called the weakest section: about 100 single works by 100 artists, uneven, some 'ropey', hung salon-style in grey rooms. The Abstractions room was praised for musical cross-resonances. Italians Everywhere on Lina Bo Bardi glass easels was widely admired as the show's best display idea.",
+    "Textiles were noted as a through-line in the older work (Wenger, Abad, de Amaral, Bordadoras de Isla Negra), with many critics saying younger fibre artists were under-represented.",
+    "ArtReview (Charlesworth) and others argued that platforming minoritised groups can only give symbolic recognition and that the curatorial rhetoric was benign cosmopolitanism. Several called intro texts generic artspeak.",
+    "Dean Kissick (Harper's, 'The Painted Protest', Dec 2024) argued that biennials now offer progressive content in conservative forms (naive scenes of everyday life, traditional pottery, carving, dyed cloth, portraits of identity), with wall texts that assign political meaning the object cannot show. He singled out Louis Fratino as modernist pastiche, and praised the Yahuarcani painters, Susanne Wenger and Xiyadie as truly strange; he also praised Bartolini's Italian Pavilion as a non-message utopian space.",
+    "Hyperallergic (Vartanian) called neon-phrase works like Claire Fontaine's hollow and over-intellectualised; criticised the Disobedience Archive's tiny-screen design as a wasted room; praised Pablo Delano but said his archive-room felt like a rabbit hole in this context.",
+    "Art in America (Watlington) said the something-for-everyone approach abolishes hierarchy and makes it hard to judge; a few living artists (Toranzo Jaeger, Halsey) were read as sceptical of the inclusion on offer.",
+    "National pavilions were a mixed bag. Strong reception for Australia (Moore, Golden Lion), Japan (Mohri), Italy (Bartolini), Germany (long queues), Netherlands (cocoa smell, CATPC) and the UK (Akomfrah, five hours long, too much to take in). FT critic called many western pavilions lacklustre and one-dimensional.",
+    "Golden Lion for best participant: Mataaho Collective (Takapau). Golden Lion for national participation: Australia. Lifetime Golden Lion included Nil Yalter. Silver Lion for a promising young artist: Karimah Ashadu."
+   ],
+   "sources": [
+    "https://www.theartnewspaper.com/2024/04/19/venice-biennale-2024-review-%7C-intimacy-and-violence-foreigners-everywhere-explodes-the-biennale-model",
+    "https://hyperallergic.com/standouts-from-the-2024-venice-biennale-foreigners-everywhere/",
+    "https://hyperallergic.com/hyperallergic-quick-guide-to-the-2024-venice-biennale-pavilions/",
+    "https://artreview.com/60th-venice-biennale-review-who-can-judge-foreigners-everywhere-adriano-pedrosa/",
+    "https://www.berlinartlink.com/2024/08/27/foreigners-everywhere-venice-biennale-adriano-pedrosa-review/",
+    "https://www.artnews.com/art-in-america/aia-reviews/foreigners-everywhere-inclusive-adriano-pedrosa-venice-biennale-1234712566/",
+    "https://harpers.org/archive/2024/12/the-painted-protest-dean-kissick-contemporary-art/",
+    "https://www.stirworld.com/think-opinions-foreigners-everywhere-venice-biennale-becomes-a-cradle-of-fraught-purpose",
+    "https://theweek.com/culture-life/art/venice-biennale-2024-review",
+    "https://textilesocietyofamerica.org/13140/the-venice-biennale-a-textile-recap"
+   ]
+  },
+  {
+   "name": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "year": 2024,
+   "city": "New York",
+   "artistic_director": "Chrissie Iles and Meg Onli (curators)",
+   "title_metaphor": "Title borrowed from a U2 song (jaunty lyric: you're the real thing, even better than the real thing). The curatorial idea: the real, the authentic and the copy; a 'dissonant chorus' of bodies that shapeshift freely in physical and virtual space; artists who resist being flattened or essentialised by identity categories. Onli framed the moment as as feverish as the 1990s culture wars.",
+   "sections": [
+    "Floors 5 and 6 plus lobby, stairwell and terraces",
+    "Film and performance programmes (29 of the participants)",
+    "Hyundai Terrace Commission (Torkwase Dyson), north roof deck"
+   ],
+   "n_artists": 71,
+   "curatorial_keywords": [
+    "the real",
+    "authenticity",
+    "dissonant chorus",
+    "bodies",
+    "marginalised",
+    "refusal",
+    "opacity",
+    "legibility",
+    "tenderness",
+    "care",
+    "time",
+    "memory",
+    "survival"
+   ],
+   "critic_notes": [
+    "Widely read as quiet, cool, slow-burn and light on loud political statements, with heavy emphasis on bodies in flux, absent bodies (architecture, fabric and objects standing in for body parts) and conceptual work.",
+    "ARTnews (Greenberger) called it 'blazing' and said it heralds a new kind of body art made of cast, scanned or stand-in forms; many works are clean, pale and slick.",
+    "ArtReview noted minimalist restraint and an intimate closed plan, more harmony than 'dissonance'; Brooklyn Rail praised the many small acts of care, but said socially engaged group projects can trade emotion for administration.",
+    "The Art Newspaper saw resonant pairings across rooms (for example Pusey's paintings against Weston's smoked glass) and a show that rewards close looking.",
+    "Several reviewers noted that the show hardly mentioned Gaza, Ukraine, Sudan or the Congo apart from one flickering neon (DinéYazhi, hidden 'Free Palestine').",
+    "Harper's (Kissick) used the Whitney as an example of the wall-text problem: a smoked-glass ceiling, an upside-down tipi, a field walk with a dowsing rod, found lobster traps on a salt rope, each carrying a long decolonial or refusal claim that the object itself cannot show.",
+    "Recurring forms: ceramic, cast, 3D-printed, crocheted, found-object assemblage, unfixed photographic film, player piano, text neon, AI model, film installations with beds or cushions. Painting was fewer than expected."
+   ],
+   "sources": [
+    "https://www.artnews.com/art-news/reviews/whitney-biennial-2024-review-1234699647/",
+    "https://hyperallergic.com/first-impressions-from-the-2024-whitney-biennial/",
+    "https://www.theartnewspaper.com/2024/03/21/whitney-biennial-2024-even-better-than-the-real-thing",
+    "https://artreview.com/whitney-biennial-2024-new-york-review/",
+    "https://brooklynrail.org/2024/04/artseen/Whitney-Biennial-2024-Even-Better-Than-the-Real-Thing/",
+    "https://museemagazine.com/culture/2024/4/7/whitney-biennial-2024-even-better-than-the-real-thing",
+    "https://www.berkshireeagle.com/arts-and-culture/art-review-7-works-to-seek-out-at-the-whitney-biennial/948373",
+    "https://en.wikipedia.org/wiki/2024_Whitney_Biennial"
+   ]
+  },
+  {
+   "name": "Whitney Biennial 2026",
+   "year": 2026,
+   "city": "New York",
+   "artistic_director": "Marcela Guerrero and Drew Sawyer (curators)",
+   "title_metaphor": "Untitled and deliberately themeless. The curators invited artists from places touched by US military or political power (Afghanistan, Chile, Iraq, Okinawa, Palestine, the Philippines, Puerto Rico, Vietnam) and framed US presence as 'residues of empire' handled abstractly, poetically or ambivalently. Staged in the year of the US 250th anniversary. Catalogue essay language: relationality, infrastructure, entanglements, kinships (including animal and plant kin).",
+   "sections": [
+    "Fifth floor: bodies, families, kinship, mourning and altars",
+    "Sixth floor: infrastructure, surveillance, cities, systems",
+    "Terraces, stairwell and window interventions"
+   ],
+   "n_artists": 56,
+   "curatorial_keywords": [
+    "residues of empire",
+    "relationality",
+    "infrastructure",
+    "entanglements",
+    "kinship",
+    "interspecies",
+    "tenderness",
+    "mood and texture",
+    "transition",
+    "surveillance",
+    "togetherness through difference",
+    "ambivalence"
+   ],
+   "critic_notes": [
+    "A mood of grief and shrines: Hyperallergic wrote that mourning, shrines and grief ran through both floors. The Week summarised critics as saying the show is light on message and big on feelings, with small-scale work halfway between sculpture and talisman.",
+    "ArtReview (Wu): the show suits the aesthetic categories 'cute, zany, interesting' (after Sianne Ngai) better than the social or political; art as knock-off, like Santiago's 'Sanhattan' versus Manhattan.",
+    "e-flux (Lossin): the sixth floor was articulate and legible; the fifth floor was variable and vague, and the press-release vocabulary ('transition', 'tenderness', 'mood and texture') evaded politics. Hyperallergic (Bishara) said the show shies away from the moment; D'Souza found it terrific in installation, beautiful and mournful but not weird.",
+    "Frieze headline: an underwhelming show for overwhelming times. Fine Art Globe: bold and messy, no organising principle.",
+    "Historical or rediscovered artists carried much of the force: Agosto Machado's altars, Carmen de Monteflores, Kimowan Metchewais, Jose Maceda. Interspecies work (dog toys, insects, frogs and moles in circuit diagrams) was a visible new trope. AI, surveillance and games appeared (Castaneda, Ruiz, Blas, Citarella)."
+   ],
+   "sources": [
+    "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes",
+    "https://artreview.com/everything-is-cute-at-the-2026-whitney-biennial-review-jenny-wu/",
+    "https://hyperallergic.com/the-polycrisis-sublime-of-the-whitney-biennial/",
+    "https://hyperallergic.com/whitney-biennial-shies-from-the-moment/",
+    "https://www.e-flux.com/criticism/6782395/whitney-biennial-2026",
+    "https://theweek.com/culture-life/art/review-whitney-biennial-2026",
+    "https://fineartglobe.com/artists/whitney-biennial-2026-review-a-bold-messy-portrait-of-contemporary-america/",
+    "https://flash---art.com/article/whitney-biennial-2026-whitney-museum-of-american-art-new-york/",
+    "https://en.wikipedia.org/wiki/2026_Whitney_Biennial"
+   ]
+  },
+  {
+   "name": "Unravel: The Power and Politics of Textiles in Art",
+   "year": 2024,
+   "city": "London",
+   "artistic_director": "Lotte Johnson and Wells Fray-Smith (curators; assistant curator Diego Chocano); Barbican Art Gallery with Stedelijk Museum Amsterdam",
+   "title_metaphor": "'Unravel' plays on thread and undoing. The thesis: textiles were marginalised as feminine craft, and the marginalisation of the medium tracks the marginalisation of people by gender, race, geography and wealth; stitching, weaving, braiding, beading and knotting become tools of resistance. Starts in the 1960s with fibre art coming off the wall into three dimensions.",
+   "sections": [
+    "Subversive Stitch",
+    "Fabric of Everyday Life",
+    "Borderlands",
+    "Bearing Witness",
+    "Wound and Repair",
+    "Ancestral Threads"
+   ],
+   "n_artists": 50,
+   "curatorial_keywords": [
+    "power",
+    "politics",
+    "subvert",
+    "undermine",
+    "speak back to power",
+    "resistance",
+    "embodied liberation",
+    "ancestral knowledge",
+    "wound and repair",
+    "bearing witness",
+    "borderlands",
+    "labour",
+    "extraction",
+    "gender"
+   ],
+   "critic_notes": [
+    "Time Out said that insisting every work 'undermines power' draws attention to how overblown the language is, that the show treats Abakanowicz and Margolles as serving one purpose, and that it hangs together poorly despite strong pieces.",
+    "Kissick (Harper's) called it a liberal-orthodoxy show in traditional methods and recognisable aesthetics that could have been made fifty years earlier. He linked it to the Venice Biennale as a shared 'nostalgic turn to history'.",
+    "Hackney Citizen and others praised its breadth: quilts, silk collage, tapestry, hanging wool, bandages, blood, border-patrol uniforms.",
+    "The show was hit by withdrawals and statements after the Barbican refused to host an LRB lecture series; empty spaces and pinned letters became part of the display (Vicuña stayed in and added a letter; Yee I-Lann added an office table with the LRB issue).",
+    "The Conversation argued the textile revival is driven by feminist art history, social movements, biennials and fairs, and the commercial convenience of textiles (easier to ship and install than paintings)."
+   ],
+   "sources": [
+    "https://www.barbican.org.uk/our-story/press-room/unravel-the-power-and-politics-of-textiles-in-art",
+    "https://timeout.com/london/art/unravel-the-power-and-politics-of-textiles-in-art",
+    "https://www.hackneycitizen.co.uk/2024/02/19/unravel-barbican-exhibition-review-textiles-art/",
+    "https://www.flolondon.co.uk/all-posts/unravel-the-power-and-politics-of-textiles-in-art-at-the-barbican-art-gallery-review",
+    "https://www.londonartwalk.com/2024/04/12/unravel-the-power-and-politics-of-textiles-in-art/",
+    "https://www.wallpaper.com/art/exhibitions-shows/politics-protest-and-potential-the-barbican-explores-the-power-of-textiles-in-art",
+    "https://theconversation.com/unravel-the-power-and-politics-of-textiles-in-art-barbican-show-reveals-the-mediums-subversive-nature-226551",
+    "https://harpers.org/archive/2024/12/the-painted-protest-dean-kissick-contemporary-art/"
+   ]
+  },
+  {
+   "name": "Hyundai Commission, Tate Modern Turbine Hall 2023",
+   "year": 2023,
+   "city": "London",
+   "artistic_director": "El Anatsui; curators Osei Bonsu and Dina Akhamadeeva (as reported)",
+   "title_metaphor": "Behind the Red Moon: staged as three acts (sail/moon, world, wall) about the Atlantic trade triangle in rum, sugar and people, and the Notsie wall in Ewe history. The Turbine Hall is imagined as a ship.",
+   "sections": [
+    "Act I The Red Moon",
+    "Act II The World",
+    "Act III The Wall"
+   ],
+   "n_artists": 1,
+   "curatorial_keywords": [
+    "movement",
+    "migration",
+    "commodity",
+    "colonial trade routes",
+    "fragment",
+    "renewal",
+    "entangled geographies"
+   ],
+   "critic_notes": [
+    "Reviewers called it glorious and monumental; some said acts one and three overpower the middle act."
+   ],
+   "sources": [
+    "https://www.tate.org.uk/whats-on/tate-modern/el-anatsui/exhibition-guide",
+    "https://www.theupcoming.co.uk/2023/10/10/el-anatsui-behind-the-red-moon-at-tate-modern-exhibition-review/",
+    "https://www.artnews.com/art-news/news/el-anatsui-tate-modern-turbine-hall-commission-2023-hyundai-1234658583/"
+   ]
+  },
+  {
+   "name": "Hyundai Commission, Tate Modern Turbine Hall 2024",
+   "year": 2024,
+   "city": "London",
+   "artistic_director": "Mire Lee; curated by Alvin Li with Bilal Akkouche",
+   "title_metaphor": "Open Wound: the building reimagined as the inside of a body and a living factory; the turbine as 'an open wound that never closes'; the time of decline; soft organic forms against rigid mechanical systems.",
+   "sections": [],
+   "n_artists": 1,
+   "curatorial_keywords": [
+    "open wound",
+    "precarity",
+    "decline",
+    "skin",
+    "industrial body",
+    "regeneration and decay",
+    "vulnerability",
+    "care",
+    "grotesque",
+    "labour"
+   ],
+   "critic_notes": [
+    "The Tate texts frame the work through coal-miner pit-head baths, textile manufacture and the Bankside power station, and ask what the museum 'generates' today."
+   ],
+   "sources": [
+    "https://www.tate.org.uk/whats-on/tate-modern/mire-lee/exhibition-guide",
+    "https://www.tate.org.uk/press/press-releases/hyundai-commission-mire-lee-open-wound"
+   ]
+  },
+  {
+   "name": "Hyundai Commission, Tate Modern Turbine Hall 2025",
+   "year": 2025,
+   "city": "London",
+   "artistic_director": "Máret Ánne Sara; curated by Helen O'Malley and Hannah Gorlizki",
+   "title_metaphor": "Goavve-Geabbil: 'goavvi' is the Sami word for an ice crust that forms on snow after melt and refreeze and starves reindeer; 'geabbil' stands for adaptability and mutual support. Energy is framed as a sacred life-force, not a resource.",
+   "sections": [],
+   "n_artists": 1,
+   "curatorial_keywords": [
+    "Sami science",
+    "reciprocal relationships",
+    "sacred life-force",
+    "extraction",
+    "ancestral knowledge",
+    "duodji",
+    "joik",
+    "interdependence"
+   ],
+   "critic_notes": [
+    "Reviews were mixed. Some critics called the work tame and quiet rather than spectacular; Hyperallergic saw a useful move: the structure and wall texts argue for Indigenous knowledge as hard science, not just 'wisdom'."
+   ],
+   "sources": [
+    "https://www.tate.org.uk/whats-on/tate-modern/maret-anne-sara/exhibition-guide",
+    "https://hyperallergic.com/maret-anne-sara-canary-in-the-turbine-hall-tate-modern/"
+   ]
+  },
+  {
+   "name": "58th Carnegie International: Is it morning for you yet?",
+   "year": 2022,
+   "city": "Pittsburgh",
+   "artistic_director": "Sohrab Mohebbi (curator) with Ryan Inouye and Talia Heiman",
+   "title_metaphor": "Title is a Kaqchikel Maya greeting ('good morning'). The show measures the US geopolitical footprint since 1945 through artists from places affected by US power, with an emphasis on political abstraction.",
+   "sections": [
+    "Four mini-exhibitions: Museo de la Solidaridad Salvador Allende; Fereydoun Ave and Laal collection (Iran); Dogma Collection (Vietnam, 1975); Zahia Rahmani, Seismography of Struggle",
+    "Commissions beyond the museum (mural in Hill District, billboards on Route 28)"
+   ],
+   "n_artists": null,
+   "curatorial_keywords": [
+    "migration",
+    "appropriation",
+    "expropriation",
+    "decolonisation",
+    "emancipatory expressions",
+    "political abstraction",
+    "US hegemony",
+    "images, ideas, objects and people"
+   ],
+   "critic_notes": [
+    "Brooklyn Rail: nearly everything that looks like art-for-art's-sake carries political meaning only through labels and materials. Art in America: sharp, historically grounded curatorial argument built on abstraction. Artnet: did little to stand out on the biennial circuit. Counts of participants vary by source (about 80 collectives, institutions and estates vs more than 100 participants)."
+   ],
+   "sources": [
+    "https://www.theartnewspaper.com/2022/09/23/58th-carnegie-international-pittsburgh-preview",
+    "https://brooklynrail.org/2022/11/artseen/Is-it-morning-for-you-yet/",
+    "https://artreview.com/58th-carnegie-international-is-it-morning-for-you-yet-review/",
+    "https://www.artnews.com/art-in-america/aia-reviews/58th-carnegie-international-1234645900/"
+   ]
+  },
+  {
+   "name": "Made in L.A. 2025 (Hammer Museum)",
+   "year": 2025,
+   "city": "Los Angeles",
+   "artistic_director": "Essence Harden and Paulina Pobocha (curators)",
+   "title_metaphor": "Biennial of artists practising in the Los Angeles area; the curators describe a 'no-methodology methodology' and a city that is 'neither myth nor monolith'. A Frank Lloyd Wright quote about everything loose rolling to Los Angeles is stencilled on one wall.",
+   "sections": [
+    "Three floors, indoor and outdoor galleries"
+   ],
+   "n_artists": 28,
+   "curatorial_keywords": [
+    "dissonance",
+    "attitude",
+    "this city and nowhere else",
+    "no-methodology methodology"
+   ],
+   "critic_notes": [
+    "ArtReview and Hyperallergic both found the show curatorially scattered, with strong work mainly where artists got their own rooms (Hanna Hur's panels, Na Mira's mirrored two-sided projection, Mike Stoltz's four-channel video, Gabriela Ruiz's screaming-face assemblage with a live surveillance camera, Amanda Ross-Ho's oversized nursing-home door). No works from this show are in the works list because only secondary notes were read in this pass."
+   ],
+   "sources": [
+    "https://hyperallergic.com/hammer-museum-made-in-la-2025-anti-curation-doesnt-work/",
+    "https://artreview.com/made-in-l-a-2025-review-claudia-ross/",
+    "https://hammer.ucla.edu/exhibitions/2025/made-la-2025"
+   ]
+  }
+ ],
+ "works": [
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale, entrance gallery (Corderie start)",
+   "artist": "Mataaho Collective",
+   "artist_born": "Founded 2012 in Aotearoa New Zealand; Maori women's collective (Te Atiawa ki Whakarongotai, Ngati Toa Rangatira and other iwi)",
+   "artist_lives": "Aotearoa New Zealand",
+   "deceased": false,
+   "collective": true,
+   "title": "Takapau",
+   "year": "2024",
+   "family": "textile",
+   "medium_line": "Woven reflective truck straps",
+   "dimensions": "200 sq m",
+   "what_you_see": "A huge lattice of woven reflective cargo straps stretches overhead and crosses the first big room of the Arsenale. It forms a dense, womb-like cradle or canopy. Light makes the straps glow, and a dazzling pattern of shadow falls on walls and floor. Visitors walk under and through it; the scale is architectural.",
+   "materials": [
+    "reflective cargo tie-down straps",
+    "reflective tape from high-visibility safety gear"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The jury described a woven structure that is both a cosmology and a shelter.",
+    "The collective says the hi-vis material honours working-class parents and siblings whose labour makes them visible yet invisible.",
+    "Scale is a feat of engineering made possible by collective strength."
+   ],
+   "themes": [
+    "matrilineal weaving",
+    "invisible labour",
+    "collectivity",
+    "shelter"
+   ],
+   "references": [
+    "Maori fine mat weaving (takapau)",
+    "ancestral weaving techniques",
+    "industrial cargo transport"
+   ],
+   "photo_notes": "Published views show the strap lattice glowing and throwing a dense pattern of shadows on walls and floor.",
+   "source": "https://www.designboom.com/art/mataaho-collective-woven-strap-installation-golden-lion-venice-biennale-04-22-2024/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Australia Pavilion, Giardini",
+   "artist": "Archie Moore",
+   "artist_born": "Kamilaroi and Bigambul heritage",
+   "artist_lives": "Queensland, Australia",
+   "deceased": false,
+   "collective": false,
+   "title": "kith and kin",
+   "year": "2024",
+   "family": "archive",
+   "medium_line": "White chalk on black walls; tables with redacted documents; reflective pool",
+   "dimensions": null,
+   "what_you_see": "Black-painted rooms are covered from floor to ceiling in a hand-chalked family tree, with names and gaps tracing Kamilaroi, Bigambul and British ancestry back 65,000 years. Some entries are racist slurs or colonial names; blank circles mark people who were killed, died of disease or were erased from records. In the centre a black reflective pool sits beneath tables that carry redacted coroners' inquest papers on Indigenous deaths in custody. The doors open and close, flooding the dark room with light.",
+   "materials": [
+    "chalk",
+    "black paint",
+    "reflective pool",
+    "redacted coroners' inquest documents",
+    "tables"
+   ],
+   "nonvisual": [
+    "light: doors that open and close flood the room with daylight"
+   ],
+   "claims": [
+    "Celebrates First Nations ideas of lineage and connection while exposing trauma and bureaucratic record-keeping.",
+    "Links Australia's history to the carceral system from penal colonies to present incarceration rates."
+   ],
+   "themes": [
+    "genealogy",
+    "deaths in custody",
+    "erasure",
+    "deep time",
+    "bureaucracy"
+   ],
+   "references": [
+    "First Nations kinship",
+    "coroners' inquests",
+    "Australian penal colonies"
+   ],
+   "photo_notes": "Published photos show black walls dense with white chalk handwriting and a central pool.",
+   "source": "https://www.theartnewspaper.com/2024/04/16/venice-biennale-2024-the-must-see-pavilions-in-the-giardini"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale (Nucleo Contemporaneo)",
+   "artist": "Dana Awartani",
+   "artist_born": "1987, Jeddah, Saudi Arabia",
+   "artist_lives": "Jeddah and New York",
+   "deceased": false,
+   "collective": false,
+   "title": "Come, let me heal your wounds. Let me mend your broken bones",
+   "year": "2024",
+   "family": "textile",
+   "medium_line": "Darning on medicinally dyed silk",
+   "dimensions": "520 x 1250 x 297 cm",
+   "what_you_see": "Large sheets of silk hang in broad vertical expanses through the room, coloured in warm tones from herbs and spices. Each sheet is deliberately torn, then sutured with darning stitches to mark a place of heritage destroyed by war or terrorism. The newest tears refer to Gaza. Visitors walk between the hangings as they would between curtains.",
+   "materials": [
+    "silk",
+    "herb and spice dyes with medicinal properties",
+    "darning thread"
+   ],
+   "nonvisual": [
+    "scent: not stated; the dyes are medicinal herbs and spices"
+   ],
+   "claims": [
+    "Each patch of mending represents one cultural site destroyed in conflict.",
+    "The medicinal dyes pass on healing knowledge studied in Kerala and with Saudi Indigenous communities."
+   ],
+   "themes": [
+    "repair",
+    "heritage destruction",
+    "healing",
+    "war"
+   ],
+   "references": [
+    "Kerala natural dyeing",
+    "Islamic heritage sites",
+    "Gaza"
+   ],
+   "photo_notes": null,
+   "source": "https://www.berlinartlink.com/2024/08/27/foreigners-everywhere-venice-biennale-adriano-pedrosa-review/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale (Nucleo Contemporaneo)",
+   "artist": "Bordadoras de Isla Negra",
+   "artist_born": "Group of self-taught women, Isla Negra, Chile; active 1967 to 1980",
+   "artist_lives": null,
+   "deceased": null,
+   "collective": true,
+   "title": "Untitled",
+   "year": "1972",
+   "family": "textile",
+   "medium_line": "Embroidered canvas; natural and synthetic wool",
+   "dimensions": "230 x 774 cm",
+   "what_you_see": "A very wide, brightly coloured embroidered wall hanging crowded with scenes of life in a Chilean coastal village: social events and local figures. At nearly eight metres it runs along a wall like a mural. The surface is dense, hand-stitched wool.",
+   "materials": [
+    "natural wool",
+    "synthetic wool",
+    "canvas"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Documents daily life and personalities of Isla Negra in the late 1960s and 1970s.",
+    "The work was stolen after the 1973 Pinochet takeover of the building and returned in 2019."
+   ],
+   "themes": [
+    "everyday life",
+    "dictatorship",
+    "loss and return",
+    "women's collective work"
+   ],
+   "references": [
+    "Pinochet dictatorship",
+    "Chilean popular embroidery",
+    "arpilleras (shown nearby)"
+   ],
+   "photo_notes": null,
+   "source": "https://www.berlinartlink.com/2024/08/27/foreigners-everywhere-venice-biennale-adriano-pedrosa-review/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale (Nucleo Contemporaneo)",
+   "artist": "Susanne Wenger (Adunni Olorisha)",
+   "artist_born": "1915, Graz, Austria; d. 2009, Osogbo, Nigeria",
+   "artist_lives": "Osogbo, Nigeria (until her death)",
+   "deceased": true,
+   "collective": false,
+   "title": null,
+   "year": null,
+   "family": "textile",
+   "medium_line": "Wax-resist batik with cassava-starch paste, indigo-dyed cloth",
+   "dimensions": null,
+   "what_you_see": "Indigo-blue hangings with staring, wild-eyed figures drawn in resist lines. The figures are stylised archetypes and deities in dense compositions. They hang as tapestries in the Arsenale among other fibre work.",
+   "materials": [
+    "indigo-dyed cotton",
+    "cassava-starch resist paste"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Shows experiments with the Yoruba resist-dye technique adire eleko.",
+    "Wenger, a Viennese-trained artist who became a Yoruba priestess, is presented as the foreigner par excellence."
+   ],
+   "themes": [
+    "Yoruba religion",
+    "Jungian archetype",
+    "outsider who becomes insider",
+    "craft"
+   ],
+   "references": [
+    "Yoruba cosmology",
+    "Jung"
+   ],
+   "photo_notes": null,
+   "source": "https://harpers.org/archive/2024/12/the-painted-protest-dean-kissick-contemporary-art/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale (Nucleo Contemporaneo)",
+   "artist": "Pacita Abad",
+   "artist_born": "1946, Basco, Philippines; d. 2004, Singapore",
+   "artist_lives": null,
+   "deceased": true,
+   "collective": false,
+   "title": "You Have to Blend in before You Stand Out",
+   "year": null,
+   "family": "painting",
+   "medium_line": "Oil, painted batik cloth, sequins, buttons on stitched and padded canvas",
+   "dimensions": "294.6 x 297.2 cm",
+   "what_you_see": "A large, almost square padded canvas with raised surfaces made by stuffing and stitching (trapunto). It is covered in saturated painted cloth, sequins and buttons. Scenes of urban life from her travels are layered into a graphic composition. In the same show her Filipinas in Hong Kong (1995) depicts the Sunday gatherings of Filipina domestic workers.",
+   "materials": [
+    "oil paint",
+    "painted batik cloth",
+    "sequins",
+    "buttons",
+    "padded stitched canvas"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Trapunto painting is her own technique, applied to scenes of migrant life and urban belonging."
+   ],
+   "themes": [
+    "migration",
+    "domestic workers",
+    "pattern and ornament",
+    "women excluded from the canon"
+   ],
+   "references": [
+    "trapunto quilting"
+   ],
+   "photo_notes": null,
+   "source": "https://textilesocietyofamerica.org/13140/the-venice-biennale-a-textile-recap"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale (Nucleo Contemporaneo)",
+   "artist": "Juana Marta Rodas",
+   "artist_born": "Guarani ceramicist; birth year not stated",
+   "artist_lives": null,
+   "deceased": true,
+   "collective": false,
+   "title": "Untitled (ceramic miniatures)",
+   "year": null,
+   "family": "ceramic",
+   "medium_line": "Ceramic, small figures",
+   "dimensions": "Miniature",
+   "what_you_see": "Tiny hand-built clay animals set on a plinth or in a vitrine. One is a smiling frog-like creature; another, a creature like an armadillo with an aardvark head, curls up in a protective posture. They are whimsical and small next to the large works around them.",
+   "materials": [
+    "clay"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Rodas learned traditional methods from her mother and grandmother and developed an imaginative world of creatures, including a series of musicians."
+   ],
+   "themes": [
+    "Guarani craft lineage",
+    "creatures",
+    "whimsy"
+   ],
+   "references": [
+    "Guarani ceramic tradition"
+   ],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/standouts-from-the-2024-venice-biennale-foreigners-everywhere/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Outside the Arsenale main building, along the water",
+   "artist": "Lauren Halsey",
+   "artist_born": "South Central, Los Angeles",
+   "artist_lives": "Los Angeles",
+   "deceased": false,
+   "collective": false,
+   "title": "keepers of the krown",
+   "year": "2024",
+   "family": "architecture",
+   "medium_line": "Glass fibre reinforced concrete and mixed media (as listed by the gallery); concrete columns and benches",
+   "dimensions": "Variable",
+   "what_you_see": "A row of tall white columns in an Egyptian style stand outside the Arsenale near the water. Their capitals are sculpted portraits of friends and neighbours who look down on visitors. The shafts carry relief panels that copy hand-made shop signs from her neighbourhood, plus Egyptian symbols and phrases etched like graffiti. Three white benches echo the decoration.",
+   "materials": [
+    "concrete",
+    "relief-carved signage panels",
+    "portrait capitals"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Fuses ancient Egyptian architecture with the vernacular signs and portraits of South Central Los Angeles, which the artist treats as one continuum of Black culture.",
+    "Inscriptions include 'Thou shall not fold' and 'We want a full and complete freedom'."
+   ],
+   "themes": [
+    "Black futurism",
+    "neighbourhood monument",
+    "gentrification",
+    "temple prototype"
+   ],
+   "references": [
+    "Egyptian temple architecture",
+    "South Central LA signage"
+   ],
+   "photo_notes": "Photographed outdoors outside the Arsenale (photo credit Andrea Avezzu, courtesy artist and Gagosian).",
+   "source": "https://www.artnews.com/art-in-america/aia-reviews/foreigners-everywhere-inclusive-adriano-pedrosa-venice-biennale-1234712566/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale (Corderie, high ceiling)",
+   "artist": "Bárbara Sánchez-Kane",
+   "artist_born": "Mexico",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Prêt-À-Patria",
+   "year": "2021",
+   "family": "figure",
+   "medium_line": "Fibreglass and steel",
+   "dimensions": null,
+   "what_you_see": "Three figures in military dress climb in a line towards the ceiling of the Arsenale. A golden flagpole connects them, passing from anus to mouth. A circular red carpet sets the border so visitors cannot get close. From the front the figures look flayed or impaled; from the side they look like a human caterpillar.",
+   "materials": [
+    "fibreglass",
+    "steel",
+    "gold-coloured flagpole",
+    "red carpet"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The title plays on pret-a-porter and patria, nation as ready-to-wear."
+   ],
+   "themes": [
+    "militarism",
+    "hierarchy",
+    "queer body",
+    "nationalism"
+   ],
+   "references": [
+    "pret-a-porter",
+    "fascist and military parade imagery"
+   ],
+   "photo_notes": "Described as hard to photograph from one angle because of the vertical stack and the carpet boundary.",
+   "source": "https://hyperallergic.com/standouts-from-the-2024-venice-biennale-foreigners-everywhere/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale, Corderie, near the entrance",
+   "artist": "Frieda Toranzo Jaeger",
+   "artist_born": "Mexico City",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Rage is a Machine in Times of Senselessness",
+   "year": "2024",
+   "family": "painting",
+   "medium_line": "Multi-canvas polyptych with embroidery",
+   "dimensions": "Mural scale, stepped to a central peak",
+   "what_you_see": "A giant painted polyptych whose panels step up in height to a central peak like a ziggurat. It shows angular car-like machines with exhaust pipes blowing crimson smoke, looping lines like musical staves, and cut-outs of landscape with a gathering of queer women among ferns. Embroidery by the artist's Indigenous relatives is stitched into the canvas. It faces another vast mural at the other end of the Corderie.",
+   "materials": [
+    "oil paint",
+    "embroidery thread",
+    "canvas"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The artist calls the hiring of Indigenous family members to embroider 'semiological vandalism' of European painting's preciousness."
+   ],
+   "themes": [
+    "queer desire",
+    "machines",
+    "Indigenous craft",
+    "rage"
+   ],
+   "references": [
+    "Frida Kahlo (Viva la Vida, The Two Fridas)",
+    "Mexican muralists",
+    "pre-Columbian ziggurats"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2024/04/19/venice-biennale-2024-review-%7C-intimacy-and-violence-foreigners-everywhere-explodes-the-biennale-model"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Central Pavilion, Giardini",
+   "artist": "Pablo Delano",
+   "artist_born": "Puerto Rico connection; birth details not in sources",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "The Museum of the Old Colony",
+   "year": "2024",
+   "family": "archive",
+   "medium_line": "Archive-based conceptual installation",
+   "dimensions": "Variable",
+   "what_you_see": "A crowded room-sized display that works like a small history museum. It mixes official objects (a Mattel-approved light-skinned Puerto Rican Barbie doll) with photographs (dark-skinned schoolchildren looking at a painting of Abraham Lincoln in San Juan). Everything points to over 500 years of colonial rule since 1493.",
+   "materials": [
+    "found objects",
+    "photographs",
+    "dolls",
+    "printed documents"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Documents repressive Spanish and US acts against Indigenous and Afro-descendant Puerto Ricans.",
+    "A critic wrote it felt like a rabbit hole for visitors with limited time."
+   ],
+   "themes": [
+    "colonialism",
+    "Puerto Rico",
+    "archive as counter-museum"
+   ],
+   "references": [
+    "Columbus 1493",
+    "US colonial history"
+   ],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/standouts-from-the-2024-venice-biennale-foreigners-everywhere/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale and Giardini (Nucleo Contemporaneo)",
+   "artist": "Santiago Yahuarcani and Rember Yahuarcani (father and son)",
+   "artist_born": "Uitoto Nation, White Heron clan, Peruvian Amazon",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": null,
+   "year": null,
+   "family": "painting",
+   "medium_line": "Santiago: paint on tree bark or paper (light ground); Rember: paint on canvas (black ground)",
+   "dimensions": "Very large",
+   "what_you_see": "Two sets of enormous, crowded paintings hung as a pair. The father's are on light ground; the son's float on black. Both fill the picture edge to edge with humans, animals, spirits and hybrid beings, plus activist text on Indigenous rights and environmental destruction. Mythic creatures in the son's work are violent and sexual.",
+   "materials": [
+    "natural pigment",
+    "paper",
+    "canvas",
+    "tree bark (Santiago)"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The pairing shows an evolution in visual language from father to son.",
+    "Kissick wrote that their weirdness, not their identity, is what makes them great."
+   ],
+   "themes": [
+    "Amazonian myth",
+    "family of artists",
+    "environment",
+    "spirit beings"
+   ],
+   "references": [
+    "Uitoto cosmology",
+    "Indigenous rights"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2024/04/19/venice-biennale-2024-review-%7C-intimacy-and-violence-foreigners-everywhere-explodes-the-biennale-model"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Italian Pavilion, far end of the Arsenale (cavernous warehouse space)",
+   "artist": "Massimo Bartolini",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Due Qui / To Hear",
+   "year": "2024",
+   "family": "sound",
+   "medium_line": "Sound and architecture installation: scaffolding, organ machine, organ pipe, pool; music by Caterina Barbieri, Kali Malone, Gavin Bryars",
+   "dimensions": "Maze about 50 m long",
+   "what_you_see": "A long hand-made wooden bass organ pipe runs most of the length of the floor and gives a low hum. Through a doorway a scaffolding maze about fifty metres long carries an automated organ-like machine that pushes slow ambient music through its pipes. At the centre is a round pool of pulsing water. In the garden a choral piece by Gavin Bryars and his son plays from the trees. A second work, Pensive Bodhisattva on A Flat, lays a bodhisattva statue on a flat wooden column that turns out to be an organ pipe sounding a drone in A flat.",
+   "materials": [
+    "iron scaffolding",
+    "wooden organ pipe",
+    "organ machine",
+    "water",
+    "bodhisattva statue"
+   ],
+   "nonvisual": [
+    "sound: low drone, ambient organ lament, choral piece from trees",
+    "water: pulsing pool"
+   ],
+   "claims": [
+    "The curator writes that listening is a form of attention to others.",
+    "Kissick: a rare utopian space not reducible to social messaging."
+   ],
+   "themes": [
+    "listening",
+    "spiritual architecture",
+    "attention"
+   ],
+   "references": [
+    "bodhisattva",
+    "organ music",
+    "Venetian water"
+   ],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/hyperallergic-quick-guide-to-the-2024-venice-biennale-pavilions/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Japan Pavilion, Giardini",
+   "artist": "Yuko Mohri",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Moré Moré (Leaky): Variations",
+   "year": "2024",
+   "family": "found",
+   "medium_line": "Kinetic and sound installation: fruit, electrodes, speakers, leaking tubes, faucets, buckets, found objects",
+   "dimensions": "Pavilion-scale",
+   "what_you_see": "Polished wooden tables hold rotting fruit wired by electrodes to speakers and lights. Elsewhere, wobbling contraptions of tubes, faucets, buckets and found objects catch artificial leaks, copying the makeshift fixes of the Tokyo subway. It looks more like a laboratory or food-processing plant than a gallery. Fruit slowly decays through the run.",
+   "materials": [
+    "fruit",
+    "electrodes",
+    "speakers",
+    "tubes",
+    "faucets",
+    "buckets",
+    "found objects",
+    "water"
+   ],
+   "nonvisual": [
+    "sound: moisture in the fruit modulates ambient tones",
+    "scent: the smell of decay fills the pavilion",
+    "light: flicker driven by the fruit"
+   ],
+   "claims": [
+    "The leaks are never fully fixed; the futile fixes show human creativity.",
+    "The decay cycle refers to the Buddhist nine stages of decay."
+   ],
+   "themes": [
+    "improvised repair",
+    "decay as performance",
+    "precarity",
+    "Venice and flooding"
+   ],
+   "references": [
+    "Tokyo subway leaks",
+    "Rube Goldberg machines",
+    "Nine stages of decay"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2024/04/16/venice-biennale-2024-the-must-see-pavilions-in-the-giardini"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "US Pavilion, Giardini",
+   "artist": "Jeffrey Gibson",
+   "artist_born": "Mississippi Choctaw and Cherokee",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "the space in which to place me",
+   "year": "2024",
+   "family": "performance",
+   "medium_line": "Paintings, totemic sculptures, beadwork and textile garments, multichannel film (She Never Dances Alone), live performances",
+   "dimensions": "Pavilion-wide",
+   "what_you_see": "Bold colour fills the pavilion: large geometric paintings and totem-like sculptures decorated with beads and fabric. The pieces serve as stages for performers at set hours. A multi-channel film, She Never Dances Alone, runs inside.",
+   "materials": [
+    "paint",
+    "beads",
+    "fabric",
+    "film"
+   ],
+   "nonvisual": [
+    "performance: performers use the art as stage at scheduled times"
+   ],
+   "claims": [
+    "First Native American solo artist at the US pavilion.",
+    "Weaves intertribal aesthetics with European modernism and centres Indigenous communities."
+   ],
+   "themes": [
+    "Indigenous futurism",
+    "text and slogan",
+    "pattern",
+    "queer and Native joy"
+   ],
+   "references": [
+    "Native American beadwork",
+    "modernist abstraction"
+   ],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/hyperallergic-quick-guide-to-the-2024-venice-biennale-pavilions/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "British Pavilion, Giardini",
+   "artist": "John Akomfrah",
+   "artist_born": "Ghana; British-raised",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Listening All Night to the Rain",
+   "year": "2024",
+   "family": "video",
+   "medium_line": "Eight-part multimedia film and sound installation",
+   "dimensions": "Total running time about five hours",
+   "what_you_see": "Eight rooms, called cantos, show films on several screens at once. Archive footage, newly shot film and still images interlock with text. A quotation above one doorway reads that boats are open and sailed for everyone (Edouard Glissant). Viewers cannot take in all of it in one visit.",
+   "materials": [
+    "multi-screen film",
+    "archive footage",
+    "audio and text from archives"
+   ],
+   "nonvisual": [
+    "sound: water recordings, voices and music form the structure"
+   ],
+   "claims": [
+    "Listening is positioned as activism and as a way to know the world (acoustemology).",
+    "Links migrant diasporas, ecological harm and colonial histories."
+   ],
+   "themes": [
+    "water memory",
+    "diaspora",
+    "ecology",
+    "listening"
+   ],
+   "references": [
+    "Su Dongpo poem",
+    "Steven Feld acoustemology",
+    "Edouard Glissant"
+   ],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/hyperallergic-quick-guide-to-the-2024-venice-biennale-pavilions/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "German Pavilion, Giardini (plus La Certosa island)",
+   "artist": "Ersan Mondtag and Yael Bartana",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Thresholds",
+   "year": "2024",
+   "family": "architecture",
+   "medium_line": "Earth monolith, spaceship sculpture, mist and light, performance, film",
+   "dimensions": "Pavilion-scale",
+   "what_you_see": "The pavilion exterior is banked with soil up to the high windows; inside an earthen monolith stands at the centre. Rays of light pour through pumped-in mist from the high windows, and a sculptural spaceship hovers in a side room. Performers move through the spaces. A queue of visitors formed from opening week.",
+   "materials": [
+    "soil from Anatolia (reported)",
+    "mist",
+    "spaceship sculpture",
+    "live performers"
+   ],
+   "nonvisual": [
+    "performance: live actors",
+    "sound: a voice (Louis Chude-Sokei) greets visitors"
+   ],
+   "claims": [
+    "Built as a monument to forgotten working men; refers to Mondtag's grandfather who migrated from Anatolia in the 1960s.",
+    "Thresholds are liminal spaces between places and times."
+   ],
+   "themes": [
+    "migrant labour",
+    "liminal space",
+    "sci-fi",
+    "post-war history"
+   ],
+   "references": [
+    "Ridley Scott's Alien (reported comparison)",
+    "Turkish-German migration"
+   ],
+   "photo_notes": "Described as filmic: rays of light through pumped-in mist and a hovering spaceship.",
+   "source": "https://www.theartnewspaper.com/2024/04/16/venice-biennale-2024-the-must-see-pavilions-in-the-giardini"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Netherlands Pavilion, Giardini",
+   "artist": "CATPC (Cercle d'Art des Travailleurs de Plantation Congolaise) with Renzo Martens, curated by Hicham Khalidi",
+   "artist_born": "Congolese plantation workers' collective",
+   "artist_lives": "Democratic Republic of Congo",
+   "deceased": false,
+   "collective": true,
+   "title": "The International Celebration of Blasphemy and the Sacred",
+   "year": "2024",
+   "family": "scent",
+   "medium_line": "Cocoa-covered sculptures and installation",
+   "dimensions": null,
+   "what_you_see": "Vivid sculptures covered in cocoa fill the pavilion. A strong smell of cocoa meets visitors at the door. The material comes from land once planted by Unilever.",
+   "materials": [
+    "cocoa",
+    "sculpture"
+   ],
+   "nonvisual": [
+    "scent: strong cocoa smell"
+   ],
+   "claims": [
+    "Sales of the sculptures fund buying back plantation land where the artists and families have worked."
+   ],
+   "themes": [
+    "plantation economy",
+    "restitution",
+    "extraction"
+   ],
+   "references": [
+    "Unilever plantations in the Congo"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2024/04/16/venice-biennale-2024-the-must-see-pavilions-in-the-giardini"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Benin Pavilion (curated by Azu Nwagbogu), Arsenale",
+   "artist": "Romuald Hazoumè",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Àṣẹ",
+   "year": null,
+   "family": "shrine",
+   "medium_line": "Dome of jerrycans",
+   "dimensions": null,
+   "what_you_see": "A tall dome made of jerrycans (fuel canisters) with the spouts pointing down, as though about to pour. Visitors can step inside. A faint scent of incense gives the dome a sacred quality.",
+   "materials": [
+    "plastic jerrycans"
+   ],
+   "nonvisual": [
+    "scent: faint incense"
+   ],
+   "claims": [
+    "Jerrycans form a dome visitors can enter; incense lends it a sacred quality."
+   ],
+   "themes": [
+    "sacred space",
+    "reuse of containers"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/hyperallergic-quick-guide-to-the-2024-venice-biennale-pavilions/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Arsenale, under the arches facing the Grand Canal",
+   "artist": "Claire Fontaine (Fulvia Carnevale and James Thornhill)",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": true,
+   "title": "Stranieri Ovunque (Autoritratto), Foreigners Everywhere (Self-portrait)",
+   "year": "2024",
+   "family": "light",
+   "medium_line": "Double-sided wall or window-mounted neon, framework, transformers, cables and fittings, dimensions and colours variable",
+   "dimensions": "Variable",
+   "what_you_see": "A rainbow of neon words hangs under the arches of the Arsenale looking out to the water, and glitters in its reflections. It is the first work visitors see together with Shonibare's Refugee Astronaut VIII. The slogan has been made in many languages since 2004.",
+   "materials": [
+    "neon tubes",
+    "steel framework",
+    "transformers"
+   ],
+   "nonvisual": [
+    "light: neon glow reflected on the water"
+   ],
+   "claims": [
+    "The phrase is the source of the Biennale's title, a homage to a Turin anti-racist collective."
+   ],
+   "themes": [
+    "foreignness",
+    "slogan",
+    "neon"
+   ],
+   "references": [
+    "Turin anti-racism collective",
+    "neon text art"
+   ],
+   "photo_notes": "Described as a glittering rainbow of neon reflected in the water below.",
+   "source": "https://hyperallergic.com/standouts-from-the-2024-venice-biennale-foreigners-everywhere/"
+  },
+  {
+   "exhibition": "60th Venice Biennale: Stranieri Ovunque / Foreigners Everywhere",
+   "venue_room": "Uzbekistan Pavilion, Arsenale",
+   "artist": "Aziza Kadyri",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Don't miss the cue!",
+   "year": "2024",
+   "family": "digital",
+   "medium_line": "Suzani textiles, screens with AI-generated patterns",
+   "dimensions": null,
+   "what_you_see": "Traditional suzani embroidery hangs beside screens where AI generates new suzani-like patterns. A peacock motif morphs into sewing machines; a teapot motif turns into a 'girl dinner' image. The installation sits in a former House of Culture style space.",
+   "materials": [
+    "suzani textile",
+    "screens",
+    "AI image model"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Examines women's craft traditions through machine-made variants."
+   ],
+   "themes": [
+    "craft vs. AI",
+    "women's labour",
+    "Silk Road ornament"
+   ],
+   "references": [
+    "suzani embroidery",
+    "Zoroastrian peacock symbol"
+   ],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/hyperallergic-quick-guide-to-the-2024-venice-biennale-pavilions/"
+  },
+  {
+   "exhibition": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "venue_room": "Sixth floor gallery (wall)",
+   "artist": "Carmen Winant",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "The Last Safe Abortion",
+   "year": "2023",
+   "family": "archive",
+   "medium_line": "Collage of printed photographs",
+   "dimensions": "About 2,700 images; fills a gallery wall",
+   "what_you_see": "A huge wall is covered edge to edge with about 2,700 colour prints. The pictures show ordinary days in abortion clinics and protests after Roe v. Wade was overturned. Short blocks of text appear among them. The rows are arranged like a tapestry with warp and weft.",
+   "materials": [
+    "printed photographs",
+    "adhesive on wall"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Makes an abstract issue into a lived experience of time, money and logistics.",
+    "A critic found it persuasive without changing anyone's mind; it won over viewers through sheer accumulation."
+   ],
+   "themes": [
+    "reproductive rights",
+    "care labour",
+    "archive"
+   ],
+   "references": [
+    "Roe v. Wade",
+    "clinic archives in the Midwest and South"
+   ],
+   "photo_notes": "Installation views show a dense colour grid covering a large white wall.",
+   "source": "https://museemagazine.com/culture/2024/4/7/whitney-biennial-2024-even-better-than-the-real-thing"
+  },
+  {
+   "exhibition": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "venue_room": "Gallery with suspended works",
+   "artist": "Suzanne Jackson",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "deepest ocean, what we do not know, we might see?",
+   "year": "2021",
+   "family": "painting",
+   "medium_line": "Acrylic medium and pigment poured on plastic sheets; mixed media; suspended",
+   "dimensions": "108 x 125 in (this piece)",
+   "what_you_see": "A whole gallery of translucent painted sheets that hang from the ceiling or lean on the wall like sails. The sheets are made from layers of poured acrylic and hold bits of pistachio shells, nylon curtain mesh, produce-bag netting and shredded mail. Silhouettes of visitors show through.",
+   "materials": [
+    "acrylic medium",
+    "pigment",
+    "plastic sheet",
+    "pistachio shells",
+    "nylon mesh",
+    "shredded mail"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The pieces work like records of a journey taken with materials."
+   ],
+   "themes": [
+    "anti-canvas",
+    "memory",
+    "sea"
+   ],
+   "references": [
+    "abstract painting",
+    "sails"
+   ],
+   "photo_notes": "Described as a gossamer surface that lets silhouettes and movement show through.",
+   "source": "https://hyperallergic.com/first-impressions-from-the-2024-whitney-biennial/"
+  },
+  {
+   "exhibition": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "venue_room": "Sixth floor terrace",
+   "artist": "Kiyan Williams",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Ruins of Empire II or The Earth Swallows the Master's House",
+   "year": "2024",
+   "family": "earth",
+   "medium_line": "Earth and steel",
+   "dimensions": null,
+   "what_you_see": "The north facade of the White House, rebuilt in sod and steel, leans and sinks into the ground on the open terrace. Hairline cracks cross the earth. An upside-down American flag flaps beside it.",
+   "materials": [
+    "soil",
+    "steel",
+    "American flag"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "All empires end; the earth swallows the master's house."
+   ],
+   "themes": [
+    "empire",
+    "fragile democracy",
+    "earth"
+   ],
+   "references": [
+    "White House",
+    "ruin picturesque"
+   ],
+   "photo_notes": null,
+   "source": "https://www.berkshireeagle.com/arts-and-culture/art-review-7-works-to-seek-out-at-the-whitney-biennial/948373"
+  },
+  {
+   "exhibition": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "venue_room": "Sixth floor, by a window",
+   "artist": "Eddie Rodolfo Aparicio",
+   "artist_born": null,
+   "artist_lives": "Los Angeles",
+   "deceased": false,
+   "collective": false,
+   "title": "Paloma Blanca Deja Volar / White Dove Let Us Fly",
+   "year": "2024",
+   "family": "earth",
+   "medium_line": "Modified amber, volcanic stone, pigeon wings, ceramic, cloth, archival documents, found objects",
+   "dimensions": null,
+   "what_you_see": "A monolithic block of amber stands in front of a sunlit window. Warmth slowly melts, cracks and shifts it. Through the amber you can see suspended documents, volcanic stone, pigeon wings, cloth, grasses, leaves and tree limbs, like objects frozen in a river of resin.",
+   "materials": [
+    "amber (resin) block",
+    "volcanic stone",
+    "pigeon wings",
+    "cloth",
+    "documents",
+    "tree limbs"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Slow change in the amber stands in for how memory and trauma shift in the body.",
+    "Embedded papers concern white solidarity activists and the Central American peace movement."
+   ],
+   "themes": [
+    "memory",
+    "solidarity and privilege",
+    "entropy",
+    "trees and migrant workers"
+   ],
+   "references": [
+    "Salvadoran 1930s massacre",
+    "Central American Peace and Solidarity Movement"
+   ],
+   "photo_notes": "Described as an amber-coloured block with objects suspended inside, in front of a window.",
+   "source": "https://www.berkshireeagle.com/arts-and-culture/art-review-7-works-to-seek-out-at-the-whitney-biennial/948373"
+  },
+  {
+   "exhibition": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "venue_room": "Fifth floor",
+   "artist": "Rose B. Simpson",
+   "artist_born": "Santa Clara Pueblo (Tewa)",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Daughters: Reverence",
+   "year": "2024",
+   "family": "figure",
+   "medium_line": "Clay, steel, grout, twine, pine and hide",
+   "dimensions": "Life-size figures",
+   "what_you_see": "Four rough-surfaced humanoid figures stand like compass points, turned inward, with hollow eyes lifted upwards. They are decorated with twine and beads and carry the look of Pueblo ceramic tradition. The figures read as both ancestors and future ancestors.",
+   "materials": [
+    "clay",
+    "steel",
+    "grout",
+    "twine",
+    "pine",
+    "hide"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Heals the damage of the postmodern and postcolonial era, in the artist's words.",
+    "A matrilineal lineage connected to the universe."
+   ],
+   "themes": [
+    "ancestors",
+    "matrilineage",
+    "healing"
+   ],
+   "references": [
+    "Pueblo ceramic tradition (mother, grandmother and great-grandmother)"
+   ],
+   "photo_notes": null,
+   "source": "https://www.berkshireeagle.com/arts-and-culture/art-review-7-works-to-seek-out-at-the-whitney-biennial/948373"
+  },
+  {
+   "exhibition": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "venue_room": "Sixth floor or gallery with musical works",
+   "artist": "Nikita Gale",
+   "artist_born": null,
+   "artist_lives": "Los Angeles",
+   "deceased": false,
+   "collective": false,
+   "title": "TEMPO RUBATO (STOLEN TIME)",
+   "year": "2023-24",
+   "family": "sound",
+   "medium_line": "Modified player piano, audio and LED lighting system",
+   "dimensions": null,
+   "what_you_see": "A player piano whose keys move with no player and no music: the performance has been silenced so only the clicks and mechanics are heard and lit, amplified through a custom sound and light rig. Visitors watch the machine's inner works rather than hear a song.",
+   "materials": [
+    "player piano",
+    "LED lights",
+    "audio system"
+   ],
+   "nonvisual": [
+    "sound: amplified mechanical noise of the piano action, not the melody"
+   ],
+   "claims": [
+    "The piece asks how labour and performance become intellectual property.",
+    "Won the Whitney's Bucksbaum Award."
+   ],
+   "themes": [
+    "labour",
+    "copyright",
+    "absent body"
+   ],
+   "references": [
+    "pop music performances",
+    "player piano"
+   ],
+   "photo_notes": null,
+   "source": "https://artreview.com/whitney-biennial-2024-new-york-review/"
+  },
+  {
+   "exhibition": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "venue_room": "Fifth floor, visible from the street",
+   "artist": "Demian DinéYazhi'",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "we must stop imagining apocalypse/genocide + we must imagine liberation",
+   "year": "2024",
+   "family": "light",
+   "medium_line": "Red neon and steel",
+   "dimensions": null,
+   "what_you_see": "Red neon sentences in a protest-sign style are mounted on steel in the window. The tubes flicker and, as they do, spell out 'Free Palestine'. Another text calls on viewers to stop predicting apocalypses and fascist governments, and to imagine routes towards liberation. It can be seen from the street.",
+   "materials": [
+    "neon",
+    "steel"
+   ],
+   "nonvisual": [
+    "light: flickering red neon"
+   ],
+   "claims": [
+    "Challenges Euro-Western fascination with dystopia; the Free Palestine message was hidden until the press preview."
+   ],
+   "themes": [
+    "liberation",
+    "protest",
+    "Indigenous futures"
+   ],
+   "references": [
+    "protest signs",
+    "Gaza"
+   ],
+   "photo_notes": null,
+   "source": "https://www.berkshireeagle.com/arts-and-culture/art-review-7-works-to-seek-out-at-the-whitney-biennial/948373"
+  },
+  {
+   "exhibition": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "venue_room": "Gallery next to Weston's glass installation",
+   "artist": "Mavis Pusey",
+   "artist_born": "Jamaica",
+   "artist_lives": "Lived in New York (Chelsea)",
+   "deceased": true,
+   "collective": false,
+   "title": null,
+   "year": "1970s",
+   "family": "painting",
+   "medium_line": "Paintings",
+   "dimensions": null,
+   "what_you_see": "Paintings of shutters, boards and window frames that crash against each other. Openings appear to promise a view but are filled with a block of muted colour. They are hung beside Charisse Weston's smoked glass parallelograms, whose angles echo them.",
+   "materials": [
+    "paint"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The only dead artist in the main section; ARTnews called her paintings a possible key to the show."
+   ],
+   "themes": [
+    "thresholds",
+    "denied access",
+    "geometry"
+   ],
+   "references": [
+    "Chelsea in the 1970s",
+    "Weston's smoked glass sculpture"
+   ],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/art-news/reviews/whitney-biennial-2024-review-1234699647/"
+  },
+  {
+   "exhibition": "Whitney Biennial 2024: Even Better Than the Real Thing",
+   "venue_room": "Fifth floor",
+   "artist": "Karyn Olivier",
+   "artist_born": "Trinidad",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "How Many Ways Can You Disappear",
+   "year": "2021",
+   "family": "found",
+   "medium_line": "Found Maine lobster traps, pot warp, buoys, rope cast in salt, resin",
+   "dimensions": "Floor piece, no stanchions",
+   "what_you_see": "A tangle of multicoloured rope lies on the floor with found buoys hung over it. A rope made of salt hangs from the pieces. The sculpture is installed without barriers, so visitors walk right up to it.",
+   "materials": [
+    "lobster traps",
+    "pot warp",
+    "buoys",
+    "salt-cast rope",
+    "resin"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Wall text links salt to the ancient trade of salt for enslaved people.",
+    "Kissick cited this as a case where meaning lives only in the label."
+   ],
+   "themes": [
+    "maritime labour",
+    "slave trade",
+    "absence of bodies"
+   ],
+   "references": [
+    "Maine fishing",
+    "transatlantic trade"
+   ],
+   "photo_notes": null,
+   "source": "https://harpers.org/archive/2024/12/the-painted-protest-dean-kissick-contemporary-art/"
+  },
+  {
+   "exhibition": "Whitney Biennial 2026",
+   "venue_room": "Fifth floor, outside the elevators (first work seen)",
+   "artist": "Emilie Louise Gossiaux",
+   "artist_born": "New Orleans",
+   "artist_lives": "New York",
+   "deceased": false,
+   "collective": false,
+   "title": "Kong Play",
+   "year": "2025",
+   "family": "ceramic",
+   "medium_line": "Ceramic, painted",
+   "dimensions": "100 objects on a low two-tier plinth",
+   "what_you_see": "A hundred bulbous ceramic copies of a dog's chew toy sit on a low two-tiered plinth, each painted a different hue. Drawings nearby show the blind artist in everyday and fantastical scenes with their guide dog. It reads as a shrine to the dead dog.",
+   "materials": [
+    "ceramic",
+    "glaze or paint"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "A tribute to the artist's guide dog London; envisions an afterlife of play.",
+    "Blurs the hierarchy between humans and animals."
+   ],
+   "themes": [
+    "interspecies kinship",
+    "grief",
+    "disability",
+    "shrine"
+   ],
+   "references": [
+    "Kong toys"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "exhibition": "Whitney Biennial 2026",
+   "venue_room": "Fifth floor",
+   "artist": "Oswaldo Maciá",
+   "artist_born": "Colombia",
+   "artist_lives": "London and New Mexico",
+   "deceased": false,
+   "collective": false,
+   "title": "Requiem for the Insects",
+   "year": "2026",
+   "family": "scent",
+   "medium_line": "Sound, scent, sculpture and painting",
+   "dimensions": null,
+   "what_you_see": "A room installation that combines paintings, sculpture and glass megaphones that play insect sounds. A scent drifts through the space.",
+   "materials": [
+    "glass megaphones",
+    "paintings",
+    "sculpture",
+    "scent"
+   ],
+   "nonvisual": [
+    "sound: insect calls through glass megaphones",
+    "scent: part of the installation"
+   ],
+   "claims": [
+    "The artist wants viewers to pause and engage with natural languages through sound and smell, instead of 'I know that, next'."
+   ],
+   "themes": [
+    "more-than-human",
+    "insect decline",
+    "requiem"
+   ],
+   "references": [
+    "natural acoustics",
+    "olfactory language"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "exhibition": "Whitney Biennial 2026",
+   "venue_room": "Sixth floor near terrace (some reports say fifth floor)",
+   "artist": "José Maceda, recreated by Aki Onda",
+   "artist_born": "Maceda 1917, Philippines",
+   "artist_lives": null,
+   "deceased": true,
+   "collective": false,
+   "title": "Ugnayan (Music for Twenty Radio Stations)",
+   "year": "1974 (restaged 2026)",
+   "family": "sound",
+   "medium_line": "Installation of 20 radios playing simultaneously",
+   "dimensions": "20 radios",
+   "what_you_see": "Twenty radios stand together and play twenty parts of one composition at the same time. Documentation of the 1974 broadcast and its promotion by the Marcos regime sits alongside.",
+   "materials": [
+    "20 radios",
+    "recorded reels",
+    "documents"
+   ],
+   "nonvisual": [
+    "sound: twenty simultaneous parts for voice and Indigenous instruments"
+   ],
+   "claims": [
+    "Raises whether art can ever be separated from politics; the original was transmitted on 20 Manila radio stations at once."
+   ],
+   "themes": [
+    "nation as imagined community",
+    "broadcast",
+    "Marcos era"
+   ],
+   "references": [
+    "Marcos regime",
+    "Filipino bamboo music"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "exhibition": "Whitney Biennial 2026",
+   "venue_room": "Fifth floor terrace",
+   "artist": "Kelly Akashi",
+   "artist_born": "Los Angeles",
+   "artist_lives": "Los Angeles (Altadena home razed)",
+   "deceased": false,
+   "collective": false,
+   "title": "Monument (Altadena)",
+   "year": "2026",
+   "family": "shrine",
+   "medium_line": "Glass brick reconstruction of a fireplace and chimney",
+   "dimensions": null,
+   "what_you_see": "A ghostly replica of her house's fireplace and chimney, built in glass brick on the open terrace. It is the only part of her Altadena home left after the Eaton fire.",
+   "materials": [
+    "glass brick"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "A monument to grief for a home lost."
+   ],
+   "themes": [
+    "wildfire",
+    "mourning",
+    "domestic remains"
+   ],
+   "references": [
+    "Eaton fire 2025"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "exhibition": "Whitney Biennial 2026",
+   "venue_room": "Sixth floor",
+   "artist": "Agosto Machado",
+   "artist_born": null,
+   "artist_lives": "New York (self-styled street queen); died (date not stated in source)",
+   "deceased": true,
+   "collective": false,
+   "title": "Ethyl (Altar)",
+   "year": "2024",
+   "family": "shrine",
+   "medium_line": "Jewelry, matchbooks, pins, textile; plastic, metal and ceramic objects; postcards, photographs, handmade feather butterfly, mask with glitter, coins, makeup compact; works by Peter Hujar, Thomas Lanigan-Schmidt, Uzi Parnes",
+   "dimensions": null,
+   "what_you_see": "A crowded altar-like assemblage of hoarded personal things: jewellery, matchbooks, pins, glitter masks, postcards, photographs and containers of ephemera. Each altar remembers a friend or figure of New York's queer counterculture. Several altars are shown close together.",
+   "materials": [
+    "jewelry",
+    "matchbooks",
+    "textile",
+    "postcards",
+    "photographs",
+    "feathers",
+    "glitter",
+    "coins"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Built through years of caring for chosen family during the AIDS epidemic."
+   ],
+   "themes": [
+    "queer memorial",
+    "AIDS",
+    "chosen family"
+   ],
+   "references": [
+    "Peter Hujar",
+    "Anna May Wong (another altar)"
+   ],
+   "photo_notes": null,
+   "source": "https://fineartglobe.com/artists/whitney-biennial-2026-review-a-bold-messy-portrait-of-contemporary-america/"
+  },
+  {
+   "exhibition": "Whitney Biennial 2026",
+   "venue_room": "Fifth floor",
+   "artist": "Carmen de Monteflores (paintings) and Andrea Fraser (wax sculptures)",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Four Women",
+   "year": "late 1960s",
+   "family": "painting",
+   "medium_line": "Shaped canvases, paired with hyperrealist wax sculptures of sleeping toddlers (Fraser, 2024)",
+   "dimensions": null,
+   "what_you_see": "Three boldly coloured shaped canvases of intertwined nude couples and groups, painted in the late 1960s, hang near five lifelike wax toddlers asleep in plexiglass cases. The wax is a type that never hardens.",
+   "materials": [
+    "acrylic or oil on shaped canvas",
+    "wax",
+    "plexiglass"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The pairing shows how a mother gave up art when her youngest child (the artist's daughter) was born."
+   ],
+   "themes": [
+    "motherhood",
+    "rediscovered artist",
+    "intergenerational"
+   ],
+   "references": [
+    "art world's lack of support for mothers"
+   ],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/the-polycrisis-sublime-of-the-whitney-biennial/"
+  },
+  {
+   "exhibition": "Whitney Biennial 2026",
+   "venue_room": "Fifth floor",
+   "artist": "Erin Jane Nelson",
+   "artist_born": null,
+   "artist_lives": "New Mexico",
+   "deceased": false,
+   "collective": false,
+   "title": "Sunflower Cam (also Angel Cam, Bunny Cam)",
+   "year": "2024-2025",
+   "family": "ceramic",
+   "medium_line": "Ceramic sculptures with pinhole apertures; ceramic frames with photographic prints",
+   "dimensions": null,
+   "what_you_see": "Freestanding ceramic sculptures that look like amoebas or sea anemones have small holes and work as pinhole cameras. Some were placed in the New Mexico desert, and their blurry images hang in a grid of mismatched ceramic frames.",
+   "materials": [
+    "ceramic",
+    "photographic paper"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Connects ceramic and photographic processes: both involve a change of state that the maker does not see."
+   ],
+   "themes": [
+    "alchemy",
+    "landscape",
+    "slow images"
+   ],
+   "references": [
+    "pinhole camera"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/06/01/2026-whitney-biennial-exhibition-review-five-themes"
+  },
+  {
+   "exhibition": "Unravel: The Power and Politics of Textiles in Art",
+   "venue_room": "Barbican Art Gallery, Ancestral Threads",
+   "artist": "Cecilia Vicuña",
+   "artist_born": "Chile",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Quipu Austral",
+   "year": "2012",
+   "family": "textile",
+   "medium_line": "Unspun dyed wool, installation",
+   "dimensions": null,
+   "what_you_see": "A forest of long, slender lengths of unspun wool, dyed in bright colours and knotted at the top, hangs from the ceiling and stirs when visitors pass. The knots echo the Andean quipu.",
+   "materials": [
+    "unspun wool",
+    "dye"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The knots form a system of writing that links the makers to the cosmos (curator tour text).",
+    "During the show she kept the work in and pinned a solidarity letter beside it."
+   ],
+   "themes": [
+    "ancestral writing",
+    "knot as language"
+   ],
+   "references": [
+    "Andean quipu"
+   ],
+   "photo_notes": null,
+   "source": "https://www.londonartwalk.com/2024/04/12/unravel-the-power-and-politics-of-textiles-in-art/"
+  },
+  {
+   "exhibition": "Unravel: The Power and Politics of Textiles in Art",
+   "venue_room": "Barbican Art Gallery, Bearing Witness",
+   "artist": "Hannah Ryggen",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": true,
+   "collective": false,
+   "title": "Blood in the Grass",
+   "year": "1966",
+   "family": "textile",
+   "medium_line": "Tapestry",
+   "dimensions": null,
+   "what_you_see": "A colourful hand-woven anti-Vietnam war tapestry with strong colour and texture.",
+   "materials": [
+    "wool"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Protest tapestry that connects domestic weaving to political comment."
+   ],
+   "themes": [
+    "Vietnam war protest"
+   ],
+   "references": [
+    "Vietnam war"
+   ],
+   "photo_notes": null,
+   "source": "https://www.hackneycitizen.co.uk/2024/02/19/unravel-barbican-exhibition-review-textiles-art/"
+  },
+  {
+   "exhibition": "Unravel: The Power and Politics of Textiles in Art",
+   "venue_room": "Barbican Art Gallery, Fabric of Everyday Life",
+   "artist": "Sheila Hicks",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Family Treasures",
+   "year": "1993",
+   "family": "textile",
+   "medium_line": "Yarn bundles of cherished items",
+   "dimensions": null,
+   "what_you_see": "A group of brightly coloured bundles of fabric and yarn, each wrapped around items given by family members. They are arranged as a small field of soft sculptures.",
+   "materials": [
+    "yarn",
+    "family textiles"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Challenges the domestic and decorative image of textiles."
+   ],
+   "themes": [
+    "memory",
+    "family",
+    "craft versus art"
+   ],
+   "references": [
+    "1960s fibre art"
+   ],
+   "photo_notes": null,
+   "source": "https://www.londonartwalk.com/2024/04/12/unravel-the-power-and-politics-of-textiles-in-art/"
+  },
+  {
+   "exhibition": "Unravel: The Power and Politics of Textiles in Art",
+   "venue_room": "Barbican Art Gallery, Bearing Witness",
+   "artist": "Teresa Margolles",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "american Juju for the Tapestry of Truth",
+   "year": null,
+   "family": "textile",
+   "medium_line": "Patchwork tapestries with blood or ground residue",
+   "dimensions": null,
+   "what_you_see": "Patchwork cloths: one carries blood from a woman killed in Panama City, another was laid on the New York street where Eric Garner was killed. One piece was absent on a reviewer's visit.",
+   "materials": [
+    "patchwork cloth",
+    "blood (one piece)"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Material protest against forgetting violent death."
+   ],
+   "themes": [
+    "violence",
+    "mourning",
+    "state killing"
+   ],
+   "references": [
+    "Eric Garner"
+   ],
+   "photo_notes": null,
+   "source": "https://timeout.com/london/art/unravel-the-power-and-politics-of-textiles-in-art"
+  },
+  {
+   "exhibition": "Hyundai Commission, Tate Modern Turbine Hall 2023",
+   "venue_room": "Turbine Hall (ramp to bridge)",
+   "artist": "El Anatsui",
+   "artist_born": "1944, Anyako, Ghana",
+   "artist_lives": "Nigeria",
+   "deceased": false,
+   "collective": false,
+   "title": "Behind the Red Moon",
+   "year": "2023",
+   "family": "found",
+   "medium_line": "Hangings of crushed bottle tops and copper wire; black wall; metal pools",
+   "dimensions": "Three monumental pieces",
+   "what_you_see": "Act I is a red-and-yellow billowing sail on the ramp, with red caps forming a blood-moon disc. Act II is a layered group of hanging figures made of thin bottle-top seals wired into a net, which merge into the circle of the Earth when seen from the bridge. Act III is a black wall from floor to ceiling with metal 'waves' at its base.",
+   "materials": [
+    "liquor bottle tops",
+    "copper wire",
+    "metal seals"
+   ],
+   "nonvisual": [
+    "sound: soundscape by Peter Adjaye"
+   ],
+   "claims": [
+    "Connected to transatlantic trade in sugar, rum and people.",
+    "Breaking is not destruction but a necessity for reforming."
+   ],
+   "themes": [
+    "migration",
+    "fragmentation",
+    "trade"
+   ],
+   "references": [
+    "transatlantic slave trade",
+    "Notsie wall (Ewe history)"
+   ],
+   "photo_notes": null,
+   "source": "https://www.tate.org.uk/whats-on/tate-modern/el-anatsui/exhibition-guide"
+  },
+  {
+   "exhibition": "Hyundai Commission, Tate Modern Turbine Hall 2024",
+   "venue_room": "Turbine Hall",
+   "artist": "Mire Lee",
+   "artist_born": "1988, Seoul",
+   "artist_lives": "Amsterdam and Seoul",
+   "deceased": false,
+   "collective": false,
+   "title": "Open Wound",
+   "year": "2024",
+   "family": "performance",
+   "medium_line": "Kinetic installation: motorised turbine, silicone hoses, steel frames, scaffolding netting, chains, viscous liquid",
+   "dimensions": "Turbine about 8 m long and over 3 tonnes; 49 chains; skins grew from 98 to 152",
+   "what_you_see": "A slowly rotating turbine hangs from a ceiling crane and sloshes dark pink liquid through fleshy silicone tubes on to pale fabric 'skins'. The skins drape over bent steel frames and are then dried on racks and hauled up on chains. Technicians in hi-vis move them. Cladding was stripped from the bridge to expose wiring.",
+   "materials": [
+    "silicone tubes",
+    "steel",
+    "scaffold netting",
+    "chains",
+    "liquid of water, methyl cellulose, pigment and aspirin"
+   ],
+   "nonvisual": [
+    "sound: dripping liquid",
+    "performance: technicians work during opening hours"
+   ],
+   "claims": [
+    "A factory-like body: soft organic forms against rigid machinery.",
+    "Lee says being moved is the strongest thing art can do."
+   ],
+   "themes": [
+    "industrial labour",
+    "bodily fluid",
+    "decline",
+    "care"
+   ],
+   "references": [
+    "pit-head baths for miners",
+    "textile production",
+    "Bankside Power Station"
+   ],
+   "photo_notes": null,
+   "source": "https://www.tate.org.uk/whats-on/tate-modern/mire-lee/exhibition-guide"
+  },
+  {
+   "exhibition": "Hyundai Commission, Tate Modern Turbine Hall 2025",
+   "venue_room": "Turbine Hall",
+   "artist": "Máret Ánne Sara",
+   "artist_born": "1983, Guovdageaidnu (Kautokeino), Norway; Sami",
+   "artist_lives": "Guovdageaidnu, Norway",
+   "deceased": false,
+   "collective": false,
+   "title": "Goavve-Geabbil",
+   "year": "2025",
+   "family": "scent",
+   "medium_line": "Reindeer hides bound by electrical cables; maze structure; sound and scent",
+   "dimensions": "Cables run floor to ceiling",
+   "what_you_see": "Reindeer hides are tightly bound by power cables in a tall hanging sculpture. Beside it is a maze-like structure modelled on the inside of a reindeer's nose, with wall carvings from family earmarks and seats covered in reindeer hide where visitors listen to stories through headphones.",
+   "materials": [
+    "reindeer hides",
+    "electrical cables",
+    "carved walls"
+   ],
+   "nonvisual": [
+    "scent: lichen, shoegrass, reindeer milk and the artist's breast milk, plus the fear-scent of reindeer",
+    "sound: joik and landscape recordings, stories from Sami knowledge keepers"
+   ],
+   "claims": [
+    "Energy as a sacred life-force sustained by reciprocity.",
+    "Presents Sami science as hard knowledge."
+   ],
+   "themes": [
+    "extraction",
+    "climate crisis",
+    "Sami knowledge"
+   ],
+   "references": [
+    "duodji",
+    "joik",
+    "reindeer herding"
+   ],
+   "photo_notes": null,
+   "source": "https://www.tate.org.uk/whats-on/tate-modern/maret-anne-sara/exhibition-guide"
+  },
+  {
+   "exhibition": "58th Carnegie International: Is it morning for you yet?",
+   "venue_room": "Museum lobby",
+   "artist": "Krista Belle Stewart",
+   "artist_born": "Syilx Nation (Canada)",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Eye Eye",
+   "year": "2017-ongoing",
+   "family": "earth",
+   "medium_line": "Pigment made from soil on copper-coloured painting",
+   "dimensions": "Large; greets visitors in the lobby",
+   "what_you_see": "A striking copper-toned abstract painting meets visitors in the museum lobby. Its pigment comes from soil of land she recently came to own in Canada.",
+   "materials": [
+    "earth pigment",
+    "canvas or wall"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Asks what private ownership of land means for an Indigenous person on a reservation held by the Crown."
+   ],
+   "themes": [
+    "land ownership",
+    "political abstraction"
+   ],
+   "references": [
+    "Syilx land"
+   ],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/art-in-america/aia-reviews/58th-carnegie-international-1234645900/"
+  }
+ ],
+ "titles_verbatim": [
+  "Takapau",
+  "kith and kin",
+  "Come, let me heal your wounds. Let me mend your broken bones",
+  "keepers of the krown",
+  "Prêt-À-Patria",
+  "Rage is a Machine in Times of Senselessness",
+  "Diaspore",
+  "Kapewe Pukeni [Bridgealligator]",
+  "Stranieri Ovunque (Autoritratto), Foreigners Everywhere (Self-portrait)",
+  "Refugee Astronaut VIII",
+  "Dios es inmigrante (God Is an Immigrant)",
+  "Filipinas in Hong Kong",
+  "You Have to Blend in before You Stand Out",
+  "The Museum of the Old Colony",
+  "Wastelands",
+  "Machine Boys",
+  "Paseo",
+  "The Geometric Ballad of Fear",
+  "Foreigners Please Don't Leave Us Alone With The Danes!",
+  "Two unidentified lovers in a mirror",
+  "Metropolitan",
+  "An Argument",
+  "Night Grove",
+  "Due Qui / To Hear",
+  "Pensive Bodhisattva on A Flat",
+  "Moré Moré (Leaky)",
+  "Compose",
+  "Thresholds",
+  "Listening All Night to the Rain",
+  "the space in which to place me",
+  "Drama 1882",
+  "Trinket",
+  "Transfer III (Metal, wood, beads)",
+  "Monument to the Restitution of the Mind and Soul",
+  "Blackhood: A living Archive",
+  "Everything Precious Is Fragile",
+  "Seeing Forest",
+  "Don't miss the cue!",
+  "Latent",
+  "Bokk – Bounds",
+  "The International Celebration of Blasphemy and the Sacred",
+  "The heart of a giraffe in captivity is twelve kilos lighter",
+  "Repeat After Me",
+  "Ka'a Pûera: we are walking birds",
+  "Courtyard of Attachments",
+  "The Last Safe Abortion",
+  "deepest ocean, what we do not know, we might see?",
+  "Daughters: Reverence",
+  "Uŋziwoslal Wašičuta",
+  "Ruins of Empire II or The Earth Swallows the Master's House",
+  "How Many Ways Can You Disappear",
+  "TEMPO RUBATO (STOLEN TIME)",
+  "Paloma Blanca Deja Volar / White Dove Let Us Fly",
+  "Liquid Shadows, Solid Dreams (A Monastic Playground)",
+  "we must stop imagining apocalypse/genocide + we must imagine liberation",
+  "Toilette",
+  "Pollinator",
+  "Once Again… (Statues Never Die)",
+  "In Her Time (Iris's Version)",
+  "Ricerche: four",
+  "Statue of Freedom (Marsha P. Johnson)",
+  "The Past Awaiting the Future/Arrival of Drummers",
+  "Too Bright to See",
+  "Lifelike",
+  "Air I Breathe: Radio",
+  "Dura Pictures",
+  "Nourisher",
+  "xhairymutantx",
+  "In Cascades",
+  "Kong Play",
+  "Requiem for the Insects",
+  "Ugnayan",
+  "Monument (Altadena)",
+  "Until we became fire and fire us",
+  "Four Women",
+  "Man and Woman Sitting",
+  "Moon Sightings",
+  "Sanhattan",
+  "Civic Views",
+  "Rule",
+  "Homo Machina (Human Machine, a.k.a. Gay Machine)",
+  "Camoflux: Levels & Bosses",
+  "Pandemonium",
+  "Divine Dance of Soft Revolt (Anna, Travis, Me)",
+  "SHE MUST BE A MATRIARCH",
+  "Blowhard",
+  "Anna May Wong (Altar)",
+  "Ethyl (Altar)",
+  "Look Where I Took You",
+  "Sunflower Cam",
+  "Satan in America and Other Invisible Evils",
+  "Quipu Austral",
+  "Blood in the Grass",
+  "Family Treasures",
+  "Birth Tear",
+  "Tar Beach 2",
+  "The Space in Between",
+  "No Chance",
+  "american Juju for the Tapestry of Truth",
+  "Hammock (part of 4 Hammocks)",
+  "Behind the Red Moon",
+  "Open Wound",
+  "Goavve-Geabbil",
+  "Eye Eye",
+  "Colors of Grey",
+  "More Than Conquerors: A Monument for Community Health Workers of Baltimore, Maryland",
+  "Forbidden Colors",
+  "A Gift to the Hill District",
+  "Suspension",
+  "Sugungga (Hello)",
+  "Pinktoned (Exploded View)",
+  "Battle of the City on Fire",
+  "Collective Scream",
+  "House of Music",
+  "Emajendat"
+ ],
+ "phrases": [
+  "foreigners everywhere",
+  "paying a historical debt",
+  "first time at the Biennale",
+  "always, deep down, a foreigner",
+  "queer, outsider, folk and Indigenous",
+  "gesturing towards decolonial futures",
+  "ancestral techniques and gestures",
+  "both a cosmology and a shelter",
+  "the power and politics of textiles",
+  "subvert, undermine and speak back to power",
+  "vehicles for embodied liberation",
+  "a tool of resistance",
+  "wound and repair",
+  "bearing witness",
+  "subversive stitch",
+  "ancestral threads",
+  "emancipatory joy and transcendence",
+  "histories of extraction and violence",
+  "a dissonant chorus",
+  "bodies shapeshifting in physical and virtual space",
+  "tactics of Black refusal",
+  "imagined futures free of colonialism and capitalism",
+  "residues of empire",
+  "intimate, strained and unresolved forms of relation",
+  "interspecies kinships",
+  "relationality, infrastructure, entanglements",
+  "mood and texture",
+  "togetherness through difference",
+  "improvised provocations and irreverent associations",
+  "a sacred life-force",
+  "reciprocal relationships",
+  "an open wound that never closes",
+  "the time of decline",
+  "movement and migration of people and goods",
+  "migration, appropriation, expropriation, decolonisation",
+  "emancipatory expressions",
+  "listening as activism",
+  "water memory",
+  "the production of new bodies and identities",
+  "a more personal point of view",
+  "the body as malleable and citational",
+  "evoking the body without depicting one"
+ ]
+}

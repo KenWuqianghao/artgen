@@ -1,52 +1,33 @@
-"""Build prompts for image and video generation models from an artwork spec."""
-import re
+"""Image prompts in the style of real installation documentation (see docs/research/part_photo.json):
+empty or nearly empty rooms, neutral light, straight verticals, horizontal frame, no visible text."""
+from __future__ import annotations
+
+import random
+
+from .model import Venue, Work
+from .textkit import join_list
+
+TEXT_FAMILIES_ALLOWED = {"text-painting", "neon-slogan"}
 
 
-def _and_list(items):
-    items = list(items)
-    if len(items) <= 1:
-        return "".join(items)
-    return ", ".join(items[:-1]) + " and " + items[-1]
-
-
-def _kw(k):
-    return re.sub(r"^the ", "", k)
-
-
-def image_prompt(spec):
-    """Prompt for exhibition documentation of the work. Flat, honest, un-cinematic on purpose."""
-    comp = spec.get("composition", "")
-    if spec["kind"] == "video":
-        if spec["channels"] and spec["channels"] > 1:
-            subject = (f"a dark gallery with {spec['channels']} video projections of different sizes on temporary walls; "
-                       f"on the screens: {comp}; some visitors' backs")
-        else:
-            subject = f"a dark room with one large video projection on a bare wall showing {comp}; a bench; the projector visible on a stand"
-    elif spec["kind"] == "painting":
-        subject = f"{comp}; {spec['materials'][0]}; hung on a wall"
+def image_prompt(rng: random.Random, w: Work, v: Venue) -> str:
+    people = rng.random() < w.extra.get("people_p", 0.2) * 0.6
+    who = ("One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame."
+           if people else "No people in the room.")
+    if w.archetype in TEXT_FAMILIES_ALLOWED:
+        text_rule = "The only legible text is the artwork's own phrase, spelled exactly as given."
     else:
-        subject = f"{comp}; materials: {_and_list(spec['materials'])}"
+        text_rule = "No legible text anywhere; any wall label is small, blank and out of focus."
+    video = w.kind == "video"
+    room = v.description if not video else f"{v.description} The room is darkened for moving image; the projector and a bench are visible."
     return (
-        f"Documentation photograph of a contemporary artwork at the Venice Biennale, {spec['venue']}. "
-        f"{subject}. "
-        f"{spec['photo_style']}. Ordinary, slightly boring, credible. "
-        f"No text overlays, no captions, no watermark, no dramatic lighting, no fog, no lens flare, no silhouettes against light."
+        "Installation view photograph from the press kit of an international contemporary art biennial. "
+        f"Room: {room} Floor: {v.floor}. Light: {v.light}. "
+        f"The artwork: {w.scene} Materials: {join_list(w.materials)}. "
+        f"Framing: {w.extra.get('camera', 'wide view at eye level')}; horizontal 3:2 frame, camera at chest height, straight verticals, "
+        "a slice of the neighbouring room or doorway visible at one edge. "
+        f"{who} "
+        "Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, "
+        "the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. "
+        f"Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. {text_rule} No watermark."
     )
-
-
-def video_prompt(spec):
-    """Prompt for a short video model clip: either the artwork itself or a walk-through."""
-    if spec["kind"] == "video":
-        motif = spec["video_motifs"][0]
-        return (
-            f"{motif}. {spec['video_style']}. A contemporary art video about {spec['theme']} and {_kw(spec['keyword'])}. "
-            f"Minimal, contemplative, no dialogue, no text on screen."
-        )
-    return (
-        f"Slow handheld walk past a contemporary artwork: {spec.get('composition', '')}, inside {spec['venue']}. "
-        f"{spec['video_style']}. No people speak. No text on screen."
-    )
-
-
-def negative_prompt():
-    return "text, watermark, logo, caption, cartoon, anime, illustration, blurry, low quality, oversaturated"

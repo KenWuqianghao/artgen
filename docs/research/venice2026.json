@@ -1,0 +1,1947 @@
+{
+ "scope": "61st Venice Biennale 2026, In Minor Keys (artistic director Koyo Kouoh, completed by her team): main exhibition in the Arsenale and Central Pavilion (Giardini), plus national pavilions and notable collateral events. Sources read: ArtReview, The Art Newspaper, ARTnews, Hyperallergic, e-flux Criticism, Art Monthly, Kunstkritikk, The Nation, Wallpaper, ArchDaily, DailyArt, Whitewall, Art Basel, Wikipedia. frieze, artnet and Ocula returned 403; the stealthy fetcher did not start (missing browser), so those sites were not read.",
+ "exhibitions": [
+  {
+   "name": "61st International Art Exhibition, La Biennale di Venezia: In Minor Keys",
+   "year": 2026,
+   "city": "Venice",
+   "artistic_director": "Koyo Kouoh (1967-2025), realised after her death by a team: Gabe Beckhurst Feijoo, Siddhartha Mitter, Marie Helene Pereira, Rasha Salti, Rory Tsapayi (La Squadra di Koyo)",
+   "title_metaphor": "Kouoh used the minor key as both a musical mode (low, melancholy, sorrowful, yet also joyful and consoling) and as small islands or cays, an archipelago of oases or safe havens. The text asks for listening to the signals of earth and life, and gives free jazz as a working model.",
+   "sections": [
+    "Central Pavilion (Giardini)",
+    "Arsenale (Corderie, Gaggiandre, Casetta Scaffali and gardens)",
+    "Shrines (Issa Samb, Beverly Buchanan)",
+    "The Schools (artist-run institutions)",
+    "Indigo fabric thresholds by Wolff Architects"
+   ],
+   "n_artists": 110,
+   "curatorial_keywords": [
+    "listening",
+    "attunement",
+    "oases",
+    "shrines",
+    "sentinels",
+    "gardens",
+    "creole garden",
+    "healing",
+    "mourning",
+    "resistance",
+    "polyphony",
+    "rest",
+    "enchantment",
+    "procession",
+    "the earth",
+    "threshold",
+    "schools",
+    "collective",
+    "minor"
+   ],
+   "critic_notes": [
+    "ArtReview calls the show quintessential biennial art: handsome, researched, diplomatic, a protest of fine print without demands.",
+    "The Art Newspaper (3.5 stars) praises sentinels, hybrid beings and procession in the Corderie but finds the Central Pavilion cramped and aimless.",
+    "Several critics say the hang is overstuffed and that the two lodestar artists' shrines are lost among other displays.",
+    "e-flux says there are too many works crammed in, with ethical atmosphere in place of precise argument.",
+    "The Nation finds the dominant look craftsy, accumulative and overproduced, like carnival floats, with wall texts that over-promise.",
+    "Kunstkritikk mocks the cult of plants and calls the focus on organic material a climate-art trope that drifts toward eco-political kitsch.",
+    "Art Monthly calls it rudderless, underdeveloped and overstuffed, and notes mawkish memorial excess in the portrait of Kouoh and Morrison.",
+    "Strong single works named across reviews: Sabsabi, Baudelaire, Rose Salane, Jaar, Raad, Smith, Nick Cave, Mutu.",
+    "Repeated formal types: hybrid human-animal-plant figures, clay vessels, beaded or feathered costume, herbaria, plants on columns, seated video lounges, banners with poems.",
+    "Hyperallergic reads the show as an unexpected symphony; Wallpaper calls it meditative, sensory and poetic.",
+    "Reviewers note the unusual share of new work and of living artists, and a strong presence of Africa and diaspora."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/In_Minor_Keys",
+    "https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12",
+    "https://artreview.com/the-2026-venice-biennale-is-quintessential-biennial-art/",
+    "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys",
+    "https://www.artmonthly.co.uk/magazine/site/article/61st-venice-biennale-by-chris-clarke-june-2026",
+    "https://kunstkritikk.com/too-much-hope/",
+    "https://www.thenation.com/article/culture/2026-venice-biennale-review/",
+    "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-review-themes-1234784370/",
+    "https://hyperallergic.com/in-minor-keys-hits-all-the-right-notes/",
+    "https://www.wallpaper.com/art/exhibitions-shows/in-minor-keys-venice-biennale-review",
+    "https://www.theartnewspaper.com/2026/06/03/venice-verdicts-art-world-figures-give-their-thoughts-on-the-2026-biennale",
+    "https://www.designscene.net/2026/08/venice-biennale-2026.html"
+   ]
+  },
+  {
+   "name": "61st Venice Biennale national pavilions and collateral events 2026",
+   "year": 2026,
+   "city": "Venice",
+   "artistic_director": "Not applicable (each pavilion has its own commissioner; main exhibition is by Koyo Kouoh's team)",
+   "title_metaphor": "Pavilion titles are independent. Many borrow a poetic or proverb form (a pause, a ruin, grass and moon babies) and many answer the main theme of rest, listening and mourning.",
+   "sections": [
+    "Giardini (29 pavilions)",
+    "Arsenale (25)",
+    "City venues (46)",
+    "31 collateral events",
+    "Temporary Qatar pavilion"
+   ],
+   "n_artists": null,
+   "curatorial_keywords": [
+    "ruin",
+    "home",
+    "archive",
+    "threshold",
+    "listening",
+    "sound",
+    "migration",
+    "craft",
+    "diaspora",
+    "repair",
+    "witness",
+    "mourning",
+    "fertility",
+    "water",
+    "weaving"
+   ],
+   "critic_notes": [
+    "Critics point to performance and live bodies (Austria, Belgium, Netherlands) as a defining trend.",
+    "Textile, clay and earth-built environments recur (Morocco, Peru, India, Saudi Arabia, Uzbekistan, Italy, Slovenia).",
+    "Sound and listening pavilions (Finland, Holy See, Cyprus, Poland, Qatar) are widely praised.",
+    "The US pavilion by Alma Allen is panned as bland, apolitical and expensive-looking.",
+    "German pavilion by Naumann and Tieu is repeatedly called one of the strongest.",
+    "The Nation says most pavilions are less inspiring than the main show.",
+    "The jury resigned before opening, so awards went to a public vote; a strike on 8 May closed or partly closed many pavilions.",
+    "Many commentators observe immersive-installation fatigue in the pavilions."
+   ],
+   "sources": [
+    "https://www.theartnewspaper.com/2026/05/06/our-pick-of-the-best-pavilions-at-the-61st-venice-biennale",
+    "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-best-national-pavilions-1234784517/",
+    "https://artreview.com/venice-biennale-2026-national-pavilion-highlights/",
+    "https://www.archdaily.com/1041443/8-national-pavilion-highlights-from-the-2026-venice-art-biennale",
+    "https://www.e-flux.com/criticism/6782430/61st-venice-biennale-pavilions-and-satellites",
+    "https://www.dailyartmagazine.com/in-minor-keys-10-must-see-pavilions-from-the-2026-venice-biennale/",
+    "https://hyperallergic.com/a-whole-lot-of-nothing-at-the-us-pavilion/",
+    "https://www.thenation.com/article/culture/2026-venice-biennale-review/",
+    "https://www.theartnewspaper.com/2026/06/03/venice-verdicts-art-world-figures-give-their-thoughts-on-the-2026-biennale"
+   ]
+  }
+ ],
+ "works": [
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale, entrance sequence (first big room)",
+   "artist": "Khaled Sabsabi",
+   "artist_born": "Lebanon-born, Australian",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "khalil",
+   "year": "2026",
+   "family": "video",
+   "medium_line": "Eight-channel HD video installation with audio, acrylic paint on canvas, steel, black oud scent",
+   "dimensions": "1300 x 1300 cm; 64:00 min",
+   "what_you_see": "A painted canvas about forty metres long is hung as a closed circle with the visitor inside. Negative images of crowd faces are projected over the abstract paint so that you cannot tell figure from ground. The room is dim, slow and scented, and it is the first work visitors meet after the poem at the Arsenale door.",
+   "materials": [
+    "acrylic on canvas",
+    "steel frame",
+    "eight-channel HD video",
+    "black oud scent",
+    "audio"
+   ],
+   "nonvisual": [
+    "scent: black oud",
+    "sound: multichannel audio, about 64 minutes"
+   ],
+   "claims": [
+    "Presented as a meeting point and healing space for conversation",
+    "Said to show that truth is collective and every person needs a witness",
+    "Described as a Sufi-informed treatment of inner and outer self and the divine"
+   ],
+   "themes": [
+    "witness",
+    "friendship",
+    "kinship",
+    "migration",
+    "Sufism"
+   ],
+   "references": [
+    "Sufi belief",
+    "Arabic word khalil (friend)"
+   ],
+   "photo_notes": "Press image caption gives full medium line; circular canvas room, dim, with projected crowd.",
+   "source": "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale, Corderie and garden area",
+   "artist": "Wangechi Mutu",
+   "artist_born": null,
+   "artist_lives": "between Nairobi and Brooklyn",
+   "deceased": false,
+   "collective": false,
+   "title": "The End, Where All began, EdEN",
+   "year": "2026",
+   "family": "earth",
+   "medium_line": "Installation, dimensions variable",
+   "dimensions": null,
+   "what_you_see": "A single-artist room of earth, crystals, hovering animal forms and pregnant human figures. A knoll shaped like a pregnant body sits at the centre of the room (called MothersMound). A motorised broom turns slowly and sweeps coffee grounds into concentric circles while an animated film voices a mountain waking up.",
+   "materials": [
+    "earth",
+    "crystals",
+    "sculpture",
+    "revolving broom",
+    "coffee grounds",
+    "animated film"
+   ],
+   "nonvisual": [
+    "sound: narration by the animated Kikuyu mother mountain"
+   ],
+   "claims": [
+    "Retells the Eden story with Mother Earth in place of a Father God",
+    "Described as a creation myth and a call to live in symbiosis with nature"
+   ],
+   "themes": [
+    "eco-feminism",
+    "creation myth",
+    "motherhood",
+    "Mount Kenya / Kirinyaga"
+   ],
+   "references": [
+    "Kikuyu cosmology",
+    "Garden of Eden"
+   ],
+   "photo_notes": "Room-sized view credited to La Biennale; one of few rooms given to one artist.",
+   "source": "https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale, outdoor harbour edge",
+   "artist": "Wangechi Mutu",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Simbi Siren",
+   "year": "2026",
+   "family": "figure",
+   "medium_line": "Bronze sculpture",
+   "dimensions": null,
+   "what_you_see": "A bronze hybrid figure, part mermaid, part sphinx, part tree root, lies draped over a perforated metal box. Water trickles from the fingertips down to flowers placed below. It stands outdoors near the harbour, close to the Nick Cave figure.",
+   "materials": [
+    "bronze",
+    "perforated metal base",
+    "water",
+    "flowers"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Reimagines the Garden of Eden through an eco-feminist, African diasporic lens"
+   ],
+   "themes": [
+    "eco-feminism",
+    "water spirit",
+    "hybrid body"
+   ],
+   "references": [
+    "Kongo spirit",
+    "Mugumo tree (Kikuyu)"
+   ],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/in-minor-keys-hits-all-the-right-notes/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale, outdoors facing the harbour",
+   "artist": "Nick Cave",
+   "artist_born": null,
+   "artist_lives": "USA",
+   "deceased": false,
+   "collective": false,
+   "title": "Amalgam (Origin)",
+   "year": "2025",
+   "family": "figure",
+   "medium_line": "Monochrome bronze cast",
+   "dimensions": null,
+   "what_you_see": "A very large figure that mixes human, animal and plant, cast in one colour of bronze and standing in a power pose. Floral relief covers the body. From the chest up the body turns into a tree that holds a flock of about fifty bird species.",
+   "materials": [
+    "bronze",
+    "floral relief"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The birds make a 'migration hub' that stands for community against oppression",
+    "Continues the Soundsuit project as a sign of resistance to racist violence"
+   ],
+   "themes": [
+    "sentinel",
+    "migration",
+    "joy as resistance"
+   ],
+   "references": [
+    "Soundsuits"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale",
+   "artist": "Daniel Lind-Ramos",
+   "artist_born": null,
+   "artist_lives": "Puerto Rico",
+   "deceased": false,
+   "collective": false,
+   "title": "Guardaverde",
+   "year": "2024-25",
+   "family": "found",
+   "medium_line": "Sculptural assemblage",
+   "dimensions": "274.3 x 243.9 x 243.9 cm",
+   "what_you_see": "A tall, staring figure built from debris collected on the streets of Loiza after a hurricane. It is one of three 'sentinels' placed through the show to keep watch. It stands alone with its gaze on the visitor.",
+   "materials": [
+    "hurricane debris",
+    "found objects",
+    "assemblage"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Acts as a guard and witness over the exhibition"
+   ],
+   "themes": [
+    "witness",
+    "hurricane",
+    "Caribbean",
+    "sentinel"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion, entry room",
+   "artist": "Big Chief Demond Melancon",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Amistad Takeover",
+   "year": "2026",
+   "family": "textile",
+   "medium_line": "Black Masking beaded and feathered suit",
+   "dimensions": null,
+   "what_you_see": "A huge orange-feathered suit stands in the middle of the Central Pavilion entry room. Beadwork among the feathers shows the 19th-century revolt of enslaved people on a Spanish ship. Another beadwork costume stands next to it.",
+   "materials": [
+    "feathers",
+    "beadwork",
+    "thread",
+    "fabric"
+   ],
+   "nonvisual": [
+    "performance: the suits are linked to Mardi Gras processions"
+   ],
+   "claims": [
+    "Honours the Black Masking Indian tradition and the joy of procession"
+   ],
+   "themes": [
+    "procession",
+    "revolt",
+    "ceremony",
+    "sentinel"
+   ],
+   "references": [
+    "Black Masking",
+    "Amistad revolt"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion, facade and columns",
+   "artist": "Otobong Nkanga",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Soft Offerings to Silenced Voices and to All Who Have Turned to Dust",
+   "year": "2026",
+   "family": "earth",
+   "medium_line": "Brick, plants, glass and ceramic installation on building columns",
+   "dimensions": null,
+   "what_you_see": "The four white cylindrical columns at the entrance to the Central Pavilion are clad in bricks made locally. Glass terraria, clay flower pots, wooden bee hotels, climbing vines and translucent Murano glass ovoids hang on them. The plants are expected to cover the columns by November.",
+   "materials": [
+    "local brick",
+    "Murano glass",
+    "ceramic pots",
+    "wooden bee hotels",
+    "climbing plants"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Rewilds modernist architecture",
+    "Offered to the silenced and the dead"
+   ],
+   "themes": [
+    "rewilding",
+    "garden",
+    "care",
+    "mourning"
+   ],
+   "references": [
+    "creole garden (Glissant)"
+   ],
+   "photo_notes": "Press photo caption places it at the entrance to the Central Pavilion.",
+   "source": "https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale",
+   "artist": "Guadalupe Maravilla",
+   "artist_born": null,
+   "artist_lives": "USA, born El Salvador",
+   "deceased": false,
+   "collective": false,
+   "title": "ICE Age Disease Thrower",
+   "year": "2024-25",
+   "family": "shrine",
+   "medium_line": "Sculptures from the Disease Thrower series",
+   "dimensions": null,
+   "what_you_see": "A group of sculptures built on woven, body-shaped chairs that recall Acapulco chairs and Mayan hammocks. Found objects sit in the chairs, including a beanie with animal ears that copies one worn by a detained child. Each piece reads as a small altar.",
+   "materials": [
+    "woven chairs",
+    "found objects",
+    "beanie hat"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Called both shrines and healing instruments by the artist",
+    "Act as witnesses to and guards against border brutality"
+   ],
+   "themes": [
+    "migration",
+    "healing",
+    "trauma",
+    "guardian"
+   ],
+   "references": [
+    "Salvadoran civil war",
+    "Acapulco chair",
+    "Mayan hammock"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale, Corderie",
+   "artist": "Ranti Bam",
+   "artist_born": null,
+   "artist_lives": "between London and Lagos",
+   "deceased": false,
+   "collective": false,
+   "title": "Black Ifa 1-5",
+   "year": "2025-26",
+   "family": "ceramic",
+   "medium_line": "Stoneware vessels on wooden stools",
+   "dimensions": null,
+   "what_you_see": "A ring of lopsided stoneware vessels sits on wooden stools. The unglazed clay was fired past its normal temperature, so the surfaces crack and the forms fold into themselves. The vessels look about to collapse.",
+   "materials": [
+    "unglazed stoneware",
+    "wooden stools"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Vessels act as votive offerings, totems and conduits",
+    "Named after the Yoruba divination system Ifa"
+   ],
+   "themes": [
+    "divination",
+    "body as mould",
+    "fragility"
+   ],
+   "references": [
+    "Ifa (Yoruba)"
+   ],
+   "photo_notes": "Hung near the large suspended photo roll by Carrie Schneider in the same hall.",
+   "source": "https://www.artmonthly.co.uk/magazine/site/article/61st-venice-biennale-by-chris-clarke-june-2026"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion",
+   "artist": "Célia Vásquez Yui",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "The Council of the Mother Spirits of the Animals",
+   "year": "2020-23",
+   "family": "ceramic",
+   "medium_line": "Coil-built, pre-fire slip-painted clay with vegetal resins",
+   "dimensions": null,
+   "what_you_see": "A group of hand-built clay figures with slip paint and plant resin, shown in a prominent place in the Giardini. They stand as a council of animal mother spirits.",
+   "materials": [
+    "coil-built clay",
+    "slip",
+    "vegetal resins"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Offers a spiritual understanding of ecology"
+   ],
+   "themes": [
+    "ecology",
+    "animal spirits",
+    "Indigenous knowledge"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/in-minor-keys-hits-all-the-right-notes/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale, red room",
+   "artist": "Alfredo Jaar",
+   "artist_born": "Chile",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "The End of the World",
+   "year": "2023-24",
+   "family": "light",
+   "medium_line": "Red-lit installation with a mineral cube",
+   "dimensions": null,
+   "what_you_see": "A room in intense red light with a church-like plan. Text blocks on the red walls list the metals and minerals behind phones and weapons. At the far end a small cube of ten metals and rare earths sits on a plinth in a vitrine.",
+   "materials": [
+    "red light",
+    "wall text",
+    "compressed minerals",
+    "plinth",
+    "vitrine"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Exposes the extraction of cobalt, lithium, coltan and copper",
+    "A critic notes the cube would be among the most valuable objects at the Biennale"
+   ],
+   "themes": [
+    "extraction",
+    "technology",
+    "violence in supply chains"
+   ],
+   "references": [],
+   "photo_notes": "Press photo shows a tall saturated red room; ArtReview says it can look like a red-light therapy room.",
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-review-themes-1234784370/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale",
+   "artist": "Walid Raad",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Postscript to the Arabic Edition",
+   "year": "1938-2025",
+   "family": "archive",
+   "medium_line": "Freight pallets carrying painted copies of missing artworks",
+   "dimensions": null,
+   "what_you_see": "Wooden freight pallets are decorated with copies of famous Turkish and Arab paintings. A wall text says the pallets moved arms from Lebanon to Yugoslav states after 1990 and carried art that escaped destruction. Whether the story is true is left open.",
+   "materials": [
+    "wooden pallets",
+    "painted copies",
+    "wall text"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "A fictional framing story about weapons moving from one war to the next"
+   ],
+   "themes": [
+    "war",
+    "archive",
+    "fiction as evidence"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://kunstkritikk.com/too-much-hope/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion, mezzanine",
+   "artist": "Walid Raad",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "far from quieting",
+   "year": "1969-2026",
+   "family": "painting",
+   "medium_line": "Eleven trompe-l'oeil paintings on wood",
+   "dimensions": "11 panels",
+   "what_you_see": "Eleven small painted panels copy stock photographs of bedrooms. A short text says Yasser Arafat slept in each. The narrator may be unreliable, and the show makes that part of the point.",
+   "materials": [
+    "paint on wood"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Teaches the viewer to question how history is narrated"
+   ],
+   "themes": [
+    "unreliable narrator",
+    "archive",
+    "refuge"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion, raised platform",
+   "artist": "Amina Saoudi Aït Khay",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": null,
+   "year": "undated (drawing Souffle 8 is 1994-2020)",
+   "family": "textile",
+   "medium_line": "Textiles with preparatory drawings on paper",
+   "dimensions": null,
+   "what_you_see": "Textiles are shown on a sloping platform that lifts them out of the clutter of the pavilion. Rows and patterns change in small steps. A second display on the floor above shows preparatory sketches that look like musical scores built on a grid.",
+   "materials": [
+    "textile",
+    "drawings on paper"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Critic says improvised-looking forms are held by a strict grid, like jazz and blues"
+   ],
+   "themes": [
+    "pattern",
+    "rhythm",
+    "craft as composition"
+   ],
+   "references": [],
+   "photo_notes": "Title of the textile works is not given in the source.",
+   "source": "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini and Arsenale, shown in several spaces",
+   "artist": "Mohammed Joha",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "No Shelter",
+   "year": "2025",
+   "family": "textile",
+   "medium_line": "Patchwork textile collages and watercolours (series No Shelter 12-29)",
+   "dimensions": null,
+   "what_you_see": "Small collages made of discarded paper and fabric, and linked watercolours, look abstract at first and then read as the architecture and land of Gaza. They are split between several rooms instead of one solo room.",
+   "materials": [
+    "scrap fabric",
+    "discarded paper",
+    "watercolour"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Rebuts the destruction of Gaza by adding colour"
+   ],
+   "themes": [
+    "Gaza",
+    "shelter",
+    "scrap material"
+   ],
+   "references": [],
+   "photo_notes": "Critic says the pieces were scattered; a solo room would have given them space.",
+   "source": "https://www.theartnewspaper.com/2026/05/08/the-big-review-%7C-venice-biennale-2026-in-minor-keys-12"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale, wall-based work",
+   "artist": "Annalee Davis",
+   "artist_born": null,
+   "artist_lives": "Barbados",
+   "deceased": false,
+   "collective": false,
+   "title": "Let This Be My Cathedral",
+   "year": "2026",
+   "family": "earth",
+   "medium_line": "Wall-based herbarium",
+   "dimensions": null,
+   "what_you_see": "A wall-sized herbarium of pressed plants from the artist's own garden on a former plantation in Barbados. It is built as a place of refuge and thought.",
+   "materials": [
+    "pressed plants",
+    "herbarium sheets"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Designed as a haven for introspection and for thinking about the ethics of botanical ecologies"
+   ],
+   "themes": [
+    "plantation",
+    "garden",
+    "refuge"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://hyperallergic.com/in-minor-keys-hits-all-the-right-notes/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion",
+   "artist": "María Magdalena Campos-Pons & Kamaal Malak",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Anatomy of the Magnolia Tree for Koyo Kouoh and Toni Morrison",
+   "year": "2026",
+   "family": "painting",
+   "medium_line": "Eight-panel painted portrait with glass and resin floral sculptures and sound",
+   "dimensions": null,
+   "what_you_see": "A mural-size painting across eight vertical panels shows the curator and the writer with bird-of-prey talons for feet, among magnolia leaves and blooms. Resin and PLA flower sculptures stand near it, with a soft soundscape. Critics call it a memorial shrine.",
+   "materials": [
+    "paint on panels",
+    "glass",
+    "resin",
+    "PLA filament",
+    "soundscape"
+   ],
+   "nonvisual": [
+    "sound: soundscape by Kamaal Malak, hard to hear"
+   ],
+   "claims": [
+    "Memorial to Kouoh, with Toni Morrison as literary patron"
+   ],
+   "themes": [
+    "mourning",
+    "magnolia",
+    "slavery",
+    "memorial"
+   ],
+   "references": [
+    "Toni Morrison, Beloved"
+   ],
+   "photo_notes": null,
+   "source": "https://www.artmonthly.co.uk/magazine/site/article/61st-venice-biennale-by-chris-clarke-june-2026"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion, Buchanan shrine",
+   "artist": "Beverly Buchanan",
+   "artist_born": "1940-2015",
+   "artist_lives": null,
+   "deceased": true,
+   "collective": false,
+   "title": "Untitled (Spirit Jar)",
+   "year": "c. 2000",
+   "family": "shrine",
+   "medium_line": "Tin can with bottle caps, licence plate, hair ties and beads",
+   "dimensions": null,
+   "what_you_see": "A tin can is covered with bottle caps, a crumpled licence plate, hair ties and plastic beads. It sits near small wooden shack models that have family names scrawled on the siding. The display is one of two 'shrines' to patron-saint artists.",
+   "materials": [
+    "tin can",
+    "bottle caps",
+    "licence plate",
+    "plastic beads",
+    "wood slats",
+    "twine"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Reads like a reliquary of discarded everyday objects"
+   ],
+   "themes": [
+    "shack",
+    "family names",
+    "land art",
+    "memory jug"
+   ],
+   "references": [
+    "African-American memory jugs"
+   ],
+   "photo_notes": null,
+   "source": "https://www.artmonthly.co.uk/magazine/site/article/61st-venice-biennale-by-chris-clarke-june-2026"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion",
+   "artist": "Ebony G. Patterson",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "...fester...",
+   "year": "2023",
+   "family": "textile",
+   "medium_line": "Jacquard floral fabric with glitter, lace and beads",
+   "dimensions": null,
+   "what_you_see": "Dozens of yards of floral jacquard are layered with glitter, lace and beads in a dense jungle-like mass. The back reveals a mound of red-painted hands with black thorns growing through. Critics single out its dense accumulation.",
+   "materials": [
+    "jacquard fabric",
+    "glitter",
+    "lace",
+    "beads",
+    "red-painted hands",
+    "thorns"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Beauty of Caribbean scenes hides a brutal colonial history"
+   ],
+   "themes": [
+    "jungle",
+    "colonialism",
+    "excess"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-review-themes-1234784370/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale",
+   "artist": "Theo Eshetu",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Garden of the Broken Hearted",
+   "year": "2026",
+   "family": "earth",
+   "medium_line": "Living olive tree on a rotating platform with video",
+   "dimensions": null,
+   "what_you_see": "A large olive tree from an undisclosed location stands on a slowly turning platform, and a video of the tree is projected on it. It carries scars of conflict but is alive.",
+   "materials": [
+    "olive tree",
+    "rotating platform",
+    "projection"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Once a place of rest and gathering, now scarred"
+   ],
+   "themes": [
+    "tree",
+    "survival",
+    "garden"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-review-themes-1234784370/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale",
+   "artist": "Dan Lie",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Temple of Passages",
+   "year": "2026",
+   "family": "scent",
+   "medium_line": "Installation of scented flowers on maritime rope",
+   "dimensions": null,
+   "what_you_see": "Very large garlands of scented flowers hang from the ceiling on ship rope in the old Arsenale rope hall. The flowers decay during the show and host micro-organisms. The ropes recall the work once done in that building.",
+   "materials": [
+    "flowers",
+    "maritime rope"
+   ],
+   "nonvisual": [
+    "scent: flowers, changing as they decay"
+   ],
+   "claims": [
+    "Described elsewhere as an ephemeral temple for decaying beings"
+   ],
+   "themes": [
+    "decay",
+    "temple",
+    "rope"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-review-themes-1234784370/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "In Minor Keys (venue room not stated)",
+   "artist": "Vera Tamari",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Mantra",
+   "year": "n.d.",
+   "family": "ceramic",
+   "medium_line": "Ceramic seeds",
+   "dimensions": null,
+   "what_you_see": "A quiet installation of ceramic copies of the seeds of a Palestinian field plant. A wall label explains that the plant grows in vineyards and olive groves and that British Mandate officials listed it as a weed to be wiped out.",
+   "materials": [
+    "ceramic"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Turns a labelled weed into a quiet monument"
+   ],
+   "themes": [
+    "seed",
+    "Palestine",
+    "weed"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-review-themes-1234784370/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale, Corderie, end of the hall",
+   "artist": "Torkwase Dyson",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Tougaloo",
+   "year": "2026",
+   "family": "architecture",
+   "medium_line": "Curved slabs of graphite and acrylic with cavities holding glass chunks",
+   "dimensions": null,
+   "what_you_see": "Tall curved architectural slabs in dark grey stand in parallel rows. Cavities in the slabs hold rough chunks of glass and vertical shards. The viewer walks between the arcs and cannot see the work from one spot.",
+   "materials": [
+    "graphite",
+    "acrylic",
+    "glass chunks"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Named after a Mississippi former plantation and college, from a Choctaw word meaning between two streams"
+   ],
+   "themes": [
+    "plantation",
+    "abstraction",
+    "between"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artmonthly.co.uk/magazine/site/article/61st-venice-biennale-by-chris-clarke-june-2026"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion",
+   "artist": "Cauleen Smith",
+   "artist_born": null,
+   "artist_lives": "USA",
+   "deceased": false,
+   "collective": false,
+   "title": "The Wanda Coleman Songbook",
+   "year": "2024",
+   "family": "video",
+   "medium_line": "Four-channel video, vinyl EP, scent, console, books, carpets, seating",
+   "dimensions": null,
+   "what_you_see": "Four large screens stand round a seating area with sofas and blankets. They show Los Angeles streets, the Watts Towers, a police helicopter and a gym. Seven musical settings of a poet's work play. Books lie open in a vitrine.",
+   "materials": [
+    "four-channel video",
+    "vinyl EP",
+    "carpets",
+    "sofas",
+    "books"
+   ],
+   "nonvisual": [
+    "sound: seven musical interpretations of the poet's work",
+    "scent: listed in the medium line"
+   ],
+   "claims": [
+    "Turns historical suffering into joy through poetry and music"
+   ],
+   "themes": [
+    "Los Angeles",
+    "poetry",
+    "rest",
+    "jazz"
+   ],
+   "references": [
+    "Wanda Coleman"
+   ],
+   "photo_notes": "Reviewers describe it as a laid-back lounge in the middle of a crowded hall.",
+   "source": "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale",
+   "artist": "Rose Salane",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Panorama 94",
+   "year": "2019",
+   "family": "found",
+   "medium_line": "Shadowbox display of found rings with texts",
+   "dimensions": null,
+   "what_you_see": "Found rings sit in a shadowbox. Each has a short line of text from a psychic who was asked to sense its former owner. The lines read as small blunt eulogies.",
+   "materials": [
+    "found rings",
+    "printed text",
+    "shadowbox"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Mixes enchantment with a cheeky tone"
+   ],
+   "themes": [
+    "lost objects",
+    "psychic",
+    "strangers"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://artreview.com/the-2026-venice-biennale-is-quintessential-biennial-art/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale",
+   "artist": "Éric Baudelaire",
+   "artist_born": "American filmmaker",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Death Passed My Way and Stuck this Flower in my Mouth",
+   "year": "2026",
+   "family": "video",
+   "medium_line": "Five-channel video with six-channel audio, 25:25 minutes",
+   "dimensions": null,
+   "what_you_see": "Five screens show gloved workers sorting yellow flowers in a Dutch auction warehouse. Pages of a 1922 play hang on the wall nearby. An elegant man who may be Death speaks about observing life.",
+   "materials": [
+    "five-channel video",
+    "six-channel audio",
+    "printed pages"
+   ],
+   "nonvisual": [
+    "sound: six-channel audio"
+   ],
+   "claims": [
+    "Experience of love is sharpened by the fact of loss"
+   ],
+   "themes": [
+    "flowers",
+    "death",
+    "labour",
+    "witness"
+   ],
+   "references": [
+    "Luigi Pirandello",
+    "Gwendolyn Brooks"
+   ],
+   "photo_notes": null,
+   "source": "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Arsenale and Giardini outdoor",
+   "artist": "Uriel Orlow",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Dedication II",
+   "year": "2021/2026",
+   "family": "sound",
+   "medium_line": "Flat screens on the floor and vibrating wooden platform",
+   "dimensions": null,
+   "what_you_see": "Flat screens lie vertically on the floor and show forest-floor close-ups and tree roots, with poem lines that flash up. A wooden platform vibrates to suggest the movement of the ground. Related garden walks name the plants outside.",
+   "materials": [
+    "screens",
+    "wooden platform",
+    "vibration"
+   ],
+   "nonvisual": [
+    "sound and vibration: platform hums with the ground",
+    "performance: visitors read aloud to plants (Reveries of Collective Walkers)"
+   ],
+   "claims": [
+    "Treats plants as agents that move with humans"
+   ],
+   "themes": [
+    "plants",
+    "listening",
+    "roots"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-review-themes-1234784370/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "In Minor Keys (venue room not stated)",
+   "artist": "Mohammed Z. Rahman",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Lovers' Vigil",
+   "year": "2024",
+   "family": "shrine",
+   "medium_line": "Matchboxes with tiny paintings inside an open-frame room",
+   "dimensions": null,
+   "what_you_see": "Mohammed Z. Rahman builds an open-frame room within the hall where visitors sit and look at tiny paintings of heartbreak symbols on matchboxes. A nearby crate is painted to look like a pack of condoms.",
+   "materials": [
+    "matchboxes",
+    "tiny paintings",
+    "wood frame",
+    "painted crate"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Lilies, chrysanthemums and cherry blossoms stand for grief"
+   ],
+   "themes": [
+    "heartbreak",
+    "mourning",
+    "intimacy"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://artreview.com/the-2026-venice-biennale-is-quintessential-biennial-art/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - In Minor Keys (main exhibition)",
+   "venue_room": "Giardini, Central Pavilion",
+   "artist": "C. Driciru",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Crowds and Insects",
+   "year": "1976",
+   "family": "painting",
+   "medium_line": "Oil on board",
+   "dimensions": "91 x 104 cm",
+   "what_you_see": "A small painting of an army of insects marching past a self-important leader. It was made when critics of Idi Amin were jailed. One critic says the veil is nearly transparent.",
+   "materials": [
+    "oil on board"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Seen as a veiled attack on authoritarianism, shown in a capsule of Nairobi Contemporary Art Institute painting"
+   ],
+   "themes": [
+    "authoritarianism",
+    "satire"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Saudi Arabia Pavilion, Arsenale",
+   "artist": "Dana Awartani",
+   "artist_born": "Palestinian-Saudi",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "May your tears never dry, you who weep over stones",
+   "year": "2026",
+   "family": "earth",
+   "medium_line": "Mud and clay floor mosaics",
+   "dimensions": null,
+   "what_you_see": "Visitors walk on a floor of thousands of handmade mud tiles laid out as 23 lost mosaics from Palestine, Syria and Lebanon. Gravel crunches underfoot. The tiles were dried in the sun with no binder and have already started to crack.",
+   "materials": [
+    "four clays from Saudi Arabia",
+    "no straw",
+    "no binder",
+    "gravel"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Cracks stand for the fragility of the sites",
+    "Suggests both continuity of making and constant destruction"
+   ],
+   "themes": [
+    "heritage under war",
+    "archaeology",
+    "craft"
+   ],
+   "references": [
+    "Church of the Holy Sepulchre",
+    "Apamea Synagogue",
+    "Bureij mosaic, Gaza"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/05/06/our-pick-of-the-best-pavilions-at-the-61st-venice-biennale"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "German Pavilion, Giardini (facade)",
+   "artist": "Sung Tieu",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Human Dignity Shall Be Inviolable",
+   "year": "2026",
+   "family": "architecture",
+   "medium_line": "Trompe-l'oeil mosaic on the pavilion facade",
+   "dimensions": "about 3 million tesserae; about 800 ladybirds",
+   "what_you_see": "The front of the neoclassical pavilion is wrapped in a mosaic of about three million tesserae. It shows the balconied windows of a prefabricated East Berlin housing block, once home to contract workers from abroad, now due for demolition. Inside, small aluminium ladybirds crowd the corners.",
+   "materials": [
+    "tesserae",
+    "aluminium ladybirds"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Title quotes Article 1 of the German Basic Law"
+   ],
+   "themes": [
+    "migrant labour",
+    "demolition",
+    "fascist architecture"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-best-national-pavilions-1234784517/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "German Pavilion, Giardini (interior)",
+   "artist": "Henrike Naumann",
+   "artist_born": "East Germany",
+   "artist_lives": null,
+   "deceased": true,
+   "collective": false,
+   "title": "The Home Front",
+   "year": "2026",
+   "family": "found",
+   "medium_line": "Sculptural assemblage of domestic objects",
+   "dimensions": null,
+   "what_you_see": "Walls are painted a minty green copied from East German army barracks. A grid of small domestic objects lines them, including toys, chairs, portraits, an axe and a hoe. Midcentury chairs cut in half are fixed to the wall as if sinking into the marble.",
+   "materials": [
+    "found furniture",
+    "toys",
+    "paint",
+    "wood relief"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "The artist called the objects hieroglyphics"
+   ],
+   "themes": [
+    "domestic memory",
+    "far-right violence",
+    "Cold War"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-best-national-pavilions-1234784517/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Japan Pavilion and garden, Giardini",
+   "artist": "Ei Arakawa-Nash",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Grass Babies, Moon Babies",
+   "year": "2026",
+   "family": "figure",
+   "medium_line": "Installation with about 200 baby dolls",
+   "dimensions": "208 dolls (one source says about 200)",
+   "what_you_see": "Hundreds of heavy baby dolls in reflective sunglasses crawl, climb scaffolding and hang from ropes. Visitors pick one up at random and carry it through the garden and building. A changing station gives each doll a QR-linked diaper poem tied to a birthday.",
+   "materials": [
+    "baby dolls (5 to 6 kg)",
+    "scaffolding",
+    "rope",
+    "televisions",
+    "QR poems"
+   ],
+   "nonvisual": [
+    "sound: voices of the artist's twin babies"
+   ],
+   "claims": [
+    "Gives weight to care, war and declining birth rates"
+   ],
+   "themes": [
+    "parenthood",
+    "queer family",
+    "care"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/05/06/our-pick-of-the-best-pavilions-at-the-61st-venice-biennale"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Austrian Pavilion, Giardini",
+   "artist": "Florentina Holzinger",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Seaworld Venice",
+   "year": "2026",
+   "family": "performance",
+   "medium_line": "Performance installation with water tanks, portable toilets and nude performers",
+   "dimensions": null,
+   "what_you_see": "The listed building becomes a sewage plant and tank. Visitors use two portable toilets, and the urine flows through the rooms as the water for nude performers. A jet ski, a metal climbing shaft and a person who rings a huge bell as the clapper add to it.",
+   "materials": [
+    "urine",
+    "tanks",
+    "jet ski",
+    "portable toilets",
+    "bell",
+    "crane"
+   ],
+   "nonvisual": [
+    "sound: giant bell",
+    "performance: nude performers living in the pavilion"
+   ],
+   "claims": [
+    "Complicates purity and pollution, sin and expiation",
+    "Extends Viennese Actionism"
+   ],
+   "themes": [
+    "pollution",
+    "lagoon",
+    "tourism"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://artreview.com/venice-biennale-2026-national-pavilion-highlights/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Morocco Pavilion",
+   "artist": "Amina Agueznay",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Asetta",
+   "year": "2026",
+   "family": "textile",
+   "medium_line": "Monumental woven textile installation made with about 150 weavers",
+   "dimensions": "made with about 150 weavers, mostly women",
+   "what_you_see": "Large textiles rise and fold in mid-air under high ceilings to form a floating doorway. A hum, rain, a car horn and the clack of a loom play in the room. Visitors are told not to touch.",
+   "materials": [
+    "wool",
+    "woven textile"
+   ],
+   "nonvisual": [
+    "sound: a man humming, rain, loom clicks"
+   ],
+   "claims": [
+    "Craft is described as cutting edge, not backward-looking"
+   ],
+   "themes": [
+    "threshold (aatba)",
+    "loom",
+    "ritual of weaving"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-best-national-pavilions-1234784517/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Canada Pavilion, Giardini",
+   "artist": "Abbas Akhavan",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Entre chien et loup",
+   "year": "2026",
+   "family": "earth",
+   "medium_line": "Wardian case installation with a pond and living water lilies",
+   "dimensions": null,
+   "what_you_see": "The building becomes a greenhouse. Steam mists the windows. A large reflective pond holds giant Victoria water lilies; a related description mentions grow lights.",
+   "materials": [
+    "Victoria water lilies",
+    "pond",
+    "grow lights",
+    "steam"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Links imperial plant collecting, world fairs and biennials"
+   ],
+   "themes": [
+    "empire",
+    "exhibition culture",
+    "deep time"
+   ],
+   "references": [
+    "Great Exhibition of 1851",
+    "Crystal Palace"
+   ],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/05/06/our-pick-of-the-best-pavilions-at-the-61st-venice-biennale"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Italian Pavilion, Arsenale",
+   "artist": "Chiara Camoni",
+   "artist_born": null,
+   "artist_lives": "Tuscany",
+   "deceased": false,
+   "collective": false,
+   "title": "Con te con tutto",
+   "year": "2026",
+   "family": "ceramic",
+   "medium_line": "Installation of 24 terracotta and stoneware figures, and a garden room",
+   "dimensions": null,
+   "what_you_see": "A dim first room holds 24 columns and figures the artist calls minor deities, made of rough terracotta, glazed stoneware, ash and soil, with real and fake flowers and hair. In a second room, windows and doors stand open. Wooden furniture-like pieces and seats face a garden.",
+   "materials": [
+    "terracotta",
+    "stoneware",
+    "ash",
+    "soil",
+    "flowers",
+    "synthetic hair",
+    "wood"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Highlights slowness and dialogue between forms of life"
+   ],
+   "themes": [
+    "sisters",
+    "ritual",
+    "garden",
+    "collective making"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.e-flux.com/criticism/6782430/61st-venice-biennale-pavilions-and-satellites"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Finnish Pavilion, Giardini",
+   "artist": "Jenna Sutela",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Aeolian Suite",
+   "year": "2026",
+   "family": "sound",
+   "medium_line": "Five sonic-kinetic sculptures with a 16-minute score",
+   "dimensions": null,
+   "what_you_see": "Five sculptures stand in a circle like a wind rose in the Aalto pavilion. Each is covered with long fuzzy wigs that copy microphone wind covers. They blow and sing as the five Venetian winds.",
+   "materials": [
+    "sonic-kinetic sculptures",
+    "wigs",
+    "wind machines",
+    "recorders"
+   ],
+   "nonvisual": [
+    "sound: wind machines, recorders, children's woodwind orchestra, field recordings"
+   ],
+   "claims": [
+    "Asks what counts as noise"
+   ],
+   "themes": [
+    "wind",
+    "minor mode",
+    "weather data"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.dailyartmagazine.com/in-minor-keys-10-must-see-pavilions-from-the-2026-venice-biennale/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Cyprus Pavilion",
+   "artist": "Marina Xenofontos",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Passer",
+   "year": "2026",
+   "family": "sound",
+   "medium_line": "Animatronic papier-mache sparrow, copper cylinders, recreated ceiling and sound",
+   "dimensions": null,
+   "what_you_see": "A papier-mache sparrow ticks like a metronome from a clock in its open belly. A wooden ceiling copies that of a ruined nightclub. At the back, copper cylinders turn in an uneven row on the floor and make only their own whirring sound.",
+   "materials": [
+    "papier-mache",
+    "clock",
+    "copper cylinders",
+    "wood ceiling"
+   ],
+   "nonvisual": [
+    "sound: songs by the artist's family, mixed by Panagiotis Mina"
+   ],
+   "claims": [],
+   "themes": [
+    "rememory",
+    "Varosha",
+    "women's songs"
+   ],
+   "references": [
+    "Toni Morrison, rememory"
+   ],
+   "photo_notes": null,
+   "source": "https://www.e-flux.com/criticism/6782430/61st-venice-biennale-pavilions-and-satellites"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Korea Pavilion, Giardini",
+   "artist": "Hyeree Ro",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Bearing",
+   "year": "2026",
+   "family": "textile",
+   "medium_line": "Wall work of about 4,000 wax-coated organza circles",
+   "dimensions": "about 4,000 pieces",
+   "what_you_see": "A membrane-like wall of about 4,000 organza circles coated in wax, layered like scales or leaves, divides the room. It suggests a womb or a sanctuary. Metal rods by a second artist pass through the same space.",
+   "materials": [
+    "organza",
+    "wax"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Liberation and community presented as actions, not objects"
+   ],
+   "themes": [
+    "shelter",
+    "mourning",
+    "repair"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/05/06/our-pick-of-the-best-pavilions-at-the-61st-venice-biennale"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Slovenia Pavilion, Arsenale",
+   "artist": "Nonument Group",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": true,
+   "title": "Soundtrack for an Invisible House",
+   "year": "2026",
+   "family": "earth",
+   "medium_line": "Crushed rubble and mirrors with soundscape",
+   "dimensions": null,
+   "what_you_see": "The room is filled with the crushed remains of the previous Architecture Biennale. Mirrors at either end make the heaps seem endless. Visitors sit among concrete debris.",
+   "materials": [
+    "crushed rubble",
+    "mirrors"
+   ],
+   "nonvisual": [
+    "sound: four-language polyphony, birdsong, wind and water"
+   ],
+   "claims": [
+    "Reuses one exhibition as the ground of the next"
+   ],
+   "themes": [
+    "ruin",
+    "contested memory",
+    "mosque ruin"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://artreview.com/venice-biennale-2026-national-pavilion-highlights/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Peru Pavilion, Arsenale",
+   "artist": "Sara Flores",
+   "artist_born": "Shipibo-Konibo",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "From Other Worlds",
+   "year": "2026",
+   "family": "textile",
+   "medium_line": "Large paintings on raw cotton, sculptures covered in painted gauze, film",
+   "dimensions": null,
+   "what_you_see": "Paintings of kene patterns on natural-dyed cotton hang in the room beside sculptures of painted gauze. An insect drone and birdsong fill the pavilion.",
+   "materials": [
+    "raw cotton",
+    "natural dyes",
+    "gauze"
+   ],
+   "nonvisual": [
+    "sound: cicadas and birdsong"
+   ],
+   "claims": [
+    "Kene is described by the artist as a practice of repair"
+   ],
+   "themes": [
+    "Indigenous design",
+    "healing",
+    "patience"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.artnews.com/list/art-news/reviews/venice-biennale-2026-best-national-pavilions-1234784517/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Lebanon Pavilion",
+   "artist": "Nabil Nahas",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Don't Get Me Wrong",
+   "year": "2026",
+   "family": "painting",
+   "medium_line": "26 acrylic-on-canvas panels",
+   "dimensions": "26 panels over 45 m",
+   "what_you_see": "Twenty-six panels run along 45 metres of wall. They are raised more than two metres off the floor and pulled away from the wall, so viewers feel distance and effort. Lighting is soft.",
+   "materials": [
+    "acrylic on canvas",
+    "scenography structure"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Asks viewers to think about humans, nature and the cosmos"
+   ],
+   "themes": [
+    "cosmos",
+    "distance"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.archdaily.com/1041443/8-national-pavilion-highlights-from-the-2026-venice-art-biennale"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "French Pavilion, Giardini",
+   "artist": "Yto Barrada",
+   "artist_born": "Paris, raised Tangier",
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Comme Saturne",
+   "year": "2026",
+   "family": "textile",
+   "medium_line": "Dyed and de-voured wool textiles and machines",
+   "dimensions": null,
+   "what_you_see": "Rooms are draped in huge wool hangings, some made by burning away part of the fibre. Daylight slowly fades the dyes. Machines stall and repeat. The catalogue opens with a glossary of textile terms that double as emotions.",
+   "materials": [
+    "wool",
+    "devore fabric",
+    "natural dyes",
+    "machines"
+   ],
+   "nonvisual": [
+    "scent: strong smell of wool"
+   ],
+   "claims": [
+    "Words for textile processes slide into words for feeling"
+   ],
+   "themes": [
+    "Saturn",
+    "wordplay",
+    "time"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/05/06/our-pick-of-the-best-pavilions-at-the-61st-venice-biennale"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Danish Pavilion, Giardini",
+   "artist": "Maja Malou Lyse with DIS",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Things to Come",
+   "year": "2026",
+   "family": "video",
+   "medium_line": "Film projected on a curved wall",
+   "dimensions": null,
+   "what_you_see": "A film set in a cryogenic sperm lab staffed by porn performers plays on the curved wall. Sperm transport containers sit in niches like relics. Baby photographs line clean corridors.",
+   "materials": [
+    "film",
+    "sperm containers",
+    "photographs"
+   ],
+   "nonvisual": [],
+   "claims": [
+    "Imagines pornography and fertility science merged"
+   ],
+   "themes": [
+    "fertility",
+    "reproduction",
+    "porn"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://artreview.com/venice-biennale-2026-national-pavilion-highlights/"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Dutch Pavilion, Giardini",
+   "artist": "Dries Verhoeven",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "The Fortress",
+   "year": "2026",
+   "family": "architecture",
+   "medium_line": "Performance and architectural installation",
+   "dimensions": null,
+   "what_you_see": "Through the day, steel shutters close slowly between the buttresses of the Rietveld pavilion. The sunlit modernist building turns into a dark fortress, and performers sing a score that uses only their false vocal cords.",
+   "materials": [
+    "steel shutters",
+    "voices"
+   ],
+   "nonvisual": [
+    "performance: vocal composition by performers, harsh like sandpaper (artist interview in ArtReview)"
+   ],
+   "claims": [],
+   "themes": [
+    "borders",
+    "nationalism",
+    "building as work"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.theartnewspaper.com/2026/06/03/venice-verdicts-art-world-figures-give-their-thoughts-on-the-2026-biennale"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Greek Pavilion, Giardini",
+   "artist": "Andreas Angelidakis",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": false,
+   "title": "Escape Room",
+   "year": "2026",
+   "family": "digital",
+   "medium_line": "Immersive installation with LED floor, 21 m screen and soft sculptures",
+   "dimensions": null,
+   "what_you_see": "Neon lights, a light-up floor and a 21-metre screen fill the pavilion, with soft columns slumped on the floor. A second area is a kiosk selling plush books and 3D-printed trinkets.",
+   "materials": [
+    "LED",
+    "plush",
+    "3D prints",
+    "surveillance cameras"
+   ],
+   "nonvisual": [
+    "sound: a pop song on a loop"
+   ],
+   "claims": [
+    "Nation described as a performance like drag"
+   ],
+   "themes": [
+    "post-truth",
+    "nationalism"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://www.wallpaper.com/art/exhibitions-shows/andreas-angelidakis-escape-room-greek-pavilion-venice-biennale-review"
+  },
+  {
+   "exhibition": "61st Venice Biennale 2026 - national pavilions and collateral events",
+   "venue_room": "Belarus Free Theatre, Chiesa di San Giovanni Evangelista (collateral)",
+   "artist": "Belarus Free Theatre",
+   "artist_born": null,
+   "artist_lives": null,
+   "deceased": false,
+   "collective": true,
+   "title": "Official. Unofficial. Belarus.",
+   "year": "2026",
+   "family": "scent",
+   "medium_line": "Group show with wheat field, rebar amulets and a scent",
+   "dimensions": null,
+   "what_you_see": "A field of wheat made by former political prisoners rises from a bed of soil. Above it hang diamond-shaped rebar amulets and metal straw spiders. A cross made of CCTV cameras and a confession booth that runs facial recognition fill the church.",
+   "materials": [
+    "wheat",
+    "soil",
+    "rebar",
+    "CCTV cameras"
+   ],
+   "nonvisual": [
+    "scent: a warm August afternoon at a village cemetery, by ol.factory",
+    "sound: prisoner testimonies read by actors"
+   ],
+   "claims": [
+    "Counts as the first independent contribution from Belarus"
+   ],
+   "themes": [
+    "surveillance",
+    "exile",
+    "prison"
+   ],
+   "references": [],
+   "photo_notes": null,
+   "source": "https://artreview.com/venice-biennale-2026-highlights-off-site-exhibitions/"
+  }
+ ],
+ "titles_verbatim": [
+  "khalil",
+  "The End, Where All began, EdEN",
+  "Simbi Siren",
+  "Amalgam (Origin)",
+  "Guardaverde",
+  "Amistad Takeover",
+  "Soft Offerings to Silenced Voices and to All Who Have Turned to Dust",
+  "ICE Age Disease Thrower",
+  "Black Ifa 1-5",
+  "The Council of the Mother Spirits of the Animals",
+  "The End of the World",
+  "Postscript to the Arabic Edition",
+  "far from quieting",
+  "Let This Be My Cathedral",
+  "Anatomy of the Magnolia Tree for Koyo Kouoh and Toni Morrison",
+  "Untitled (Spirit Jar)",
+  "...fester...",
+  "Garden of the Broken Hearted",
+  "Temple of Passages",
+  "Mantra",
+  "Tougaloo",
+  "The Wanda Coleman Songbook",
+  "Panorama 94",
+  "Death Passed My Way and Stuck this Flower in my Mouth",
+  "Dedication II",
+  "Lovers' Vigil",
+  "Memento Vivere",
+  "Crowds and Insects",
+  "Things Felt But Not Quite Expressed",
+  "Mercurial New York",
+  "It's All Thanks to Bad Weather",
+  "Observatorio de lagunas",
+  "A Home Is Where My Leaves Are",
+  "Black Earth Calendar",
+  "Efflorescence/The Way We Wake",
+  "Umrhubuluzi",
+  "First Living Woman",
+  "Les Filles d'Ouranos",
+  "Poto Mitan",
+  "Which Way to Land? An Open Question About Burma's Fate",
+  "Breath Orchestra",
+  "Bound With the Living: Gathering in Venice",
+  "Home is a Foreign Place",
+  "The Recarcassing Ceremony",
+  "Between a River and a Sea",
+  "Guaniquilla luminosa / Luminous Guaniquilla",
+  "May your tears never dry, you who weep over stones",
+  "Human Dignity Shall Be Inviolable",
+  "They Have Eyes, But They See Not, They Have Ears, But They Hear Not",
+  "The Home Front",
+  "Grass Babies, Moon Babies",
+  "Seaworld Venice",
+  "Asetta",
+  "Entre chien et loup",
+  "Con te con tutto",
+  "Aeolian Suite",
+  "Passer",
+  "Bearing",
+  "Soundtrack for an Invisible House",
+  "From Other Worlds",
+  "Don't Get Me Wrong",
+  "Comme Saturne",
+  "Things to Come",
+  "The Fortress",
+  "Escape Room",
+  "Official. Unofficial. Belarus.",
+  "Liberation Space: Fortress/Nest",
+  "Comigo ninguém pode",
+  "Still Life amid Ruin",
+  "Aracnes",
+  "Predicting History: Testing Translation",
+  "How Many Angels Can Dance on the Head of a Pin?",
+  "The Ear is the Eye of the Soul",
+  "A Pause",
+  "Parts of My Body",
+  "Across Words",
+  "Tais Don",
+  "Fraze ne'ebe seidauk hotu (An Unfinished Sentence)",
+  "The Aural Sea",
+  "Lost Form Archive",
+  "Untitled (The Cradle)",
+  "Monitor Yin Yang",
+  "Los restos",
+  "Domus Diasporica",
+  "Liquid Tongues",
+  "IT NEVER SSST",
+  "Dreamshook",
+  "Simba Moto! Seize the Fire! Saisis le feu!",
+  "Call Me the Breeze",
+  "Pocket Universe",
+  "Screen Melancholy",
+  "Free Men",
+  "Baby I'm Yours, Forever",
+  "Untamed Assembly: Backstage of Utopia",
+  "The Peacock's Graveyard",
+  "Elegy",
+  "In Another Man's Yard",
+  "Geographies of Distance: Remembering Home",
+  "Matriclysm: An Archaeology of Connections Lost",
+  "Vessels of Other Worlds",
+  "Tawna & Oscar",
+  "Kawashima",
+  "Placenta",
+  "Medulla",
+  "Parfumerie",
+  "Retiro",
+  "No Shelter 12-29",
+  "foldtogram (brackwish waters, NYC / Venezia, rcp 95 ft x 50 in), iteration 1",
+  "Reveries of Collective Walkers (Reading to Plants)",
+  "Dirt Bowl Table",
+  "GENOCIDE",
+  "Boîte-en-valise",
+  "La Cour (The Yard)",
+  "Souffle 8",
+  "Surveillance Crucifix",
+  "Dogs of Europe",
+  "Still Life",
+  "Ephemeral temple for decaying beings"
+ ],
+ "phrases": [
+  "persistent signals of earth and life",
+  "an archipelago of oases",
+  "resistance and healing",
+  "joy, solace, hope, and transcendence",
+  "polyphonous assembly of art",
+  "convivial collectivity",
+  "attunement and attention",
+  "work of listening to artists",
+  "rest, contemplation, and deep listening",
+  "more sensorial than didactic",
+  "the transformative spatial power of the threshold",
+  "portals of improvisation to the elsewhere",
+  "the quiet tones, the lower frequencies",
+  "sites of knowledge and regeneration",
+  "both shrines and healing instruments",
+  "a portable condition",
+  "a post-digital Platonic Cave",
+  "phantom spaces",
+  "a living archive that invites silence",
+  "complicates the dualisms of purity and pollution",
+  "a migration hub",
+  "the creole garden",
+  "carries records that cannot be destroyed",
+  "reimagines the Garden of Eden",
+  "ritual of weaving",
+  "liberation and community are actions",
+  "fire can burn, but it can also create",
+  "a space of rest and contemplation",
+  "weaving histories of beauty and destruction",
+  "listening as a practice",
+  "a form of collective redemption",
+  "the body as subject and medium",
+  "a haven for introspection",
+  "an immersive environment for contemplation",
+  "witness and survivor",
+  "a call to deep listening",
+  "healing, regeneration, and care",
+  "wrest craft back from capital and empire",
+  "decentring empire",
+  "ancestral ways of knowing",
+  "oases, contemplation, deep listening",
+  "forms of life and care",
+  "a space of refuge",
+  "holding memory and ecological grief",
+  "ritual lament of shared breath and song",
+  "slowness, transformation and dialogue"
+ ]
+}

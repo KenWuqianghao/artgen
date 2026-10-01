@@ -1,1 +1,0 @@
-Bao Mensah (b. 1980, a mission station in the Kimberley) lives and works between Kochi and Manila. Their practice spans textile installation, pedagogy and long-term collaboration with communities. Recent presentations include the Liverpool Biennial and the Gwangju Biennale. They were a resident at Gasworks, London and are represented by Salt Projects, Lagos.
