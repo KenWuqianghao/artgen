@@ -2134,25 +2134,6 @@
        1
       ]
      }
-    },
-    {
-     "t": "{count_word} lifelike wax figures of sleeping children lie in plexiglass cases on the floor.",
-     "materials": {
-      "core": [
-       "wax"
-      ],
-      "accent": [
-       "plexiglass"
-      ],
-      "core_n": [
-       1,
-       1
-      ],
-      "accent_n": [
-       1,
-       1
-      ]
-     }
     }
    ],
    "materials": {
@@ -2186,15 +2167,13 @@
     "Dimensions variable"
    ],
    "facts": [
-    "0|The casts were taken from {n} friends during a single night in {place} in {year_then}.",
-    "1|The children are modelled on the artist's own, at the age of two."
+    "0|The casts were taken from {n} friends during a single night in {place} in {year_then}."
    ],
    "process": [
-    "1|The wax used never fully hardens."
+    "The casts were made in one night and never retouched."
    ],
    "quotes": [
-    "0|Together we make one body that nobody owns.",
-    "1|Sleep is the only time a child is not asking for something."
+    "0|Together we make one body that nobody owns."
    ],
    "themes": [
     "kinship",
@@ -2202,8 +2181,7 @@
     "queer community"
    ],
    "turns": [
-    "0|The work proposes the group as the only body that can protect each of its parts.",
-    "1|Lying in their cases, the children make care look like something that never ends."
+    "0|The work proposes the group as the only body that can protect each of its parts."
    ],
    "camera": "three-quarter view under bright gallery light",
    "people_p": 0.1,

@@ -40,13 +40,14 @@ a:hover { color: var(--accent); }
 .hero h1 {
   font-family: var(--display);
   font-weight: var(--display-weight, 600);
-  font-size: clamp(56px, 13.5vw, 232px);
+  font-size: clamp(40px, 12.5vw, 232px);
   line-height: 0.86;
   letter-spacing: var(--display-tracking, -0.035em);
   margin: 0;
   color: var(--accent);
   text-wrap: balance;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  hyphens: manual;
 }
 .hero .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 6px 32px; margin-top: clamp(20px, 3vw, 40px); max-width: 1100px; }
 .hero .facts p { margin: 0; }

@@ -36,7 +36,8 @@
             "ceramic",
             "architecture",
             "shrine"
-          ]
+          ],
+          "room": "industrial"
         },
         {
           "id": "magazzini",
@@ -50,7 +51,8 @@
             "sound",
             "ceramic",
             "architecture"
-          ]
+          ],
+          "room": "industrial"
         },
         {
           "id": "padiglione",
@@ -66,7 +68,8 @@
             "figure",
             "shrine",
             "video"
-          ]
+          ],
+          "room": "white"
         },
         {
           "id": "palazzo",
@@ -81,7 +84,8 @@
             "archive",
             "ceramic",
             "video"
-          ]
+          ],
+          "room": "historic"
         },
         {
           "id": "chiesa",
@@ -96,7 +100,8 @@
             "figure",
             "video",
             "earth"
-          ]
+          ],
+          "room": "historic"
         },
         {
           "id": "squero",
@@ -111,7 +116,8 @@
             "earth",
             "performance",
             "video"
-          ]
+          ],
+          "room": "industrial"
         },
         {
           "id": "giardino",
@@ -124,7 +130,8 @@
             "sound",
             "figure",
             "architecture"
-          ]
+          ],
+          "room": "outdoor"
         },
         {
           "id": "sala-video",
@@ -135,7 +142,8 @@
           "families": [
             "video",
             "sound"
-          ]
+          ],
+          "room": "dark"
         }
       ]
     },
@@ -173,7 +181,8 @@
             "architecture",
             "shrine",
             "archive"
-          ]
+          ],
+          "room": "industrial"
         },
         {
           "id": "palacio",
@@ -188,7 +197,8 @@
             "archive",
             "ceramic",
             "video"
-          ]
+          ],
+          "room": "historic"
         },
         {
           "id": "galerias",
@@ -202,7 +212,8 @@
             "video",
             "ceramic",
             "figure"
-          ]
+          ],
+          "room": "white"
         },
         {
           "id": "convento",
@@ -216,7 +227,8 @@
             "earth",
             "textile",
             "video"
-          ]
+          ],
+          "room": "historic"
         }
       ]
     },
@@ -254,7 +266,8 @@
             "shrine",
             "archive",
             "painting"
-          ]
+          ],
+          "room": "industrial"
         },
         {
           "id": "aspinwall",
@@ -269,7 +282,8 @@
             "textile",
             "video",
             "architecture"
-          ]
+          ],
+          "room": "industrial"
         },
         {
           "id": "hall",
@@ -282,7 +296,8 @@
             "archive",
             "video",
             "ceramic"
-          ]
+          ],
+          "room": "white"
         }
       ]
     },
@@ -319,7 +334,8 @@
             "architecture",
             "archive",
             "painting"
-          ]
+          ],
+          "room": "industrial"
         },
         {
           "id": "fort",
@@ -332,7 +348,8 @@
             "sound",
             "video",
             "earth"
-          ]
+          ],
+          "room": "dark"
         },
         {
           "id": "musee",
@@ -346,7 +363,8 @@
             "ceramic",
             "textile",
             "video"
-          ]
+          ],
+          "room": "white"
         }
       ]
     },
@@ -382,7 +400,8 @@
             "ceramic",
             "architecture",
             "digital"
-          ]
+          ],
+          "room": "industrial"
         },
         {
           "id": "museum",
@@ -397,7 +416,8 @@
             "ceramic",
             "digital",
             "figure"
-          ]
+          ],
+          "room": "white"
         },
         {
           "id": "bank",
@@ -411,7 +431,8 @@
             "sound",
             "video",
             "textile"
-          ]
+          ],
+          "room": "historic"
         }
       ]
     }
@@ -2439,7 +2460,8 @@
       "display_font": "Bricolage Grotesque",
       "google_fonts": "family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
       "display_weight": 700,
-      "display_tracking": "-0.045em"
+      "display_tracking": "-0.045em",
+      "display_width": 0.68
     },
     {
       "name": "lagoon",
@@ -2453,7 +2475,8 @@
       "display_font": "Instrument Serif",
       "google_fonts": "family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
       "display_weight": 400,
-      "display_tracking": "-0.02em"
+      "display_tracking": "-0.02em",
+      "display_width": 0.52
     },
     {
       "name": "signal",
@@ -2467,7 +2490,8 @@
       "display_font": "Syne",
       "google_fonts": "family=Syne:wght@600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
       "display_weight": 800,
-      "display_tracking": "-0.04em"
+      "display_tracking": "-0.04em",
+      "display_width": 1.08
     },
     {
       "name": "lilac",
@@ -2481,7 +2505,8 @@
       "display_font": "Unbounded",
       "google_fonts": "family=Unbounded:wght@500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
       "display_weight": 500,
-      "display_tracking": "-0.05em"
+      "display_tracking": "-0.05em",
+      "display_width": 0.95
     },
     {
       "name": "brick",
@@ -2495,7 +2520,8 @@
       "display_font": "Big Shoulders Display",
       "google_fonts": "family=Big+Shoulders+Display:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
       "display_weight": 900,
-      "display_tracking": "-0.01em"
+      "display_tracking": "-0.01em",
+      "display_width": 0.5
     },
     {
       "name": "moss",
@@ -2509,7 +2535,8 @@
       "display_font": "Fraunces",
       "google_fonts": "family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
       "display_weight": 300,
-      "display_tracking": "-0.03em"
+      "display_tracking": "-0.03em",
+      "display_width": 0.66
     }
   ],
   "collective_words": [

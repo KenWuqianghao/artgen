@@ -33,7 +33,9 @@ def a_an(word: str) -> str:
     w = word.strip().lower()
     if not w:
         return "a"
-    if re.match(r"^(eu|uni|use|one|u[bcfhjkqrst][aeiou])", w):
+    if re.match(r"^(ubon|udon)", w):            # Thai place names said with "oo"
+        return "an"
+    if re.match(r"^(eu|uni|use|one|u[bcfghjkqrst][aeiou])", w):
         return "a"
     if re.match(r"^(hour|honou?r|heir)", w) or w[0] in "aeiou":
         return "an"

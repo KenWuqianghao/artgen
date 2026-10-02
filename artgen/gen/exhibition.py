@@ -10,6 +10,7 @@ from ..write.essay import essay
 from ..write.exhibition_texts import press_release, section_texts, statement, visitor_info
 from ..write.walltext import wall_text
 from .artist import PROFILES, make_artist
+from .options import MIX, Options
 from .work import make_work, pick_archetype
 
 DAYS = {"May": 9, "September": 20, "December": 12, "June": 7, "October": 4, "November": 22, "January": 11, "March": 31}
@@ -26,17 +27,45 @@ def _person(rng, taken: set[str]) -> str:
     raise RuntimeError("no name")
 
 
-def generate(seed: int, n_works: int = 16, host_id: str | None = None, year: int | None = None) -> Exhibition:
+def _venue_for(rng, arch: dict, entry: dict | None, venues: list[Venue], host: dict) -> Venue:
+    """A venue that fits the work's form and, for a library image, looks like the room in the photograph."""
+    room = entry["room"] if entry else None
+    tiers = [
+        [v for v in venues if arch["family"] in v.families and (room is None or v.room == room)],
+        [v for v in venues if room is not None and v.room == room],
+    ]
+    for tier in tiers:
+        if tier:
+            return pick(rng, tier)
+    opened = [Venue(**v) for v in host["venues"] if v["id"] not in {x.id for x in venues}
+              and (v["room"] == room if room else arch["family"] in v["families"])]
+    if opened:  # open another venue rather than hang a painting in a boatyard
+        venues.append(opened[0])
+        return pick(rng, [opened[0]])  # same draw as before, so seeds stay stable
+    fitting = [v for v in venues if arch["family"] in v.families]
+    return pick(rng, fitting or venues)
+
+
+def generate(opts: Options, library: dict | None = None) -> Exhibition:
+    """One whole edition. Theme, title and identity are drawn even when the curator overrides them,
+    so changing one of those choices does not reshuffle the artists and works."""
     w = corpus.world()
     lx = corpus.lexicon()
+    seed, n_works = opts.seed, opts.works
     rng = sub_rng(seed, "exhibition")
-    host = next(h for h in w["hosts"] if h["id"] == host_id) if host_id else weighted(rng, w["hosts"])
-    year = year or rng.choice([2026, 2027, 2027])
+    drawn_host = weighted(rng, w["hosts"]) if not opts.host else None
+    host = next(h for h in w["hosts"] if h["id"] == opts.host) if opts.host else drawn_host
+    year = opts.year or rng.choice([2026, 2027, 2027])
     edition = rng.randint(3, 19)
     edition_name = f"{ordinal(edition)} {pick(rng, host['edition_names'])}"
     institution = pick(rng, host["institutions"])
     metaphor = pick(rng, lx["metaphors"])
     title = pick(rng, metaphor["titles"])
+    if opts.theme:
+        metaphor = next(m for m in lx["metaphors"] if m["id"] == opts.theme)
+        title = pick(sub_rng(seed, "theme-title", opts.theme), metaphor["titles"])
+    if opts.title:
+        title = opts.title.strip()
     taken: set[str] = set()
     poet = _person(rng, taken)
     poet_region = weighted(rng, w["regions"])
@@ -69,13 +98,24 @@ def generate(seed: int, n_works: int = 16, host_id: str | None = None, year: int
                     country=host["country"], year=year, opening=opening, closing=closing, team=team,
                     sections=sections, venues=venues, artists=[], works=[], identity=pick(rng, w["identities"]),
                     generator=f"artgen {__version__}")
+    if opts.identity:
+        ex.identity = next(i for i in w["identities"] if i["name"] == opts.identity)
+    ex.options = opts.to_dict()
 
-    # line-up: guarantee a historical section and at least one collective, as real line-ups do
-    profiles = [weighted(rng, PROFILES)["id"] for _ in range(n_works)]
-    if "rediscovered" not in profiles:
+    # line-up: shares follow the curator's mix; by default guarantee a historical artist and a collective
+    mix = {"rediscovered": MIX[opts.rediscovered], "collective": MIX[opts.collectives], "emerging": MIX[opts.emerging]}
+    profiles_w = [{**p, "weight": p["weight"] * mix.get(p["id"], 1)} for p in PROFILES]
+    forms = list(opts.forms) or None
+    lib_ids = {e["archetype"] for e in library["entries"]} if library else None
+    historical_ok = any(a.get("historical") and (not forms or a["family"] in forms) and (lib_ids is None or a["id"] in lib_ids)
+                        for a in corpus.archetypes())
+    profiles = [weighted(rng, profiles_w)["id"] for _ in range(n_works)]
+    if "rediscovered" not in profiles and mix["rediscovered"]:
         profiles[0] = "rediscovered"
-    if "collective" not in profiles and n_works > 6:
+    if "collective" not in profiles and n_works > 6 and mix["collective"]:
         profiles[1] = "collective"
+    if not historical_ok:  # the chosen forms leave nothing a historical artist could have made
+        profiles = ["midcareer" if p == "rediscovered" else p for p in profiles]
     used_archetypes: set[str] = set()
     used_titles: set[str] = set()
     names: set[str] = set(taken)
@@ -84,26 +124,27 @@ def generate(seed: int, n_works: int = 16, host_id: str | None = None, year: int
         artist = make_artist(arng, i + 1, year, names, profile=profile)
         names.add(artist.name)
         wrng = sub_rng(seed, "work", i)
-        arch = pick_archetype(wrng, artist, avoid=used_archetypes)
+        avoid = used_archetypes | ({a["id"] for a in corpus.archetypes()} - lib_ids if lib_ids is not None else set())
+        arch = pick_archetype(wrng, artist, forms, avoid=avoid, only=lib_ids)
         used_archetypes.add(arch["id"])
-        fitting = [v for v in venues if arch["family"] in v.families]
-        if not fitting:  # open another venue rather than hang a painting in a boatyard
-            spare = [Venue(**v) for v in host["venues"] if arch["family"] in v["families"] and v["id"] not in {x.id for x in venues}]
-            if spare:
-                venues.append(spare[0])
-                fitting = [spare[0]]
-        venue = pick(wrng, fitting or venues)
+        entry = None
+        if library:
+            entry = pick(wrng, [e for e in library["entries"] if e["archetype"] == arch["id"]])
+        venue = _venue_for(wrng, arch, entry, venues, host)
         section = sections[i % len(sections)]
-        work = make_work(wrng, i + 1, artist, venue, section.id, year, edition_name, arch=arch, used_titles=used_titles)
+        work = make_work(wrng, i + 1, artist, venue, section.id, year, edition_name, arch=arch, used_titles=used_titles, pinned=entry)
         trng = sub_rng(seed, "text", i)
         work.wall_text = tidy(wall_text(trng, artist, work, edition_name))
         author_name = pick(trng, [p.name for p in team] + [_person(trng, names)])
         author_role = fill(pick(trng, lx["essay"]["author_roles"]), {"city": city(pick(trng, artist.lives or [artist.born_place or "Venice"])), "edition": edition_name})
-        work.essay, work.references, _ = essay(trng, artist, work, venue, edition_name, author_name)
+        work.essay, work.references, _ = essay(trng, artist, work, venue, edition_name, author_name, jargon=opts.jargon)
         work.essay = tidy(work.essay)
         work.essay_author = f"{author_name}, {author_role}"
         artist.bio = tidy(bio(trng, artist, work, year))
         work.prompt = image_prompt(sub_rng(seed, "prompt", i), work, venue)
+        if entry:
+            work.prompt = entry["prompt"]
+            work.media, work.media_kind = entry["file"], "image"
         ex.artists.append(artist)
         ex.works.append(work)
 

@@ -49,6 +49,7 @@ class Venue:
     floor: str
     light: str
     families: list[str] = field(default_factory=list)
+    room: str = ""                    # industrial / white / historic / dark / outdoor: what a photo of it looks like
 
 
 @dataclass
@@ -122,6 +123,7 @@ class Exhibition:
     visitor_info: list[str] = field(default_factory=list)
     identity: dict = field(default_factory=dict)
     generator: str = ""
+    options: dict = field(default_factory=dict)
 
     # ---- lookups
     def artist(self, artist_id: str) -> Artist:

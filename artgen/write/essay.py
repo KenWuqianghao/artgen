@@ -13,7 +13,7 @@ def _short(t: dict) -> str:
     return t.get("short") or t["name"].split()[-1]
 
 
-def essay(rng: random.Random, a: Artist, w: Work, venue: Venue, edition_name: str, author: str) -> tuple[str, list[str], str]:
+def essay(rng: random.Random, a: Artist, w: Work, venue: Venue, edition_name: str, author: str, jargon: int = 2) -> tuple[str, list[str], str]:
     """Returns (essay markdown with [^n] notes after a '---' line, references used, author line)."""
     E = corpus.lexicon()["essay"]
     thinkers = pick(rng, corpus.world()["theorists"], 3)
@@ -52,5 +52,19 @@ def essay(rng: random.Random, a: Artist, w: Work, venue: Venue, edition_name: st
         f"[^3]: {t1['name']}, *{t1['work']}* ({t1['year']}), pp. {pages[1]}–{pages[1] + rng.randint(2, 19)}.",
         f"[^4]: {t2['name']}, *{t2['work']}* ({t2['year']}), p. {pages[2]}. The term is used here loosely, as the author would no doubt object.",
     ]
+    if jargon <= 1:  # plain: keep the description, one theorist, the close
+        paras = [paras[0], paras[1], paras[3], paras[-1]]
+        notes = [notes[1].replace("[^2]", "[^1]")]
+        paras[2] = paras[2].replace("[^2]", "[^1]")
+    elif jargon >= 3:  # unbearable: an extra paragraph of stacked theory and two more notes
+        x = pick(rng, corpus.world()["theorists"], 2)
+        more_adj = pick(rng, E["adjectives"], 4)
+        more_n = pick(rng, E["nouns"], 3)
+        paras.insert(-1, f"Read alongside {_short(x[0])}'s {x[0]['concept']}[^5] and {_short(x[1])}'s {x[1]['concept']},[^6] "
+                         f"the work becomes legible as a {more_adj[0]}, {more_adj[1]} {more_n[0]}: a {more_n[1]} that is at once "
+                         f"{more_adj[2]} and {more_adj[3]}, and that {pick(rng, E['adverbs'])} {pick(rng, E['verbs'])} the very {more_n[2]} "
+                         f"it appears to {pick(rng, ['index', 'perform', 'withhold', 'metabolise'])}.")
+        notes += [f"[^5]: {x[0]['name']}, *{x[0]['work']}* ({x[0]['year']}), p. {rng.randint(3, 240)}.",
+                  f"[^6]: {x[1]['name']}, *{x[1]['work']}* ({x[1]['year']}), passim."]
     body = "\n\n".join(fix_articles(cap(p.strip())) for p in paras)
     return body + "\n---\n" + "\n".join(notes), [t["name"] for t in thinkers], author

@@ -5,266 +5,171 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
 <style>
-  :root {
-    --bg: #141414; --fg: #ECE8DF; --muted: #9A948A;
-    --wall1: #F4F2EE; --wall2: #E6E2DA; --floor1: #B8B2A6; --floor2: #8F897D;
-    --ink: #1A1A1A; --lmuted: #5E5950; /* video-only: darkened from gallery #6F6A61 for WCAG on the wall gradient */ --card: #FBFAF7; --rule: #D6D1C7; --gold: #B8963E;
-  }
+  :root { --ink: #141414; --paper: #ffffff; --muted: #9a9a95; --accent: #d4007a; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--bg); font-family: Georgia, "Times New Roman", serif; color: var(--fg); }
-  .sans { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .mono { font-family: Menlo, "SF Mono", monospace; }
-  .beat { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg); opacity: 0; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--ink); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .serif { font-family: Georgia, "Times New Roman", serif; }
+  .beat { position: absolute; inset: 0; overflow: hidden; background: var(--ink); color: var(--paper); opacity: 0; }
   #b1 { opacity: 1; }
-  .light { background: linear-gradient(var(--wall1), var(--wall2)); color: var(--ink); }
-  .center { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; }
-  .hook { font-size: 92px; letter-spacing: -0.01em; line-height: 1.1; text-align: center; max-width: 1500px; }
-  .kicker { font-size: 20px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 28px; }
+  .center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .hook { font-size: 104px; line-height: 1.08; letter-spacing: -0.015em; max-width: 1500px; }
+  .sub { font-size: 64px; line-height: 1.15; max-width: 1400px; }
+  .brand { margin-top: 48px; font-size: 44px; color: var(--muted); }
+  .brand b { color: var(--paper); font-weight: 700; }
 
-  /* b2 + b3 terminal */
-  .term { position: absolute; inset: 0; padding: 120px 160px; display: flex; flex-direction: column; justify-content: center; }
-  .term .line { font-size: 30px; line-height: 1.7; white-space: pre; color: var(--fg); }
-  .term .prompt { color: var(--muted); }
-  .term .out .line { opacity: 0; }
-  .term .sub { color: var(--muted); }
-  .cursor { display: inline-block; width: 16px; height: 34px; background: var(--fg); vertical-align: -6px; margin-left: 4px; }
+  #clipwrap { position: absolute; inset: 0; transform-origin: 1800px 380px; }
+  #clip { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #captions { position: absolute; right: 64px; bottom: 60px; width: 1100px; height: 80px; }
+  .cap { position: absolute; right: 0; bottom: 0; background: var(--ink); color: var(--paper); font-size: 38px; font-weight: 500;
+          padding: 16px 26px; border-radius: 6px; white-space: nowrap; opacity: 0; }
 
-  /* b4 wall label */
-  .wall { position: absolute; inset: 0; background: linear-gradient(var(--wall1) 0 72%, var(--wall2) 72%); }
-  .floor { position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(var(--floor1), var(--floor2)); }
-  .labelcard { position: absolute; left: 0; right: 0; top: 0; bottom: 300px; display: flex; align-items: center; justify-content: center; }
-  .card { width: 680px; background: var(--card); border: 1px solid var(--rule); padding: 40px 44px; color: var(--ink); }
-  .card .artist { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: bold; font-size: 30px; margin-bottom: 8px; }
-  .card .bio { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; color: var(--lmuted); line-height: 1.4; margin-bottom: 26px; }
-  .card .title { font-style: italic; font-size: 30px; margin-bottom: 8px; }
-  .card .meta { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; color: var(--lmuted); line-height: 1.5; }
-  .card .courtesy { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; color: var(--lmuted); margin-top: 24px; line-height: 1.45; }
-
-  /* b5 quote */
-  .quote { position: absolute; inset: 0; padding: 0 200px; display: flex; flex-direction: column; justify-content: center; }
-  .quote .q { font-size: 64px; line-height: 1.28; color: var(--ink); letter-spacing: -0.005em; }
-  .quote .q i { font-style: italic; }
-  .quote .src { margin-top: 44px; font-size: 20px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--lmuted); }
-
-  /* b6 footnotes */
-  .notes { position: absolute; inset: 0; padding: 0 220px; display: flex; flex-direction: column; justify-content: center; gap: 30px; }
-  .notes .h { font-size: 20px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lmuted); margin-bottom: 10px; }
-  .notes .n { font-size: 34px; line-height: 1.4; color: var(--ink); opacity: 0; }
-  .notes .n sup { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; color: var(--lmuted); margin-right: 14px; }
-
-  /* b6b montage of real renders */
-  .shot { position: absolute; inset: 0; opacity: 0; }
+  .shot { position: absolute; inset: 0; opacity: 0; overflow: hidden; }
   .shot img { width: 1920px; height: 1080px; object-fit: cover; display: block; }
-  .shot .cap { position: absolute; left: 48px; bottom: 40px; background: rgba(20,20,20,0.82); color: var(--fg); padding: 14px 20px; font-size: 22px; line-height: 1.35; max-width: 900px; }
-  .shot .cap b { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: bold; }
-  .shot .cap i { font-style: italic; }
+  .mcap { position: absolute; left: 64px; bottom: 60px; background: var(--ink); color: var(--paper); font-size: 38px; font-weight: 500;
+           padding: 16px 26px; border-radius: 6px; opacity: 0; }
 
-  /* b7 placeholder */
-  .ph { position: absolute; inset: 0; }
-  .ph img { width: 1920px; height: 1200px; object-fit: cover; display: block; margin-top: -60px; }
-
-  /* b8 stats */
-  .stats { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 120px; }
-  .stat { text-align: center; }
-  .stat .num { font-size: 150px; line-height: 1; letter-spacing: -0.02em; color: var(--fg); }
-  .stat .lab { font-size: 22px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-top: 22px; }
-
-  /* b9 end */
-  .wm { font-size: 160px; letter-spacing: -0.03em; line-height: 1; }
-  .wm .dot { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: var(--gold); margin-left: 10px; vertical-align: 12px; }
-  .tag { margin-top: 34px; font-size: 30px; color: var(--fg); }
-  .tiny { margin-top: 22px; font-size: 18px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+  .wm { font-size: 150px; letter-spacing: -0.03em; line-height: 1; }
+  .wm b { font-weight: 700; }
+  .wm span { font-weight: 300; color: var(--muted); }
+  .tag { margin-top: 40px; font-size: 54px; }
+  .tiny { margin-top: 30px; font-size: 26px; color: var(--muted); }
 </style>
 </head>
 <body>
-<div data-composition-id="demo" data-width="1920" data-height="1080" data-start="0" data-duration="20.7"
-     style="position:relative;width:1920px;height:1080px;">
+<div data-composition-id="studio-demo" data-width="1920" data-height="1080" data-start="0" data-duration="38.7"
+     style="position:relative;width:100%;height:100%;">
 
-  <!-- b1 hook -->
-  <div class="beat" id="b1"><div class="center" id="b1-c">
-    <div class="kicker sans">Venice, 2026</div>
-    <div class="hook" id="b1-h">Every biennale looks the same.</div>
+  <div class="beat" id="b1"><div class="center" id="b1-c"><div class="hook serif" id="b1-h">Every biennale looks the same.</div></div></div>
+  <div class="beat" id="b2"><div class="center" id="b2-c">
+    <div class="sub serif" id="b2-h">So we built one you can curate.</div>
+    <div class="brand" id="b2-b"><b>artgen</b> Studio</div>
   </div></div>
 
-  <!-- b2 automate + typed command -->
-  <div class="beat" id="b2"><div class="term" id="b2-c">
-    <div class="hook" id="b2-h" style="text-align:left;font-size:80px;margin-bottom:70px;">So we automated it.</div>
-    <div class="line mono"><span class="prompt">$ </span><span id="b2-cmd"></span><span class="cursor" id="b2-cur"></span></div>
-  </div></div>
-
-  <!-- b3 terminal output -->
-  <div class="beat" id="b3"><div class="term" id="b3-c" data-layout-allow-overflow>
-    <div class="line mono"><span class="prompt">$ </span>python3 -m artgen generate -n 6 --seed 100</div>
-    <div class="out">
-      <div class="line mono">[1/6] Mireille Kowalczyk — The Weight of Lead (2025)</div>
-      <div class="line mono sub">        durational performance (documentation); lead, hand-dyed cotton, indigo, bitumen</div>
-      <div class="line mono">[2/6] Reza Mensah — Notes Toward an Elemental Palimpsest (2025)</div>
-      <div class="line mono sub">        essay film; USB cables, mosquito netting, cast aluminium</div>
-      <div class="line mono">[3/6] Adaeze Mahfouz — A Grammar of Predictive Violence (2026)</div>
-      <div class="line mono sub">        durational performance (documentation); gold leaf, hospital curtains, hotel bed linen</div>
-      <div class="line mono">[4/6] Minor Gardens Working Group — Against Rupture (2026)</div>
-      <div class="line mono sub">        floor-based installation; beeswax, hotel bed linen, reclaimed tin roofing</div>
-      <div class="line mono">[5/6] Leila Tanaka-Gruber — Elegy (epoxy resin) (2026)</div>
-      <div class="line mono sub">        multi-channel video installation; epoxy resin, indigo, marble dust</div>
-      <div class="line mono">[6/6] Ravi Lindqvist — Portrait of a Potentiality as Iron Filings (2026)</div>
-      <div class="line mono sub">        essay film; iron filings, unfired bricks, raw unfired clay</div>
-    </div>
-  </div></div>
-
-  <!-- b4 wall label -->
-  <div class="beat light" id="b4">
-    <div class="wall" id="b4-c" data-layout-allow-overflow>
-      <div class="floor"></div>
-      <div class="labelcard"><div class="card" id="b4-card">
-        <div class="artist">Mireille Kowalczyk</div>
-        <div class="bio">b. 1985, a mining town in the Atacama. Lives and works between Manila and Karachi.</div>
-        <div class="title">The Weight of Lead, 2025</div>
-        <div class="meta">Durational performance (documentation)<br>Lead, hand-dyed cotton, indigo and bitumen<br>Single-channel colour video, sound, 17'25", loop</div>
-        <div class="courtesy">Courtesy of the artist and Galería Umbral, Mexico City. Commissioned by La Biennale di Venezia with the support of Pro Helvetia.</div>
-      </div></div>
-    </div>
+  <div id="clipwrap">
+    <video id="clip" class="clip" src="assets/clip.mp4" data-start="4.0" data-duration="26.6" data-track-index="1" muted playsinline></video>
+  </div>
+  <div id="captions">
+    <div class="cap" id="cap0">Roll a seed</div>
+    <div class="cap" id="cap1">Choose a city</div>
+    <div class="cap" id="cap2">Choose a curatorial theme</div>
+    <div class="cap" id="cap3">Decide which art is allowed</div>
+    <div class="cap" id="cap4">Add rediscovered artists</div>
+    <div class="cap" id="cap5">Set the catalogue theory to Unbearable</div>
+    <div class="cap" id="cap6">Pick a visual identity</div>
+    <div class="cap" id="cap7">Name your biennial</div>
+    <div class="cap" id="cap8">Every work has an installation view</div>
+    <div class="cap" id="cap9">and a wall label, a wall text and a footnoted essay</div>
+    <div class="cap" id="cap10">Or let it surprise you</div>
   </div>
 
-  <!-- b5 statement quote -->
-  <div class="beat light" id="b5"><div class="quote" id="b5-c" data-layout-allow-overflow>
-    <div class="q" id="b5-q"><i>The Weight of Lead</i> insistently witnesses the quiet visuality of the creole garden.</div>
-    <div class="src sans" id="b5-s">Artist statement — generated</div>
-  </div></div>
-
-  <!-- b6 footnotes -->
-  <div class="beat light" id="b6"><div class="notes" id="b6-c" data-layout-allow-overflow>
-    <div class="h sans">Curatorial essay — notes</div>
-    <div class="n"><sup>1</sup>See Mireille Kowalczyk in conversation with the author, Manila, October 2024.</div>
-    <div class="n"><sup>2</sup>Saidiya Hartman, <i>Wayward Lives, Beautiful Experiments</i> (2019), p. 13.</div>
-    <div class="n"><sup>3</sup>Legacy Russell, <i>Glitch Feminism</i> (2020), pp. 163–169.</div>
-    <div class="n"><sup>4</sup>Eduardo Viveiros de Castro, <i>Cannibal Metaphysics</i> (2009), p. 49. The term is used here loosely, as the author would no doubt object.</div>
-  </div></div>
-
-  <!-- b6b three real renders -->
-  <div class="beat" id="b6b">
-    <div class="shot" id="m1"><img src="assets/work1.jpg" alt=""><div class="cap" id="m1-cap"><b>Tomás Yeboah</b>, <i>I Am Not Here to Explain the Scar</i>, 2025. Found-object assemblage; raw unfired clay, denim offcuts, bitumen.</div></div>
-    <div class="shot" id="m2"><img src="assets/work2.jpg" alt=""><div class="cap" id="m2-cap"><b>Yusuf Okonkwo-Vieira</b>, <i>Rehearsal for the Broken Back</i>, 2025. Reading room / social-practice presentation; USB cables, lead, dried seaweed, clay bricks from a demolished factory.</div></div>
-    <div class="shot" id="m3"><img src="assets/work3.jpg" alt=""><div class="cap" id="m3-cap"><b>Bao Mensah</b>, <i>Against Opacity</i>, 2025. Textile installation (hand-sewn patchwork banners); blue tarpaulin, plastic bottles, clay bricks from a demolished factory.</div></div>
+  <div class="beat" id="b4">
+    <div class="shot" id="m1" data-layout-allow-overflow><img src="assets/m1.jpg" alt=""></div>
+    <div class="shot" id="m2" data-layout-allow-overflow><img src="assets/m2.jpg" alt=""></div>
+    <div class="shot" id="m3" data-layout-allow-overflow><img src="assets/m3.jpg" alt=""></div>
+    <div class="shot" id="m4" data-layout-allow-overflow><img src="assets/m4.jpg" alt=""></div>
+    <div class="shot" id="m5" data-layout-allow-overflow><img src="assets/m5.jpg" alt=""></div>
+    <div class="shot" id="m6" data-layout-allow-overflow><img src="assets/m6.jpg" alt=""></div>
+    <div class="shot" id="m7" data-layout-allow-overflow><img src="assets/m7.jpg" alt=""></div>
+    <div class="shot" id="m8" data-layout-allow-overflow><img src="assets/m8.jpg" alt=""></div>
+    <div class="shot" id="m9" data-layout-allow-overflow><img src="assets/m9.jpg" alt=""></div>
+    <div class="mcap" id="mcap1">76 kinds of work, drawn from 200 real ones</div>
+    <div class="mcap" id="mcap2">One of them is a hole in the floor</div>
   </div>
 
-  <!-- b7 the work -->
-  <div class="beat" id="b7"><div class="ph" id="b7-c"><img src="assets/placeholder.svg" alt=""></div></div>
-
-  <!-- b8 stats -->
-  <div class="beat" id="b8"><div class="stats" id="b8-c">
-    <div class="stat"><div class="num" id="s1">0</div><div class="lab sans">works</div></div>
-    <div class="stat"><div class="num" id="s2">0</div><div class="lab sans">essays</div></div>
-    <div class="stat"><div class="num" id="s3">0</div><div class="lab sans">footnotes</div></div>
-    <div class="stat"><div class="num" id="s4">0.0s</div><div class="lab sans">to generate</div></div>
+  <div class="beat" id="b5"><div class="center" id="b5-c">
+    <div class="wm" id="b5-wm"><b>artgen</b> <span>Studio</span></div>
+    <div class="tag serif" id="b5-t">Curate a biennial that does not exist.</div>
+    <div class="tiny" id="b5-s">Every artist, work, text and photograph is generated.</div>
   </div></div>
 
-  <!-- b9 end -->
-  <div class="beat" id="b9"><div class="center" id="b9-c">
-    <div class="wm" id="b9-wm">artgen<span class="dot" id="b9-dot"></span></div>
-    <div class="tag" id="b9-tag">random contemporary art, with the paper.</div>
-    <div class="tiny sans" id="b9-tiny">every word on this screen was random</div>
-  </div></div>
-
-  <audio id="music" src="audio/music/theme.wav" data-start="0" data-duration="20.671" data-track-index="30" data-volume="0.85"></audio>
-  <audio id="sfx-typing" src="audio/sfx/typing.wav" data-start="2.2" data-duration="1.15" data-track-index="20" data-volume="0.5"></audio>
-  <audio id="tick1" src="audio/sfx/tick.wav" data-start="3.6" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
-  <audio id="tick2" src="audio/sfx/tick.wav" data-start="4.0" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
-  <audio id="tick3" src="audio/sfx/tick.wav" data-start="4.4" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
-  <audio id="tick4" src="audio/sfx/tick.wav" data-start="4.8" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
-  <audio id="tick5" src="audio/sfx/tick.wav" data-start="5.2" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
-  <audio id="tick6" src="audio/sfx/tick.wav" data-start="5.6" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
-  <audio id="mt1" src="audio/sfx/tick.wav" data-start="13.6" data-duration="0.06" data-track-index="21" data-volume="0.5"></audio>
-  <audio id="mt2" src="audio/sfx/tick.wav" data-start="14.3" data-duration="0.06" data-track-index="21" data-volume="0.5"></audio>
-  <audio id="mt3" src="audio/sfx/tick.wav" data-start="15.0" data-duration="0.06" data-track-index="21" data-volume="0.5"></audio>
-  <audio id="sfx-chime" src="audio/sfx/chime.wav" data-start="15.7" data-duration="1.64" data-track-index="22" data-volume="0.8"></audio>
-  <audio id="tick7" src="audio/sfx/tick.wav" data-start="17.6" data-duration="0.06" data-track-index="21" data-volume="0.5"></audio>
-  <audio id="tick8" src="audio/sfx/tick.wav" data-start="17.9" data-duration="0.06" data-track-index="21" data-volume="0.5"></audio>
-  <audio id="tick9" src="audio/sfx/tick.wav" data-start="18.2" data-duration="0.06" data-track-index="21" data-volume="0.5"></audio>
-  <audio id="tick10" src="audio/sfx/tick.wav" data-start="18.5" data-duration="0.06" data-track-index="21" data-volume="0.5"></audio>
-  <audio id="sfx-pop" src="audio/sfx/pop.wav" data-start="19.65" data-duration="0.18" data-track-index="23" data-volume="0.6"></audio>
+    <audio id="music" src="audio/music/theme.wav" data-start="0" data-duration="38.671" data-track-index="30" data-volume="0.8"></audio>
+  <audio id="typing" src="audio/sfx/typing.wav" data-start="17.316" data-duration="1.750" data-track-index="20" data-volume="0.45"></audio>
+  <audio id="tick0" src="audio/sfx/tick.wav" data-start="5.333" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick1" src="audio/sfx/tick.wav" data-start="6.903" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick2" src="audio/sfx/tick.wav" data-start="8.497" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick3" src="audio/sfx/tick.wav" data-start="10.073" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick4" src="audio/sfx/tick.wav" data-start="11.466" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick5" src="audio/sfx/tick.wav" data-start="12.875" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick6" src="audio/sfx/tick.wav" data-start="14.340" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick7" src="audio/sfx/tick.wav" data-start="15.769" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick8" src="audio/sfx/tick.wav" data-start="22.332" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick9" src="audio/sfx/tick.wav" data-start="26.703" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="tick10" src="audio/sfx/tick.wav" data-start="28.128" data-duration="0.06" data-track-index="21" data-volume="0.55"></audio>
+  <audio id="cut0" src="audio/sfx/tick.wav" data-start="31.050" data-duration="0.06" data-track-index="22" data-volume="0.35"></audio>
+  <audio id="cut1" src="audio/sfx/tick.wav" data-start="31.500" data-duration="0.06" data-track-index="22" data-volume="0.35"></audio>
+  <audio id="cut2" src="audio/sfx/tick.wav" data-start="31.950" data-duration="0.06" data-track-index="22" data-volume="0.35"></audio>
+  <audio id="cut3" src="audio/sfx/tick.wav" data-start="32.400" data-duration="0.06" data-track-index="22" data-volume="0.35"></audio>
+  <audio id="cut4" src="audio/sfx/tick.wav" data-start="32.850" data-duration="0.06" data-track-index="22" data-volume="0.35"></audio>
+  <audio id="cut5" src="audio/sfx/tick.wav" data-start="33.300" data-duration="0.06" data-track-index="22" data-volume="0.35"></audio>
+  <audio id="cut6" src="audio/sfx/tick.wav" data-start="33.750" data-duration="0.06" data-track-index="22" data-volume="0.35"></audio>
+  <audio id="cut7" src="audio/sfx/tick.wav" data-start="34.200" data-duration="0.06" data-track-index="22" data-volume="0.35"></audio>
+  <audio id="chime" src="audio/sfx/chime.wav" data-start="35.100" data-duration="1.640" data-track-index="23" data-volume="0.7"></audio>
 </div>
-
 <script>
-window.__timelines = window.__timelines || {};
 gsap.registerPlugin(SplitText);
 var tl = gsap.timeline({ paused: true });
 
-/* Beat table (absolute seconds). Every position below is global time. */
-var B = { b1: [0.0, 1.6], b2: [1.6, 3.4], b3: [3.4, 6.2], b4: [6.2, 8.6], b5: [8.6, 11.4],
-          b6: [11.4, 13.6], b6b: [13.6, 15.7], b7: [15.7, 17.5], b8: [17.5, 19.1], b9: [19.1, 20.7] };
-Object.keys(B).forEach(function (id, i, ids) {
-  if (i > 0) tl.set("#" + id, { opacity: 1 }, B[id][0]);
-  if (i < ids.length - 1) tl.set("#" + id, { opacity: 0 }, B[id][1]);
-});
+// title cards and montage are opaque layers; the clip shows when they are hidden
+tl.set("#b1", { opacity: 0 }, 2.0);
+tl.set("#b2", { opacity: 1 }, 2.0);
+tl.set("#b2", { opacity: 0 }, 4.0);
+tl.set("#b4", { opacity: 1 }, 30.6);
+tl.set("#b4", { opacity: 0 }, 35.1);
+tl.set("#b5", { opacity: 1 }, 35.1);
 
-/* b1 — hook: words stagger in, slow push */
+// b1 hook
 var s1 = SplitText.create("#b1-h", { type: "words" });
-tl.fromTo(s1.words, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.08, ease: "power3.out" }, 0.15);
-tl.fromTo("#b1-c", { scale: 1.0 }, { scale: 1.04, duration: 1.6, ease: "power1.inOut" }, 0);
+tl.fromTo(s1.words, { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.09, ease: "power3.out" }, 0.15);
+tl.fromTo("#b1-c", { scale: 1.0 }, { scale: 1.04, duration: 2.0, ease: "power1.inOut" }, 0);
+// b2
+tl.fromTo("#b2-h", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.08);
+tl.fromTo("#b2-b", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.95);
+tl.fromTo("#b2-c", { scale: 1.0 }, { scale: 1.03, duration: 2.0, ease: "power1.inOut" }, 2.0);
 
-/* b2 — "So we automated it." then the command types in 2.2→3.2 */
-tl.fromTo("#b2-h", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, B.b2[0] + 0.05);
-var CMD = "python3 -m artgen generate -n 6 --seed 100", cmdEl = document.getElementById("b2-cmd");
-var T0 = 2.2, TD = 1.0;
-for (var i = 0; i < CMD.length; i++) (function (k) {
-  tl.call(function () { cmdEl.textContent = CMD.substring(0, k + 1); }, null, T0 + (k / CMD.length) * TD);
-})(i);
-tl.fromTo("#b2-cur", { opacity: 1 }, { opacity: 0, duration: 0.3, repeat: 5, yoyo: true, ease: "steps(1)" }, B.b2[0]); // 6 × 0.3 = 1.8 ≤ beat
-tl.fromTo("#b2-c", { y: 0 }, { y: -14, duration: 1.8, ease: "none" }, B.b2[0]);
+// clip: two zooms, on the typed title and on the work page
+tl.fromTo("#clipwrap", { scale: 1.0 }, { scale: 1.15, duration: 0.55, ease: "power2.inOut", immediateRender: false }, 17.046);
+tl.to("#clipwrap", { scale: 1.0, duration: 0.5, ease: "power2.inOut" }, 19.880);
+tl.set("#clipwrap", { transformOrigin: "1240px 640px" }, 20.430);
+tl.to("#clipwrap", { scale: 1.25, duration: 0.55, ease: "power2.inOut" }, 23.890);
+tl.to("#clipwrap", { scale: 1.0, duration: 0.45, ease: "power2.inOut" }, 26.303);
 
-/* b3 — output lines, one pair every 0.4 s from 3.6 */
-var outLines = document.querySelectorAll("#b3 .out .line");
-for (var j = 0; j < outLines.length; j++) {
-  tl.fromTo(outLines[j], { opacity: 0, x: -8 }, { opacity: 1, x: 0, duration: 0.18, ease: "power2.out" }, 3.6 + Math.floor(j / 2) * 0.4 + (j % 2) * 0.06);
+// captions
+function cap(sel, a, b) {
+  tl.fromTo(sel, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, a);
+  tl.to(sel, { opacity: 0, duration: 0.15 }, b);
 }
-tl.fromTo("#b3-c", { y: 10 }, { y: -20, duration: 2.8, ease: "none" }, B.b3[0]);
+cap("#cap0", 5.233, 6.553);
+cap("#cap1", 6.803, 8.147);
+cap("#cap2", 8.397, 9.723);
+cap("#cap3", 9.973, 12.525);
+cap("#cap4", 12.775, 13.99);
+cap("#cap5", 14.24, 15.419);
+cap("#cap6", 15.669, 16.846);
+cap("#cap7", 17.096, 19.73);
+cap("#cap8", 19.98, 23.64);
+cap("#cap9", 23.89, 27.303);
+cap("#cap10", 28.028, 30.5);
 
-/* b4 — label card rises; dolly on the whole wall */
-tl.fromTo("#b4-card", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, B.b4[0] + 0.1);
-tl.fromTo("#b4-c", { scale: 1.0 }, { scale: 1.06, duration: 2.4, ease: "power1.inOut" }, B.b4[0]);
-
-/* b5 — quote words stagger; slow parallax */
-var s5 = SplitText.create("#b5-q", { type: "words" });
-tl.fromTo(s5.words, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.45, stagger: 0.07, ease: "power2.out" }, B.b5[0] + 0.1);
-tl.fromTo("#b5-s", { opacity: 0 }, { opacity: 1, duration: 0.4 }, B.b5[0] + 1.4);
-tl.fromTo("#b5-c", { x: 20 }, { x: -20, duration: 2.8, ease: "none" }, B.b5[0]);
-
-/* b6 — footnotes stack */
-var notes = document.querySelectorAll("#b6 .n");
-for (var k = 0; k < notes.length; k++) {
-  tl.fromTo(notes[k], { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, B.b6[0] + 0.15 + k * 0.38);
-}
-tl.fromTo("#b6-c", { scale: 1.0 }, { scale: 1.03, duration: 2.2, ease: "power1.inOut" }, B.b6[0]);
-
-/* b6b — three real renders, hard cuts every 0.7 s, each with a slow push */
-var M = [["#m1", 13.6, 14.3], ["#m2", 14.3, 15.0], ["#m3", 15.0, 15.7]];
-M.forEach(function (m, i) {
-  tl.set(m[0], { opacity: 1 }, m[1]);
-  if (i < M.length - 1) tl.set(m[0], { opacity: 0 }, m[2]);
-  tl.fromTo(m[0] + " img", { scale: 1.0 }, { scale: 1.04, duration: m[2] - m[1], ease: "none" }, m[1]);
-  tl.fromTo(m[0] + " .cap", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.25 }, m[1] + 0.12);
+// montage: hard cuts with a slow push on each photo
+var M = [30.6, 31.05, 31.5, 31.95, 32.4, 32.85, 33.3, 33.75, 34.2];
+M.forEach(function (t, i) {
+  var id = "#m" + (i + 1);
+  var len = i === 8 ? 0.9 : 0.45;
+  tl.set(id, { opacity: 1 }, t);
+  if (i < 8) tl.set(id, { opacity: 0 }, t + len);
+  tl.fromTo(id + " img", { scale: 1.0 }, { scale: 1.05, duration: len, ease: "none" }, t);
 });
+tl.fromTo("#mcap1", { opacity: 0 }, { opacity: 1, duration: 0.2 }, M[0] + 0.1);
+tl.set("#mcap1", { opacity: 0 }, M[8]);
+tl.fromTo("#mcap2", { opacity: 0 }, { opacity: 1, duration: 0.2 }, M[8] + 0.05);
 
-/* b7 — the work is not here */
-tl.fromTo("#b7-c", { scale: 1.02 }, { scale: 1.09, duration: 1.8, ease: "power1.inOut" }, B.b7[0]);
+// close
+tl.fromTo("#b5-wm", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 35.150);
+tl.fromTo("#b5-t", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 35.850);
+tl.fromTo("#b5-s", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 36.400);
+tl.to("#b5-c", { opacity: 0, duration: 0.4, ease: "power1.in" }, 38.300);
 
-/* b8 — counters */
-var P = { a: 0, b: 0, c: 0, d: 0 };
-var e1 = document.getElementById("s1"), e2 = document.getElementById("s2"), e3 = document.getElementById("s3"), e4 = document.getElementById("s4");
-tl.to(P, { a: 6, duration: 0.5, ease: "power1.out", onUpdate: function () { e1.textContent = Math.round(P.a); } }, 17.6);
-tl.to(P, { b: 6, duration: 0.5, ease: "power1.out", onUpdate: function () { e2.textContent = Math.round(P.b); } }, 17.9);
-tl.to(P, { c: 24, duration: 0.5, ease: "power1.out", onUpdate: function () { e3.textContent = Math.round(P.c); } }, 18.2);
-tl.to(P, { d: 0.4, duration: 0.4, ease: "power1.out", onUpdate: function () { e4.textContent = P.d.toFixed(1) + "s"; } }, 18.5);
-tl.fromTo("#b8-c", { scale: 0.98 }, { scale: 1.02, duration: 1.6, ease: "power1.inOut" }, B.b8[0]);
-
-/* b9 — wordmark, dot pops at 17.55, fade to black ends exactly at 18.6 */
-tl.fromTo("#b9-wm", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, B.b9[0] + 0.05);
-tl.fromTo("#b9-dot", { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2)" }, 19.65);
-tl.fromTo("#b9-tag", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4 }, 19.55);
-tl.fromTo("#b9-tiny", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 19.9);
-tl.to("#b9-c", { opacity: 0, duration: 0.35, ease: "power1.in" }, 20.35);
-
-window.__timelines["demo"] = tl;
+window.__timelines["studio-demo"] = tl;
 </script>
 </body>
 </html>

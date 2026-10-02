@@ -4,13 +4,50 @@ artgen generates a whole contemporary art biennial: the edition title, the curat
 
 It is satire. Every work comes from a pattern that recurs in real biennials of 2022–2026. The research behind it is in [docs/research-notes.md](docs/research-notes.md).
 
-## Quick start
+## The Studio: curate your own biennial
+
+The Studio is a web page where you make the choices a curator makes. The edition and its website change as you click.
+
+```bash
+python3 -m artgen studio serve
+```
+
+Then open http://127.0.0.1:8780.
+
+| Control | What it does |
+|---|---|
+| Seed and Roll | The seed decides everything you do not choose. Roll picks a new one. |
+| Number of works | 6 to 24 works. |
+| City | Venice, Lisbon, Kochi, Marseille or Busan, each with its own venues. |
+| Curatorial theme | Listening, water, soil, carrying, fables, rest or hospitality. The theme names the edition and its sections. |
+| Title | Type your own edition title. The headline changes as you type. |
+| Forms of art | Turn 15 forms on or off, or use a preset: Venice 2026, documenta, Whitney, No video, please. |
+| Line-up | None, some or many rediscovered artists, collectives and emerging artists. |
+| Catalogue theory | Plain, Usual or Unbearable footnotes in the catalogue essays. |
+| Visual identity | One of six palettes and display typefaces, or let the seed decide. |
+| Surprise me | Random choices for everything. |
+
+The address bar keeps your choices, so **Copy link** shares your exact biennial. The page also shows the command that renders your edition with your own images, and it lets you download its `exhibition.json`.
+
+How it works: the Studio is static. It loads this Python package into the browser with [Pyodide](https://pyodide.org), so the browser runs the same generator as the command line. Images come from the image library below, so no API key and no server code are needed. The page needs an internet connection to load Pyodide and the fonts.
+
+`python3 -m artgen studio build` writes the static Studio to `studio/`. Any static web host can serve that folder.
+
+## Quick start on the command line
 
 Generate a biennial with placeholder images. This costs nothing:
 
 ```bash
 python3 -m artgen biennale --seed 5150 --host venice
 ```
+
+Use the images from the library instead of placeholders:
+
+```bash
+python3 -m artgen biennale --seed 5150 --host venice --library
+```
+
+The same choices as in the Studio are available as flags: `--theme`, `--title`, `--forms`, `--rediscovered`, `--collectives`, `--emerging`, `--jargon`, `--identity` and `--works`. Run `python3 -m artgen biennale --help` for the values.
 
 Open the website it prints, or serve it:
 
@@ -30,7 +67,19 @@ List the 76 work archetypes and the real works each one generalises:
 python3 -m artgen archetypes
 ```
 
-## Real images
+## The image library
+
+`library/` holds one installation view for each of the 76 work archetypes. Each image is pinned to what it shows: the scene variant, the materials and the visible details. When an edition uses the library, every work keeps those fixed and is placed in a venue whose room looks like the room in the photograph. Text a photograph cannot show, such as the artist, the place, the facts and the quotes, still changes. That is how the Studio gets real-looking images with zero rendering.
+
+To add images for new archetypes, or to collect the images of editions you rendered:
+
+```bash
+python3 -m artgen library build --provider openai
+```
+
+Images that already exist are reused. The 76 current images cost about $4–6 by public price lists.
+
+## Your own images
 
 Put an API key in `.env` (see `.env.example`). Then render the installation views of an existing biennial:
 
@@ -48,13 +97,13 @@ python3 -m artgen render biennales/5150-neighbours-everywhere --provider openai
 
 The pipeline has three separate steps, so you only pay for images once:
 
-1. **Generate** (`artgen biennale`). Offline and deterministic. The same seed always gives the same edition. The result is `biennales/<seed>-<title>/exhibition.json`.
-2. **Render** (`artgen render`). Calls the image model for each work and saves `media/<work>.jpg`.
+1. **Generate** (`artgen biennale`). Offline and deterministic. The same seed and choices always give the same edition. The result is `biennales/<seed>-<title>/exhibition.json`.
+2. **Render** (`artgen render`), or use the library. Saves `media/<work>.jpg`.
 3. **Build the site** (`artgen site`). Writes a static website to `site/`. It has a home page, a curatorial statement, participants, visitor information, a press page, and one page per work.
 
 Inside the generator:
 
-- **Artists** come from 33 origin pools. Name, birthplace, home cities and the practice they draw on all come from the same pool, so they agree. Each edition includes at least one rediscovered artist who has died and one collective.
+- **Artists** come from 33 origin pools. Name, birthplace, home cities and the practice they draw on all come from the same pool, so they agree.
 - **Works** come from archetypes in `data/archetypes.json`. An archetype owns its scene, compatible materials, medium line, facts, process notes, artist quotes, closing sentence and camera framing. That is why the label, the wall text and the photograph describe the same object.
 - **Texts** follow the structures found in the research. Wall texts are plain and specific. Catalogue essays are dense with theory, as they are in real catalogues.
 - **Each edition gets its own visual identity**: one of six palettes and display typefaces, like real biennials.
@@ -68,20 +117,36 @@ Inside the generator:
 | Artwork title structures | `data/lexicon_titles.json` | nothing |
 | Names, cities, venues, identities | `data/world.json` | nothing |
 
-After you change texts, regenerate an edition with `--overwrite`. Images whose prompts did not change are kept.
+After you change texts, regenerate an edition with `--overwrite`. Images whose prompts did not change are kept. Rebuild the Studio afterwards.
+
+## Demo video
+
+`video/demo/renders/artgen-studio-demo.mp4` is a 39-second demo for social media. It is a real recording of the Studio, with captions, zooms, a montage from the library and composed music.
+
+To rebuild it, serve the Studio and run the build script:
+
+```bash
+python3 -m artgen studio serve
+```
+
+```bash
+bash video/demo/build.sh
+```
+
+The script records the Studio with a scripted browser, then builds the composition, the music and the sound effects from the recorded action times, checks it and renders it. It needs Node.js, ffmpeg and the packages in `package.json` (`npm install`).
 
 ## Folders
 
 ```
-artgen/            the package: gen/ (artists, titles, works, exhibition), write/ (texts), render/, site/
+artgen/            the package: gen/ (artists, titles, works, exhibition), write/ (texts), render/, site/, studio
 data/              archetypes, lexicon, world, title structures, real-name blocklist
 tools/             sources of data/archetypes.json and data/lexicon.json
+library/           pre-rendered images, one per archetype, with what each one shows
 docs/research/     the research corpus, with source URLs
 biennales/         generated editions (exhibition.json and media/; site/ is build output)
-video/demo/        the HyperFrames demo video from version 1
+video/demo/        the HyperFrames demo video of the Studio
 ```
 
 ## Notes
 
 - Every person and institution is fictional, except the theorists that the essays cite. Each work page says that the work does not exist and names the real works its pattern comes from.
-- The demo video in `video/demo/` shows version 1 of the generator.

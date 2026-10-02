@@ -1,0 +1,2543 @@
+{
+ "entries": [
+  {
+   "id": "buoys-salt-rope-v1-05305e5e",
+   "archetype": "buoys-salt-rope",
+   "variant": 1,
+   "core": [
+    "school desks"
+   ],
+   "accent": [
+    "cedar branches"
+   ],
+   "visual": {
+    "m1": "school desks",
+    "m2": "cedar branches",
+    "m3": "cedar branches",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "rust red",
+    "phrase": "every wall is a door that forgot",
+    "small": "24 × 18",
+    "Accents": "cedar branches",
+    "h": 287,
+    "w": 675,
+    "d": 299,
+    "h_small": 86,
+    "w_big": 1678,
+    "d_big": 1378,
+    "w_m": 8
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Rows of school desks are laid out in a grid; from each one tangled branches grow upward like a thicket. Materials: school desks and cedar branches. Framing: three-quarter view of the floor sculpture, no barriers; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/buoys-salt-rope-v1-05305e5e.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "hanging-banners-v0-a3895c35",
+   "archetype": "hanging-banners",
+   "variant": 0,
+   "core": [
+    "second-hand clothes",
+    "hotel bed linen"
+   ],
+   "accent": [
+    "ribbon"
+   ],
+   "visual": {
+    "m1": "second-hand clothes",
+    "m2": "hotel bed linen",
+    "m3": "ribbon",
+    "count": 60,
+    "count_word": "60",
+    "colour": "charcoal",
+    "phrase": "not yet, not here, not alone",
+    "small": "35 × 16",
+    "Accents": "ribbon",
+    "h": 383,
+    "w": 891,
+    "d": 269,
+    "h_small": 94,
+    "w_big": 2120,
+    "d_big": 1118,
+    "w_m": 7
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: 60 hand-sewn patchwork banners hang from the roof trusses at different heights, each carrying a short phrase in capital letters cut from hotel bed linen. Materials: second-hand clothes, hotel bed linen and ribbon. Framing: wide view along the hall at eye level, the banners receding in perspective; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/hanging-banners-v0-a3895c35.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "testimony-headphones-v0-518b03dd",
+   "archetype": "testimony-headphones",
+   "variant": 0,
+   "core": [
+    "audio recordings",
+    "headphones"
+   ],
+   "accent": [
+    "hooks",
+    "printed transcripts"
+   ],
+   "visual": {
+    "m1": "audio recordings",
+    "m2": "headphones",
+    "m3": "hooks",
+    "count": 24,
+    "count_word": "24",
+    "colour": "bone white",
+    "phrase": "not yet, not here, not alone",
+    "small": "24 × 19",
+    "Accents": "hooks and printed transcripts",
+    "h": 189,
+    "w": 686,
+    "d": 448,
+    "h_small": 45,
+    "w_big": 2113,
+    "d_big": 1302,
+    "w_m": 11
+   },
+   "room": "outdoor",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall. Floor: gravel and grass. Light: outdoor daylight under trees. The artwork: Headphones hang on hooks along a bare wall, each playing a different person from Tainan reading a list of things they left behind. Materials: audio recordings, headphones, hooks and printed transcripts. Framing: eye-level view of the wall of headphones, a bench in front; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/testimony-headphones-v0-518b03dd.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "torn-mended-silk-v1-ec8e3c36",
+   "archetype": "torn-mended-silk",
+   "variant": 1,
+   "core": [
+    "raw silk"
+   ],
+   "accent": [
+    "tea",
+    "seawater"
+   ],
+   "visual": {
+    "m1": "raw silk",
+    "m2": "tea",
+    "m3": "seawater",
+    "count": 41,
+    "count_word": "41",
+    "colour": "charcoal",
+    "phrase": "the debt is not ours",
+    "small": "34 × 20",
+    "Accents": "tea and seawater",
+    "h": 306,
+    "w": 847,
+    "d": 302,
+    "h_small": 82,
+    "w_big": 1936,
+    "d_big": 874,
+    "w_m": 8
+   },
+   "room": "white",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: A single length of raw silk hangs from the ceiling under one spotlight, its tail trailing across the floor like a train. The cloth is stained in uneven bands of charcoal. Materials: raw silk, tea and seawater. Framing: frontal view down the line of hanging sheets, soft side light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/torn-mended-silk-v1-ec8e3c36.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "hanging-garments-v1-a1a5173b",
+   "archetype": "hanging-garments",
+   "variant": 1,
+   "core": [
+    "second-hand suits"
+   ],
+   "accent": [
+    "fringe"
+   ],
+   "visual": {
+    "m1": "second-hand suits",
+    "m2": "fringe",
+    "m3": "fringe",
+    "count": 9,
+    "count_word": "nine",
+    "colour": "pale blue",
+    "phrase": "we were always here",
+    "small": "28 × 22",
+    "Accents": "fringe",
+    "h": 232,
+    "w": 396,
+    "d": 343,
+    "h_small": 72,
+    "w_big": 1811,
+    "d_big": 697,
+    "w_m": 13
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs. Floor: marble floor with old tomb slabs. Light: dim daylight from high windows and a few spotlights on a rail. The artwork: A row of nine costumes covered in fringe stands on low plinths, their sleeves sewn shut. Materials: second-hand suits and fringe. Framing: frontal medium-wide view of the row of garments against a white wall; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/hanging-garments-v1-a1a5173b.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "olive-barrels-v0-d5cda706",
+   "archetype": "olive-barrels",
+   "variant": 0,
+   "core": [
+    "citrus trees",
+    "olive trees"
+   ],
+   "accent": [
+    "water",
+    "gravel"
+   ],
+   "visual": {
+    "m1": "citrus trees",
+    "m2": "olive trees",
+    "m3": "water",
+    "count": 24,
+    "count_word": "24",
+    "colour": "bone white",
+    "phrase": "everything we lost is still ours",
+    "small": "30 × 19",
+    "Accents": "water and gravel",
+    "h": 226,
+    "w": 713,
+    "d": 238,
+    "h_small": 68,
+    "w_big": 2131,
+    "d_big": 1355,
+    "w_m": 10
+   },
+   "room": "outdoor",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall. Floor: gravel and grass. Light: outdoor daylight under trees. The artwork: A gravel courtyard is cut in two by a narrow water channel. On one side about a hundred olive and citrus trees stand in red barrels on pallets; on the other, a red pallet jack rests on a marble block. Materials: citrus trees, olive trees, water and gravel. Framing: courtyard with rows of trees in red barrels; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/olive-barrels-v0-d5cda706.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "naive-figurative-v1-ef4bf04c",
+   "archetype": "naive-figurative",
+   "variant": 1,
+   "core": [
+    "gouache on paper"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "gouache on paper",
+    "m2": "gouache on paper",
+    "m3": "gouache on paper",
+    "count": 40,
+    "count_word": "40",
+    "colour": "pale blue",
+    "phrase": "we were always here",
+    "small": "38 × 30",
+    "Accents": "seating",
+    "h": 414,
+    "w": 283,
+    "d": 481,
+    "h_small": 114,
+    "w_big": 2014,
+    "d_big": 1303,
+    "w_m": 13
+   },
+   "room": "white",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: A story-painting divided into an uneven grid of panels; in each, humans, animals and spirits dance, framed by bands of patterned colour. Materials: gouache on paper. Framing: frontal view of the painting on a white wall, a bench in front; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/naive-figurative-v1-ef4bf04c.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "ceramic-seeds-v0-ebe86436",
+   "archetype": "ceramic-seeds",
+   "variant": 0,
+   "core": [
+    "ceramic"
+   ],
+   "accent": [
+    "wooden stools"
+   ],
+   "visual": {
+    "m1": "ceramic",
+    "m2": "wooden stools",
+    "m3": "wooden stools",
+    "count": 24,
+    "count_word": "24",
+    "colour": "turquoise",
+    "phrase": "the debt is not ours",
+    "small": "22 × 31",
+    "Accents": "wooden stools",
+    "h": 256,
+    "w": 538,
+    "d": 386,
+    "h_small": 61,
+    "w_big": 2400,
+    "d_big": 733,
+    "w_m": 10
+   },
+   "room": "white",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: Hundreds of small ceramic copies of the seeds of a wild field plant lie scattered across a low white plinth. Materials: ceramic and wooden stools. Framing: close view of ceramics on a plinth or stools; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/ceramic-seeds-v0-ebe86436.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "unspun-wool-forest-v1-89d589f8",
+   "archetype": "unspun-wool-forest",
+   "variant": 1,
+   "core": [
+    "jute twine"
+   ],
+   "accent": [
+    "bone beads"
+   ],
+   "visual": {
+    "m1": "jute twine",
+    "m2": "bone beads",
+    "m3": "bone beads",
+    "count": 400,
+    "count_word": "400",
+    "colour": "rust red",
+    "phrase": "home is a verb",
+    "small": "24 × 19",
+    "Accents": "bone beads",
+    "h": 364,
+    "w": 239,
+    "d": 150,
+    "h_small": 96,
+    "w_big": 1293,
+    "d_big": 1078,
+    "w_m": 13
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Hundreds of knotted cords of jute twine and bone beads hang in rows from a ring suspended over the room, brushing the floor. Materials: jute twine and bone beads. Framing: looking through the hanging strands towards the far wall, soft daylight; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/unspun-wool-forest-v1-89d589f8.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "altar-v1-d06ba2ec",
+   "archetype": "altar",
+   "variant": 1,
+   "core": [
+    "blister packs of medicine"
+   ],
+   "accent": [
+    "tinsel",
+    "fairy lights"
+   ],
+   "visual": {
+    "m1": "blister packs of medicine",
+    "m2": "tinsel",
+    "m3": "fairy lights",
+    "count": 40,
+    "count_word": "40",
+    "colour": "saffron",
+    "phrase": "not yet, not here, not alone",
+    "small": "34 × 29",
+    "Accents": "tinsel and fairy lights",
+    "h": 376,
+    "w": 206,
+    "d": 466,
+    "h_small": 40,
+    "w_big": 1099,
+    "d_big": 1367,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Columns hung with blister packs of medicine, fairy lights and tinsel stand in the nave like shrines. Materials: blister packs of medicine, tinsel and fairy lights. Framing: frontal view of the altar, warm candle light mixed with gallery light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/altar-v1-d06ba2ec.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "hybrid-sentinel-v1-90b35651",
+   "archetype": "hybrid-sentinel",
+   "variant": 1,
+   "core": [
+    "cast iron"
+   ],
+   "accent": [
+    "water"
+   ],
+   "visual": {
+    "m1": "cast iron",
+    "m2": "water",
+    "m3": "water",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "bone white",
+    "phrase": "soft is not weak",
+    "small": "38 × 20",
+    "Accents": "water",
+    "h": 386,
+    "w": 650,
+    "d": 328,
+    "h_small": 58,
+    "w_big": 1733,
+    "d_big": 635,
+    "w_m": 9
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A hybrid figure in cast iron, half mermaid, half root, lies draped over a perforated metal box; water trickles from its fingertips onto flowers below. Materials: cast iron and water. Framing: frontal view of the figure, outdoors or in a large hall, daylight; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/hybrid-sentinel-v1-90b35651.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "clay-figure-circle-v1-852721d3",
+   "archetype": "clay-figure-circle",
+   "variant": 1,
+   "core": [
+    "earthenware"
+   ],
+   "accent": [
+    "raffia"
+   ],
+   "visual": {
+    "m1": "earthenware",
+    "m2": "raffia",
+    "m3": "raffia",
+    "count": 4,
+    "count_word": "four",
+    "colour": "rust red",
+    "phrase": "we carry what carries us",
+    "small": "21 × 20",
+    "Accents": "raffia",
+    "h": 330,
+    "w": 257,
+    "d": 393,
+    "h_small": 97,
+    "w_big": 2132,
+    "d_big": 618,
+    "w_m": 11
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A group of four hand-built earthenware figures, each about a metre high, stands on the floor without plinths, some leaning on each other. Materials: earthenware and raffia. Framing: wide view of the circle from slightly above eye level, the room around it; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/clay-figure-circle-v1-852721d3.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "bronze-procession-v0-a36894e5",
+   "archetype": "bronze-procession",
+   "variant": 0,
+   "core": [
+    "bronze"
+   ],
+   "accent": [
+    "floral wreaths",
+    "vintage serving trays"
+   ],
+   "visual": {
+    "m1": "bronze",
+    "m2": "floral wreaths",
+    "m3": "vintage serving trays",
+    "count": 16,
+    "count_word": "16",
+    "colour": "rust red",
+    "phrase": "we are the weather",
+    "small": "38 × 24",
+    "Accents": "floral wreaths and vintage serving trays",
+    "h": 258,
+    "w": 876,
+    "d": 141,
+    "h_small": 81,
+    "w_big": 1471,
+    "d_big": 1325,
+    "w_m": 8
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs. Floor: marble floor with old tomb slabs. Light: dim daylight from high windows and a few spotlights on a rail. The artwork: 16 bronze figures walk in procession across the hall, carrying floral wreaths and vintage serving trays. Materials: bronze, floral wreaths and vintage serving trays. Framing: long view along the procession in the hall; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/bronze-procession-v0-a36894e5.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "woven-canopy-v1-ec2d0b2c",
+   "archetype": "woven-canopy",
+   "variant": 1,
+   "core": [
+    "crocheted cotton"
+   ],
+   "accent": [
+    "fishing net"
+   ],
+   "visual": {
+    "m1": "crocheted cotton",
+    "m2": "fishing net",
+    "m3": "fishing net",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "saffron",
+    "phrase": "rest is not a reward",
+    "small": "22 × 28",
+    "Accents": "fishing net",
+    "h": 257,
+    "w": 842,
+    "d": 441,
+    "h_small": 97,
+    "w_big": 2096,
+    "d_big": 704,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A woven structure of crocheted cotton and fishing net hangs from the ceiling in 12 loose parts, so that visitors can walk in and out of it as through a curtain. Materials: crocheted cotton and fishing net. Framing: low angle from the floor looking up into the canopy, the room's roof visible behind; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/woven-canopy-v1-ec2d0b2c.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "text-painting-v1-6fb4b90a",
+   "archetype": "text-painting",
+   "variant": 1,
+   "core": [
+    "neon"
+   ],
+   "accent": [
+    "steel"
+   ],
+   "visual": {
+    "m1": "neon",
+    "m2": "steel",
+    "m3": "steel",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "pale blue",
+    "phrase": "stay a little longer",
+    "small": "22 × 30",
+    "Accents": "steel",
+    "h": 380,
+    "w": 811,
+    "d": 371,
+    "h_small": 83,
+    "w_big": 1139,
+    "d_big": 1257,
+    "w_m": 14
+   },
+   "room": "white",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: Red neon sentences in the style of a protest sign are mounted on steel in the window: stay a little longer. Materials: neon and steel. Framing: frontal view of the text work on a wall; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. The only legible text is the artwork's own phrase, spelled exactly as given. No watermark.",
+   "file": "library/media/text-painting-v1-6fb4b90a.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "vessel-grid-v1-889005a9",
+   "archetype": "vessel-grid",
+   "variant": 1,
+   "core": [
+    "glazed ceramic"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "glazed ceramic",
+    "m2": "glazed ceramic",
+    "m3": "glazed ceramic",
+    "count": 400,
+    "count_word": "400",
+    "colour": "saffron",
+    "phrase": "keep the fire low",
+    "small": "39 × 15",
+    "Accents": "seating",
+    "h": 310,
+    "w": 538,
+    "d": 292,
+    "h_small": 120,
+    "w_big": 1485,
+    "d_big": 1178,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A low two-tiered plinth carries 400 glazed ceramic copies of an ordinary household object, each glazed a different colour. Materials: glazed ceramic. Framing: low view across the rows of vessels on the floor, the far wall softly lit; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/vessel-grid-v1-889005a9.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "fictional-archive-v0-605fe8a3",
+   "archetype": "fictional-archive",
+   "variant": 0,
+   "core": [
+    "wooden pallets"
+   ],
+   "accent": [
+    "wall text",
+    "paint on wood"
+   ],
+   "visual": {
+    "m1": "wooden pallets",
+    "m2": "wall text",
+    "m3": "paint on wood",
+    "count": 5,
+    "count_word": "five",
+    "colour": "charcoal",
+    "phrase": "the debt is not ours",
+    "small": "40 × 28",
+    "Accents": "wall text and paint on wood",
+    "h": 371,
+    "w": 817,
+    "d": 160,
+    "h_small": 117,
+    "w_big": 1478,
+    "d_big": 1250,
+    "w_m": 14
+   },
+   "room": "white",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: Wooden freight pallets are painted with copies of famous paintings; a wall text explains that the pallets once moved weapons and later carried art that escaped destruction. Materials: wooden pallets, wall text and paint on wood. Framing: room with pallets or projections, low light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/fictional-archive-v0-605fe8a3.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "torch-cave-v0-6243652c",
+   "archetype": "torch-cave",
+   "variant": 0,
+   "core": [
+    "paper",
+    "grass"
+   ],
+   "accent": [
+    "torches",
+    "seed pods"
+   ],
+   "visual": {
+    "m1": "paper",
+    "m2": "grass",
+    "m3": "torches",
+    "count": 40,
+    "count_word": "40",
+    "colour": "charcoal",
+    "phrase": "we are the weather",
+    "small": "37 × 32",
+    "Accents": "torches and seed pods",
+    "h": 408,
+    "w": 828,
+    "d": 294,
+    "h_small": 51,
+    "w_big": 1014,
+    "d_big": 714,
+    "w_m": 8
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A former boatyard on Giudecca: a corrugated metal roof on steel trusses, a concrete slip running down to the water. Floor: concrete slip with oil stains. Light: hard daylight from the open side. The artwork: Visitors are handed torches at the entrance of a dark room hung with long scrolls of paper, grass and seed pods; their beams throw shadows like rock paintings. Materials: paper, grass, torches and seed pods. Framing: dark room with beams of torchlight on hanging scrolls; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/torch-cave-v0-6243652c.jpg",
+   "source": "5150-neighbours-everywhere"
+  },
+  {
+   "id": "ceramic-instruments-v0-0cb5bf08",
+   "archetype": "ceramic-instruments",
+   "variant": 0,
+   "core": [
+    "earthenware"
+   ],
+   "accent": [
+    "speakers",
+    "plywood table"
+   ],
+   "visual": {
+    "m1": "earthenware",
+    "m2": "speakers",
+    "m3": "plywood table",
+    "count": 36,
+    "count_word": "36",
+    "colour": "bone white",
+    "phrase": "we will be ancestors too",
+    "small": "27 × 25",
+    "Accents": "speakers and plywood table",
+    "h": 254,
+    "w": 280,
+    "d": 479,
+    "h_small": 61,
+    "w_big": 1141,
+    "d_big": 1069,
+    "w_m": 14
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Clay instruments, from ocarinas to drums, lie on a long plywood table. A handwritten sign invites visitors to play them; a speaker nearby plays a recording of 40 people playing at once. Materials: earthenware, speakers and plywood table. Framing: three-quarter view of the long table with instruments, a few chairs around; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/ceramic-instruments-v0-0cb5bf08.jpg",
+   "source": "library"
+  },
+  {
+   "id": "community-embroidery-v0-a63d5e79",
+   "archetype": "community-embroidery",
+   "variant": 0,
+   "core": [
+    "appliqué on jute"
+   ],
+   "accent": [
+    "lace"
+   ],
+   "visual": {
+    "m1": "appliqué on jute",
+    "m2": "lace",
+    "m3": "lace",
+    "count": 30,
+    "count_word": "30",
+    "colour": "ochre",
+    "phrase": "the sea has no passport",
+    "small": "22 × 25",
+    "Accents": "lace",
+    "h": 218,
+    "w": 253,
+    "d": 468,
+    "h_small": 77,
+    "w_big": 2156,
+    "d_big": 659,
+    "w_m": 9
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: A very wide embroidered hanging, almost 9 metres long, runs along the wall like a mural. It is crowded with small scenes of daily life in Prishtina: weddings, a market, a flood, a funeral. Materials: appliqué on jute and lace. Framing: frontal view of the long hanging on a white wall, the floor and a bench visible; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/community-embroidery-v0-a63d5e79.jpg",
+   "source": "library"
+  },
+  {
+   "id": "soil-box-v0-069b51c2",
+   "archetype": "soil-box",
+   "variant": 0,
+   "core": [
+    "red earth"
+   ],
+   "accent": [
+    "plywood"
+   ],
+   "visual": {
+    "m1": "red earth",
+    "m2": "plywood",
+    "m3": "plywood",
+    "count": 24,
+    "count_word": "24",
+    "colour": "turquoise",
+    "phrase": "stay a little longer",
+    "small": "25 × 24",
+    "Accents": "plywood",
+    "h": 182,
+    "w": 488,
+    "d": 185,
+    "h_small": 85,
+    "w_big": 2358,
+    "d_big": 1200,
+    "w_m": 14
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A plywood box, 85 centimetres high, sits on the floor, filled to the brim with dark soil carried from Manaus. Materials: red earth and plywood. Framing: eye-level view of the box in an otherwise empty room; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/soil-box-v0-069b51c2.jpg",
+   "source": "library"
+  },
+  {
+   "id": "bricks-and-plants-v1-c575cebb",
+   "archetype": "bricks-and-plants",
+   "variant": 1,
+   "core": [
+    "moss",
+    "soil"
+   ],
+   "accent": [
+    "mist"
+   ],
+   "visual": {
+    "m1": "moss",
+    "m2": "soil",
+    "m3": "mist",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "rust red",
+    "phrase": "stay a little longer",
+    "small": "18 × 32",
+    "Accents": "mist",
+    "h": 351,
+    "w": 413,
+    "d": 481,
+    "h_small": 115,
+    "w_big": 1817,
+    "d_big": 820,
+    "w_m": 10
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: Fifteenth-century salt warehouses on the Zattere: long brick naves under heavy wooden beams, open towards the Giudecca canal. Floor: uneven brick floor. Light: flat daylight through the open doors. The artwork: A spiral path of moss-covered earth winds past slowly browning trees and a pond. Mist rises from jets set into the ground. Materials: moss, soil and mist. Framing: wide view, daylight, the plants in the foreground; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/bricks-and-plants-v1-c575cebb.jpg",
+   "source": "library"
+  },
+  {
+   "id": "amber-block-v1-0e400a13",
+   "archetype": "amber-block",
+   "variant": 1,
+   "core": [
+    "translucent fibreglass"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "translucent fibreglass",
+    "m2": "translucent fibreglass",
+    "m3": "translucent fibreglass",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "pale blue",
+    "phrase": "the river remembers",
+    "small": "21 × 24",
+    "Accents": "seating",
+    "h": 202,
+    "w": 813,
+    "d": 198,
+    "h_small": 88,
+    "w_big": 2047,
+    "d_big": 763,
+    "w_m": 14
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: Fifteenth-century salt warehouses on the Zattere: long brick naves under heavy wooden beams, open towards the Giudecca canal. Floor: uneven brick floor. Light: flat daylight through the open doors. The artwork: Seven large containers cast in translucent translucent fibreglass stand in a row like funerary jars, glowing in the daylight. Materials: translucent fibreglass. Framing: frontal view of the block against the bright window, slight silhouette; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/amber-block-v1-0e400a13.jpg",
+   "source": "library"
+  },
+  {
+   "id": "herbarium-vitrine-v0-a9261286",
+   "archetype": "herbarium-vitrine",
+   "variant": 0,
+   "core": [
+    "pressed plants"
+   ],
+   "accent": [
+    "handwritten labels"
+   ],
+   "visual": {
+    "m1": "pressed plants",
+    "m2": "handwritten labels",
+    "m3": "handwritten labels",
+    "count": 40,
+    "count_word": "40",
+    "colour": "rust red",
+    "phrase": "not yet, not here, not alone",
+    "small": "19 × 32",
+    "Accents": "handwritten labels",
+    "h": 241,
+    "w": 236,
+    "d": 181,
+    "h_small": 41,
+    "w_big": 1119,
+    "d_big": 820,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A former boatyard on Giudecca: a corrugated metal roof on steel trusses, a concrete slip running down to the water. Floor: concrete slip with oil stains. Light: hard daylight from the open side. The artwork: Glass vitrines hold pressed plants, jars of pressed plants, handwritten labels and a small lead cast of an extinct bird, arranged like a natural history collection. Materials: pressed plants and handwritten labels. Framing: close three-quarter view of vitrines and shelves, even museum light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/herbarium-vitrine-v0-a9261286.jpg",
+   "source": "library"
+  },
+  {
+   "id": "living-machine-plant-v1-b09e4e4a",
+   "archetype": "living-machine-plant",
+   "variant": 1,
+   "core": [
+    "fruit"
+   ],
+   "accent": [
+    "wooden tables",
+    "speakers",
+    "electrodes"
+   ],
+   "visual": {
+    "m1": "fruit",
+    "m2": "wooden tables",
+    "m3": "speakers",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "faded pink",
+    "phrase": "who will water the garden",
+    "small": "28 × 24",
+    "Accents": "wooden tables, speakers and electrodes",
+    "h": 192,
+    "w": 494,
+    "d": 261,
+    "h_small": 76,
+    "w_big": 1061,
+    "d_big": 1104,
+    "w_m": 13
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Rotting fruit on polished wooden tables is wired by electrodes to speakers and small lights, which hum and flicker as the fruit decays. Materials: fruit, wooden tables, speakers and electrodes. Framing: three-quarter view of the apparatus, natural light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/living-machine-plant-v1-b09e4e4a.jpg",
+   "source": "library"
+  },
+  {
+   "id": "reading-room-v0-2d6c70e4",
+   "archetype": "reading-room",
+   "variant": 0,
+   "core": [
+    "photocopies",
+    "books"
+   ],
+   "accent": [
+    "rugs",
+    "posters"
+   ],
+   "visual": {
+    "m1": "photocopies",
+    "m2": "books",
+    "m3": "rugs",
+    "count": 40,
+    "count_word": "40",
+    "colour": "rust red",
+    "phrase": "soft is not weak",
+    "small": "23 × 26",
+    "Accents": "rugs and posters",
+    "h": 292,
+    "w": 404,
+    "d": 338,
+    "h_small": 70,
+    "w_big": 1035,
+    "d_big": 1106,
+    "w_m": 7
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: A long table holds photocopied zines and pamphlets, with plastic chairs, a kettle, a shelf of donated books and a handwritten sign that reads FREE. Materials: photocopies, books, rugs and posters. Framing: eye-level view of the table and shelves, a chair pulled out; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/reading-room-v0-2d6c70e4.jpg",
+   "source": "library"
+  },
+  {
+   "id": "photo-wall-v1-0251ee88",
+   "archetype": "photo-wall",
+   "variant": 1,
+   "core": [
+    "gelatin silver prints"
+   ],
+   "accent": [
+    "frames"
+   ],
+   "visual": {
+    "m1": "gelatin silver prints",
+    "m2": "frames",
+    "m3": "frames",
+    "count": 400,
+    "count_word": "400",
+    "colour": "indigo",
+    "phrase": "everything we lost is still ours",
+    "small": "39 × 27",
+    "Accents": "frames",
+    "h": 227,
+    "w": 634,
+    "d": 296,
+    "h_small": 103,
+    "w_big": 2261,
+    "d_big": 1285,
+    "w_m": 7
+   },
+   "room": "white",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: 400 small black-and-white photographs hang in a single row at eye level, each showing one person from Bamako in front of the same wall. Materials: gelatin silver prints and frames. Framing: frontal view of the wall of photographs, a visitor in front for scale; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/photo-wall-v1-0251ee88.jpg",
+   "source": "library"
+  },
+  {
+   "id": "family-tree-chalk-v0-c2b9fd43",
+   "archetype": "family-tree-chalk",
+   "variant": 0,
+   "core": [
+    "chalk",
+    "blackboard paint"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "chalk",
+    "m2": "blackboard paint",
+    "m3": "blackboard paint",
+    "count": 120,
+    "count_word": "120",
+    "colour": "deep green",
+    "phrase": "the land is listening",
+    "small": "40 × 27",
+    "Accents": "seating",
+    "h": 337,
+    "w": 811,
+    "d": 353,
+    "h_small": 51,
+    "w_big": 1346,
+    "d_big": 1130,
+    "w_m": 8
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: The walls and ceiling of a black-painted room are covered by hand in white chalk with a family tree reaching back 120 generations. Blank circles mark people whose names were lost. Materials: chalk and blackboard paint. Framing: wide view of the dark room covered in white chalk writing; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/family-tree-chalk-v0-c2b9fd43.jpg",
+   "source": "library"
+  },
+  {
+   "id": "glass-monument-v0-bed9a688",
+   "archetype": "glass-monument",
+   "variant": 0,
+   "core": [
+    "cast concrete"
+   ],
+   "accent": [
+    "ash"
+   ],
+   "visual": {
+    "m1": "cast concrete",
+    "m2": "ash",
+    "m3": "ash",
+    "count": 24,
+    "count_word": "24",
+    "colour": "indigo",
+    "phrase": "who will water the garden",
+    "small": "36 × 23",
+    "Accents": "ash",
+    "h": 187,
+    "w": 540,
+    "d": 191,
+    "h_small": 52,
+    "w_big": 1871,
+    "d_big": 659,
+    "w_m": 6
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: A full-size replica of a chimney, built in cast concrete, stands alone in the room; it is the only part of the artist's family house that survived. Materials: cast concrete and ash. Framing: frontal view in daylight, the structure alone in the space; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/glass-monument-v0-bed9a688.jpg",
+   "source": "library"
+  },
+  {
+   "id": "beeswax-candles-v0-99561c4c",
+   "archetype": "beeswax-candles",
+   "variant": 0,
+   "core": [
+    "beeswax"
+   ],
+   "accent": [
+    "ceramic",
+    "wicks"
+   ],
+   "visual": {
+    "m1": "beeswax",
+    "m2": "ceramic",
+    "m3": "wicks",
+    "count": 1000,
+    "count_word": "1000",
+    "colour": "rust red",
+    "phrase": "my grandmother was a border",
+    "small": "19 × 20",
+    "Accents": "ceramic and wicks",
+    "h": 220,
+    "w": 396,
+    "d": 338,
+    "h_small": 100,
+    "w_big": 2121,
+    "d_big": 1371,
+    "w_m": 7
+   },
+   "room": "white",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: Hundreds of beeswax candles hang in dense clusters along the walls of a dim room. A woman sits at a table dipping wicks in hot wax, and the air is heavy with smoke. Materials: beeswax, ceramic and wicks. Framing: view into the dim room with candles, smoky air; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/beeswax-candles-v0-99561c4c.jpg",
+   "source": "library"
+  },
+  {
+   "id": "research-room-v1-3fefd1a5",
+   "archetype": "research-room",
+   "variant": 1,
+   "core": [
+    "archival photographs",
+    "found objects"
+   ],
+   "accent": [
+    "chalk",
+    "vitrines"
+   ],
+   "visual": {
+    "m1": "archival photographs",
+    "m2": "found objects",
+    "m3": "chalk",
+    "count": 5,
+    "count_word": "five",
+    "colour": "bone white",
+    "phrase": "the debt is not ours",
+    "small": "19 × 28",
+    "Accents": "chalk and vitrines",
+    "h": 315,
+    "w": 819,
+    "d": 498,
+    "h_small": 113,
+    "w_big": 1471,
+    "d_big": 916,
+    "w_m": 6
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: A room-sized display works like a small history museum: photographs, objects, dolls and newspaper cuttings, each with a typed caption, cover the walls from floor to ceiling. Materials: archival photographs, found objects, chalk and vitrines. Framing: wide view of the room with tables and walls covered in documents, flat light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/research-room-v1-3fefd1a5.jpg",
+   "source": "library"
+  },
+  {
+   "id": "scrap-totem-v1-c2b38b7e",
+   "archetype": "scrap-totem",
+   "variant": 1,
+   "core": [
+    "cardboard"
+   ],
+   "accent": [
+    "bamboo",
+    "paint"
+   ],
+   "visual": {
+    "m1": "cardboard",
+    "m2": "bamboo",
+    "m3": "paint",
+    "count": 40,
+    "count_word": "40",
+    "colour": "pale blue",
+    "phrase": "stay a little longer",
+    "small": "40 × 26",
+    "Accents": "bamboo and paint",
+    "h": 383,
+    "w": 615,
+    "d": 122,
+    "h_small": 81,
+    "w_big": 1724,
+    "d_big": 636,
+    "w_m": 8
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs. Floor: marble floor with old tomb slabs. Light: dim daylight from high windows and a few spotlights on a rail. The artwork: 40 life-size cardboard puppets stand in a crowd near the entrance, painted with slogans and faces. Materials: cardboard, bamboo and paint. Framing: low angle up at the figures in a large hangar-like space; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/scrap-totem-v1-c2b38b7e.jpg",
+   "source": "library"
+  },
+  {
+   "id": "monument-recast-v1-73103d43",
+   "archetype": "monument-recast",
+   "variant": 1,
+   "core": [
+    "bronze"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "bronze",
+    "m2": "bronze",
+    "m3": "bronze",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "charcoal",
+    "phrase": "not yet, not here, not alone",
+    "small": "28 × 29",
+    "Accents": "seating",
+    "h": 388,
+    "w": 624,
+    "d": 414,
+    "h_small": 44,
+    "w_big": 971,
+    "d_big": 949,
+    "w_m": 10
+   },
+   "room": "outdoor",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall. Floor: gravel and grass. Light: outdoor daylight under trees. The artwork: A row of tall columns in bronze stands outside by the water; their capitals are portraits of neighbours from Hai Phong. Materials: bronze. Framing: outdoor view in flat daylight; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/monument-recast-v1-73103d43.jpg",
+   "source": "library"
+  },
+  {
+   "id": "radio-tower-v0-5f24796d",
+   "archetype": "radio-tower",
+   "variant": 0,
+   "core": [
+    "palm fronds",
+    "bamboo"
+   ],
+   "accent": [
+    "speakers"
+   ],
+   "visual": {
+    "m1": "palm fronds",
+    "m2": "bamboo",
+    "m3": "speakers",
+    "count": 4,
+    "count_word": "four",
+    "colour": "indigo",
+    "phrase": "keep the fire low",
+    "small": "39 × 31",
+    "Accents": "speakers",
+    "h": 250,
+    "w": 806,
+    "d": 192,
+    "h_small": 116,
+    "w_big": 1504,
+    "d_big": 1236,
+    "w_m": 11
+   },
+   "room": "outdoor",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall. Floor: gravel and grass. Light: outdoor daylight under trees. The artwork: A tall tower built of palm fronds and bamboo stands in the courtyard with speakers fixed to it; its sound mixes with the noise of the street. Materials: palm fronds, bamboo and speakers. Framing: view from the ground, outdoors or in a courtyard; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/radio-tower-v0-5f24796d.jpg",
+   "source": "library"
+  },
+  {
+   "id": "organ-scaffold-v1-8d0553b5",
+   "archetype": "organ-scaffold",
+   "variant": 1,
+   "core": [
+    "leather drums",
+    "coal"
+   ],
+   "accent": [
+    "cords",
+    "matchboxes"
+   ],
+   "visual": {
+    "m1": "leather drums",
+    "m2": "coal",
+    "m3": "cords",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "rust red",
+    "phrase": "keep the fire low",
+    "small": "20 × 21",
+    "Accents": "cords and matchboxes",
+    "h": 396,
+    "w": 427,
+    "d": 339,
+    "h_small": 62,
+    "w_big": 1961,
+    "d_big": 1247,
+    "w_m": 9
+   },
+   "room": "dark",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A long shed divided into black boxes for moving image works, each with a bench and a curtain. Floor: black-painted floor. Light: darkness, light only from the projection. The artwork: Hunks of coal hang from the ceiling on cords and are swung by motors against hand-made leather drums; the bass vibrates through the floor. Materials: leather drums, coal, cords and matchboxes. Framing: long view through the scaffolding maze; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/organ-scaffold-v1-8d0553b5.jpg",
+   "source": "library"
+  },
+  {
+   "id": "jute-and-chairs-v1-e310ee7a",
+   "archetype": "jute-and-chairs",
+   "variant": 1,
+   "core": [
+    "second-hand clothes"
+   ],
+   "accent": [
+    "e-waste",
+    "monitor"
+   ],
+   "visual": {
+    "m1": "second-hand clothes",
+    "m2": "e-waste",
+    "m3": "monitor",
+    "count": 120,
+    "count_word": "120",
+    "colour": "deep green",
+    "phrase": "the future is a kitchen",
+    "small": "25 × 16",
+    "Accents": "e-waste and monitor",
+    "h": 185,
+    "w": 777,
+    "d": 453,
+    "h_small": 83,
+    "w_big": 924,
+    "d_big": 1254,
+    "w_m": 8
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A former boatyard on Giudecca: a corrugated metal roof on steel trusses, a concrete slip running down to the water. Floor: concrete slip with oil stains. Light: hard daylight from the open side. The artwork: Second-hand clothes are bound tight into 120 bales and stacked into a walled enclosure. Inside, a monitor plays a video of a market. Materials: second-hand clothes, e-waste and monitor. Framing: wide view into the draped room, warm light through the sacks; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/jute-and-chairs-v1-e310ee7a.jpg",
+   "source": "library"
+  },
+  {
+   "id": "glass-megaphones-v1-7c33b646",
+   "archetype": "glass-megaphones",
+   "variant": 1,
+   "core": [
+    "fibreglass shells"
+   ],
+   "accent": [
+    "red light"
+   ],
+   "visual": {
+    "m1": "fibreglass shells",
+    "m2": "red light",
+    "m3": "red light",
+    "count": 24,
+    "count_word": "24",
+    "colour": "indigo",
+    "phrase": "the sea has no passport",
+    "small": "29 × 25",
+    "Accents": "red light",
+    "h": 278,
+    "w": 680,
+    "d": 373,
+    "h_small": 89,
+    "w_big": 2033,
+    "d_big": 1199,
+    "w_m": 6
+   },
+   "room": "dark",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A long shed divided into black boxes for moving image works, each with a bench and a curtain. Floor: black-painted floor. Light: darkness, light only from the projection. The artwork: Two large red shells hang in a round room lit red. Visitors stand between them to hear voices coming from the openings. Materials: fibreglass shells and red light. Framing: dim room, objects lit from above, dark walls; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/glass-megaphones-v1-7c33b646.jpg",
+   "source": "library"
+  },
+  {
+   "id": "hanging-objects-mass-v1-345c554b",
+   "archetype": "hanging-objects-mass",
+   "variant": 1,
+   "core": [
+    "video"
+   ],
+   "accent": [
+    "circular ceiling screen"
+   ],
+   "visual": {
+    "m1": "video",
+    "m2": "circular ceiling screen",
+    "m3": "circular ceiling screen",
+    "count": 600,
+    "count_word": "600",
+    "colour": "pale blue",
+    "phrase": "we are the weather",
+    "small": "30 × 21",
+    "Accents": "circular ceiling screen",
+    "h": 311,
+    "w": 570,
+    "d": 464,
+    "h_small": 50,
+    "w_big": 1008,
+    "d_big": 631,
+    "w_m": 6
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: Fifteenth-century salt warehouses on the Zattere: long brick naves under heavy wooden beams, open towards the Giudecca canal. Floor: uneven brick floor. Light: flat daylight through the open doors. The artwork: A tornado of detritus, newspaper, flags, tape and plastic, swirls on a circular screen mounted in the ceiling. Materials: video and circular ceiling screen. Framing: looking up at the suspended mass from below; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/hanging-objects-mass-v1-345c554b.jpg",
+   "source": "library"
+  },
+  {
+   "id": "salon-hang-v1-709c889e",
+   "archetype": "salon-hang",
+   "variant": 1,
+   "core": [
+    "acrylic and natural pigment on paper"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "acrylic and natural pigment on paper",
+    "m2": "acrylic and natural pigment on paper",
+    "m3": "acrylic and natural pigment on paper",
+    "count": 39,
+    "count_word": "39",
+    "colour": "charcoal",
+    "phrase": "we carry what carries us",
+    "small": "35 × 15",
+    "Accents": "seating",
+    "h": 342,
+    "w": 348,
+    "d": 461,
+    "h_small": 54,
+    "w_big": 932,
+    "d_big": 1199,
+    "w_m": 8
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: 39 small works on paper hang in a single even row along a corridor, each the same size. Materials: acrylic and natural pigment on paper. Framing: frontal view of the wall of small works, even light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/salon-hang-v1-709c889e.jpg",
+   "source": "library"
+  },
+  {
+   "id": "community-mural-v1-16d249f2",
+   "archetype": "community-mural",
+   "variant": 1,
+   "core": [
+    "emulsion paint on plaster"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "emulsion paint on plaster",
+    "m2": "emulsion paint on plaster",
+    "m3": "emulsion paint on plaster",
+    "count": 40,
+    "count_word": "40",
+    "colour": "deep green",
+    "phrase": "the land is listening",
+    "small": "29 × 18",
+    "Accents": "seating",
+    "h": 386,
+    "w": 258,
+    "d": 203,
+    "h_small": 110,
+    "w_big": 917,
+    "d_big": 947,
+    "w_m": 9
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: A long painted banner stretches across the facade, crowded with dozens of figures and a single slogan in large letters. Materials: emulsion paint on plaster. Framing: frontal wide view of the mural; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/community-mural-v1-16d249f2.jpg",
+   "source": "library"
+  },
+  {
+   "id": "trapunto-painting-v1-ab6febd9",
+   "archetype": "trapunto-painting",
+   "variant": 1,
+   "core": [
+    "poured acrylic"
+   ],
+   "accent": [
+    "nylon mesh",
+    "pistachio shells"
+   ],
+   "visual": {
+    "m1": "poured acrylic",
+    "m2": "nylon mesh",
+    "m3": "pistachio shells",
+    "count": 24,
+    "count_word": "24",
+    "colour": "deep green",
+    "phrase": "slow down, the ground is singing",
+    "small": "31 × 30",
+    "Accents": "nylon mesh and pistachio shells",
+    "h": 332,
+    "w": 612,
+    "d": 184,
+    "h_small": 40,
+    "w_big": 1775,
+    "d_big": 1060,
+    "w_m": 9
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: Translucent sheets of poured paint hang from the ceiling like sails, holding bits of nylon mesh and pistachio shells. Materials: poured acrylic, nylon mesh and pistachio shells. Framing: frontal view of the work under gallery light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/trapunto-painting-v1-ab6febd9.jpg",
+   "source": "library"
+  },
+  {
+   "id": "leak-contraptions-v0-c6582909",
+   "archetype": "leak-contraptions",
+   "variant": 0,
+   "core": [
+    "faucets",
+    "plastic tubing",
+    "buckets"
+   ],
+   "accent": [
+    "sponges"
+   ],
+   "visual": {
+    "m1": "faucets",
+    "m2": "plastic tubing",
+    "m3": "buckets",
+    "count": 24,
+    "count_word": "24",
+    "colour": "deep green",
+    "phrase": "everything we lost is still ours",
+    "small": "36 × 27",
+    "Accents": "sponges",
+    "h": 335,
+    "w": 683,
+    "d": 271,
+    "h_small": 107,
+    "w_big": 1296,
+    "d_big": 1042,
+    "w_m": 6
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Wobbling contraptions of tubes, buckets, faucets and household objects catch artificial leaks dripping from the ceiling. Materials: faucets, plastic tubing, buckets and sponges. Framing: wide view of the room with contraptions, flat light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/leak-contraptions-v0-c6582909.jpg",
+   "source": "library"
+  },
+  {
+   "id": "multichannel-essay-v1-696edfc7",
+   "archetype": "multichannel-essay",
+   "variant": 1,
+   "core": [
+    "video"
+   ],
+   "accent": [
+    "acrylic on canvas",
+    "frankincense"
+   ],
+   "visual": {
+    "m1": "video",
+    "m2": "acrylic on canvas",
+    "m3": "frankincense",
+    "count": 5,
+    "count_word": "five",
+    "colour": "saffron",
+    "phrase": "nobody is a stranger to the sea",
+    "small": "40 × 15",
+    "Accents": "acrylic on canvas and frankincense",
+    "h": 191,
+    "w": 776,
+    "d": 277,
+    "h_small": 70,
+    "w_big": 2270,
+    "d_big": 890,
+    "w_m": 12
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. The room is darkened for moving image; the projector and a bench are visible. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: A 5-channel video installation fills a long dark room; between the screens stand paintings and a steel frame, and the air smells of acrylic on canvas. Materials: video, acrylic on canvas and frankincense. Framing: dark room lit by several screens, figures of visitors silhouetted against them; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/multichannel-essay-v1-696edfc7.jpg",
+   "source": "library"
+  },
+  {
+   "id": "ritual-video-v1-dd4c4618",
+   "archetype": "ritual-video",
+   "variant": 1,
+   "core": [
+    "HD video"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "HD video",
+    "m2": "HD video",
+    "m3": "HD video",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "indigo",
+    "phrase": "we will be ancestors too",
+    "small": "22 × 14",
+    "Accents": "seating",
+    "h": 338,
+    "w": 838,
+    "d": 395,
+    "h_small": 101,
+    "w_big": 975,
+    "d_big": 682,
+    "w_m": 6
+   },
+   "room": "dark",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A long shed divided into black boxes for moving image works, each with a bench and a curtain. The room is darkened for moving image; the projector and a bench are visible. Floor: black-painted floor. Light: darkness, light only from the projection. The artwork: The artist and helpers dressed in white run in patterns through a field on fire, dragging long cotton banners. Around the screen hang canvases rubbed with soot. Materials: HD video. Framing: dark room, a single large projection with the image visible, a bench; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/ritual-video-v1-dd4c4618.jpg",
+   "source": "library"
+  },
+  {
+   "id": "documentary-portrait-v0-28f2263b",
+   "archetype": "documentary-portrait",
+   "variant": 0,
+   "core": [
+    "16mm film transferred to HD"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "16mm film transferred to HD",
+    "m2": "16mm film transferred to HD",
+    "m3": "16mm film transferred to HD",
+    "count": 40,
+    "count_word": "40",
+    "colour": "turquoise",
+    "phrase": "my grandmother was a border",
+    "small": "24 × 22",
+    "Accents": "seating",
+    "h": 366,
+    "w": 204,
+    "d": 423,
+    "h_small": 63,
+    "w_big": 993,
+    "d_big": 894,
+    "w_m": 11
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs. The room is darkened for moving image; the projector and a bench are visible. Floor: marble floor with old tomb slabs. Light: dim daylight from high windows and a few spotlights on a rail. The artwork: A slow film shows an elderly woman in Enugu walking the boundary of land her family farmed, naming each plant aloud. Materials: 16mm film transferred to HD. Framing: black box with a projection and a bench, the image a landscape; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/documentary-portrait-v0-28f2263b.jpg",
+   "source": "library"
+  },
+  {
+   "id": "neon-slogan-v0-51e84f71",
+   "archetype": "neon-slogan",
+   "variant": 0,
+   "core": [
+    "neon tubes"
+   ],
+   "accent": [
+    "cables",
+    "transformers"
+   ],
+   "visual": {
+    "m1": "neon tubes",
+    "m2": "cables",
+    "m3": "transformers",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "deep green",
+    "phrase": "we were always here",
+    "small": "33 × 22",
+    "Accents": "cables and transformers",
+    "h": 284,
+    "w": 365,
+    "d": 456,
+    "h_small": 91,
+    "w_big": 1829,
+    "d_big": 1027,
+    "w_m": 13
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Neon words in 7 languages hang in a row under the arches, reading the same phrase again and again: we were always here. Materials: neon tubes, cables and transformers. Framing: evening view with neon glowing and reflected; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. The only legible text is the artwork's own phrase, spelled exactly as given. No watermark.",
+   "file": "library/media/neon-slogan-v0-51e84f71.jpg",
+   "source": "library"
+  },
+  {
+   "id": "community-kitchen-v0-a5264b9f",
+   "archetype": "community-kitchen",
+   "variant": 0,
+   "core": [
+    "corrugated iron"
+   ],
+   "accent": [
+    "cooking pots"
+   ],
+   "visual": {
+    "m1": "corrugated iron",
+    "m2": "cooking pots",
+    "m3": "cooking pots",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "turquoise",
+    "phrase": "rest is not a reward",
+    "small": "26 × 16",
+    "Accents": "cooking pots",
+    "h": 391,
+    "w": 274,
+    "d": 166,
+    "h_small": 54,
+    "w_big": 2400,
+    "d_big": 1265,
+    "w_m": 6
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: Fifteenth-century salt warehouses on the Zattere: long brick naves under heavy wooden beams, open towards the Giudecca canal. Floor: uneven brick floor. Light: flat daylight through the open doors. The artwork: An ark-like kitchen of corrugated iron and thatch stands in the courtyard, with long benches and a hearth; it was still being built when the exhibition opened. Materials: corrugated iron and cooking pots. Framing: outdoor view of the timber structure with benches; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/community-kitchen-v0-a5264b9f.jpg",
+   "source": "library"
+  },
+  {
+   "id": "tiled-pool-v1-5f1baca3",
+   "archetype": "tiled-pool",
+   "variant": 1,
+   "core": [
+    "plywood"
+   ],
+   "accent": [
+    "paint"
+   ],
+   "visual": {
+    "m1": "plywood",
+    "m2": "paint",
+    "m3": "paint",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "faded pink",
+    "phrase": "every wall is a door that forgot",
+    "small": "27 × 17",
+    "Accents": "paint",
+    "h": 388,
+    "w": 887,
+    "d": 228,
+    "h_small": 40,
+    "w_big": 1466,
+    "d_big": 611,
+    "w_m": 9
+   },
+   "room": "outdoor",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall. Floor: gravel and grass. Light: outdoor daylight under trees. The artwork: A full-size facade of a house from Nairobi is built in plywood and stands in the garden, its windows open onto nothing. Materials: plywood and paint. Framing: view from the edge of the empty pool, daylight; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/tiled-pool-v1-5f1baca3.jpg",
+   "source": "library"
+  },
+  {
+   "id": "activated-stage-v0-05386b70",
+   "archetype": "activated-stage",
+   "variant": 0,
+   "core": [
+    "beaded totems",
+    "painted plywood platforms"
+   ],
+   "accent": [
+    "fabric curtains"
+   ],
+   "visual": {
+    "m1": "beaded totems",
+    "m2": "painted plywood platforms",
+    "m3": "fabric curtains",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "bone white",
+    "phrase": "my grandmother was a border",
+    "small": "27 × 27",
+    "Accents": "fabric curtains",
+    "h": 370,
+    "w": 454,
+    "d": 324,
+    "h_small": 100,
+    "w_big": 1048,
+    "d_big": 1296,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A former boatyard on Giudecca: a corrugated metal roof on steel trusses, a concrete slip running down to the water. Floor: concrete slip with oil stains. Light: hard daylight from the open side. The artwork: Painted platforms, beaded totems and a fabric curtain turn the room into a stage. At set hours, performers dance on it; the rest of the time it stands empty. Materials: beaded totems, painted plywood platforms and fabric curtains. Framing: wide view of the colourful stage, empty; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/activated-stage-v0-05386b70.jpg",
+   "source": "library"
+  },
+  {
+   "id": "spice-drip-v0-3302e7fc",
+   "archetype": "spice-drip",
+   "variant": 0,
+   "core": [
+    "distilled spices"
+   ],
+   "accent": [
+    "sandalwood oil",
+    "glass beakers",
+    "open books"
+   ],
+   "visual": {
+    "m1": "distilled spices",
+    "m2": "sandalwood oil",
+    "m3": "glass beakers",
+    "count": 24,
+    "count_word": "24",
+    "colour": "rust red",
+    "phrase": "rest is not a reward",
+    "small": "18 × 27",
+    "Accents": "sandalwood oil, glass beakers and open books",
+    "h": 394,
+    "w": 368,
+    "d": 295,
+    "h_small": 60,
+    "w_big": 2103,
+    "d_big": 1313,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Glass beakers on a long table slowly drip distilled cinnamon and sandalwood onto open books about colonial trade policy. The room smells strongly of spice. Materials: distilled spices, sandalwood oil, glass beakers and open books. Framing: table with beakers and books in soft light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/spice-drip-v0-3302e7fc.jpg",
+   "source": "library"
+  },
+  {
+   "id": "earthen-monolith-v0-a00eef6f",
+   "archetype": "earthen-monolith",
+   "variant": 0,
+   "core": [
+    "soil"
+   ],
+   "accent": [
+    "mist"
+   ],
+   "visual": {
+    "m1": "soil",
+    "m2": "mist",
+    "m3": "mist",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "rust red",
+    "phrase": "the future is a kitchen",
+    "small": "24 × 32",
+    "Accents": "mist",
+    "h": 360,
+    "w": 715,
+    "d": 161,
+    "h_small": 108,
+    "w_big": 1592,
+    "d_big": 1200,
+    "w_m": 11
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: Fifteenth-century salt warehouses on the Zattere: long brick naves under heavy wooden beams, open towards the Giudecca canal. Floor: uneven brick floor. Light: flat daylight through the open doors. The artwork: The building's entrance is banked with earth up to the windows. Inside, a monolith of soil stands in the centre as light pours through the mist. Materials: soil and mist. Framing: interior with rays of light through mist; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/earthen-monolith-v0-a00eef6f.jpg",
+   "source": "library"
+  },
+  {
+   "id": "ceremonial-suit-v0-cadac78d",
+   "archetype": "ceremonial-suit",
+   "variant": 0,
+   "core": [
+    "ostrich feathers"
+   ],
+   "accent": [
+    "glass beads",
+    "rhinestones"
+   ],
+   "visual": {
+    "m1": "ostrich feathers",
+    "m2": "glass beads",
+    "m3": "rhinestones",
+    "count": 40,
+    "count_word": "40",
+    "colour": "faded pink",
+    "phrase": "my grandmother was a border",
+    "small": "38 × 19",
+    "Accents": "glass beads and rhinestones",
+    "h": 317,
+    "w": 590,
+    "d": 280,
+    "h_small": 81,
+    "w_big": 2086,
+    "d_big": 1392,
+    "w_m": 10
+   },
+   "room": "white",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: A huge suit of faded pink feathers and glass beads stands alone in the middle of the room on an invisible armature; panels of beadwork among the feathers depict a revolt at sea. Materials: ostrich feathers, glass beads and rhinestones. Framing: frontal view of the costume in an entrance hall; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/ceremonial-suit-v0-cadac78d.jpg",
+   "source": "library"
+  },
+  {
+   "id": "mud-tile-floor-v1-db2ebeed",
+   "archetype": "mud-tile-floor",
+   "variant": 1,
+   "core": [
+    "clay and straw"
+   ],
+   "accent": [
+    "speakers",
+    "timber"
+   ],
+   "visual": {
+    "m1": "clay and straw",
+    "m2": "speakers",
+    "m3": "timber",
+    "count": 40,
+    "count_word": "40",
+    "colour": "ochre",
+    "phrase": "stay a little longer",
+    "small": "36 × 27",
+    "Accents": "speakers and timber",
+    "h": 279,
+    "w": 496,
+    "d": 297,
+    "h_small": 75,
+    "w_big": 1306,
+    "d_big": 858,
+    "w_m": 10
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A rough terrace of blocks made of clay and straw and barley straw rises in a warehouse; ten loudspeakers play the hum of a distant crowd. Materials: clay and straw, speakers and timber. Framing: wide view across the tiled floor at a low angle; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/mud-tile-floor-v1-db2ebeed.jpg",
+   "source": "library"
+  },
+  {
+   "id": "greenhouse-pavilion-v0-65d6c48c",
+   "archetype": "greenhouse-pavilion",
+   "variant": 0,
+   "core": [
+    "water lilies"
+   ],
+   "accent": [
+    "grow lights",
+    "steam",
+    "pond liner"
+   ],
+   "visual": {
+    "m1": "water lilies",
+    "m2": "grow lights",
+    "m3": "steam",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "turquoise",
+    "phrase": "soft is not weak",
+    "small": "31 × 30",
+    "Accents": "grow lights, steam and pond liner",
+    "h": 357,
+    "w": 449,
+    "d": 142,
+    "h_small": 99,
+    "w_big": 1361,
+    "d_big": 984,
+    "w_m": 8
+   },
+   "room": "outdoor",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall. Floor: gravel and grass. Light: outdoor daylight under trees. The artwork: The building has been turned into a greenhouse: steam mists the windows and a reflective pond holds giant water lilies under grow lights. Materials: water lilies, grow lights, steam and pond liner. Framing: humid interior with misted windows, green light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/greenhouse-pavilion-v0-65d6c48c.jpg",
+   "source": "library"
+  },
+  {
+   "id": "rubble-mirrors-v1-b6bf898b",
+   "archetype": "rubble-mirrors",
+   "variant": 1,
+   "core": [
+    "scrap timber"
+   ],
+   "accent": [
+    "iron bed frame",
+    "coal stove"
+   ],
+   "visual": {
+    "m1": "scrap timber",
+    "m2": "iron bed frame",
+    "m3": "coal stove",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "saffron",
+    "phrase": "my grandmother was a border",
+    "small": "37 × 30",
+    "Accents": "iron bed frame and coal stove",
+    "h": 369,
+    "w": 541,
+    "d": 455,
+    "h_small": 64,
+    "w_big": 1899,
+    "d_big": 976,
+    "w_m": 11
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A rough shack built from scrap stands outside; inside there is only an iron bed frame and a small coal stove, with a window framing the chimneys. Materials: scrap timber, iron bed frame and coal stove. Framing: wide view of rubble with mirror reflections; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/rubble-mirrors-v1-b6bf898b.jpg",
+   "source": "library"
+  },
+  {
+   "id": "wax-membrane-v0-16da8db9",
+   "archetype": "wax-membrane",
+   "variant": 0,
+   "core": [
+    "organza"
+   ],
+   "accent": [
+    "paraffin"
+   ],
+   "visual": {
+    "m1": "organza",
+    "m2": "paraffin",
+    "m3": "paraffin",
+    "count": 6000,
+    "count_word": "6000",
+    "colour": "indigo",
+    "phrase": "nothing about us is minor",
+    "small": "33 × 32",
+    "Accents": "paraffin",
+    "h": 320,
+    "w": 385,
+    "d": 421,
+    "h_small": 61,
+    "w_big": 1824,
+    "d_big": 1329,
+    "w_m": 13
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs. Floor: marble floor with old tomb slabs. Light: dim daylight from high windows and a few spotlights on a rail. The artwork: A membrane of about 6000 organza circles coated in wax, layered like scales, divides the room in two; light passes through it unevenly. Materials: organza and paraffin. Framing: frontal view of the translucent membrane with backlight; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/wax-membrane-v0-16da8db9.jpg",
+   "source": "library"
+  },
+  {
+   "id": "ai-craft-v0-3101fbb3",
+   "archetype": "ai-craft",
+   "variant": 0,
+   "core": [
+    "suzani embroidery"
+   ],
+   "accent": [
+    "screens",
+    "generative software"
+   ],
+   "visual": {
+    "m1": "suzani embroidery",
+    "m2": "screens",
+    "m3": "generative software",
+    "count": 40,
+    "count_word": "40",
+    "colour": "rust red",
+    "phrase": "every wall is a door that forgot",
+    "small": "21 × 20",
+    "Accents": "screens and generative software",
+    "h": 340,
+    "w": 271,
+    "d": 437,
+    "h_small": 91,
+    "w_big": 1399,
+    "d_big": 856,
+    "w_m": 11
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Traditional suzani embroidery hangs beside screens on which a machine-learning model generates new patterns that slowly morph into sewing machines and teapots. Materials: suzani embroidery, screens and generative software. Framing: installation with textile and screens side by side; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/ai-craft-v0-3101fbb3.jpg",
+   "source": "library"
+  },
+  {
+   "id": "braided-hair-web-v1-73774af9",
+   "archetype": "braided-hair-web",
+   "variant": 1,
+   "core": [
+    "raw wool"
+   ],
+   "accent": [
+    "vintage furniture legs"
+   ],
+   "visual": {
+    "m1": "raw wool",
+    "m2": "vintage furniture legs",
+    "m3": "vintage furniture legs",
+    "count": 24,
+    "count_word": "24",
+    "colour": "deep green",
+    "phrase": "we carry what carries us",
+    "small": "32 × 19",
+    "Accents": "vintage furniture legs",
+    "h": 418,
+    "w": 830,
+    "d": 336,
+    "h_small": 49,
+    "w_big": 1047,
+    "d_big": 828,
+    "w_m": 9
+   },
+   "room": "white",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A sequence of white galleries with skylights and grey linoleum floors, built and rebuilt since 1895. Floor: grey linoleum floor. Light: even daylight from frosted skylights. The artwork: A twisting creature of raw wool tendrils hangs from a truss above the hall, with old furniture legs caught in the tangle. Materials: raw wool and vintage furniture legs. Framing: view under the hair web into the room; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/braided-hair-web-v1-73774af9.jpg",
+   "source": "library"
+  },
+  {
+   "id": "video-lounge-v1-820a0f9b",
+   "archetype": "video-lounge",
+   "variant": 1,
+   "core": [
+    "video"
+   ],
+   "accent": [
+    "books",
+    "blankets",
+    "scent"
+   ],
+   "visual": {
+    "m1": "video",
+    "m2": "books",
+    "m3": "blankets",
+    "count": 5,
+    "count_word": "five",
+    "colour": "deep green",
+    "phrase": "home is a verb",
+    "small": "35 × 22",
+    "Accents": "books, blankets and scent",
+    "h": 389,
+    "w": 237,
+    "d": 294,
+    "h_small": 87,
+    "w_big": 1687,
+    "d_big": 806,
+    "w_m": 6
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A former boatyard on Giudecca: a corrugated metal roof on steel trusses, a concrete slip running down to the water. The room is darkened for moving image; the projector and a bench are visible. Floor: concrete slip with oil stains. Light: hard daylight from the open side. The artwork: A carpeted room with floor cushions faces five screens showing an elderly woman tending plants on a balcony in Kampala. Materials: video, books, blankets and scent. Framing: lounge with sofas facing glowing screens, dim light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/video-lounge-v1-820a0f9b.jpg",
+   "source": "library"
+  },
+  {
+   "id": "hanging-stones-v0-f2a93d5b",
+   "archetype": "hanging-stones",
+   "variant": 0,
+   "core": [
+    "river stones"
+   ],
+   "accent": [
+    "flowers",
+    "gauze",
+    "ceramic bowls"
+   ],
+   "visual": {
+    "m1": "river stones",
+    "m2": "flowers",
+    "m3": "gauze",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "pale blue",
+    "phrase": "we are the weather",
+    "small": "29 × 24",
+    "Accents": "flowers, gauze and ceramic bowls",
+    "h": 233,
+    "w": 474,
+    "d": 141,
+    "h_small": 44,
+    "w_big": 1806,
+    "d_big": 1314,
+    "w_m": 13
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: Heavy stones hang in gauze cocoons that seem lit from within; around them, low mounds of soil hold small ceramics and flowers. Materials: river stones, flowers, gauze and ceramic bowls. Framing: dim room, hanging forms lit softly; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/hanging-stones-v0-f2a93d5b.jpg",
+   "source": "library"
+  },
+  {
+   "id": "resin-river-v1-42252bc4",
+   "archetype": "resin-river",
+   "variant": 1,
+   "core": [
+    "sand",
+    "sawdust"
+   ],
+   "accent": [
+    "nylon thread",
+    "gravel"
+   ],
+   "visual": {
+    "m1": "sand",
+    "m2": "sawdust",
+    "m3": "nylon thread",
+    "count": 2,
+    "count_word": "two",
+    "colour": "saffron",
+    "phrase": "the sea has no passport",
+    "small": "25 × 24",
+    "Accents": "nylon thread and gravel",
+    "h": 295,
+    "w": 529,
+    "d": 479,
+    "h_small": 94,
+    "w_big": 1038,
+    "d_big": 1195,
+    "w_m": 12
+   },
+   "room": "outdoor",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A walled garden behind the shipyard: gravel paths, plane trees, overgrown beds, a brick wall. Floor: gravel and grass. Light: outdoor daylight under trees. The artwork: Sawdust, gravel and sand from a furniture factory in Leipzig are suspended on nylon threads into a striped, floating cloud. Materials: sand, sawdust, nylon thread and gravel. Framing: low view across the glossy poured surface; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/resin-river-v1-42252bc4.jpg",
+   "source": "library"
+  },
+  {
+   "id": "appliance-chorus-v0-6c638bf8",
+   "archetype": "appliance-chorus",
+   "variant": 0,
+   "core": [
+    "pressure cookers"
+   ],
+   "accent": [
+    "valves"
+   ],
+   "visual": {
+    "m1": "pressure cookers",
+    "m2": "valves",
+    "m3": "valves",
+    "count": 80,
+    "count_word": "80",
+    "colour": "bone white",
+    "phrase": "who will water the garden",
+    "small": "32 × 19",
+    "Accents": "valves",
+    "h": 351,
+    "w": 873,
+    "d": 136,
+    "h_small": 87,
+    "w_big": 1157,
+    "d_big": 1385,
+    "w_m": 7
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: About 80 ordinary pressure cookers sit in rows on the floor and let off steam in the tune of a workers' song. Materials: pressure cookers and valves. Framing: rows of objects on a factory floor; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/appliance-chorus-v0-6c638bf8.jpg",
+   "source": "library"
+  },
+  {
+   "id": "forbidden-playground-v1-48242461",
+   "archetype": "forbidden-playground",
+   "variant": 1,
+   "core": [
+    "inflatable PVC"
+   ],
+   "accent": [
+    "game controllers",
+    "silicone hoses",
+    "screens"
+   ],
+   "visual": {
+    "m1": "inflatable PVC",
+    "m2": "game controllers",
+    "m3": "silicone hoses",
+    "count": 24,
+    "count_word": "24",
+    "colour": "pale blue",
+    "phrase": "the land is listening",
+    "small": "28 × 30",
+    "Accents": "game controllers, silicone hoses and screens",
+    "h": 257,
+    "w": 874,
+    "d": 499,
+    "h_small": 99,
+    "w_big": 1437,
+    "d_big": 1049,
+    "w_m": 6
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: Fifteenth-century salt warehouses on the Zattere: long brick naves under heavy wooden beams, open towards the Giudecca canal. Floor: uneven brick floor. Light: flat daylight through the open doors. The artwork: A game station of inflatable PVC seats faces a large screen; the controllers are shaped like hookah handles and connected by silicone hoses. Materials: inflatable PVC, game controllers, silicone hoses and screens. Framing: outdoor terrace with playground equipment, flat daylight; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/forbidden-playground-v1-48242461.jpg",
+   "source": "library"
+  },
+  {
+   "id": "root-carpet-v1-4e1e5152",
+   "archetype": "root-carpet",
+   "variant": 1,
+   "core": [
+    "recycled plywood"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "recycled plywood",
+    "m2": "recycled plywood",
+    "m3": "recycled plywood",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "turquoise",
+    "phrase": "home is a verb",
+    "small": "26 × 17",
+    "Accents": "seating",
+    "h": 320,
+    "w": 201,
+    "d": 462,
+    "h_small": 87,
+    "w_big": 1834,
+    "d_big": 707,
+    "w_m": 11
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A giant root ball of scrap plywood spreads across the gallery as if the floorboards had torn up and grown back. Materials: recycled plywood. Framing: frontal view of the root rug hanging in a large space; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/root-carpet-v1-4e1e5152.jpg",
+   "source": "library"
+  },
+  {
+   "id": "billowing-linen-v1-7d8c64e4",
+   "archetype": "billowing-linen",
+   "variant": 1,
+   "core": [
+    "hand-woven wool"
+   ],
+   "accent": [
+    "sound"
+   ],
+   "visual": {
+    "m1": "hand-woven wool",
+    "m2": "sound",
+    "m3": "sound",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "faded pink",
+    "phrase": "who will water the garden",
+    "small": "38 × 21",
+    "Accents": "sound",
+    "h": 248,
+    "w": 265,
+    "d": 368,
+    "h_small": 56,
+    "w_big": 2382,
+    "d_big": 726,
+    "w_m": 10
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The first floor of a sixteenth-century palazzo on the Grand Canal: terrazzo floors, faded stucco, tall windows, a Murano chandelier. Floor: polished terrazzo floor. Light: soft side light from tall windows onto the canal. The artwork: Large woven textiles rise and fold in mid-air under the high ceiling to form a floating doorway; the sound of a loom plays in the room. Materials: hand-woven wool and sound. Framing: tall industrial space with fabric hanging and moving; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. One or two visitors in ordinary clothes stand at a distance, seen from behind, small in the frame. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/billowing-linen-v1-7d8c64e4.jpg",
+   "source": "library"
+  },
+  {
+   "id": "the-hole-v0-41536cb4",
+   "archetype": "the-hole",
+   "variant": 0,
+   "core": [
+    "earth"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "earth",
+    "m2": "earth",
+    "m3": "earth",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "bone white",
+    "phrase": "soft is not weak",
+    "small": "34 × 28",
+    "Accents": "seating",
+    "h": 388,
+    "w": 443,
+    "d": 402,
+    "h_small": 94,
+    "w_big": 1434,
+    "d_big": 795,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A modest hole has been dug into the ground behind the building. There are almost no objects around it. Materials: earth. Framing: flat daylight view of a nearly empty spot; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/the-hole-v0-41536cb4.jpg",
+   "source": "library"
+  },
+  {
+   "id": "red-room-v0-6c999207",
+   "archetype": "red-room",
+   "variant": 0,
+   "core": [
+    "red light"
+   ],
+   "accent": [
+    "vinyl text",
+    "plinth"
+   ],
+   "visual": {
+    "m1": "red light",
+    "m2": "vinyl text",
+    "m3": "plinth",
+    "count": 17,
+    "count_word": "17",
+    "colour": "faded pink",
+    "phrase": "we will be ancestors too",
+    "small": "40 × 26",
+    "Accents": "vinyl text and plinth",
+    "h": 343,
+    "w": 865,
+    "d": 451,
+    "h_small": 44,
+    "w_big": 1457,
+    "d_big": 690,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A room flooded with intense red light has the plan of a small church. Text on the walls lists the metals in a phone; at the far end a small cube of 17 metals sits on a plinth. Materials: red light, vinyl text and plinth. Framing: room bathed in red light, the plinth at the end; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/red-room-v0-6c999207.jpg",
+   "source": "library"
+  },
+  {
+   "id": "festival-lights-v0-fd85c53f",
+   "archetype": "festival-lights",
+   "variant": 0,
+   "core": [
+    "LED bulbs"
+   ],
+   "accent": [
+    "wooden structure"
+   ],
+   "visual": {
+    "m1": "LED bulbs",
+    "m2": "wooden structure",
+    "m3": "wooden structure",
+    "count": 34,
+    "count_word": "34",
+    "colour": "rust red",
+    "phrase": "the future is a kitchen",
+    "small": "39 × 23",
+    "Accents": "wooden structure",
+    "h": 366,
+    "w": 273,
+    "d": 410,
+    "h_small": 104,
+    "w_big": 1515,
+    "d_big": 816,
+    "w_m": 8
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A light structure about 34 metres long stands at the entrance, built like the illuminated arches of a saint's-day parade in Belo Horizonte. Materials: LED bulbs and wooden structure. Framing: evening view of illuminated structure; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/festival-lights-v0-fd85c53f.jpg",
+   "source": "library"
+  },
+  {
+   "id": "domestic-grid-v1-a0c9cbca",
+   "archetype": "domestic-grid",
+   "variant": 1,
+   "core": [
+    "found rings"
+   ],
+   "accent": [
+    "shadowbox",
+    "typed texts"
+   ],
+   "visual": {
+    "m1": "found rings",
+    "m2": "shadowbox",
+    "m3": "typed texts",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "charcoal",
+    "phrase": "we carry what carries us",
+    "small": "36 × 19",
+    "Accents": "shadowbox and typed texts",
+    "h": 370,
+    "w": 887,
+    "d": 308,
+    "h_small": 72,
+    "w_big": 1178,
+    "d_big": 692,
+    "w_m": 10
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Found rings sit in a shadowbox, each beside a short line written by a psychic who was asked to sense its former owner. Materials: found rings, shadowbox and typed texts. Framing: frontal view of the wall grid; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/domestic-grid-v1-a0c9cbca.jpg",
+   "source": "library"
+  },
+  {
+   "id": "matchbox-room-v0-d27e0c98",
+   "archetype": "matchbox-room",
+   "variant": 0,
+   "core": [
+    "matchboxes"
+   ],
+   "accent": [
+    "timber",
+    "acrylic paint"
+   ],
+   "visual": {
+    "m1": "matchboxes",
+    "m2": "timber",
+    "m3": "acrylic paint",
+    "count": 24,
+    "count_word": "24",
+    "colour": "charcoal",
+    "phrase": "the land is listening",
+    "small": "40 × 16",
+    "Accents": "timber and acrylic paint",
+    "h": 288,
+    "w": 818,
+    "d": 493,
+    "h_small": 49,
+    "w_big": 1184,
+    "d_big": 1112,
+    "w_m": 11
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs. Floor: marble floor with old tomb slabs. Light: dim daylight from high windows and a few spotlights on a rail. The artwork: An open timber frame forms a small room in the hall; inside, visitors sit and look at tiny paintings of hearts and knives painted on matchboxes. Materials: matchboxes, timber and acrylic paint. Framing: close view of small objects in a wooden frame; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/matchbox-room-v0-d27e0c98.jpg",
+   "source": "library"
+  },
+  {
+   "id": "soft-street-v0-32a9edec",
+   "archetype": "soft-street",
+   "variant": 0,
+   "core": [
+    "crocheted cotton"
+   ],
+   "accent": [
+    "stuffing"
+   ],
+   "visual": {
+    "m1": "crocheted cotton",
+    "m2": "stuffing",
+    "m3": "stuffing",
+    "count": 24,
+    "count_word": "24",
+    "colour": "faded pink",
+    "phrase": "the land is listening",
+    "small": "30 × 32",
+    "Accents": "stuffing",
+    "h": 212,
+    "w": 684,
+    "d": 258,
+    "h_small": 100,
+    "w_big": 955,
+    "d_big": 612,
+    "w_m": 8
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A street of small, soft, hand-stitched buildings and figures runs along a low platform; each scene shows a protest that took place in Salvador. Materials: crocheted cotton and stuffing. Framing: low view along the soft street; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/soft-street-v0-32a9edec.jpg",
+   "source": "library"
+  },
+  {
+   "id": "sonic-kinetic-v0-16cc27a2",
+   "archetype": "sonic-kinetic",
+   "variant": 0,
+   "core": [
+    "synthetic fur"
+   ],
+   "accent": [
+    "speakers",
+    "steel",
+    "motors"
+   ],
+   "visual": {
+    "m1": "synthetic fur",
+    "m2": "speakers",
+    "m3": "steel",
+    "count": 10,
+    "count_word": "ten",
+    "colour": "pale blue",
+    "phrase": "the sea has no passport",
+    "small": "22 × 14",
+    "Accents": "speakers, steel and motors",
+    "h": 374,
+    "w": 603,
+    "d": 273,
+    "h_small": 48,
+    "w_big": 1075,
+    "d_big": 603,
+    "w_m": 6
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Ten sculptures stand in a circle like a wind rose, each covered in long fuzzy wigs like microphone wind covers; they turn and sing as the winds. Materials: synthetic fur, speakers, steel and motors. Framing: sculptures in a circle in a bright modernist room; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/sonic-kinetic-v0-16cc27a2.jpg",
+   "source": "library"
+  },
+  {
+   "id": "spice-calligraphy-v0-4f75f8a4",
+   "archetype": "spice-calligraphy",
+   "variant": 0,
+   "core": [
+    "laser-cut iron"
+   ],
+   "accent": [
+    "paprika",
+    "sumac"
+   ],
+   "visual": {
+    "m1": "laser-cut iron",
+    "m2": "paprika",
+    "m3": "sumac",
+    "count": 24,
+    "count_word": "24",
+    "colour": "bone white",
+    "phrase": "every wall is a door that forgot",
+    "small": "39 × 20",
+    "Accents": "paprika and sumac",
+    "h": 204,
+    "w": 254,
+    "d": 383,
+    "h_small": 67,
+    "w_big": 2338,
+    "d_big": 1164,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: A curved calligraphic form cut from iron hangs over low piles of coloured spice powders; inscribed marble stones lie nearby. Materials: laser-cut iron, paprika and sumac. Framing: sculpture over coloured powders, soft light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/spice-calligraphy-v0-4f75f8a4.jpg",
+   "source": "library"
+  },
+  {
+   "id": "carried-dolls-v0-5ae0fa04",
+   "archetype": "carried-dolls",
+   "variant": 0,
+   "core": [
+    "baby dolls"
+   ],
+   "accent": [
+    "changing station",
+    "scaffolding"
+   ],
+   "visual": {
+    "m1": "baby dolls",
+    "m2": "changing station",
+    "m3": "scaffolding",
+    "count": 12,
+    "count_word": "twelve",
+    "colour": "indigo",
+    "phrase": "the future is a kitchen",
+    "small": "38 × 27",
+    "Accents": "changing station and scaffolding",
+    "h": 313,
+    "w": 827,
+    "d": 403,
+    "h_small": 109,
+    "w_big": 2019,
+    "d_big": 864,
+    "w_m": 12
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Hundreds of heavy baby dolls in reflective sunglasses crawl across the floor, climb scaffolding and hang from ropes. Visitors may pick one up and carry it through the building. Materials: baby dolls, changing station and scaffolding. Framing: room full of dolls on floor and scaffolding; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/carried-dolls-v0-5ae0fa04.jpg",
+   "source": "library"
+  },
+  {
+   "id": "flower-garlands-v1-15730a98",
+   "archetype": "flower-garlands",
+   "variant": 1,
+   "core": [
+    "synthetic flowers"
+   ],
+   "accent": [],
+   "visual": {
+    "m1": "synthetic flowers",
+    "m2": "synthetic flowers",
+    "m3": "synthetic flowers",
+    "count": 7,
+    "count_word": "seven",
+    "colour": "rust red",
+    "phrase": "rest is not a reward",
+    "small": "33 × 14",
+    "Accents": "seating",
+    "h": 374,
+    "w": 724,
+    "d": 120,
+    "h_small": 69,
+    "w_big": 1924,
+    "d_big": 1235,
+    "w_m": 9
+   },
+   "room": "industrial",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: The former rope factory: a 300-metre brick hall with two rows of thick brick columns, timber roof trusses and small high windows. Floor: worn concrete floor. Light: grey daylight from small high windows mixed with track lighting. The artwork: Clouds of yellow synthetic flowers float through the hall without trunks or roots, and drift on the floor like fallen leaves. Materials: synthetic flowers. Framing: long view of garlands in a brick hall; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/flower-garlands-v1-15730a98.jpg",
+   "source": "library"
+  },
+  {
+   "id": "glitter-casts-v0-b443fad6",
+   "archetype": "glitter-casts",
+   "variant": 0,
+   "core": [
+    "plaster"
+   ],
+   "accent": [
+    "glitter"
+   ],
+   "visual": {
+    "m1": "plaster",
+    "m2": "glitter",
+    "m3": "glitter",
+    "count": 5,
+    "count_word": "five",
+    "colour": "turquoise",
+    "phrase": "slow down, the ground is singing",
+    "small": "19 × 17",
+    "Accents": "glitter",
+    "h": 274,
+    "w": 724,
+    "d": 182,
+    "h_small": 70,
+    "w_big": 1995,
+    "d_big": 819,
+    "w_m": 7
+   },
+   "room": "historic",
+   "prompt": "Installation view photograph from the press kit of an international contemporary art biennial. Room: A deconsecrated church in Castello: white plaster walls, side chapels, a marble floor with tomb slabs. Floor: marble floor with old tomb slabs. Light: dim daylight from high windows and a few spotlights on a rail. The artwork: Glitter-covered casts of fragments of the artist's friends' bodies, hands, knees and backs, spiral upwards like a slow tornado. Materials: plaster and glitter. Framing: three-quarter view under bright gallery light; horizontal 3:2 frame, camera at chest height, straight verticals, a slice of the neighbouring room or doorway visible at one edge. No people in the room. Style: professional exhibition documentation, neutral white balance, even natural exposure, slightly muted colours, high detail, the kind of image published on Contemporary Art Daily or a museum press page. Unremarkable and credible. Not cinematic: no dramatic spotlight, no lens flare, no haze unless the artwork makes it, no vignette. No legible text anywhere; any wall label is small, blank and out of focus. No watermark.",
+   "file": "library/media/glitter-casts-v0-b443fad6.jpg",
+   "source": "library"
+  }
+ ]
+}

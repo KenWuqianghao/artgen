@@ -1,0 +1,62 @@
+[
+ {
+  "name": "roll",
+  "t": 1.6
+ },
+ {
+  "name": "city",
+  "t": 3.484
+ },
+ {
+  "name": "theme",
+  "t": 5.396
+ },
+ {
+  "name": "forms",
+  "t": 7.288
+ },
+ {
+  "name": "chip",
+  "t": 8.959
+ },
+ {
+  "name": "lineup",
+  "t": 10.65
+ },
+ {
+  "name": "jargon",
+  "t": 12.408
+ },
+ {
+  "name": "identity",
+  "t": 14.123
+ },
+ {
+  "name": "title",
+  "t": 15.835
+ },
+ {
+  "name": "scroll",
+  "t": 19.296
+ },
+ {
+  "name": "work",
+  "t": 21.999
+ },
+ {
+  "name": "work-scroll",
+  "t": 23.988
+ },
+ {
+  "name": "back",
+  "t": 27.244
+ },
+ {
+  "name": "surprise",
+  "t": 28.954
+ },
+ {
+  "name": "end",
+  "t": 31.954
+ }
+]

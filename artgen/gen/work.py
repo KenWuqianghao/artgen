@@ -42,12 +42,18 @@ def _family_bias(artist: Artist) -> dict[str, float]:
     return bias
 
 
-def pick_archetype(rng: random.Random, artist: Artist, families: list[str] | None = None, avoid: set[str] = frozenset()) -> dict:
+def pick_archetype(rng: random.Random, artist: Artist, families: list[str] | None = None, avoid: set[str] = frozenset(),
+                   only: set[str] | None = None) -> dict:
     bias = _family_bias(artist)
     pool = [a for a in corpus.archetypes() if (not families or a["family"] in families) and a["id"] not in avoid
             and (artist.profile != "rediscovered" or a.get("historical"))]
+    if not pool:  # every fitting archetype is used: allow repeats, but keep the form filter
+        pool = [a for a in corpus.archetypes() if (not families or a["family"] in families) and (only is None or a["id"] in only)
+                and (artist.profile != "rediscovered" or a.get("historical"))]
     if not pool:
-        pool = [a for a in corpus.archetypes() if artist.profile != "rediscovered" or a.get("historical")]
+        pool = [a for a in corpus.archetypes() if (not families or a["family"] in families) and (only is None or a["id"] in only)]
+    if not pool:
+        pool = [a for a in corpus.archetypes() if only is None or a["id"] in only]
     weights = [a["weight"] * bias.get(a["family"], 1.0) for a in pool]
     return rng.choices(pool, weights=weights, k=1)[0]
 
@@ -123,20 +129,31 @@ def _medium(rng: random.Random, arch: dict, core: list[str], accent: list[str], 
     return line
 
 
+VISUAL_SLOTS = ("m1", "m2", "m3", "count", "count_word", "colour", "phrase", "small", "Accents", "h", "w", "d", "h_small", "w_big", "d_big", "w_m")
+
+
 def make_work(rng: random.Random, idx: int, artist: Artist, venue: Venue, section_id: str, year: int, edition_name: str,
-              arch: dict | None = None, used_titles: set | None = None) -> Work:
+              arch: dict | None = None, used_titles: set | None = None, pinned: dict | None = None) -> Work:
+    """pinned: a library entry {variant, core, accent, visual} that fixes everything a photograph shows,
+    so a pre-rendered image stays true. Text that a photo cannot show (place, facts, quotes) still varies."""
     w = corpus.world()
     arch = arch or pick_archetype(rng, artist, venue_families(venue))
     k = rng.randrange(len(arch["scenes"]))
+    if pinned:
+        k = pinned["variant"]
     variant = arch["scenes"][k]
     arch = {**arch, **{f: for_variant(arch.get(f, []), k) for f in ("facts", "process", "turns", "quotes", "change")}}
     scene_t, pool = (variant["t"], variant["materials"]) if isinstance(variant, dict) else (variant, None)
     core, accent = _materials(rng, arch, pool)
+    if pinned and "core" in pinned:
+        core, accent = list(pinned["core"]), list(pinned["accent"])
     need = 3 if "{m3}" in scene_t else 2 if "{m2}" in scene_t else 1
     spare = [x for x in (pool or arch["materials"])["core"] + (pool or arch["materials"]).get("accent", []) if x not in core + accent]
     while len(core) + len(accent) < need and spare:
         accent.append(spare.pop(rng.randrange(len(spare))))
     slots = _slots(rng, arch, artist, core, accent, year)
+    if pinned and "visual" in pinned:
+        slots.update(pinned["visual"])
     scene = sentence_case(fix_articles(fill(scene_t, slots)))
     title = make_title(rng, origin=artist.origin, place=city(artist.born_place or "") or "the river", material=core[0], year=year, used=used_titles)
     work_year = year if artist.died_year is None else rng.randint((artist.born_year or 1920) + 25, artist.died_year)
@@ -169,6 +186,7 @@ def make_work(rng: random.Random, idx: int, artist: Artist, venue: Venue, sectio
             "change": fix_articles(fill(pick(rng, arch["change"]), slots)) if arch.get("change") else "",
             "interaction": pick(rng, arch["interaction"]) if arch.get("interaction") else "",
             "camera": arch["camera"], "people_p": arch["people_p"], "basis": arch["basis"],
+            "variant": k, "core": core, "accent": accent, "visual": {key: slots[key] for key in VISUAL_SLOTS},
         },
     )
 

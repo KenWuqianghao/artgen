@@ -2,7 +2,11 @@
 .DS_Store
 __pycache__/
 node_modules/
-video/demo/snapshots/
-# build output: rebuild with `python3 -m artgen site <dir>`
+# build output: rebuild with `python3 -m artgen site <dir>` / `python3 -m artgen studio build`
 biennales/*/site/
 biennales/*/media/superseded/
+studio/
+library/tmp/
+# video working files: rebuild with video/demo/build.sh
+video/*/raw/
+video/*/snapshots/

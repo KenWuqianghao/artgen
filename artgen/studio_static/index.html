@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>artgen Studio</title>
+<meta name="description" content="Curate a contemporary art biennial that does not exist. Choose the city, the theme, the forms of art and the line-up; artgen writes the rest.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap">
+<link rel="stylesheet" href="studio.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><strong>artgen</strong> Studio</div>
+  <p class="tagline">Curate a biennial that does not exist.</p>
+  <div class="top-actions">
+    <button id="surprise" class="btn" type="button">Surprise me</button>
+    <button id="share" class="btn ghost" type="button">Copy link</button>
+  </div>
+</header>
+
+<main class="studio">
+  <aside class="panel" aria-label="Curator's choices">
+    <section class="group">
+      <h2>Edition</h2>
+      <div class="row">
+        <label class="field grow"><span>Seed</span><input id="seed" type="number" min="1" max="999999" inputmode="numeric"></label>
+        <button id="dice" class="btn dice" type="button" aria-label="New seed">Roll</button>
+      </div>
+      <label class="field"><span>Number of works <output id="works-out"></output></span>
+        <input id="works" type="range" min="6" max="24" step="1"></label>
+    </section>
+
+    <section class="group">
+      <h2>City</h2>
+      <div id="hosts" class="list" role="radiogroup" aria-label="City"></div>
+    </section>
+
+    <section class="group">
+      <h2>Curatorial theme</h2>
+      <div id="themes" class="list" role="radiogroup" aria-label="Curatorial theme"></div>
+    </section>
+
+    <section class="group">
+      <h2>Title</h2>
+      <label class="field"><span class="sr">Edition title</span><input id="title" type="text" maxlength="60" autocomplete="off"></label>
+      <p class="hint">Leave empty and the theme will name the edition.</p>
+    </section>
+
+    <section class="group">
+      <h2>Forms of art</h2>
+      <div id="presets" class="presets"></div>
+      <div id="forms" class="chips" role="group" aria-label="Forms of art"></div>
+      <p class="hint" id="forms-hint"></p>
+    </section>
+
+    <section class="group">
+      <h2>Line-up</h2>
+      <div class="seg-row"><span>Rediscovered artists</span><div class="seg" data-key="rediscovered"></div></div>
+      <div class="seg-row"><span>Collectives</span><div class="seg" data-key="collectives"></div></div>
+      <div class="seg-row"><span>Emerging artists</span><div class="seg" data-key="emerging"></div></div>
+    </section>
+
+    <section class="group">
+      <h2>Catalogue theory</h2>
+      <div class="seg wide" data-key="jargon"></div>
+      <p class="hint" id="jargon-hint"></p>
+    </section>
+
+    <section class="group">
+      <h2>Visual identity</h2>
+      <div id="identities" class="swatches" role="radiogroup" aria-label="Visual identity"></div>
+    </section>
+
+    <section class="group out">
+      <h2>Take it further</h2>
+      <p class="hint">Render your own installation views with this command:</p>
+      <code id="cli"></code>
+      <div class="row">
+        <button id="copy-cli" class="btn ghost" type="button">Copy command</button>
+        <button id="download" class="btn ghost" type="button">Download exhibition.json</button>
+      </div>
+    </section>
+  </aside>
+
+  <section class="preview" aria-label="Your biennial">
+    <div class="summary" id="summary" aria-live="polite">Installing the exhibition…</div>
+    <div class="frame">
+      <div class="frame-bar"><button id="back" class="frame-btn" type="button" aria-label="Back">Back</button><span id="where"></span></div>
+      <div class="viewport">
+        <iframe id="siteA" class="front" title="Your biennial's website"></iframe>
+        <iframe id="siteB" title="Your biennial's website" aria-hidden="true" tabindex="-1"></iframe>
+      </div>
+      <div class="boot" id="boot">
+        <p class="boot-title">Installing the exhibition</p>
+        <ol id="boot-steps"></ol>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="studio.js"></script>
+</body>
+</html>

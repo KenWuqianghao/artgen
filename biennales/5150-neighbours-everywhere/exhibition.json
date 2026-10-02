@@ -74,7 +74,8 @@
         "figure",
         "video",
         "earth"
-      ]
+      ],
+      "room": "historic"
     },
     {
       "id": "corderie",
@@ -91,7 +92,8 @@
         "ceramic",
         "architecture",
         "shrine"
-      ]
+      ],
+      "room": "industrial"
     },
     {
       "id": "squero",
@@ -106,7 +108,8 @@
         "earth",
         "performance",
         "video"
-      ]
+      ],
+      "room": "industrial"
     },
     {
       "id": "giardino",
@@ -119,7 +122,8 @@
         "sound",
         "figure",
         "architecture"
-      ]
+      ],
+      "room": "outdoor"
     },
     {
       "id": "padiglione",
@@ -135,7 +139,8 @@
         "figure",
         "shrine",
         "video"
-      ]
+      ],
+      "room": "white"
     }
   ],
   "artists": [
@@ -549,7 +554,32 @@
         "basis": [
           "Karyn Olivier, Whitney 2024",
           "Hugh Hayden, Sharjah 16"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "school desks"
+        ],
+        "accent": [
+          "cedar branches"
+        ],
+        "visual": {
+          "m1": "school desks",
+          "m2": "cedar branches",
+          "m3": "cedar branches",
+          "count": 7,
+          "count_word": "seven",
+          "colour": "rust red",
+          "phrase": "every wall is a door that forgot",
+          "small": "24 × 18",
+          "Accents": "cedar branches",
+          "h": 287,
+          "w": 675,
+          "d": 299,
+          "h_small": 86,
+          "w_big": 1678,
+          "d_big": 1378,
+          "w_m": 8
+        }
       }
     },
     {
@@ -609,7 +639,33 @@
           "Jeffrey Gibson, US Pavilion, Venice 2024",
           "Taring Padi banners, documenta fifteen",
           "Barbican, Unravel, 2024"
-        ]
+        ],
+        "variant": 0,
+        "core": [
+          "second-hand clothes",
+          "hotel bed linen"
+        ],
+        "accent": [
+          "ribbon"
+        ],
+        "visual": {
+          "m1": "second-hand clothes",
+          "m2": "hotel bed linen",
+          "m3": "ribbon",
+          "count": 60,
+          "count_word": "60",
+          "colour": "charcoal",
+          "phrase": "not yet, not here, not alone",
+          "small": "35 × 16",
+          "Accents": "ribbon",
+          "h": 383,
+          "w": 891,
+          "d": 269,
+          "h_small": 94,
+          "w_big": 2120,
+          "d_big": 1118,
+          "w_m": 7
+        }
       }
     },
     {
@@ -669,7 +725,34 @@
         "basis": [
           "The Walls Have Ears, documenta fifteen",
           "Cauleen Smith, Venice 2026"
-        ]
+        ],
+        "variant": 0,
+        "core": [
+          "audio recordings",
+          "headphones"
+        ],
+        "accent": [
+          "hooks",
+          "printed transcripts"
+        ],
+        "visual": {
+          "m1": "audio recordings",
+          "m2": "headphones",
+          "m3": "hooks",
+          "count": 24,
+          "count_word": "24",
+          "colour": "bone white",
+          "phrase": "not yet, not here, not alone",
+          "small": "24 × 19",
+          "Accents": "hooks and printed transcripts",
+          "h": 189,
+          "w": 686,
+          "d": 448,
+          "h_small": 45,
+          "w_big": 2113,
+          "d_big": 1302,
+          "w_m": 11
+        }
       }
     },
     {
@@ -729,7 +812,33 @@
           "Dana Awartani, Venice 2024",
           "Teresa Margolles, Unravel 2024",
           "Dala Nasser, Mineral Lick, Diriyah 2024"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "raw silk"
+        ],
+        "accent": [
+          "tea",
+          "seawater"
+        ],
+        "visual": {
+          "m1": "raw silk",
+          "m2": "tea",
+          "m3": "seawater",
+          "count": 41,
+          "count_word": "41",
+          "colour": "charcoal",
+          "phrase": "the debt is not ours",
+          "small": "34 × 20",
+          "Accents": "tea and seawater",
+          "h": 306,
+          "w": 847,
+          "d": 302,
+          "h_small": 82,
+          "w_big": 1936,
+          "d_big": 874,
+          "w_m": 8
+        }
       }
     },
     {
@@ -786,7 +895,32 @@
         "basis": [
           "Jeffrey Gibson garments, Unravel 2024",
           "Nick Cave soundsuits, Venice 2026"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "second-hand suits"
+        ],
+        "accent": [
+          "fringe"
+        ],
+        "visual": {
+          "m1": "second-hand suits",
+          "m2": "fringe",
+          "m3": "fringe",
+          "count": 9,
+          "count_word": "nine",
+          "colour": "pale blue",
+          "phrase": "we were always here",
+          "small": "28 × 22",
+          "Accents": "fringe",
+          "h": 232,
+          "w": 396,
+          "d": 343,
+          "h_small": 72,
+          "w_big": 1811,
+          "d_big": 697,
+          "w_m": 13
+        }
       }
     },
     {
@@ -844,7 +978,34 @@
         "basis": [
           "Khalil Rabah, Istanbul 2025",
           "Nhà Sàn Collective, documenta fifteen"
-        ]
+        ],
+        "variant": 0,
+        "core": [
+          "citrus trees",
+          "olive trees"
+        ],
+        "accent": [
+          "water",
+          "gravel"
+        ],
+        "visual": {
+          "m1": "citrus trees",
+          "m2": "olive trees",
+          "m3": "water",
+          "count": 24,
+          "count_word": "24",
+          "colour": "bone white",
+          "phrase": "everything we lost is still ours",
+          "small": "30 × 19",
+          "Accents": "water and gravel",
+          "h": 226,
+          "w": 713,
+          "d": 238,
+          "h_small": 68,
+          "w_big": 2131,
+          "d_big": 1355,
+          "w_m": 10
+        }
       }
     },
     {
@@ -900,7 +1061,30 @@
           "Foreigners Everywhere, Nucleo Storico, Venice 2024",
           "Santiago and Rember Yahuarcani, Venice 2024",
           "Mangku Muriati, Sharjah 16"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "gouache on paper"
+        ],
+        "accent": [],
+        "visual": {
+          "m1": "gouache on paper",
+          "m2": "gouache on paper",
+          "m3": "gouache on paper",
+          "count": 40,
+          "count_word": "40",
+          "colour": "pale blue",
+          "phrase": "we were always here",
+          "small": "38 × 30",
+          "Accents": "seating",
+          "h": 414,
+          "w": 283,
+          "d": 481,
+          "h_small": 114,
+          "w_big": 2014,
+          "d_big": 1303,
+          "w_m": 13
+        }
       }
     },
     {
@@ -957,7 +1141,32 @@
           "Vera Tamari, Mantra, Venice 2026",
           "Ranti Bam, Black Ifa, Venice 2026",
           "Imayna Caceres, Liverpool 2025"
-        ]
+        ],
+        "variant": 0,
+        "core": [
+          "ceramic"
+        ],
+        "accent": [
+          "wooden stools"
+        ],
+        "visual": {
+          "m1": "ceramic",
+          "m2": "wooden stools",
+          "m3": "wooden stools",
+          "count": 24,
+          "count_word": "24",
+          "colour": "turquoise",
+          "phrase": "the debt is not ours",
+          "small": "22 × 31",
+          "Accents": "wooden stools",
+          "h": 256,
+          "w": 538,
+          "d": 386,
+          "h_small": 61,
+          "w_big": 2400,
+          "d_big": 733,
+          "w_m": 10
+        }
       }
     },
     {
@@ -1014,7 +1223,32 @@
         "basis": [
           "Cecilia Vicuña, Quipu Austral, Unravel 2024",
           "Jayashree Chakravarty scrolls, Kochi 2025"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "jute twine"
+        ],
+        "accent": [
+          "bone beads"
+        ],
+        "visual": {
+          "m1": "jute twine",
+          "m2": "bone beads",
+          "m3": "bone beads",
+          "count": 400,
+          "count_word": "400",
+          "colour": "rust red",
+          "phrase": "home is a verb",
+          "small": "24 × 19",
+          "Accents": "bone beads",
+          "h": 364,
+          "w": 239,
+          "d": 150,
+          "h_small": 96,
+          "w_big": 1293,
+          "d_big": 1078,
+          "w_m": 13
+        }
       }
     },
     {
@@ -1073,7 +1307,33 @@
           "Agosto Machado, Whitney 2026",
           "Famasi Mobil Kongole, documenta fifteen",
           "Jorge González Santos, Sharjah 16"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "blister packs of medicine"
+        ],
+        "accent": [
+          "tinsel",
+          "fairy lights"
+        ],
+        "visual": {
+          "m1": "blister packs of medicine",
+          "m2": "tinsel",
+          "m3": "fairy lights",
+          "count": 40,
+          "count_word": "40",
+          "colour": "saffron",
+          "phrase": "not yet, not here, not alone",
+          "small": "34 × 29",
+          "Accents": "tinsel and fairy lights",
+          "h": 376,
+          "w": 206,
+          "d": 466,
+          "h_small": 40,
+          "w_big": 1099,
+          "d_big": 1367,
+          "w_m": 12
+        }
       }
     },
     {
@@ -1131,7 +1391,32 @@
           "Wangechi Mutu, Simbi Siren, Venice 2026",
           "Nick Cave, Amalgam (Origin), Venice 2026",
           "Daniel Lind-Ramos, Guardaverde, Venice 2026"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "cast iron"
+        ],
+        "accent": [
+          "water"
+        ],
+        "visual": {
+          "m1": "cast iron",
+          "m2": "water",
+          "m3": "water",
+          "count": 7,
+          "count_word": "seven",
+          "colour": "bone white",
+          "phrase": "soft is not weak",
+          "small": "38 × 20",
+          "Accents": "water",
+          "h": 386,
+          "w": 650,
+          "d": 328,
+          "h_small": 58,
+          "w_big": 1733,
+          "d_big": 635,
+          "w_m": 9
+        }
       }
     },
     {
@@ -1189,7 +1474,32 @@
           "Rose B. Simpson, Whitney 2024",
           "Seyni Awa Camara, Venice 2026",
           "Birender Yadav, Kochi 2025"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "earthenware"
+        ],
+        "accent": [
+          "raffia"
+        ],
+        "visual": {
+          "m1": "earthenware",
+          "m2": "raffia",
+          "m3": "raffia",
+          "count": 4,
+          "count_word": "four",
+          "colour": "rust red",
+          "phrase": "we carry what carries us",
+          "small": "21 × 20",
+          "Accents": "raffia",
+          "h": 330,
+          "w": 257,
+          "d": 393,
+          "h_small": 97,
+          "w_big": 2132,
+          "d_big": 618,
+          "w_m": 11
+        }
       }
     },
     {
@@ -1248,7 +1558,33 @@
           "Nick Cave, Venice 2026",
           "Nadia Taquary, São Paulo 2025",
           "Pol Taburet, São Paulo 2025"
-        ]
+        ],
+        "variant": 0,
+        "core": [
+          "bronze"
+        ],
+        "accent": [
+          "floral wreaths",
+          "vintage serving trays"
+        ],
+        "visual": {
+          "m1": "bronze",
+          "m2": "floral wreaths",
+          "m3": "vintage serving trays",
+          "count": 16,
+          "count_word": "16",
+          "colour": "rust red",
+          "phrase": "we are the weather",
+          "small": "38 × 24",
+          "Accents": "floral wreaths and vintage serving trays",
+          "h": 258,
+          "w": 876,
+          "d": 141,
+          "h_small": 81,
+          "w_big": 1471,
+          "d_big": 1325,
+          "w_m": 8
+        }
       }
     },
     {
@@ -1307,7 +1643,32 @@
           "Mataaho Collective, Takapau, Venice 2024",
           "El Anatsui, Logoligi Logarithm, Diriyah 2024",
           "Ernesto Neto crochet tents"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "crocheted cotton"
+        ],
+        "accent": [
+          "fishing net"
+        ],
+        "visual": {
+          "m1": "crocheted cotton",
+          "m2": "fishing net",
+          "m3": "fishing net",
+          "count": 12,
+          "count_word": "twelve",
+          "colour": "saffron",
+          "phrase": "rest is not a reward",
+          "small": "22 × 28",
+          "Accents": "fishing net",
+          "h": 257,
+          "w": 842,
+          "d": 441,
+          "h_small": 97,
+          "w_big": 2096,
+          "d_big": 704,
+          "w_m": 12
+        }
       }
     },
     {
@@ -1363,7 +1724,32 @@
         "basis": [
           "Claire Fontaine neon, Venice 2024",
           "Demian DinéYazhi', Whitney 2024"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "neon"
+        ],
+        "accent": [
+          "steel"
+        ],
+        "visual": {
+          "m1": "neon",
+          "m2": "steel",
+          "m3": "steel",
+          "count": 12,
+          "count_word": "twelve",
+          "colour": "pale blue",
+          "phrase": "stay a little longer",
+          "small": "22 × 30",
+          "Accents": "steel",
+          "h": 380,
+          "w": 811,
+          "d": 371,
+          "h_small": 83,
+          "w_big": 1139,
+          "d_big": 1257,
+          "w_m": 14
+        }
       }
     },
     {
@@ -1420,7 +1806,30 @@
           "Pim Sudhikam, Bangkok 2024",
           "Emilie Louise Gossiaux, Kong Play, Whitney 2026",
           "Britto Arts Trust, documenta fifteen"
-        ]
+        ],
+        "variant": 1,
+        "core": [
+          "glazed ceramic"
+        ],
+        "accent": [],
+        "visual": {
+          "m1": "glazed ceramic",
+          "m2": "glazed ceramic",
+          "m3": "glazed ceramic",
+          "count": 400,
+          "count_word": "400",
+          "colour": "saffron",
+          "phrase": "keep the fire low",
+          "small": "39 × 15",
+          "Accents": "seating",
+          "h": 310,
+          "w": 538,
+          "d": 292,
+          "h_small": 120,
+          "w_big": 1485,
+          "d_big": 1178,
+          "w_m": 12
+        }
       }
     },
     {
@@ -1478,7 +1887,33 @@
         "basis": [
           "Walid Raad, Venice 2026",
           "Lydia Ourahmane, House of Hope Archives, Berlin 2025"
-        ]
+        ],
+        "variant": 0,
+        "core": [
+          "wooden pallets"
+        ],
+        "accent": [
+          "wall text",
+          "paint on wood"
+        ],
+        "visual": {
+          "m1": "wooden pallets",
+          "m2": "wall text",
+          "m3": "paint on wood",
+          "count": 5,
+          "count_word": "five",
+          "colour": "charcoal",
+          "phrase": "the debt is not ours",
+          "small": "40 × 28",
+          "Accents": "wall text and paint on wood",
+          "h": 371,
+          "w": 817,
+          "d": 160,
+          "h_small": 117,
+          "w_big": 1478,
+          "d_big": 1250,
+          "w_m": 14
+        }
       }
     },
     {
@@ -1536,7 +1971,34 @@
         "basis": [
           "Jayashree Chakravarty, Kochi 2025",
           "George Mahashe, Diriyah 2024"
-        ]
+        ],
+        "variant": 0,
+        "core": [
+          "paper",
+          "grass"
+        ],
+        "accent": [
+          "torches",
+          "seed pods"
+        ],
+        "visual": {
+          "m1": "paper",
+          "m2": "grass",
+          "m3": "torches",
+          "count": 40,
+          "count_word": "40",
+          "colour": "charcoal",
+          "phrase": "we are the weather",
+          "small": "37 × 32",
+          "Accents": "torches and seed pods",
+          "h": 408,
+          "w": 828,
+          "d": 294,
+          "h_small": 51,
+          "w_big": 1014,
+          "d_big": 714,
+          "w_m": 8
+        }
       }
     }
   ],
@@ -1582,7 +2044,22 @@
     "display_font": "Instrument Serif",
     "google_fonts": "family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Schibsted+Grotesk:wght@400;600",
     "display_weight": 400,
-    "display_tracking": "-0.02em"
+    "display_tracking": "-0.02em",
+    "display_width": 0.52
   },
-  "generator": "artgen 2.0.0"
+  "generator": "artgen 2.0.0",
+  "options": {
+    "seed": 5150,
+    "works": 18,
+    "host": "venice",
+    "theme": null,
+    "title": null,
+    "forms": [],
+    "rediscovered": "some",
+    "collectives": "some",
+    "emerging": "some",
+    "jargon": 2,
+    "identity": null,
+    "year": null
+  }
 }
