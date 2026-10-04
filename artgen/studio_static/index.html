@@ -31,6 +31,20 @@
         <input id="works" type="range" min="6" max="24" step="1"></label>
     </section>
 
+    <section class="group" id="live-group">
+      <h2>Live images</h2>
+      <p class="hint first" id="live-hint">Every photograph here is a preset from the image library.</p>
+      <details id="key-box">
+        <summary>Use your own OpenAI key</summary>
+        <label class="field"><span>OpenAI API key</span><input id="key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…"></label>
+        <p class="hint">The key stays in this tab and goes only to OpenAI. OpenAI bills you for each image. Reload the page and the key is gone.</p>
+        <div class="row">
+          <button id="render-all" class="btn" type="button" disabled>Render every work</button>
+          <button id="key-forget" class="btn ghost" type="button" disabled>Forget key</button>
+        </div>
+      </details>
+    </section>
+
     <section class="group">
       <h2>City</h2>
       <div id="hosts" class="list" role="radiogroup" aria-label="City"></div>
@@ -86,7 +100,7 @@
   <section class="preview" aria-label="Your biennial">
     <div class="summary" id="summary" aria-live="polite">Installing the exhibition…</div>
     <div class="frame">
-      <div class="frame-bar"><button id="back" class="frame-btn" type="button" aria-label="Back">Back</button><span id="where"></span></div>
+      <div class="frame-bar"><button id="back" class="frame-btn" type="button" aria-label="Back">Back</button><span id="where"></span><span class="frame-gap"></span><span id="live-status" aria-live="polite"></span><button id="render" class="frame-btn go" type="button" hidden>Render this work live</button></div>
       <div class="viewport">
         <iframe id="siteA" class="front" title="Your biennial's website"></iframe>
         <iframe id="siteB" title="Your biennial's website" aria-hidden="true" tabindex="-1"></iframe>

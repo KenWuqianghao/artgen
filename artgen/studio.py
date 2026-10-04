@@ -58,7 +58,8 @@ def choices() -> str:
     })
 
 
-def run(opts_json: str, base: str) -> str:
+def run(opts_json: str, base: str, live_json: str = "{}") -> str:
+    """live_json maps an image prompt to the address of an image rendered live for it."""
     from .gen.exhibition import generate
     from .gen.options import Options
     from .site import STATIC, StudioCtx, render_pages
@@ -69,6 +70,15 @@ def run(opts_json: str, base: str) -> str:
                    emerging=o.get("emerging", "some"), jargon=int(o.get("jargon", 2)), identity=o.get("identity") or None)
     ex = generate(opts, library=_library())
     ctx = StudioCtx(base, (STATIC / "site.css").read_text(encoding="utf-8"))
+    data = ex.to_dict()                       # the download keeps library images, never a browser-only address
+    live = json.loads(live_json or "{}")
+    works = []
+    for w in ex.works:
+        prompt = w.extra.get("live_prompt") or w.prompt
+        if prompt in live:
+            w.media, w.media_kind, w.extra["live"] = live[prompt], "image", True
+        works.append({"slug": w.slug, "prompt": prompt, "live": prompt in live,
+                      "label": f"{ex.artist(w.artist_id).name}, {w.title}"})
     countries = {a.born_place.rsplit(", ", 1)[-1] for a in ex.artists if a.born_place}
     cmd = ["python3 -m artgen biennale", f"--seed {opts.seed}", f"--works {opts.works}", f"--host {ex.city.lower() if not opts.host else opts.host}"]
     if opts.theme:
@@ -95,7 +105,8 @@ def run(opts_json: str, base: str) -> str:
             "director": next(p.name for p in ex.team if "Artistic" in p.role),
         },
         "cli": " ".join(cmd),
-        "exhibition": ex.to_dict(),
+        "works": works,
+        "exhibition": data,
     }, ensure_ascii=False)
 
 

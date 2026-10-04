@@ -3,6 +3,11 @@
     "hyperframes": "^0.8.59"
   },
   "devDependencies": {
-    "puppeteer-core": "^25.12.0"
+    "puppeteer-core": "^25.12.0",
+    "wrangler": "^4.147.0"
+  },
+  "scripts": {
+    "studio:dev": "python3 -m artgen studio build && wrangler dev",
+    "studio:deploy": "python3 -m artgen studio build && wrangler deploy"
   }
 }

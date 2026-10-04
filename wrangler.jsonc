@@ -1,0 +1,19 @@
+// Cloudflare deploy for artgen Studio: the static Studio (./studio) plus a Worker for free live renders.
+// Build the Studio first: python3 -m artgen studio build
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "artgen-studio",
+  "main": "worker/src/index.js",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "./studio", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
+  "durable_objects": { "bindings": [{ "name": "STORE", "class_name": "Store" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Store"] }],
+  "vars": {
+    // free live renders per visitor per day, and for all visitors together per day
+    "FREE_PER_VISITOR": "3",
+    "FREE_PER_DAY": "60",
+    "OPENAI_MODEL": "gpt-image-2.5-flare",
+    "OPENAI_QUALITY": "medium"
+  }
+  // secret, set once with: npx wrangler secret put OPENAI_API_KEY
+}

@@ -56,7 +56,9 @@ class StudioCtx(Ctx):
         return f"#work/{w.slug}"
 
     def media(self, w: Work, depth: int) -> str:
-        return self.base + w.media if w.media else ""
+        if not w.media:
+            return ""
+        return w.media if w.media.startswith(("http:", "https:", "blob:", "/")) else self.base + w.media
 
     def css(self, depth: int) -> str:
         # the preview regenerates on every keystroke: no entrance animation
@@ -307,7 +309,7 @@ def page_work(ex: Exhibition, i: int, ctx: Ctx) -> str:
     return head(ex, f"{a.name}, {w.title}: {ex.edition_name}", 1, ctx) + bar(ex, 1, "", ctx) + f"""
 <article class="wrap">
 <figure class="work-image" style="margin:24px 0 0">{img(w, 1, alt_text(w, a), ctx, eager=True)}
-<figcaption>{photo_caption(ex, w, a)}</figcaption></figure>
+<figcaption>{photo_caption(ex, w, a)}{" Rendered live for this edition." if w.extra.get("live") else ""}</figcaption></figure>
 <div class="work-body">
 {label_card(ex, w, a)}
 <div>

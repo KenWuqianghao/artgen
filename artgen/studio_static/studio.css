@@ -92,6 +92,18 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 .frame-bar { display: flex; align-items: center; gap: 12px; padding: 7px 10px; border-bottom: 1px solid var(--rule); font-size: 13px; color: var(--muted); }
 .frame-btn { border: 1px solid var(--rule); background: var(--ground); border-radius: 3px; padding: 2px 10px; cursor: pointer; font-size: 13px; }
 .frame-btn:disabled { opacity: .4; cursor: default; }
+.frame-gap { flex: 1; }
+.frame-btn.go { background: var(--ink); border-color: var(--ink); color: var(--ground); padding: 3px 12px; }
+.frame-btn.go:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+#live-status { text-align: right; }
+#live-status.bad { color: #a4281f; }
+.hint.first { margin-top: 0; }
+details#key-box { margin-top: 10px; }
+details#key-box summary { cursor: pointer; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; color: var(--muted); }
+details#key-box summary:hover, details#key-box[open] summary { color: var(--ink); }
+.field input[type=password] { border: 1px solid var(--rule); border-radius: 3px; padding: 8px 10px; background: var(--ground); height: 38px; font-family: ui-monospace, Menlo, monospace; font-size: 13px; }
+.field input[type=password]:focus { border-color: var(--ink); outline: none; }
+.btn:disabled { opacity: .4; cursor: default; pointer-events: none; }
 .viewport { position: relative; min-height: 0; }
 .viewport iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #fff; visibility: hidden; }
 .viewport iframe.front { visibility: visible; }
@@ -105,6 +117,7 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
   .studio { grid-template-columns: 1fr; height: auto; }
   .panel { border-right: 0; border-bottom: 1px solid var(--rule); overflow: visible; }
   .frame { height: 82vh; }
+  .frame-bar { flex-wrap: wrap; }
 }
 @media (prefers-reduced-motion: no-preference) {
   .chip, .opt, .btn, .seg button { transition: background-color 120ms, color 120ms, border-color 120ms; }

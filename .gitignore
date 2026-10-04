@@ -10,3 +10,6 @@ library/tmp/
 # video working files: rebuild with video/demo/build.sh
 video/*/raw/
 video/*/snapshots/
+
+.wrangler/
+.dev.vars

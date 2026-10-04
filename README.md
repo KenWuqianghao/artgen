@@ -33,6 +33,52 @@ How it works: the Studio is static. It loads this Python package into the browse
 
 `python3 -m artgen studio build` writes the static Studio to `studio/`. Any static web host can serve that folder.
 
+## Live images in the Studio
+
+The photographs in the Studio are presets from the image library. A visitor can also render a work live. The live image shows the work in the room of the visitor's own edition.
+
+There are two ways to pay for a live image:
+
+- **Free renders.** The hosted Studio gives each visitor 3 free renders per day, on the owner's OpenAI key. A Cloudflare Worker ([worker/src/index.js](worker/src/index.js)) holds the key and counts the renders.
+- **The visitor's own key.** The visitor pastes an OpenAI key into the Studio. The browser sends the request directly to OpenAI. The key stays in the tab and never reaches the Worker.
+
+The Worker protects the owner's key in four ways:
+
+- It accepts requests only from the Studio's own address.
+- It accepts only artgen installation-view prompts.
+- It stops each visitor at `FREE_PER_VISITOR` renders per day, and all visitors together at `FREE_PER_DAY`. Change both in [wrangler.jsonc](wrangler.jsonc).
+- It keeps each image. A second request for the same work is free.
+
+Also set a monthly budget in your OpenAI account. That is the last line of defence.
+
+### Run it on your computer
+
+Wrangler reads `OPENAI_API_KEY` from `.env`.
+
+```bash
+npm run studio:dev
+```
+
+`python3 -m artgen studio serve` still works. It has no Worker, so it offers only presets and the visitor's own key.
+
+### Deploy to Cloudflare
+
+The free plan is enough. Do these steps once:
+
+```bash
+npx wrangler login
+```
+
+```bash
+npx wrangler secret put OPENAI_API_KEY
+```
+
+Then deploy. Run the same command after each change:
+
+```bash
+npm run studio:deploy
+```
+
 ## Quick start on the command line
 
 Generate a biennial with placeholder images. This costs nothing:

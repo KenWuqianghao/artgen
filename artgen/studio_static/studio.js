@@ -18,6 +18,13 @@
   var py = null, studio = null, choices = null, result = null;
   var loadToken = 0, navStack = [], current = "page/index", timer = null;
 
+  // live images: prompt -> image address. Free renders come from this site's own backend and are remembered;
+  // renders made with the visitor's own key are blob addresses and live only as long as the tab.
+  var MODEL = "gpt-image-2.5-flare";
+  var SAFE = " All people depicted, painted or sculpted are fully clothed adults or children in everyday clothes; nothing violent or graphic is shown.";
+  var live = loadLive(), api = { enabled: false, remaining: 0, limit: 0 }, userKey = "";
+  var busy = {}, busyTick = null, batch = null, lastError = "";
+
   var $ = function (id) { return document.getElementById(id); };
 
   // ------------------------------------------------------------ state <-> URL
@@ -70,6 +77,7 @@
     py.runPython("import sys; sys.path.insert(0, '" + APP + "')");
     studio = py.pyimport("artgen.studio");
     choices = JSON.parse(studio.choices());
+    await checkApi(true);
     buildControls();
     step(3);
     generate();
@@ -198,10 +206,10 @@
     timer = setTimeout(generate, delay === undefined ? 120 : delay);
   }
 
-  function generate() {
+  function generate(keepNav) {
     writeHash();
     var base = location.href.split("#")[0].replace(/[^/]*$/, "");
-    result = JSON.parse(studio.run(JSON.stringify(state), base));
+    result = JSON.parse(studio.run(JSON.stringify(state), base, JSON.stringify(live)));
     var s = result.summary;
     document.documentElement.style.setProperty("--accent", s.accent);
     $("title").placeholder = s.theme_title;
@@ -217,7 +225,8 @@
       ". Artistic Director: " + s.director + "."));
     $("cli").textContent = result.cli;
     var keep = result.pages[current] ? current : "page/index";
-    navStack = [];
+    if (keepNav === true) navStack = navStack.filter(function (k) { return result.pages[k]; });
+    else navStack = [];
     show(keep, true);
   }
 
@@ -238,12 +247,153 @@
     $("back").disabled = navStack.length === 0;
     var label = key.startsWith("work/") ? "Work page" : key.slice(5).replace(/^./, function (c) { return c.toUpperCase(); });
     $("where").textContent = label === "Index" ? "Exhibition home" : label;
+    lastError = "";
+    liveUI();
   }
+
+  // ------------------------------------------------------------ live images
+  function loadLive() {
+    try { return JSON.parse(localStorage.getItem("artgen.live") || "{}"); } catch (e) { return {}; }
+  }
+  function saveLive() {
+    var keep = {};
+    Object.keys(live).filter(function (p) { return live[p].indexOf("blob:") !== 0; }).slice(-150).forEach(function (p) { keep[p] = live[p]; });
+    try { localStorage.setItem("artgen.live", JSON.stringify(keep)); } catch (e) { /* storage full or blocked: fine */ }
+  }
+
+  async function checkApi(boot) {
+    try {
+      var r = await fetch("api/status", { cache: "no-store" });
+      var d = r.ok && (r.headers.get("content-type") || "").indexOf("json") >= 0 ? await r.json() : null;
+      if (d && d.enabled) { api = { enabled: true, remaining: d.remaining, limit: d.limit }; MODEL = d.model || MODEL; return; }
+    } catch (e) { /* a plain static host has no backend */ }
+    if (boot) { api = { enabled: false, remaining: 0, limit: 0 }; live = {}; }   // remembered addresses point at a backend that is not here
+  }
+
+  function currentWork() {
+    if (!result || current.indexOf("work/") !== 0) return null;
+    var slug = current.slice(5);
+    return result.works.filter(function (w) { return w.slug === slug; })[0] || null;
+  }
+
+  function freeLine() {
+    if (!api.enabled) return "";
+    if (api.remaining <= 0) return "No free renders left today.";
+    return api.remaining + " free " + (api.remaining === 1 ? "render" : "renders") + " left today.";
+  }
+
+  function liveUI() {
+    var hint = "Every photograph here is a preset from the image library. ";
+    if (userKey) hint += "Open a work to render it live for this edition with your key, or render every work.";
+    else if (api.enabled) hint += "Open a work to render it live for this edition. " + freeLine();
+    else hint += "To render a work live for this edition, use your own OpenAI key.";
+    $("live-hint").textContent = hint;
+    $("key-forget").disabled = !userKey;
+    var todo = result ? result.works.filter(function (w) { return !w.live; }).length : 0;
+    $("render-all").disabled = !userKey || (!batch && !todo);
+    $("render-all").textContent = batch ? "Stop" : todo && result && todo < result.works.length ? "Render the other " + todo : "Render every work";
+
+    var btn = $("render"), status = $("live-status"), w = currentWork();
+    status.className = lastError ? "bad" : "";
+    if (batch) {
+      btn.hidden = true;
+      status.textContent = lastError || "Rendering " + batch.done + " of " + batch.total + "…";
+      return;
+    }
+    if (!w) { btn.hidden = true; status.textContent = lastError; return; }
+    if (w.live) { btn.hidden = true; status.textContent = "Rendered live for this edition."; return; }
+    if (busy[w.prompt]) {
+      btn.hidden = false; btn.disabled = true;
+      btn.textContent = "Rendering… " + Math.round((Date.now() - busy[w.prompt]) / 1000) + " s";
+      status.textContent = "This takes about 20 seconds.";
+      return;
+    }
+    if (!userKey && !api.enabled) { btn.hidden = true; status.textContent = lastError || "Preset photograph."; return; }
+    btn.hidden = false;
+    btn.disabled = !userKey && api.remaining <= 0;
+    btn.textContent = userKey ? "Render with your key" : "Render this work live";
+    status.textContent = lastError || (userKey ? "Preset photograph." : api.remaining > 0 ? freeLine() : "No free renders left today. Use your own key.");
+  }
+
+  async function renderFree(prompt) {
+    var r = await fetch("api/render", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ prompt: prompt }) });
+    var d = {};
+    try { d = await r.json(); } catch (e) { /* not JSON */ }
+    if (typeof d.remaining === "number") api.remaining = d.remaining;
+    if (!r.ok) throw new Error(d.error || "The render failed.");
+    return new URL(d.url, location.href).href;
+  }
+
+  async function renderOwn(prompt) {
+    var body = { model: MODEL, prompt: prompt, size: "1536x1024", quality: "medium", n: 1, output_format: "jpeg", output_compression: 82 };
+    for (var attempt = 0; attempt < 2; attempt++) {
+      var r;
+      try {
+        r = await fetch("https://api.openai.com/v1/images/generations", {
+          method: "POST", headers: { authorization: "Bearer " + userKey, "content-type": "application/json" }, body: JSON.stringify(body),
+        });
+      } catch (e) {   // OpenAI sends a refused key back without browser access headers, so it looks like a network failure
+        throw new Error("OpenAI did not answer. Check the key and your connection.");
+      }
+      var d = {};
+      try { d = await r.json(); } catch (e) { /* not JSON */ }
+      if (r.ok && d.data && d.data[0] && d.data[0].b64_json) {
+        var blob = await (await fetch("data:image/jpeg;base64," + d.data[0].b64_json)).blob();
+        return URL.createObjectURL(blob);
+      }
+      var msg = (d.error && d.error.message) || "OpenAI answered " + r.status + ".";
+      if (r.status === 400 && /moderation|safety/i.test(msg) && attempt === 0) { body.prompt = prompt + SAFE; continue; }
+      if (r.status === 401) msg = "OpenAI did not accept this key.";
+      throw new Error(msg);
+    }
+  }
+
+  async function renderWork(w) {
+    if (busy[w.prompt]) return false;
+    busy[w.prompt] = Date.now(); lastError = "";
+    if (!busyTick) busyTick = setInterval(liveUI, 1000);
+    liveUI();
+    var ok = false;
+    try {
+      live[w.prompt] = await (userKey ? renderOwn(w.prompt) : renderFree(w.prompt));
+      saveLive();
+      ok = true;
+    } catch (err) {
+      lastError = err.message.slice(0, 160);
+    }
+    delete busy[w.prompt];
+    if (!Object.keys(busy).length) { clearInterval(busyTick); busyTick = null; }
+    if (ok) { var e = lastError; generate(true); lastError = e; }
+    liveUI();
+    return ok;
+  }
+
+  $("render").addEventListener("click", function () { var w = currentWork(); if (w) renderWork(w); });
+
+  $("key").addEventListener("input", function () {
+    userKey = this.value.trim(); lastError = ""; liveUI();
+  });
+  $("key-forget").addEventListener("click", function () {
+    userKey = ""; $("key").value = ""; if (batch) batch.stop = true; liveUI();
+  });
+  $("render-all").addEventListener("click", async function () {
+    if (batch) { batch.stop = true; return; }
+    var todo = result.works.filter(function (w) { return !w.live; });
+    batch = { done: 0, total: todo.length, stop: false };
+    for (var i = 0; i < todo.length && !batch.stop && userKey; i++) {
+      batch.done = i + 1; liveUI();
+      if (!(await renderWork(todo[i]))) break;   // a refused key or a rate limit will fail every time: stop
+    }
+    batch = null; liveUI();
+  });
 
   // a pasted or edited link changes only the hash: reload the state from it
   window.addEventListener("hashchange", function () {
     if (!studio) return;
     state = readHash(); current = "page/index"; rebuild();
+  });
+  window.addEventListener("focus", function () {   // the daily allowance may have changed in another tab
+    if (studio && api.enabled) checkApi().then(liveUI);
   });
 
   window.addEventListener("message", function (e) {

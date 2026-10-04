@@ -143,6 +143,7 @@ def generate(opts: Options, library: dict | None = None) -> Exhibition:
         artist.bio = tidy(bio(trng, artist, work, year))
         work.prompt = image_prompt(sub_rng(seed, "prompt", i), work, venue)
         if entry:
+            work.extra["live_prompt"] = work.prompt   # this edition's own room, for a live render in the Studio
             work.prompt = entry["prompt"]
             work.media, work.media_kind = entry["file"], "image"
         ex.artists.append(artist)
