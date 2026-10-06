@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real or artgen?</title>
+<meta name="description" content="Ten photographs of art installations each day. Some are from real exhibitions. artgen made the others. Can you tell which is which?">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap">
+<link rel="stylesheet" href="studio.css">
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><strong>artgen</strong> Real or artgen?</div>
+  <p class="tagline">Ten photographs each day. Some rooms exist. artgen made the others.</p>
+  <div class="top-actions">
+    <a class="btn ghost" href="./">Open the Studio</a>
+  </div>
+</header>
+
+<main class="game" id="game" data-state="loading">
+  <p class="notice" id="notice" aria-live="polite">Hanging today's photographs…</p>
+
+  <section class="round" aria-label="Today's round">
+    <figure class="wall"><img id="photo" alt="Photograph of an art installation" width="1280" height="853"></figure>
+    <div class="side">
+      <div class="progress">
+        <span id="count"></span>
+        <ol class="pips" id="pips" aria-hidden="true"></ol>
+      </div>
+
+      <div class="ask">
+        <h1>Is this room real?</h1>
+        <div class="choices">
+          <button id="guess-real" class="choice" type="button"><span>Real</span><kbd>R</kbd></button>
+          <button id="guess-ai" class="choice" type="button"><span>artgen</span><kbd>A</kbd></button>
+        </div>
+        <p class="hint" id="round-error" role="alert"></p>
+      </div>
+
+      <div class="reveal" aria-live="polite">
+        <p class="verdict" id="verdict"></p>
+        <div id="label"></div>
+        <p class="hint" id="crowd"></p>
+        <button id="next" class="btn next" type="button"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="result" aria-label="Your result">
+    <div class="score">
+      <h1 id="score"></h1>
+      <p id="score-line"></p>
+      <p class="share-text" id="share-text"></p>
+      <div class="row">
+        <button id="copy" class="btn" type="button">Copy result</button>
+        <span class="hint" id="countdown"></span>
+      </div>
+    </div>
+
+    <aside class="board">
+      <form id="name-form" class="name-form">
+        <label class="field grow"><span>Your name on today's leaderboard</span>
+          <input id="name" type="text" maxlength="20" autocomplete="nickname" spellcheck="false"></label>
+        <button class="btn" type="submit">Save name</button>
+      </form>
+      <p class="hint" id="name-status" aria-live="polite"></p>
+      <h2>Today's leaderboard</h2>
+      <ol class="ranks" id="ranks"></ol>
+    </aside>
+
+    <div class="hang">
+      <h2>The ten photographs</h2>
+      <ol class="works" id="works"></ol>
+    </div>
+  </section>
+</main>
+<script src="game.js"></script>
+</body>
+</html>

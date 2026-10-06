@@ -6,6 +6,7 @@ node_modules/
 biennales/*/site/
 biennales/*/media/superseded/
 studio/
+worker/src/game_pool.json
 library/tmp/
 # video working files: rebuild with video/demo/build.sh
 video/*/raw/

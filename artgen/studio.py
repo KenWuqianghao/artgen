@@ -5,10 +5,11 @@ so the browser runs the same generator as the command line. Images come from the
 
   choices()            the lists, toggles and options the Studio shows
   run(opts_json, base) generate an edition and return every page of its website
-  build(out)           write the static Studio to a folder
+  build(out)           write the static Studio to a folder, and the image pool of the game "Real or artgen?"
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import shutil
 from pathlib import Path
@@ -110,6 +111,44 @@ def run(opts_json: str, base: str, live_json: str = "{}") -> str:
     }, ensure_ascii=False)
 
 
+REAL_FIELDS = ("artist", "title", "year", "venue", "credit", "source")
+REAL_MIN = 6
+
+
+def _game_pool(out: Path) -> dict:
+    """Copy the images of the game to out/game/media and return the key that says which ones are real.
+
+    A public file name is a hash, so the name does not show the kind. The key goes to the Worker, never to the browser."""
+    pool: dict[str, list] = {"real": [], "ai": []}
+    manifest, lib = ROOT / "game" / "real" / "manifest.json", _library()
+    real = json.loads(manifest.read_text(encoding="utf-8"))["entries"] if manifest.exists() else []
+    if len(real) < REAL_MIN or not lib:
+        return pool
+    media = out / "game" / "media"
+    media.mkdir(parents=True)
+
+    def publish(kind: str, ident: str, src: Path) -> str:
+        img = hashlib.sha256(f"artgen-game:{kind}:{ident}".encode()).hexdigest()[:16]
+        shutil.copyfile(src, media / f"{img}.jpg")
+        return img
+
+    if len({e.get("id") for e in real}) != len(real):
+        raise SystemExit("game/real/manifest.json: two entries have the same id")
+    for e in real:
+        bad = [k for k in ("id", *REAL_FIELDS) if not isinstance(e.get(k), str) or (k not in ("year", "credit") and not e[k].strip())]
+        if bad:
+            raise SystemExit(f"game/real/manifest.json: entry {e.get('id') or '?'} needs {', '.join(bad)}")
+        src = manifest.parent / f"{e['id']}.jpg"
+        if not src.exists():
+            raise SystemExit(f"game/real/manifest.json: no image {src.relative_to(ROOT)}")
+        pool["real"].append({"img": publish("real", e["id"], src), "reveal": {k: e[k] for k in REAL_FIELDS}})
+    forms = {a["id"]: a for a in corpus.archetypes()}
+    for e in lib["entries"]:
+        a = forms[e["archetype"]]
+        pool["ai"].append({"img": publish("ai", e["id"], ROOT / e["file"]), "reveal": {"form": a["form"], "basis": a["basis"]}})
+    return pool
+
+
 def build(out: Path) -> Path:
     """Copy the Studio page, this package, the data and the image library into one static folder."""
     if out.exists():
@@ -128,4 +167,5 @@ def build(out: Path) -> Path:
         bundle["library/index.json"] = (lib / "index.json").read_text(encoding="utf-8")
         shutil.copytree(lib / "media", out / "library" / "media")
     (out / "app.json").write_text(json.dumps(bundle, ensure_ascii=False), encoding="utf-8")
+    (ROOT / "worker" / "src" / "game_pool.json").write_text(json.dumps(_game_pool(out), ensure_ascii=False), encoding="utf-8")
     return out / "index.html"

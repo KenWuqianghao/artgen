@@ -79,6 +79,61 @@ Then deploy. Run the same command after each change:
 npm run studio:deploy
 ```
 
+## The game: Real or artgen?
+
+The game shows one photograph of an installation at a time. You answer **Real** or **artgen**. Then the page shows the truth and a citation. For a real photograph, the citation gives the artist, the venue and the source. For an artgen image, it gives the real works that the image imitates.
+
+- There is one round per UTC day. It has 10 photographs, the same for every player, and 4 to 6 of them are real.
+- After the round you can put a name on the leaderboard of the day and copy your result.
+- Keys: `R` or left arrow for Real, `A` or right arrow for artgen, `Enter` or `Space` for the next photograph.
+
+### Play it on your computer
+
+The game needs the Worker, because the Worker keeps the answers. First add real photographs (see below). Then run:
+
+```bash
+npm run studio:dev
+```
+
+Open the address that Wrangler prints and add `/game.html`. Under `python3 -m artgen studio serve` the game page says that it has no server.
+
+### Add real photographs
+
+The AI images come from the image library. The real photographs come from `game/real/`.
+
+1. Save each photograph as `game/real/<id>.jpg`, 1280 × 853 pixels, the same size as the library images.
+2. Add one entry for each photograph to `game/real/manifest.json`, as in the example below.
+3. Build the Studio again with `python3 -m artgen studio build`, or run one of the `npm run` commands.
+
+```json
+{"entries": [
+  {"id": "commons-0001", "artist": "Artist name", "title": "Title of the work", "year": "2019",
+   "venue": "58th Venice Biennale, Arsenale", "credit": "Photo: Jane Doe, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Example.jpg"}
+]}
+```
+
+`year` and `credit` can be empty. The other fields are necessary. Use only photographs that you have the right to publish, and give the credit that the licence asks for.
+
+The game needs at least 6 real photographs. Each 6 more give one more day before a photograph comes back.
+
+The build copies every game image to `studio/game/media/` under a name that does not show its kind. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
+
+When you add or remove photographs, all rounds change, and that includes the round of the current day. Deploy such a change near midnight UTC.
+
+### Game API
+
+All routes answer with JSON. A `POST` must come from the game page itself.
+
+| Route | Body or query | Answer |
+|---|---|---|
+| `GET /api/game/round` | `?player=<token>` | `{day, number, images, answers, done, score, ms, name, rank}`. `answers` has the truth only for the images this player answered. The first call starts the clock. |
+| `POST /api/game/answer` | `{player, guess}`, where `guess` is `"real"` or `"ai"` | `{index, real, reveal, crowd, done, score, ms}` for the next image without an answer. `409` after ten answers. |
+| `POST /api/game/name` | `{player, name}` | `{rank, name}`. Only after the round is done. The name has 1 to 20 characters. A second call changes the name of the same row. |
+| `GET /api/game/leaderboard` | `?day=<YYYY-MM-DD>`, default today | `{day, number, players, average, entries}` with the best 50 as `{name, score, ms}`. |
+
+`player` is a random token of 16 to 64 characters from `A-Z a-z 0-9 _ -`. The page makes it and keeps it in the browser. `crowd` is the percent of players who answered that image correctly, or `null` when fewer than 5 players saw it. Every route answers `503` when the game has fewer than 6 real photographs.
+
 ## Quick start on the command line
 
 Generate a biennial with placeholder images. This costs nothing:
@@ -188,6 +243,8 @@ artgen/            the package: gen/ (artists, titles, works, exhibition), write
 data/              archetypes, lexicon, world, title structures, real-name blocklist
 tools/             sources of data/archetypes.json and data/lexicon.json
 library/           pre-rendered images, one per archetype, with what each one shows
+game/real/         real photographs for the game Real or artgen?, with their citations
+worker/            the Cloudflare Worker: live renders and the game
 docs/research/     the research corpus, with source URLs
 biennales/         generated editions (exhibition.json and media/; site/ is build output)
 video/demo/        the HyperFrames demo video of the Studio
