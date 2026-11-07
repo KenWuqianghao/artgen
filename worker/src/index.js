@@ -240,7 +240,7 @@ const GAME = {
     if (!isPlayer(body.player)) return json({ error: "Bad player token." }, 400);
     if (!isGuess(body.guess)) return json({ error: "A guess is \"real\" or \"ai\"." }, 400);
     if (!Number.isInteger(body.index)) return json({ error: "Bad image index." }, 400);
-    if (body.day !== day) return json({ error: "A new round began." }, 409);
+    if (body.day !== day) return json({ error: "A new day began at midnight UTC, so the round you were playing has ended. This is the new round." }, 409);
     const items = round.items.map((i) => ({ img: i.img, real: i.real }));
     const res = await store.gameAnswer(day, body.player, body.index, body.guess, items);
     if (res.refused === "stale") return json({ error: "Your answer to that photograph is already saved." }, 409);

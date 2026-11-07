@@ -4,6 +4,7 @@
   var API = "/api/game/";
   var TOKEN_KEY = "artgen-game-player";
   var NO_SERVER = "The game needs its server, and this copy of the Studio runs without one.";
+  var SERVER_DOWN = "The server did not answer. Try again.";
   var KEYS = { r: "real", arrowleft: "real", a: "ai", arrowright: "ai" };
   var DAY_MS = 86400000;
 
@@ -32,7 +33,10 @@
     var init = { method: method, headers: {} };
     if (body) { init.headers["content-type"] = "application/json"; init.body = JSON.stringify(body); }
     return fetch(API + path, init).then(function (res) {
-      return res.json().then(function (data) { return { status: res.status, data: data }; });
+      return res.json().then(function (data) { return { status: res.status, data: data }; }, function () {
+        if (res.status >= 500) return { status: res.status, data: { error: SERVER_DOWN } };
+        throw new Error("no game server");
+      });
     });
   }
 
@@ -194,7 +198,7 @@
       round.answers[a.index] = { guess: guess, real: a.real, reveal: a.reveal, crowd: a.crowd };
       round.done = a.done; round.score = a.score; round.ms = a.ms;
       show("revealed");
-    }).catch(function () { show("playing", "The server did not answer. Try again."); });
+    }).catch(function () { show("playing", SERVER_DOWN); });
   }
 
   function next() {
@@ -213,7 +217,7 @@
       $("name").value = round.name;
       status.textContent = round.rank ? "You are number " + round.rank + " today." : "Saved. The leaderboard shows the best 50.";
       return loadBoard();
-    }).catch(function () { status.textContent = "The server did not answer. Try again."; });
+    }).catch(function () { status.textContent = SERVER_DOWN; });
   }
 
   function copyResult() {
