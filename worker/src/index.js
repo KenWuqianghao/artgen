@@ -15,7 +15,6 @@
 import { DurableObject } from "cloudflare:workers";
 import { BOARD_SIZE, NAMES_PER_VISITOR, cleanName, crowdOf, isDay, isGuess, isPlayer, isRight, roundFor, roundNumber, scoreOf }
   from "./game.js";
-// Which image is real. `python3 -m artgen studio build` writes it; it must never be served.
 import pool from "./game_pool.json";
 
 const PREFIX = "Installation view photograph from the press kit of an international contemporary art biennial. Room:";
@@ -84,21 +83,19 @@ export class Store extends DurableObject {
   async putImage(id, bytes) { await this.ctx.storage.put(`i:${id}`, bytes); }
   async getImage(id) { return (await this.ctx.storage.get(`i:${id}`)) || null; }
 
-  // The game. Each method is one call, so its read-modify-write is exact.
-  // Reading a round writes nothing. The player's row starts with the first answer, and so does the clock.
+  // Each method is one call, so its read-modify-write is exact.
   async gameOpen(day, player, imgs) {
-    const p = (await this.ctx.storage.get(`gp:${day}:${player}`)) || { guesses: [], doneMs: null, name: null };
+    const p = (await this.ctx.storage.get(`gp:${day}:${player}`)) || newPlayer();
     const seen = imgs.slice(0, p.guesses.length).map((img) => `gi:${img}`);
     const got = await this.ctx.storage.get([...seen, `gl:${day}`]);
     return { p, stats: seen.map((k) => got.get(k)), rank: rankOf(got.get(`gl:${day}`), player) };
   }
 
-  // Takes a guess only for the image the page showed, so a retry or a second tab cannot move an answer to another image.
   async gameAnswer(day, player, index, guess, items) {
     const key = `gp:${day}:${player}`, sKey = `gs:${day}`;
-    const p = (await this.ctx.storage.get(key)) || { start: Date.now(), guesses: [], doneMs: null, name: null };
+    const p = (await this.ctx.storage.get(key)) || newPlayer();
     if (p.guesses.length >= items.length) return { refused: "finished" };
-    if (index !== p.guesses.length) return { refused: "moved" };
+    if (index !== p.guesses.length) return { refused: "stale" };
     const iKey = `gi:${items[index].img}`;
     const got = await this.ctx.storage.get([iKey, sKey]);
     const stat = got.get(iKey) || { seen: 0, right: 0 };
@@ -115,7 +112,6 @@ export class Store extends DurableObject {
     return { index, stat, p };
   }
 
-  // One row per player: a second name replaces the first.
   async gameName(day, player, name, visitor, items) {
     const key = `gp:${day}:${player}`, lKey = `gl:${day}`, nKey = `gn:${day}:${visitor}`;
     const got = await this.ctx.storage.get([key, lKey, nKey]);
@@ -154,6 +150,8 @@ export class Store extends DurableObject {
     await this.ctx.storage.put("swept", day);
   }
 }
+
+const newPlayer = () => ({ start: Date.now(), guesses: [], doneMs: null, name: null });
 
 function rankOf(board, player) {
   const at = (board || []).findIndex((e) => e.player === player);
@@ -225,7 +223,6 @@ async function render(request, env) {
   return json({ url, cached: false, remaining: slot.remaining, limit: lim.visitor });
 }
 
-// The truth about an image leaves here only for an image the player already answered.
 const answerView = (item, guess, stat) => ({ guess, real: item.real, reveal: item.reveal, crowd: crowdOf(stat) });
 
 const GAME = {
@@ -246,7 +243,7 @@ const GAME = {
     if (body.day !== day) return json({ error: "A new round began." }, 409);
     const items = round.items.map((i) => ({ img: i.img, real: i.real }));
     const res = await store.gameAnswer(day, body.player, body.index, body.guess, items);
-    if (res.refused === "moved") return json({ error: "Your answer to that photograph is already saved." }, 409);
+    if (res.refused === "stale") return json({ error: "Your answer to that photograph is already saved." }, 409);
     if (res.refused === "finished") return json({ error: "You answered all ten images today." }, 409);
     const { real, reveal, crowd } = answerView(round.items[res.index], body.guess, res.stat);
     return json({

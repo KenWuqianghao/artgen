@@ -1,4 +1,3 @@
-// Real or artgen?: one round of ten photographs per UTC day. The Worker knows which ones are real; this page learns it one answer at a time.
 (function () {
   "use strict";
 
@@ -8,7 +7,6 @@
   var KEYS = { r: "real", arrowleft: "real", a: "ai", arrowright: "ai" };
   var DAY_MS = 86400000;
 
-  // What the page shows: loading, unavailable, playing, answering (a guess is on its way), revealed or finished.
   var state = "loading";
   var round = null, board = null, token = playerToken(), clock = null;
 
@@ -22,15 +20,14 @@
 
   function playerToken() {
     var t = null;
-    try { t = localStorage.getItem(TOKEN_KEY); } catch (e) { /* storage is off: play without resume */ }
+    try { t = localStorage.getItem(TOKEN_KEY); } catch (e) {}
     if (/^[A-Za-z0-9_-]{16,64}$/.test(t || "")) return t;
     var bytes = crypto.getRandomValues(new Uint8Array(18));
     t = btoa(String.fromCharCode.apply(null, bytes)).replace(/\+/g, "-").replace(/\//g, "_");
-    try { localStorage.setItem(TOKEN_KEY, t); } catch (e) { /* same */ }
+    try { localStorage.setItem(TOKEN_KEY, t); } catch (e) {}
     return t;
   }
 
-  // Resolves to {status, data}. Rejects when there is no Worker behind this page.
   function call(method, path, body) {
     var init = { method: method, headers: {} };
     if (body) { init.headers["content-type"] = "application/json"; init.body = JSON.stringify(body); }
@@ -39,7 +36,6 @@
     });
   }
 
-  // ------------------------------------------------------------ states
   var RENDER = {
     loading: function () { $("notice").textContent = "Hanging today's photographs…"; },
     unavailable: function (why) { $("notice").textContent = why || NO_SERVER; },
@@ -50,7 +46,7 @@
       progress(i);
       if (round.images[i + 1]) new Image().src = round.images[i + 1];
     },
-    answering: function () {},
+    sending: function () {},
     revealed: function () {
       var i = round.answers.length - 1, a = round.answers[i], right = isRight(a);
       progress(i);
@@ -89,7 +85,6 @@
     }));
   }
 
-  // ------------------------------------------------------------ the wall label
   function line(cls, text) { return el("p", cls, text); }
 
   function wallLabel(a) {
@@ -128,7 +123,6 @@
     return li;
   }
 
-  // ------------------------------------------------------------ the result
   function clockTime(ms) {
     var s = Math.round(ms / 1000);
     return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
@@ -179,7 +173,6 @@
     $("countdown").textContent = "The next round opens in " + two(Math.floor(s / 3600)) + ":" + two(Math.floor(s / 60) % 60) + ":" + two(s % 60) + ".";
   }
 
-  // ------------------------------------------------------------ actions
   function open(notice) {
     show("loading");
     call("GET", "round?player=" + token).then(function (res) {
@@ -193,9 +186,8 @@
 
   function answer(guess) {
     if (state !== "playing") return;
-    show("answering");
+    show("sending");
     call("POST", "answer", { player: token, day: round.day, index: round.answers.length, guess: guess }).then(function (res) {
-      // 409: the server already has this answer (a retry, another tab) or a new day began. Start from what the server has.
       if (res.status === 409) return open(res.data.error);
       if (res.status !== 200) return show("playing", res.data.error);
       var a = res.data;

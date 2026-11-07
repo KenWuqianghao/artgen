@@ -8,8 +8,8 @@
 .round, .result, .ask, .reveal { display: none; }
 .game[data-state=loading] .notice, .game[data-state=unavailable] .notice { display: block; }
 .game:not([data-state=loading]):not([data-state=unavailable]) .notice { display: none; }
-.game[data-state=playing] .round, .game[data-state=answering] .round, .game[data-state=revealed] .round { display: grid; }
-.game[data-state=playing] .ask, .game[data-state=answering] .ask { display: block; }
+.game[data-state=playing] .round, .game[data-state=sending] .round, .game[data-state=revealed] .round { display: grid; }
+.game[data-state=playing] .ask, .game[data-state=sending] .ask { display: block; }
 .game[data-state=revealed] .reveal { display: block; }
 .game[data-state=finished] .result { display: grid; }
 
@@ -33,7 +33,7 @@
   border: 1.5px solid var(--ink); border-radius: 3px; background: var(--ground); font-size: 22px; font-weight: 600; cursor: pointer; }
 .choice:hover { background: var(--ink); color: var(--ground); }
 .choice kbd { font: inherit; font-size: 13px; font-weight: 500; border: 1px solid currentColor; border-radius: 3px; padding: 1px 7px; opacity: .55; }
-.game[data-state=answering] .choice { opacity: .4; pointer-events: none; }
+.game[data-state=sending] .choice { opacity: .4; pointer-events: none; }
 #round-error:empty, #crowd:empty, #name-status:empty { display: none; }
 #round-error { color: var(--wrong); }
 

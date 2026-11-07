@@ -119,13 +119,11 @@ def run(opts_json: str, base: str, live_json: str = "{}") -> str:
 REAL_FIELDS = ("artist", "title", "year", "venue", "credit", "source")
 REAL_MIN = 6
 GAME_KEY = ROOT / "game" / ".key"
-# One encoder for both kinds, with no metadata or colour profile, so the bytes of an image do not show its kind.
 REENCODE = ["-map_metadata", "-1", "-vf", "setsar=1,sidedata=mode=delete:type=ICC_PROFILE", "-pix_fmt", "yuvj420p",
             "-fflags", "+bitexact", "-flags:v", "+bitexact", "-q:v", "4"]
 
 
 def _game_key() -> bytes:
-    """The secret that names the game images. Keep the file: a new key renames every image and resets the crowd statistics."""
     if not GAME_KEY.exists():
         GAME_KEY.touch(mode=0o600)
         GAME_KEY.write_text(secrets.token_hex(32), encoding="utf-8")
@@ -136,10 +134,6 @@ def _game_key() -> bytes:
 
 
 def _game_pool(out: Path) -> dict:
-    """Write the images of the game to out/game/media and return the key that says which ones are real.
-
-    A public file name is an HMAC of the image id, and every image is encoded again, so neither the name nor the bytes
-    show the kind or match a library file. The key goes to the Worker, never to the browser."""
     pool: dict[str, list] = {"real": [], "ai": []}
     manifest, lib = ROOT / "game" / "real" / "manifest.json", _library()
     real = json.loads(manifest.read_text(encoding="utf-8"))["entries"] if manifest.exists() else []
