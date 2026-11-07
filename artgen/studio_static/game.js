@@ -180,12 +180,12 @@
   }
 
   // ------------------------------------------------------------ actions
-  function open() {
+  function open(notice) {
     show("loading");
     call("GET", "round?player=" + token).then(function (res) {
       if (res.status !== 200) return show("unavailable", res.data.error);
       round = res.data;
-      if (!round.done) return show("playing");
+      if (!round.done) return show("playing", notice);
       show("finished");
       loadBoard();
     }).catch(function () { show("unavailable"); });
@@ -196,7 +196,7 @@
     show("answering");
     call("POST", "answer", { player: token, day: round.day, index: round.answers.length, guess: guess }).then(function (res) {
       // 409: the server already has this answer (a retry, another tab) or a new day began. Start from what the server has.
-      if (res.status === 409) return open();
+      if (res.status === 409) return open(res.data.error);
       if (res.status !== 200) return show("playing", res.data.error);
       var a = res.data;
       round.answers[a.index] = { guess: guess, real: a.real, reveal: a.reveal, crowd: a.crowd };

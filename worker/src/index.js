@@ -246,7 +246,7 @@ const GAME = {
     if (body.day !== day) return json({ error: "A new round began." }, 409);
     const items = round.items.map((i) => ({ img: i.img, real: i.real }));
     const res = await store.gameAnswer(day, body.player, body.index, body.guess, items);
-    if (res.refused === "moved") return json({ error: "This round moved on in another tab." }, 409);
+    if (res.refused === "moved") return json({ error: "Your answer to that photograph is already saved." }, 409);
     if (res.refused === "finished") return json({ error: "You answered all ten images today." }, 409);
     const { real, reveal, crowd } = answerView(round.items[res.index], body.guess, res.stat);
     return json({

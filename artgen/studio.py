@@ -174,9 +174,10 @@ def _game_pool(out: Path) -> dict:
         a = forms[e["archetype"]]
         pool["ai"].append({"img": publish("ai", e["id"], ROOT / e["file"]), "reveal": {"form": a["form"], "basis": a["basis"]}})
     with ThreadPoolExecutor() as ex:
-        failed = [cmd[6] for cmd, res in zip(jobs, ex.map(lambda cmd: subprocess.run(cmd, capture_output=True), jobs)) if res.returncode]
+        failed = [(cmd[6], res.stderr.decode(errors="replace").strip())
+                  for cmd, res in zip(jobs, ex.map(lambda cmd: subprocess.run(cmd, capture_output=True), jobs)) if res.returncode]
     if failed:
-        raise SystemExit(f"ffmpeg could not encode {len(failed)} game images, for example {failed[0]}.")
+        raise SystemExit(f"ffmpeg could not encode {len(failed)} game images, for example {failed[0][0]}:\n{failed[0][1]}")
     return pool
 
 
