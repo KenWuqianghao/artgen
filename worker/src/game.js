@@ -3,7 +3,7 @@
 const FIRST_DAY = "2026-10-06";
 const PER_KIND = 6;
 const ROUND_SIZE = 10;
-export const BOARD_SIZE = 100;
+export const BOARD_SIZE = 50;
 export const NAMES_PER_VISITOR = 20;
 const CROWD_MIN = 5;
 

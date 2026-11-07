@@ -10,8 +10,12 @@ so the browser runs the same generator as the command line. Images come from the
 from __future__ import annotations
 
 import hashlib
+import hmac
 import json
+import secrets
 import shutil
+import subprocess
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from . import corpus
@@ -113,23 +117,37 @@ def run(opts_json: str, base: str, live_json: str = "{}") -> str:
 
 REAL_FIELDS = ("artist", "title", "year", "venue", "credit", "source")
 REAL_MIN = 6
+GAME_KEY = ROOT / "game" / ".key"
+# One encoder for both kinds, with no metadata or colour profile, so the bytes of an image do not show its kind.
+REENCODE = ["-map_metadata", "-1", "-vf", "setsar=1,sidedata=mode=delete:type=ICC_PROFILE", "-pix_fmt", "yuvj420p",
+            "-fflags", "+bitexact", "-flags:v", "+bitexact", "-q:v", "4"]
+
+
+def _game_key() -> bytes:
+    """The secret that names the game images. Keep the file: a new key renames every image and resets the crowd statistics."""
+    if not GAME_KEY.exists():
+        GAME_KEY.write_text(secrets.token_hex(32), encoding="utf-8")
+    return bytes.fromhex(GAME_KEY.read_text(encoding="utf-8").strip())
 
 
 def _game_pool(out: Path) -> dict:
-    """Copy the images of the game to out/game/media and return the key that says which ones are real.
+    """Write the images of the game to out/game/media and return the key that says which ones are real.
 
-    A public file name is a hash, so the name does not show the kind. The key goes to the Worker, never to the browser."""
+    A public file name is an HMAC of the image id, and every image is encoded again, so neither the name nor the bytes
+    show the kind or match a library file. The key goes to the Worker, never to the browser."""
     pool: dict[str, list] = {"real": [], "ai": []}
     manifest, lib = ROOT / "game" / "real" / "manifest.json", _library()
     real = json.loads(manifest.read_text(encoding="utf-8"))["entries"] if manifest.exists() else []
     if len(real) < REAL_MIN or not lib:
         return pool
-    media = out / "game" / "media"
+    if not shutil.which("ffmpeg"):
+        raise SystemExit("The game needs ffmpeg to encode its images. Install ffmpeg, or empty game/real/manifest.json.")
+    media, key, jobs = out / "game" / "media", _game_key(), []
     media.mkdir(parents=True)
 
     def publish(kind: str, ident: str, src: Path) -> str:
-        img = hashlib.sha256(f"artgen-game:{kind}:{ident}".encode()).hexdigest()[:16]
-        shutil.copyfile(src, media / f"{img}.jpg")
+        img = hmac.new(key, f"{kind}:{ident}".encode(), hashlib.sha256).hexdigest()[:16]
+        jobs.append(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(src), *REENCODE, str(media / f"{img}.jpg")])
         return img
 
     if len({e.get("id") for e in real}) != len(real):
@@ -146,6 +164,8 @@ def _game_pool(out: Path) -> dict:
     for e in lib["entries"]:
         a = forms[e["archetype"]]
         pool["ai"].append({"img": publish("ai", e["id"], ROOT / e["file"]), "reveal": {"form": a["form"], "basis": a["basis"]}})
+    with ThreadPoolExecutor() as ex:
+        list(ex.map(lambda cmd: subprocess.run(cmd, check=True), jobs))
     return pool
 
 

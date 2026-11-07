@@ -194,8 +194,8 @@
   function answer(guess) {
     if (state !== "playing") return;
     show("answering");
-    call("POST", "answer", { player: token, guess: guess }).then(function (res) {
-      // 409: this round moved on somewhere else (another tab, or a new day). Start from what the server has.
+    call("POST", "answer", { player: token, index: round.answers.length, guess: guess }).then(function (res) {
+      // 409: the server already has this answer (a retry, another tab) or a new day began. Start from what the server has.
       if (res.status === 409) return open();
       if (res.status !== 200) return show("playing", res.data.error);
       var a = res.data;
@@ -219,7 +219,7 @@
       if (res.status !== 200) { status.textContent = res.data.error; return; }
       round.name = res.data.name; round.rank = res.data.rank;
       $("name").value = round.name;
-      status.textContent = round.rank ? "You are number " + round.rank + " today." : "Saved. The leaderboard shows the best 100.";
+      status.textContent = round.rank ? "You are number " + round.rank + " today." : "Saved. The leaderboard shows the best 50.";
       return loadBoard();
     }).catch(function () { status.textContent = "The server did not answer. Try again."; });
   }

@@ -85,25 +85,20 @@ export class Store extends DurableObject {
   async getImage(id) { return (await this.ctx.storage.get(`i:${id}`)) || null; }
 
   // The game. Each method is one call, so its read-modify-write is exact.
+  // Reading a round writes nothing. The player's row starts with the first answer, and so does the clock.
   async gameOpen(day, player, imgs) {
-    const key = `gp:${day}:${player}`;
-    let p = await this.ctx.storage.get(key);
-    if (!p) {
-      p = { start: Date.now(), guesses: [], doneMs: null, name: null };
-      await this.ctx.storage.put(key, p);
-    }
+    const p = (await this.ctx.storage.get(`gp:${day}:${player}`)) || { guesses: [], doneMs: null, name: null };
     const seen = imgs.slice(0, p.guesses.length).map((img) => `gi:${img}`);
     const got = await this.ctx.storage.get([...seen, `gl:${day}`]);
     return { p, stats: seen.map((k) => got.get(k)), rank: rankOf(got.get(`gl:${day}`), player) };
   }
 
-  // Always answers the next unanswered image, so a repeated request cannot skip or change an answer.
-  async gameAnswer(day, player, guess, items) {
+  // Takes a guess only for the image the page showed, so a retry or a second tab cannot move an answer to another image.
+  async gameAnswer(day, player, index, guess, items) {
     const key = `gp:${day}:${player}`, sKey = `gs:${day}`;
-    const p = await this.ctx.storage.get(key);
-    if (!p) return { refused: "unopened" };
-    const index = p.guesses.length;
-    if (index >= items.length) return { refused: "finished" };
+    const p = (await this.ctx.storage.get(key)) || { start: Date.now(), guesses: [], doneMs: null, name: null };
+    if (p.guesses.length >= items.length) return { refused: "finished" };
+    if (index !== p.guesses.length) return { refused: "moved" };
     const iKey = `gi:${items[index].img}`;
     const got = await this.ctx.storage.get([iKey, sKey]);
     const stat = got.get(iKey) || { seen: 0, right: 0 };
@@ -247,9 +242,10 @@ const GAME = {
   "POST answer": async ({ body, store, day, round }) => {
     if (!isPlayer(body.player)) return json({ error: "Bad player token." }, 400);
     if (!isGuess(body.guess)) return json({ error: "A guess is \"real\" or \"ai\"." }, 400);
+    if (!Number.isInteger(body.index)) return json({ error: "Bad image index." }, 400);
     const items = round.items.map((i) => ({ img: i.img, real: i.real }));
-    const res = await store.gameAnswer(day, body.player, body.guess, items);
-    if (res.refused === "unopened") return json({ error: "Open today's round first." }, 409);
+    const res = await store.gameAnswer(day, body.player, body.index, body.guess, items);
+    if (res.refused === "moved") return json({ error: "This round moved on in another tab." }, 409);
     if (res.refused === "finished") return json({ error: "You answered all ten images today." }, 409);
     const { real, reveal, crowd } = answerView(round.items[res.index], body.guess, res.stat);
     return json({
@@ -274,7 +270,7 @@ const GAME = {
     return json({
       day, number: roundNumber(day), players: sum.players,
       average: sum.players ? Math.round((10 * sum.scoreSum) / sum.players) / 10 : null,
-      entries: board.slice(0, 50).map((e) => ({ name: e.name, score: e.score, ms: e.ms })),
+      entries: board.map((e) => ({ name: e.name, score: e.score, ms: e.ms })),
     });
   },
 };
@@ -284,7 +280,7 @@ async function game(request, env, ctx, url) {
   if (!handler) return json({ error: "Not found." }, 404);
   if (request.method === "POST" && !allowedOrigin(request)) return json({ error: "Open the game to play." }, 403);
   const day = today(), round = roundFor(pool, day);
-  if (!round) return json({ error: "The game is not open yet. It needs at least six real photographs." }, 503);
+  if (!round) return json({ error: "The game is not open yet. It needs at least six real photographs and six artgen images." }, 503);
   let body = null;
   if (request.method === "POST") {
     try { body = await request.json(); } catch { body = null; }

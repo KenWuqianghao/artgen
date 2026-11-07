@@ -115,9 +115,9 @@ The AI images come from the image library. The real photographs come from `game/
 
 `year` and `credit` can be empty. The other fields are necessary. Use only photographs that you have the right to publish, and give the credit that the licence asks for.
 
-The game needs at least 6 real photographs. Each 6 more give one more day before a photograph comes back.
+The game needs at least 6 real photographs and 6 library images. The smaller of the two sets sets the cycle: each 6 images in it give one more day before a photograph comes back. Now the 76 library images give a cycle of 12 days.
 
-The build copies every game image to `studio/game/media/` under a name that does not show its kind. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
+The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The new encoding removes the metadata, so the bytes do not show the kind. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
 
 When you add or remove photographs, all rounds change, and that includes the round of the current day. Deploy such a change near midnight UTC.
 
@@ -127,12 +127,12 @@ All routes answer with JSON. A `POST` must come from the game page itself.
 
 | Route | Body or query | Answer |
 |---|---|---|
-| `GET /api/game/round` | `?player=<token>` | `{day, number, images, answers, done, score, ms, name, rank}`. `answers` has the truth only for the images this player answered. The first call starts the clock. |
-| `POST /api/game/answer` | `{player, guess}`, where `guess` is `"real"` or `"ai"` | `{index, real, reveal, crowd, done, score, ms}` for the next image without an answer. `409` after ten answers. |
+| `GET /api/game/round` | `?player=<token>` | `{day, number, images, answers, done, score, ms, name, rank}`. `answers` has the truth only for the images this player answered. |
+| `POST /api/game/answer` | `{player, index, guess}`, where `index` is the image on the page (0 to 9) and `guess` is `"real"` or `"ai"` | `{index, real, reveal, crowd, done, score, ms}`. The first answer starts the clock. `409` when `index` is not the next image without an answer, or after ten answers. |
 | `POST /api/game/name` | `{player, name}` | `{rank, name}`. Only after the round is done. The name has 1 to 20 characters. A second call changes the name of the same row. |
 | `GET /api/game/leaderboard` | `?day=<YYYY-MM-DD>`, default today | `{day, number, players, average, entries}` with the best 50 as `{name, score, ms}`. |
 
-`player` is a random token of 16 to 64 characters from `A-Z a-z 0-9 _ -`. The page makes it and keeps it in the browser. `crowd` is the percent of players who answered that image correctly, or `null` when fewer than 5 players saw it. Every route answers `503` when the game has fewer than 6 real photographs.
+`player` is a random token of 16 to 64 characters from `A-Z a-z 0-9 _ -`. The page makes it and keeps it in the browser. `crowd` is the percent of players who answered that image correctly, or `null` when fewer than 5 players saw it. Every route answers `503` when the game has fewer than 6 real photographs or fewer than 6 library images.
 
 ## Quick start on the command line
 
