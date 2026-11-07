@@ -5,12 +5,18 @@ so the browser runs the same generator as the command line. Images come from the
 
   choices()            the lists, toggles and options the Studio shows
   run(opts_json, base) generate an edition and return every page of its website
-  build(out)           write the static Studio to a folder
+  build(out)           write the static Studio to a folder, and the image pool of the game "Real or artgen?"
 """
 from __future__ import annotations
 
+import hashlib
+import hmac
 import json
+import re
+import secrets
 import shutil
+import subprocess
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from . import corpus
@@ -110,6 +116,63 @@ def run(opts_json: str, base: str, live_json: str = "{}") -> str:
     }, ensure_ascii=False)
 
 
+REAL_FIELDS = ("artist", "title", "year", "venue", "credit", "source")
+REAL_MIN = 6
+GAME_KEY = ROOT / "game" / ".key"
+REENCODE = ["-map_metadata", "-1", "-vf", "setsar=1,sidedata=mode=delete:type=ICC_PROFILE", "-pix_fmt", "yuvj420p",
+            "-fflags", "+bitexact", "-flags:v", "+bitexact", "-q:v", "4"]
+
+
+def _game_key() -> bytes:
+    if not GAME_KEY.exists():
+        GAME_KEY.touch(mode=0o600)
+        GAME_KEY.write_text(secrets.token_hex(32), encoding="utf-8")
+    text = GAME_KEY.read_text(encoding="utf-8").strip()
+    if not re.fullmatch(r"[0-9a-fA-F]{64}", text):
+        raise SystemExit(f"{GAME_KEY.relative_to(ROOT)} must hold 64 hex characters. Delete it to make a new key.")
+    return bytes.fromhex(text)
+
+
+def _game_pool(out: Path) -> dict:
+    pool: dict[str, list] = {"real": [], "ai": []}
+    manifest, lib = ROOT / "game" / "real" / "manifest.json", _library()
+    real = json.loads(manifest.read_text(encoding="utf-8"))["entries"] if manifest.exists() else []
+    if len(real) < REAL_MIN or not lib:
+        return pool
+    if not shutil.which("ffmpeg"):
+        raise SystemExit("The game needs ffmpeg to encode its images. Install ffmpeg, or empty game/real/manifest.json.")
+    media, key, jobs = out / "game" / "media", _game_key(), []
+    media.mkdir(parents=True)
+
+    def publish(kind: str, ident: str, src: Path) -> str:
+        img = hmac.new(key, f"{kind}:{ident}".encode(), hashlib.sha256).hexdigest()[:16]
+        jobs.append(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(src), *REENCODE, str(media / f"{img}.jpg")])
+        return img
+
+    if len({e.get("id") for e in real}) != len(real):
+        raise SystemExit("game/real/manifest.json: two entries have the same id")
+    for e in real:
+        bad = [k for k in ("id", *REAL_FIELDS) if not isinstance(e.get(k), str) or (k not in ("year", "credit") and not e[k].strip())]
+        if bad:
+            raise SystemExit(f"game/real/manifest.json: entry {e.get('id') or '?'} needs {', '.join(bad)}")
+        src = manifest.parent / f"{e['id']}.jpg"
+        if not src.exists():
+            raise SystemExit(f"game/real/manifest.json: no image {src.relative_to(ROOT)}")
+        if b"ICC_PROFILE" in src.read_bytes():
+            raise SystemExit(f"{src.relative_to(ROOT)} has a colour profile. Convert it to plain sRGB: jpgicc -q95 {src.name} out.jpg")
+        pool["real"].append({"img": publish("real", e["id"], src), "reveal": {k: e[k] for k in REAL_FIELDS}})
+    forms = {a["id"]: a for a in corpus.archetypes()}
+    for e in lib["entries"]:
+        a = forms[e["archetype"]]
+        pool["ai"].append({"img": publish("ai", e["id"], ROOT / e["file"]), "reveal": {"form": a["form"], "basis": a["basis"]}})
+    with ThreadPoolExecutor() as ex:
+        failed = [(cmd[6], res.stderr.decode(errors="replace").strip())
+                  for cmd, res in zip(jobs, ex.map(lambda cmd: subprocess.run(cmd, capture_output=True), jobs)) if res.returncode]
+    if failed:
+        raise SystemExit(f"ffmpeg could not encode {len(failed)} game images, for example {failed[0][0]}:\n{failed[0][1]}")
+    return pool
+
+
 def build(out: Path) -> Path:
     """Copy the Studio page, this package, the data and the image library into one static folder."""
     if out.exists():
@@ -128,4 +191,5 @@ def build(out: Path) -> Path:
         bundle["library/index.json"] = (lib / "index.json").read_text(encoding="utf-8")
         shutil.copytree(lib / "media", out / "library" / "media")
     (out / "app.json").write_text(json.dumps(bundle, ensure_ascii=False), encoding="utf-8")
+    (ROOT / "worker" / "src" / "game_pool.json").write_text(json.dumps(_game_pool(out), ensure_ascii=False), encoding="utf-8")
     return out / "index.html"

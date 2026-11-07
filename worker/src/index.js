@@ -4,8 +4,18 @@
 //   POST /api/render        {prompt} -> {url, cached, remaining}
 //   GET  /api/image/<id>    a rendered JPEG
 //
-// One Durable Object holds the counters and the images, so the daily limits are exact and nothing else needs provisioning.
+// It also runs the daily guessing game "Real or artgen?" (rules in game.js):
+//
+//   GET  /api/game/round?player=       today's ten images and this player's answers so far
+//   POST /api/game/answer              {player, day, index, guess} -> the truth about the image at index
+//   POST /api/game/name                {player, name} -> a row on today's leaderboard
+//   GET  /api/game/leaderboard?day=    the top 50 of a day
+//
+// One Durable Object holds the counters, the images and the game, so the daily limits are exact and nothing else needs provisioning.
 import { DurableObject } from "cloudflare:workers";
+import { BOARD_SIZE, NAMES_PER_VISITOR, cleanName, crowdOf, isDay, isGuess, isPlayer, isRight, roundFor, roundNumber, scoreOf }
+  from "./game.js";
+import pool from "./game_pool.json";
 
 const PREFIX = "Installation view photograph from the press kit of an international contemporary art biennial. Room:";
 const SUFFIX = "No watermark.";
@@ -73,17 +83,79 @@ export class Store extends DurableObject {
   async putImage(id, bytes) { await this.ctx.storage.put(`i:${id}`, bytes); }
   async getImage(id) { return (await this.ctx.storage.get(`i:${id}`)) || null; }
 
-  // Yesterday's counters are dead weight; drop them once a day.
+  // Each method is one call, so its read-modify-write is exact.
+  async gameOpen(day, player, imgs) {
+    const p = (await this.ctx.storage.get(`gp:${day}:${player}`)) || newPlayer();
+    const seen = imgs.slice(0, p.guesses.length).map((img) => `gi:${img}`);
+    const got = await this.ctx.storage.get([...seen, `gl:${day}`]);
+    return { p, stats: seen.map((k) => got.get(k)), rank: rankOf(got.get(`gl:${day}`), player) };
+  }
+
+  async gameAnswer(day, player, index, guess, items) {
+    const key = `gp:${day}:${player}`, sKey = `gs:${day}`;
+    const p = (await this.ctx.storage.get(key)) || newPlayer();
+    if (p.guesses.length >= items.length) return { refused: "finished" };
+    if (index !== p.guesses.length) return { refused: "stale" };
+    const iKey = `gi:${items[index].img}`;
+    const got = await this.ctx.storage.get([iKey, sKey]);
+    const stat = got.get(iKey) || { seen: 0, right: 0 };
+    stat.seen += 1;
+    if (isRight(items[index], guess)) stat.right += 1;
+    p.guesses.push(guess);
+    const puts = { [key]: p, [iKey]: stat };
+    if (p.guesses.length === items.length) {
+      p.doneMs = Date.now() - p.start;
+      const sum = got.get(sKey) || { players: 0, scoreSum: 0 };
+      puts[sKey] = { players: sum.players + 1, scoreSum: sum.scoreSum + scoreOf(items, p.guesses) };
+    }
+    await this.ctx.storage.put(puts);
+    return { index, stat, p };
+  }
+
+  async gameName(day, player, name, visitor, items) {
+    const key = `gp:${day}:${player}`, lKey = `gl:${day}`, nKey = `gn:${day}:${visitor}`;
+    const got = await this.ctx.storage.get([key, lKey, nKey]);
+    const p = got.get(key);
+    if (!p || p.doneMs === null) return { refused: "unfinished" };
+    let board = got.get(lKey) || [];
+    if (p.name !== name) {
+      const used = got.get(nKey) || 0;
+      if (used >= NAMES_PER_VISITOR) return { refused: "limit" };
+      p.name = name;
+      board = board.filter((e) => e.player !== player);
+      board.push({ player, name, score: scoreOf(items, p.guesses), ms: p.doneMs });
+      board = board.sort((a, b) => b.score - a.score || a.ms - b.ms).slice(0, BOARD_SIZE);
+      await this.ctx.storage.put({ [key]: p, [lKey]: board, [nKey]: used + 1 });
+    }
+    return { rank: rankOf(board, player) };
+  }
+
+  async gameBoard(day) {
+    const got = await this.ctx.storage.get([`gl:${day}`, `gs:${day}`]);
+    return { board: got.get(`gl:${day}`) || [], sum: got.get(`gs:${day}`) || { players: 0, scoreSum: 0 } };
+  }
+
+  // Yesterday's counters and rounds are dead weight; drop them once a day. Leaderboards and image statistics stay.
   async sweep(day) {
     const last = await this.ctx.storage.get("swept");
     if (last === day) return;
-    for (const prefix of ["v:", "g:"]) {
-      const old = await this.ctx.storage.list({ prefix, limit: 1000 });
-      const dead = [...old.keys()].filter((k) => !k.startsWith(`${prefix}${day}`));
-      for (let i = 0; i < dead.length; i += 128) await this.ctx.storage.delete(dead.slice(i, i + 128));
+    for (const prefix of ["v:", "g:", "gp:", "gn:"]) {
+      for (;;) {
+        const old = await this.ctx.storage.list({ prefix, end: `${prefix}${day}`, limit: 1000 });
+        if (!old.size) break;
+        const dead = [...old.keys()];
+        for (let i = 0; i < dead.length; i += 128) await this.ctx.storage.delete(dead.slice(i, i + 128));
+      }
     }
     await this.ctx.storage.put("swept", day);
   }
+}
+
+const newPlayer = () => ({ start: Date.now(), guesses: [], doneMs: null, name: null });
+
+function rankOf(board, player) {
+  const at = (board || []).findIndex((e) => e.player === player);
+  return at < 0 ? null : at + 1;
 }
 
 async function visitorId(request, env) {
@@ -151,9 +223,76 @@ async function render(request, env) {
   return json({ url, cached: false, remaining: slot.remaining, limit: lim.visitor });
 }
 
+const answerView = (item, guess, stat) => ({ guess, real: item.real, reveal: item.reveal, crowd: crowdOf(stat) });
+
+const GAME = {
+  "GET round": async ({ url, store, day, round }) => {
+    const player = url.searchParams.get("player");
+    if (!isPlayer(player)) return json({ error: "Bad player token." }, 400);
+    const { p, stats, rank } = await store.gameOpen(day, player, round.items.map((i) => i.img));
+    return json({
+      day, number: round.number, images: round.items.map((i) => `/game/media/${i.img}.jpg`),
+      answers: p.guesses.map((g, i) => answerView(round.items[i], g, stats[i])),
+      done: p.doneMs !== null, score: scoreOf(round.items, p.guesses), ms: p.doneMs, name: p.name, rank,
+    });
+  },
+  "POST answer": async ({ body, store, day, round }) => {
+    if (!isPlayer(body.player)) return json({ error: "Bad player token." }, 400);
+    if (!isGuess(body.guess)) return json({ error: "A guess is \"real\" or \"ai\"." }, 400);
+    if (!Number.isInteger(body.index)) return json({ error: "Bad image index." }, 400);
+    if (body.day !== day) return json({ error: "A new day began at midnight UTC, so the round you were playing has ended. This is the new round." }, 409);
+    const items = round.items.map((i) => ({ img: i.img, real: i.real }));
+    const res = await store.gameAnswer(day, body.player, body.index, body.guess, items);
+    if (res.refused === "stale") return json({ error: "Your answer to that photograph is already saved." }, 409);
+    if (res.refused === "finished") return json({ error: "You answered all ten images today." }, 409);
+    const { real, reveal, crowd } = answerView(round.items[res.index], body.guess, res.stat);
+    return json({
+      index: res.index, real, reveal, crowd,
+      done: res.p.doneMs !== null, score: scoreOf(round.items, res.p.guesses), ms: res.p.doneMs,
+    });
+  },
+  "POST name": async ({ request, env, body, store, day, round }) => {
+    if (!isPlayer(body.player)) return json({ error: "Bad player token." }, 400);
+    const name = cleanName(body.name);
+    if (!name) return json({ error: "A name has 1 to 20 characters." }, 400);
+    const items = round.items.map((i) => ({ img: i.img, real: i.real }));
+    const res = await store.gameName(day, body.player, name, await visitorId(request, env), items);
+    if (res.refused === "unfinished") return json({ error: "Finish today's round first." }, 409);
+    if (res.refused === "limit") return json({ error: "Too many names from this address today." }, 429);
+    return json({ rank: res.rank, name });
+  },
+  "GET leaderboard": async ({ url, store, day: now }) => {
+    const day = url.searchParams.get("day") || now;
+    if (!isDay(day) || roundNumber(day) < 1) return json({ error: "No round on this day." }, 400);
+    const { board, sum } = await store.gameBoard(day);
+    return json({
+      day, number: roundNumber(day), players: sum.players,
+      average: sum.players ? Math.round((10 * sum.scoreSum) / sum.players) / 10 : null,
+      entries: board.slice(0, BOARD_SIZE).map((e) => ({ name: e.name, score: e.score, ms: e.ms })),
+    });
+  },
+};
+
+async function game(request, env, ctx, url) {
+  const handler = GAME[`${request.method} ${url.pathname.slice("/api/game/".length)}`];
+  if (!handler) return json({ error: "Not found." }, 404);
+  if (request.method === "POST" && !allowedOrigin(request)) return json({ error: "Open the game to play." }, 403);
+  const day = today(), round = roundFor(pool, day);
+  if (!round) return json({ error: "The game is not open yet. It needs at least six real photographs and six artgen images." }, 503);
+  let body = null;
+  if (request.method === "POST") {
+    try { body = await request.json(); } catch { body = null; }
+    if (!body || typeof body !== "object") return json({ error: "Bad request." }, 400);
+  }
+  const store = env.STORE.get(env.STORE.idFromName("main"));
+  ctx.waitUntil(store.sweep(day));
+  return handler({ request, env, url, body, store, day, round });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    if (url.pathname.startsWith("/api/game/")) return game(request, env, ctx, url);
     if (url.pathname === "/api/status" && request.method === "GET") {
       const lim = limits(env), day = today();
       if (!env.OPENAI_API_KEY) return json({ enabled: false, remaining: 0, limit: lim.visitor });

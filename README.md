@@ -79,6 +79,61 @@ Then deploy. Run the same command after each change:
 npm run studio:deploy
 ```
 
+## The game: Real or artgen?
+
+The game shows one photograph of an installation at a time. You answer **Real** or **artgen**. Then the page shows the truth and a citation. For a real photograph, the citation gives the artist, the venue and the source. For an artgen image, it gives the real works that the image imitates.
+
+- There is one round per UTC day. It has 10 photographs, the same for every player, and 4 to 6 of them are real.
+- After the round you can put a name on the leaderboard of the day and copy your result.
+- Keys: `R` or left arrow for Real, `A` or right arrow for artgen, `Enter` or `Space` for the next photograph.
+
+### Play it on your computer
+
+The game needs the Worker, because the Worker keeps the answers. Run:
+
+```bash
+npm run studio:dev
+```
+
+Open the address that Wrangler prints and add `/game.html`. Under `python3 -m artgen studio serve` the game page says that it has no server.
+
+### Add real photographs
+
+The AI images come from the image library. The real photographs come from `game/real/`. It holds 109 press photographs of real installations. `game/real/sources.tsv` records the image address and the page of each one.
+
+1. Save each photograph as `game/real/<id>.jpg`, 1280 × 853 pixels, the same size as the library images. Use plain sRGB with no colour profile. To convert a photograph with a profile, run `jpgicc -q95 in.jpg out.jpg`.
+2. Add one entry for each photograph to `game/real/manifest.json`, as in the example below.
+3. Build the Studio again with `python3 -m artgen studio build`, or run one of the `npm run` commands.
+
+```json
+{"entries": [
+  {"id": "commons-0001", "artist": "Artist name", "title": "Title of the work", "year": "2019",
+   "venue": "58th Venice Biennale, Arsenale", "credit": "Photo: Jane Doe, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Example.jpg"}
+]}
+```
+
+`year` and `credit` can be empty. The other fields are necessary. Use only photographs that you have the right to publish, and give the credit that the licence asks for.
+
+The game needs at least 6 real photographs and 6 library images. The smaller of the two sets sets the cycle: each 6 images in it give one more day before a photograph comes back. Now the 76 library images give a cycle of 12 days.
+
+The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The new encoding removes the metadata, so the bytes do not show the kind. A player can still match an artgen image to the public library by how it looks. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
+
+When you add or remove photographs, all rounds change, and that includes the round of the current day. Deploy such a change near midnight UTC.
+
+### Game API
+
+All routes answer with JSON. A `POST` must come from the game page itself.
+
+| Route | Body or query | Answer |
+|---|---|---|
+| `GET /api/game/round` | `?player=<token>` | `{day, number, images, answers, done, score, ms, name, rank}`. `answers` has the truth only for the images this player answered. |
+| `POST /api/game/answer` | `{player, day, index, guess}`, where `day` is the day of the round on the page, `index` is the image on the page (0 to 9) and `guess` is `"real"` or `"ai"` | `{index, real, reveal, crowd, done, score, ms}`. The first answer starts the clock. `409` when `day` is not today, when `index` is not the next image without an answer, or after ten answers. |
+| `POST /api/game/name` | `{player, name}` | `{rank, name}`. Only after the round is done. The name has 1 to 20 characters. A second call changes the name of the same row. |
+| `GET /api/game/leaderboard` | `?day=<YYYY-MM-DD>`, default today | `{day, number, players, average, entries}` with the best 50 as `{name, score, ms}`. |
+
+`player` is a random token of 16 to 64 characters from `A-Z a-z 0-9 _ -`. The page makes it and keeps it in the browser. `crowd` is the percent of players who answered that image correctly, or `null` when fewer than 5 players saw it. Every route answers `503` when the game has fewer than 6 real photographs or fewer than 6 library images.
+
 ## Quick start on the command line
 
 Generate a biennial with placeholder images. This costs nothing:
@@ -188,6 +243,8 @@ artgen/            the package: gen/ (artists, titles, works, exhibition), write
 data/              archetypes, lexicon, world, title structures, real-name blocklist
 tools/             sources of data/archetypes.json and data/lexicon.json
 library/           pre-rendered images, one per archetype, with what each one shows
+game/real/         real photographs for the game Real or artgen?, with their citations
+worker/            the Cloudflare Worker: live renders and the game
 docs/research/     the research corpus, with source URLs
 biennales/         generated editions (exhibition.json and media/; site/ is build output)
 video/demo/        the HyperFrames demo video of the Studio
