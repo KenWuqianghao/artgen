@@ -176,7 +176,7 @@ def _game_pool(out: Path) -> dict:
     with ThreadPoolExecutor() as ex:
         failed = [cmd[6] for cmd, res in zip(jobs, ex.map(lambda cmd: subprocess.run(cmd, capture_output=True), jobs)) if res.returncode]
     if failed:
-        raise SystemExit(f"ffmpeg could not encode {len(failed)} game images, for example {failed[0]}. The game needs ffmpeg 7 or later.")
+        raise SystemExit(f"ffmpeg could not encode {len(failed)} game images, for example {failed[0]}.")
     return pool
 
 
