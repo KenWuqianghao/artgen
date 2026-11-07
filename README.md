@@ -101,7 +101,7 @@ Open the address that Wrangler prints and add `/game.html`. Under `python3 -m ar
 
 The AI images come from the image library. The real photographs come from `game/real/`. It holds 109 press photographs of real installations. `game/real/sources.tsv` records the image address and the page of each one.
 
-1. Save each photograph as `game/real/<id>.jpg`, 1280 × 853 pixels, the same size as the library images.
+1. Save each photograph as `game/real/<id>.jpg`, 1280 × 853 pixels, the same size as the library images. Use plain sRGB with no colour profile. To convert a photograph with a profile, run `jpgicc -q95 in.jpg out.jpg`.
 2. Add one entry for each photograph to `game/real/manifest.json`, as in the example below.
 3. Build the Studio again with `python3 -m artgen studio build`, or run one of the `npm run` commands.
 
@@ -117,7 +117,7 @@ The AI images come from the image library. The real photographs come from `game/
 
 The game needs at least 6 real photographs and 6 library images. The smaller of the two sets sets the cycle: each 6 images in it give one more day before a photograph comes back. Now the 76 library images give a cycle of 12 days.
 
-The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The new encoding removes the metadata, so the bytes do not show the kind. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
+The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The new encoding removes the metadata, so the bytes do not show the kind. A player can still match an artgen image to the public library by how it looks. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
 
 When you add or remove photographs, all rounds change, and that includes the round of the current day. Deploy such a change near midnight UTC.
 
@@ -128,7 +128,7 @@ All routes answer with JSON. A `POST` must come from the game page itself.
 | Route | Body or query | Answer |
 |---|---|---|
 | `GET /api/game/round` | `?player=<token>` | `{day, number, images, answers, done, score, ms, name, rank}`. `answers` has the truth only for the images this player answered. |
-| `POST /api/game/answer` | `{player, index, guess}`, where `index` is the image on the page (0 to 9) and `guess` is `"real"` or `"ai"` | `{index, real, reveal, crowd, done, score, ms}`. The first answer starts the clock. `409` when `index` is not the next image without an answer, or after ten answers. |
+| `POST /api/game/answer` | `{player, day, index, guess}`, where `day` is the day of the round on the page, `index` is the image on the page (0 to 9) and `guess` is `"real"` or `"ai"` | `{index, real, reveal, crowd, done, score, ms}`. The first answer starts the clock. `409` when `day` is not today, when `index` is not the next image without an answer, or after ten answers. |
 | `POST /api/game/name` | `{player, name}` | `{rank, name}`. Only after the round is done. The name has 1 to 20 characters. A second call changes the name of the same row. |
 | `GET /api/game/leaderboard` | `?day=<YYYY-MM-DD>`, default today | `{day, number, players, average, entries}` with the best 50 as `{name, score, ms}`. |
 

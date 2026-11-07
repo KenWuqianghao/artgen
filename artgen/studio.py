@@ -126,8 +126,15 @@ REENCODE = ["-map_metadata", "-1", "-vf", "setsar=1,sidedata=mode=delete:type=IC
 def _game_key() -> bytes:
     """The secret that names the game images. Keep the file: a new key renames every image and resets the crowd statistics."""
     if not GAME_KEY.exists():
+        GAME_KEY.touch(mode=0o600)
         GAME_KEY.write_text(secrets.token_hex(32), encoding="utf-8")
-    return bytes.fromhex(GAME_KEY.read_text(encoding="utf-8").strip())
+    try:
+        key = bytes.fromhex(GAME_KEY.read_text(encoding="utf-8").strip())
+    except ValueError:
+        key = b""
+    if len(key) != 32:
+        raise SystemExit(f"{GAME_KEY.relative_to(ROOT)} must hold 64 hex characters. Delete it to make a new key.")
+    return key
 
 
 def _game_pool(out: Path) -> dict:
@@ -159,13 +166,17 @@ def _game_pool(out: Path) -> dict:
         src = manifest.parent / f"{e['id']}.jpg"
         if not src.exists():
             raise SystemExit(f"game/real/manifest.json: no image {src.relative_to(ROOT)}")
+        if b"ICC_PROFILE" in src.read_bytes():
+            raise SystemExit(f"{src.relative_to(ROOT)} has a colour profile. Convert it to plain sRGB: jpgicc -q95 {src.name} out.jpg")
         pool["real"].append({"img": publish("real", e["id"], src), "reveal": {k: e[k] for k in REAL_FIELDS}})
     forms = {a["id"]: a for a in corpus.archetypes()}
     for e in lib["entries"]:
         a = forms[e["archetype"]]
         pool["ai"].append({"img": publish("ai", e["id"], ROOT / e["file"]), "reveal": {"form": a["form"], "basis": a["basis"]}})
     with ThreadPoolExecutor() as ex:
-        list(ex.map(lambda cmd: subprocess.run(cmd, check=True), jobs))
+        failed = [cmd[6] for cmd, res in zip(jobs, ex.map(lambda cmd: subprocess.run(cmd, capture_output=True), jobs)) if res.returncode]
+    if failed:
+        raise SystemExit(f"ffmpeg could not encode {len(failed)} game images, for example {failed[0]}. The game needs ffmpeg 7 or later.")
     return pool
 
 

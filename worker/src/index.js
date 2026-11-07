@@ -7,7 +7,7 @@
 // It also runs the daily guessing game "Real or artgen?" (rules in game.js):
 //
 //   GET  /api/game/round?player=       today's ten images and this player's answers so far
-//   POST /api/game/answer              {player, guess} -> the truth about the next unanswered image
+//   POST /api/game/answer              {player, day, index, guess} -> the truth about the image at index
 //   POST /api/game/name                {player, name} -> a row on today's leaderboard
 //   GET  /api/game/leaderboard?day=    the top 50 of a day
 //
@@ -243,6 +243,7 @@ const GAME = {
     if (!isPlayer(body.player)) return json({ error: "Bad player token." }, 400);
     if (!isGuess(body.guess)) return json({ error: "A guess is \"real\" or \"ai\"." }, 400);
     if (!Number.isInteger(body.index)) return json({ error: "Bad image index." }, 400);
+    if (body.day !== day) return json({ error: "A new round began." }, 409);
     const items = round.items.map((i) => ({ img: i.img, real: i.real }));
     const res = await store.gameAnswer(day, body.player, body.index, body.guess, items);
     if (res.refused === "moved") return json({ error: "This round moved on in another tab." }, 409);
@@ -270,7 +271,7 @@ const GAME = {
     return json({
       day, number: roundNumber(day), players: sum.players,
       average: sum.players ? Math.round((10 * sum.scoreSum) / sum.players) / 10 : null,
-      entries: board.map((e) => ({ name: e.name, score: e.score, ms: e.ms })),
+      entries: board.slice(0, BOARD_SIZE).map((e) => ({ name: e.name, score: e.score, ms: e.ms })),
     });
   },
 };

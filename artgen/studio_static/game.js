@@ -194,7 +194,7 @@
   function answer(guess) {
     if (state !== "playing") return;
     show("answering");
-    call("POST", "answer", { player: token, index: round.answers.length, guess: guess }).then(function (res) {
+    call("POST", "answer", { player: token, day: round.day, index: round.answers.length, guess: guess }).then(function (res) {
       // 409: the server already has this answer (a retry, another tab) or a new day began. Start from what the server has.
       if (res.status === 409) return open();
       if (res.status !== 200) return show("playing", res.data.error);
