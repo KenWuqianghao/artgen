@@ -89,7 +89,7 @@ The game shows one photograph of an installation at a time. You answer **Real** 
 
 ### Play it on your computer
 
-The game needs the Worker, because the Worker keeps the answers. First add real photographs (see below). Then run:
+The game needs the Worker, because the Worker keeps the answers. Run:
 
 ```bash
 npm run studio:dev
@@ -99,7 +99,7 @@ Open the address that Wrangler prints and add `/game.html`. Under `python3 -m ar
 
 ### Add real photographs
 
-The AI images come from the image library. The real photographs come from `game/real/`.
+The AI images come from the image library. The real photographs come from `game/real/`. It holds 109 press photographs of real installations. `game/real/sources.tsv` records the image address and the page of each one.
 
 1. Save each photograph as `game/real/<id>.jpg`, 1280 × 853 pixels, the same size as the library images.
 2. Add one entry for each photograph to `game/real/manifest.json`, as in the example below.

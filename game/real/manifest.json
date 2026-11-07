@@ -1,1 +1,985 @@
-{"entries":[]}
+{
+ "entries": [
+  {
+   "id": "press-0001",
+   "artist": "Amol K Patil",
+   "title": "BURNING SPEECHES",
+   "year": "2025",
+   "venue": "13th Berlin Biennale, Sophiensæle, Berlin",
+   "credit": "© Amol K Patil; image: Eberle & Eisfeld",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "id": "press-0002",
+   "artist": "Zamthingla Ruivah Shimray",
+   "title": "Luingamla Kashan",
+   "year": "1990 and 2025",
+   "venue": "13th Berlin Biennale, Hamburger Bahnhof – Nationalgalerie der Gegenwart, Berlin",
+   "credit": "© Zamthingla Ruivah Shimray; image: Aristidis Schnelzer",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "id": "press-0003",
+   "artist": "Iris Yingzen",
+   "title": "Garden of Hope",
+   "year": "2025",
+   "venue": "13th Berlin Biennale, KW Institute for Contemporary Art, Berlin",
+   "credit": "© Iris Yingzen; image: Eike Walkenhorst",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "id": "press-0004",
+   "artist": "Kikí Roca, Las Chicas del Chancho y el Corpiño",
+   "title": "El Corpiño [The Bra]",
+   "year": "1995/2025",
+   "venue": "13th Berlin Biennale, KW Institute for Contemporary Art, Berlin",
+   "credit": "© Kikí Roca, Las Chicas del Chancho y el Corpiño; image: Marvin Systermans",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "id": "press-0005",
+   "artist": "Milica Tomić",
+   "title": "Is There Anything in This World You Would Be Ready to Give Your Life For?",
+   "year": "2025",
+   "venue": "13th Berlin Biennale, Former Courthouse Lehrter Straße, Berlin",
+   "credit": "© Milica Tomić; Charim Galerie, Vienna; Grupa Spomenik Archive, Vienna; Marija Milutinović Archive; image: Eberle & Eisfeld",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "id": "press-0006",
+   "artist": "Memory Biwa",
+   "title": "Ouma’s !Hàna̋s: Of Wor(l)ds Turned to Dust. Prossession Peda’Gogo and Yvette Abrahams Reading Cycle",
+   "year": "2025",
+   "venue": "13th Berlin Biennale, Former Courthouse Lehrter Straße, Berlin",
+   "credit": "© Memory Biwa; image: Marvin Systermans",
+   "source": "https://artviewer.org/13th-berlin-biennale-passing-the-fugitive-on/"
+  },
+  {
+   "id": "press-0007",
+   "artist": "Taring Padi",
+   "title": "Bara Solidaritas: Sekarang Mereka, Besok Kita / The Flame of Solidarity: First they came for them, then they came for us",
+   "year": "2022",
+   "venue": "documenta fifteen, Hallenbad Ost, Kassel",
+   "credit": "photo: Frank Sperling",
+   "source": "https://artviewer.org/documenta-15-hallenbad-ost/"
+  },
+  {
+   "id": "press-0008",
+   "artist": "Taring Padi",
+   "title": "Sekarang Mereka, Besok Kita (Today they’ve come for them, tomorrow they come for us)",
+   "year": "2021",
+   "venue": "documenta fifteen, Hallenbad Ost, Kassel",
+   "credit": "photo: Frank Sperling",
+   "source": "https://artviewer.org/documenta-15-hallenbad-ost/"
+  },
+  {
+   "id": "press-0009",
+   "artist": "Yaya Coulibaly (Fondation Festival sur le Niger)",
+   "title": "The Wall of Puppets",
+   "year": "2022",
+   "venue": "documenta fifteen, Hübner areal, Kassel",
+   "credit": "",
+   "source": "https://artviewer.org/documenta-15-hubner-areal/"
+  },
+  {
+   "id": "press-0010",
+   "artist": "Jatiwangi art Factory",
+   "title": "Terracotta Embassy",
+   "year": "2021–ongoing",
+   "venue": "documenta fifteen, Hübner-Areal, Kassel",
+   "credit": "photo: Frank Sperling",
+   "source": "https://artviewer.org/documenta-15-hubner-areal/"
+  },
+  {
+   "id": "press-0011",
+   "artist": "MADEYOULOOK",
+   "title": "Mafolofolo",
+   "year": "2022",
+   "venue": "documenta fifteen, Hotel Hessenland, Kassel",
+   "credit": "photo: Frank Sperling",
+   "source": "https://artviewer.org/documenta-15-stadtmuseum-kassel/"
+  },
+  {
+   "id": "press-0012",
+   "artist": "ikkibawiKrrr",
+   "title": "Building a fire, Changing clothes, Sharing small talk",
+   "year": "2022",
+   "venue": "documenta fifteen, Ottoneum, Kassel",
+   "credit": "photo: Nicolas Wefers",
+   "source": "https://artviewer.org/documenta-15-naturkundemuseum-im-ottoneum/"
+  },
+  {
+   "id": "press-0013",
+   "artist": "The Black Archives",
+   "title": "Black Pasts & Presents: Interwoven Histories of Solidarity",
+   "year": "2022",
+   "venue": "documenta fifteen, Fridericianum, Kassel",
+   "credit": "photo: Frank Sperling",
+   "source": "https://artviewer.org/documenta-15-fridericianum/"
+  },
+  {
+   "id": "press-0014",
+   "artist": "Eddie Rodolfo Aparicio",
+   "title": "Paloma Blanca Deja Volar/White Dove Let Us Fly",
+   "year": "2024",
+   "venue": "Whitney Biennial 2024: Even Better Than the Real Thing, Whitney Museum of American Art, New York",
+   "credit": "Photograph by Nora Gomez-Strauss",
+   "source": "https://artviewer.org/whitney-biennial-2024-even-better-than-the-real-thing-at-whitney-museum-of-american-art/"
+  },
+  {
+   "id": "press-0015",
+   "artist": "Demian DinéYazhi´",
+   "title": "we must stop imaging apocalypse / genocide + we must imagine liberation",
+   "year": "2024",
+   "venue": "Whitney Biennial 2024: Even Better Than the Real Thing, Whitney Museum of American Art, New York",
+   "credit": "Photograph by Nora Gomez-Strauss",
+   "source": "https://artviewer.org/whitney-biennial-2024-even-better-than-the-real-thing-at-whitney-museum-of-american-art/"
+  },
+  {
+   "id": "press-0016",
+   "artist": "Diane Severin Nguyen",
+   "title": "In Her Time (Iris’s Version)",
+   "year": "2023–24",
+   "venue": "Whitney Biennial 2024: Even Better Than the Real Thing, Whitney Museum of American Art, New York",
+   "credit": "Photograph by Audrey Wang",
+   "source": "https://artviewer.org/whitney-biennial-2024-even-better-than-the-real-thing-at-whitney-museum-of-american-art/"
+  },
+  {
+   "id": "press-0017",
+   "artist": "Mire Lee",
+   "title": "Black Sun",
+   "year": "2023",
+   "venue": "New Museum, New York",
+   "credit": "Courtesy New Museum. Photo: Dario Lasagni",
+   "source": "https://artviewer.org/mire-lee-at-new-museum/"
+  },
+  {
+   "id": "press-0018",
+   "artist": "Anu Põder",
+   "title": "Anu Põder: Space for My Body",
+   "year": "2024",
+   "venue": "Muzeum Susch, Susch",
+   "credit": "photo: ©Federico Sette",
+   "source": "https://artviewer.org/anu-poder-at-muzeum-susch/"
+  },
+  {
+   "id": "press-0019",
+   "artist": "Mariana Castillo Deball",
+   "title": "Stringing Beads",
+   "year": "2025",
+   "venue": "Dortmunder Kunstverein, Dortmund",
+   "credit": "Photo: Jens Franke. Courtesy the artist",
+   "source": "https://artviewer.org/mariana-castillo-deball-at-dortmunder-kunstverein/"
+  },
+  {
+   "id": "press-0020",
+   "artist": "Teresa Solar Abboud",
+   "title": "Tunnel Boring Machine (Transformation Figure)",
+   "year": "2024",
+   "venue": "Kunstverein Hannover",
+   "credit": "Photo: Mathias Völzke",
+   "source": "https://artviewer.org/teresa-solar-abboud-at-kunstverein-hannover/"
+  },
+  {
+   "id": "press-0021",
+   "artist": "Dala Nasser",
+   "title": "Red in Tooth",
+   "year": "2022",
+   "venue": "Kölnischer Kunstverein, Cologne",
+   "credit": "Courtesy: the artist and Deborah Schamoni. Photo: Mareike Tocha",
+   "source": "https://artviewer.org/dala-nasser-at-kolnischer-kunstverein/"
+  },
+  {
+   "id": "press-0022",
+   "artist": "Daniel Lie",
+   "title": "Unnamed Entities",
+   "year": "2022",
+   "venue": "New Museum, New York",
+   "credit": "Photo: Dario Lasagni",
+   "source": "https://artviewer.org/daniel-lie-at-new-museum/"
+  },
+  {
+   "id": "press-0023",
+   "artist": "Henrike Naumann",
+   "title": "Westalgie",
+   "year": "2022",
+   "venue": "CAC – la synagogue de Delme",
+   "credit": "Photo: OH Dancy",
+   "source": "https://artviewer.org/henrike-naumann-at-centre-dart-contemporain-la-synagogue-de-delme/"
+  },
+  {
+   "id": "press-0024",
+   "artist": "Henrike Naumann",
+   "title": "Re-Education",
+   "year": "2022",
+   "venue": "SculptureCenter, New York",
+   "credit": "Courtesy the artist. Photo: Charles Benton",
+   "source": "https://artviewer.org/henrike-naumann-at-sculpturecenter/"
+  },
+  {
+   "id": "press-0025",
+   "artist": "Lydia Ourahmane",
+   "title": "Barzakh",
+   "year": "2021",
+   "venue": "Kunsthalle Basel",
+   "credit": "Photo: Philipp Hänger / Kunsthalle Basel",
+   "source": "https://artviewer.org/lydia-ourahmane-at-kunsthalle-basel/"
+  },
+  {
+   "id": "press-0026",
+   "artist": "Otobong Nkanga",
+   "title": "To Dig a Hole That Collapses Again",
+   "year": "2018",
+   "venue": "MCA Chicago",
+   "credit": "Photo: Nathan Keay, © MCA Chicago",
+   "source": "https://artviewer.org/otobong-nkanga-at-museum-of-contemporary-art-chicago/"
+  },
+  {
+   "id": "press-0027",
+   "artist": "Otobong Nkanga",
+   "title": "Taste of a Stone",
+   "year": "2016",
+   "venue": "Nottingham Contemporary",
+   "credit": "Photo by Stuart Whipps",
+   "source": "https://artviewer.org/otobong-nkanga-at-nottingham-contemporary/"
+  },
+  {
+   "id": "press-0028",
+   "artist": "Alia Farid",
+   "title": "Elsewhere",
+   "year": "2024",
+   "venue": "Passerelle Centre d’art contemporain, Brest",
+   "credit": "© Aurélien Mole / all images copyright and courtesy of the artist and Passerelle Centre d’art contemporain",
+   "source": "https://artviewer.org/alia-farid-at-passerelle-centre-dart-contemporain/"
+  },
+  {
+   "id": "press-0029",
+   "artist": "Cauleen Smith",
+   "title": "Space Station: Charmed and Strange; Sojourner",
+   "year": "2019; 2018",
+   "venue": "Cauleen Smith: Mutualities, Whitney Museum of American Art, New York",
+   "credit": "Photograph by Ron Amstutz",
+   "source": "https://artviewer.org/cauleen-smith-at-whitney-museum-of-american-art/"
+  },
+  {
+   "id": "press-0030",
+   "artist": "Simone Fattal",
+   "title": "The Manifestations of the Voyage",
+   "year": "2023",
+   "venue": "Portikus, Frankfurt am Main",
+   "credit": "Photography by Wolfgang Günzel",
+   "source": "https://artviewer.org/simone-fattal-at-portikus/"
+  },
+  {
+   "id": "press-0031",
+   "artist": "Rirkrit Tiravanija",
+   "title": "untitled 1990 (pad thai)",
+   "year": "1990",
+   "venue": "Rirkrit Tiravanija: A LOT OF PEOPLE, MoMA PS1, New York",
+   "credit": "Image courtesy MoMA PS1. Photo: Kyle Knodell",
+   "source": "https://artviewer.org/rirkrit-tiravanija-at-moma-ps1/"
+  },
+  {
+   "id": "press-0032",
+   "artist": "Pakui Hardware",
+   "title": "Virtual Care",
+   "year": "2021",
+   "venue": "BALTIC Centre for Contemporary Art, Gateshead",
+   "credit": "Rob Harris / all images copyright and courtesy of the artists and BALTIC Centre for Contemporary Art",
+   "source": "https://artviewer.org/pakui-hardware-at-baltic-centre-for-contemporary-art/"
+  },
+  {
+   "id": "press-0033",
+   "artist": "Cosima von Bonin",
+   "title": "Songs for Gay Dogs",
+   "year": "2024",
+   "venue": "Mudam Luxembourg",
+   "credit": "Photo: Mareike Tocha © Mudam Luxembourg",
+   "source": "https://artviewer.org/cosima-von-bonin-at-mudam-luxembourg/"
+  },
+  {
+   "id": "press-0034",
+   "artist": "Kahlil Robert Irving",
+   "title": "Projects: Kahlil Robert Irving",
+   "year": "2021",
+   "venue": "The Museum of Modern Art, New York",
+   "credit": "Photo: David Almeida",
+   "source": "https://artviewer.org/kahlil-robert-irving-at-moma/"
+  },
+  {
+   "id": "press-0035",
+   "artist": "Nairy Baghramian",
+   "title": "Privileged Points",
+   "year": "2019",
+   "venue": "Mudam Luxembourg",
+   "credit": "© Photo: Rémi Villaggi | Mudam Luxembourg",
+   "source": "https://artviewer.org/nairy-baghramian-at-mudam-luxembourg/"
+  },
+  {
+   "id": "press-0036",
+   "artist": "Camille Henrot",
+   "title": "Days are Dogs",
+   "year": "2017",
+   "venue": "Palais de Tokyo, Paris",
+   "credit": "Courtesy of the artist and kamel mennour (Paris/London); König Galerie (Berlin); Metro Pictures (New York) © ADAGP, Paris 2017, Photo: Aurélien Mole",
+   "source": "https://artviewer.org/camille-henrot-at-palais-de-tokyo/"
+  },
+  {
+   "id": "press-0037",
+   "artist": "mountaincutters",
+   "title": "Morphologies souterraines",
+   "year": "2023",
+   "venue": "Palais de Tokyo, Paris",
+   "credit": "Photo: Aurélien Mole",
+   "source": "https://artviewer.org/mountaincutters-at-palais-de-tokyo/"
+  },
+  {
+   "id": "press-0038",
+   "artist": "Isabelle Andriessen",
+   "title": "Bunk Beaks",
+   "year": "2021",
+   "venue": "De Pont Museum, Tilburg",
+   "credit": "Photo credit: Aurélien Mole",
+   "source": "https://artviewer.org/isabelle-andriessen-at-de-pont-museum/"
+  },
+  {
+   "id": "press-0039",
+   "artist": "Neïl Beloufa",
+   "title": "The Enemy of my Enemy (L’Ennemi de mon Ennemi)",
+   "year": "2018",
+   "venue": "Palais de Tokyo, Paris",
+   "credit": "all images copyright and courtesy of the artist, © Palais de Tokyo and the respective copyright holders",
+   "source": "https://artviewer.org/neil-beloufa-at-palais-de-tokyo/"
+  },
+  {
+   "id": "press-0040",
+   "artist": "Matt Mullican",
+   "title": "The Feeling of Things",
+   "year": "2018",
+   "venue": "Pirelli HangarBicocca, Milan",
+   "credit": "Courtesy of the artist and Pirelli HangarBicocca, Milan. Photo: Agostino Osio",
+   "source": "https://artviewer.org/matt-mullican-at-pirelli-hangarbicocca/"
+  },
+  {
+   "id": "press-0041",
+   "artist": "Mark Leckey",
+   "title": "Sound Systems series",
+   "year": "2001-2012",
+   "venue": "Mark Leckey: Containers and Their Drivers, MoMA PS1, New York",
+   "credit": "Photograph by Pablo Enriquez, Courtesy the artist and MoMA PS1",
+   "source": "https://artviewer.org/mark-leckey-at-moma-ps1/"
+  },
+  {
+   "id": "press-0042",
+   "artist": "Mire Lee",
+   "title": "The Heart of My Machine is Golden Lead",
+   "year": "2026",
+   "venue": "Secession, Vienna",
+   "credit": "photo: ©Iris Ranzinger",
+   "source": "https://artviewer.org/mire-lee-at-secession-vienna/"
+  },
+  {
+   "id": "press-0043",
+   "artist": "Arthur Jafa",
+   "title": "Big Wheel",
+   "year": "2018",
+   "venue": "58th Venice Biennale, “May You Live in Interesting Times”",
+   "credit": "Image courtesy of the Venice Biennale. Photo by Andrea Avezzù.",
+   "source": "https://www.e-flux.com/criticism/268675/58th-venice-biennale-may-you-live-in-interesting-times"
+  },
+  {
+   "id": "press-0044",
+   "artist": "Teresa Margolles",
+   "title": "Muro Ciudad Juarez",
+   "year": "2010",
+   "venue": "58th Venice Biennale, “May You Live in Interesting Times”",
+   "credit": "Image courtesy of the artist and the Venice Biennale. Photo by Francesco Galli.",
+   "source": "https://www.e-flux.com/criticism/268675/58th-venice-biennale-may-you-live-in-interesting-times"
+  },
+  {
+   "id": "press-0045",
+   "artist": "Güneş Terkol and Güçlü Öztekin",
+   "title": "Worlbmon",
+   "year": "2019",
+   "venue": "16th Istanbul Biennial, “The Seventh Continent”",
+   "credit": "Image courtesy of the artists. Photo by Sahir Ugur Eren.",
+   "source": "https://www.e-flux.com/criticism/287386/16th-istanbul-biennial-the-seventh-continent"
+  },
+  {
+   "id": "press-0046",
+   "artist": "Minouk Lim",
+   "title": "Si tu me vois, je ne te vois pas [If you see me, I don’t see you]",
+   "year": "2019",
+   "venue": "15th Biennale de Lyon, “Where Water Comes Together with Other Water”",
+   "credit": "Photo © Blaise Adilon.",
+   "source": "https://www.e-flux.com/criticism/291879/15th-biennale-de-lyon-where-water-comes-together-with-other-water"
+  },
+  {
+   "id": "press-0047",
+   "artist": "Sam Keogh",
+   "title": "Knotworm",
+   "year": "2019",
+   "venue": "15th Biennale de Lyon, “Where Water Comes Together with Other Water”",
+   "credit": "Image courtesy of the artist and Kerlin Gallery, Dublin. Photo © Blaise Adilon.",
+   "source": "https://www.e-flux.com/criticism/291879/15th-biennale-de-lyon-where-water-comes-together-with-other-water"
+  },
+  {
+   "id": "press-0048",
+   "artist": "Kunmanara Mumu Mike Williams",
+   "title": "Kulilaya munu nintiriwa (Listen and learn)",
+   "year": "2020",
+   "venue": "22nd Biennale of Sydney, “Nirin”",
+   "credit": "Image courtesy of Mimili Maku Arts. Photo by Zan Wimberley.",
+   "source": "https://www.e-flux.com/criticism/328963/22nd-biennale-of-sydney-nirin"
+  },
+  {
+   "id": "press-0049",
+   "artist": "Diego Bianchi",
+   "title": "Inflation",
+   "year": "2021",
+   "venue": "Liverpool Biennial 2021, Lewis's Building",
+   "credit": "Photo by Rob Battersby.",
+   "source": "https://www.e-flux.com/criticism/398684/liverpool-biennial-the-stomach-the-port"
+  },
+  {
+   "id": "press-0050",
+   "artist": "Arjan Martins",
+   "title": "Atlantic Complex (Rope)",
+   "year": "2021",
+   "venue": "34th Bienal de São Paulo, “Though it’s dark, still I sing”",
+   "credit": "Image courtesy of the artist and the Bienal de São Paulo.",
+   "source": "https://www.e-flux.com/criticism/417989/34th-bienal-de-s-o-paulo-though-it-s-dark-still-i-sing"
+  },
+  {
+   "id": "press-0051",
+   "artist": "Nadia Belerique",
+   "title": "HOLDINGS",
+   "year": "2020–ongoing",
+   "venue": "New Museum Triennial, “Soft Water Hard Stone”, New Museum, New York",
+   "credit": "Image courtesy of the artist and Daniel Faria Gallery, Toronto. Photo by Dario Lasagni.",
+   "source": "https://www.e-flux.com/criticism/432432/new-museum-triennial-soft-water-hard-stone"
+  },
+  {
+   "id": "press-0052",
+   "artist": "Bronwyn Katz",
+   "title": "Xãe",
+   "year": "2021",
+   "venue": "New Museum Triennial, “Soft Water Hard Stone”, New Museum, New York",
+   "credit": "Image courtesy of the artist and Blank Projects, Cape Town. Photo by Dario Lasagni.",
+   "source": "https://www.e-flux.com/criticism/432432/new-museum-triennial-soft-water-hard-stone"
+  },
+  {
+   "id": "press-0053",
+   "artist": "Máret Ánne Sara",
+   "title": "Gutted – Gávogálši; Ale suova sielu sáiget [Ale protects the soul]",
+   "year": "2022",
+   "venue": "The Sámi Pavilion, Venice Biennale, 2022",
+   "credit": "Image courtesy of the artist. Photo by Michael Miller / OCA.",
+   "source": "https://www.e-flux.com/criticism/464368/59th-venice-biennale-the-national-pavilions"
+  },
+  {
+   "id": "press-0054",
+   "artist": "Małgorzata Mirga-Tas",
+   "title": "Re-enchanting the World",
+   "year": "2022",
+   "venue": "Polish Pavilion, Venice Biennale, 2022",
+   "credit": "Images courtesy of Zachęta — National Gallery of Art, Warsaw. Photo by Daniel Rumiancew.",
+   "source": "https://www.e-flux.com/criticism/464368/59th-venice-biennale-the-national-pavilions"
+  },
+  {
+   "id": "press-0055",
+   "artist": "Delcy Morelos",
+   "title": "Earthly Paradise",
+   "year": "2022",
+   "venue": "59th Venice Biennale, “The Milk of Dreams”",
+   "credit": "Image courtesy of the Venice Biennale. Photo by Roberto Marossi.",
+   "source": "https://www.e-flux.com/criticism/464772/59th-venice-biennale-the-milk-of-dreams"
+  },
+  {
+   "id": "press-0056",
+   "artist": "Dala Nasser",
+   "title": "Tomb of King Hiram",
+   "year": "2022",
+   "venue": "58th Carnegie International, “Is it morning for you yet?”, Carnegie Museum of Art, Pittsburgh",
+   "credit": "Image courtesy of Carnegie Museum of Art, Pittsburgh. Photo by Sean Eaton.",
+   "source": "https://www.e-flux.com/criticism/496077/58th-carnegie-international-is-it-morning-for-you-yet"
+  },
+  {
+   "id": "press-0057",
+   "artist": "Patricia Belli",
+   "title": "Stories from my dead",
+   "year": "2022",
+   "venue": "58th Carnegie International, “Is it morning for you yet?”, Carnegie Museum of Art, Pittsburgh",
+   "credit": "Image courtesy of Carnegie Museum of Art, Pittsburgh. Photo by Sean Eaton.",
+   "source": "https://www.e-flux.com/criticism/496077/58th-carnegie-international-is-it-morning-for-you-yet"
+  },
+  {
+   "id": "press-0058",
+   "artist": "Pinaree Sanpitak",
+   "title": "Temporary Insanity",
+   "year": "2004",
+   "venue": "Bangkok Art Biennale 2022, “CHAOS : CALM”",
+   "credit": "",
+   "source": "https://www.e-flux.com/criticism/508133/bangkok-art-biennale-2022-chaos-calm"
+  },
+  {
+   "id": "press-0059",
+   "artist": "Doris Salcedo",
+   "title": "Uprooted",
+   "year": "2020–22",
+   "venue": "Sharjah Biennial 15, “Thinking Historically in the Present”",
+   "credit": "Image courtesy of the artist. Photo by Juan Castro.",
+   "source": "https://www.e-flux.com/criticism/520296/sharjah-biennial-15-thinking-historically-in-the-present"
+  },
+  {
+   "id": "press-0060",
+   "artist": "Hajra Waheed",
+   "title": "Hum II",
+   "year": "2023",
+   "venue": "Sharjah Biennial 15, “Thinking Historically in the Present”",
+   "credit": "Image courtesy of Sharjah Art Foundation. Photo by Shanavas Jamaluddin.",
+   "source": "https://www.e-flux.com/criticism/520296/sharjah-biennial-15-thinking-historically-in-the-present"
+  },
+  {
+   "id": "press-0061",
+   "artist": "Zohra Opoku",
+   "title": "The Myth of Eternal Life",
+   "year": "2020–22",
+   "venue": "Sharjah Biennial 15, “Thinking Historically in the Present”",
+   "credit": "Image courtesy of Sharjah Art Foundation. Photo by Danko Stjepanovic.",
+   "source": "https://www.e-flux.com/criticism/520296/sharjah-biennial-15-thinking-historically-in-the-present"
+  },
+  {
+   "id": "press-0062",
+   "artist": "Yuko Mohri",
+   "title": "I/O",
+   "year": "2011–2023",
+   "venue": "14th Gwangju Biennale",
+   "credit": "Image courtesy of the artist and Gwangju Biennale Foundation. Photo by glimworkers.",
+   "source": "https://www.e-flux.com/criticism/539242/14th-gwangju-biennale-soft-and-weak-like-water"
+  },
+  {
+   "id": "press-0063",
+   "artist": "Mataaho Collective",
+   "title": "Tuakirikiri",
+   "year": "2023",
+   "venue": "14th Gwangju Biennale",
+   "credit": "Image courtesy of Mataaho Collective and Gwangju Biennale Foundation. Photo by glimworkers.",
+   "source": "https://www.e-flux.com/criticism/539242/14th-gwangju-biennale-soft-and-weak-like-water"
+  },
+  {
+   "id": "press-0064",
+   "artist": "Seung-taek Lee",
+   "title": "Untitled (You Can Make Anything with It)",
+   "year": "1967–70/2001/2023",
+   "venue": "14th Gwangju Biennale",
+   "credit": "Image courtesy of the artist and Gwangju Biennale Foundation. Photo by glimworkers.",
+   "source": "https://www.e-flux.com/criticism/539242/14th-gwangju-biennale-soft-and-weak-like-water"
+  },
+  {
+   "id": "press-0065",
+   "artist": "Pangrok Sulap",
+   "title": "Gwangju Blooming",
+   "year": "2023",
+   "venue": "14th Gwangju Biennale",
+   "credit": "Image courtesy of the artist and Gwangju Biennale Foundation. Photo by glimworkers.",
+   "source": "https://www.e-flux.com/criticism/539242/14th-gwangju-biennale-soft-and-weak-like-water"
+  },
+  {
+   "id": "press-0066",
+   "artist": "Edgar Calel",
+   "title": "Ru k’ox k’ob’el jun ojer etemab’el [The Echo of an Ancient Form of Knowledge]",
+   "year": "2021",
+   "venue": "Liverpool Biennial 2023",
+   "credit": "Image courtesy of Liverpool Biennial. Photo by Mark McNulty.",
+   "source": "https://www.e-flux.com/criticism/559512/liverpool-biennial-umoya-the-sacred-return-of-lost-things"
+  },
+  {
+   "id": "press-0067",
+   "artist": "Binta Diaw",
+   "title": "Chorus of Soil",
+   "year": "2023",
+   "venue": "Liverpool Biennial 2023",
+   "credit": "Image courtesy of Liverpool Biennial. Photo by Mark McNulty.",
+   "source": "https://www.e-flux.com/criticism/559512/liverpool-biennial-umoya-the-sacred-return-of-lost-things"
+  },
+  {
+   "id": "press-0068",
+   "artist": "Ibrahim Mahama",
+   "title": "Parliament of Ghosts",
+   "year": "2019",
+   "venue": "35th Bienal de São Paulo, “choreographies of the impossible”",
+   "credit": "© Fundação Bienal de São Paulo. Photo by Levi Fanan.",
+   "source": "https://www.e-flux.com/criticism/560931/35th-bienal-de-s-o-paulo-choreographies-of-the-impossible"
+  },
+  {
+   "id": "press-0069",
+   "artist": "Kidlat Tahimik",
+   "title": "Killing us Softly… with their SPAMS… (Songs, Prayers, Alphabets, Myths, Superheroes…)",
+   "year": "2023",
+   "venue": "35th Bienal de São Paulo, “choreographies of the impossible”",
+   "credit": "© Fundação Bienal de São Paulo. Photo by Levi Fanan.",
+   "source": "https://www.e-flux.com/criticism/560931/35th-bienal-de-s-o-paulo-choreographies-of-the-impossible"
+  },
+  {
+   "id": "press-0070",
+   "artist": "M'barek Bouhchichi",
+   "title": "Nous sommes ce qui vous ne voulez pas voi",
+   "year": "2023",
+   "venue": "35th Bienal de São Paulo, “choreographies of the impossible”",
+   "credit": "© Fundação Bienal de São Paulo. Photo by Levi Fanan.",
+   "source": "https://www.e-flux.com/criticism/560931/35th-bienal-de-s-o-paulo-choreographies-of-the-impossible"
+  },
+  {
+   "id": "press-0071",
+   "artist": "Torkwase Dyson",
+   "title": "Blackbasebeingbeyond",
+   "year": "2023",
+   "venue": "35th Bienal de São Paulo, “choreographies of the impossible”",
+   "credit": "© Fundação Bienal de São Paulo. Photo by Levi Fanan.",
+   "source": "https://www.e-flux.com/criticism/560931/35th-bienal-de-s-o-paulo-choreographies-of-the-impossible"
+  },
+  {
+   "id": "press-0072",
+   "artist": "Rubem Valentim",
+   "title": "Templo de Oxalá [Oxalá Temple]",
+   "year": "1977",
+   "venue": "35th Bienal de São Paulo, “choreographies of the impossible”",
+   "credit": "© Fundação Bienal de São Paulo. Photo by Levi Fanan.",
+   "source": "https://www.e-flux.com/criticism/560931/35th-bienal-de-s-o-paulo-choreographies-of-the-impossible"
+  },
+  {
+   "id": "press-0073",
+   "artist": "Bouchra Khalili",
+   "title": "The Mapping Journey Project",
+   "year": "2008–11",
+   "venue": "60th Venice Biennale, “Foreigners Everywhere”",
+   "credit": "Courtesy of La Biennale di Venezia. Photo by Marco Zorzanello.",
+   "source": "https://www.e-flux.com/criticism/603719/60th-venice-biennale-foreigners-everywhere"
+  },
+  {
+   "id": "press-0074",
+   "artist": "Dana Awartani",
+   "title": "Come, let me heal your wounds. Let me mend your broken bones",
+   "year": "2024",
+   "venue": "60th Venice Biennale, “Foreigners Everywhere”",
+   "credit": "Courtesy of La Biennale di Venezia. Photo by Marco Zorzanello.",
+   "source": "https://www.e-flux.com/criticism/603719/60th-venice-biennale-foreigners-everywhere"
+  },
+  {
+   "id": "press-0075",
+   "artist": "Archie Moore",
+   "title": "kith and kin",
+   "year": "2024",
+   "venue": "Australian Pavilion, 60th Venice Biennale",
+   "credit": "Image courtesy of La Biennale di Venezia. Photo by Matteo de Mayda.",
+   "source": "https://www.e-flux.com/criticism/607413/60th-venice-biennale-national-pavilions"
+  },
+  {
+   "id": "press-0076",
+   "artist": "Mounira Al Solh",
+   "title": "A Dance with her Myth",
+   "year": "2024",
+   "venue": "Lebanese Pavilion, 60th Venice Biennale",
+   "credit": "Image courtesy of La Biennale di Venezia. Photo by Andrea Avezzù.",
+   "source": "https://www.e-flux.com/criticism/607413/60th-venice-biennale-national-pavilions"
+  },
+  {
+   "id": "press-0077",
+   "artist": "Abdullah Al Saadi",
+   "title": "Sites of Memory, Sites of Amnesia",
+   "year": "2024",
+   "venue": "UAE Pavilion, 60th Venice Biennale",
+   "credit": "Image courtesy of La Biennale di Venezia. Photo by Andrea Avezzù.",
+   "source": "https://www.e-flux.com/criticism/607413/60th-venice-biennale-national-pavilions"
+  },
+  {
+   "id": "press-0078",
+   "artist": "The Aumoana Group",
+   "title": "Aumoana",
+   "year": "2023–24",
+   "venue": "24th Biennale of Sydney, “Ten Thousand Suns”",
+   "credit": "Courtesy the artists. © Nikau Hindin, Eboni Fifita-Laufilitoga-Maka Fungamapitoa, Hina Puamohala Kneubuhl Kihalaupoe, Hinatea Colombani, Kesaia Biuvanua, Rongomai Grbic-Hoskins. Photo by Document Photography.",
+   "source": "https://www.e-flux.com/criticism/608279/24th-biennale-of-sydney-ten-thousand-suns"
+  },
+  {
+   "id": "press-0079",
+   "artist": "Asad Raza",
+   "title": "Prehension",
+   "year": "2024",
+   "venue": "Manifesta 15 Barcelona Metropolitana",
+   "credit": "© Asad Raza. Image courtesy of Manifesta 15 Barcelona Metropolitana. Photo by Ivan Erofeev.",
+   "source": "https://www.e-flux.com/criticism/628661/manifesta-15"
+  },
+  {
+   "id": "press-0080",
+   "artist": "Martin Toloku",
+   "title": "Immortal Smell",
+   "year": "2024",
+   "venue": "Manifesta 15 Barcelona Metropolitana",
+   "credit": "© Martin Toloku. Image courtesy of Manifesta 15 Barcelona Metropolitana. Photo by Cecília Coca.",
+   "source": "https://www.e-flux.com/criticism/628661/manifesta-15"
+  },
+  {
+   "id": "press-0081",
+   "artist": "Jumana Manna",
+   "title": "Your Time Passes And Mine Has No Ends",
+   "year": "2025",
+   "venue": "Hawaiʻi Triennial 2025, “Aloha Nō”",
+   "credit": "Image courtesy of the artist and Hawaiʻi Contemporary. Photo by Duarte Studios.",
+   "source": "https://www.e-flux.com/criticism/664762/hawai-i-triennial-2025-aloha-n"
+  },
+  {
+   "id": "press-0082",
+   "artist": "Mulyana",
+   "title": "Between Currents and Bloom",
+   "year": "2019–present",
+   "venue": "Aichi Triennale 2025, “A Time Between Ashes and Roses”",
+   "credit": "©︎ Aichi Triennale Organizing Committee.",
+   "source": "https://www.e-flux.com/criticism/6782330/aichi-triennale-2025-a-time-between-ashes-and-roses"
+  },
+  {
+   "id": "press-0083",
+   "artist": "Saijo Akane",
+   "title": "The Pomegranate of Sisyphus",
+   "year": "2025",
+   "venue": "Aichi Triennale 2025, “A Time Between Ashes and Roses”",
+   "credit": "©︎ Aichi Triennale Organizing Committee. Photo by Ito Tetsuo.",
+   "source": "https://www.e-flux.com/criticism/6782330/aichi-triennale-2025-a-time-between-ashes-and-roses"
+  },
+  {
+   "id": "press-0084",
+   "artist": "Eva Jospin",
+   "title": "Ici",
+   "year": "2025",
+   "venue": "14th Taipei Biennial, “Whispers on the Horizon”, Taipei Fine Arts Museum",
+   "credit": "Image courtesy of Taipei Fine Arts Museum. Photo by Lu Guo-Way.",
+   "source": "https://www.e-flux.com/criticism/6782354/14th-taipei-biennial-whispers-on-the-horizon"
+  },
+  {
+   "id": "press-0085",
+   "artist": "Henrike Naumann and Sung Tieu",
+   "title": "Ruin",
+   "year": "2026",
+   "venue": "German Pavilion, 61st Venice Biennale",
+   "credit": "Image courtesy of La Biennale di Venezia. Photo by Andrea Avezzù.",
+   "source": "https://www.e-flux.com/criticism/6782425/61st-venice-biennale-national-pavilions"
+  },
+  {
+   "id": "press-0086",
+   "artist": "Jota Mombaça",
+   "title": "drowning is not a poem, but it's not not a poem either (song of the siren)",
+   "year": "2026",
+   "venue": "Busan Biennale 2026, “Dissident Chorus”",
+   "credit": "© Busan Biennale Organizing Committee. All rights reserved.",
+   "source": "https://www.e-flux.com/criticism/6782475/busan-biennale-2026-dissident-chorus"
+  },
+  {
+   "id": "press-0087",
+   "artist": "Julien Creuzet",
+   "title": "ZUMBI ZUMBI ETERNO",
+   "year": "2023",
+   "venue": "Busan Biennale 2026, “Dissident Chorus”",
+   "credit": "Courtesy of the artist and Mendes Wood DM. © Busan Biennale Organizing Committee. All rights reserved.",
+   "source": "https://www.e-flux.com/criticism/6782475/busan-biennale-2026-dissident-chorus"
+  },
+  {
+   "id": "press-0088",
+   "artist": "Fatima Kaleem Khan",
+   "title": "Spilt Milk",
+   "year": "2026",
+   "venue": "Busan Biennale 2026, “Dissident Chorus”",
+   "credit": "© Busan Biennale Organizing Committee. All rights reserved.",
+   "source": "https://www.e-flux.com/criticism/6782475/busan-biennale-2026-dissident-chorus"
+  },
+  {
+   "id": "press-0089",
+   "artist": "Wangechi Mutu",
+   "title": "The End, Where All began, EdEN",
+   "year": "2026",
+   "venue": "61st Venice Biennale, “In Minor Keys”",
+   "credit": "Courtesy of La Biennale di Venezia. Photo by Andrea Avezzù.",
+   "source": "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys"
+  },
+  {
+   "id": "press-0090",
+   "artist": "Cauleen Smith",
+   "title": "The Wanda Coleman Songbook",
+   "year": "2024",
+   "venue": "61st Venice Biennale, “In Minor Keys”",
+   "credit": "Courtesy of La Biennale di Venezia. Photo by Marco Zorzanello.",
+   "source": "https://www.e-flux.com/criticism/6782422/61st-venice-biennale-in-minor-keys"
+  },
+  {
+   "id": "press-0091",
+   "artist": "Chiara Camoni",
+   "title": "Con te con tutto",
+   "year": "2026",
+   "venue": "Pavilion of Italy, 61st Venice Biennale",
+   "credit": "Image courtesy of La Biennale di Venezia. Photo by Marco Zorzanello.",
+   "source": "https://www.e-flux.com/criticism/6782430/61st-venice-biennale-pavilions-and-satellites"
+  },
+  {
+   "id": "press-0092",
+   "artist": "Jenna Sutela",
+   "title": "Aeolian Suite",
+   "year": "2026",
+   "venue": "Pavilion of Finland, 61st Venice Biennale",
+   "credit": "Image courtesy of La Biennale di Venezia. Photo by Luca Zambelli Bais.",
+   "source": "https://www.e-flux.com/criticism/6782430/61st-venice-biennale-pavilions-and-satellites"
+  },
+  {
+   "id": "press-0093",
+   "artist": "Harrison Pearce",
+   "title": "Valence",
+   "year": "2024",
+   "venue": "15th Gwangju Biennale, “PANSORI: A Soundscape of the 21st Century”",
+   "credit": "Courtesy of the artist. Commissioned by the 15th Gwangju Biennale. Courtesy of the Gwangju Biennale Foundation.",
+   "source": "https://www.e-flux.com/announcements/622585/15th-gwangju-biennale"
+  },
+  {
+   "id": "press-0094",
+   "artist": "Marguerite Humeau",
+   "title": "*stirs",
+   "year": "2024",
+   "venue": "15th Gwangju Biennale, “PANSORI: A Soundscape of the 21st Century”",
+   "credit": "Courtesy of Surface Horizon Ltd. Commissioned by the 15th Gwangju Biennale. Courtesy of the Gwangju Biennale Foundation.",
+   "source": "https://www.e-flux.com/announcements/622585/15th-gwangju-biennale"
+  },
+  {
+   "id": "press-0095",
+   "artist": "Jayi Kim",
+   "title": "Skill of R & R ver. Urban Farmer(re-member)",
+   "year": "2024",
+   "venue": "15th Gwangju Biennale, “PANSORI: A Soundscape of the 21st Century”",
+   "credit": "Courtesy of the artist. Commissioned by the 15th Gwangju Biennale. Courtesy of the Gwangju Biennale Foundation.",
+   "source": "https://www.e-flux.com/announcements/622585/15th-gwangju-biennale"
+  },
+  {
+   "id": "press-0096",
+   "artist": "Sung Tieu",
+   "title": "System's Void",
+   "year": "2024",
+   "venue": "15th Gwangju Biennale, “PANSORI: A Soundscape of the 21st Century”",
+   "credit": "Courtesy of the artist and the 15th Gwangju Biennale. Commissioned by the 15th Gwangju Biennale.",
+   "source": "https://www.e-flux.com/criticism/632242/15th-gwangju-biennale-pansori-a-soundscape-of-the-21st-century"
+  },
+  {
+   "id": "press-0097",
+   "artist": "Goldin+Senneby",
+   "title": "Resin Pond",
+   "year": "2025",
+   "venue": "Flare-Up, MIT List Visual Arts Center, Massachusetts",
+   "credit": "Courtesy of the artists. Photo: Dario Lasagni.",
+   "source": "https://www.e-flux.com/announcements/6787431/16th-gwangju-biennaleyou-must-change-your-life"
+  },
+  {
+   "id": "press-0098",
+   "artist": "Precious Okoyomon",
+   "title": "Sun of Consciousness. God Blow Thru Me – Love Break Me",
+   "year": "2025",
+   "venue": "36th Bienal de São Paulo, “Not All Travellers Walk Roads – Of Humanity as Practice”",
+   "credit": "Image courtesy of Fundação Bienal. Photo by Levi Fanan.",
+   "source": "https://www.e-flux.com/criticism/6782314/36th-bienal-de-s-o-paulo-not-all-travellers-walk-roads-of-humanity-as-practice"
+  },
+  {
+   "id": "press-0099",
+   "artist": "Antonio Társis",
+   "title": "catastrophe orchestra #1 (Act 1)",
+   "year": "2024–25",
+   "venue": "36th Bienal de São Paulo, “Not All Travellers Walk Roads – Of Humanity as Practice”",
+   "credit": "Image courtesy of Fundação Bienal. Photo by Levi Fanan.",
+   "source": "https://www.e-flux.com/criticism/6782314/36th-bienal-de-s-o-paulo-not-all-travellers-walk-roads-of-humanity-as-practice"
+  },
+  {
+   "id": "press-0100",
+   "artist": "Christopher Cozier",
+   "title": "After the Appeal Will Come the Next Delivery",
+   "year": "2025",
+   "venue": "36th Bienal de São Paulo, “Not All Travellers Walk Roads – Of Humanity as Practice”",
+   "credit": "Image courtesy of Fundação Bienal. Photo by Levi Fanan.",
+   "source": "https://www.e-flux.com/criticism/6782314/36th-bienal-de-s-o-paulo-not-all-travellers-walk-roads-of-humanity-as-practice"
+  },
+  {
+   "id": "press-0101",
+   "artist": "Celina Eceiza",
+   "title": "A nest is a fruit that swells",
+   "year": "2025",
+   "venue": "18th Istanbul Biennial, “The Three-Legged Cat”",
+   "credit": "Image courtesy of the artist and Istanbul Foundation for Culture and Arts (İKSV). Photo by Sahir Ugur Eren.",
+   "source": "https://www.e-flux.com/criticism/6782322/18th-istanbul-biennial-the-three-legged-cat"
+  },
+  {
+   "id": "press-0102",
+   "artist": "Sara Sadik",
+   "title": "XENON PALACE CHAMPIONSHIP",
+   "year": "2023",
+   "venue": "18th Istanbul Biennial, “The Three-Legged Cat”",
+   "credit": "Image courtesy of the artist and Istanbul Foundation for Culture and Arts (İKSV). Photo by Sahir Ugur Eren.",
+   "source": "https://www.e-flux.com/criticism/6782322/18th-istanbul-biennial-the-three-legged-cat"
+  },
+  {
+   "id": "press-0103",
+   "artist": "Marwan Rechmaoui",
+   "title": "Chasing the Sun",
+   "year": "2025",
+   "venue": "18th Istanbul Biennial, “The Three-Legged Cat”",
+   "credit": "Image courtesy of the artist and Istanbul Foundation for Culture and Arts (İKSV). Photo by Sahir Ugur Eren.",
+   "source": "https://www.e-flux.com/criticism/6782322/18th-istanbul-biennial-the-three-legged-cat"
+  },
+  {
+   "id": "press-0104",
+   "artist": "Pélagie Gbaguidi",
+   "title": "Fragmentation",
+   "year": "2024",
+   "venue": "18th Istanbul Biennial, “The Three-Legged Cat”",
+   "credit": "Image courtesy of the artist and Istanbul Foundation for Culture and Arts (İKSV). Photo by Sahir Ugur Eren.",
+   "source": "https://www.e-flux.com/criticism/6782322/18th-istanbul-biennial-the-three-legged-cat"
+  },
+  {
+   "id": "press-0105",
+   "artist": "Birender Yadav",
+   "title": "Only the Earth Knows Their Labor",
+   "year": "2025",
+   "venue": "6th Kochi-Muziris Biennale, “For the Time Being”",
+   "credit": "Image courtesy of the Kochi Biennale Foundation.",
+   "source": "https://www.e-flux.com/criticism/6782362/6th-kochi-muziris-biennale-for-the-time-being"
+  },
+  {
+   "id": "press-0106",
+   "artist": "José Maceda and Aki Onda",
+   "title": "Ugnayan",
+   "year": "1974/2026",
+   "venue": "Whitney Biennial 2026, Whitney Museum of American Art, New York",
+   "credit": "Image courtesy of the Whitney Museum of American Art, New York. Photo by Darian DiCanno/BFA.com. © BFA 2026.",
+   "source": "https://www.e-flux.com/criticism/6782395/whitney-biennial-2026"
+  },
+  {
+   "id": "press-0107",
+   "artist": "Agosto Machado",
+   "title": "Anna May Wong (Altar); Shrine (Green)",
+   "year": "2025; 2022",
+   "venue": "Whitney Biennial 2026, Whitney Museum of American Art, New York",
+   "credit": "Image courtesy of the Whitney Museum of American Art, New York. Photo by Jason Lowrie/BFA.com. © BFA 2026.",
+   "source": "https://www.e-flux.com/criticism/6782395/whitney-biennial-2026"
+  },
+  {
+   "id": "press-0108",
+   "artist": "Zach Blas",
+   "title": "CULTUS",
+   "year": "2023",
+   "venue": "Whitney Biennial 2026, Whitney Museum of American Art, New York",
+   "credit": "Image courtesy of the Whitney Museum of American Art, New York. Photo by Darian DiCanno/BFA.com. © BFA 2026",
+   "source": "https://www.e-flux.com/criticism/6782395/whitney-biennial-2026"
+  },
+  {
+   "id": "press-0109",
+   "artist": "Anna Tsouhlarakis",
+   "title": "SHE MUST BE A MATRIARCH",
+   "year": "2023",
+   "venue": "Whitney Biennial 2026, Whitney Museum of American Art, New York",
+   "credit": "Image courtesy of the Whitney Museum of American Art, New York. Photo by Jason Lowrie/BFA.com. © BFA 2026",
+   "source": "https://www.e-flux.com/criticism/6782395/whitney-biennial-2026"
+  }
+ ]
+}
