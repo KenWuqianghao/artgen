@@ -12,6 +12,7 @@ from __future__ import annotations
 import hashlib
 import hmac
 import json
+import re
 import secrets
 import shutil
 import subprocess
@@ -128,13 +129,10 @@ def _game_key() -> bytes:
     if not GAME_KEY.exists():
         GAME_KEY.touch(mode=0o600)
         GAME_KEY.write_text(secrets.token_hex(32), encoding="utf-8")
-    try:
-        key = bytes.fromhex(GAME_KEY.read_text(encoding="utf-8").strip())
-    except ValueError:
-        key = b""
-    if len(key) != 32:
+    text = GAME_KEY.read_text(encoding="utf-8").strip()
+    if not re.fullmatch(r"[0-9a-fA-F]{64}", text):
         raise SystemExit(f"{GAME_KEY.relative_to(ROOT)} must hold 64 hex characters. Delete it to make a new key.")
-    return key
+    return bytes.fromhex(text)
 
 
 def _game_pool(out: Path) -> dict:
