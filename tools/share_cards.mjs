@@ -1,4 +1,4 @@
-// Link preview cards for "Art or Artifice?": artgen/studio_static/share/<score>.jpg (0 to 10) and card.jpg,
+// Link preview cards for "Art or BS?": artgen/studio_static/share/<score>.jpg (0 to 10) and card.jpg,
 // and the icon: artgen/studio_static/icon.svg, apple-touch-icon.png and icon-512.png.
 // Run: node tools/share_cards.mjs   (needs Chrome: set CHROME, or install Chrome or Chromium)
 import { execFileSync } from "node:child_process";
@@ -36,11 +36,11 @@ const ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 </svg>
 `;
 
+const ROOMS = "Some rooms are real art. AI made the rest.";
 const HOOK = {
-  0: "Every room fooled me.<b>Can you tell?</b>",
-  10: "Not one room fooled me.<b>Can you match it?</b>",
+  0: "Every room fooled me.<b>Can you call BS?</b>",
+  10: "Called it every time.<b>Can you match it?</b>",
 };
-const ROOMS = "Some rooms exist.<br>AI made the others.";
 
 function chrome() {
   if (process.env.CHROME) return process.env.CHROME;
@@ -65,13 +65,12 @@ const pips = (score) => Array.from({ length: TOTAL }, (_, i) => `<i class="${i <
 
 function page(key) {
   const text = key === "card"
-    ? `<p class="kicker">Art or Artifice?</p>
-       <p class="ask">Is this room real?</p>
-       <p class="hook">${ROOMS}</p>`
-    : `<p class="kicker">Art or Artifice?</p>
+    ? `<p class="ask">Art or BS?</p>
+       <p class="hook">${ROOMS}<b>Can you call BS?</b></p>`
+    : `<p class="kicker">Art or BS?</p>
        <p class="score">${key}<span>/${TOTAL}</span></p>
        <div class="pips">${pips(key)}</div>
-       <p class="hook">${HOOK[key] || `${ROOMS}<b>Can you tell?</b>`}</p>`;
+       <p class="hook">${HOOK[key] || `${ROOMS}<b>Can you call BS?</b>`}</p>`;
   return `<!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=block">
 <style>
@@ -83,7 +82,7 @@ function page(key) {
   .kicker { font-size: 44px; font-weight: 700; letter-spacing: -.01em; }
   .score { font-family: "Newsreader", serif; font-weight: 500; font-size: 230px; line-height: .84; margin: 18px 0 30px -6px; letter-spacing: -.03em; }
   .score span { font-size: 110px; color: #8a8a86; letter-spacing: 0; }
-  .ask { font-family: "Newsreader", serif; font-size: 104px; line-height: .98; margin: 22px 0 30px -3px; letter-spacing: -.015em; }
+  .ask { font-family: "Newsreader", serif; font-size: 150px; line-height: .9; margin: 0 0 36px -6px; letter-spacing: -.02em; }
   .pips { display: flex; gap: 8px; margin-bottom: 30px; }
   .pips i { width: 36px; height: 36px; border-radius: 4px; border: 3px solid #d6d6d1; }
   .pips i.on { background: #1f7a4d; border-color: #1f7a4d; }
