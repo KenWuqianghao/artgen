@@ -3,13 +3,13 @@
 
   var API = "/api/game/";
   var TOKEN_KEY = "artgen-game-player";
+  var SET_SIZE = 10;
   var NO_SERVER = "The game needs its server, and this copy of the Studio runs without one.";
   var SERVER_DOWN = "The server did not answer. Try again.";
-  var KEYS = { r: "real", arrowleft: "real", a: "ai", arrowright: "ai" };
-  var DAY_MS = 86400000;
+  var KEYS = { a: "real", arrowleft: "real", b: "ai", arrowright: "ai" };
 
   var state = "loading";
-  var round = null, board = null, token = playerToken(), clock = null;
+  var game = null, ladder = null, token = playerToken();
 
   var $ = function (id) { return document.getElementById(id); };
   function el(tag, cls, text) {
@@ -40,39 +40,34 @@
     });
   }
 
+  // The last set is short when fewer than ten photographs are left for it.
+  function setSize() { return Math.min(SET_SIZE, game.set.answers.length + game.total - game.answered); }
+  function setDone() { return game.set.answers.length > 0 && game.set.answers.length === setSize(); }
+  function isRight(a) { return a.real === (a.guess === "real"); }
+  function setScore() { return game.set.answers.filter(isRight).length; }
+
   var RENDER = {
-    loading: function () { $("notice").textContent = "Hanging today's photographs…"; },
+    loading: function () { $("notice").textContent = "Hanging the photographs…"; },
     unavailable: function (why) { $("notice").textContent = why || NO_SERVER; },
     playing: function (problem) {
-      var i = round.answers.length;
-      $("photo").src = round.images[i];
+      $("photo").src = game.next;
       $("round-error").textContent = problem || "";
-      progress(i);
-      if (round.images[i + 1]) new Image().src = round.images[i + 1];
+      progress(game.set.answers.length);
     },
     sending: function () {},
     revealed: function () {
-      var i = round.answers.length - 1, a = round.answers[i], right = isRight(a);
-      progress(i);
+      var a = game.set.answers[game.set.answers.length - 1], right = isRight(a);
+      progress(game.set.answers.length - 1);
       $("verdict").className = "verdict " + (right ? "right" : "wrong");
-      $("verdict").textContent = (right ? "Correct. " : "Wrong. ") + (a.real ? "This room is real." : "AI made this room.");
+      $("verdict").textContent = (right ? "Correct. " : "Wrong. ") + (a.real ? "Art: this room is real." : "BS: AI made this room.");
       $("label").replaceChildren(wallLabel(a));
       $("crowd").textContent = a.crowd === null ? "" : a.crowd + "% of players get this one right.";
-      $("next").textContent = round.done ? "See your result" : "Next photograph";
+      $("next").textContent = setDone() ? "See your score" : "Next photograph";
       $("next").focus();
+      if (game.next) new Image().src = game.next;
     },
-    finished: function () {
-      $("score").textContent = round.score + " of " + round.images.length;
-      var r = result();
-      $("share-text").textContent = shareText(r);
-      $("post").href = "https://x.com/intent/post?text=" + encodeURIComponent(shareText(r));
-      $("name").value = round.name || "";
-      $("works").replaceChildren.apply($("works"), round.answers.map(workCard));
-      renderBoard();
-      tick();
-      clock = clock || setInterval(tick, 1000);
-      window.scrollTo(0, 0);
-    },
+    checkpoint: function () { renderResult(); $("next-set").focus({ preventScroll: true }); },
+    finished: function () { renderResult(); },
   };
 
   function show(next, detail) {
@@ -81,21 +76,27 @@
     RENDER[next](detail);
   }
 
-  function isRight(a) { return a.real === (a.guess === "real"); }
-
   function progress(current) {
-    $("count").textContent = (current + 1) + "/" + round.images.length;
-    $("pips").replaceChildren.apply($("pips"), round.images.map(function (_, i) {
-      var a = round.answers[i];
-      return el("li", a ? (isRight(a) ? "right" : "wrong") : (i === current ? "now" : ""));
-    }));
+    var size = setSize();
+    $("count").textContent = "Set " + game.set.number + " · " + (current + 1) + "/" + size;
+    var pips = [];
+    for (var i = 0; i < size; i++) {
+      var a = game.set.answers[i];
+      pips.push(el("li", a ? (isRight(a) ? "right" : "wrong") : (i === current ? "now" : "")));
+    }
+    $("pips").replaceChildren.apply($("pips"), pips);
+    $("standing").textContent = game.rank ? game.correct + " correct · #" + game.rank + " of " + playersText(game.players) : "";
   }
+
+  function playersText(n) { return n + (n === 1 ? " player" : " players"); }
 
   function line(cls, text) { return el("p", cls, text); }
 
   function wallLabel(a) {
     var box = el("div", "wall-label"), r = a.reveal;
-    if (a.real) {
+    if (!r) {
+      box.appendChild(line("who", "This photograph left the game."));
+    } else if (a.real) {
       box.appendChild(line("who", r.artist));
       var title = line("title");
       title.appendChild(el("i", "", r.title));
@@ -121,99 +122,106 @@
   }
 
   function workCard(a, i) {
-    var li = el("li", isRight(a) ? "right" : "wrong"), img = el("img");
-    img.src = round.images[i]; img.alt = "Photograph " + (i + 1); img.loading = "lazy"; img.width = 1280; img.height = 853;
-    li.appendChild(img);
-    li.appendChild(el("p", "mark", (a.real ? "Real" : "AI") + ". You said " + (a.guess === "real" ? "real" : "AI") + "."));
+    var li = el("li", isRight(a) ? "right" : "wrong");
+    if (a.image) {
+      var img = el("img");
+      img.src = a.image; img.alt = "Photograph " + (i + 1); img.loading = "lazy"; img.width = 1280; img.height = 853;
+      li.appendChild(img);
+    }
+    var said = a.guess === "real" ? "Art" : "BS";
+    li.appendChild(el("p", "mark", a.real === null ? "You said " + said + "." : (a.real ? "Art" : "BS") + ". You said " + said + "."));
     li.appendChild(wallLabel(a));
     return li;
   }
 
-  function clockTime(ms) {
-    var s = Math.round(ms / 1000);
-    return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
-  }
-
   function result() {
-    return { number: round.number, score: round.score, total: round.images.length, ms: round.ms, marks: round.answers.map(isRight) };
+    return { number: game.set.number, score: setScore(), size: game.set.answers.length, rank: game.rank,
+             marks: game.set.answers.map(isRight) };
   }
 
   function shareMessage(r) {
     var squares = r.marks.map(function (right) { return right ? "🟩" : "🟥"; }).join("");
-    return "Art or Artifice? #" + r.number + "\n" + squares + " " + r.score + "/" + r.total + " in " + clockTime(r.ms);
+    return "Art or BS? Set " + r.number + "\n" + squares + " " + r.score + "/" + r.size + "\n#" + r.rank + " on the ladder";
   }
 
-  function shareUrl(r) { return location.origin + "/s/" + r.score; }
+  // A short last set links to the card of its score out of ten.
+  function shareUrl(r) { return location.origin + "/s/" + Math.round((10 * r.score) / r.size); }
   function shareText(r) { return shareMessage(r) + "\n" + shareUrl(r); }
 
-  function renderBoard() {
-    var text = "Your time is " + clockTime(round.ms) + ".";
-    if (board && board.players) {
-      text += " Today's average is " + board.average + " of " + round.images.length + ", from " +
-        board.players + (board.players === 1 ? " player." : " players.");
-    }
-    $("score-line").textContent = text;
-    var rows = ((board && board.entries) || []).map(function (e, i) {
-      var li = el("li", i + 1 === round.rank ? "me" : "");
-      li.appendChild(el("span", "n", i + 1));
+  function renderResult() {
+    var r = result();
+    $("set-name").textContent = "Set " + r.number;
+    $("score").textContent = r.score + "/" + r.size;
+    $("score-line").textContent = "#" + game.rank + " of " + playersText(game.players) + " · " + game.correct + " of " + game.answered + " correct";
+    $("done").textContent = state === "finished" ? "You have seen all " + game.answered + " photographs. New ones come later." : "";
+    $("share-text").textContent = shareText(r);
+    $("post").href = "https://x.com/intent/post?text=" + encodeURIComponent(shareText(r));
+    $("name").value = game.name || "";
+    $("hang-title").textContent = "The photographs of set " + r.number;
+    $("works").replaceChildren.apply($("works"), game.set.answers.map(workCard));
+    renderLadder();
+    window.scrollTo(0, 0);
+  }
+
+  function renderLadder() {
+    var rows = ((ladder && ladder.entries) || []).map(function (e) {
+      var li = el("li", e.me ? "me" : "");
+      li.appendChild(el("span", "n", e.rank));
       li.appendChild(el("span", "who", e.name));
-      li.appendChild(el("span", "", e.score + "/" + round.images.length));
-      li.appendChild(el("span", "t", clockTime(e.ms)));
+      li.appendChild(el("span", "t", e.correct + "/" + e.answered));
       return li;
     });
     if (!rows.length) rows = [el("li", "empty", "No names yet. Put yours first.")];
     $("ranks").replaceChildren.apply($("ranks"), rows);
   }
 
-  function loadBoard() {
-    return call("GET", "leaderboard?day=" + round.day).then(function (res) {
+  function loadLadder() {
+    return call("GET", "ladder?player=" + token).then(function (res) {
       if (res.status !== 200) return;
-      board = res.data;
-      if (state === "finished") renderBoard();
+      ladder = res.data;
+      if (state === "checkpoint" || state === "finished") renderLadder();
     }).catch(function () {});
   }
 
-  function tick() {
-    var left = DAY_MS - (Date.now() % DAY_MS);
-    if (new Date().toISOString().slice(0, 10) !== round.day) {
-      clearInterval(clock); clock = null;
-      $("countdown").replaceChildren(el("a", "", "A new round is open. Play it."));
-      $("countdown").firstChild.href = location.pathname;
-      return;
-    }
-    var s = Math.floor(left / 1000), two = function (n) { return String(n).padStart(2, "0"); };
-    $("countdown").textContent = "The next round opens in " + two(Math.floor(s / 3600)) + ":" + two(Math.floor(s / 60) % 60) + ":" + two(s % 60) + ".";
+  function endSet() {
+    show(game.next ? "checkpoint" : "finished");
+    loadLadder();
   }
 
   function open(notice) {
     show("loading");
-    call("GET", "round?player=" + token).then(function (res) {
+    call("GET", "state?player=" + token).then(function (res) {
       if (res.status !== 200) return show("unavailable", res.data.error);
-      round = res.data;
-      if (!round.done) return show("playing", notice);
-      show("finished");
-      loadBoard();
+      game = res.data;
+      if (!game.next || setDone()) return endSet();
+      show("playing", notice);
     }).catch(function () { show("unavailable"); });
   }
 
   function answer(guess) {
     if (state !== "playing") return;
     show("sending");
-    call("POST", "answer", { player: token, day: round.day, index: round.answers.length, guess: guess }).then(function (res) {
+    call("POST", "answer", { player: token, index: game.answered, guess: guess }).then(function (res) {
       if (res.status === 409) return open(res.data.error);
       if (res.status !== 200) return show("playing", res.data.error);
       var a = res.data;
-      round.answers[a.index] = { guess: guess, real: a.real, reveal: a.reveal, crowd: a.crowd };
-      round.done = a.done; round.score = a.score; round.ms = a.ms;
+      game.set.answers.push({ guess: guess, image: $("photo").getAttribute("src"), real: a.real, reveal: a.reveal, crowd: a.crowd });
+      game.answered = a.answered; game.correct = a.correct; game.rank = a.rank; game.players = a.players; game.next = a.next;
       show("revealed");
     }).catch(function () { show("playing", SERVER_DOWN); });
   }
 
   function next() {
     if (state !== "revealed") return;
-    if (!round.done) return show("playing");
-    show("finished");
-    loadBoard();
+    if (setDone()) return endSet();
+    show("playing");
+  }
+
+  function nextSet() {
+    if (state !== "checkpoint") return;
+    game.set = { number: game.set.number + 1, answers: [] };
+    show("playing");
+    window.scrollTo(0, 0);
   }
 
   function saveName(e) {
@@ -221,10 +229,10 @@
     var status = $("name-status");
     call("POST", "name", { player: token, name: $("name").value }).then(function (res) {
       if (res.status !== 200) { status.textContent = res.data.error; return; }
-      round.name = res.data.name; round.rank = res.data.rank;
-      $("name").value = round.name;
-      status.textContent = round.rank ? "You are number " + round.rank + " today." : "Saved. The leaderboard shows the best 50.";
-      return loadBoard();
+      game.name = res.data.name; game.rank = res.data.rank;
+      $("name").value = game.name;
+      status.textContent = "Saved. You are #" + game.rank + " on the ladder.";
+      return loadLadder();
     }).catch(function () { status.textContent = SERVER_DOWN; });
   }
 
@@ -254,6 +262,7 @@
   $("guess-real").addEventListener("click", function () { answer("real"); });
   $("guess-ai").addEventListener("click", function () { answer("ai"); });
   $("next").addEventListener("click", next);
+  $("next-set").addEventListener("click", nextSet);
   $("name-form").addEventListener("submit", saveName);
   $("copy").addEventListener("click", copyResult);
   document.addEventListener("keydown", function (e) {

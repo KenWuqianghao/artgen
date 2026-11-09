@@ -5,7 +5,7 @@ so the browser runs the same generator as the command line. Images come from the
 
   choices()            the lists, toggles and options the Studio shows
   run(opts_json, base) generate an edition and return every page of its website
-  build(out)           write the static Studio to a folder, and the image pool of the game "Art or Artifice?"
+  build(out)           write the static Studio to a folder, and the image pool of the game "Art or BS?"
 """
 from __future__ import annotations
 
