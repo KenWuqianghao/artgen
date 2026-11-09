@@ -84,7 +84,7 @@ npm run studio:deploy
 The game shows one photograph of an installation at a time. You answer **Real** or **artgen**. Then the page shows the truth and a citation. For a real photograph, the citation gives the artist, the venue and the source. For an artgen image, it gives the real works that the image imitates.
 
 - There is one round per UTC day. It has 10 photographs, the same for every player, and 4 to 6 of them are real.
-- After the round you can put a name on the leaderboard of the day and copy your result.
+- After the round you can put a name on the leaderboard of the day and share your result. On a phone, **Share** opens the share sheet. **Post on X** opens a new post with the result. **Copy result** copies the result.
 - Keys: `R` or left arrow for Real, `A` or right arrow for artgen, `Enter` or `Space` for the next photograph.
 
 ### Play it on your computer
@@ -133,6 +133,27 @@ All routes answer with JSON. A `POST` must come from the game page itself.
 | `GET /api/game/leaderboard` | `?day=<YYYY-MM-DD>`, default today | `{day, number, players, average, entries}` with the best 50 as `{name, score, ms}`. |
 
 `player` is a random token of 16 to 64 characters from `A-Z a-z 0-9 _ -`. The page makes it and keeps it in the browser. `crowd` is the percent of players who answered that image correctly, or `null` when fewer than 5 players saw it. Every route answers `503` when the game has fewer than 6 real photographs or fewer than 6 library images.
+
+### Share a result
+
+The share text gives the round number, one square for each answer, the score, the time and a link:
+
+```
+Real or artgen? #33
+🟩🟥🟩🟩🟥🟩🟩🟩🟥🟩 7/10 in 1:42
+https://<host>/s/7
+```
+
+`GET /s/<score>` makes the link preview. The Worker answers with a short page for crawlers. Its preview tags show the card of that score, `/share/<score>.jpg`. The page then sends people to `/game`. When the score is not a whole number from 0 to 10, the Worker redirects to `/game`. The game page `/game` shows `/share/card.jpg`. The Worker makes the preview addresses on `/game` absolute for the host, so the cards also work on a custom domain.
+
+The cards are 1200 × 630 JPEGs in `artgen/studio_static/share/`. To make them again, run:
+
+```bash
+npm ci
+node tools/share_cards.mjs
+```
+
+The script needs Chrome or Chromium. It looks on the `PATH` and in the Playwright and Puppeteer caches. To use a different browser, set `CHROME` to its path. The cards use only images from the image library. They never use the real photographs in `game/real/`, because those belong to their artists.
 
 ## Quick start on the command line
 
@@ -241,7 +262,7 @@ The script records the Studio with a scripted browser, then builds the compositi
 ```
 artgen/            the package: gen/ (artists, titles, works, exhibition), write/ (texts), render/, site/, studio
 data/              archetypes, lexicon, world, title structures, real-name blocklist
-tools/             sources of data/archetypes.json and data/lexicon.json
+tools/             sources of data/archetypes.json and data/lexicon.json, and the share cards of the game
 library/           pre-rendered images, one per archetype, with what each one shows
 game/real/         real photographs for the game Real or artgen?, with their citations
 worker/            the Cloudflare Worker: live renders and the game
