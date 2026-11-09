@@ -11,6 +11,11 @@
 //   POST /api/game/name                {player, name} -> a row on today's leaderboard
 //   GET  /api/game/leaderboard?day=    the top 50 of a day
 //
+// Link previews for social posts:
+//
+//   GET  /s/<score>    a page with the preview card of a score from 0 to 10 for crawlers; it sends people on to /game
+//   GET  /game         the game page, with its preview tags made absolute for this host
+//
 // One Durable Object holds the counters, the images and the game, so the daily limits are exact and nothing else needs provisioning.
 import { DurableObject } from "cloudflare:workers";
 import { BOARD_SIZE, NAMES_PER_VISITOR, cleanName, crowdOf, isDay, isGuess, isPlayer, isRight, roundFor, roundNumber, scoreOf }
@@ -273,6 +278,45 @@ const GAME = {
   },
 };
 
+const SHARE_HOOK = { 0: "Every room fooled me.", 10: "Not one room fooled me." };
+
+function sharePage(url) {
+  const m = url.pathname.match(/^\/s\/(10|\d)$/);
+  if (!m) return Response.redirect(`${url.origin}/game`, 302);
+  const score = Number(m[1]), here = `${url.origin}/s/${score}`, image = `${url.origin}/share/${score}.jpg`;
+  const title = `I scored ${score}/10 on Real or artgen?`;
+  const text = `${SHARE_HOOK[score] || ""} Ten photographs of art installations a day. Some rooms exist. AI made the others. Can you tell?`.trim();
+  const html = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>${title}</title>
+<meta name="description" content="${text}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="artgen">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${text}">
+<meta property="og:url" content="${here}">
+<meta property="og:image" content="${image}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${image}">
+<meta http-equiv="refresh" content="0; url=/game">
+</head>
+<body><a href="/game">Play Real or artgen?</a></body>
+</html>
+`;
+  return new Response(html, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=3600" } });
+}
+
+// Crawlers need absolute image addresses, and the static page does not know its host.
+function absoluteTags(page, origin) {
+  return new HTMLRewriter().on('meta[content^="/"]', {
+    element(e) { e.setAttribute("content", origin + e.getAttribute("content")); },
+  }).transform(page);
+}
+
 async function game(request, env, ctx, url) {
   const handler = GAME[`${request.method} ${url.pathname.slice("/api/game/".length)}`];
   if (!handler) return json({ error: "Not found." }, 404);
@@ -293,6 +337,8 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (url.pathname.startsWith("/api/game/")) return game(request, env, ctx, url);
+    if (url.pathname.startsWith("/s/")) return sharePage(url);
+    if (url.pathname === "/game") return absoluteTags(await env.ASSETS.fetch(request), url.origin);
     if (url.pathname === "/api/status" && request.method === "GET") {
       const lim = limits(env), day = today();
       if (!env.OPENAI_API_KEY) return json({ enabled: false, remaining: 0, limit: lim.visitor });
