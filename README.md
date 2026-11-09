@@ -261,7 +261,7 @@ The script records the Studio with a scripted browser, then builds the compositi
 
 ## Game video
 
-`video/game/renders/real-or-artgen.mp4` is a 28-second square video of the game for X. It works with the sound off. It starts with three photographs to guess, then shows a recording of the real game page, the share text and the address.
+`video/game/renders/art-or-artifice.mp4` is a 28-second square video of the game for X. It works with the sound off. It starts with three photographs to guess, then shows a recording of the real game page, the share text and the address.
 
 To rebuild it, run the build script:
 

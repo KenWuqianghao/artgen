@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Rebuild the game video end to end: renders/real-or-artgen.mp4 (1080x1080, 30 fps).
+# Rebuild the game video end to end: renders/art-or-artifice.mp4 (1080x1080, 30 fps).
 # Needs: python3, node, ffmpeg, npm packages (npm ci), game/.key and Chrome (set CHROME, see record.mjs).
 # Starts its own local Worker with an empty game state, so the live leaderboard never sees the recording.
 set -euo pipefail
@@ -26,4 +26,4 @@ ffmpeg -y -loglevel error -f lavfi -i "sine=frequency=70:sample_rate=48000:durat
   -filter_complex "[0:a]afade=t=out:st=0.01:d=0.45:curve=exp,volume=0.9[a];[1:a]lowpass=f=700,afade=t=out:st=0.0:d=0.12:curve=exp,volume=0.8[b];[a][b]amix=inputs=2:normalize=0" \
   audio/sfx/stamp.wav
 npx hyperframes check .
-npx hyperframes render . --output renders/real-or-artgen.mp4 --quality standard --fps 30
+npx hyperframes render . --output renders/art-or-artifice.mp4 --quality standard --fps 30
