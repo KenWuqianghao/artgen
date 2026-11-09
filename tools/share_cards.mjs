@@ -1,4 +1,4 @@
-// Link preview cards for "Real or artgen?": artgen/studio_static/share/<score>.jpg (0 to 10) and card.jpg.
+// Link preview cards for "Art or Artifice?": artgen/studio_static/share/<score>.jpg (0 to 10) and card.jpg.
 // Run: node tools/share_cards.mjs   (needs Chrome: set CHROME, or install Chrome or Chromium)
 import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync } from "node:fs";
@@ -55,10 +55,10 @@ const pips = (score) => Array.from({ length: TOTAL }, (_, i) => `<i class="${i <
 
 function page(key) {
   const text = key === "card"
-    ? `<p class="kicker">Real or artgen?</p>
+    ? `<p class="kicker">Art or Artifice?</p>
        <p class="ask">Is this room real?</p>
        <p class="hook">${ROOMS}</p>`
-    : `<p class="kicker">Real or artgen?</p>
+    : `<p class="kicker">Art or Artifice?</p>
        <p class="score">${key}<span>/${TOTAL}</span></p>
        <div class="pips">${pips(key)}</div>
        <p class="hook">${HOOK[key] || `${ROOMS}<b>Can you tell?</b>`}</p>`;

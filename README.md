@@ -79,13 +79,13 @@ Then deploy. Run the same command after each change:
 npm run studio:deploy
 ```
 
-## The game: Real or artgen?
+## The game: Art or Artifice?
 
-The game shows one photograph of an installation at a time. You answer **Real** or **artgen**. Then the page shows the truth and a citation. For a real photograph, the citation gives the artist, the venue and the source. For an artgen image, it gives the real works that the image imitates.
+The game shows one photograph of an installation at a time. You answer **Real** or **AI**. Then the page shows the truth and a citation. For a real photograph, the citation gives the artist, the venue and the source. For an AI image, it gives the real works that the image imitates. artgen makes the AI images.
 
 - There is one round per UTC day. It has 10 photographs, the same for every player, and 4 to 6 of them are real.
 - After the round you can put a name on the leaderboard of the day and share your result. On a phone, **Share** opens the share sheet. **Post on X** opens a new post with the result. **Copy result** copies the result.
-- Keys: `R` or left arrow for Real, `A` or right arrow for artgen, `Enter` or `Space` for the next photograph.
+- Keys: `R` or left arrow for Real, `A` or right arrow for AI, `Enter` or `Space` for the next photograph.
 
 ### Play it on your computer
 
@@ -117,7 +117,7 @@ The AI images come from the image library. The real photographs come from `game/
 
 The game needs at least 6 real photographs and 6 library images. The smaller of the two sets sets the cycle: each 6 images in it give one more day before a photograph comes back. Now the 76 library images give a cycle of 12 days.
 
-The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The new encoding removes the metadata, so the bytes do not show the kind. A player can still match an artgen image to the public library by how it looks. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
+The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The new encoding removes the metadata, so the bytes do not show the kind. A player can still match an AI image to the public library by how it looks. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
 
 When you add or remove photographs, all rounds change, and that includes the round of the current day. Deploy such a change near midnight UTC.
 
@@ -139,7 +139,7 @@ All routes answer with JSON. A `POST` must come from the game page itself.
 The share text gives the round number, one square for each answer, the score, the time and a link:
 
 ```
-Real or artgen? #33
+Art or Artifice? #33
 🟩🟥🟩🟩🟥🟩🟩🟩🟥🟩 7/10 in 1:42
 https://<host>/s/7
 ```
@@ -264,7 +264,7 @@ artgen/            the package: gen/ (artists, titles, works, exhibition), write
 data/              archetypes, lexicon, world, title structures, real-name blocklist
 tools/             sources of data/archetypes.json and data/lexicon.json, and the share cards of the game
 library/           pre-rendered images, one per archetype, with what each one shows
-game/real/         real photographs for the game Real or artgen?, with their citations
+game/real/         real photographs for the game Art or Artifice?, with their citations
 worker/            the Cloudflare Worker: live renders and the game
 docs/research/     the research corpus, with source URLs
 biennales/         generated editions (exhibition.json and media/; site/ is build output)

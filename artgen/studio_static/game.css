@@ -1,4 +1,4 @@
-/* Real or artgen? Uses the Studio's tokens and chrome from studio.css.
+/* Art or Artifice? Uses the Studio's tokens and chrome from studio.css.
    The photograph hangs on a wall; the answer arrives as the wall label beside it. */
 :root { --right: #1f7a4d; --wrong: #a4281f; }
 .ask h1, .score h1, .wall-label .title { font-family: "Newsreader", Georgia, serif; font-weight: 400; }

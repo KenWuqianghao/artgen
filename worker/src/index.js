@@ -4,7 +4,7 @@
 //   POST /api/render        {prompt} -> {url, cached, remaining}
 //   GET  /api/image/<id>    a rendered JPEG
 //
-// It also runs the daily guessing game "Real or artgen?" (rules in game.js):
+// It also runs the daily guessing game "Art or Artifice?" (rules in game.js):
 //
 //   GET  /api/game/round?player=       today's ten images and this player's answers so far
 //   POST /api/game/answer              {player, day, index, guess} -> the truth about the image at index
@@ -284,7 +284,7 @@ function sharePage(url) {
   const m = url.pathname.match(/^\/s\/(10|\d)$/);
   if (!m) return Response.redirect(`${url.origin}/game`, 302);
   const score = Number(m[1]), here = `${url.origin}/s/${score}`, image = `${url.origin}/share/${score}.jpg`;
-  const title = `I scored ${score}/10 on Real or artgen?`;
+  const title = `I scored ${score}/10 on Art or Artifice?`;
   const text = `${SHARE_HOOK[score] || ""} Ten photographs of art installations a day. Some rooms exist. AI made the others. Can you tell?`.trim();
   const html = `<!doctype html>
 <html lang="en">
@@ -293,7 +293,7 @@ function sharePage(url) {
 <title>${title}</title>
 <meta name="description" content="${text}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="artgen">
+<meta property="og:site_name" content="Art or Artifice?">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${text}">
 <meta property="og:url" content="${here}">
@@ -304,7 +304,7 @@ function sharePage(url) {
 <meta name="twitter:image" content="${image}">
 <meta http-equiv="refresh" content="0; url=/game">
 </head>
-<body><a href="/game">Play Real or artgen?</a></body>
+<body><a href="/game">Play Art or Artifice?</a></body>
 </html>
 `;
   return new Response(html, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=3600" } });
@@ -322,7 +322,7 @@ async function game(request, env, ctx, url) {
   if (!handler) return json({ error: "Not found." }, 404);
   if (request.method === "POST" && !allowedOrigin(request)) return json({ error: "Open the game to play." }, 403);
   const day = today(), round = roundFor(pool, day);
-  if (!round) return json({ error: "The game is not open yet. It needs at least six real photographs and six artgen images." }, 503);
+  if (!round) return json({ error: "The game is not open yet. It needs at least six real photographs and six AI images." }, 503);
   let body = null;
   if (request.method === "POST") {
     try { body = await request.json(); } catch { body = null; }
