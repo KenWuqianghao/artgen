@@ -1,6 +1,8 @@
-// Records one full round of "Art or Artifice?" for the game video. Deterministic: the answers come from
-// config.json ("wrong" lists the photographs to miss), every action is scripted, and the time of each
-// action is written to recording.json with the text that "Post on X" would post.
+// Records one set of "Art or BS?" for the game video. Deterministic: the player and the answers come from
+// config.json, every action is scripted, and the time of each action is written to recording.json with the
+// text that "Post on X" would post.
+// Every player gets the photographs in the same order, so the video records a late set (config "set"):
+// a fresh player answers the sets before it through the API first, off camera.
 // Usage: node video/game/record.mjs   (build.sh starts the local Worker on PORT first)
 // The configured host resolves to the local Worker, so the page and its share text show the real address.
 import puppeteer from "puppeteer-core";
@@ -8,7 +10,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { homedir } from "node:os";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { roundFor } from "../../worker/src/game.js";
+import { orderOf, SET_SIZE } from "../../worker/src/game.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, "../..");
@@ -17,9 +19,12 @@ const host = config.url.split("/")[0];
 const port = process.env.PORT || "8812";
 const executablePath = process.env.CHROME || join(homedir(), ".cache/ms-playwright/chromium-1248/chrome-linux64/chrome");
 
-const day = new Date().toISOString().slice(0, 10);
-const round = roundFor(JSON.parse(readFileSync(join(root, "worker/src/game_pool.json"), "utf8")), day);
-const guesses = round.items.map((item, i) => (item.real !== config.wrong.includes(i) ? "real" : "ai"));
+const order = orderOf(JSON.parse(readFileSync(join(root, "worker/src/game_pool.json"), "utf8")));
+// the same answers are wrong in every set: config "wrong" lists positions in a set
+const guessAt = (i) => (order[i].real !== config.wrong.includes(i % SET_SIZE) ? "real" : "ai");
+const first = (config.set - 1) * SET_SIZE;
+if (first + SET_SIZE > order.length) throw new Error(`set ${config.set} is not a full set of the ${order.length} photographs`);
+const player = "video-" + "0".repeat(10) + config.set;
 
 // Phone layout at 2x density: a 1080x1080 recording. Headless Chrome sends screencast frames at the
 // density of the screen, not of the emulated viewport, so the density is a launch flag.
@@ -56,8 +61,25 @@ try {
     });
   });
 
+  // off camera: the player answers the sets before the recorded set, from the page's own origin
   await page.goto(`https://${host}/game`, { waitUntil: "networkidle0", timeout: 120000 });
-  await page.waitForFunction(() => document.getElementById("game").dataset.state === "playing" && document.getElementById("photo").complete);
+  const answered = await page.evaluate(async (player, guesses) => {
+    localStorage.setItem("artgen-game-player", player);
+    for (let index = 0; index < guesses.length; index++) {
+      const res = await fetch("/api/game/answer", { method: "POST", headers: { "content-type": "application/json" },
+        body: JSON.stringify({ player, index, guess: guesses[index] }) });
+      if (res.status !== 200) throw new Error(`answer ${index}: ${res.status} ${await res.text()}`);
+    }
+    return (await (await fetch("/api/game/state?player=" + player)).json()).answered;
+  }, player, Array.from({ length: first }, (_, i) => guessAt(i)));
+  if (answered !== first) throw new Error(`the player has ${answered} answers, not ${first}`);
+
+  // the page opens on the checkpoint of the set before; "Next set" starts the recorded set
+  const state = (s) => page.waitForFunction((v) => document.getElementById("game").dataset.state === v, {}, s);
+  await page.reload({ waitUntil: "networkidle0" });
+  if (first > 0) { await state("checkpoint"); await page.click("#next-set"); }
+  await state("playing");
+  await page.waitForFunction(() => document.getElementById("photo").complete);
   await page.evaluate(() => document.fonts.ready);
   // a real player never sees the X intent open in this recording; the post text is read from the link instead
   await page.evaluate(() => document.getElementById("post").addEventListener("click", (e) => e.preventDefault()));
@@ -65,9 +87,13 @@ try {
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
   let mouse = { x: W * 0.5, y: H * 0.45 };
   const actions = [];
+  // The video starts at the first screencast frame, which comes later than the call returns; its wall-clock
+  // timestamp is the zero of the action times, so the actions line up with the video.
+  let start = null;
+  page.mainFrame().client.on("Page.screencastFrame", (e) => { if (start === null && e.metadata.timestamp) start = e.metadata.timestamp; });
   const recorder = await page.screencast({ path: join(here, "raw", "game.mp4"), format: "mp4", fps: 30 });
-  const t0 = Date.now();
-  const mark = (name) => { actions.push({ name, t: (Date.now() - t0) / 1000 }); console.log("mark", name, ((Date.now() - t0) / 1000).toFixed(2)); };
+  const called = Date.now() / 1000;
+  const mark = (name) => { actions.push({ name, at: Date.now() / 1000 }); console.log("mark", name); };
 
   async function moveTo(x, y, steps = 14) {
     for (let i = 1; i <= steps; i++) {
@@ -87,15 +113,14 @@ try {
     await wait(90);
     await page.mouse.down(); mark(name); await wait(70); await page.mouse.up();
   }
-  const state = (s) => page.waitForFunction((v) => document.getElementById("game").dataset.state === v, {}, s);
 
   await wait(600);
-  for (let i = 0; i < guesses.length; i++) {
+  for (let i = 0; i < SET_SIZE; i++) {
     const slow = i < 2;
     await page.waitForFunction(() => document.getElementById("photo").complete);
     await scrollTo("#guess-real", "end");
     if (slow) await wait(700);
-    await tap(guesses[i] === "real" ? "#guess-real" : "#guess-ai", `answer${i}`, slow ? 14 : 6);
+    await tap(guessAt(first + i) === "real" ? "#guess-real" : "#guess-ai", `answer${i}`, slow ? 14 : 6);
     await state("revealed");
     await wait(slow ? 350 : 120);
     await scrollTo("#next", "end");
@@ -103,20 +128,26 @@ try {
     await tap("#next", `next${i}`, slow ? 14 : 6);
     await wait(slow ? 250 : 100);
   }
-  await page.evaluate(() => window.scrollTo(0, 0));
-  await state("finished");
-  await page.waitForFunction(() => /average/.test(document.getElementById("score-line").textContent));
+  await state("checkpoint");
+  await page.waitForFunction(() => / players? · /.test(document.getElementById("score-line").textContent));
   mark("result");
-  await wait(1800);
+  await wait(1600);
+  if (await page.$eval("#post", (n) => n.getBoundingClientRect().bottom > innerHeight)) await scrollTo("#post", "center");
   await tap("#post", "post");
   await wait(900);
   mark("end");
   await recorder.stop();
+  if (start === null) throw new Error("no screencast frame arrived");
+  console.log(`first frame ${(start - called).toFixed(3)} s after the screencast call`);
+  for (const a of actions) { a.t = +(a.at - start).toFixed(3); delete a.at; }
 
   const share = await page.$eval("#post", (a) => new URL(a.href).searchParams.get("text"));
   const score = await page.$eval("#score", (n) => n.textContent);
-  writeFileSync(join(here, "recording.json"), JSON.stringify({ day, number: round.number, score, share, real: round.items.map((i) => i.real), guesses, actions }, null, 1) + "\n");
-  console.log(`recorded round ${round.number} (${day}): ${score}, ${actions.length} actions, ${actions.at(-1).t.toFixed(1)} s`);
+  const scoreLine = await page.$eval("#score-line", (n) => n.textContent);
+  const items = order.slice(first, first + SET_SIZE);
+  writeFileSync(join(here, "recording.json"), JSON.stringify({ set: config.set, positions: [first + 1, first + SET_SIZE], score, scoreLine, share,
+    real: items.map((i) => i.real), guesses: items.map((_, k) => guessAt(first + k)), actions }, null, 1) + "\n");
+  console.log(`recorded set ${config.set} (positions ${first + 1}-${first + SET_SIZE}): ${score}, ${scoreLine}, ${actions.length} actions, ${actions.at(-1).t.toFixed(1)} s`);
 } finally {
   await browser.close();
 }

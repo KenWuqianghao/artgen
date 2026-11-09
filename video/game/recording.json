@@ -1,132 +1,136 @@
 {
- "day": "2026-11-09",
- "number": 35,
- "score": "8 of 10",
- "share": "Art or Artifice? #35\n🟩🟥🟩🟩🟩🟩🟥🟩🟩🟩 8/10 in 0:24\nhttps://artgen-studio.wooqianghao.workers.dev/s/8",
+ "set": 17,
+ "positions": [
+  161,
+  170
+ ],
+ "score": "8/10",
+ "scoreLine": "#1 of 1 player · 136 of 170 correct",
+ "share": "Art or BS? Set 17\n🟩🟥🟩🟩🟩🟩🟥🟩🟩🟩 8/10\n#1 on the ladder\nhttps://artgen-studio.wooqianghao.workers.dev/s/8",
  "real": [
-  true,
   false,
   true,
   true,
-  false,
+  true,
+  true,
+  true,
   true,
   false,
-  true,
   false,
-  false
+  true
  ],
  "guesses": [
+  "ai",
+  "ai",
   "real",
   "real",
   "real",
   "real",
   "ai",
-  "real",
-  "real",
-  "real",
   "ai",
-  "ai"
+  "ai",
+  "real"
  ],
  "actions": [
   {
    "name": "answer0",
-   "t": 2.356
+   "t": 5.485
   },
   {
    "name": "label0",
-   "t": 3.338
+   "t": 6.721
   },
   {
    "name": "next0",
-   "t": 5.846
+   "t": 9.525
   },
   {
    "name": "answer1",
-   "t": 7.997
+   "t": 12.09
   },
   {
    "name": "label1",
-   "t": 8.94
+   "t": 13.24
   },
   {
    "name": "next1",
-   "t": 11.402
+   "t": 15.831
   },
   {
    "name": "answer2",
-   "t": 12.534
+   "t": 17.03
   },
   {
    "name": "next2",
-   "t": 13.502
+   "t": 18.235
   },
   {
    "name": "answer3",
-   "t": 14.49
+   "t": 19.317
   },
   {
    "name": "next3",
-   "t": 15.434
+   "t": 20.401
   },
   {
    "name": "answer4",
-   "t": 16.398
+   "t": 21.583
   },
   {
    "name": "next4",
-   "t": 17.385
+   "t": 22.782
   },
   {
    "name": "answer5",
-   "t": 18.379
+   "t": 23.957
   },
   {
    "name": "next5",
-   "t": 19.316
+   "t": 25.128
   },
   {
    "name": "answer6",
-   "t": 20.23
+   "t": 26.271
   },
   {
    "name": "next6",
-   "t": 21.1
+   "t": 27.589
   },
   {
    "name": "answer7",
-   "t": 22.095
+   "t": 29.668
   },
   {
    "name": "next7",
-   "t": 23.047
+   "t": 30.985
   },
   {
    "name": "answer8",
-   "t": 24.106
+   "t": 32.073
   },
   {
    "name": "next8",
-   "t": 25.074
+   "t": 33.672
   },
   {
    "name": "answer9",
-   "t": 26.007
+   "t": 35.089
   },
   {
    "name": "next9",
-   "t": 26.951
+   "t": 36.465
   },
   {
    "name": "result",
-   "t": 27.185
+   "t": 36.754
   },
   {
    "name": "post",
-   "t": 29.378
+   "t": 38.928
   },
   {
    "name": "end",
-   "t": 30.35
+   "t": 39.914
   }
  ]
 }

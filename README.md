@@ -269,7 +269,7 @@ The script records the Studio with a scripted browser, then builds the compositi
 
 ## Game video
 
-`video/game/renders/art-or-artifice.mp4` is a 28-second square video of the game for X. It works with the sound off. It starts with three photographs to guess, then shows a recording of the real game page, the share text and the address.
+`video/game/renders/art-or-bs.mp4` is a 29-second square video of the game for X. It works with the sound off. It starts with three photographs to guess, then shows a recording of one set on the real game page, the checkpoint after the set, the share text and the address.
 
 To rebuild it, run the build script:
 
@@ -277,11 +277,11 @@ To rebuild it, run the build script:
 bash video/game/build.sh
 ```
 
-The script builds the Studio and starts a local Worker with an empty game state. It plays one round with a scripted browser and stops the Worker. Then it cuts the recording, builds the composition, the music and the sound effects, checks the composition and renders it. It needs Node.js, ffmpeg, the packages in `package.json` (`npm ci`), `game/.key` and Chrome. To use a different Chrome, set `CHROME` to its path.
+The script builds the Studio and starts a local Worker with an empty game state. A new player answers the sets before the recorded set through the API. Then a scripted browser plays the recorded set, and the script stops the Worker. Then it cuts the recording, builds the composition, the music and the sound effects, checks the composition and renders it. It needs Node.js, ffmpeg, the packages in `package.json` (`npm ci`), `game/.key` and Chrome. To use a different Chrome, set `CHROME` to its path. On a computer with little free memory, set `WORKERS=1`.
 
-`video/game/config.json` holds the address in the video, the three photographs to guess and the answers that the recording gets wrong. To show a different address, change `url` and run the build script again. The browser sends that address to the local Worker, so the recorded page and its share text show it too.
+`video/game/config.json` holds the address in the video, the recorded set, the answers that the recording gets wrong in each set and the three photographs to guess. To show a different address, change `url` and run the build script again. The browser sends that address to the local Worker, so the recorded page and its share text show it too.
 
-The recording plays the round of the current UTC day. A build on a different day records different photographs.
+All players get the photographs in the same order, so the video must not show the answers of the first sets. The video records set 17 (photographs 161 to 170 of 185). The three photographs to guess come after set 17 in the order. The build stops if a photograph to guess comes earlier. The order depends on `game/.key`, so use the key of the live game. If the game gets new photographs, check the positions in `video/game/timeline.json`.
 
 ## Folders
 

@@ -1,9 +1,10 @@
 {
   "url": "artgen-studio.wooqianghao.workers.dev/game",
+  "set": 17,
   "wrong": [1, 6],
   "playalong": [
-    {"kind": "real", "id": "press-0020"},
-    {"kind": "ai", "id": "ceremonial-suit-v0-cadac78d"},
-    {"kind": "real", "id": "press-0097"}
+    {"kind": "real", "id": "press-0082"},
+    {"kind": "ai", "id": "appliance-chorus-v0-6c638bf8"},
+    {"kind": "real", "id": "press-0091"}
   ]
 }

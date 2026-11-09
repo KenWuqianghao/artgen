@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Cut the recording and write timeline.json and index.html for the game video (1080x1080).
-Inputs: config.json (address, play-along photographs), recording.json and raw/game.mp4 from record.mjs.
+Inputs: config.json (address, recorded set, play-along photographs), recording.json and raw/game.mp4 from record.mjs.
 Run from video/game: python3 scripts/build_index.py"""
+import hashlib
+import hmac
 import html
 import json
 import shutil
@@ -27,22 +29,39 @@ LIBRARY = {e["id"]: e for e in json.load(open(ROOT / "library/index.json"))["ent
 ARCHETYPES = json.loads(subprocess.run(["python3", "-c", "import json; from artgen import corpus; "
                                         "print(json.dumps({a['id']: a['basis'] for a in corpus.archetypes()}))"],
                                        cwd=ROOT, capture_output=True, text=True, check=True).stdout)
+
+
+def order_positions():
+    """Place of each play-along photograph in the order of the game (1-based), as artgen/studio.py names the images."""
+    key = bytes.fromhex((ROOT / "game/.key").read_text().strip())
+    pool = json.load(open(ROOT / "worker/src/game_pool.json"))
+    order = sorted(e["img"] for kind in ("real", "ai") for e in pool[kind])
+    return [order.index(hmac.new(key, f"{p['kind']}:{p['id']}".encode(), hashlib.sha256).hexdigest()[:16]) + 1
+            for p in CONFIG["playalong"]]
+
+
+# Every player gets the same order, so the video shows only photographs after the recorded set.
+POSITIONS = order_positions()
+early = [p["id"] for p, at in zip(CONFIG["playalong"], POSITIONS) if at <= REC["positions"][1]]
+if early:
+    raise SystemExit(f"config.json: play-along photographs {early} come before the end of the recorded set; pick later ones")
+
 Path("assets").mkdir(exist_ok=True)
 photos = []
 for i, p in enumerate(CONFIG["playalong"]):
     if p["kind"] == "real":
         e = MANIFEST[p["id"]]
         src = ROOT / "game/real" / f"{p['id']}.jpg"
-        place = e["venue"] + (f", {e['year']}" if e["year"] else "")
-        lines = [("who", e["artist"]), ("where", place), ("photo", e["credit"])]
+        lines = [("who", e["artist"]), ("where", e["venue"]), ("photo", e["credit"])]
     else:
         e = LIBRARY[p["id"]]
         src = ROOT / e["file"]
-        lines = [("who", "AI made this room."), ("where", "It imitates " + " and ".join(ARCHETYPES[e["archetype"]][:2]) + ".")]
+        artists = [b.split(",")[0] for b in ARCHETYPES[e["archetype"]][:2]]
+        lines = [("who", "AI made this room."), ("where", "It imitates " + " and ".join(artists) + ".")]
     shutil.copyfile(src, f"assets/p{i + 1}.jpg")
     photos.append({"kind": p["kind"], "lines": lines})
 
-HOOK = 1.4            # the first photograph fills the frame with the question
+HOOK = 1.5            # the first photograph fills the frame with the question
 SETTLE = 0.35         # then it moves into the frame of the play-along
 GUESS, HOLD = 1.5, 1.3
 beats, t = [], 0.0
@@ -59,7 +78,7 @@ SEGMENTS = [("answer0", -0.8, "label0", 0.0, 1.5),
             ("label0", 0.0, "next0", 0.15, 1.6),
             ("next0", 0.15, "answer1", -0.5, 2.6),
             ("answer1", -0.5, "next1", 0.15, 1.5),
-            ("next1", 0.15, "next9", 0.25, 7.0),
+            ("next1", 0.15, "next9", 0.25, 8.0),
             ("next9", 0.25, "end", 0.0, 1.3)]
 segs, out_t = [], 0.0
 for a, da, b, db, speed in SEGMENTS:
@@ -84,28 +103,29 @@ subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "raw/game.mp4", "-fi
 CLIP_LEN = round(dur("assets/clip.mp4"), 3)
 CLIP_END = round(CLIP_START + CLIP_LEN, 3)
 POST = round(CLIP_END, 3)
-CLOSE = round(POST + 2.7, 3)
-TOTAL = round(CLOSE + 3.2, 3)
+CLOSE = round(POST + 2.6, 3)
+TOTAL = round(CLOSE + 3.0, 3)
 
 # ---- captions over the recording
 second = "AI copies real works. The label names them." if not REC["real"][1] else "A real room gets its artist and venue."
-CAPTIONS = [(vt("answer0", -0.8), vt("label0", -0.2), "Tap Real or AI"),
+CAPTIONS = [(vt("answer0", -0.8), vt("label0", -0.2), "Tap Art or BS"),
             (vt("label0", -0.2), vt("next0", 0.1), "The wall label tells you the truth"),
             (vt("answer1", -0.4), vt("next1", 0.1), second),
-            (vt("next1", 0.15), vt("next9", 0.2), "Ten photographs a day"),
-            (vt("next9", 0.3), vt("post", -0.25), "Everyone gets the same ten"),
+            (vt("next1", 0.15), vt("next9", 0.2), "Ten photographs in each set"),
+            (vt("next9", 0.3), vt("post", -0.25), "Your score and your rank"),
             (vt("post", -0.25), CLIP_END, "Then post your score")]
 taps = [vt(a["name"]) for a in REC["actions"] if a["name"].startswith(("answer", "next", "post"))]
 
 # ---- the post: the text that the page put in its "Post on X" link
 share_lines = REC["share"].split("\n")
-score = int(share_lines[1].split()[1].split("/")[0])
+score = int(share_lines[3].rsplit("/", 1)[1])
 shutil.copyfile(ROOT / f"artgen/studio_static/share/{score}.jpg", "assets/card.jpg")
 shutil.copyfile(ROOT / "artgen/studio_static/icon.svg", "assets/icon.svg")
 squares = [c for c in share_lines[1].split(" ")[0]]
 post_html = (f'<p class="pl">{html.escape(share_lines[0])}</p>'
              f'<p class="pl grid">{"".join(f"<span class=sq>{c}</span>" for c in squares)} {html.escape(share_lines[1].split(" ", 1)[1])}</p>'
-             f'<p class="pl link">{html.escape(share_lines[2])}</p>')
+             f'<p class="pl">{html.escape(share_lines[2])}</p>'
+             f'<p class="pl link">{html.escape(share_lines[3])}</p>')
 
 # ---- sound: music, a tick for each tap and count, a stamp for each reveal, a chime on the close
 audio = [f'<audio id="music" src="audio/music/theme.wav" data-start="0" data-duration="{TOTAL:.3f}" data-track-index="30" data-volume="0.8"></audio>']
@@ -129,17 +149,17 @@ sfx("chime", CLOSE, 1.6, 0.6, 23)
 
 # ---- html
 def play_layer(i, p):
-    stamp = ('<div class="stamp real">Real</div>' if p["kind"] == "real"
-             else '<div class="stamp ai">AI</div>')
+    stamp = ('<div class="stamp real">Art</div>' if p["kind"] == "real"
+             else '<div class="stamp ai">BS</div>')
     lines = "".join(f'<p class="{c}">{html.escape(t)}</p>' for c, t in p["lines"])
     return f"""
   <div class="beat pa{' first' if i == 0 else ''}" id="pa{i}">
-    <div class="head"><span class="count">{i + 1} of {len(photos)}</span><h1 class="serif">Real or AI?</h1>
+    <div class="head"><span class="count">{i + 1} of {len(photos)}</span><h1 class="serif">Real art, or AI BS?</h1>
       <div class="clock" id="clock{i}"><span>3</span><span>2</span><span>1</span></div></div>
     <div class="frame" id="frame{i}"><img src="assets/p{i + 1}.jpg" alt="">{stamp}</div>
     <div class="bar" id="bar{i}"></div>
     <div class="foot">
-      <div class="choices" id="choices{i}"><div class="choice">Real</div><div class="choice">AI</div></div>
+      <div class="choices" id="choices{i}"><div class="choice">Art</div><div class="choice">BS</div></div>
       <div class="credit {p['kind']}" id="credit{i}">{lines}</div>
     </div>
   </div>"""
@@ -167,7 +187,7 @@ page = f"""<!doctype html>
   /* play-along */
   .pa .head {{ position: absolute; left: 60px; right: 60px; top: 44px; height: 140px; }}
   .pa .count {{ display: block; font-size: 30px; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }}
-  .pa h1 {{ font-size: 100px; line-height: 1; letter-spacing: -0.01em; margin-top: 6px; }}
+  .pa h1 {{ font-size: 84px; line-height: 1; letter-spacing: -0.01em; margin-top: 10px; }}
   .clock {{ position: absolute; right: 0; top: 18px; width: 116px; height: 116px; border: 4px solid var(--ink); border-radius: 50%; }}
   .clock span {{ position: absolute; inset: 0; display: grid; place-items: center; font-size: 64px; font-weight: 600; opacity: 0; font-variant-numeric: tabular-nums; }}
   .frame {{ position: absolute; left: 60px; top: 200px; width: 960px; height: 640px; overflow: hidden; background: var(--soft);
@@ -196,7 +216,7 @@ page = f"""<!doctype html>
   #pa0 .head, #pa0 .bar, #pa0 .foot {{ opacity: 0; }}
   #hook {{ position: absolute; left: 0; right: 0; top: 0; padding: 70px 60px 160px;
     background: linear-gradient(rgba(10,10,10,.62), rgba(10,10,10,.35) 60%, rgba(10,10,10,0)); color: #fff; }}
-  #hook h1 {{ font-size: 132px; line-height: .98; letter-spacing: -0.015em; }}
+  #hook h1 {{ font-size: 140px; line-height: .96; letter-spacing: -0.015em; }}
   #brand {{ position: absolute; left: 40px; bottom: 40px; display: flex; align-items: center; gap: 14px; padding: 12px 24px 12px 12px;
     background: #fff; border-radius: 10px; box-shadow: 0 10px 30px -12px rgba(0,0,0,.5); }}
   #brand img {{ width: 60px; height: 60px; display: block; }}
@@ -242,12 +262,12 @@ page = f"""<!doctype html>
 {caption_html}
   </div>
 {layers}
-  <div id="hook"><h1 class="serif">Is this room real?</h1></div>
-  <div id="brand"><img src="assets/icon.svg" alt=""><span>Art or Artifice?</span></div>
+  <div id="hook"><h1 class="serif">Real art,<br>or AI BS?</h1></div>
+  <div id="brand"><img src="assets/icon.svg" alt=""><span>Art or BS?</span></div>
 
   <div class="beat" id="ask"><div class="center">
     <h2 class="serif">How many did you get?</h2>
-    <p>Play ten a day.</p>
+    <p>Now play the real game.</p>
   </div></div>
 
   <div class="beat" id="post">
@@ -257,8 +277,8 @@ page = f"""<!doctype html>
 
   <div class="beat" id="close"><div class="center">
     <img class="icon" src="assets/icon.svg" alt="">
-    <h2 class="serif">Art or Artifice?</h2>
-    <div class="tag">A new round every day</div>
+    <h2 class="serif">Art or BS?</h2>
+    <div class="tag">Climb the ladder</div>
     <div class="url">{html.escape(URL)}</div>
   </div></div>
 
@@ -331,7 +351,9 @@ window.__timelines["game-video"] = tl;
 </html>
 """
 open("index.html", "w").write(page)
-json.dump({"url": URL, "beats": beats, "ask": ASK, "clip_start": CLIP_START, "clip_end": CLIP_END, "segments": segs,
+json.dump({"url": URL, "set": REC["set"], "set_positions": REC["positions"],
+           "playalong": [dict(p, position=at) for p, at in zip(CONFIG["playalong"], POSITIONS)], "beats": beats, "ask": ASK, "clip_start": CLIP_START, "clip_end": CLIP_END, "segments": segs,
            "captions": CAPTIONS, "taps": taps, "post": POST, "close": CLOSE, "total": TOTAL},
           open("timeline.json", "w"), indent=1)
+print(f"play-along positions {POSITIONS}, recorded set {REC['set']} = positions {REC['positions']}")
 print(f"index.html: play-along 0-{ASK}, clip {CLIP_START}-{CLIP_END}, post {POST}, close {CLOSE}, total {TOTAL}")
