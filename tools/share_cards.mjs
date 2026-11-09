@@ -1,13 +1,15 @@
-// Link preview cards for "Art or Artifice?": artgen/studio_static/share/<score>.jpg (0 to 10) and card.jpg.
+// Link preview cards for "Art or Artifice?": artgen/studio_static/share/<score>.jpg (0 to 10) and card.jpg,
+// and the icon: artgen/studio_static/icon.svg, apple-touch-icon.png and icon-512.png.
 // Run: node tools/share_cards.mjs   (needs Chrome: set CHROME, or install Chrome or Chromium)
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync, readdirSync, statSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
 import puppeteer from "puppeteer-core";
 
 const ROOT = new URL("..", import.meta.url).pathname;
-const OUT = join(ROOT, "artgen/studio_static/share");
+const STATIC = join(ROOT, "artgen/studio_static");
+const OUT = join(STATIC, "share");
 const TOTAL = 10;
 
 // Only artgen's own images: the real photographs in game/real/ belong to their artists.
@@ -25,6 +27,14 @@ const PHOTOS = {
   9: "woven-canopy-v1-ec2d0b2c",
   10: "altar-v1-d06ba2ec",
 };
+
+// A picture frame with a question mark. The frame is on a 4-unit grid, so at 16 px every edge is on a whole pixel.
+const ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<rect x="4" y="4" width="56" height="56" fill="#141414"/><rect x="12" y="12" width="40" height="40" fill="#fff"/>
+<path d="M25 26c0-4.6 3.1-7.5 7-7.5s7 2.7 7 6.7c0 6.2-7 5.9-7 12" fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round"/>
+<circle cx="32" cy="45.5" r="3.7" fill="#141414"/>
+</svg>
+`;
 
 const HOOK = {
   0: "Every room fooled me.<b>Can you tell?</b>",
@@ -91,6 +101,17 @@ for (const key of Object.keys(PHOTOS)) {
   await tab.evaluate(() => document.fonts.ready);
   const path = join(OUT, `${key}.jpg`);
   await tab.screenshot({ path, type: "jpeg", quality: 80 });
+  console.log(`${path}  ${Math.round(statSync(path).size / 1024)} KB`);
+}
+
+writeFileSync(join(STATIC, "icon.svg"), ICON);
+const mark = "data:image/svg+xml;base64," + Buffer.from(ICON).toString("base64");
+for (const [name, size] of [["apple-touch-icon.png", 180], ["icon-512.png", 512]]) {
+  await tab.setViewport({ width: size, height: size });
+  // opaque, with room around the frame for the rounded corners that phones cut
+  await tab.setContent(`<body style="margin:0;background:#fff;display:grid;place-items:center;height:100vh"><img src="${mark}" width="${Math.round(size * 0.8)}"></body>`, { waitUntil: "load" });
+  const path = join(STATIC, name);
+  await tab.screenshot({ path, type: "png" });
   console.log(`${path}  ${Math.round(statSync(path).size / 1024)} KB`);
 }
 await browser.close();

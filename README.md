@@ -153,6 +153,8 @@ npm ci
 node tools/share_cards.mjs
 ```
 
+The same script makes the icon of the game and the Studio: `icon.svg`, `apple-touch-icon.png` (180 × 180) and `icon-512.png` in `artgen/studio_static/`.
+
 The script needs Chrome or Chromium. It looks on the `PATH` and in the Playwright and Puppeteer caches. To use a different browser, set `CHROME` to its path. The cards use only images from the image library. They never use the real photographs in `game/real/`, because those belong to their artists.
 
 ## Quick start on the command line
