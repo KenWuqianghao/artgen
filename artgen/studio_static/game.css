@@ -61,7 +61,9 @@
 .score h1 { font-size: 88px; line-height: 1; margin: 0 0 12px; letter-spacing: -.01em; font-variant-numeric: lining-nums; }
 .score p { margin: 0 0 6px; max-width: 60ch; }
 .share-text { color: var(--muted); font-size: 14px; white-space: pre-wrap; overflow-wrap: anywhere; }
-.score .row { align-items: center; gap: 14px; margin-top: 16px; }
+.score .share { gap: 8px; margin-top: 18px; }
+.share .btn { padding: 10px 18px; font-size: 16px; }
+#countdown { margin-top: 12px; }
 .result h2 { font-size: 15px; font-weight: 600; margin: 0 0 12px; }
 .name-form { display: flex; gap: 8px; align-items: end; }
 .name-form .field { margin-top: 0; }

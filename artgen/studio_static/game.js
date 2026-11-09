@@ -63,7 +63,9 @@
     },
     finished: function () {
       $("score").textContent = round.score + " of " + round.images.length;
-      $("share-text").textContent = shareText();
+      var r = result();
+      $("share-text").textContent = shareText(r);
+      $("post").href = "https://x.com/intent/post?text=" + encodeURIComponent(shareText(r));
       $("name").value = round.name || "";
       $("works").replaceChildren.apply($("works"), round.answers.map(workCard));
       renderBoard();
@@ -132,11 +134,17 @@
     return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
   }
 
-  function shareText() {
-    var squares = round.answers.map(function (a) { return isRight(a) ? "🟩" : "🟥"; }).join("");
-    return "Real or artgen? #" + round.number + "  " + round.score + "/" + round.images.length + "  " + squares +
-      "\n" + location.origin + location.pathname;
+  function result() {
+    return { number: round.number, score: round.score, total: round.images.length, ms: round.ms, marks: round.answers.map(isRight) };
   }
+
+  function shareMessage(r) {
+    var squares = r.marks.map(function (right) { return right ? "🟩" : "🟥"; }).join("");
+    return "Real or artgen? #" + r.number + "\n" + squares + " " + r.score + "/" + r.total + " in " + clockTime(r.ms);
+  }
+
+  function shareUrl(r) { return location.origin + "/s/" + r.score; }
+  function shareText(r) { return shareMessage(r) + "\n" + shareUrl(r); }
 
   function renderBoard() {
     var text = "Your time is " + clockTime(round.ms) + ".";
@@ -223,9 +231,24 @@
   function copyResult() {
     var b = $("copy"), failed = function () { b.textContent = "Select the text above to copy it"; };
     // no clipboard on a page that is not served over HTTPS
-    if (navigator.clipboard) navigator.clipboard.writeText(shareText()).then(function () { b.textContent = "Copied"; }, failed);
+    if (navigator.clipboard) navigator.clipboard.writeText(shareText(result())).then(function () { b.textContent = "Copied"; }, failed);
     else failed();
     setTimeout(function () { b.textContent = "Copy result"; }, 2400);
+  }
+
+  function shareResult() {
+    var r = result();
+    navigator.share({ text: shareMessage(r), url: shareUrl(r) }).catch(function (e) {
+      if (e.name !== "AbortError") copyResult();
+    });
+  }
+
+  // The share sheet beats a link to X on a phone; on a computer it is the other way round.
+  if (navigator.share) {
+    $("share").hidden = false;
+    $("share").addEventListener("click", shareResult);
+    if (matchMedia("(pointer: coarse)").matches) $("post").classList.add("ghost");
+    else { $("share").classList.add("ghost"); $("post").after($("share")); }
   }
 
   $("guess-real").addEventListener("click", function () { answer("real"); });
