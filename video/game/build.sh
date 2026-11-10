@@ -15,6 +15,7 @@ trap stop EXIT
 setsid bash -c "cd ../.. && exec npx wrangler dev --port $PORT --local-protocol https --persist-to '$STATE' >'$STATE/wrangler.log' 2>&1" &
 WORKER=$!
 for _ in $(seq 60); do curl -sk -o /dev/null "https://127.0.0.1:$PORT/game" && break; sleep 1; done
+curl -sk -o /dev/null "https://127.0.0.1:$PORT/game" || { echo "The local Worker did not start:" >&2; cat "$STATE/wrangler.log" >&2; exit 1; }
 PORT="$PORT" node record.mjs                      # one set -> raw/game.mp4 + recording.json
 kill -- "-$WORKER"; WORKER=""
 
