@@ -4,18 +4,28 @@
 //   POST /api/render        {prompt} -> {url, cached, remaining}
 //   GET  /api/image/<id>    a rendered JPEG
 //
-// It also runs the daily guessing game "Real or artgen?" (rules in game.js):
+// It also runs the guessing game "Art or BS?" (rules in game.js). Every player answers the same photographs
+// in the same order, in sets of ten, and climbs one all-time ladder:
 //
-//   GET  /api/game/round?player=       today's ten images and this player's answers so far
-//   POST /api/game/answer              {player, day, index, guess} -> the truth about the image at index
-//   POST /api/game/name                {player, name} -> a row on today's leaderboard
-//   GET  /api/game/leaderboard?day=    the top 50 of a day
+//   GET  /api/game/state?player=     this player's standing, next photograph and current set
+//   POST /api/game/answer            {player, index, guess} -> the truth about the next photograph
+//   POST /api/game/name              {player, name} -> a row on the ladder, after the first set
+//   GET  /api/game/ladder?player=    the top 50 named players; the player's own row has me: true
+//
+// Link previews for social posts:
+//
+//   GET  /s/<score>    a page with the preview card of a score from 0 to 10 for crawlers; it sends people on to /game
+//   GET  /game         the game page, with its preview tags made absolute for the public host (PUBLIC_HOST)
+//   GET  /studio       the Studio, because the public host shows the game at /
 //
 // One Durable Object holds the counters, the images and the game, so the daily limits are exact and nothing else needs provisioning.
 import { DurableObject } from "cloudflare:workers";
-import { BOARD_SIZE, NAMES_PER_VISITOR, cleanName, crowdOf, isDay, isGuess, isPlayer, isRight, roundFor, roundNumber, scoreOf }
-  from "./game.js";
+import { LADDER_SHOWN, NAMES_PER_VISITOR, cleanName, crowdOf, currentSet, isGuess, isPlayer, isRight, moveInHist, onLadder,
+  orderOf, playersIn, rankIn, setOneDone, unanswered } from "./game.js";
 import pool from "./game_pool.json";
+
+const ORDER = orderOf(pool);
+const BY_IMG = new Map(ORDER.map((item) => [item.img, item]));
 
 const PREFIX = "Installation view photograph from the press kit of an international contemporary art biennial. Room:";
 const SUFFIX = "No watermark.";
@@ -45,13 +55,13 @@ function limits(env) {
   return { visitor: int(env.FREE_PER_VISITOR, 3), global: int(env.FREE_PER_DAY, 60) };
 }
 
-// Only the Studio itself may spend the owner's money: same-origin requests, plus localhost for development.
-function allowedOrigin(request) {
+// Only the site itself may spend the owner's money: its own host, or the public host that proxies to it.
+function allowedOrigin(request, env) {
   const origin = request.headers.get("origin");
   if (!origin) return false;
   try {
     const o = new URL(origin), here = new URL(request.url);
-    return o.host === here.host;
+    return o.host === here.host || o.host === env.PUBLIC_HOST;
   } catch { return false; }
 }
 
@@ -84,82 +94,80 @@ export class Store extends DurableObject {
   async getImage(id) { return (await this.ctx.storage.get(`i:${id}`)) || null; }
 
   // Each method is one call, so its read-modify-write is exact.
-  async gameOpen(day, player, imgs) {
-    const p = (await this.ctx.storage.get(`gp:${day}:${player}`)) || newPlayer();
-    const seen = imgs.slice(0, p.guesses.length).map((img) => `gi:${img}`);
-    const got = await this.ctx.storage.get([...seen, `gl:${day}`]);
-    return { p, stats: seen.map((k) => got.get(k)), rank: rankOf(got.get(`gl:${day}`), player) };
+  async gameState(player) {
+    const key = `pl:${player}`;
+    const got = await this.ctx.storage.get([key, "hist"]);
+    const p = got.get(key) || newPlayer();
+    const set = currentSet(p.answers);
+    const stats = set.answers.length ? await this.ctx.storage.get(set.answers.map(([img]) => `gi:${img}`)) : new Map();
+    return { p, hist: got.get("hist") || [], set, stats: set.answers.map(([img]) => stats.get(`gi:${img}`)) };
   }
 
-  async gameAnswer(day, player, index, guess, items) {
-    const key = `gp:${day}:${player}`, sKey = `gs:${day}`;
-    const p = (await this.ctx.storage.get(key)) || newPlayer();
-    if (p.guesses.length >= items.length) return { refused: "finished" };
-    if (index !== p.guesses.length) return { refused: "stale" };
-    const iKey = `gi:${items[index].img}`;
-    const got = await this.ctx.storage.get([iKey, sKey]);
-    const stat = got.get(iKey) || { seen: 0, right: 0 };
+  async gameAnswer(player, index, guess) {
+    const key = `pl:${player}`;
+    const got = await this.ctx.storage.get([key, "hist", "ladder"]);
+    const p = got.get(key) || newPlayer();
+    const left = unanswered(ORDER, p.answers);
+    if (!left.length) return { refused: "finished" };
+    if (index !== p.answers.length) return { refused: "stale" };
+    const item = left[0], iKey = `gi:${item.img}`, right = isRight(item, guess);
+    const stat = (await this.ctx.storage.get(iKey)) || { seen: 0, right: 0 };
     stat.seen += 1;
-    if (isRight(items[index], guess)) stat.right += 1;
-    p.guesses.push(guess);
-    const puts = { [key]: p, [iKey]: stat };
-    if (p.guesses.length === items.length) {
-      p.doneMs = Date.now() - p.start;
-      const sum = got.get(sKey) || { players: 0, scoreSum: 0 };
-      puts[sKey] = { players: sum.players + 1, scoreSum: sum.scoreSum + scoreOf(items, p.guesses) };
-    }
+    if (right) stat.right += 1;
+    const from = p.answers.length ? p.correct : null;
+    p.answers.push([item.img, guess]);
+    if (right) p.correct += 1;
+    p.at = Date.now();
+    const hist = moveInHist(got.get("hist") || [], from, p.correct);
+    const puts = { [key]: p, [iKey]: stat, hist };
+    if (p.name) puts.ladder = onLadder(got.get("ladder") || [], ladderEntry(player, p));
     await this.ctx.storage.put(puts);
-    return { index, stat, p };
+    return { item, stat, p, hist, next: left[1] || null };
   }
 
-  async gameName(day, player, name, visitor, items) {
-    const key = `gp:${day}:${player}`, lKey = `gl:${day}`, nKey = `gn:${day}:${visitor}`;
-    const got = await this.ctx.storage.get([key, lKey, nKey]);
+  async gameName(player, name, visitor, day) {
+    const key = `pl:${player}`, nKey = `gn:${day}:${visitor}`;
+    const got = await this.ctx.storage.get([key, "hist", "ladder", nKey]);
     const p = got.get(key);
-    if (!p || p.doneMs === null) return { refused: "unfinished" };
-    let board = got.get(lKey) || [];
+    if (!p || !setOneDone(p.answers.length, ORDER.length)) return { refused: "early" };
     if (p.name !== name) {
       const used = got.get(nKey) || 0;
       if (used >= NAMES_PER_VISITOR) return { refused: "limit" };
       p.name = name;
-      board = board.filter((e) => e.player !== player);
-      board.push({ player, name, score: scoreOf(items, p.guesses), ms: p.doneMs });
-      board = board.sort((a, b) => b.score - a.score || a.ms - b.ms).slice(0, BOARD_SIZE);
-      await this.ctx.storage.put({ [key]: p, [lKey]: board, [nKey]: used + 1 });
+      await this.ctx.storage.put({ [key]: p, ladder: onLadder(got.get("ladder") || [], ladderEntry(player, p)), [nKey]: used + 1 });
     }
-    return { rank: rankOf(board, player) };
+    return { rank: rankIn(got.get("hist") || [], p.correct) };
   }
 
-  async gameBoard(day) {
-    const got = await this.ctx.storage.get([`gl:${day}`, `gs:${day}`]);
-    return { board: got.get(`gl:${day}`) || [], sum: got.get(`gs:${day}`) || { players: 0, scoreSum: 0 } };
+  async gameLadder() {
+    const got = await this.ctx.storage.get(["hist", "ladder"]);
+    return { hist: got.get("hist") || [], ladder: got.get("ladder") || [] };
   }
 
-  // Yesterday's counters and rounds are dead weight; drop them once a day. Leaderboards and image statistics stay.
+  // Yesterday's counters are dead weight; drop them once a day. The keys of the old daily game go too.
   async sweep(day) {
     const last = await this.ctx.storage.get("swept");
     if (last === day) return;
-    for (const prefix of ["v:", "g:", "gp:", "gn:"]) {
+    const drop = async (options) => {
       for (;;) {
-        const old = await this.ctx.storage.list({ prefix, end: `${prefix}${day}`, limit: 1000 });
+        const old = await this.ctx.storage.list({ ...options, limit: 1000 });
         if (!old.size) break;
         const dead = [...old.keys()];
         for (let i = 0; i < dead.length; i += 128) await this.ctx.storage.delete(dead.slice(i, i + 128));
       }
-    }
+    };
+    for (const prefix of ["v:", "g:", "gn:"]) await drop({ prefix, end: `${prefix}${day}` });
+    for (const prefix of ["gp:", "gl:", "gs:"]) await drop({ prefix });
     await this.ctx.storage.put("swept", day);
   }
 }
 
-const newPlayer = () => ({ start: Date.now(), guesses: [], doneMs: null, name: null });
-
-function rankOf(board, player) {
-  const at = (board || []).findIndex((e) => e.player === player);
-  return at < 0 ? null : at + 1;
-}
+const newPlayer = () => ({ start: Date.now(), answers: [], correct: 0, name: null, at: null });
+const ladderEntry = (player, p) => ({ player, name: p.name, correct: p.correct, answered: p.answers.length, at: p.at });
 
 async function visitorId(request, env) {
-  const ip = request.headers.get("cf-connecting-ip") || "local";
+  // Behind the Vercel proxy every request comes from a Vercel address; Vercel puts the player's address here.
+  const ip = request.headers.get("x-vercel-proxied-for") || request.headers.get("cf-connecting-ip") || "local";
   return (await sha(`${env.VISITOR_SALT || "artgen"}:${ip}`)).slice(0, 24);
 }
 
@@ -191,7 +199,7 @@ async function generate(env, prompt) {
 }
 
 async function render(request, env) {
-  if (!allowedOrigin(request)) return json({ error: "Open the Studio to render." }, 403);
+  if (!allowedOrigin(request, env)) return json({ error: "Open the Studio to render." }, 403);
   if (!env.OPENAI_API_KEY) return json({ error: "Free renders are not set up on this Studio.", reason: "disabled" }, 503);
   let prompt;
   try { prompt = String((await request.json()).prompt || ""); } catch { return json({ error: "Bad request." }, 400); }
@@ -223,62 +231,110 @@ async function render(request, env) {
   return json({ url, cached: false, remaining: slot.remaining, limit: lim.visitor });
 }
 
-const answerView = (item, guess, stat) => ({ guess, real: item.real, reveal: item.reveal, crowd: crowdOf(stat) });
+// Photographs come straight from the Worker's own host, so they do not use the proxy's transfer allowance.
+const imageUrl = (origin, item) => (item ? `${origin}/game/media/${item.img}.jpg` : null);
+
+// A photograph can leave the pool after a player answered it; its truth is then unknown.
+function answerView(origin, [img, guess], stat) {
+  const item = BY_IMG.get(img);
+  if (!item) return { guess, image: null, real: null, reveal: null, crowd: null };
+  return { guess, image: imageUrl(origin, item), real: item.real, reveal: item.reveal, crowd: crowdOf(stat) };
+}
+
+const standing = (p, hist) => ({
+  answered: p.answers.length, correct: p.correct, rank: p.answers.length ? rankIn(hist, p.correct) : null, players: playersIn(hist),
+});
 
 const GAME = {
-  "GET round": async ({ url, store, day, round }) => {
+  "GET state": async ({ url, store }) => {
     const player = url.searchParams.get("player");
     if (!isPlayer(player)) return json({ error: "Bad player token." }, 400);
-    const { p, stats, rank } = await store.gameOpen(day, player, round.items.map((i) => i.img));
+    const { p, hist, set, stats } = await store.gameState(player);
+    const left = unanswered(ORDER, p.answers);
     return json({
-      day, number: round.number, images: round.items.map((i) => `/game/media/${i.img}.jpg`),
-      answers: p.guesses.map((g, i) => answerView(round.items[i], g, stats[i])),
-      done: p.doneMs !== null, score: scoreOf(round.items, p.guesses), ms: p.doneMs, name: p.name, rank,
+      total: p.answers.length + left.length, ...standing(p, hist), name: p.name, next: imageUrl(url.origin, left[0]),
+      set: { number: set.number, answers: set.answers.map((a, i) => answerView(url.origin, a, stats[i])) },
     });
   },
-  "POST answer": async ({ body, store, day, round }) => {
+  "POST answer": async ({ url, body, store }) => {
     if (!isPlayer(body.player)) return json({ error: "Bad player token." }, 400);
     if (!isGuess(body.guess)) return json({ error: "A guess is \"real\" or \"ai\"." }, 400);
-    if (!Number.isInteger(body.index)) return json({ error: "Bad image index." }, 400);
-    if (body.day !== day) return json({ error: "A new day began at midnight UTC, so the round you were playing has ended. This is the new round." }, 409);
-    const items = round.items.map((i) => ({ img: i.img, real: i.real }));
-    const res = await store.gameAnswer(day, body.player, body.index, body.guess, items);
+    if (!Number.isInteger(body.index)) return json({ error: "Bad answer index." }, 400);
+    const res = await store.gameAnswer(body.player, body.index, body.guess);
     if (res.refused === "stale") return json({ error: "Your answer to that photograph is already saved." }, 409);
-    if (res.refused === "finished") return json({ error: "You answered all ten images today." }, 409);
-    const { real, reveal, crowd } = answerView(round.items[res.index], body.guess, res.stat);
-    return json({
-      index: res.index, real, reveal, crowd,
-      done: res.p.doneMs !== null, score: scoreOf(round.items, res.p.guesses), ms: res.p.doneMs,
-    });
+    if (res.refused === "finished") return json({ error: "You answered every photograph." }, 409);
+    const { real, reveal, crowd } = answerView(url.origin, [res.item.img, body.guess], res.stat);
+    return json({ index: body.index, real, reveal, crowd, ...standing(res.p, res.hist), next: imageUrl(url.origin, res.next) });
   },
-  "POST name": async ({ request, env, body, store, day, round }) => {
+  "POST name": async ({ request, env, body, store, day }) => {
     if (!isPlayer(body.player)) return json({ error: "Bad player token." }, 400);
     const name = cleanName(body.name);
     if (!name) return json({ error: "A name has 1 to 20 characters." }, 400);
-    const items = round.items.map((i) => ({ img: i.img, real: i.real }));
-    const res = await store.gameName(day, body.player, name, await visitorId(request, env), items);
-    if (res.refused === "unfinished") return json({ error: "Finish today's round first." }, 409);
+    const res = await store.gameName(body.player, name, await visitorId(request, env), day);
+    if (res.refused === "early") return json({ error: "Finish the first set to go on the ladder." }, 409);
     if (res.refused === "limit") return json({ error: "Too many names from this address today." }, 429);
     return json({ rank: res.rank, name });
   },
-  "GET leaderboard": async ({ url, store, day: now }) => {
-    const day = url.searchParams.get("day") || now;
-    if (!isDay(day) || roundNumber(day) < 1) return json({ error: "No round on this day." }, 400);
-    const { board, sum } = await store.gameBoard(day);
+  "GET ladder": async ({ url, store }) => {
+    const player = url.searchParams.get("player");
+    const { hist, ladder } = await store.gameLadder();
     return json({
-      day, number: roundNumber(day), players: sum.players,
-      average: sum.players ? Math.round((10 * sum.scoreSum) / sum.players) / 10 : null,
-      entries: board.slice(0, BOARD_SIZE).map((e) => ({ name: e.name, score: e.score, ms: e.ms })),
+      players: playersIn(hist),
+      entries: ladder.slice(0, LADDER_SHOWN).map((e) => ({
+        rank: rankIn(hist, e.correct), name: e.name, correct: e.correct, answered: e.answered, ...(e.player === player && { me: true }),
+      })),
     });
   },
 };
 
+const SHARE_HOOK = { 0: "Every room fooled me.", 10: "Called it every time." };
+
+// Links that people see and share name the public host; the Worker's own host serves it behind the proxy.
+const siteOf = (env, url) => (env.PUBLIC_HOST ? `https://${env.PUBLIC_HOST}` : url.origin);
+
+function sharePage(url, env) {
+  const m = url.pathname.match(/^\/s\/(10|\d)$/);
+  if (!m) return new Response(null, { status: 302, headers: { location: "/game" } });
+  const site = siteOf(env, url), score = Number(m[1]), here = `${site}/s/${score}`, image = `${site}/share/${score}.jpg`;
+  const title = `I scored ${score}/10 on Art or BS?`;
+  const text = `${SHARE_HOOK[score] || ""} Some rooms are real art. AI made the rest. Can you call BS?`.trim();
+  const html = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>${title}</title>
+<meta name="description" content="${text}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Art or BS?">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${text}">
+<meta property="og:url" content="${here}">
+<meta property="og:image" content="${image}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${image}">
+<meta http-equiv="refresh" content="0; url=/game">
+</head>
+<body><a href="/game">Play Art or BS?</a></body>
+</html>
+`;
+  return new Response(html, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=3600" } });
+}
+
+// Crawlers need absolute image addresses, and the static page does not know its host.
+function absoluteTags(page, origin) {
+  return new HTMLRewriter().on('meta[content^="/"]', {
+    element(e) { e.setAttribute("content", origin + e.getAttribute("content")); },
+  }).transform(page);
+}
+
 async function game(request, env, ctx, url) {
   const handler = GAME[`${request.method} ${url.pathname.slice("/api/game/".length)}`];
   if (!handler) return json({ error: "Not found." }, 404);
-  if (request.method === "POST" && !allowedOrigin(request)) return json({ error: "Open the game to play." }, 403);
-  const day = today(), round = roundFor(pool, day);
-  if (!round) return json({ error: "The game is not open yet. It needs at least six real photographs and six artgen images." }, 503);
+  if (request.method === "POST" && !allowedOrigin(request, env)) return json({ error: "Open the game to play." }, 403);
+  if (!ORDER.length) return json({ error: "The game is not open yet. It has no photographs." }, 503);
+  const day = today();
   let body = null;
   if (request.method === "POST") {
     try { body = await request.json(); } catch { body = null; }
@@ -286,13 +342,16 @@ async function game(request, env, ctx, url) {
   }
   const store = env.STORE.get(env.STORE.idFromName("main"));
   ctx.waitUntil(store.sweep(day));
-  return handler({ request, env, url, body, store, day, round });
+  return handler({ request, env, url, body, store, day });
 }
 
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (url.pathname.startsWith("/api/game/")) return game(request, env, ctx, url);
+    if (url.pathname.startsWith("/s/")) return sharePage(url, env);
+    if (url.pathname === "/game") return absoluteTags(await env.ASSETS.fetch(request), siteOf(env, url));
+    if (url.pathname === "/studio") return env.ASSETS.fetch(new Request(new URL("/", url), request));
     if (url.pathname === "/api/status" && request.method === "GET") {
       const lim = limits(env), day = today();
       if (!env.OPENAI_API_KEY) return json({ enabled: false, remaining: 0, limit: lim.visitor });

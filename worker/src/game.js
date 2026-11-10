@@ -1,15 +1,12 @@
-const FIRST_DAY = "2026-10-06";
-const PER_KIND = 6;
-const ROUND_SIZE = 10;
-export const BOARD_SIZE = 50;
+export const SET_SIZE = 10;
+export const LADDER_SHOWN = 50;
+const LADDER_KEPT = 100;
 export const NAMES_PER_VISITOR = 20;
 const CROWD_MIN = 5;
 
-export const isDay = (text) => /^\d{4}-\d{2}-\d{2}$/.test(text) && !Number.isNaN(Date.parse(text));
 export const isPlayer = (text) => typeof text === "string" && /^[A-Za-z0-9_-]{16,64}$/.test(text);
 export const isGuess = (text) => text === "real" || text === "ai";
-
-export const roundNumber = (day) => Math.round((Date.parse(day) - Date.parse(FIRST_DAY)) / 86400000) + 1;
+export const isRight = (item, guess) => (guess === "real") === item.real;
 
 export function cleanName(raw) {
   if (typeof raw !== "string") return null;
@@ -18,41 +15,51 @@ export function cleanName(raw) {
   return length >= 1 && length <= 20 ? name : null;
 }
 
-function seeded(text) {
-  let h = 2166136261;
-  for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 16777619);
-  let a = h >>> 0;
-  return () => {
-    a = (a + 0x6d2b79f5) | 0;
-    let t = Math.imul(a ^ (a >>> 15), 1 | a);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
+// One order for every player, by image name. The name is an HMAC, so the order looks random,
+// and a new photograph takes its own place without moving the others.
+export function orderOf(pool) {
+  const tag = (kind) => pool[kind].map((e) => ({ img: e.img, real: kind === "real", reveal: e.reveal }));
+  return [...tag("real"), ...tag("ai")].sort((a, b) => (a.img < b.img ? -1 : 1));
 }
 
-function shuffled(list, random) {
-  const out = list.slice();
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(random() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
+// answers: [[img, guess], ...] in the order the player gave them
+export function unanswered(order, answers) {
+  const seen = new Set(answers.map(([img]) => img));
+  return order.filter((item) => !seen.has(item.img));
 }
 
-export function roundFor(pool, day) {
-  const number = roundNumber(day);
-  const roundsPerEpoch = Math.floor(Math.min(pool.real.length, pool.ai.length) / PER_KIND);
-  if (roundsPerEpoch < 1 || number < 1) return null;
-  const epoch = Math.floor((number - 1) / roundsPerEpoch), slot = (number - 1) % roundsPerEpoch;
-  const six = (kind) => shuffled(pool[kind], seeded(`epoch:${epoch}:${kind}`))
-    .slice(slot * PER_KIND, (slot + 1) * PER_KIND)
-    .map((e) => ({ img: e.img, real: kind === "real", reveal: e.reveal }));
-  const items = shuffled([...six("real"), ...six("ai")], seeded(`day:${day}`)).slice(0, ROUND_SIZE);
-  return { number, items };
+// The set that holds the last answer; set 1 before the first answer.
+export function currentSet(answers) {
+  const number = Math.max(1, Math.ceil(answers.length / SET_SIZE));
+  return { number, answers: answers.slice((number - 1) * SET_SIZE) };
 }
 
-export const isRight = (item, guess) => (guess === "real") === item.real;
-export const scoreOf = (items, guesses) => guesses.filter((g, i) => isRight(items[i], g)).length;
+export const setOneDone = (answered, total) => answered >= Math.min(SET_SIZE, total);
+
+// hist[c] is the number of players with c correct answers. A player counts from the first answer (from = null).
+export function moveInHist(hist, from, to) {
+  const next = hist.slice();
+  while (next.length <= to) next.push(0);
+  if (from !== null) next[from] -= 1;
+  next[to] += 1;
+  return next;
+}
+
+export const playersIn = (hist) => hist.reduce((a, b) => a + b, 0);
+
+// Players with the same number correct share a rank.
+export function rankIn(hist, correct) {
+  let above = 0;
+  for (let c = correct + 1; c < hist.length; c++) above += hist[c];
+  return above + 1;
+}
+
+// The stored ladder: named players, most correct first, then fewer answers, then the earlier last answer.
+export function onLadder(ladder, entry) {
+  return [...ladder.filter((e) => e.player !== entry.player), entry]
+    .sort((a, b) => b.correct - a.correct || a.answered - b.answered || a.at - b.at)
+    .slice(0, LADDER_KEPT);
+}
 
 export function crowdOf(stat) {
   return stat && stat.seen >= CROWD_MIN ? Math.round((100 * stat.right) / stat.seen) : null;

@@ -79,13 +79,32 @@ Then deploy. Run the same command after each change:
 npm run studio:deploy
 ```
 
-## The game: Real or artgen?
+### The public address
 
-The game shows one photograph of an installation at a time. You answer **Real** or **artgen**. Then the page shows the truth and a citation. For a real photograph, the citation gives the artist, the venue and the source. For an artgen image, it gives the real works that the image imitates.
+The public address of the game is `https://artorbs.vercel.app`. A free Vercel project sends each request to the Worker. `vercel/vercel.json` holds its rules:
 
-- There is one round per UTC day. It has 10 photographs, the same for every player, and 4 to 6 of them are real.
-- After the round you can put a name on the leaderboard of the day and copy your result.
-- Keys: `R` or left arrow for Real, `A` or right arrow for artgen, `Enter` or `Space` for the next photograph.
+- `/` shows the game, `/game` on the Worker.
+- `/studio` shows the Studio.
+- All other paths go to the same path on the Worker.
+
+The Worker accepts POST requests from its own host and from `PUBLIC_HOST` in `wrangler.jsonc`. Behind Vercel, the Worker gets the address of the player from the `x-vercel-proxied-for` header. The game API gives photograph addresses on the Worker's own host, so the photographs do not use the transfer allowance of the free Vercel plan.
+
+To deploy the Vercel project, run this once. Run it again only when `vercel/vercel.json` changes:
+
+```bash
+cd vercel && npx vercel deploy --prod --name artorbs
+```
+
+## The game: Art or BS?
+
+The game shows one photograph of an installation at a time. You answer **Art** or **BS**. **Art** means that the room is real. **BS** means that AI made the room. Then the page shows the truth and a citation. For a real photograph, the citation gives the artist, the venue and the source. For an AI image, it gives the real works that the image imitates. artgen makes the AI images.
+
+- All players get the same photographs in the same order.
+- The answers come in sets of 10. After each set, the page shows your score for the set, your place on the ladder and the **Next set** button. The last set can have fewer than 10 photographs.
+- The ladder ranks all players by the number of correct answers. Players with the same number share a place. After the first set, you can put your name on the ladder. The page shows the best 50 names.
+- After each set you can share your result. On a phone, **Share** opens the share sheet. **Post on X** opens a new post with the result. **Copy result** copies the result.
+- When you have answered all photographs, the page tells you. New photographs come later, and you continue with them.
+- Keys: `A` or left arrow for Art, `B` or right arrow for BS, `Enter` or `Space` for the next photograph.
 
 ### Play it on your computer
 
@@ -115,11 +134,11 @@ The AI images come from the image library. The real photographs come from `game/
 
 `year` and `credit` can be empty. The other fields are necessary. Use only photographs that you have the right to publish, and give the credit that the licence asks for.
 
-The game needs at least 6 real photographs and 6 library images. The smaller of the two sets sets the cycle: each 6 images in it give one more day before a photograph comes back. Now the 76 library images give a cycle of 12 days.
+Now the game has 185 photographs: 109 real photographs and 76 library images.
 
-The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The new encoding removes the metadata, so the bytes do not show the kind. A player can still match an artgen image to the public library by how it looks. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
+The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The new encoding removes the metadata, so the bytes do not show the kind. A player can still match an AI image to the public library by how it looks. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
 
-When you add or remove photographs, all rounds change, and that includes the round of the current day. Deploy such a change near midnight UTC.
+The order of the photographs is the order of their names. The name is a hash, so the order looks random. A new photograph gets its place in the order, and the other photographs keep their order. A player gets a new photograph next if the player is already past its place. Otherwise the player gets it at its place. When you remove a photograph, the answers to it stay in the scores.
 
 ### Game API
 
@@ -127,12 +146,40 @@ All routes answer with JSON. A `POST` must come from the game page itself.
 
 | Route | Body or query | Answer |
 |---|---|---|
-| `GET /api/game/round` | `?player=<token>` | `{day, number, images, answers, done, score, ms, name, rank}`. `answers` has the truth only for the images this player answered. |
-| `POST /api/game/answer` | `{player, day, index, guess}`, where `day` is the day of the round on the page, `index` is the image on the page (0 to 9) and `guess` is `"real"` or `"ai"` | `{index, real, reveal, crowd, done, score, ms}`. The first answer starts the clock. `409` when `day` is not today, when `index` is not the next image without an answer, or after ten answers. |
-| `POST /api/game/name` | `{player, name}` | `{rank, name}`. Only after the round is done. The name has 1 to 20 characters. A second call changes the name of the same row. |
-| `GET /api/game/leaderboard` | `?day=<YYYY-MM-DD>`, default today | `{day, number, players, average, entries}` with the best 50 as `{name, score, ms}`. |
+| `GET /api/game/state` | `?player=<token>` | `{total, answered, correct, rank, players, name, next, set}`. `next` is the address of the next photograph, or `null` after the last one. `set` is `{number, answers}`: the set of the last answer, with one `{guess, image, real, reveal, crowd}` for each answer in it. |
+| `POST /api/game/answer` | `{player, index, guess}`, where `index` is the number of answers that the player gave before and `guess` is `"real"` or `"ai"` | `{index, real, reveal, crowd, answered, correct, rank, players, next}`. `409` when `index` is not the number of answers, or when no photograph is left. |
+| `POST /api/game/name` | `{player, name}` | `{rank, name}`. Only after the first set. The name has 1 to 20 characters. A second call changes the name of the same row. |
+| `GET /api/game/ladder` | `?player=<token>`, which you can omit | `{players, entries}` with the best 50 named players as `{rank, name, correct, answered}`. The row of `player` also has `me: true`. |
 
-`player` is a random token of 16 to 64 characters from `A-Z a-z 0-9 _ -`. The page makes it and keeps it in the browser. `crowd` is the percent of players who answered that image correctly, or `null` when fewer than 5 players saw it. Every route answers `503` when the game has fewer than 6 real photographs or fewer than 6 library images.
+`player` is a random token of 16 to 64 characters from `A-Z a-z 0-9 _ -`. The page makes it and keeps it in the browser. `total` is the number of answers plus the number of photographs left. `rank` is 1 plus the number of players with more correct answers, or `null` before the first answer. `players` is the number of players with at least one answer. `crowd` is the percent of players who answered that image correctly, or `null` when fewer than 5 players saw it. A photograph that left the game has `image`, `real` and `reveal` set to `null`. Every route answers `503` when the game has no photographs.
+
+The ladder puts players with the same number of correct answers in this order: fewer answers first, then the earlier last answer. The Worker keeps one Durable Object. It holds each player as `pl:<token>`, the number of players for each number of correct answers as `hist`, and the best 100 named players as `ladder`. Once a day, the Worker deletes the counters of earlier days and the keys of the old daily game (`gp:`, `gl:` and `gs:`).
+
+### Share a result
+
+The share text gives the set number, one square for each answer of the set, the score of the set, your place on the ladder and a link:
+
+```
+Art or BS? Set 4
+🟩🟥🟩🟩🟥🟩🟩🟩🟥🟩 8/10
+#12 on the ladder
+https://<host>/s/8
+```
+
+The link gives the score out of 10. For a short last set, the page rounds the score to a score out of 10: 4 of 5 gives `/s/8`.
+
+`GET /s/<score>` makes the link preview. The Worker answers with a short page for crawlers. Its preview tags show the card of that score, `/share/<score>.jpg`. The page then sends people to `/game`. When the score is not a whole number from 0 to 10, the Worker redirects to `/game`. The game page `/game` shows `/share/card.jpg`. The Worker makes the preview addresses absolute with `PUBLIC_HOST`, so a card links to the public address.
+
+The cards are 1200 × 630 JPEGs in `artgen/studio_static/share/`. To make them again, run:
+
+```bash
+npm ci
+node tools/share_cards.mjs
+```
+
+The same script makes the icon of the game and the Studio: `icon.svg`, `apple-touch-icon.png` (180 × 180) and `icon-512.png` in `artgen/studio_static/`.
+
+The script needs Chrome or Chromium. It looks on the `PATH` and in the Playwright and Puppeteer caches. To use a different browser, set `CHROME` to its path. The cards use only images from the image library. They never use the real photographs in `game/real/`, because those belong to their artists.
 
 ## Quick start on the command line
 
@@ -236,18 +283,35 @@ bash video/demo/build.sh
 
 The script records the Studio with a scripted browser, then builds the composition, the music and the sound effects from the recorded action times, checks it and renders it. It needs Node.js, ffmpeg and the packages in `package.json` (`npm install`).
 
+## Game video
+
+`video/game/renders/art-or-bs.mp4` is a 29-second square video of the game for X. It works with the sound off. It starts with three photographs to guess, then shows a recording of one set on the real game page, the checkpoint after the set, the share text and the address.
+
+To rebuild it, run the build script:
+
+```bash
+bash video/game/build.sh
+```
+
+The script builds the Studio and starts a local Worker with an empty game state. A new player answers the sets before the recorded set through the API. Then a scripted browser plays the recorded set, and the script stops the Worker. Then it cuts the recording, builds the composition, the music and the sound effects, checks the composition and renders it. It needs Node.js, ffmpeg, the packages in `package.json` (`npm ci`), `game/.key` and Chrome. To use a different Chrome, set `CHROME` to its path. On a computer with little free memory, set `WORKERS=1`.
+
+`video/game/config.json` holds the address in the video, the recorded set, the answers that the recording gets wrong in each set and the three photographs to guess. To show a different address, change `url` and run the build script again. The browser sends that address to the local Worker, so the recorded page and its share text show it too.
+
+All players get the photographs in the same order, so the video must not show the answers of the first sets. The video records set 17 (photographs 161 to 170 of 185). The three photographs to guess come after set 17 in the order. The build stops if a photograph to guess comes earlier. The order depends on `game/.key`, so use the key of the live game. If the game gets new photographs, check the positions in `video/game/timeline.json`.
+
 ## Folders
 
 ```
 artgen/            the package: gen/ (artists, titles, works, exhibition), write/ (texts), render/, site/, studio
 data/              archetypes, lexicon, world, title structures, real-name blocklist
-tools/             sources of data/archetypes.json and data/lexicon.json
+tools/             sources of data/archetypes.json and data/lexicon.json, and the share cards of the game
 library/           pre-rendered images, one per archetype, with what each one shows
-game/real/         real photographs for the game Real or artgen?, with their citations
+game/real/         real photographs for the game Art or BS?, with their citations
 worker/            the Cloudflare Worker: live renders and the game
 docs/research/     the research corpus, with source URLs
 biennales/         generated editions (exhibition.json and media/; site/ is build output)
 video/demo/        the HyperFrames demo video of the Studio
+video/game/        the HyperFrames video of the game Art or BS?
 ```
 
 ## Notes

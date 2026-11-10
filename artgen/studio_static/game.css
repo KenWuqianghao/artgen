@@ -1,4 +1,4 @@
-/* Real or artgen? Uses the Studio's tokens and chrome from studio.css.
+/* Art or BS? Uses the Studio's tokens and chrome from studio.css.
    The photograph hangs on a wall; the answer arrives as the wall label beside it. */
 :root { --right: #1f7a4d; --wrong: #a4281f; }
 .ask h1, .score h1, .wall-label .title { font-family: "Newsreader", Georgia, serif; font-weight: 400; }
@@ -11,7 +11,8 @@
 .game[data-state=playing] .round, .game[data-state=sending] .round, .game[data-state=revealed] .round { display: grid; }
 .game[data-state=playing] .ask, .game[data-state=sending] .ask { display: block; }
 .game[data-state=revealed] .reveal { display: block; }
-.game[data-state=finished] .result { display: grid; }
+.game[data-state=checkpoint] .result, .game[data-state=finished] .result { display: grid; }
+.game[data-state=finished] #next-set { display: none; }
 
 /* the round */
 .round { grid-template-columns: minmax(0, 1fr) var(--panel-w); height: calc(100vh - 57px); }
@@ -26,6 +27,7 @@
 .pips li.now { border-color: var(--ink); }
 .pips li.right { background: var(--right); border-color: var(--right); }
 .pips li.wrong { background: var(--wrong); border-color: var(--wrong); }
+.standing { margin: 6px 0 0; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 .ask h1 { font-size: 40px; line-height: 1.05; margin: 0 0 20px; }
 .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -34,7 +36,7 @@
 .choice:hover { background: var(--ink); color: var(--ground); }
 .choice kbd { font: inherit; font-size: 13px; font-weight: 500; border: 1px solid currentColor; border-radius: 3px; padding: 1px 7px; opacity: .55; }
 .game[data-state=sending] .choice { opacity: .4; pointer-events: none; }
-#round-error:empty, #crowd:empty, #name-status:empty { display: none; }
+#round-error:empty, #crowd:empty, #name-status:empty, #standing:empty, #done:empty { display: none; }
 #round-error { color: var(--wrong); }
 
 /* the reveal */
@@ -58,10 +60,14 @@
 .score { grid-area: score; }
 .board { grid-area: board; }
 .hang { grid-area: hang; margin-top: 40px; }
+.score .kicker { margin: 0 0 4px; font-size: 17px; font-weight: 600; }
 .score h1 { font-size: 88px; line-height: 1; margin: 0 0 12px; letter-spacing: -.01em; font-variant-numeric: lining-nums; }
 .score p { margin: 0 0 6px; max-width: 60ch; }
+.score .done { font-family: "Newsreader", Georgia, serif; font-size: 24px; line-height: 1.25; margin: 14px 0 22px; }
+.score .next { width: auto; min-width: 220px; margin: 20px 0 22px; }
 .share-text { color: var(--muted); font-size: 14px; white-space: pre-wrap; overflow-wrap: anywhere; }
-.score .row { align-items: center; gap: 14px; margin-top: 16px; }
+.score .share { gap: 8px; margin-top: 18px; }
+.share .btn { padding: 10px 18px; font-size: 16px; }
 .result h2 { font-size: 15px; font-weight: 600; margin: 0 0 12px; }
 .name-form { display: flex; gap: 8px; align-items: end; }
 .name-form .field { margin-top: 0; }
@@ -69,7 +75,7 @@
 .board h2 { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--rule); }
 
 .ranks { list-style: none; margin: 0; padding: 0; font-variant-numeric: tabular-nums; }
-.ranks li { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto 48px; gap: 10px; padding: 7px 8px; border-radius: 3px; }
+.ranks li { display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; gap: 10px; padding: 7px 8px; border-radius: 3px; }
 .ranks li.me { background: var(--ink); color: var(--ground); }
 .ranks .n, .ranks .t { color: var(--muted); }
 .ranks li.me .n, .ranks li.me .t { color: inherit; opacity: .7; }
@@ -98,6 +104,7 @@
   .result { grid-template-columns: minmax(0, 1fr); grid-template-areas: "score" "board" "hang"; padding: 24px 16px 48px; }
   .board { margin-top: 28px; }
   .score h1 { font-size: 64px; }
+  .score .next { width: 100%; }
   .works { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: no-preference) {

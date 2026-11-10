@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=block">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  :root { --ink: #141414; --ground: #ffffff; --soft: #f4f4f1; --muted: #626260; --rule: #e1e1dd; --right: #1f7a4d; --wrong: #a4281f; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1080px; overflow: hidden; background: var(--ground); color: var(--ink);
+    font-family: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif; }
+  .serif { font-family: "Newsreader", Georgia, serif; font-weight: 400; }
+  .beat { position: absolute; inset: 0; overflow: hidden; background: var(--ground); opacity: 0; }
+
+  /* play-along */
+  .pa .head { position: absolute; left: 60px; right: 60px; top: 44px; height: 140px; }
+  .pa .count { display: block; font-size: 30px; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .pa h1 { font-size: 84px; line-height: 1; letter-spacing: -0.01em; margin-top: 10px; }
+  .clock { position: absolute; right: 0; top: 18px; width: 116px; height: 116px; border: 4px solid var(--ink); border-radius: 50%; }
+  .clock span { position: absolute; inset: 0; display: grid; place-items: center; font-size: 64px; font-weight: 600; opacity: 0; font-variant-numeric: tabular-nums; }
+  .frame { position: absolute; left: 60px; top: 200px; width: 960px; height: 640px; overflow: hidden; background: var(--soft);
+    box-shadow: 0 2px 4px rgba(20,20,20,.14), 0 24px 40px -22px rgba(20,20,20,.45); }
+  .frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .bar { position: absolute; left: 60px; top: 858px; width: 960px; height: 8px; background: var(--ink); transform-origin: left center; transform: scaleX(0); }
+  .foot { position: absolute; left: 60px; right: 60px; top: 884px; height: 176px; }
+  .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .choice { height: 120px; border: 3px solid var(--ink); border-radius: 6px; display: grid; place-items: center; font-size: 54px; font-weight: 600; }
+  .credit { position: absolute; inset: 0; opacity: 0; }
+  .credit .who { font-size: 50px; font-weight: 600; line-height: 1.1; }
+  .credit .where { font-size: 36px; line-height: 1.22; margin-top: 8px; }
+  .credit .photo { font-size: 24px; color: var(--muted); margin-top: 8px; }
+  .credit.real .who { color: var(--right); }
+  .credit.ai .who { color: var(--wrong); }
+  .credit.ai .where { color: var(--ink); }
+  .stamp { position: absolute; left: 50%; top: 50%; padding: 18px 48px 14px; border: 12px solid currentColor; border-radius: 14px;
+    background: rgba(255,255,255,.92); font-size: 150px; font-weight: 700; line-height: 1; text-transform: uppercase; letter-spacing: .04em;
+    text-align: center; opacity: 0; }
+  .stamp small { display: block; font-size: 34px; letter-spacing: .02em; text-transform: none; font-weight: 600; margin-top: 4px; }
+  .stamp.real { color: var(--right); }
+  .stamp.ai { color: var(--wrong); }
+
+  /* the first photograph starts full-bleed under the question */
+  #pa0 { opacity: 1; }
+  #pa0 .head, #pa0 .bar, #pa0 .foot { opacity: 0; }
+  #hook { position: absolute; left: 0; right: 0; top: 0; padding: 70px 60px 160px;
+    background: linear-gradient(rgba(10,10,10,.62), rgba(10,10,10,.35) 60%, rgba(10,10,10,0)); color: #fff; }
+  #hook h1 { font-size: 140px; line-height: .96; letter-spacing: -0.015em; }
+  #brand { position: absolute; left: 40px; bottom: 40px; display: flex; align-items: center; gap: 14px; padding: 12px 24px 12px 12px;
+    background: #fff; border-radius: 10px; box-shadow: 0 10px 30px -12px rgba(0,0,0,.5); }
+  #brand img { width: 60px; height: 60px; display: block; }
+  #brand span { font-size: 36px; font-weight: 700; letter-spacing: -0.01em; }
+
+  /* the card between the play-along and the recording */
+  .center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 80px; }
+  #ask h2 { font-size: 112px; line-height: 1.02; letter-spacing: -0.01em; }
+  #ask p { font-size: 44px; font-weight: 500; margin-top: 34px; color: var(--muted); }
+
+  /* the recording */
+  #clipwrap { position: absolute; inset: 0; }
+  #clip { position: absolute; inset: 0; width: 1080px; height: 1080px; }
+  #captions { position: absolute; left: 0; right: 0; top: 36px; height: 100px; }
+  .cap { position: absolute; left: 50%; top: 0; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: 44px; font-weight: 600;
+    padding: 18px 32px; border-radius: 10px; white-space: nowrap; opacity: 0; box-shadow: 0 10px 30px -12px rgba(0,0,0,.5); }
+
+  /* the post */
+  #post h2 { position: absolute; left: 0; right: 0; top: 96px; text-align: center; font-size: 84px; line-height: 1; }
+  .card { position: absolute; left: 90px; right: 90px; top: 236px; border: 2px solid var(--rule); border-radius: 22px; padding: 40px 44px 44px;
+    background: #fff; box-shadow: 0 30px 60px -36px rgba(20,20,20,.45); }
+  .pl { font-size: 42px; line-height: 1.3; }
+  .pl.grid { font-size: 42px; margin-top: 4px; white-space: nowrap; }
+  .sq { display: inline-block; font-size: 44px; }
+  .pl.link { font-size: 34px; color: var(--muted); margin-top: 4px; }
+  .card img { display: block; width: 100%; margin-top: 26px; border-radius: 14px; border: 2px solid var(--rule); }
+
+  /* close */
+  #close .icon { width: 150px; height: 150px; margin-bottom: 44px; }
+  #close h2 { font-size: 140px; line-height: 1; letter-spacing: -0.015em; }
+  #close .tag { font-size: 54px; font-weight: 500; margin-top: 30px; }
+  #close .url { font-size: 36px; font-weight: 600; white-space: nowrap; margin-top: 64px; padding: 20px 34px; border: 3px solid var(--ink); border-radius: 10px; }
+</style>
+</head>
+<body>
+<div data-composition-id="game-video" data-width="1080" data-height="1080" data-start="0" data-duration="29.416"
+     style="position:relative;width:100%;height:100%;">
+
+  <div id="clipwrap">
+    <video id="clip" class="clip" src="assets/clip.mp4" data-start="11.65" data-duration="12.166" data-track-index="1" muted playsinline></video>
+  </div>
+  <div id="captions">
+    <div class="cap" id="cap0">Tap Art or BS</div>
+    <div class="cap" id="cap1">The wall label tells you the truth</div>
+    <div class="cap" id="cap2">A real room gets its artist and venue.</div>
+    <div class="cap" id="cap3">Ten photographs in each set</div>
+    <div class="cap" id="cap4">Your score and your rank</div>
+    <div class="cap" id="cap5">Then post your score</div>
+  </div>
+
+  <div class="beat pa first" id="pa0">
+    <div class="head"><span class="count">1 of 3</span><h1 class="serif">Real art, or AI BS?</h1>
+      <div class="clock" id="clock0"><span>3</span><span>2</span><span>1</span></div></div>
+    <div class="frame" id="frame0"><img src="assets/p1.jpg" alt=""><div class="stamp real">Art</div></div>
+    <div class="bar" id="bar0"></div>
+    <div class="foot">
+      <div class="choices" id="choices0"><div class="choice">Art</div><div class="choice">BS</div></div>
+      <div class="credit real" id="credit0"><p class="who">Mulyana</p><p class="where">Aichi Triennale 2025, “A Time Between Ashes and Roses”</p><p class="photo">©︎ Aichi Triennale Organizing Committee.</p></div>
+    </div>
+  </div>
+  <div class="beat pa" id="pa1">
+    <div class="head"><span class="count">2 of 3</span><h1 class="serif">Real art, or AI BS?</h1>
+      <div class="clock" id="clock1"><span>3</span><span>2</span><span>1</span></div></div>
+    <div class="frame" id="frame1"><img src="assets/p2.jpg" alt=""><div class="stamp ai">BS</div></div>
+    <div class="bar" id="bar1"></div>
+    <div class="foot">
+      <div class="choices" id="choices1"><div class="choice">Art</div><div class="choice">BS</div></div>
+      <div class="credit ai" id="credit1"><p class="who">AI made this room.</p><p class="where">It imitates Pilar Albarracín and Nikita Gale.</p></div>
+    </div>
+  </div>
+  <div class="beat pa" id="pa2">
+    <div class="head"><span class="count">3 of 3</span><h1 class="serif">Real art, or AI BS?</h1>
+      <div class="clock" id="clock2"><span>3</span><span>2</span><span>1</span></div></div>
+    <div class="frame" id="frame2"><img src="assets/p3.jpg" alt=""><div class="stamp real">Art</div></div>
+    <div class="bar" id="bar2"></div>
+    <div class="foot">
+      <div class="choices" id="choices2"><div class="choice">Art</div><div class="choice">BS</div></div>
+      <div class="credit real" id="credit2"><p class="who">Chiara Camoni</p><p class="where">Pavilion of Italy, 61st Venice Biennale</p><p class="photo">Image courtesy of La Biennale di Venezia. Photo by Marco Zorzanello.</p></div>
+    </div>
+  </div>
+  <div id="hook"><h1 class="serif">Real art,<br>or AI BS?</h1></div>
+  <div id="brand"><img src="assets/icon.svg" alt=""><span>Art or BS?</span></div>
+
+  <div class="beat" id="ask"><div class="center">
+    <h2 class="serif">How many did you get?</h2>
+    <p>Now play the real game.</p>
+  </div></div>
+
+  <div class="beat" id="post">
+    <h2 class="serif">Post your score</h2>
+    <div class="card" id="card"><p class="pl">Art or BS? Set 17</p><p class="pl grid"><span class=sq>🟩</span><span class=sq>🟥</span><span class=sq>🟩</span><span class=sq>🟩</span><span class=sq>🟩</span><span class=sq>🟩</span><span class=sq>🟥</span><span class=sq>🟩</span><span class=sq>🟩</span><span class=sq>🟩</span> 8/10</p><p class="pl">#1 on the ladder</p><p class="pl link">https://artorbs.vercel.app/s/8</p><img src="assets/card.jpg" alt=""></div>
+  </div>
+
+  <div class="beat" id="close"><div class="center">
+    <img class="icon" src="assets/icon.svg" alt="">
+    <h2 class="serif">Art or BS?</h2>
+    <div class="tag">Climb the ladder</div>
+    <div class="url">artorbs.vercel.app</div>
+  </div></div>
+
+    <audio id="music" src="audio/music/theme.wav" data-start="0" data-duration="29.416" data-track-index="30" data-volume="0.8"></audio>
+  <audio id="fx1" src="audio/sfx/tick.wav" data-start="1.850" data-duration="0.06" data-track-index="20" data-volume="0.5"></audio>
+  <audio id="fx2" src="audio/sfx/tick.wav" data-start="2.350" data-duration="0.06" data-track-index="20" data-volume="0.5"></audio>
+  <audio id="fx3" src="audio/sfx/tick.wav" data-start="2.850" data-duration="0.06" data-track-index="20" data-volume="0.5"></audio>
+  <audio id="fx4" src="audio/sfx/stamp.wav" data-start="3.350" data-duration="0.5" data-track-index="21" data-volume="0.9"></audio>
+  <audio id="fx5" src="audio/sfx/tick.wav" data-start="4.800" data-duration="0.06" data-track-index="20" data-volume="0.5"></audio>
+  <audio id="fx6" src="audio/sfx/tick.wav" data-start="5.300" data-duration="0.06" data-track-index="20" data-volume="0.5"></audio>
+  <audio id="fx7" src="audio/sfx/tick.wav" data-start="5.800" data-duration="0.06" data-track-index="20" data-volume="0.5"></audio>
+  <audio id="fx8" src="audio/sfx/stamp.wav" data-start="6.300" data-duration="0.5" data-track-index="21" data-volume="0.9"></audio>
+  <audio id="fx9" src="audio/sfx/tick.wav" data-start="7.750" data-duration="0.06" data-track-index="20" data-volume="0.5"></audio>
+  <audio id="fx10" src="audio/sfx/tick.wav" data-start="8.250" data-duration="0.06" data-track-index="20" data-volume="0.5"></audio>
+  <audio id="fx11" src="audio/sfx/tick.wav" data-start="8.750" data-duration="0.06" data-track-index="20" data-volume="0.5"></audio>
+  <audio id="fx12" src="audio/sfx/stamp.wav" data-start="9.250" data-duration="0.5" data-track-index="21" data-volume="0.9"></audio>
+  <audio id="fx13" src="audio/sfx/tick.wav" data-start="12.183" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx14" src="audio/sfx/tick.wav" data-start="15.343" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx15" src="audio/sfx/tick.wav" data-start="16.750" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx16" src="audio/sfx/tick.wav" data-start="19.402" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx17" src="audio/sfx/tick.wav" data-start="19.647" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx18" src="audio/sfx/tick.wav" data-start="19.774" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx19" src="audio/sfx/tick.wav" data-start="19.891" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx20" src="audio/sfx/tick.wav" data-start="20.020" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx21" src="audio/sfx/tick.wav" data-start="20.148" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx22" src="audio/sfx/tick.wav" data-start="20.270" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx23" src="audio/sfx/tick.wav" data-start="20.392" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx24" src="audio/sfx/tick.wav" data-start="20.509" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx25" src="audio/sfx/tick.wav" data-start="20.634" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx26" src="audio/sfx/tick.wav" data-start="20.753" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx27" src="audio/sfx/tick.wav" data-start="20.876" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx28" src="audio/sfx/tick.wav" data-start="20.998" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx29" src="audio/sfx/tick.wav" data-start="21.118" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx30" src="audio/sfx/tick.wav" data-start="21.237" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx31" src="audio/sfx/tick.wav" data-start="21.364" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx32" src="audio/sfx/tick.wav" data-start="21.489" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx33" src="audio/sfx/tick.wav" data-start="23.091" data-duration="0.06" data-track-index="22" data-volume="0.4"></audio>
+  <audio id="fx34" src="audio/sfx/pop.wav" data-start="23.966" data-duration="0.18" data-track-index="23" data-volume="0.7"></audio>
+  <audio id="fx35" src="audio/sfx/chime.wav" data-start="26.416" data-duration="1.6" data-track-index="23" data-volume="0.6"></audio>
+</div>
+<script>
+gsap.set(".stamp", { xPercent: -50, yPercent: -50, rotation: -7 });
+var tl = gsap.timeline({ paused: true });
+var B = [{"show": 0.0, "guess": 1.85, "reveal": 3.35}, {"show": 4.65, "guess": 4.8, "reveal": 6.3}, {"show": 7.6, "guess": 7.75, "reveal": 9.25}];
+
+// hook: the first photograph and the question are there from the first frame
+tl.fromTo("#frame0 img", { scale: 1.06 }, { scale: 1.0, duration: 1.85, ease: "power1.out" }, 0);
+tl.fromTo("#hook h1", { y: 8 }, { y: 0, duration: 0.6, ease: "power2.out" }, 0);
+tl.to("#hook, #brand", { opacity: 0, duration: 0.2 }, 1.45);
+// the frame sits in its play-along place; scaled 1.6875x (1620x1080) it covers the square
+tl.fromTo("#frame0", { scale: 1.6875, y: 20 }, { scale: 1, y: 0, duration: 0.35, ease: "power3.inOut", immediateRender: true }, 1.5);
+tl.to("#pa0 .head, #pa0 .bar, #pa0 .foot", { opacity: 1, duration: 0.25 }, 1.62);
+
+B.forEach(function (b, i) {
+  var p = "#pa" + i;
+  if (i > 0) {
+    tl.set(p, { opacity: 1 }, b.show);
+    tl.set("#pa" + (i - 1), { opacity: 0 }, b.show);
+    tl.fromTo("#frame" + i, { scale: 0.97, opacity: 0.4 }, { scale: 1, opacity: 1, duration: 0.25, ease: "power2.out" }, b.show);
+  }
+  // countdown: 3, 2, 1 and a draining bar
+  var nums = document.querySelectorAll("#clock" + i + " span");
+  for (var k = 0; k < 3; k++) {
+    tl.fromTo(nums[k], { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.15, ease: "power2.out" }, b.guess + 0.5 * k);
+    tl.set(nums[k], { opacity: 0 }, b.guess + 0.5 * (k + 1));
+  }
+  tl.fromTo("#bar" + i, { scaleX: 1 }, { scaleX: 0, duration: b.reveal - b.guess, ease: "none" }, b.guess);
+  // reveal: the stamp lands, the credit replaces the choices
+  tl.fromTo(p + " .stamp", { opacity: 0, scale: 1.7 }, { opacity: 1, scale: 1, duration: 0.2, ease: "power4.in" }, b.reveal - 0.12);
+  tl.fromTo("#frame" + i, { x: 0 }, { x: 6, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, b.reveal + 0.08);
+  tl.to("#clock" + i, { opacity: 0, duration: 0.15 }, b.reveal);
+  tl.to("#choices" + i, { opacity: 0, duration: 0.15 }, b.reveal);
+  tl.fromTo("#credit" + i, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, b.reveal + 0.1);
+});
+
+tl.set("#pa2", { opacity: 0 }, 10.55);
+tl.set("#ask", { opacity: 1 }, 10.55);
+tl.fromTo("#ask h2", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 10.55);
+tl.fromTo("#ask p", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 10.9);
+tl.set("#ask", { opacity: 0 }, 11.65);
+
+// captions over the recording
+[[11.65, 13.173], [13.173, 15.405], [16.483, 19.469], [19.502, 21.514], [21.555, 22.899], [22.899, 23.816]].forEach(function (c, i) {
+  tl.fromTo("#cap" + i, { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.2, ease: "power2.out" }, c[0]);
+  tl.to("#cap" + i, { opacity: 0, duration: 0.12 }, c[1] - 0.12);
+});
+
+// the post
+tl.set("#post", { opacity: 1 }, 23.816);
+tl.fromTo("#post h2", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 23.816);
+tl.fromTo("#card", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 23.916);
+tl.fromTo("#card .sq", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.18, stagger: 0.05, ease: "back.out(2)" }, 24.166);
+
+// close
+tl.set("#close", { opacity: 1 }, 26.416);
+tl.set("#post", { opacity: 0 }, 26.416);
+tl.fromTo("#close .icon", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 26.416);
+tl.fromTo("#close h2", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 26.516000000000002);
+tl.fromTo("#close .tag", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 26.916);
+tl.fromTo("#close .url", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 27.316);
+
+window.__timelines["game-video"] = tl;
+</script>
+</body>
+</html>

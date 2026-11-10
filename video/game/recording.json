@@ -1,0 +1,136 @@
+{
+ "set": 17,
+ "positions": [
+  161,
+  170
+ ],
+ "score": "8/10",
+ "scoreLine": "#1 of 1 player · 136 of 170 correct",
+ "share": "Art or BS? Set 17\n🟩🟥🟩🟩🟩🟩🟥🟩🟩🟩 8/10\n#1 on the ladder\nhttps://artorbs.vercel.app/s/8",
+ "real": [
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  true
+ ],
+ "guesses": [
+  "ai",
+  "ai",
+  "real",
+  "real",
+  "real",
+  "real",
+  "ai",
+  "ai",
+  "ai",
+  "real"
+ ],
+ "actions": [
+  {
+   "name": "answer0",
+   "t": 3.446
+  },
+  {
+   "name": "label0",
+   "t": 5.13
+  },
+  {
+   "name": "next0",
+   "t": 8.372
+  },
+  {
+   "name": "answer1",
+   "t": 11.531
+  },
+  {
+   "name": "label1",
+   "t": 13.095
+  },
+  {
+   "name": "next1",
+   "t": 15.509
+  },
+  {
+   "name": "answer2",
+   "t": 16.701
+  },
+  {
+   "name": "next2",
+   "t": 17.72
+  },
+  {
+   "name": "answer3",
+   "t": 18.652
+  },
+  {
+   "name": "next3",
+   "t": 19.685
+  },
+  {
+   "name": "answer4",
+   "t": 20.711
+  },
+  {
+   "name": "next4",
+   "t": 21.684
+  },
+  {
+   "name": "answer5",
+   "t": 22.664
+  },
+  {
+   "name": "next5",
+   "t": 23.599
+  },
+  {
+   "name": "answer6",
+   "t": 24.594
+  },
+  {
+   "name": "next6",
+   "t": 25.546
+  },
+  {
+   "name": "answer7",
+   "t": 26.533
+  },
+  {
+   "name": "next7",
+   "t": 27.508
+  },
+  {
+   "name": "answer8",
+   "t": 28.466
+  },
+  {
+   "name": "next8",
+   "t": 29.425
+  },
+  {
+   "name": "answer9",
+   "t": 30.437
+  },
+  {
+   "name": "next9",
+   "t": 31.438
+  },
+  {
+   "name": "result",
+   "t": 31.682
+  },
+  {
+   "name": "post",
+   "t": 33.735
+  },
+  {
+   "name": "end",
+   "t": 34.708
+  }
+ ]
+}
