@@ -15,7 +15,8 @@
 // Link previews for social posts:
 //
 //   GET  /s/<score>    a page with the preview card of a score from 0 to 10 for crawlers; it sends people on to /game
-//   GET  /game         the game page, with its preview tags made absolute for this host
+//   GET  /game         the game page, with its preview tags made absolute for the public host (PUBLIC_HOST)
+//   GET  /studio       the Studio, because the public host shows the game at /
 //
 // One Durable Object holds the counters, the images and the game, so the daily limits are exact and nothing else needs provisioning.
 import { DurableObject } from "cloudflare:workers";
@@ -54,13 +55,13 @@ function limits(env) {
   return { visitor: int(env.FREE_PER_VISITOR, 3), global: int(env.FREE_PER_DAY, 60) };
 }
 
-// Only the Studio itself may spend the owner's money: same-origin requests, plus localhost for development.
-function allowedOrigin(request) {
+// Only the site itself may spend the owner's money: its own host, or the public host that proxies to it.
+function allowedOrigin(request, env) {
   const origin = request.headers.get("origin");
   if (!origin) return false;
   try {
     const o = new URL(origin), here = new URL(request.url);
-    return o.host === here.host;
+    return o.host === here.host || o.host === env.PUBLIC_HOST;
   } catch { return false; }
 }
 
@@ -165,7 +166,8 @@ const newPlayer = () => ({ start: Date.now(), answers: [], correct: 0, name: nul
 const ladderEntry = (player, p) => ({ player, name: p.name, correct: p.correct, answered: p.answers.length, at: p.at });
 
 async function visitorId(request, env) {
-  const ip = request.headers.get("cf-connecting-ip") || "local";
+  // Behind the Vercel proxy every request comes from a Vercel address; Vercel puts the player's address here.
+  const ip = request.headers.get("x-vercel-proxied-for") || request.headers.get("cf-connecting-ip") || "local";
   return (await sha(`${env.VISITOR_SALT || "artgen"}:${ip}`)).slice(0, 24);
 }
 
@@ -197,7 +199,7 @@ async function generate(env, prompt) {
 }
 
 async function render(request, env) {
-  if (!allowedOrigin(request)) return json({ error: "Open the Studio to render." }, 403);
+  if (!allowedOrigin(request, env)) return json({ error: "Open the Studio to render." }, 403);
   if (!env.OPENAI_API_KEY) return json({ error: "Free renders are not set up on this Studio.", reason: "disabled" }, 503);
   let prompt;
   try { prompt = String((await request.json()).prompt || ""); } catch { return json({ error: "Bad request." }, 400); }
@@ -229,13 +231,14 @@ async function render(request, env) {
   return json({ url, cached: false, remaining: slot.remaining, limit: lim.visitor });
 }
 
-const imageUrl = (item) => (item ? `/game/media/${item.img}.jpg` : null);
+// Photographs come straight from the Worker's own host, so they do not use the proxy's transfer allowance.
+const imageUrl = (origin, item) => (item ? `${origin}/game/media/${item.img}.jpg` : null);
 
 // A photograph can leave the pool after a player answered it; its truth is then unknown.
-function answerView([img, guess], stat) {
+function answerView(origin, [img, guess], stat) {
   const item = BY_IMG.get(img);
   if (!item) return { guess, image: null, real: null, reveal: null, crowd: null };
-  return { guess, image: imageUrl(item), real: item.real, reveal: item.reveal, crowd: crowdOf(stat) };
+  return { guess, image: imageUrl(origin, item), real: item.real, reveal: item.reveal, crowd: crowdOf(stat) };
 }
 
 const standing = (p, hist) => ({
@@ -249,19 +252,19 @@ const GAME = {
     const { p, hist, set, stats } = await store.gameState(player);
     const left = unanswered(ORDER, p.answers);
     return json({
-      total: p.answers.length + left.length, ...standing(p, hist), name: p.name, next: imageUrl(left[0]),
-      set: { number: set.number, answers: set.answers.map((a, i) => answerView(a, stats[i])) },
+      total: p.answers.length + left.length, ...standing(p, hist), name: p.name, next: imageUrl(url.origin, left[0]),
+      set: { number: set.number, answers: set.answers.map((a, i) => answerView(url.origin, a, stats[i])) },
     });
   },
-  "POST answer": async ({ body, store }) => {
+  "POST answer": async ({ url, body, store }) => {
     if (!isPlayer(body.player)) return json({ error: "Bad player token." }, 400);
     if (!isGuess(body.guess)) return json({ error: "A guess is \"real\" or \"ai\"." }, 400);
     if (!Number.isInteger(body.index)) return json({ error: "Bad answer index." }, 400);
     const res = await store.gameAnswer(body.player, body.index, body.guess);
     if (res.refused === "stale") return json({ error: "Your answer to that photograph is already saved." }, 409);
     if (res.refused === "finished") return json({ error: "You answered every photograph." }, 409);
-    const { real, reveal, crowd } = answerView([res.item.img, body.guess], res.stat);
-    return json({ index: body.index, real, reveal, crowd, ...standing(res.p, res.hist), next: imageUrl(res.next) });
+    const { real, reveal, crowd } = answerView(url.origin, [res.item.img, body.guess], res.stat);
+    return json({ index: body.index, real, reveal, crowd, ...standing(res.p, res.hist), next: imageUrl(url.origin, res.next) });
   },
   "POST name": async ({ request, env, body, store, day }) => {
     if (!isPlayer(body.player)) return json({ error: "Bad player token." }, 400);
@@ -286,10 +289,13 @@ const GAME = {
 
 const SHARE_HOOK = { 0: "Every room fooled me.", 10: "Called it every time." };
 
-function sharePage(url) {
+// Links that people see and share name the public host; the Worker's own host serves it behind the proxy.
+const siteOf = (env, url) => (env.PUBLIC_HOST ? `https://${env.PUBLIC_HOST}` : url.origin);
+
+function sharePage(url, env) {
   const m = url.pathname.match(/^\/s\/(10|\d)$/);
-  if (!m) return Response.redirect(`${url.origin}/game`, 302);
-  const score = Number(m[1]), here = `${url.origin}/s/${score}`, image = `${url.origin}/share/${score}.jpg`;
+  if (!m) return new Response(null, { status: 302, headers: { location: "/game" } });
+  const site = siteOf(env, url), score = Number(m[1]), here = `${site}/s/${score}`, image = `${site}/share/${score}.jpg`;
   const title = `I scored ${score}/10 on Art or BS?`;
   const text = `${SHARE_HOOK[score] || ""} Some rooms are real art. AI made the rest. Can you call BS?`.trim();
   const html = `<!doctype html>
@@ -326,7 +332,7 @@ function absoluteTags(page, origin) {
 async function game(request, env, ctx, url) {
   const handler = GAME[`${request.method} ${url.pathname.slice("/api/game/".length)}`];
   if (!handler) return json({ error: "Not found." }, 404);
-  if (request.method === "POST" && !allowedOrigin(request)) return json({ error: "Open the game to play." }, 403);
+  if (request.method === "POST" && !allowedOrigin(request, env)) return json({ error: "Open the game to play." }, 403);
   if (!ORDER.length) return json({ error: "The game is not open yet. It has no photographs." }, 503);
   const day = today();
   let body = null;
@@ -343,8 +349,9 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (url.pathname.startsWith("/api/game/")) return game(request, env, ctx, url);
-    if (url.pathname.startsWith("/s/")) return sharePage(url);
-    if (url.pathname === "/game") return absoluteTags(await env.ASSETS.fetch(request), url.origin);
+    if (url.pathname.startsWith("/s/")) return sharePage(url, env);
+    if (url.pathname === "/game") return absoluteTags(await env.ASSETS.fetch(request), siteOf(env, url));
+    if (url.pathname === "/studio") return env.ASSETS.fetch(new Request(new URL("/", url), request));
     if (url.pathname === "/api/status" && request.method === "GET") {
       const lim = limits(env), day = today();
       if (!env.OPENAI_API_KEY) return json({ enabled: false, remaining: 0, limit: lim.visitor });

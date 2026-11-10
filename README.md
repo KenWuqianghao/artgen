@@ -79,6 +79,22 @@ Then deploy. Run the same command after each change:
 npm run studio:deploy
 ```
 
+### The public address
+
+The public address of the game is `https://artorbs.vercel.app`. A free Vercel project sends each request to the Worker. `vercel/vercel.json` holds its rules:
+
+- `/` shows the game, `/game` on the Worker.
+- `/studio` shows the Studio.
+- All other paths go to the same path on the Worker.
+
+The Worker accepts POST requests from its own host and from `PUBLIC_HOST` in `wrangler.jsonc`. Behind Vercel, the Worker gets the address of the player from the `x-vercel-proxied-for` header. The game API gives photograph addresses on the Worker's own host, so the photographs do not use the transfer allowance of the free Vercel plan.
+
+To deploy the Vercel project, run this once. Run it again only when `vercel/vercel.json` changes:
+
+```bash
+cd vercel && npx vercel deploy --prod --name artorbs
+```
+
 ## The game: Art or BS?
 
 The game shows one photograph of an installation at a time. You answer **Art** or **BS**. **Art** means that the room is real. **BS** means that AI made the room. Then the page shows the truth and a citation. For a real photograph, the citation gives the artist, the venue and the source. For an AI image, it gives the real works that the image imitates. artgen makes the AI images.
@@ -152,7 +168,7 @@ https://<host>/s/8
 
 The link gives the score out of 10. For a short last set, the page rounds the score to a score out of 10: 4 of 5 gives `/s/8`.
 
-`GET /s/<score>` makes the link preview. The Worker answers with a short page for crawlers. Its preview tags show the card of that score, `/share/<score>.jpg`. The page then sends people to `/game`. When the score is not a whole number from 0 to 10, the Worker redirects to `/game`. The game page `/game` shows `/share/card.jpg`. The Worker makes the preview addresses on `/game` absolute for the host, so the cards also work on a custom domain.
+`GET /s/<score>` makes the link preview. The Worker answers with a short page for crawlers. Its preview tags show the card of that score, `/share/<score>.jpg`. The page then sends people to `/game`. When the score is not a whole number from 0 to 10, the Worker redirects to `/game`. The game page `/game` shows `/share/card.jpg`. The Worker makes the preview addresses absolute with `PUBLIC_HOST`, so a card links to the public address.
 
 The cards are 1200 × 630 JPEGs in `artgen/studio_static/share/`. To make them again, run:
 
