@@ -11,6 +11,7 @@ from pathlib import Path
 
 ROOT = Path("../..")
 sys.path.insert(0, str(ROOT))
+from artgen import corpus  # noqa: E402
 from artgen.studio import game_names  # noqa: E402
 
 CONFIG = json.load(open("config.json"))
@@ -28,9 +29,7 @@ def dur(f):
 # ---- play-along: three photographs, each with a countdown and a stamp
 MANIFEST = {e["id"]: e for e in json.load(open(ROOT / "game/real/manifest.json"))["entries"]}
 TWINS = {e["id"]: e for e in json.load(open(ROOT / "game/ai/manifest.json"))["entries"]}
-ARCHETYPES = json.loads(subprocess.run(["python3", "-c", "import json; from artgen import corpus; "
-                                        "print(json.dumps({a['id']: a['basis'] for a in corpus.archetypes()}))"],
-                                       cwd=ROOT, capture_output=True, text=True, check=True).stdout)
+ARCHETYPES = {a["id"]: a["basis"] for a in corpus.archetypes()}
 
 
 def order_positions():
@@ -38,6 +37,9 @@ def order_positions():
     key = bytes.fromhex((ROOT / "game/.key").read_text().strip())
     names = game_names(key, list(MANIFEST), list(TWINS.values()))
     order = sorted(names.values())
+    pool = json.load(open(ROOT / "worker/src/game_pool.json"))
+    if order != sorted(e["img"] for kind in ("real", "ai") for e in pool[kind]):
+        raise SystemExit("worker/src/game_pool.json is older than the manifests. Run: python3 -m artgen studio build")
     return [order.index(names[(p["kind"], p["id"])]) + 1 for p in CONFIG["playalong"]]
 
 

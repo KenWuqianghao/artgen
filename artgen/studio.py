@@ -121,7 +121,7 @@ REAL_MIN = 6
 GAME_KEY = ROOT / "game" / ".key"
 SIZE = (1280, 853)
 # A twin and its real photograph show the same room, so the second one would give the answer.
-# Their names, and so their places in the order, are at least this fraction of the order apart.
+# Their names, and so their places in the order, are about this fraction of the order apart or more.
 PAIR_GAP = 0.3
 STRIP = "setsar=1,sidedata=mode=delete:type=ICC_PROFILE"
 # A render is smoother and paler than a press photograph. Sharpening, a little grain and colour bring
@@ -146,16 +146,22 @@ def game_names(key: bytes, real_ids: list[str], ai: list[dict]) -> dict[tuple[st
     def name(text: str) -> str:
         return hmac.new(key, text.encode(), hashlib.sha256).hexdigest()[:16]
 
+    def place(img: str) -> float:
+        return int(img, 16) / 16 ** 16
+
     names = {("real", r): name(f"real:{r}") for r in real_ids}
     for e in ai:
-        at, salt = int(names[("real", e["twin"])], 16) / 16 ** 16, 0
-        while abs(int(img := name(f"ai:{e['id']}:{salt}"), 16) / 16 ** 16 - at) < PAIR_GAP:
+        at, salt = place(names[("real", e["twin"])]), 0
+        # the gap goes round the end of the order, so twins stay as evenly spread as real photographs
+        while not PAIR_GAP <= (place(img := name(f"ai:{e['id']}:{salt}")) - at) % 1 <= 1 - PAIR_GAP:
             salt += 1
         names[("ai", e["id"])] = img
     return names
 
 
 def _jpeg_size(data: bytes) -> tuple[int, int] | None:
+    if data[:2] != b"\xff\xd8":
+        return None
     i = 2
     while i + 9 < len(data) and data[i] == 0xFF:
         marker, length = data[i + 1], int.from_bytes(data[i + 2:i + 4], "big")
@@ -165,14 +171,18 @@ def _jpeg_size(data: bytes) -> tuple[int, int] | None:
     return None
 
 
-def _game_source(src: Path, manifest: Path) -> Path:
+def _game_source(src: Path, manifest: Path, hint: str = "") -> Path:
     if not src.exists():
-        raise SystemExit(f"{manifest.relative_to(ROOT)}: no image {src.relative_to(ROOT)}")
+        raise SystemExit(f"{manifest.relative_to(ROOT)}: no image {src.relative_to(ROOT)}.{hint}")
     data = src.read_bytes()
     if b"ICC_PROFILE" in data:
         raise SystemExit(f"{src.relative_to(ROOT)} has a colour profile. Convert it to plain sRGB: jpgicc -q95 {src.name} out.jpg")
-    if _jpeg_size(data) != SIZE:
-        raise SystemExit(f"{src.relative_to(ROOT)} is {_jpeg_size(data)}, not {SIZE[0]} x {SIZE[1]} pixels")
+    if b"Exif\0\0" in data:
+        # ffmpeg turns the image by the EXIF orientation, so the checked size would not be the published size
+        raise SystemExit(f"{src.relative_to(ROOT)} has EXIF data. Remove it: ffmpeg -i {src.name} -map_metadata -1 -q:v 2 out.jpg")
+    if (size := _jpeg_size(data)) != SIZE:
+        raise SystemExit(f"{src.relative_to(ROOT)} is {'not a readable JPEG' if size is None else f'{size[0]} x {size[1]}'}, "
+                         f"not {SIZE[0]} x {SIZE[1]} pixels")
     return src
 
 
@@ -192,6 +202,9 @@ def _game_pool(out: Path) -> dict:
         if bad:
             raise SystemExit(f"game/real/manifest.json: entry {e.get('id') or '?'} needs {', '.join(bad)}")
     twins.check(ai, {e["id"] for e in real})
+    if old := [e["id"] for e in ai if twins.stale(e)]:
+        raise SystemExit(f"{twins.MANIFEST.relative_to(ROOT)}: {len(old)} entries changed since their image: {' '.join(old)}. "
+                         "Run: python3 -m artgen game twins --changed")
     key, media, jobs = _game_key(), out / "game" / "media", []
     names = game_names(key, [e["id"] for e in real], ai)
     media.mkdir(parents=True)
@@ -206,7 +219,7 @@ def _game_pool(out: Path) -> dict:
         pool["real"].append({"img": publish("real", e["id"], src, STRIP), "reveal": {k: e[k] for k in REAL_FIELDS}})
     forms = {a["id"]: a for a in corpus.archetypes()}
     for e in ai:
-        src = _game_source(twins.DIR / f"{e['id']}.jpg", twins.MANIFEST)
+        src = _game_source(twins.DIR / f"{e['id']}.jpg", twins.MANIFEST, " Run: python3 -m artgen game twins")
         finish = AI_FINISH.format(seed=int(names[("ai", e["id"])][:7], 16))
         a = forms[e["archetype"]]
         pool["ai"].append({"img": publish("ai", e["id"], src, f"{finish},{STRIP}"), "reveal": {"form": a["form"], "basis": a["basis"]}})

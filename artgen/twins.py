@@ -30,6 +30,7 @@ from .textkit import join_list, sub_rng
 
 DIR = ROOT / "game" / "ai"
 MANIFEST = DIR / "manifest.json"
+TMP = DIR / "tmp"
 LOOK_FIELDS = ("room", "light", "colour", "camera", "people")
 
 
@@ -38,7 +39,8 @@ def load() -> list[dict]:
 
 
 def _save(entries: list[dict]) -> None:
-    tmp = MANIFEST.with_suffix(".tmp")
+    TMP.mkdir(exist_ok=True)
+    tmp = TMP / MANIFEST.name
     tmp.write_text(json.dumps({"entries": entries}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     os.replace(tmp, MANIFEST)
 
@@ -71,6 +73,8 @@ def check(entries: list[dict], real_ids: set[str]) -> None:
     arch_ids = {a["id"]: len(a["scenes"]) for a in corpus.archetypes()}
     if len({e.get("id") for e in entries}) != len(entries):
         raise SystemExit(f"{MANIFEST.relative_to(ROOT)}: two entries have the same id")
+    if unknown := sorted({str(e.get("twin")) for e in entries} - real_ids):
+        raise SystemExit(f"{MANIFEST.relative_to(ROOT)}: twin {', '.join(unknown)} is not in game/real/manifest.json")
     copies = Counter(e.get("twin") for e in entries)
     if bad := sorted(r for r in real_ids if copies[r] != 1):
         # a real photograph with no twin is a room that appears once; with two twins, a room that appears three times
@@ -81,8 +85,6 @@ def check(entries: list[dict], real_ids: set[str]) -> None:
         raise SystemExit(f"{MANIFEST.relative_to(ROOT)}: each scene can have one twin only. Repeated: {', '.join(repeated)}")
     for e in entries:
         where = f"{MANIFEST.relative_to(ROOT)}: entry {e.get('id') or '?'}"
-        if e.get("twin") not in real_ids:
-            raise SystemExit(f"{where}: twin {e.get('twin')!r} is not in game/real/manifest.json")
         variant = e.get("variant")
         if e.get("archetype") not in arch_ids or type(variant) is not int or not 0 <= variant < arch_ids[e["archetype"]]:
             raise SystemExit(f"{where}: no archetype {e.get('archetype')!r} with variant {e.get('variant')!r}")
@@ -92,32 +94,47 @@ def check(entries: list[dict], real_ids: set[str]) -> None:
             raise SystemExit(f"{where}: look needs {', '.join(bad)}")
 
 
+def stale(entry: dict) -> bool:
+    """The entry changed since its image was rendered, or the generator now writes a different prompt for it."""
+    return entry.get("prompt") != prompt(entry)
+
+
 def _fit(src: Path, dst: Path) -> None:
     """Crop to 3:2 and scale to the size of the real photographs, then replace dst in one step."""
-    tmp = dst.with_suffix(".part.jpg")
+    tmp = TMP / dst.name
+    # crop in RGB: on 4:2:0 input, crop rounds the odd height 853 down to 852
     subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(src), "-vf",
-                    "scale=1280:853:force_original_aspect_ratio=increase,format=rgb24,crop=1280:853", "-q:v", "2", str(tmp)], check=True)
+                    "scale=1280:853:force_original_aspect_ratio=increase,format=rgb24,crop=1280:853,sidedata=mode=delete:type=ICC_PROFILE",
+                    "-map_metadata", "-1", "-q:v", "2", str(tmp)], check=True)
     os.replace(tmp, dst)
 
 
-def render(provider: str, *, workers: int = 2, only: list[str] | None = None, force: bool = False, log=print) -> list[str]:
-    """Render each entry that has no image, or whose prompt changed since its image (all of only, with force).
+def render(provider: str, *, workers: int = 2, only: list[str] | None = None, force: bool = False, changed: bool = False,
+           log=print) -> list[str]:
+    """Render each entry that has no image (all of only, with force). With changed, also the stale entries.
     Return the ids that failed. A rerun continues after a failure."""
     from .render.providers import PROVIDERS
+    if not shutil.which("ffmpeg"):
+        raise SystemExit("Rendering twins needs ffmpeg. Install ffmpeg first.")
     entries = load()
     real = json.loads((ROOT / "game" / "real" / "manifest.json").read_text(encoding="utf-8"))["entries"]
     check(entries, {e["id"] for e in real})
     if unknown := sorted(set(only or []) - {e["id"] for e in entries}):
         raise SystemExit(f"{MANIFEST.relative_to(ROOT)}: no entry {', '.join(unknown)}")
-    todo = [e for e in entries if (only is None or e["id"] in only)
-            and (force or not (DIR / f"{e['id']}.jpg").exists() or e.get("prompt") != prompt(e))]
+    chosen = [e for e in entries if only is None or e["id"] in only]
+    old = [e for e in chosen if (DIR / f"{e['id']}.jpg").exists() and stale(e)]
+    if old and not (changed or force):
+        # a change in the shared generator can make every prompt stale; each new render is paid
+        raise SystemExit(f"twins: {len(old)} entries changed since their image: {' '.join(e['id'] for e in old)}. "
+                         "To render them again, add --changed.")
+    todo = [e for e in chosen if force or not (DIR / f"{e['id']}.jpg").exists() or e in old]
     log(f"twins: {len(todo)} of {len(entries)} to render")
-    fn, tmp, failed = PROVIDERS[provider], DIR / "tmp", []
-    tmp.mkdir(exist_ok=True)
+    fn, failed = PROVIDERS[provider], []
+    TMP.mkdir(exist_ok=True)
 
     def job(e):
         text = prompt(e)
-        raw = fn(text, tmp / e["id"], caption=e["archetype"])
+        raw = fn(text, TMP / e["id"], caption=e["archetype"])
         _fit(raw, DIR / f"{e['id']}.jpg")
         raw.unlink(missing_ok=True)
         return text
@@ -134,5 +151,6 @@ def render(provider: str, *, workers: int = 2, only: list[str] | None = None, fo
                 continue
             _save(entries)
             log(f"  done    {e['id']}")
-    shutil.rmtree(tmp, ignore_errors=True)
+    if not failed:  # keep the paid raw images of failed jobs
+        shutil.rmtree(TMP, ignore_errors=True)
     return failed
