@@ -5,8 +5,8 @@ Arc: hook, play along, demonstration, call to action. Audience: art people on X.
 
 Source: `record.mjs` plays one set of the real game page on a local Worker (phone layout, 540 px at 2x density).
 All players get the photographs in the same order, so the video uses only the end of the order.
-A new player answers sets 1 to 16 through the API off camera. The recording shows set 17 (photographs 161 to 170 of 185).
-The three play-along photographs come after set 17 (positions 171, 178 and 182). `build_index.py` stops if one comes earlier.
+A new player answers sets 1 to 16 through the API off camera. The recording shows set 17 (photographs 161 to 170 of 218).
+The three play-along photographs come after set 17 (positions 202, 181 and 210). `build_index.py` stops if one comes earlier.
 `config.json` sets the address in the close card and the share text, the recorded set, the answers to miss in each set and the play-along photographs.
 `scripts/build_index.py` cuts the recording at its own speeds and writes `timeline.json` and `index.html`.
 The times below come from the take of 2026-11-09. They move a little with each take.

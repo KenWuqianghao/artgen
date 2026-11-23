@@ -25,7 +25,7 @@ def dur(f):
 
 # ---- play-along: three photographs, each with a countdown and a stamp
 MANIFEST = {e["id"]: e for e in json.load(open(ROOT / "game/real/manifest.json"))["entries"]}
-LIBRARY = {e["id"]: e for e in json.load(open(ROOT / "library/index.json"))["entries"]}
+TWINS = {e["id"]: e for e in json.load(open(ROOT / "game/ai/manifest.json"))["entries"]}
 ARCHETYPES = json.loads(subprocess.run(["python3", "-c", "import json; from artgen import corpus; "
                                         "print(json.dumps({a['id']: a['basis'] for a in corpus.archetypes()}))"],
                                        cwd=ROOT, capture_output=True, text=True, check=True).stdout)
@@ -54,8 +54,8 @@ for i, p in enumerate(CONFIG["playalong"]):
         src = ROOT / "game/real" / f"{p['id']}.jpg"
         lines = [("who", e["artist"]), ("where", e["venue"]), ("photo", e["credit"])]
     else:
-        e = LIBRARY[p["id"]]
-        src = ROOT / e["file"]
+        e = TWINS[p["id"]]
+        src = ROOT / "game/ai" / f"{p['id']}.jpg"
         artists = [b.split(",")[0] for b in ARCHETYPES[e["archetype"]][:2]]
         lines = [("who", "AI made this room."), ("where", "It imitates " + " and ".join(artists) + ".")]
     shutil.copyfile(src, f"assets/p{i + 1}.jpg")
