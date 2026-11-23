@@ -157,18 +157,18 @@ The ladder puts players with the same number of correct answers in this order: f
 
 ### Share a result
 
-The share text gives the set number, one square for each answer of the set, the score of the set, your place on the ladder and a link:
+The share text gives the set number, one square for each answer of the set, the score of the set, your place on the ladder with the number of players, your correct answers of all sets and a link:
 
 ```
 Art or BS? Set 4
 🟩🟥🟩🟩🟥🟩🟩🟩🟥🟩 8/10
-#12 on the ladder
+#12 of 40 · 31/40 correct
 https://<host>/s/8
 ```
 
 The link gives the score out of 10. For a short last set, the page rounds the score to a score out of 10: 4 of 5 gives `/s/8`.
 
-`GET /s/<score>` makes the link preview. The Worker answers with a short page for crawlers. Its preview tags show the card of that score, `/share/<score>.jpg`. The page then sends people to `/game`. When the score is not a whole number from 0 to 10, the Worker redirects to `/game`. The game page `/game` shows `/share/card.jpg`. The Worker makes the preview addresses absolute with `PUBLIC_HOST`, so a card links to the public address.
+`GET /s/<score>` makes the link preview and the page of the shared score. The Worker answers with a short page. Its preview tags show the card of that score, `/share/<score>.jpg`. People who open the link see that card and a Play button that opens `/game`. When the score is not a whole number from 0 to 10, the Worker redirects to `/game`. The game page `/game` shows `/share/card.jpg`. The Worker makes the preview addresses absolute with `PUBLIC_HOST`, so a card links to the public address.
 
 The cards are 1200 × 630 JPEGs in `artgen/studio_static/share/`. To make them again, run:
 
