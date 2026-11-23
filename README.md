@@ -102,6 +102,7 @@ The game shows one photograph of an installation at a time. You answer **Art** o
 - All players get the same photographs in the same order.
 - The answers come in sets of 10. After each set, the page shows your score for the set, your place on the ladder and the **Next set** button. The last set can have fewer than 10 photographs.
 - The ladder ranks all players by the number of correct answers. Players with the same number share a place. After the first set, you can put your name on the ladder. The page shows the best 50 names.
+- To see the ladder at any time, click **Ladder** in the top bar.
 - After each set you can share your result. On a phone, **Share** opens the share sheet. **Post on X** opens a new post with the result. **Copy result** copies the result.
 - When you have answered all photographs, the page tells you. New photographs come later, and you continue with them.
 - Keys: `A` or left arrow for Art, `B` or right arrow for BS, `Enter` or `Space` for the next photograph.

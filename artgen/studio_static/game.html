@@ -27,7 +27,8 @@
   <div class="brand"><strong>Art or BS?</strong></div>
   <p class="tagline">Some rooms are real art. AI made the rest.</p>
   <div class="top-actions">
-    <a class="btn ghost" href="studio">Open the Studio</a>
+    <button id="open-ladder" class="btn ghost" type="button" hidden>Ladder</button>
+    <a class="btn ghost" href="studio"><span class="wide">Open the </span>Studio</a>
   </div>
 </header>
 
@@ -95,6 +96,17 @@
     </div>
   </section>
 </main>
+
+<dialog class="ladder" id="ladder-dialog" aria-labelledby="ladder-title">
+  <div class="ladder-box">
+    <div class="ladder-head">
+      <h2 id="ladder-title">The ladder</h2>
+      <button id="close-ladder" class="btn ghost" type="button">Close</button>
+    </div>
+    <p class="hint" id="ladder-line"></p>
+    <ol class="ranks" id="ladder-ranks"></ol>
+  </div>
+</dialog>
 <script src="game.js"></script>
 </body>
 </html>

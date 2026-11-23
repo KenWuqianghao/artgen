@@ -9,7 +9,7 @@
   var KEYS = { a: "real", arrowleft: "real", b: "ai", arrowright: "ai" };
 
   var state = "loading";
-  var game = null, ladder = null, token = playerToken();
+  var game = null, ladder = null, ladderProblem = "", token = playerToken();
 
   var $ = function (id) { return document.getElementById(id); };
   function el(tag, cls, text) {
@@ -163,24 +163,55 @@
     window.scrollTo(0, 0);
   }
 
-  function renderLadder() {
-    var rows = ((ladder && ladder.entries) || []).map(function (e) {
+  function ladderRows(empty) {
+    if (!ladder) return [];
+    var rows = ladder.entries.map(function (e) {
       var li = el("li", e.me ? "me" : "");
       li.appendChild(el("span", "n", e.rank));
       li.appendChild(el("span", "who", e.name));
       li.appendChild(el("span", "t", e.correct + "/" + e.answered));
       return li;
     });
-    if (!rows.length) rows = [el("li", "empty", "No names yet. Put yours first.")];
-    $("ranks").replaceChildren.apply($("ranks"), rows);
+    return rows.length ? rows : [el("li", "empty", empty)];
+  }
+
+  function ladderLine() {
+    if (ladderProblem) return ladderProblem;
+    if (!ladder) return "Loading the ladder…";
+    var mine = ladder.entries.filter(function (e) { return e.me; })[0];
+    if (mine) return "You are #" + mine.rank + " of " + playersText(ladder.players) + ".";
+    if (game && game.rank) return "You are #" + game.rank + " of " + playersText(game.players) + ".";
+    return playersText(ladder.players) + ".";
+  }
+
+  function renderLadder() {
+    var board = !ladder && ladderProblem ? [el("li", "empty", ladderProblem)] : ladderRows("No names yet. Put yours first.");
+    $("ranks").replaceChildren.apply($("ranks"), board);
+    $("ladder-line").textContent = ladderLine();
+    $("ladder-ranks").replaceChildren.apply($("ladder-ranks"), ladderRows("No names yet."));
   }
 
   function loadLadder() {
     return call("GET", "ladder?player=" + token).then(function (res) {
-      if (res.status !== 200) return;
-      ladder = res.data;
-      if (state === "checkpoint" || state === "finished") renderLadder();
-    }).catch(function () {});
+      if (res.status !== 200) throw res;
+      ladder = res.data; ladderProblem = "";
+    }).catch(function (res) {
+      ladderProblem = (res && res.data && res.data.error) || SERVER_DOWN;
+    }).then(renderLadder);
+  }
+
+  // Needs a dialog with no padding and one box that fills it: then only the backdrop is the dialog itself.
+  function closeOnBackdropPress(dialog) {
+    var pressed = false;
+    dialog.addEventListener("pointerdown", function (e) { pressed = e.target === dialog; });
+    dialog.addEventListener("click", function (e) { if (pressed && e.target === dialog) dialog.close(); });
+  }
+
+  function openLadder() {
+    ladderProblem = "";
+    $("ladder-dialog").showModal();
+    renderLadder();
+    loadLadder();
   }
 
   function endSet() {
@@ -193,6 +224,7 @@
     call("GET", "state?player=" + token).then(function (res) {
       if (res.status !== 200) return show("unavailable", res.data.error);
       game = res.data;
+      $("open-ladder").hidden = false;
       if (!game.next || setDone()) return endSet();
       show("playing", notice);
     }).catch(function () { show("unavailable"); });
@@ -232,7 +264,7 @@
       game.name = res.data.name; game.rank = res.data.rank;
       $("name").value = game.name;
       status.textContent = "Saved. You are #" + game.rank + " on the ladder.";
-      return loadLadder();
+      loadLadder();
     }).catch(function () { status.textContent = SERVER_DOWN; });
   }
 
@@ -265,11 +297,16 @@
   $("next-set").addEventListener("click", nextSet);
   $("name-form").addEventListener("submit", saveName);
   $("copy").addEventListener("click", copyResult);
+  $("open-ladder").addEventListener("click", openLadder);
+  $("close-ladder").addEventListener("click", function () { $("ladder-dialog").close(); });
+  closeOnBackdropPress($("ladder-dialog"));
+  // The closed dialog gives focus back to the Ladder button, so Enter and Space would not reach the next photograph.
+  $("ladder-dialog").addEventListener("close", function () { if (state === "revealed") $("next").focus(); });
   document.addEventListener("keydown", function (e) {
-    if (e.metaKey || e.ctrlKey || e.altKey || e.repeat) return;
+    if (e.metaKey || e.ctrlKey || e.altKey || e.repeat || $("ladder-dialog").open) return;
     var key = e.key.toLowerCase();
     if (state === "playing" && KEYS[key]) { e.preventDefault(); answer(KEYS[key]); }
-    else if (state === "revealed" && (key === "enter" || key === " ") && e.target.tagName !== "A") { e.preventDefault(); next(); }
+    else if (state === "revealed" && (key === "enter" || key === " ") && !e.target.closest("a, button")) { e.preventDefault(); next(); }
   });
 
   open();
