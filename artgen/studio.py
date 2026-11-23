@@ -202,9 +202,10 @@ def _game_pool(out: Path) -> dict:
         if bad:
             raise SystemExit(f"game/real/manifest.json: entry {e.get('id') or '?'} needs {', '.join(bad)}")
     twins.check(ai, {e["id"] for e in real})
-    if old := [e["id"] for e in ai if twins.stale(e)]:
+    if old := [e["id"] for e in ai if (twins.DIR / f"{e['id']}.jpg").exists() and twins.stale(e)]:
+        # the reveal comes from the entry, so an old image would get the reveal of another work
         raise SystemExit(f"{twins.MANIFEST.relative_to(ROOT)}: {len(old)} entries changed since their image: {' '.join(old)}. "
-                         "Run: python3 -m artgen game twins --changed")
+                         "Run: python3 -m artgen game twins")
     key, media, jobs = _game_key(), out / "game" / "media", []
     names = game_names(key, [e["id"] for e in real], ai)
     media.mkdir(parents=True)

@@ -14,6 +14,7 @@ look holds what a writer saw in the real photograph, never its artwork:
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import shutil
@@ -94,14 +95,20 @@ def check(entries: list[dict], real_ids: set[str]) -> None:
             raise SystemExit(f"{where}: look needs {', '.join(bad)}")
 
 
+def inputs(entry: dict) -> str:
+    """A hash of the fields that decide the image. A change in the shared generator alone does not change it."""
+    fields = {k: entry.get(k) for k in ("twin", "archetype", "variant", "look")}
+    return hashlib.sha256(json.dumps(fields, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]
+
+
 def stale(entry: dict) -> bool:
-    """The entry changed since its image was rendered, or the generator now writes a different prompt for it."""
-    return entry.get("prompt") != prompt(entry)
+    """The entry changed since its image was rendered."""
+    return entry.get("inputs") != inputs(entry)
 
 
 def _fit(src: Path, dst: Path) -> None:
     """Crop to 3:2 and scale to the size of the real photographs, then replace dst in one step."""
-    tmp = TMP / dst.name
+    tmp = TMP / f"{dst.stem}.fit.jpg"
     # crop in RGB: on 4:2:0 input, crop rounds the odd height 853 down to 852
     subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(src), "-vf",
                     "scale=1280:853:force_original_aspect_ratio=increase,format=rgb24,crop=1280:853,sidedata=mode=delete:type=ICC_PROFILE",
@@ -109,9 +116,8 @@ def _fit(src: Path, dst: Path) -> None:
     os.replace(tmp, dst)
 
 
-def render(provider: str, *, workers: int = 2, only: list[str] | None = None, force: bool = False, changed: bool = False,
-           log=print) -> list[str]:
-    """Render each entry that has no image (all of only, with force). With changed, also the stale entries.
+def render(provider: str, *, workers: int = 2, only: list[str] | None = None, force: bool = False, log=print) -> list[str]:
+    """Render each entry that has no image or changed since its image (all of only, with force).
     Return the ids that failed. A rerun continues after a failure."""
     from .render.providers import PROVIDERS
     if not shutil.which("ffmpeg"):
@@ -121,13 +127,8 @@ def render(provider: str, *, workers: int = 2, only: list[str] | None = None, fo
     check(entries, {e["id"] for e in real})
     if unknown := sorted(set(only or []) - {e["id"] for e in entries}):
         raise SystemExit(f"{MANIFEST.relative_to(ROOT)}: no entry {', '.join(unknown)}")
-    chosen = [e for e in entries if only is None or e["id"] in only]
-    old = [e for e in chosen if (DIR / f"{e['id']}.jpg").exists() and stale(e)]
-    if old and not (changed or force):
-        # a change in the shared generator can make every prompt stale; each new render is paid
-        raise SystemExit(f"twins: {len(old)} entries changed since their image: {' '.join(e['id'] for e in old)}. "
-                         "To render them again, add --changed.")
-    todo = [e for e in chosen if force or not (DIR / f"{e['id']}.jpg").exists() or e in old]
+    todo = [e for e in entries if (only is None or e["id"] in only)
+            and (force or not (DIR / f"{e['id']}.jpg").exists() or stale(e))]
     log(f"twins: {len(todo)} of {len(entries)} to render")
     fn, failed = PROVIDERS[provider], []
     TMP.mkdir(exist_ok=True)
@@ -144,13 +145,12 @@ def render(provider: str, *, workers: int = 2, only: list[str] | None = None, fo
         for fut in as_completed(futures):
             e = futures[fut]
             try:
-                e["prompt"] = fut.result()
+                e["prompt"], e["inputs"] = fut.result(), inputs(e)
             except Exception as err:  # keep going; a rerun picks up what failed
                 failed.append(e["id"])
                 log(f"  failed  {e['id']}: {str(err)[:160]}")
                 continue
             _save(entries)
             log(f"  done    {e['id']}")
-    if not failed:  # keep the paid raw images of failed jobs
-        shutil.rmtree(TMP, ignore_errors=True)
+    shutil.rmtree(TMP, ignore_errors=True)
     return failed

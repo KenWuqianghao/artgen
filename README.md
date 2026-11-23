@@ -156,9 +156,9 @@ To render the entries that have no image yet, run:
 python3 -m artgen game twins
 ```
 
-It needs `OPENAI_API_KEY`. It writes `game/ai/<id>.jpg` at 1280 × 853 pixels and the prompt of each image into the manifest. When you change an entry, its prompt changes. The command then stops and lists the changed entries. To render them again, add `--changed`. A change in the generator can change every prompt, and each render is paid. When a render fails, the command ends with an error, and a rerun continues. To render an entry again with no change, add `--only twin-0003 --force`.
+It needs `OPENAI_API_KEY`. It writes `game/ai/<id>.jpg` at 1280 × 853 pixels and the prompt of each image into the manifest. When you change an entry, the command renders it again. A change in the generator code alone does not render the twins again. When a render fails, the command ends with an error, and a rerun continues. To render an entry again with no change, add `--only twin-0003 --force`.
 
-The build stops if a real photograph has no twin or more than one, if two twins use the same scene, or if an entry changed since its image. A player who sees the same invented work twice knows that both are AI.
+The build stops if a real photograph has no twin or more than one, if two twins use the same scene, or if an entry changed since its image. A player who sees the same invented work twice knows that both are AI. The render writes `inputs` into each entry: a hash of `twin`, `archetype`, `variant` and `look`. The build compares it with the entry.
 
 Now the game has 218 photographs: 109 real photographs and 109 AI twins.
 

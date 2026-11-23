@@ -160,9 +160,9 @@ def cmd_library(args):
 
 def cmd_game(args):
     from .twins import render
-    if failed := render(args.provider, workers=args.workers, only=args.only, force=args.force, changed=args.changed):
+    if failed := render(args.provider, workers=args.workers, only=args.only, force=args.force):
         raise SystemExit(f"twins: {len(failed)} failed: {' '.join(failed)}. Run the command again.")
-    print("twins: every entry has a current image")
+    print("twins: done")
 
 
 def cmd_studio(args):
@@ -246,7 +246,6 @@ def main(argv=None):
     g.add_argument("--provider", default="openai", choices=["openai", "fal", "replicate"])
     g.add_argument("--only", nargs="*", help="entry ids, for example twin-0007")
     g.add_argument("--force", action="store_true", help="render again entries that have an image")
-    g.add_argument("--changed", action="store_true", help="also render again entries whose prompt changed since their image")
     g.add_argument("--workers", type=int, default=2)
     g.set_defaults(func=cmd_game)
 

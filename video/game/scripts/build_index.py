@@ -37,7 +37,8 @@ def order_positions():
     key = bytes.fromhex((ROOT / "game/.key").read_text().strip())
     names = game_names(key, list(MANIFEST), list(TWINS.values()))
     order = sorted(names.values())
-    pool = json.load(open(ROOT / "worker/src/game_pool.json"))
+    built = ROOT / "worker/src/game_pool.json"
+    pool = json.load(open(built)) if built.exists() else {"real": [], "ai": []}
     if order != sorted(e["img"] for kind in ("real", "ai") for e in pool[kind]):
         raise SystemExit("worker/src/game_pool.json is older than the manifests. Run: python3 -m artgen studio build")
     return [order.index(names[(p["kind"], p["id"])]) + 1 for p in CONFIG["playalong"]]
