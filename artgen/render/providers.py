@@ -11,6 +11,7 @@ import base64
 import html
 import json
 import os
+import re
 import time
 import urllib.error
 import urllib.request
@@ -121,7 +122,7 @@ def openai(prompt: str, dest: Path, caption: str = "") -> Path:
             if e.status == 429 and attempt < 6:
                 time.sleep(e.retry_after or min(90, 8 * 2 ** attempt))
                 continue
-            if e.status == 400 and "moderation" in str(e) and not body["prompt"].endswith(SAFE_SUFFIX):
+            if e.status == 400 and re.search(r"moderation|safety", str(e), re.I) and not body["prompt"].endswith(SAFE_SUFFIX):
                 body["prompt"] += SAFE_SUFFIX
                 continue
             raise

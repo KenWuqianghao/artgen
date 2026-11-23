@@ -2,15 +2,18 @@
 """Cut the recording and write timeline.json and index.html for the game video (1080x1080).
 Inputs: config.json (address, recorded set, play-along photographs), recording.json and raw/game.mp4 from record.mjs.
 Run from video/game: python3 scripts/build_index.py"""
-import hashlib
-import hmac
 import html
 import json
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path("../..")
+sys.path.insert(0, str(ROOT))
+from artgen import corpus  # noqa: E402
+from artgen.studio import game_names  # noqa: E402
+
 CONFIG = json.load(open("config.json"))
 REC = json.load(open("recording.json"))
 URL = CONFIG["url"]
@@ -25,19 +28,19 @@ def dur(f):
 
 # ---- play-along: three photographs, each with a countdown and a stamp
 MANIFEST = {e["id"]: e for e in json.load(open(ROOT / "game/real/manifest.json"))["entries"]}
-LIBRARY = {e["id"]: e for e in json.load(open(ROOT / "library/index.json"))["entries"]}
-ARCHETYPES = json.loads(subprocess.run(["python3", "-c", "import json; from artgen import corpus; "
-                                        "print(json.dumps({a['id']: a['basis'] for a in corpus.archetypes()}))"],
-                                       cwd=ROOT, capture_output=True, text=True, check=True).stdout)
+TWINS = {e["id"]: e for e in json.load(open(ROOT / "game/ai/manifest.json"))["entries"]}
+ARCHETYPES = {a["id"]: a["basis"] for a in corpus.archetypes()}
 
 
 def order_positions():
-    """Place of each play-along photograph in the order of the game (1-based), as artgen/studio.py names the images."""
     key = bytes.fromhex((ROOT / "game/.key").read_text().strip())
-    pool = json.load(open(ROOT / "worker/src/game_pool.json"))
-    order = sorted(e["img"] for kind in ("real", "ai") for e in pool[kind])
-    return [order.index(hmac.new(key, f"{p['kind']}:{p['id']}".encode(), hashlib.sha256).hexdigest()[:16]) + 1
-            for p in CONFIG["playalong"]]
+    names = game_names(key, list(MANIFEST), list(TWINS.values()))
+    order = sorted(names.values())
+    built = ROOT / "worker/src/game_pool.json"
+    pool = json.load(open(built)) if built.exists() else {"real": [], "ai": []}
+    if order != sorted(e["img"] for kind in ("real", "ai") for e in pool[kind]):
+        raise SystemExit("worker/src/game_pool.json is older than the manifests. Run: python3 -m artgen studio build")
+    return [order.index(names[(p["kind"], p["id"])]) + 1 for p in CONFIG["playalong"]]
 
 
 # Every player gets the same order, so the video shows only photographs after the recorded set.
@@ -54,8 +57,8 @@ for i, p in enumerate(CONFIG["playalong"]):
         src = ROOT / "game/real" / f"{p['id']}.jpg"
         lines = [("who", e["artist"]), ("where", e["venue"]), ("photo", e["credit"])]
     else:
-        e = LIBRARY[p["id"]]
-        src = ROOT / e["file"]
+        e = TWINS[p["id"]]
+        src = ROOT / "game/ai" / f"{p['id']}.jpg"
         artists = [b.split(",")[0] for b in ARCHETYPES[e["archetype"]][:2]]
         lines = [("who", "AI made this room."), ("where", "It imitates " + " and ".join(artists) + ".")]
     shutil.copyfile(src, f"assets/p{i + 1}.jpg")

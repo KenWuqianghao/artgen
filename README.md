@@ -118,11 +118,12 @@ Open the address that Wrangler prints and add `/game.html`. Under `python3 -m ar
 
 ### Add real photographs
 
-The AI images come from the image library. The real photographs come from `game/real/`. It holds 109 press photographs of real installations. `game/real/sources.tsv` records the image address and the page of each one.
+The real photographs come from `game/real/`. It holds 109 press photographs of real installations. `game/real/sources.tsv` records the image address and the page of each one.
 
-1. Save each photograph as `game/real/<id>.jpg`, 1280 × 853 pixels, the same size as the library images. Use plain sRGB with no colour profile. To convert a photograph with a profile, run `jpgicc -q95 in.jpg out.jpg`.
+1. Save each photograph as `game/real/<id>.jpg`, 1280 × 853 pixels. Use plain sRGB with no colour profile. To convert a photograph with a profile, run `jpgicc -q95 in.jpg out.jpg`.
 2. Add one entry for each photograph to `game/real/manifest.json`, as in the example below.
-3. Build the Studio again with `python3 -m artgen studio build`, or run one of the `npm run` commands.
+3. Add a twin for each photograph to `game/ai/manifest.json` and render it. The next section tells how.
+4. Build the Studio again with `python3 -m artgen studio build`, or run one of the `npm run` commands.
 
 ```json
 {"entries": [
@@ -134,11 +135,36 @@ The AI images come from the image library. The real photographs come from `game/
 
 `year` and `credit` can be empty. The other fields are necessary. Use only photographs that you have the right to publish, and give the credit that the licence asks for.
 
-Now the game has 185 photographs: 109 real photographs and 76 library images.
+### The AI images: one twin for each real photograph
 
-The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The new encoding removes the metadata, so the bytes do not show the kind. A player can still match an AI image to the public library by how it looks. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
+The AI images come from `game/ai/`. Each one is the twin of one real photograph: the same kind of room, light, colours and framing, with an artgen work in place of the real one. So the room and the colours do not tell the answer. The game does not use the image library, because the library is public in the Studio.
 
-The order of the photographs is the order of their names. The name is a hash, so the order looks random. A new photograph gets its place in the order, and the other photographs keep their order. A player gets a new photograph next if the player is already past its place. Otherwise the player gets it at its place. When you remove a photograph, the answers to it stay in the scores.
+Each entry in `game/ai/manifest.json` has these fields:
+
+```json
+{"id": "twin-0003", "twin": "press-0003", "archetype": "torn-mended-silk", "variant": 0,
+ "look": {"room": "...", "light": "...", "colour": "...", "camera": "...", "people": "none"}}
+```
+
+- `twin` is the id of the real photograph.
+- `archetype` and `variant` select the work and its scene in `data/archetypes.json`. Use a work with the same placement and scale as the real work (on the wall, on the floor, hanging, on screens), but not a copy of it. The scene must fit the room.
+- `look` describes the real photograph without its artwork: the room, the light, the colours and exposure, the camera position and framing, and the people (`"none"` when there are none).
+
+To render the entries that have no image yet, run:
+
+```bash
+python3 -m artgen game twins
+```
+
+It needs `OPENAI_API_KEY`. It writes `game/ai/<id>.jpg` at 1280 × 853 pixels and the prompt of each image into the manifest. When you change an entry, the command renders it again. A change in the generator code alone does not render the twins again. When a render fails, the command ends with an error, and a rerun continues. To render an entry again with no change, add `--only twin-0003 --force`.
+
+The build stops if a real photograph has no twin or more than one, if two twins use the same scene, or if an entry changed since its image. A player who sees the same invented work twice knows that both are AI. The render writes `inputs` into each entry: a hash of `twin`, `archetype`, `variant` and `look`. The build compares it with the entry.
+
+Now the game has 218 photographs: 109 real photographs and 109 AI twins.
+
+The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The build stops if an image is not 1280 × 853 pixels or has EXIF data. The AI images also get a little sharpening, grain and colour, because a render is smoother and paler than a press photograph. The new encoding removes the metadata, so the bytes do not show the kind. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
+
+The order of the photographs is the order of their names. The name is a hash, so the order looks random. A twin and its real photograph show the same room, so the build keeps them about 30% of the order apart or more. A new photograph gets its place in the order, and the other photographs keep their order. A player gets a new photograph next if the player is already past its place. Otherwise the player gets it at its place. When you remove a photograph, the answers to it stay in the scores.
 
 ### Game API
 
@@ -297,7 +323,7 @@ The script builds the Studio and starts a local Worker with an empty game state.
 
 `video/game/config.json` holds the address in the video, the recorded set, the answers that the recording gets wrong in each set and the three photographs to guess. To show a different address, change `url` and run the build script again. The browser sends that address to the local Worker, so the recorded page and its share text show it too.
 
-All players get the photographs in the same order, so the video must not show the answers of the first sets. The video records set 17 (photographs 161 to 170 of 185). The three photographs to guess come after set 17 in the order. The build stops if a photograph to guess comes earlier. The order depends on `game/.key`, so use the key of the live game. If the game gets new photographs, check the positions in `video/game/timeline.json`.
+All players get the photographs in the same order, so the video must not show the answers of the first sets. The video records set 17 (photographs 161 to 170 of 218). The three photographs to guess come after set 17 in the order. The build stops if a photograph to guess comes earlier. The order depends on `game/.key`, so use the key of the live game. If the game gets new photographs, check the positions in `video/game/timeline.json`.
 
 ## Folders
 
@@ -307,6 +333,7 @@ data/              archetypes, lexicon, world, title structures, real-name block
 tools/             sources of data/archetypes.json and data/lexicon.json, and the share cards of the game
 library/           pre-rendered images, one per archetype, with what each one shows
 game/real/         real photographs for the game Art or BS?, with their citations
+game/ai/           the AI twins of the real photographs, with their prompts
 worker/            the Cloudflare Worker: live renders and the game
 docs/research/     the research corpus, with source URLs
 biennales/         generated editions (exhibition.json and media/; site/ is build output)
