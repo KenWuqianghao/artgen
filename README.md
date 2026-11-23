@@ -157,12 +157,12 @@ The ladder puts players with the same number of correct answers in this order: f
 
 ### Share a result
 
-The share text gives the set number, one square for each answer of the set, the score of the set, your place on the ladder and a link:
+The share text gives the set number, one square for each answer of the set, the score of the set, your place on the ladder with the number of players, your correct answers of all sets and a link:
 
 ```
 Art or BS? Set 4
 🟩🟥🟩🟩🟥🟩🟩🟩🟥🟩 8/10
-#12 on the ladder
+#12 of 40 · 31/40 correct
 https://<host>/s/8
 ```
 

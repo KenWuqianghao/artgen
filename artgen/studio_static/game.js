@@ -136,12 +136,12 @@
 
   function result() {
     return { number: game.set.number, score: setScore(), size: game.set.answers.length, rank: game.rank,
-             marks: game.set.answers.map(isRight) };
+             players: game.players, correct: game.correct, answered: game.answered, marks: game.set.answers.map(isRight) };
   }
 
   function shareMessage(r) {
     var squares = r.marks.map(function (right) { return right ? "🟩" : "🟥"; }).join("");
-    return "Art or BS? Set " + r.number + "\n" + squares + " " + r.score + "/" + r.size + "\n#" + r.rank + " on the ladder";
+    return "Art or BS? Set " + r.number + "\n" + squares + " " + r.score + "/" + r.size + "\n#" + r.rank + " of " + r.players + " · " + r.correct + "/" + r.answered + " correct";
   }
 
   // A short last set links to the card of its score out of ten.
