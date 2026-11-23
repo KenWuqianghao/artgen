@@ -1,7 +1,7 @@
 /* Art or BS? Uses the Studio's tokens and chrome from studio.css.
    The photograph hangs on a wall; the answer arrives as the wall label beside it. */
 :root { --right: #1f7a4d; --wrong: #a4281f; }
-.ask h1, .score h1, .wall-label .title { font-family: "Newsreader", Georgia, serif; font-weight: 400; }
+.ask h1, .score h1, .shared h1, .wall-label .title { font-family: "Newsreader", Georgia, serif; font-weight: 400; }
 
 .game { min-height: calc(100vh - 57px); }
 .notice { margin: 0; padding: 18vh 20px; text-align: center; font-family: "Newsreader", Georgia, serif; font-size: 28px; line-height: 1.25; }
@@ -112,3 +112,9 @@
   .game[data-state=revealed] .wall-label { animation: hang 260ms cubic-bezier(.2, .7, .2, 1); }
   @keyframes hang { from { opacity: 0; transform: translateY(8px); } }
 }
+
+/* a shared score: /s/<score> */
+.shared { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; text-align: center; }
+.shared img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.shared h1 { font-size: 40px; line-height: 1.1; margin: 28px 0 0; }
+.shared .next { width: auto; min-width: 220px; }

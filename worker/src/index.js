@@ -12,9 +12,9 @@
 //   POST /api/game/name              {player, name} -> a row on the ladder, after the first set
 //   GET  /api/game/ladder?player=    the top 50 named players; the player's own row has me: true
 //
-// Link previews for social posts:
+// Shared scores and link previews for social posts:
 //
-//   GET  /s/<score>    a page with the preview card of a score from 0 to 10 for crawlers; it sends people on to /game
+//   GET  /s/<score>    the card of a score from 0 to 10, for crawlers and for the people who open a shared link
 //   GET  /game         the game page, with its preview tags made absolute for the public host (PUBLIC_HOST)
 //   GET  /studio       the Studio, because the public host shows the game at /
 //
@@ -314,9 +314,24 @@ function sharePage(url, env) {
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="${image}">
-<meta http-equiv="refresh" content="0; url=/game">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap">
+<link rel="stylesheet" href="/studio.css">
+<link rel="stylesheet" href="/game.css">
 </head>
-<body><a href="/game">Play Art or BS?</a></body>
+<body>
+<header class="top">
+  <div class="brand"><strong>Art or BS?</strong></div>
+</header>
+<main class="shared">
+  <img src="/share/${score}.jpg" alt="A score of ${score}/10 on Art or BS?" width="1200" height="630">
+  <h1>Can you ${score === 10 ? "match" : "beat"} ${score}/10?</h1>
+  <a class="btn next" href="/game">Play</a>
+</main>
+</body>
 </html>
 `;
   return new Response(html, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=3600" } });
