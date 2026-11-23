@@ -119,13 +119,14 @@ def run(opts_json: str, base: str, live_json: str = "{}") -> str:
 REAL_FIELDS = ("artist", "title", "year", "venue", "credit", "source")
 REAL_MIN = 6
 GAME_KEY = ROOT / "game" / ".key"
-# Every game image gets the same size and encoding, so the bytes do not show the kind.
-FILTERS = {
-    "real": "scale=1280:853,setsar=1,sidedata=mode=delete:type=ICC_PROFILE",
-    # A render is smoother and paler than a press photograph. Sharpening, a little grain and colour bring
-    # its detail, noise and saturation to the medians of the real photographs.
-    "ai": "scale=1280:853,unsharp=3:3:0.6,noise=alls=2:allf=t,eq=saturation=1.12,setsar=1,sidedata=mode=delete:type=ICC_PROFILE",
-}
+SIZE = (1280, 853)
+# A twin and its real photograph show the same room, so the second one would give the answer.
+# Their names, and so their places in the order, are at least this fraction of the order apart.
+PAIR_GAP = 0.3
+STRIP = "setsar=1,sidedata=mode=delete:type=ICC_PROFILE"
+# A render is smoother and paler than a press photograph. Sharpening, a little grain and colour bring
+# its detail, noise and saturation close to those of the real photographs.
+AI_FINISH = "unsharp=3:3:0.6,noise=alls=2:allf=t:all_seed={seed},eq=saturation=1.12"
 ENCODE = ["-map_metadata", "-1", "-pix_fmt", "yuvj420p", "-fflags", "+bitexact", "-flags:v", "+bitexact", "-q:v", "4"]
 
 
@@ -139,6 +140,42 @@ def _game_key() -> bytes:
     return bytes.fromhex(text)
 
 
+def game_names(key: bytes, real_ids: list[str], ai: list[dict]) -> dict[tuple[str, str], str]:
+    """The published name of each game image, by (kind, id). The name is an HMAC, so it does not show the kind,
+    and the Worker orders the images by name. A twin whose name falls too near its real photograph takes the next salt."""
+    def name(text: str) -> str:
+        return hmac.new(key, text.encode(), hashlib.sha256).hexdigest()[:16]
+
+    names = {("real", r): name(f"real:{r}") for r in real_ids}
+    for e in ai:
+        at, salt = int(names[("real", e["twin"])], 16) / 16 ** 16, 0
+        while abs(int(img := name(f"ai:{e['id']}:{salt}"), 16) / 16 ** 16 - at) < PAIR_GAP:
+            salt += 1
+        names[("ai", e["id"])] = img
+    return names
+
+
+def _jpeg_size(data: bytes) -> tuple[int, int] | None:
+    i = 2
+    while i + 9 < len(data) and data[i] == 0xFF:
+        marker, length = data[i + 1], int.from_bytes(data[i + 2:i + 4], "big")
+        if 0xC0 <= marker <= 0xCF and marker not in (0xC4, 0xC8, 0xCC):
+            return int.from_bytes(data[i + 7:i + 9], "big"), int.from_bytes(data[i + 5:i + 7], "big")
+        i += 2 + length
+    return None
+
+
+def _game_source(src: Path, manifest: Path) -> Path:
+    if not src.exists():
+        raise SystemExit(f"{manifest.relative_to(ROOT)}: no image {src.relative_to(ROOT)}")
+    data = src.read_bytes()
+    if b"ICC_PROFILE" in data:
+        raise SystemExit(f"{src.relative_to(ROOT)} has a colour profile. Convert it to plain sRGB: jpgicc -q95 {src.name} out.jpg")
+    if _jpeg_size(data) != SIZE:
+        raise SystemExit(f"{src.relative_to(ROOT)} is {_jpeg_size(data)}, not {SIZE[0]} x {SIZE[1]} pixels")
+    return src
+
+
 def _game_pool(out: Path) -> dict:
     pool: dict[str, list] = {"real": [], "ai": []}
     manifest = ROOT / "game" / "real" / "manifest.json"
@@ -148,34 +185,31 @@ def _game_pool(out: Path) -> dict:
         return pool
     if not shutil.which("ffmpeg"):
         raise SystemExit("The game needs ffmpeg to encode its images. Install ffmpeg, or empty game/real/manifest.json.")
-    media, key, jobs = out / "game" / "media", _game_key(), []
-    media.mkdir(parents=True)
-
-    def publish(kind: str, ident: str, src: Path) -> str:
-        img = hmac.new(key, f"{kind}:{ident}".encode(), hashlib.sha256).hexdigest()[:16]
-        jobs.append(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(src), "-vf", FILTERS[kind], *ENCODE, str(media / f"{img}.jpg")])
-        return img
-
     if len({e.get("id") for e in real}) != len(real):
         raise SystemExit("game/real/manifest.json: two entries have the same id")
     for e in real:
         bad = [k for k in ("id", *REAL_FIELDS) if not isinstance(e.get(k), str) or (k not in ("year", "credit") and not e[k].strip())]
         if bad:
             raise SystemExit(f"game/real/manifest.json: entry {e.get('id') or '?'} needs {', '.join(bad)}")
-        src = manifest.parent / f"{e['id']}.jpg"
-        if not src.exists():
-            raise SystemExit(f"game/real/manifest.json: no image {src.relative_to(ROOT)}")
-        if b"ICC_PROFILE" in src.read_bytes():
-            raise SystemExit(f"{src.relative_to(ROOT)} has a colour profile. Convert it to plain sRGB: jpgicc -q95 {src.name} out.jpg")
-        pool["real"].append({"img": publish("real", e["id"], src), "reveal": {k: e[k] for k in REAL_FIELDS}})
     twins.check(ai, {e["id"] for e in real})
+    key, media, jobs = _game_key(), out / "game" / "media", []
+    names = game_names(key, [e["id"] for e in real], ai)
+    media.mkdir(parents=True)
+
+    def publish(kind: str, ident: str, src: Path, vf: str) -> str:
+        img = names[(kind, ident)]
+        jobs.append(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(src), "-vf", vf, *ENCODE, str(media / f"{img}.jpg")])
+        return img
+
+    for e in real:
+        src = _game_source(manifest.parent / f"{e['id']}.jpg", manifest)
+        pool["real"].append({"img": publish("real", e["id"], src, STRIP), "reveal": {k: e[k] for k in REAL_FIELDS}})
     forms = {a["id"]: a for a in corpus.archetypes()}
     for e in ai:
-        src = twins.DIR / f"{e['id']}.jpg"
-        if not src.exists():
-            raise SystemExit(f"{twins.MANIFEST.relative_to(ROOT)}: no image {src.relative_to(ROOT)}. Run: python3 -m artgen game twins")
+        src = _game_source(twins.DIR / f"{e['id']}.jpg", twins.MANIFEST)
+        finish = AI_FINISH.format(seed=int(names[("ai", e["id"])][:7], 16))
         a = forms[e["archetype"]]
-        pool["ai"].append({"img": publish("ai", e["id"], src), "reveal": {"form": a["form"], "basis": a["basis"]}})
+        pool["ai"].append({"img": publish("ai", e["id"], src, f"{finish},{STRIP}"), "reveal": {"form": a["form"], "basis": a["basis"]}})
     with ThreadPoolExecutor() as ex:
         failed = [(cmd[6], res.stderr.decode(errors="replace").strip())
                   for cmd, res in zip(jobs, ex.map(lambda cmd: subprocess.run(cmd, capture_output=True), jobs)) if res.returncode]

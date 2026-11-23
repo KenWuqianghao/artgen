@@ -2,15 +2,17 @@
 """Cut the recording and write timeline.json and index.html for the game video (1080x1080).
 Inputs: config.json (address, recorded set, play-along photographs), recording.json and raw/game.mp4 from record.mjs.
 Run from video/game: python3 scripts/build_index.py"""
-import hashlib
-import hmac
 import html
 import json
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path("../..")
+sys.path.insert(0, str(ROOT))
+from artgen.studio import game_names  # noqa: E402
+
 CONFIG = json.load(open("config.json"))
 REC = json.load(open("recording.json"))
 URL = CONFIG["url"]
@@ -32,12 +34,11 @@ ARCHETYPES = json.loads(subprocess.run(["python3", "-c", "import json; from artg
 
 
 def order_positions():
-    """Place of each play-along photograph in the order of the game (1-based), as artgen/studio.py names the images."""
+    """Place of each play-along photograph in the order of the game (1-based)."""
     key = bytes.fromhex((ROOT / "game/.key").read_text().strip())
-    pool = json.load(open(ROOT / "worker/src/game_pool.json"))
-    order = sorted(e["img"] for kind in ("real", "ai") for e in pool[kind])
-    return [order.index(hmac.new(key, f"{p['kind']}:{p['id']}".encode(), hashlib.sha256).hexdigest()[:16]) + 1
-            for p in CONFIG["playalong"]]
+    names = game_names(key, list(MANIFEST), list(TWINS.values()))
+    order = sorted(names.values())
+    return [order.index(names[(p["kind"], p["id"])]) + 1 for p in CONFIG["playalong"]]
 
 
 # Every player gets the same order, so the video shows only photographs after the recorded set.

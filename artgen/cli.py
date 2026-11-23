@@ -160,8 +160,9 @@ def cmd_library(args):
 
 def cmd_game(args):
     from .twins import render
-    entries = render(args.provider, workers=args.workers, only=args.only, force=args.force)
-    print(f"twins: {sum(1 for e in entries if 'prompt' in e)} of {len(entries)} rendered")
+    if failed := render(args.provider, workers=args.workers, only=args.only, force=args.force):
+        raise SystemExit(f"twins: {len(failed)} failed: {' '.join(failed)}. Run the command again.")
+    print("twins: all rendered")
 
 
 def cmd_studio(args):

@@ -4,7 +4,7 @@
   "wrong": [1, 6],
   "playalong": [
     {"kind": "real", "id": "press-0082"},
-    {"kind": "ai", "id": "twin-0107"},
+    {"kind": "ai", "id": "twin-0070"},
     {"kind": "real", "id": "press-0091"}
   ]
 }

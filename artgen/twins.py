@@ -15,8 +15,9 @@ look holds what a writer saw in the real photograph, never its artwork:
 from __future__ import annotations
 
 import json
+import os
 import shutil
-import threading
+import subprocess
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -37,7 +38,9 @@ def load() -> list[dict]:
 
 
 def _save(entries: list[dict]) -> None:
-    MANIFEST.write_text(json.dumps({"entries": entries}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    tmp = MANIFEST.with_suffix(".tmp")
+    tmp.write_text(json.dumps({"entries": entries}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    os.replace(tmp, MANIFEST)
 
 
 def prompt(entry: dict) -> str:
@@ -47,7 +50,7 @@ def prompt(entry: dict) -> str:
     look = entry["look"]
     rng = sub_rng("twin", entry["id"])
     artist = make_artist(rng, 1, 2027, set(), profile="midcareer")
-    venue = Venue(id="twin", name="twin", description=look["room"], floor="", light=look["light"])
+    venue = Venue(id="twin", name="twin", description="", floor="", light="")
     work = make_work(rng, 1, artist, venue, "game", 2027, "Game", arch=arch, pinned={"variant": entry["variant"]})
     people = "No people in the room." if look["people"].strip().lower() == "none" else f"People: {look['people']}"
     text_rule = ("The only legible text is the artwork's own phrase, spelled exactly as given." if arch["id"] in TEXT_FAMILIES_ALLOWED
@@ -68,6 +71,10 @@ def check(entries: list[dict], real_ids: set[str]) -> None:
     arch_ids = {a["id"]: len(a["scenes"]) for a in corpus.archetypes()}
     if len({e.get("id") for e in entries}) != len(entries):
         raise SystemExit(f"{MANIFEST.relative_to(ROOT)}: two entries have the same id")
+    copies = Counter(e.get("twin") for e in entries)
+    if bad := sorted(r for r in real_ids if copies[r] != 1):
+        # a real photograph with no twin is a room that appears once; with two twins, a room that appears three times
+        raise SystemExit(f"{MANIFEST.relative_to(ROOT)}: each real photograph needs exactly one twin. Not so for: {', '.join(bad)}")
     scenes = Counter((e.get("archetype"), e.get("variant")) for e in entries)
     if repeated := [f"{a} variant {v}" for (a, v), n in scenes.items() if n > 1]:
         # a player who sees an invented work twice in different rooms knows that both are AI
@@ -76,7 +83,8 @@ def check(entries: list[dict], real_ids: set[str]) -> None:
         where = f"{MANIFEST.relative_to(ROOT)}: entry {e.get('id') or '?'}"
         if e.get("twin") not in real_ids:
             raise SystemExit(f"{where}: twin {e.get('twin')!r} is not in game/real/manifest.json")
-        if e.get("archetype") not in arch_ids or not 0 <= e.get("variant", -1) < arch_ids[e["archetype"]]:
+        variant = e.get("variant")
+        if e.get("archetype") not in arch_ids or type(variant) is not int or not 0 <= variant < arch_ids[e["archetype"]]:
             raise SystemExit(f"{where}: no archetype {e.get('archetype')!r} with variant {e.get('variant')!r}")
         look = e.get("look") or {}
         bad = [k for k in LOOK_FIELDS if not isinstance(look.get(k), str) or not look[k].strip()]
@@ -84,22 +92,33 @@ def check(entries: list[dict], real_ids: set[str]) -> None:
             raise SystemExit(f"{where}: look needs {', '.join(bad)}")
 
 
-def render(provider: str, *, workers: int = 2, only: list[str] | None = None, force: bool = False, log=print) -> list[dict]:
-    """Render every entry that has no image yet (or the ones in only, with force). A rerun continues after a failure."""
-    from .library import _resize
+def _fit(src: Path, dst: Path) -> None:
+    """Crop to 3:2 and scale to the size of the real photographs, then replace dst in one step."""
+    tmp = dst.with_suffix(".part.jpg")
+    subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(src), "-vf",
+                    "scale=1280:853:force_original_aspect_ratio=increase,format=rgb24,crop=1280:853", "-q:v", "2", str(tmp)], check=True)
+    os.replace(tmp, dst)
+
+
+def render(provider: str, *, workers: int = 2, only: list[str] | None = None, force: bool = False, log=print) -> list[str]:
+    """Render each entry that has no image, or whose prompt changed since its image (all of only, with force).
+    Return the ids that failed. A rerun continues after a failure."""
     from .render.providers import PROVIDERS
     entries = load()
     real = json.loads((ROOT / "game" / "real" / "manifest.json").read_text(encoding="utf-8"))["entries"]
     check(entries, {e["id"] for e in real})
-    todo = [e for e in entries if (only is None or e["id"] in only) and (force or not (DIR / f"{e['id']}.jpg").exists())]
+    if unknown := sorted(set(only or []) - {e["id"] for e in entries}):
+        raise SystemExit(f"{MANIFEST.relative_to(ROOT)}: no entry {', '.join(unknown)}")
+    todo = [e for e in entries if (only is None or e["id"] in only)
+            and (force or not (DIR / f"{e['id']}.jpg").exists() or e.get("prompt") != prompt(e))]
     log(f"twins: {len(todo)} of {len(entries)} to render")
-    fn, lock, tmp = PROVIDERS[provider], threading.Lock(), DIR / "tmp"
+    fn, tmp, failed = PROVIDERS[provider], DIR / "tmp", []
     tmp.mkdir(exist_ok=True)
 
     def job(e):
         text = prompt(e)
         raw = fn(text, tmp / e["id"], caption=e["archetype"])
-        _resize(raw, DIR / f"{e['id']}.jpg")
+        _fit(raw, DIR / f"{e['id']}.jpg")
         raw.unlink(missing_ok=True)
         return text
 
@@ -108,13 +127,12 @@ def render(provider: str, *, workers: int = 2, only: list[str] | None = None, fo
         for fut in as_completed(futures):
             e = futures[fut]
             try:
-                text = fut.result()
+                e["prompt"] = fut.result()
             except Exception as err:  # keep going; a rerun picks up what failed
+                failed.append(e["id"])
                 log(f"  failed  {e['id']}: {str(err)[:160]}")
                 continue
-            with lock:
-                e["prompt"] = text
-                _save(entries)
-                log(f"  done    {e['id']}")
+            _save(entries)
+            log(f"  done    {e['id']}")
     shutil.rmtree(tmp, ignore_errors=True)
-    return entries
+    return failed

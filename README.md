@@ -156,13 +156,15 @@ To render the entries that have no image yet, run:
 python3 -m artgen game twins
 ```
 
-It needs `OPENAI_API_KEY`. It writes `game/ai/<id>.jpg` and the prompt of each image into the manifest. A rerun continues after a failure. To render an entry again, add `--only twin-0003 --force`.
+It needs `OPENAI_API_KEY`. It writes `game/ai/<id>.jpg` at 1280 × 853 pixels and the prompt of each image into the manifest. When you change an entry, its prompt changes, and the command renders the entry again. When a render fails, the command ends with an error, and a rerun continues. To render an entry again with no change, add `--only twin-0003 --force`.
+
+The build stops if a real photograph has no twin or more than one, or if two twins use the same scene. A player who sees the same invented work twice knows that both are AI.
 
 Now the game has 218 photographs: 109 real photographs and 109 AI twins.
 
-The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. Every image becomes 1280 × 853 pixels. The AI images also get a little sharpening, grain and colour, because a render is smoother and paler than a press photograph. The new encoding removes the metadata, so the bytes do not show the kind. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
+The build encodes every game image again with `ffmpeg` (necessary for the game) and writes it to `studio/game/media/`. The build stops if an image is not 1280 × 853 pixels. The AI images also get a little sharpening, grain and colour, because a render is smoother and paler than a press photograph. The new encoding removes the metadata, so the bytes do not show the kind. The name is a hash with the secret in `game/.key`, so the name does not show the kind either. The first build makes `game/.key`, and git ignores it. Keep it and use the same file on each computer that deploys: a new key renames every image and resets the crowd statistics. It writes the answers to `worker/src/game_pool.json`. Only the Worker reads that file, and git ignores it.
 
-The order of the photographs is the order of their names. The name is a hash, so the order looks random. A new photograph gets its place in the order, and the other photographs keep their order. A player gets a new photograph next if the player is already past its place. Otherwise the player gets it at its place. When you remove a photograph, the answers to it stay in the scores.
+The order of the photographs is the order of their names. The name is a hash, so the order looks random. A twin and its real photograph show the same room, so the build keeps their names at least 30% of the order apart. A new photograph gets its place in the order, and the other photographs keep their order. A player gets a new photograph next if the player is already past its place. Otherwise the player gets it at its place. When you remove a photograph, the answers to it stay in the scores.
 
 ### Game API
 
