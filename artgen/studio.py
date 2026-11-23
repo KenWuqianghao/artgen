@@ -120,13 +120,9 @@ REAL_FIELDS = ("artist", "title", "year", "venue", "credit", "source")
 REAL_MIN = 6
 GAME_KEY = ROOT / "game" / ".key"
 SIZE = (1280, 853)
-# A twin and its real photograph show the same room, so the second one would give the answer.
-# Their names, and so their places in the order, are about this fraction of the order apart or more.
-PAIR_GAP = 0.3
+TWIN_MIN_GAP = 0.3
 STRIP = "setsar=1,sidedata=mode=delete:type=ICC_PROFILE"
-# A render is smoother and paler than a press photograph. Sharpening, a little grain and colour bring
-# its detail, noise and saturation close to those of the real photographs.
-AI_FINISH = "unsharp=3:3:0.6,noise=alls=2:allf=t:all_seed={seed},eq=saturation=1.12"
+AI_TO_PRESS_PHOTO = "unsharp=3:3:0.6,noise=alls=2:allf=t:all_seed={seed},eq=saturation=1.12"
 ENCODE = ["-map_metadata", "-1", "-pix_fmt", "yuvj420p", "-fflags", "+bitexact", "-flags:v", "+bitexact", "-q:v", "4"]
 
 
@@ -141,19 +137,19 @@ def _game_key() -> bytes:
 
 
 def game_names(key: bytes, real_ids: list[str], ai: list[dict]) -> dict[tuple[str, str], str]:
-    """The published name of each game image, by (kind, id). The name is an HMAC, so it does not show the kind,
-    and the Worker orders the images by name. A twin whose name falls too near its real photograph takes the next salt."""
     def name(text: str) -> str:
         return hmac.new(key, text.encode(), hashlib.sha256).hexdigest()[:16]
 
     def place(img: str) -> float:
         return int(img, 16) / 16 ** 16
 
+    def far_around_order(img: str, at: float) -> bool:
+        return TWIN_MIN_GAP <= (place(img) - at) % 1 <= 1 - TWIN_MIN_GAP
+
     names = {("real", r): name(f"real:{r}") for r in real_ids}
     for e in ai:
         at, salt = place(names[("real", e["twin"])]), 0
-        # the gap goes round the end of the order, so twins stay as evenly spread as real photographs
-        while not PAIR_GAP <= (place(img := name(f"ai:{e['id']}:{salt}")) - at) % 1 <= 1 - PAIR_GAP:
+        while not far_around_order(img := name(f"ai:{e['id']}:{salt}"), at):
             salt += 1
         names[("ai", e["id"])] = img
     return names
@@ -203,7 +199,6 @@ def _game_pool(out: Path) -> dict:
             raise SystemExit(f"game/real/manifest.json: entry {e.get('id') or '?'} needs {', '.join(bad)}")
     twins.check(ai, {e["id"] for e in real})
     if old := [e["id"] for e in ai if (twins.DIR / f"{e['id']}.jpg").exists() and twins.stale(e)]:
-        # the reveal comes from the entry, so an old image would get the reveal of another work
         raise SystemExit(f"{twins.MANIFEST.relative_to(ROOT)}: {len(old)} entries changed since their image: {' '.join(old)}. "
                          "Run: python3 -m artgen game twins")
     key, media, jobs = _game_key(), out / "game" / "media", []
@@ -221,7 +216,7 @@ def _game_pool(out: Path) -> dict:
     forms = {a["id"]: a for a in corpus.archetypes()}
     for e in ai:
         src = _game_source(twins.DIR / f"{e['id']}.jpg", twins.MANIFEST, " Run: python3 -m artgen game twins")
-        finish = AI_FINISH.format(seed=int(names[("ai", e["id"])][:7], 16))
+        finish = AI_TO_PRESS_PHOTO.format(seed=int(names[("ai", e["id"])][:7], 16))
         a = forms[e["archetype"]]
         pool["ai"].append({"img": publish("ai", e["id"], src, f"{finish},{STRIP}"), "reveal": {"form": a["form"], "basis": a["basis"]}})
     with ThreadPoolExecutor() as ex:

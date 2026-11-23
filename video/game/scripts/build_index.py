@@ -33,7 +33,6 @@ ARCHETYPES = {a["id"]: a["basis"] for a in corpus.archetypes()}
 
 
 def order_positions():
-    """Place of each play-along photograph in the order of the game (1-based)."""
     key = bytes.fromhex((ROOT / "game/.key").read_text().strip())
     names = game_names(key, list(MANIFEST), list(TWINS.values()))
     order = sorted(names.values())
