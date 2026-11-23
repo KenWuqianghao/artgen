@@ -19,7 +19,7 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from . import corpus
+from . import corpus, twins
 from .env import ROOT
 
 FAMILY_LABELS = {
@@ -119,8 +119,14 @@ def run(opts_json: str, base: str, live_json: str = "{}") -> str:
 REAL_FIELDS = ("artist", "title", "year", "venue", "credit", "source")
 REAL_MIN = 6
 GAME_KEY = ROOT / "game" / ".key"
-REENCODE = ["-map_metadata", "-1", "-vf", "setsar=1,sidedata=mode=delete:type=ICC_PROFILE", "-pix_fmt", "yuvj420p",
-            "-fflags", "+bitexact", "-flags:v", "+bitexact", "-q:v", "4"]
+# Every game image gets the same size and encoding, so the bytes do not show the kind.
+FILTERS = {
+    "real": "scale=1280:853,setsar=1,sidedata=mode=delete:type=ICC_PROFILE",
+    # A render is smoother and paler than a press photograph. Sharpening, a little grain and colour bring
+    # its detail, noise and saturation to the medians of the real photographs.
+    "ai": "scale=1280:853,unsharp=3:3:0.6,noise=alls=2:allf=t,eq=saturation=1.12,setsar=1,sidedata=mode=delete:type=ICC_PROFILE",
+}
+ENCODE = ["-map_metadata", "-1", "-pix_fmt", "yuvj420p", "-fflags", "+bitexact", "-flags:v", "+bitexact", "-q:v", "4"]
 
 
 def _game_key() -> bytes:
@@ -135,9 +141,10 @@ def _game_key() -> bytes:
 
 def _game_pool(out: Path) -> dict:
     pool: dict[str, list] = {"real": [], "ai": []}
-    manifest, lib = ROOT / "game" / "real" / "manifest.json", _library()
+    manifest = ROOT / "game" / "real" / "manifest.json"
     real = json.loads(manifest.read_text(encoding="utf-8"))["entries"] if manifest.exists() else []
-    if len(real) < REAL_MIN or not lib:
+    ai = twins.load()
+    if len(real) < REAL_MIN or not ai:
         return pool
     if not shutil.which("ffmpeg"):
         raise SystemExit("The game needs ffmpeg to encode its images. Install ffmpeg, or empty game/real/manifest.json.")
@@ -146,7 +153,7 @@ def _game_pool(out: Path) -> dict:
 
     def publish(kind: str, ident: str, src: Path) -> str:
         img = hmac.new(key, f"{kind}:{ident}".encode(), hashlib.sha256).hexdigest()[:16]
-        jobs.append(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(src), *REENCODE, str(media / f"{img}.jpg")])
+        jobs.append(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(src), "-vf", FILTERS[kind], *ENCODE, str(media / f"{img}.jpg")])
         return img
 
     if len({e.get("id") for e in real}) != len(real):
@@ -161,10 +168,14 @@ def _game_pool(out: Path) -> dict:
         if b"ICC_PROFILE" in src.read_bytes():
             raise SystemExit(f"{src.relative_to(ROOT)} has a colour profile. Convert it to plain sRGB: jpgicc -q95 {src.name} out.jpg")
         pool["real"].append({"img": publish("real", e["id"], src), "reveal": {k: e[k] for k in REAL_FIELDS}})
+    twins.check(ai, {e["id"] for e in real})
     forms = {a["id"]: a for a in corpus.archetypes()}
-    for e in lib["entries"]:
+    for e in ai:
+        src = twins.DIR / f"{e['id']}.jpg"
+        if not src.exists():
+            raise SystemExit(f"{twins.MANIFEST.relative_to(ROOT)}: no image {src.relative_to(ROOT)}. Run: python3 -m artgen game twins")
         a = forms[e["archetype"]]
-        pool["ai"].append({"img": publish("ai", e["id"], ROOT / e["file"]), "reveal": {"form": a["form"], "basis": a["basis"]}})
+        pool["ai"].append({"img": publish("ai", e["id"], src), "reveal": {"form": a["form"], "basis": a["basis"]}})
     with ThreadPoolExecutor() as ex:
         failed = [(cmd[6], res.stderr.decode(errors="replace").strip())
                   for cmd, res in zip(jobs, ex.map(lambda cmd: subprocess.run(cmd, capture_output=True), jobs)) if res.returncode]

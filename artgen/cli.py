@@ -158,6 +158,12 @@ def cmd_library(args):
         print(f"library: {len(idx['entries'])} images covering {len({e['archetype'] for e in idx['entries']})} of {len(corpus.archetypes())} archetypes")
 
 
+def cmd_game(args):
+    from .twins import render
+    entries = render(args.provider, workers=args.workers, only=args.only, force=args.force)
+    print(f"twins: {sum(1 for e in entries if 'prompt' in e)} of {len(entries)} rendered")
+
+
 def cmd_studio(args):
     from .studio import build
     out = Path(args.out)
@@ -233,6 +239,14 @@ def main(argv=None):
     lb.add_argument("--limit", type=int)
     lb.add_argument("--dry-run", action="store_true", help="only report what would be rendered")
     lb.set_defaults(func=cmd_library)
+
+    g = sub.add_parser("game", help="render the AI twins of the real photographs in the game Art or BS? (resumable)")
+    g.add_argument("action", choices=["twins"])
+    g.add_argument("--provider", default="openai", choices=["openai", "fal", "replicate"])
+    g.add_argument("--only", nargs="*", help="entry ids, for example twin-0007")
+    g.add_argument("--force", action="store_true", help="render again entries that have an image")
+    g.add_argument("--workers", type=int, default=2)
+    g.set_defaults(func=cmd_game)
 
     st = sub.add_parser("studio", help="build or serve the Studio: curate a biennial in the browser")
     st.add_argument("action", choices=["build", "serve"])
