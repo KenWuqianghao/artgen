@@ -4,7 +4,7 @@
   },
   "devDependencies": {
     "puppeteer-core": "^25.12.0",
-    "wrangler": "^4.147.0"
+    "wrangler": "^4.158.0"
   },
   "scripts": {
     "studio:dev": "python3 -m artgen studio build && wrangler dev",
